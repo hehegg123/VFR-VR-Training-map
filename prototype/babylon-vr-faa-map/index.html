@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAA VR Map Scaffold</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a5fb4'/%3E%3Cpath d='M14 20h36v5H14zm6 9h24v5H20zm-6 9h36v5H14z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles/app.css?v=20260516-label-style-v3">
+</head>
+<body>
+  <div class="app-shell">
+    <canvas id="renderCanvas" aria-label="Babylon FAA map scene"></canvas>
+    <aside class="hud-panel">
+      <div class="hud-header">
+        <p class="eyebrow">Babylon.js VR FAA Map</p>
+        <h1>Sectional Layer Viewer</h1>
+        <p class="hud-copy">
+          A data-driven VR scaffold that stages FAA map sections, layer toggles, and 3D billboard labels.
+        </p>
+      </div>
+
+      <div id="sectionGroup" class="hud-group">
+        <label for="sectionSelect">Map Section</label>
+        <select id="sectionSelect"></select>
+        <p id="sectionNote" class="hud-note" hidden></p>
+      </div>
+
+      <div class="hud-group">
+        <div class="hud-row">
+          <span>XR</span>
+          <button id="enterVrButton" type="button">Enter VR</button>
+        </div>
+        <p id="xrHint" class="hud-note">Use a WebXR-capable browser to enter immersive mode.</p>
+      </div>
+
+      <div class="hud-group">
+        <div class="hud-row">
+          <span>Layers</span>
+          <span class="hud-muted">Visibility and VR labels</span>
+        </div>
+        <div id="layerControls" class="layer-list"></div>
+      </div>
+
+      <div class="hud-group">
+        <div class="hud-row">
+          <span>Link</span>
+          <span class="hud-muted">Local desktop sync</span>
+        </div>
+        <label for="linkSessionInput">Session ID</label>
+        <input id="linkSessionInput" type="text" placeholder="stlouis-review">
+        <div class="button-row">
+          <button id="startLinkButton" type="button">Start Link</button>
+          <button id="disconnectLinkButton" type="button" class="button-secondary" disabled>Disconnect</button>
+        </div>
+        <p id="linkStatus" class="hud-note">Not linked. Start a local session to sync highlights with the 2D app.</p>
+      </div>
+
+      <div class="hud-group">
+        <div class="hud-row">
+          <span>Status</span>
+          <span id="sectionQuality" class="quality-pill">loading</span>
+        </div>
+        <p id="statusLine" class="hud-note">Loading section manifests...</p>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+  <script src="https://cdn.babylonjs.com/earcut.min.js"></script>
+  <script type="module" src="./src/main.js?v=20260516-label-style-v3"></script>
+</body>
+</html>

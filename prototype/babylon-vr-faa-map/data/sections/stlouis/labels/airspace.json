@@ -1,0 +1,5347 @@
+{
+  "schema": "babylon-vr-labels-v1",
+  "items": [
+    {
+      "id": "CVG-CLASS_B",
+      "selectionId": "CVG-CLASS_B",
+      "x": 13258.213,
+      "y": 3206.21,
+      "lines": [
+        "CINCINNATI/NORTHERN KENTUCKY INTL",
+        "FAA CVG  RWY 09/27",
+        "Class B"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 12971.989,
+      "anchorY": 3199.404,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "STL-CLASS_B",
+      "selectionId": "STL-CLASS_B",
+      "x": 1305.432,
+      "y": 3973.742,
+      "lines": [
+        "ST LOUIS LAMBERT INTL",
+        "FAA STL  RWY 12R/30L",
+        "Class B"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "BNA-CLASS_C",
+      "selectionId": "BNA-CLASS_C",
+      "x": 8977.661,
+      "y": 10945.348,
+      "lines": [
+        "NASHVILLE INTL",
+        "FAA BNA  RWY 13/31",
+        "Class C"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "CMI-CLASS_C",
+      "selectionId": "CMI-CLASS_C",
+      "x": 5886.23,
+      "y": 679.672,
+      "lines": [
+        "UNIV OF ILLINOIS/WILLARD",
+        "FAA CMI  RWY 14L/32R",
+        "Class C",
+        "C 0600-2300 OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 5611.661,
+      "anchorY": 679.683,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "DAY-CLASS_C",
+      "selectionId": "DAY-CLASS_C",
+      "x": 13813.324,
+      "y": 932.252,
+      "lines": [
+        "JAMES M COX DAYTON INTL",
+        "FAA DAY  RWY 06L/24R",
+        "Class C"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "EVV-CLASS_C",
+      "selectionId": "EVV-CLASS_C",
+      "x": 7120.33,
+      "y": 5926.326,
+      "lines": [
+        "EVANSVILLE RGNL",
+        "FAA EVV  RWY 04/22",
+        "Class C",
+        "C 0600-2300; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "IND-CLASS_C",
+      "selectionId": "IND-CLASS_C",
+      "x": 9638.792,
+      "y": 1507.045,
+      "lines": [
+        "INDIANAPOLIS INTL",
+        "FAA IND  RWY 05L/23R",
+        "Class C"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "LEX-CLASS_C",
+      "selectionId": "LEX-CLASS_C",
+      "x": 13178.675,
+      "y": 5847.345,
+      "lines": [
+        "BLUE GRASS",
+        "FAA LEX  RWY 04/22",
+        "Class C"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "SDF-CLASS_C",
+      "selectionId": "SDF-CLASS_C",
+      "x": 11047.97,
+      "y": 5576.849,
+      "lines": [
+        "LOUISVILLE MUHAMMAD ALI INTL",
+        "FAA SDF  RWY 17R/35L",
+        "Class C"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 10828.079,
+      "anchorY": 5544.062,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "SPI-CLASS_C",
+      "selectionId": "SPI-CLASS_C",
+      "x": 2772.132,
+      "y": 1145.946,
+      "lines": [
+        "ABRAHAM LINCOLN CAPITAL",
+        "FAA SPI  RWY 04/22",
+        "Class C",
+        "C 0600-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "AID-CLASS_D",
+      "selectionId": "AID-CLASS_D",
+      "x": 11259.838,
+      "y": 465.088,
+      "lines": [
+        "ANDERSON RGNL",
+        "FAA AID  RWY 12/30",
+        "Class D",
+        "D 0830-1630 MON-SAT; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 10985.269,
+      "anchorY": 465.096,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "ALN-CLASS_D",
+      "selectionId": "ALN-CLASS_D",
+      "x": 2235.667,
+      "y": 3632.227,
+      "lines": [
+        "ST LOUIS RGNL",
+        "FAA ALN  RWY 11/29",
+        "Class D",
+        "D 0700-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 1961.098,
+      "anchorY": 3632.233,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "BAK-CLASS_D",
+      "selectionId": "BAK-CLASS_D",
+      "x": 10724.91,
+      "y": 2697.607,
+      "lines": [
+        "COLUMBUS MUNI",
+        "FAA BAK  RWY 05/23",
+        "Class D",
+        "D 0630-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 10450.444,
+      "anchorY": 2697.689,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "BLV-CLASS_D",
+      "selectionId": "BLV-CLASS_D",
+      "x": 2646.004,
+      "y": 4546.757,
+      "lines": [
+        "SCOTT AFB/MIDAMERICA ST LOUIS",
+        "FAA BLV  RWY 14L/32R",
+        "Class D",
+        "D 24 HRS; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 2371.435,
+      "anchorY": 4546.757,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "BMG-CLASS_D",
+      "selectionId": "BMG-CLASS_D",
+      "x": 9258.586,
+      "y": 3024.603,
+      "lines": [
+        "MONROE CO",
+        "FAA BMG  RWY 17/35",
+        "Class D",
+        "D 0630-2130; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 8983.952,
+      "anchorY": 3020.474,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "CGI-CLASS_D",
+      "selectionId": "CGI-CLASS_D",
+      "x": 3116.852,
+      "y": 8016.675,
+      "lines": [
+        "CAPE GIRARDEAU RGNL",
+        "FAA CGI  RWY 10/28",
+        "Class D",
+        "D 0700-1900 M-F; 0700-1700 S-S; OTHR E."
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 2842.283,
+      "anchorY": 8016.675,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "CPS-CLASS_D",
+      "selectionId": "CPS-CLASS_D",
+      "x": 1987.21,
+      "y": 4463.311,
+      "lines": [
+        "ST LOUIS DOWNTOWN",
+        "FAA CPS  RWY 12R/30L",
+        "Class D",
+        "D 0630-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 1714.742,
+      "anchorY": 4463.882,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "DEC-CLASS_D",
+      "selectionId": "DEC-CLASS_D",
+      "x": 4687.948,
+      "y": 1201.803,
+      "lines": [
+        "DECATUR",
+        "FAA DEC  RWY 06/24",
+        "Class D",
+        "D 0600-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 4414.79,
+      "anchorY": 1202.251,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "HUF-CLASS_D",
+      "selectionId": "HUF-CLASS_D",
+      "x": 7572.127,
+      "y": 2229.025,
+      "lines": [
+        "TERRE HAUTE RGNL",
+        "FAA HUF  RWY 05/23",
+        "Class D"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "ILN-CLASS_D",
+      "selectionId": "ILN-CLASS_D",
+      "x": 14358.613,
+      "y": 2145.459,
+      "lines": [
+        "WILMINGTON AIR PARK",
+        "FAA ILN  RWY 04L/22R",
+        "Class D"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 14724.454,
+      "anchorY": 2145.467,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "JWN-CLASS_D",
+      "selectionId": "JWN-CLASS_D",
+      "x": 8207.066,
+      "y": 10787.921,
+      "lines": [
+        "JOHN C TUNE",
+        "FAA JWN  RWY 02/20",
+        "Class D",
+        "D 0600-2000; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 8481.634,
+      "anchorY": 10787.921,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "LOU-CLASS_D",
+      "selectionId": "LOU-CLASS_D",
+      "x": 10769.043,
+      "y": 5394.412,
+      "lines": [
+        "BOWMAN FLD",
+        "FAA LOU  RWY 06/24",
+        "Class D",
+        "D 0700-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 10975.908,
+      "anchorY": 5400.043,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "LUK-CLASS_D",
+      "selectionId": "LUK-CLASS_D",
+      "x": 13479.092,
+      "y": 3316.433,
+      "lines": [
+        "CINCINNATI MUNI/LUNKEN FLD",
+        "FAA LUK  RWY 03/21",
+        "Class D",
+        "D 0700-2300; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 13479.092,
+      "anchorY": 3041.93,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "MDH-CLASS_D",
+      "selectionId": "MDH-CLASS_D",
+      "x": 3810.38,
+      "y": 6582.006,
+      "lines": [
+        "SOUTHERN ILLINOIS",
+        "FAA MDH  RWY 18L/36R",
+        "Class D",
+        "D 0700-2100; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 3535.812,
+      "anchorY": 6582.006,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "MIE-CLASS_D",
+      "selectionId": "MIE-CLASS_D",
+      "x": 11690.195,
+      "y": 153.522,
+      "lines": [
+        "DELAWARE CO RGNL",
+        "FAA MIE  RWY 14/32",
+        "Class D",
+        "D 0600-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 11415.78,
+      "anchorY": 104.569,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "MQY-CLASS_D",
+      "selectionId": "MQY-CLASS_D",
+      "x": 9263.933,
+      "y": 10758.654,
+      "lines": [
+        "SMYRNA",
+        "FAA MQY  RWY 14/32",
+        "Class D",
+        "D 0700-2200 M-F 0700-1900 S-S; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 9263.933,
+      "anchorY": 11237.211,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "MWA-CLASS_D",
+      "selectionId": "MWA-CLASS_D",
+      "x": 4035.907,
+      "y": 6925.442,
+      "lines": [
+        "VETERANS AP OF SOUTHERN ILLINOIS",
+        "FAA MWA  RWY 02/20",
+        "Class D",
+        "D 0700-1900; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 4035.907,
+      "anchorY": 6650.939,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "OWB-CLASS_D",
+      "selectionId": "OWB-CLASS_D",
+      "x": 8148.134,
+      "y": 6711.89,
+      "lines": [
+        "OWENSBORO/DAVIESS CO RGNL",
+        "FAA OWB  RWY 18/36",
+        "Class D",
+        "D 0600-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 7872.666,
+      "anchorY": 6716.407,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "PAH-CLASS_D",
+      "selectionId": "PAH-CLASS_D",
+      "x": 4506.121,
+      "y": 8476.062,
+      "lines": [
+        "BARKLEY RGNL",
+        "FAA PAH  RWY 05/23",
+        "Class D",
+        "D 0600-2300; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "SUS-CLASS_D",
+      "selectionId": "SUS-CLASS_D",
+      "x": 974.559,
+      "y": 4192.971,
+      "lines": [
+        "SPIRIT OF ST LOUIS",
+        "FAA SUS  RWY 08R/26L",
+        "Class D",
+        "D 0600-2300; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 700.009,
+      "anchorY": 4192.961,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "CGI-CLASS_E2",
+      "selectionId": "CGI-CLASS_E2",
+      "x": 2567.715,
+      "y": 8016.675,
+      "lines": [
+        "CAPE GIRARDEAU RGNL",
+        "FAA CGI  RWY 10/28",
+        "Class E",
+        "D 0700-1900 M-F; 0700-1700 S-S; OTHR E."
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 2842.283,
+      "anchorY": 8016.675,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "ILN-CLASS_E2",
+      "selectionId": "ILN-CLASS_E2",
+      "x": 14358.613,
+      "y": 2419.963,
+      "lines": [
+        "WILMINGTON AIR PARK",
+        "FAA ILN  RWY 04L/22R",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 14724.454,
+      "anchorY": 2145.467,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "LOU-CLASS_E2",
+      "selectionId": "LOU-CLASS_E2",
+      "x": 11043.612,
+      "y": 5119.908,
+      "lines": [
+        "BOWMAN FLD",
+        "FAA LOU  RWY 06/24",
+        "Class E",
+        "D 0700-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 10975.908,
+      "anchorY": 5400.043,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "LUK-CLASS_E2",
+      "selectionId": "LUK-CLASS_E2",
+      "x": 13089.381,
+      "y": 3041.93,
+      "lines": [
+        "CINCINNATI MUNI/LUNKEN FLD",
+        "FAA LUK  RWY 03/21",
+        "Class E",
+        "D 0700-2300; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 13479.092,
+      "anchorY": 3041.93,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "SPI-CLASS_E2",
+      "selectionId": "SPI-CLASS_E2",
+      "x": 2772.131,
+      "y": 1420.482,
+      "lines": [
+        "ABRAHAM LINCOLN CAPITAL",
+        "FAA SPI  RWY 04/22",
+        "Class E",
+        "C 0600-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 2772.113,
+      "anchorY": 1145.996,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "SUS-CLASS_E2",
+      "selectionId": "SUS-CLASS_E2",
+      "x": 699.99,
+      "y": 4467.474,
+      "lines": [
+        "SPIRIT OF ST LOUIS",
+        "FAA SUS  RWY 08R/26L",
+        "Class E",
+        "D 0600-2300; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "anchorX": 700.009,
+      "anchorY": 4192.961,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "DYR-CLASS_E2",
+      "selectionId": "DYR-CLASS_E2",
+      "x": 3123.214,
+      "y": 10855.25,
+      "lines": [
+        "DYERSBURG RGNL",
+        "FAA DYR  RWY 04/22",
+        "Class E",
+        "E CONT"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.995,
+      "anchorX": 3123.214,
+      "anchorY": 11236.805,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "BWG-CLASS_E2",
+      "selectionId": "BWG-CLASS_E2",
+      "x": 9724.379,
+      "y": 8733.157,
+      "lines": [
+        "BOWLING GREEN-WARREN CO RGNL",
+        "FAA BWG  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.965,
+      "anchorX": 9449.81,
+      "anchorY": 8733.157,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "LOZ-CLASS_E2",
+      "selectionId": "LOZ-CLASS_E2",
+      "x": 14360.614,
+      "y": 8298.284,
+      "lines": [
+        "LONDON/CORBIN/MAGEE",
+        "FAA LOZ  RWY 06/24",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.965,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "MVN-CLASS_E2",
+      "selectionId": "MVN-CLASS_E2",
+      "x": 4648.639,
+      "y": 5166.273,
+      "lines": [
+        "MT VERNON",
+        "FAA MVN  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.965,
+      "anchorX": 4374.071,
+      "anchorY": 5166.273,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "SME-CLASS_E2",
+      "selectionId": "SME-CLASS_E2",
+      "x": 12958.89,
+      "y": 8422.92,
+      "lines": [
+        "LAKE CUMBERLAND RGNL",
+        "FAA SME  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.965,
+      "anchorX": 13233.458,
+      "anchorY": 8422.92,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E2",
+      "detailTier": "core"
+    },
+    {
+      "id": "LOU-CLASS_E4",
+      "selectionId": "LOU-CLASS_E4",
+      "x": 10595.123,
+      "y": 5953.219,
+      "lines": [
+        "BOWMAN FLD",
+        "FAA LOU  RWY 06/24",
+        "Class E",
+        "D 0700-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.86,
+      "anchorX": 10320.554,
+      "anchorY": 5953.219,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E4",
+      "detailTier": "core"
+    },
+    {
+      "id": "SUS-CLASS_E4",
+      "selectionId": "SUS-CLASS_E4",
+      "x": 2125.789,
+      "y": 4605.802,
+      "lines": [
+        "SPIRIT OF ST LOUIS",
+        "FAA SUS  RWY 08R/26L",
+        "Class E",
+        "D 0600-2300; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.86,
+      "anchorX": 2125.789,
+      "anchorY": 4331.299,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E4",
+      "detailTier": "core"
+    },
+    {
+      "id": "BWG-CLASS_E4",
+      "selectionId": "BWG-CLASS_E4",
+      "x": 7701.151,
+      "y": 9852.617,
+      "lines": [
+        "BOWLING GREEN-WARREN CO RGNL",
+        "FAA BWG  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.855,
+      "anchorX": 7426.582,
+      "anchorY": 9852.617,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E4",
+      "detailTier": "core"
+    },
+    {
+      "id": "EVV-CLASS_E5",
+      "selectionId": "EVV-CLASS_E5",
+      "x": 7120.343,
+      "y": 6200.856,
+      "lines": [
+        "EVANSVILLE RGNL",
+        "FAA EVV  RWY 04/22",
+        "Class E",
+        "C 0600-2300; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8419931701295601,
+      "anchorX": 7120.343,
+      "anchorY": 5926.353,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "OWB-CLASS_E5",
+      "selectionId": "OWB-CLASS_E5",
+      "x": 7872.99,
+      "y": 6987.117,
+      "lines": [
+        "OWENSBORO/DAVIESS CO RGNL",
+        "FAA OWB  RWY 18/36",
+        "Class E",
+        "D 0600-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.835895697101273,
+      "anchorX": 7872.666,
+      "anchorY": 6716.407,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "MWA-CLASS_E5",
+      "selectionId": "MWA-CLASS_E5",
+      "x": 4035.907,
+      "y": 6376.435,
+      "lines": [
+        "VETERANS AP OF SOUTHERN ILLINOIS",
+        "FAA MWA  RWY 02/20",
+        "Class E",
+        "D 0700-1900; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8186229785092161,
+      "anchorX": 4035.907,
+      "anchorY": 6650.939,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "BLV-CLASS_E5",
+      "selectionId": "BLV-CLASS_E5",
+      "x": 2493.736,
+      "y": 4301.862,
+      "lines": [
+        "SCOTT AFB/MIDAMERICA ST LOUIS",
+        "FAA BLV  RWY 14L/32R",
+        "Class E",
+        "D 24 HRS; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8063750897615126,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "DEC-CLASS_E5",
+      "selectionId": "DEC-CLASS_E5",
+      "x": 4140.221,
+      "y": 1202.251,
+      "lines": [
+        "DECATUR",
+        "FAA DEC  RWY 06/24",
+        "Class E",
+        "D 0600-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8048552896335706,
+      "anchorX": 4414.79,
+      "anchorY": 1202.251,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "ALN-CLASS_E5",
+      "selectionId": "ALN-CLASS_E5",
+      "x": 1686.529,
+      "y": 3632.218,
+      "lines": [
+        "ST LOUIS RGNL",
+        "FAA ALN  RWY 11/29",
+        "Class E",
+        "D 0700-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8014678958805959,
+      "anchorX": 1961.098,
+      "anchorY": 3632.233,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "CPS-CLASS_E5",
+      "selectionId": "CPS-CLASS_E5",
+      "x": 1712.662,
+      "y": 4852.192,
+      "lines": [
+        "ST LOUIS DOWNTOWN",
+        "FAA CPS  RWY 12R/30L",
+        "Class E",
+        "D 0630-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8013938122553276,
+      "anchorX": 1714.742,
+      "anchorY": 4463.882,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-11",
+      "selectionId": "special-11",
+      "x": 6651.499,
+      "y": 9525.257,
+      "lines": [
+        "CAMPBELL 1",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-12",
+      "selectionId": "special-12",
+      "x": 6245.172,
+      "y": 9957.653,
+      "lines": [
+        "CAMPBELL 2",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-13",
+      "selectionId": "special-13",
+      "x": 10995.131,
+      "y": 3642.506,
+      "lines": [
+        "JPG A",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-14",
+      "selectionId": "special-14",
+      "x": 10810.869,
+      "y": 3798.819,
+      "lines": [
+        "JPG B",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-15",
+      "selectionId": "special-15",
+      "x": 11674.168,
+      "y": 3628.042,
+      "lines": [
+        "JPG C",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "anchorX": 11266.743,
+      "anchorY": 3628.042,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-16",
+      "selectionId": "special-16",
+      "x": 11346.71,
+      "y": 3054.546,
+      "lines": [
+        "JPG D",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-17",
+      "selectionId": "special-17",
+      "x": 153.348,
+      "y": 6936.128,
+      "lines": [
+        "LINDBERGH A",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-18",
+      "selectionId": "special-18",
+      "x": 446.125,
+      "y": 8288.73,
+      "lines": [
+        "LINDBERGH B",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "anchorX": 38.701,
+      "anchorY": 8288.73,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-19",
+      "selectionId": "special-19",
+      "x": 408.344,
+      "y": 8732.586,
+      "lines": [
+        "LINDBERGH C",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "anchorX": 0.919,
+      "anchorY": 8732.586,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-20",
+      "selectionId": "special-20",
+      "x": 9984.137,
+      "y": 3276.772,
+      "lines": [
+        "RACER A",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-21",
+      "selectionId": "special-21",
+      "x": 9984.137,
+      "y": 3170.513,
+      "lines": [
+        "RACER B",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-22",
+      "selectionId": "special-22",
+      "x": 10099.047,
+      "y": 2947.364,
+      "lines": [
+        "RACER C",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-23",
+      "selectionId": "special-23",
+      "x": 10361.555,
+      "y": 3022.531,
+      "lines": [
+        "RACER D",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "anchorX": 9954.13,
+      "anchorY": 2615.203,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-24",
+      "selectionId": "special-24",
+      "x": 6793.546,
+      "y": 4242.029,
+      "lines": [
+        "RED HILLS",
+        "MOA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "SPI-CLASS_E5",
+      "selectionId": "SPI-CLASS_E5",
+      "x": 2772.113,
+      "y": 871.493,
+      "lines": [
+        "ABRAHAM LINCOLN CAPITAL",
+        "FAA SPI  RWY 04/22",
+        "Class E",
+        "C 0600-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7965432371870093,
+      "anchorX": 2772.113,
+      "anchorY": 1145.996,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "SUS-CLASS_E5",
+      "selectionId": "SUS-CLASS_E5",
+      "x": 700.009,
+      "y": 3803.344,
+      "lines": [
+        "SPIRIT OF ST LOUIS",
+        "FAA SUS  RWY 08R/26L",
+        "Class E",
+        "D 0600-2300; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7934757856833583,
+      "anchorX": 700.009,
+      "anchorY": 4192.961,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "BMG-CLASS_E5",
+      "selectionId": "BMG-CLASS_E5",
+      "x": 8709.448,
+      "y": 3024.591,
+      "lines": [
+        "MONROE CO",
+        "FAA BMG  RWY 17/35",
+        "Class E",
+        "D 0630-2130; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7919142802784718,
+      "anchorX": 8983.952,
+      "anchorY": 3020.474,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "HUF-CLASS_E5",
+      "selectionId": "HUF-CLASS_E5",
+      "x": 7678.412,
+      "y": 2122.765,
+      "lines": [
+        "TERRE HAUTE RGNL",
+        "FAA HUF  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7893550344093714,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "MDH-CLASS_E5",
+      "selectionId": "MDH-CLASS_E5",
+      "x": 3261.243,
+      "y": 6582.006,
+      "lines": [
+        "SOUTHERN ILLINOIS",
+        "FAA MDH  RWY 18L/36R",
+        "Class E",
+        "D 0700-2100; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.785125958173275,
+      "anchorX": 3535.812,
+      "anchorY": 6582.006,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "PAH-CLASS_E5",
+      "selectionId": "PAH-CLASS_E5",
+      "x": 4507.471,
+      "y": 8752.013,
+      "lines": [
+        "BARKLEY RGNL",
+        "FAA PAH  RWY 05/23",
+        "Class E",
+        "D 0600-2300; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7844342087085252,
+      "anchorX": 4507.471,
+      "anchorY": 8477.51,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "BAK-CLASS_E5",
+      "selectionId": "BAK-CLASS_E5",
+      "x": 10175.772,
+      "y": 2697.597,
+      "lines": [
+        "COLUMBUS MUNI",
+        "FAA BAK  RWY 05/23",
+        "Class E",
+        "D 0630-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7829621531636154,
+      "anchorX": 10450.444,
+      "anchorY": 2697.689,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "IND-CLASS_E5",
+      "selectionId": "IND-CLASS_E5",
+      "x": 9729.566,
+      "y": 1620.613,
+      "lines": [
+        "INDIANAPOLIS INTL",
+        "FAA IND  RWY 05L/23R",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7796527691298228,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "CGI-CLASS_E5",
+      "selectionId": "CGI-CLASS_E5",
+      "x": 2842.283,
+      "y": 8291.178,
+      "lines": [
+        "CAPE GIRARDEAU RGNL",
+        "FAA CGI  RWY 10/28",
+        "Class E",
+        "D 0700-1900 M-F; 0700-1700 S-S; OTHR E."
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7762920843734407,
+      "anchorX": 2842.283,
+      "anchorY": 8016.675,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "BNA-CLASS_E5",
+      "selectionId": "BNA-CLASS_E5",
+      "x": 8925.533,
+      "y": 10237.866,
+      "lines": [
+        "NASHVILLE INTL",
+        "FAA BNA  RWY 13/31",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7731580018430695,
+      "anchorX": 8925.09,
+      "anchorY": 10937.938,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "LEX-CLASS_E5",
+      "selectionId": "LEX-CLASS_E5",
+      "x": 13171.772,
+      "y": 5954.363,
+      "lines": [
+        "BLUE GRASS",
+        "FAA LEX  RWY 04/22",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7711877445218956,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "CVG-CLASS_E5",
+      "selectionId": "CVG-CLASS_E5",
+      "x": 13193.415,
+      "y": 2978.03,
+      "lines": [
+        "CINCINNATI/NORTHERN KENTUCKY INTL",
+        "FAA CVG  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7689498126361576,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "AID-CLASS_E5",
+      "selectionId": "AID-CLASS_E5",
+      "x": 10985.269,
+      "y": 739.579,
+      "lines": [
+        "ANDERSON RGNL",
+        "FAA AID  RWY 12/30",
+        "Class E",
+        "D 0830-1630 MON-SAT; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.767475571798397,
+      "anchorX": 10985.269,
+      "anchorY": 465.096,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "MIE-CLASS_E5",
+      "selectionId": "MIE-CLASS_E5",
+      "x": 11731.051,
+      "y": 635.397,
+      "lines": [
+        "DELAWARE CO RGNL",
+        "FAA MIE  RWY 14/32",
+        "Class E",
+        "D 0600-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7633688816110394,
+      "anchorX": 11415.78,
+      "anchorY": 104.569,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-0",
+      "selectionId": "special-0",
+      "x": 10145.104,
+      "y": 2228.036,
+      "lines": [
+        "R-3401A",
+        "ATTERBURY RESERVE"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "anchorX": 10145.104,
+      "anchorY": 2635.363,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-1",
+      "selectionId": "special-1",
+      "x": 9547.273,
+      "y": 2615.195,
+      "lines": [
+        "R-3401B",
+        "ATTERBURY RESERVE"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "anchorX": 9954.697,
+      "anchorY": 2615.195,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-2",
+      "selectionId": "special-2",
+      "x": 11854.14,
+      "y": 3521.668,
+      "lines": [
+        "R-3403A",
+        "JEFFERSON PROVING"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "anchorX": 11446.716,
+      "anchorY": 3521.668,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-3",
+      "selectionId": "special-3",
+      "x": 11312.437,
+      "y": 3674.017,
+      "lines": [
+        "R-3403B",
+        "JEFFERSON PROVING"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "anchorX": 11312.437,
+      "anchorY": 3266.689,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-4",
+      "selectionId": "special-4",
+      "x": 7871.21,
+      "y": 3094.399,
+      "lines": [
+        "R-3405",
+        "SULLIVAN"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "anchorX": 7463.785,
+      "anchorY": 3094.399,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-5",
+      "selectionId": "special-5",
+      "x": 7151.646,
+      "y": 10011.647,
+      "lines": [
+        "R-3701A",
+        "FORT CAMPBELL"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "anchorX": 7151.646,
+      "anchorY": 9604.319,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-6",
+      "selectionId": "special-6",
+      "x": 6494.89,
+      "y": 9707.205,
+      "lines": [
+        "R-3702A",
+        "FORT CAMPBELL"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "anchorX": 6902.315,
+      "anchorY": 9707.205,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-7",
+      "selectionId": "special-7",
+      "x": 6902.315,
+      "y": 9299.878,
+      "lines": [
+        "R-3702B",
+        "FORT CAMPBELL"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "anchorX": 6902.315,
+      "anchorY": 9707.205,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-8",
+      "selectionId": "special-8",
+      "x": 7309.739,
+      "y": 9299.878,
+      "lines": [
+        "R-3702C",
+        "FORT CAMPBELL"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "anchorX": 6902.315,
+      "anchorY": 9707.205,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-9",
+      "selectionId": "special-9",
+      "x": 10622.726,
+      "y": 6351.666,
+      "lines": [
+        "R-3704A",
+        "FORT KNOX"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "special-10",
+      "selectionId": "special-10",
+      "x": 10622.726,
+      "y": 6245.406,
+      "lines": [
+        "R-3704B",
+        "FORT KNOX"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "LOU-CLASS_E5",
+      "selectionId": "LOU-CLASS_E5",
+      "x": 10551.263,
+      "y": 5822.418,
+      "lines": [
+        "BOWMAN FLD",
+        "FAA LOU  RWY 06/24",
+        "Class E",
+        "D 0700-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7577509015293726,
+      "anchorX": 10975.908,
+      "anchorY": 5400.043,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "DAY-CLASS_E5",
+      "selectionId": "DAY-CLASS_E5",
+      "x": 13813.388,
+      "y": 1038.474,
+      "lines": [
+        "JAMES M COX DAYTON INTL",
+        "FAA DAY  RWY 06L/24R",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7548592172504626,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "ILN-CLASS_E5",
+      "selectionId": "ILN-CLASS_E5",
+      "x": 14482.594,
+      "y": 1890.04,
+      "lines": [
+        "WILMINGTON AIR PARK",
+        "FAA ILN  RWY 04L/22R",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7536119044637328,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "JVY-CLASS_E5",
+      "selectionId": "JVY-CLASS_E5",
+      "x": 10540.63,
+      "y": 5042.352,
+      "lines": [
+        "CLARK RGNL",
+        "FAA JVY  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7486461191742226,
+      "anchorX": 10815.538,
+      "anchorY": 5039.57,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-0",
+      "selectionId": "shelf-CLASS_B-0",
+      "x": 1978.568,
+      "y": 3973.742,
+      "lines": [
+        "STL B AREA E",
+        "30-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 1305.432,
+      "anchorY": 3973.742,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-1",
+      "selectionId": "shelf-CLASS_B-1",
+      "x": 1306.581,
+      "y": 3871.909,
+      "lines": [
+        "STL B AREA A",
+        "SFC-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-2",
+      "selectionId": "shelf-CLASS_B-2",
+      "x": 995.242,
+      "y": 3417.507,
+      "lines": [
+        "STL B AREA B",
+        "17-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 995.242,
+      "anchorY": 3807.124,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-3",
+      "selectionId": "shelf-CLASS_B-3",
+      "x": 1617.91,
+      "y": 4406.622,
+      "lines": [
+        "STL B AREA C",
+        "20-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 1617.91,
+      "anchorY": 4132.119,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-4",
+      "selectionId": "shelf-CLASS_B-4",
+      "x": 1227.467,
+      "y": 4619.315,
+      "lines": [
+        "STL B AREA D",
+        "25-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 1227.467,
+      "anchorY": 4344.812,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-5",
+      "selectionId": "shelf-CLASS_B-5",
+      "x": 455.054,
+      "y": 3283.945,
+      "lines": [
+        "STL B AREA J",
+        "45-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-6",
+      "selectionId": "shelf-CLASS_B-6",
+      "x": 359.81,
+      "y": 3603.174,
+      "lines": [
+        "STL B AREA F",
+        "35-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 634.379,
+      "anchorY": 3603.174,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-7",
+      "selectionId": "shelf-CLASS_B-7",
+      "x": 2059.549,
+      "y": 3445.929,
+      "lines": [
+        "STL B AREA G",
+        "35-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 2059.549,
+      "anchorY": 4118.904,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-8",
+      "selectionId": "shelf-CLASS_B-8",
+      "x": 2241.796,
+      "y": 4930.624,
+      "lines": [
+        "STL B AREA H",
+        "45-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 2241.796,
+      "anchorY": 4541.006,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-9",
+      "selectionId": "shelf-CLASS_B-9",
+      "x": 1679.124,
+      "y": 3286.103,
+      "lines": [
+        "STL B AREA K",
+        "50-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-10",
+      "selectionId": "shelf-CLASS_B-10",
+      "x": 1449.357,
+      "y": 4728.254,
+      "lines": [
+        "STL B AREA L",
+        "50-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 1174.788,
+      "anchorY": 4728.254,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-11",
+      "selectionId": "shelf-CLASS_B-11",
+      "x": 158.507,
+      "y": 3815.892,
+      "lines": [
+        "STL B AREA M",
+        "50-80"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-12",
+      "selectionId": "shelf-CLASS_B-12",
+      "x": 12686.759,
+      "y": 2227.935,
+      "lines": [
+        "CVG B AREA E",
+        "40-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 12961.328,
+      "anchorY": 2227.935,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-13",
+      "selectionId": "shelf-CLASS_B-13",
+      "x": 13100.999,
+      "y": 4182.104,
+      "lines": [
+        "CVG B AREA E",
+        "40-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-14",
+      "selectionId": "shelf-CLASS_B-14",
+      "x": 13781.236,
+      "y": 3052.047,
+      "lines": [
+        "CVG B AREA D",
+        "35-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 13506.667,
+      "anchorY": 3052.047,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-15",
+      "selectionId": "shelf-CLASS_B-15",
+      "x": 12473.522,
+      "y": 3358.138,
+      "lines": [
+        "CVG B AREA D",
+        "35-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-16",
+      "selectionId": "shelf-CLASS_B-16",
+      "x": 13499.022,
+      "y": 2699.871,
+      "lines": [
+        "CVG B AREA F",
+        "50-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-17",
+      "selectionId": "shelf-CLASS_B-17",
+      "x": 12882.339,
+      "y": 3952.411,
+      "lines": [
+        "CVG B AREA D",
+        "35-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 13156.908,
+      "anchorY": 3952.411,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-18",
+      "selectionId": "shelf-CLASS_B-18",
+      "x": 12396.689,
+      "y": 3792.044,
+      "lines": [
+        "CVG B AREA F",
+        "50-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-19",
+      "selectionId": "shelf-CLASS_B-19",
+      "x": 12983.644,
+      "y": 3595.828,
+      "lines": [
+        "CVG B AREA A",
+        "SFC-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 12983.644,
+      "anchorY": 3206.21,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-20",
+      "selectionId": "shelf-CLASS_B-20",
+      "x": 13103.438,
+      "y": 2571.838,
+      "lines": [
+        "CVG B AREA C",
+        "30-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 12828.869,
+      "anchorY": 2571.838,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-21",
+      "selectionId": "shelf-CLASS_B-21",
+      "x": 12838.323,
+      "y": 2450.509,
+      "lines": [
+        "CVG B AREA D",
+        "35-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "anchorX": 13112.892,
+      "anchorY": 2450.509,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-22",
+      "selectionId": "shelf-CLASS_B-22",
+      "x": 12871.443,
+      "y": 3818.319,
+      "lines": [
+        "CVG B AREA C",
+        "30-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_B-23",
+      "selectionId": "shelf-CLASS_B-23",
+      "x": 13038.966,
+      "y": 3516.637,
+      "lines": [
+        "CVG B AREA B",
+        "21-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_B",
+      "detailTier": "core"
+    },
+    {
+      "id": "HNB-CLASS_E5",
+      "selectionId": "HNB-CLASS_E5",
+      "x": 8310.465,
+      "y": 5377.512,
+      "lines": [
+        "HUNTINGBURG",
+        "FAA HNB  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7376944379469159,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "EHR-CLASS_E5",
+      "selectionId": "EHR-CLASS_E5",
+      "x": 6793.351,
+      "y": 6536.446,
+      "lines": [
+        "HENDERSON CITY-CO",
+        "FAA EHR  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7368029748448129,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "KY8-CLASS_E5",
+      "selectionId": "KY8-CLASS_E5",
+      "x": 8513.182,
+      "y": 6151.166,
+      "lines": [
+        "HANCOCK CO/RON LEWIS FLD",
+        "FAA KY8  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7354927873515837,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "DCY-CLASS_E5",
+      "selectionId": "DCY-CLASS_E5",
+      "x": 7940.299,
+      "y": 4195.878,
+      "lines": [
+        "DAVIESS CO",
+        "FAA DCY  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7334346289356468,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "LWV-CLASS_E5",
+      "selectionId": "LWV-CLASS_E5",
+      "x": 6962.786,
+      "y": 4029.764,
+      "lines": [
+        "LAWRENCEVILLE-VINCENNES INTL",
+        "FAA LWV  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7326039660312323,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "FRH-CLASS_E5",
+      "selectionId": "FRH-CLASS_E5",
+      "x": 8957.417,
+      "y": 4698.607,
+      "lines": [
+        "FRENCH LICK MUNI",
+        "FAA FRH  RWY 08/26",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7311678460699852,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "TWT-CLASS_E5",
+      "selectionId": "TWT-CLASS_E5",
+      "x": 6231.559,
+      "y": 7231.623,
+      "lines": [
+        "STURGIS MUNI",
+        "FAA TWT  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7300784303351087,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "2I0-CLASS_E5",
+      "selectionId": "2I0-CLASS_E5",
+      "x": 7392.234,
+      "y": 7720.546,
+      "lines": [
+        "MADISONVILLE RGNL",
+        "FAA 2I0  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7291285029051258,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "JQD-CLASS_E5",
+      "selectionId": "JQD-CLASS_E5",
+      "x": 8537.183,
+      "y": 7447.327,
+      "lines": [
+        "OHIO CO",
+        "FAA JQD  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7286341279527105,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "RSV-CLASS_E5",
+      "selectionId": "RSV-CLASS_E5",
+      "x": 6873.003,
+      "y": 3369.172,
+      "lines": [
+        "CRAWFORD CO",
+        "FAA RSV  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7275957081290647,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "FOA-CLASS_E5",
+      "selectionId": "FOA-CLASS_E5",
+      "x": 5221.214,
+      "y": 4278.43,
+      "lines": [
+        "FLORA MUNI",
+        "FAA FOA  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7258547835314046,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "HSB-CLASS_E5",
+      "selectionId": "HSB-CLASS_E5",
+      "x": 4996.119,
+      "y": 6516.088,
+      "lines": [
+        "HARRISBURG-RALEIGH",
+        "FAA HSB  RWY 06/24",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7258142282146054,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "GDA-CLASS_E5",
+      "selectionId": "GDA-CLASS_E5",
+      "x": 5618.457,
+      "y": 7772.862,
+      "lines": [
+        "MARION-CRITTENDEN CO JAMES C JOHNSON RGNL",
+        "FAA GDA  RWY 07/25",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7253263476550486,
+      "anchorX": 5902.105,
+      "anchorY": 7769.01,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "MVN-CLASS_E5",
+      "selectionId": "MVN-CLASS_E5",
+      "x": 4374.071,
+      "y": 5104.277,
+      "lines": [
+        "MT VERNON",
+        "FAA MVN  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7220970925441587,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "DYR-CLASS_E5",
+      "selectionId": "DYR-CLASS_E5",
+      "x": 3123.041,
+      "y": 11090.169,
+      "lines": [
+        "DYERSBURG RGNL",
+        "FAA DYR  RWY 04/22",
+        "Class E",
+        "E CONT"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7218047605449229,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "EKX-CLASS_E5",
+      "selectionId": "EKX-CLASS_E5",
+      "x": 10461.099,
+      "y": 6826.845,
+      "lines": [
+        "ADDINGTON FLD",
+        "FAA EKX  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7199764077315206,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "1H2-CLASS_E5",
+      "selectionId": "1H2-CLASS_E5",
+      "x": 5065.895,
+      "y": 3215.699,
+      "lines": [
+        "EFFINGHAM CO RGNL",
+        "FAA 1H2  RWY 11/29",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7198411348062687,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "HVC-CLASS_E5",
+      "selectionId": "HVC-CLASS_E5",
+      "x": 7269.428,
+      "y": 9028.174,
+      "lines": [
+        "HOPKINSVILLE-CHRISTIAN CO",
+        "FAA HVC  RWY 08/26",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7192489161610307,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "ENL-CLASS_E5",
+      "selectionId": "ENL-CLASS_E5",
+      "x": 3899.667,
+      "y": 4657.391,
+      "lines": [
+        "CENTRALIA MUNI",
+        "FAA ENL  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7177996206898084,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "SER-CLASS_E5",
+      "selectionId": "SER-CLASS_E5",
+      "x": 10437.608,
+      "y": 3583.757,
+      "lines": [
+        "FREEMAN MUNI",
+        "FAA SER  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7172249854560757,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "BWG-CLASS_E5",
+      "selectionId": "BWG-CLASS_E5",
+      "x": 9175.242,
+      "y": 8733.157,
+      "lines": [
+        "BOWLING GREEN-WARREN CO RGNL",
+        "FAA BWG  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7167359780116458,
+      "anchorX": 9449.81,
+      "anchorY": 8733.157,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "MTO-CLASS_E5",
+      "selectionId": "MTO-CLASS_E5",
+      "x": 5592.947,
+      "y": 2151.521,
+      "lines": [
+        "COLES CO MEML",
+        "FAA MTO  RWY 11/29",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7155644754266487,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "CKV-CLASS_E5",
+      "selectionId": "CKV-CLASS_E5",
+      "x": 7308.454,
+      "y": 9642.952,
+      "lines": [
+        "OUTLAW FLD",
+        "FAA CKV  RWY 17/35",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7146109360553311,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "BRY-CLASS_E5",
+      "selectionId": "BRY-CLASS_E5",
+      "x": 11337.417,
+      "y": 6477.106,
+      "lines": [
+        "SAMUELS FLD",
+        "FAA BRY  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.71437808818858,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "GPC-CLASS_E5",
+      "selectionId": "GPC-CLASS_E5",
+      "x": 8572.239,
+      "y": 1744.466,
+      "lines": [
+        "PUTNAM CO RGNL",
+        "FAA GPC  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7143718706614528,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "GLW-CLASS_E5",
+      "selectionId": "GLW-CLASS_E5",
+      "x": 10426.108,
+      "y": 8543.862,
+      "lines": [
+        "GLASGOW MUNI",
+        "FAA GLW  RWY 08/26",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7130766046336748,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "IMS-CLASS_E5",
+      "selectionId": "IMS-CLASS_E5",
+      "x": 11356.562,
+      "y": 4000.393,
+      "lines": [
+        "MADISON RGNL",
+        "FAA IMS  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7125180517916658,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "M91-CLASS_E5",
+      "selectionId": "M91-CLASS_E5",
+      "x": 8403.236,
+      "y": 9471.398,
+      "lines": [
+        "SPRINGFLD ROBERTSON CO",
+        "FAA M91  RWY 04/22",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7120254382452254,
+      "anchorX": 8402.54,
+      "anchorY": 9862.405,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "OVO-CLASS_E5",
+      "selectionId": "OVO-CLASS_E5",
+      "x": 11054.429,
+      "y": 3255.095,
+      "lines": [
+        "NORTH VERNON",
+        "FAA OVO  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7119685418977549,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "M25-CLASS_E5",
+      "selectionId": "M25-CLASS_E5",
+      "x": 4894.074,
+      "y": 9244.602,
+      "lines": [
+        "MAYFLD GRAVES CO",
+        "FAA M25  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7118397432017233,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "CEY-CLASS_E5",
+      "selectionId": "CEY-CLASS_E5",
+      "x": 5338.143,
+      "y": 9522.936,
+      "lines": [
+        "KYLE-OAKLEY FLD",
+        "FAA CEY  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7117528450222923,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "1M5-CLASS_E5",
+      "selectionId": "1M5-CLASS_E5",
+      "x": 9339.73,
+      "y": 9707.621,
+      "lines": [
+        "DOUGLAS HUNTER FLD",
+        "FAA 1M5  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7107393696103446,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "SGH-CLASS_E5",
+      "selectionId": "SGH-CLASS_E5",
+      "x": 14515.424,
+      "y": 1067.499,
+      "lines": [
+        "SPRINGFLD/BECKLEY MUNI",
+        "FAA SGH  RWY 06/24",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7106030203044256,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "6I2-CLASS_E5",
+      "selectionId": "6I2-CLASS_E5",
+      "x": 12157.941,
+      "y": 6938.757,
+      "lines": [
+        "LEBANON SPRINGFLD/GEORGE HOERTER FLD",
+        "FAA 6I2  RWY 11/29",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7095142901407131,
+      "anchorX": 11884.183,
+      "anchorY": 6939.097,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "AAS-CLASS_E5",
+      "selectionId": "AAS-CLASS_E5",
+      "x": 11759.615,
+      "y": 7663.02,
+      "lines": [
+        "TAYLOR CO",
+        "FAA AAS  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.708462980592023,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "CFJ-CLASS_E5",
+      "selectionId": "CFJ-CLASS_E5",
+      "x": 8350.229,
+      "y": 849.352,
+      "lines": [
+        "CRAWFORDSVILLE RGNL",
+        "FAA CFJ  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7082415674200819,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "I34-CLASS_E5",
+      "selectionId": "I34-CLASS_E5",
+      "x": 11209.053,
+      "y": 2453.103,
+      "lines": [
+        "GREENSBURG MUNI",
+        "FAA I34  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7078471173972123,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "GEZ-CLASS_E5",
+      "selectionId": "GEZ-CLASS_E5",
+      "x": 10622.464,
+      "y": 1851.701,
+      "lines": [
+        "SHELBYVILLE MUNI",
+        "FAA GEZ  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.707434405736097,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "3M7-CLASS_E5",
+      "selectionId": "3M7-CLASS_E5",
+      "x": 10226.421,
+      "y": 9891.571,
+      "lines": [
+        "LAFAYETTE MUNI",
+        "FAA 3M7  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7062301016025823,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "PCD-CLASS_E5",
+      "selectionId": "PCD-CLASS_E5",
+      "x": 2273.565,
+      "y": 6316.185,
+      "lines": [
+        "PERRYVILLE RGNL",
+        "FAA PCD  RWY 02/20",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.706136204477274,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "FFT-CLASS_E5",
+      "selectionId": "FFT-CLASS_E5",
+      "x": 12543.936,
+      "y": 5485.654,
+      "lines": [
+        "CAPITAL CITY",
+        "FAA FFT  RWY 07/25",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.705949222536933,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "PHT-CLASS_E5",
+      "selectionId": "PHT-CLASS_E5",
+      "x": 5305.715,
+      "y": 10383.148,
+      "lines": [
+        "HENRY CO",
+        "FAA PHT  RWY 02/20",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7057799088691505,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "M02-CLASS_E5",
+      "selectionId": "M02-CLASS_E5",
+      "x": 7328.086,
+      "y": 10932.543,
+      "lines": [
+        "DICKSON MUNI",
+        "FAA M02  RWY 17/35",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7048436141394614,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "DNV-CLASS_E5",
+      "selectionId": "DNV-CLASS_E5",
+      "x": 6987.683,
+      "y": 275.701,
+      "lines": [
+        "VERMILION RGNL",
+        "FAA DNV  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7044410719142106,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "MQJ-CLASS_E5",
+      "selectionId": "MQJ-CLASS_E5",
+      "x": 10422.51,
+      "y": 1172.446,
+      "lines": [
+        "INDIANAPOLIS RGNL",
+        "FAA MQJ  RWY 07/25",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7042864972985248,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "HLB-CLASS_E5",
+      "selectionId": "HLB-CLASS_E5",
+      "x": 11746.627,
+      "y": 2455.514,
+      "lines": [
+        "BATESVILLE",
+        "FAA HLB  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7042613808635046,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "CUL-CLASS_E5",
+      "selectionId": "CUL-CLASS_E5",
+      "x": 5888.826,
+      "y": 5794.688,
+      "lines": [
+        "CARMI MUNI",
+        "FAA CUL  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.70371209636359,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "TEL-CLASS_E5",
+      "selectionId": "TEL-CLASS_E5",
+      "x": 8853.727,
+      "y": 5976.926,
+      "lines": [
+        "PERRY CO MUNI",
+        "FAA TEL  RWY 13/31",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7035017614841257,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "SIK-CLASS_E5",
+      "selectionId": "SIK-CLASS_E5",
+      "x": 2843.062,
+      "y": 8809.774,
+      "lines": [
+        "SIKESTON MEML MUNI",
+        "FAA SIK  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7028875418658068,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "K24-CLASS_E5",
+      "selectionId": "K24-CLASS_E5",
+      "x": 12214.097,
+      "y": 8629.621,
+      "lines": [
+        "RUSSELL CO",
+        "FAA K24  RWY 17/35",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7022112264766815,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "DVK-CLASS_E5",
+      "selectionId": "DVK-CLASS_E5",
+      "x": 12872.171,
+      "y": 7122.319,
+      "lines": [
+        "STUART POWELL FLD",
+        "FAA DVK  RWY 13/31",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7020807397241148,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "UCY-CLASS_E5",
+      "selectionId": "UCY-CLASS_E5",
+      "x": 4033.785,
+      "y": 10253.005,
+      "lines": [
+        "EVERETT-STEWART RGNL",
+        "FAA UCY  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7018660226314154,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "0M4-CLASS_E5",
+      "selectionId": "0M4-CLASS_E5",
+      "x": 5853.427,
+      "y": 11107.335,
+      "lines": [
+        "BENTON CO",
+        "FAA 0M4  RWY 04/22",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7010061192242073,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "HZD-CLASS_E5",
+      "selectionId": "HZD-CLASS_E5",
+      "x": 5133.993,
+      "y": 10979.156,
+      "lines": [
+        "SGT LEE RUSSELL CARROLL CO",
+        "FAA HZD  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7007901032254367,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "shelf-CLASS_C-24",
+      "selectionId": "shelf-CLASS_C-24",
+      "x": 13680.468,
+      "y": 799.428,
+      "lines": [
+        "DAY C",
+        "24-50"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-25",
+      "selectionId": "shelf-CLASS_C-25",
+      "x": 13423.614,
+      "y": 932.285,
+      "lines": [
+        "DAY C",
+        "SFC-50"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "anchorX": 13813.325,
+      "anchorY": 932.285,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-26",
+      "selectionId": "shelf-CLASS_C-26",
+      "x": 8446.45,
+      "y": 10933.272,
+      "lines": [
+        "BNA C",
+        "18-60"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "anchorX": 8721.019,
+      "anchorY": 11207.776,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-27",
+      "selectionId": "shelf-CLASS_C-27",
+      "x": 8528.03,
+      "y": 10761.873,
+      "lines": [
+        "BNA C",
+        "24-60"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-28",
+      "selectionId": "shelf-CLASS_C-28",
+      "x": 8984.857,
+      "y": 10470.417,
+      "lines": [
+        "BNA C",
+        "18-60"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-29",
+      "selectionId": "shelf-CLASS_C-29",
+      "x": 8977.661,
+      "y": 11078.172,
+      "lines": [
+        "BNA C",
+        "SFC-60"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-30",
+      "selectionId": "shelf-CLASS_C-30",
+      "x": 9405.969,
+      "y": 10953.348,
+      "lines": [
+        "BNA C",
+        "24-60"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-31",
+      "selectionId": "shelf-CLASS_C-31",
+      "x": 13178.675,
+      "y": 5572.858,
+      "lines": [
+        "LEX C",
+        "SFC-50"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "anchorX": 13178.675,
+      "anchorY": 5847.362,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-32",
+      "selectionId": "shelf-CLASS_C-32",
+      "x": 13178.675,
+      "y": 5714.52,
+      "lines": [
+        "LEX C",
+        "22-50"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-33",
+      "selectionId": "shelf-CLASS_C-33",
+      "x": 7438.626,
+      "y": 5893.551,
+      "lines": [
+        "EVV C",
+        "SFC-45"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "anchorX": 7164.058,
+      "anchorY": 5893.551,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-34",
+      "selectionId": "shelf-CLASS_C-34",
+      "x": 7120.33,
+      "y": 6059.151,
+      "lines": [
+        "EVV C",
+        "16-45"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-35",
+      "selectionId": "shelf-CLASS_C-35",
+      "x": 14628.185,
+      "y": 10943.301,
+      "lines": [
+        "TYS C",
+        "25-50"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "anchorX": 14628.185,
+      "anchorY": 11217.804,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-36",
+      "selectionId": "shelf-CLASS_C-36",
+      "x": 3294.697,
+      "y": 1145.979,
+      "lines": [
+        "SPI C",
+        "SFC-46"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "anchorX": 2772.131,
+      "anchorY": 1145.979,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-37",
+      "selectionId": "shelf-CLASS_C-37",
+      "x": 2772.132,
+      "y": 1278.771,
+      "lines": [
+        "SPI C",
+        "18-46"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-38",
+      "selectionId": "shelf-CLASS_C-38",
+      "x": 5611.661,
+      "y": 679.672,
+      "lines": [
+        "CMI C",
+        "SFC-48"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-39",
+      "selectionId": "shelf-CLASS_C-39",
+      "x": 5454.39,
+      "y": 373.624,
+      "lines": [
+        "CMI C",
+        "24-48"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "anchorX": 5728.959,
+      "anchorY": 373.624,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-40",
+      "selectionId": "shelf-CLASS_C-40",
+      "x": 5527.17,
+      "y": 996.143,
+      "lines": [
+        "CMI C",
+        "20-48"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-41",
+      "selectionId": "shelf-CLASS_C-41",
+      "x": 9650.203,
+      "y": 1233.239,
+      "lines": [
+        "IND C",
+        "SFC-48"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "anchorX": 9650.203,
+      "anchorY": 1507.742,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-42",
+      "selectionId": "shelf-CLASS_C-42",
+      "x": 9792.275,
+      "y": 1331.958,
+      "lines": [
+        "IND C",
+        "17-48"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "anchorX": 9517.706,
+      "anchorY": 1331.958,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-43",
+      "selectionId": "shelf-CLASS_C-43",
+      "x": 9638.792,
+      "y": 1374.221,
+      "lines": [
+        "IND C",
+        "21-48"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-44",
+      "selectionId": "shelf-CLASS_C-44",
+      "x": 10773.401,
+      "y": 5576.849,
+      "lines": [
+        "SDF C",
+        "SFC-45"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-45",
+      "selectionId": "shelf-CLASS_C-45",
+      "x": 11057.782,
+      "y": 5767.962,
+      "lines": [
+        "SDF C",
+        "17-45"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_C-46",
+      "selectionId": "shelf-CLASS_C-46",
+      "x": 10934.769,
+      "y": 5236.021,
+      "lines": [
+        "SDF C",
+        "22-45"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_C",
+      "detailTier": "core"
+    },
+    {
+      "id": "FWC-CLASS_E5",
+      "selectionId": "FWC-CLASS_E5",
+      "x": 5298.686,
+      "y": 4970.211,
+      "lines": [
+        "FAIRFLD MUNI",
+        "FAA FWC  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6987009162744914,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "OLY-CLASS_E5",
+      "selectionId": "OLY-CLASS_E5",
+      "x": 5789.859,
+      "y": 4136.779,
+      "lines": [
+        "OLNEY-NOBLE",
+        "FAA OLY  RWY 11/29",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.698618638324164,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "27K-CLASS_E5",
+      "selectionId": "27K-CLASS_E5",
+      "x": 13515.836,
+      "y": 5319.244,
+      "lines": [
+        "GEORGETOWN-SCOTT CO RGNL",
+        "FAA 27K  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6985689583477358,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "CEV-CLASS_E5",
+      "selectionId": "CEV-CLASS_E5",
+      "x": 11983.156,
+      "y": 1521.235,
+      "lines": [
+        "METTEL FLD",
+        "FAA CEV  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6984277819054241,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "I93-CLASS_E5",
+      "selectionId": "I93-CLASS_E5",
+      "x": 9381.048,
+      "y": 6585.188,
+      "lines": [
+        "BRECKINRIDGE CO",
+        "FAA I93  RWY 10/28",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6981777808164055,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "8A3-CLASS_E5",
+      "selectionId": "8A3-CLASS_E5",
+      "x": 11813.037,
+      "y": 10136.529,
+      "lines": [
+        "LIVINGSTON MUNI",
+        "FAA 8A3  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6971724618330574,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "DXE-CLASS_E5",
+      "selectionId": "DXE-CLASS_E5",
+      "x": 2036.939,
+      "y": 9176.543,
+      "lines": [
+        "DEXTER MUNI",
+        "FAA DXE  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6965720909180719,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "M21-CLASS_E5",
+      "selectionId": "M21-CLASS_E5",
+      "x": 7899.124,
+      "y": 8059.113,
+      "lines": [
+        "MUHLENBERG CO",
+        "FAA M21  RWY 06/24",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6961497910177248,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "SIV-CLASS_E5",
+      "selectionId": "SIV-CLASS_E5",
+      "x": 7284.995,
+      "y": 3107.798,
+      "lines": [
+        "SULLIVAN CO",
+        "FAA SIV  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6960459693885918,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "SME-CLASS_E5",
+      "selectionId": "SME-CLASS_E5",
+      "x": 13233.458,
+      "y": 8529.18,
+      "lines": [
+        "LAKE CUMBERLAND RGNL",
+        "FAA SME  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6959499804608477,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "RGA-CLASS_E5",
+      "selectionId": "RGA-CLASS_E5",
+      "x": 13778.352,
+      "y": 6891.82,
+      "lines": [
+        "CENTRAL KENTUCKY RGNL",
+        "FAA RGA  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6956957552007635,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "BFR-CLASS_E5",
+      "selectionId": "BFR-CLASS_E5",
+      "x": 9342.618,
+      "y": 3819.533,
+      "lines": [
+        "VIRGIL I GRISSOM MUNI",
+        "FAA BFR  RWY 13/31",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6948577387089094,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "HAO-CLASS_E5",
+      "selectionId": "HAO-CLASS_E5",
+      "x": 13245.006,
+      "y": 2364.7,
+      "lines": [
+        "BUTLER CO RGNL/HOGAN FLD",
+        "FAA HAO  RWY 12/30",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6943123785737255,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "RID-CLASS_E5",
+      "selectionId": "RID-CLASS_E5",
+      "x": 12563.805,
+      "y": 1354.251,
+      "lines": [
+        "RICHMOND MUNI",
+        "FAA RID  RWY 06/24",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6942752673776506,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "SRB-CLASS_E5",
+      "selectionId": "SRB-CLASS_E5",
+      "x": 11370.765,
+      "y": 10900.259,
+      "lines": [
+        "UPPER CUMBERLAND RGNL",
+        "FAA SRB  RWY 04/22",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6939094605114157,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "MAW-CLASS_E5",
+      "selectionId": "MAW-CLASS_E5",
+      "x": 1917.033,
+      "y": 9637.681,
+      "lines": [
+        "MALDEN RGNL",
+        "FAA MAW  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6938307732602476,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "2M0-CLASS_E5",
+      "selectionId": "2M0-CLASS_E5",
+      "x": 6430.683,
+      "y": 8350.299,
+      "lines": [
+        "PRINCETON-CALDWELL CO",
+        "FAA 2M0  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6931812003643747,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "M20-CLASS_E5",
+      "selectionId": "M20-CLASS_E5",
+      "x": 9768.169,
+      "y": 7589.418,
+      "lines": [
+        "LEITCHFLD-GRAYSON CO",
+        "FAA M20  RWY 02/20",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6915836353939556,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "POF-CLASS_E5",
+      "selectionId": "POF-CLASS_E5",
+      "x": 1228.67,
+      "y": 9158.697,
+      "lines": [
+        "POPLAR BLUFF RGNL BUSINESS",
+        "FAA POF  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6914575997160702,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "IOB-CLASS_E5",
+      "selectionId": "IOB-CLASS_E5",
+      "x": 14472.92,
+      "y": 5749.192,
+      "lines": [
+        "MT STERLING/MONTGOMERY CO",
+        "FAA IOB  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6913889896911225,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "MWO-CLASS_E5",
+      "selectionId": "MWO-CLASS_E5",
+      "x": 13211.927,
+      "y": 1916.086,
+      "lines": [
+        "MIDDLETOWN RGNL/HOOK FLD",
+        "FAA MWO  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6910349517200207,
+      "anchorX": 13486.495,
+      "anchorY": 1916.086,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "H96-CLASS_E5",
+      "selectionId": "H96-CLASS_E5",
+      "x": 4205.036,
+      "y": 5993.918,
+      "lines": [
+        "BENTON MUNI",
+        "FAA H96  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6909152673505872,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "IJX-CLASS_E5",
+      "selectionId": "IJX-CLASS_E5",
+      "x": 1632.337,
+      "y": 1301.068,
+      "lines": [
+        "JACKSONVILLE MUNI",
+        "FAA IJX  RWY 13/31",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6907571038767556,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "1H8-CLASS_E5",
+      "selectionId": "1H8-CLASS_E5",
+      "x": 6151.544,
+      "y": 2615.433,
+      "lines": [
+        "CASEY MUNI",
+        "FAA 1H8  RWY 04/22",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.690513206020346,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "SCX-CLASS_E5",
+      "selectionId": "SCX-CLASS_E5",
+      "x": 13340.546,
+      "y": 9988.57,
+      "lines": [
+        "SCOTT MUNI",
+        "FAA SCX  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6891518830434478,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "SLO-CLASS_E5",
+      "selectionId": "SLO-CLASS_E5",
+      "x": 4168.431,
+      "y": 4325.598,
+      "lines": [
+        "SALEM-LECKRONE",
+        "FAA SLO  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6889041073589636,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "LOZ-CLASS_E5",
+      "selectionId": "LOZ-CLASS_E5",
+      "x": 14314.274,
+      "y": 8404.127,
+      "lines": [
+        "LONDON/CORBIN/MAGEE",
+        "FAA LOZ  RWY 06/24",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6885026187579164,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "TKX-CLASS_E5",
+      "selectionId": "TKX-CLASS_E5",
+      "x": 1798.53,
+      "y": 10609.898,
+      "lines": [
+        "KENNETT MEML",
+        "FAA TKX  RWY 02/20",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6884995732580902,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "FYG-CLASS_E5",
+      "selectionId": "FYG-CLASS_E5",
+      "x": 410.074,
+      "y": 4098.187,
+      "lines": [
+        "WASHINGTON RGNL",
+        "FAA FYG  RWY 15/33",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6884592837379228,
+      "anchorX": 135.505,
+      "anchorY": 4372.691,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "MGY-CLASS_E5",
+      "selectionId": "MGY-CLASS_E5",
+      "x": 13830.014,
+      "y": 1754.57,
+      "lines": [
+        "DAYTON/WRIGHT BROTHERS",
+        "FAA MGY  RWY 02/20",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6881838431214901,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "BYL-CLASS_E5",
+      "selectionId": "BYL-CLASS_E5",
+      "x": 14129.641,
+      "y": 9071.965,
+      "lines": [
+        "WILLIAMSBURG-WHITLEY CO",
+        "FAA BYL  RWY 02/20",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6877119398730724,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "4M7-CLASS_E5",
+      "selectionId": "4M7-CLASS_E5",
+      "x": 8631.977,
+      "y": 9171.442,
+      "lines": [
+        "RUSSELLVILLE-LOGAN CO",
+        "FAA 4M7  RWY 07/25",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6865350743637951,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "PRG-CLASS_E5",
+      "selectionId": "PRG-CLASS_E5",
+      "x": 6833.058,
+      "y": 1575.452,
+      "lines": [
+        "EDGAR CO",
+        "FAA PRG  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6841918549928399,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "GDK-CLASS_E5",
+      "selectionId": "GDK-CLASS_E5",
+      "x": 14016.913,
+      "y": 1471.259,
+      "lines": [
+        "GREENE CO/LEWIS A JACKSON RGNL",
+        "FAA GDK  RWY 07/25",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6840954172954199,
+      "anchorX": 14291.482,
+      "anchorY": 1471.259,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "2H0-CLASS_E5",
+      "selectionId": "2H0-CLASS_E5",
+      "x": 4440.269,
+      "y": 2313.712,
+      "lines": [
+        "SHELBY CO",
+        "FAA 2H0  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6816302058826369,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "GRE-CLASS_E5",
+      "selectionId": "GRE-CLASS_E5",
+      "x": 3325.5,
+      "y": 3804.052,
+      "lines": [
+        "GREENVILLE",
+        "FAA GRE  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6815041298725976,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "I63-CLASS_E5",
+      "selectionId": "I63-CLASS_E5",
+      "x": 505.211,
+      "y": 712.391,
+      "lines": [
+        "MT STERLING MUNI",
+        "FAA I63  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6812647966194313,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "SCA-CLASS_E5",
+      "selectionId": "SCA-CLASS_E5",
+      "x": 14195.994,
+      "y": 164.803,
+      "lines": [
+        "SIDNEY MUNI",
+        "FAA SCA  RWY 10/28",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6799968705818948,
+      "anchorX": 13927.392,
+      "anchorY": 37.376,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "CIR-CLASS_E5",
+      "selectionId": "CIR-CLASS_E5",
+      "x": 3570.39,
+      "y": 8515.02,
+      "lines": [
+        "CAIRO RGNL",
+        "FAA CIR  RWY 14/32",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6791868915150315,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "SAR-CLASS_E5",
+      "selectionId": "SAR-CLASS_E5",
+      "x": 2629.144,
+      "y": 5591.767,
+      "lines": [
+        "SPARTA COMMUNITY-HUNTER FLD",
+        "FAA SAR  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6791802710120346,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "TZV-CLASS_E5",
+      "selectionId": "TZV-CLASS_E5",
+      "x": 11073.607,
+      "y": 9325.148,
+      "lines": [
+        "TOMPKINSVILLE/MONROE CO",
+        "FAA TZV  RWY 04/22",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6754515769195217,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "1M7-CLASS_E5",
+      "selectionId": "1M7-CLASS_E5",
+      "x": 4183.029,
+      "y": 9873.187,
+      "lines": [
+        "FULTON",
+        "FAA 1M7  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6748447166247891,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "TAZ-CLASS_E5",
+      "selectionId": "TAZ-CLASS_E5",
+      "x": 3458.667,
+      "y": 1979.372,
+      "lines": [
+        "TAYLORVILLE MUNI",
+        "FAA TAZ  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6746369908418366,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "3LF-CLASS_E5",
+      "selectionId": "3LF-CLASS_E5",
+      "x": 2738.063,
+      "y": 2935.85,
+      "lines": [
+        "LITCHFLD MUNI",
+        "FAA 3LF  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6745589118393972,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "0M5-CLASS_E5",
+      "selectionId": "0M5-CLASS_E5",
+      "x": 6673.674,
+      "y": 10948.624,
+      "lines": [
+        "HUMPHREYS CO",
+        "FAA 0M5  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6742804952970817,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "UMP-CLASS_E5",
+      "selectionId": "UMP-CLASS_E5",
+      "x": 9704.604,
+      "y": 686.213,
+      "lines": [
+        "INDIANAPOLIS METRO",
+        "FAA UMP  RWY 15/33",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.673993018747877,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "C16-CLASS_E5",
+      "selectionId": "C16-CLASS_E5",
+      "x": 5771.265,
+      "y": 397.639,
+      "lines": [
+        "FRASCA FLD",
+        "FAA C16  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6737543897578883,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "H88-CLASS_E5",
+      "selectionId": "H88-CLASS_E5",
+      "x": 1644.582,
+      "y": 6983.448,
+      "lines": [
+        "A PAUL VANCE FREDERICKTOWN RGNL",
+        "FAA H88  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6685160262841465,
+      "anchorX": 1370.013,
+      "anchorY": 6983.448,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "UWL-CLASS_E5",
+      "selectionId": "UWL-CLASS_E5",
+      "x": 11304.487,
+      "y": 1336.31,
+      "lines": [
+        "NEW CASTLE HENRY CO MARLATT FLD",
+        "FAA UWL  RWY 10/28",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6681738105896312,
+      "anchorX": 11579.056,
+      "anchorY": 1061.807,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "EKQ-CLASS_E5",
+      "selectionId": "EKQ-CLASS_E5",
+      "x": 12742.945,
+      "y": 8956.355,
+      "lines": [
+        "WAYNE CO",
+        "FAA EKQ  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6672641394102314,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "FAM-CLASS_E5",
+      "selectionId": "FAM-CLASS_E5",
+      "x": 1088.057,
+      "y": 6568.263,
+      "lines": [
+        "FARMINGTON RGNL",
+        "FAA FAM  RWY 02/20",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6670052740914425,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "K62-CLASS_E5",
+      "selectionId": "K62-CLASS_E5",
+      "x": 13565.13,
+      "y": 4085.929,
+      "lines": [
+        "GENE SNYDER",
+        "FAA K62  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6668396445425255,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "OXD-CLASS_E5",
+      "selectionId": "OXD-CLASS_E5",
+      "x": 12425.201,
+      "y": 2015.639,
+      "lines": [
+        "MIAMI UNIV",
+        "FAA OXD  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.666444811032306,
+      "anchorX": 12700.499,
+      "anchorY": 2016.992,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "AAA-CLASS_E5",
+      "selectionId": "AAA-CLASS_E5",
+      "x": 3480.873,
+      "y": 335.763,
+      "lines": [
+        "LOGAN CO",
+        "FAA AAA  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.665443489368148,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "0A3-CLASS_E5",
+      "selectionId": "0A3-CLASS_E5",
+      "x": 10776.623,
+      "y": 11111.401,
+      "lines": [
+        "SMITHVILLE MUNI",
+        "FAA 0A3  RWY 06/24",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6651307857489022,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "M85-CLASS_E5",
+      "selectionId": "M85-CLASS_E5",
+      "x": 2094.208,
+      "y": 10046.304,
+      "lines": [
+        "GIDEON MEML",
+        "FAA M85  RWY 15/33",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6629729822144134,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "8WC-CLASS_E5",
+      "selectionId": "8WC-CLASS_E5",
+      "x": 473.267,
+      "y": 6107.695,
+      "lines": [
+        "WASHINGTON CO",
+        "FAA 8WC  RWY 02/20",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.662769919346224,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "M05-CLASS_E5",
+      "selectionId": "M05-CLASS_E5",
+      "x": 2559.313,
+      "y": 10838.685,
+      "lines": [
+        "CARUTHERSVILLE MEML",
+        "FAA M05  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6617221950219393,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "special-25",
+      "selectionId": "special-25",
+      "x": 14075.544,
+      "y": 10790.866,
+      "lines": [
+        "NOAKRIDGE",
+        "OAK RIDGE NSA"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.66,
+      "anchorX": 14075.544,
+      "anchorY": 11198.194,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "special",
+      "detailTier": "core"
+    },
+    {
+      "id": "I22-CLASS_E5",
+      "selectionId": "I22-CLASS_E5",
+      "x": 12366.745,
+      "y": 352.865,
+      "lines": [
+        "RANDOLPH CO",
+        "FAA I22  RWY 08/26",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.659828158129435,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "I68-CLASS_E5",
+      "selectionId": "I68-CLASS_E5",
+      "x": 13509.443,
+      "y": 2093.316,
+      "lines": [
+        "WARREN CO/JOHN LANE FLD",
+        "FAA I68  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6597281229147473,
+      "anchorX": 13786.329,
+      "anchorY": 2089.025,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "M34-CLASS_E5",
+      "selectionId": "M34-CLASS_E5",
+      "x": 5500.349,
+      "y": 8620.26,
+      "lines": [
+        "KENTUCKY DAM STATE PARK",
+        "FAA M34  RWY 10/28",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6582840926058606,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "PPQ-CLASS_E5",
+      "selectionId": "PPQ-CLASS_E5",
+      "x": 526.255,
+      "y": 1623.369,
+      "lines": [
+        "PITTSFLD PENSTONE MUNI",
+        "FAA PPQ  RWY 13/31",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6551400894935717,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "VES-CLASS_E5",
+      "selectionId": "VES-CLASS_E5",
+      "x": 13157.476,
+      "y": 150.719,
+      "lines": [
+        "DARKE CO",
+        "FAA VES  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6549461363155242,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "PJY-CLASS_E5",
+      "selectionId": "PJY-CLASS_E5",
+      "x": 3320.357,
+      "y": 6054.403,
+      "lines": [
+        "PINCKNEYVILLE/DU QUOIN",
+        "FAA PJY  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.654221838064965,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "4M9-CLASS_E5",
+      "selectionId": "4M9-CLASS_E5",
+      "x": 517.398,
+      "y": 10105.252,
+      "lines": [
+        "CORNING MUNI",
+        "FAA 4M9  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.653133453809399,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "VLA-CLASS_E5",
+      "selectionId": "VLA-CLASS_E5",
+      "x": 3768.697,
+      "y": 3404.895,
+      "lines": [
+        "VANDALIA MUNI",
+        "FAA VLA  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6530571094521661,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "JAU-CLASS_E5",
+      "selectionId": "JAU-CLASS_E5",
+      "x": 14174.989,
+      "y": 10274.503,
+      "lines": [
+        "COLONEL TOMMY C STINER AIRFLD",
+        "FAA JAU  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6523068021112762,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "PGR-CLASS_E5",
+      "selectionId": "PGR-CLASS_E5",
+      "x": 783.38,
+      "y": 10979.692,
+      "lines": [
+        "KIRK FLD",
+        "FAA PGR  RWY 04/22",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6507316850235203,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "I74-CLASS_E5",
+      "selectionId": "I74-CLASS_E5",
+      "x": 14315.56,
+      "y": 568.865,
+      "lines": [
+        "GRIMES FLD",
+        "FAA I74  RWY 02/20",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6464243614420822,
+      "anchorX": 14730.75,
+      "anchorY": 294.382,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "CHQ-CLASS_E5",
+      "selectionId": "CHQ-CLASS_E5",
+      "x": 3265.218,
+      "y": 9028.897,
+      "lines": [
+        "MISSISSIPPI CO",
+        "FAA CHQ  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6446852708314078,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "5I4-CLASS_E5",
+      "selectionId": "5I4-CLASS_E5",
+      "x": 9764.61,
+      "y": 302.232,
+      "lines": [
+        "SHERIDAN",
+        "FAA 5I4  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6409760159583697,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "EIW-CLASS_E5",
+      "selectionId": "EIW-CLASS_E5",
+      "x": 2742.694,
+      "y": 9821.875,
+      "lines": [
+        "CO MEML",
+        "FAA EIW  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6377784137288249,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "0I8-CLASS_E5",
+      "selectionId": "0I8-CLASS_E5",
+      "x": 13817.194,
+      "y": 4964.194,
+      "lines": [
+        "CYNTHIANA-HARRISON CO",
+        "FAA 0I8  RWY 11/29",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6360983009509997,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "2A1-CLASS_E5",
+      "selectionId": "2A1-CLASS_E5",
+      "x": 12587.119,
+      "y": 10284.728,
+      "lines": [
+        "JAMESTOWN MUNI",
+        "FAA 2A1  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6321691394528849,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "M12-CLASS_E5",
+      "selectionId": "M12-CLASS_E5",
+      "x": 2166.125,
+      "y": 11052.484,
+      "lines": [
+        "STEELE MUNI",
+        "FAA M12  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6286717775731296,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "GEO-CLASS_E5",
+      "selectionId": "GEO-CLASS_E5",
+      "x": 14479.766,
+      "y": 3580.955,
+      "lines": [
+        "BROWN CO",
+        "FAA GEO  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.628363564180429,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "3I7-CLASS_E5",
+      "selectionId": "3I7-CLASS_E5",
+      "x": 13172.007,
+      "y": 915.243,
+      "lines": [
+        "DAYTON/PHILLIPSBURG",
+        "FAA 3I7  RWY 03/21",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6269970244716926,
+      "anchorX": 13446.576,
+      "anchorY": 915.26,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "core"
+    },
+    {
+      "id": "I17-CLASS_E5",
+      "selectionId": "I17-CLASS_E5",
+      "x": 13610.895,
+      "y": 266.155,
+      "lines": [
+        "PIQUA/HARTZELL FLD",
+        "FAA I17  RWY 08/26",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6228529135224506,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "I96-CLASS_E5",
+      "selectionId": "I96-CLASS_E5",
+      "x": 11829.444,
+      "y": 8359.899,
+      "lines": [
+        "COLUMBIA-ADAIR CO",
+        "FAA I96  RWY 08/26",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.616284457639999,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "I67-CLASS_E5",
+      "selectionId": "I67-CLASS_E5",
+      "x": 12738.814,
+      "y": 2653.775,
+      "lines": [
+        "CINCINNATI WEST",
+        "FAA I67  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.608713406441288,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "I99-CLASS_E5",
+      "selectionId": "I99-CLASS_E5",
+      "x": 10930.185,
+      "y": 225.754,
+      "lines": [
+        "ALEXANDRIA",
+        "FAA I99  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6056789647584055,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "18I-CLASS_E5",
+      "selectionId": "18I-CLASS_E5",
+      "x": 13733.919,
+      "y": 9346.246,
+      "lines": [
+        "MC CREARY CO",
+        "FAA 18I  RWY 04/22",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.5993387512568099,
+      "labelGroup": "airfield",
+      "airspaceType": "CLASS_E5",
+      "detailTier": "extended"
+    },
+    {
+      "id": "shelf-CLASS_D-47",
+      "selectionId": "MQY-CLASS_D",
+      "x": 9263.933,
+      "y": 11148.271,
+      "lines": [
+        "MQY D",
+        "SFC-25"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-48",
+      "selectionId": "LUK-CLASS_D",
+      "x": 13477.08,
+      "y": 3568.727,
+      "lines": [
+        "LUK D",
+        "SFC-30"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 13477.08,
+      "anchorY": 3046.285,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-49",
+      "selectionId": "AID-CLASS_D",
+      "x": 10985.269,
+      "y": 465.088,
+      "lines": [
+        "AID D",
+        "SFC-34"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-50",
+      "selectionId": "BLV-CLASS_D",
+      "x": 2371.435,
+      "y": 5069.192,
+      "lines": [
+        "BLV D",
+        "SFC-30"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 2371.435,
+      "anchorY": 4546.751,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-51",
+      "selectionId": "DEC-CLASS_D",
+      "x": 4413.379,
+      "y": 1201.803,
+      "lines": [
+        "DEC D",
+        "SFC-32"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-52",
+      "selectionId": "CPS-CLASS_D",
+      "x": 1322.931,
+      "y": 4463.311,
+      "lines": [
+        "CPS D",
+        "SFC-29"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 1712.642,
+      "anchorY": 4463.311,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-53",
+      "selectionId": "OWB-CLASS_D",
+      "x": 7873.565,
+      "y": 6711.89,
+      "lines": [
+        "OWB D",
+        "SFC-29"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-54",
+      "selectionId": "JWN-CLASS_D",
+      "x": 7203.436,
+      "y": 9453.231,
+      "lines": [
+        "JWN D",
+        "SFC-31"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-55",
+      "selectionId": "MWA-CLASS_D",
+      "x": 3761.338,
+      "y": 6650.935,
+      "lines": [
+        "MWA D",
+        "SFC-30"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 4035.907,
+      "anchorY": 6650.935,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-56",
+      "selectionId": "CGI-CLASS_D",
+      "x": 2850.263,
+      "y": 8016.839,
+      "lines": [
+        "CGI D",
+        "SFC-28"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-57",
+      "selectionId": "MDH-CLASS_D",
+      "x": 3535.812,
+      "y": 6528.873,
+      "lines": [
+        "MDH D",
+        "SFC-29"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-58",
+      "selectionId": "BAK-CLASS_D",
+      "x": 10450.341,
+      "y": 2697.607,
+      "lines": [
+        "BAK D",
+        "SFC-32"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-59",
+      "selectionId": "LOU-CLASS_D",
+      "x": 10352.774,
+      "y": 6251.516,
+      "lines": [
+        "LOU D",
+        "SFC-33"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-60",
+      "selectionId": "BMG-CLASS_D",
+      "x": 8984.017,
+      "y": 3024.603,
+      "lines": [
+        "BMG D",
+        "SFC-33"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-61",
+      "selectionId": "HUF-CLASS_D",
+      "x": 7571.128,
+      "y": 2501.608,
+      "lines": [
+        "HUF D",
+        "SFC-31"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 7571.128,
+      "anchorY": 2227.104,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-62",
+      "selectionId": "MIE-CLASS_D",
+      "x": 11415.626,
+      "y": 153.522,
+      "lines": [
+        "MIE D",
+        "SFC-34"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-63",
+      "selectionId": "SUS-CLASS_D",
+      "x": 699.99,
+      "y": 4192.971,
+      "lines": [
+        "SUS D",
+        "SFC-30"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-64",
+      "selectionId": "ILN-CLASS_D",
+      "x": 14633.182,
+      "y": 2145.459,
+      "lines": [
+        "ILN D",
+        "SFC-36"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-65",
+      "selectionId": "ALN-CLASS_D",
+      "x": 1961.098,
+      "y": 3632.227,
+      "lines": [
+        "ALN D",
+        "SFC-30"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-66",
+      "selectionId": "JWN-CLASS_D",
+      "x": 6928.868,
+      "y": 9506.361,
+      "lines": [
+        "JWN D",
+        "SFC-31"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 7203.436,
+      "anchorY": 9506.361,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-67",
+      "selectionId": "ILN-CLASS_D",
+      "x": 14174.611,
+      "y": 1393.389,
+      "lines": [
+        "ILN D",
+        "SFC-34"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 14174.611,
+      "anchorY": 1118.886,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-68",
+      "selectionId": "JWN-CLASS_D",
+      "x": 7593.147,
+      "y": 9506.361,
+      "lines": [
+        "JWN D",
+        "SFC-31"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 7203.436,
+      "anchorY": 9506.361,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-69",
+      "selectionId": "PAH-CLASS_D",
+      "x": 4506.121,
+      "y": 8201.559,
+      "lines": [
+        "PAH D",
+        "SFC-29"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 4506.121,
+      "anchorY": 8476.062,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-70",
+      "selectionId": "JWN-CLASS_D",
+      "x": 8481.635,
+      "y": 11062.423,
+      "lines": [
+        "JWN D",
+        "SFC-24"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "anchorX": 8481.635,
+      "anchorY": 10787.92,
+      "placementMode": "callout",
+      "elevation": 0.05,
+      "connector": true,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    },
+    {
+      "id": "shelf-CLASS_D-71",
+      "selectionId": "LOU-CLASS_D",
+      "x": 11043.612,
+      "y": 5394.412,
+      "lines": [
+        "LOU D",
+        "SFC-22"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.55,
+      "labelGroup": "shelf",
+      "airspaceType": "CLASS_D",
+      "detailTier": "core"
+    }
+  ],
+  "stats": {
+    "totalItems": 303,
+    "classEDetailItems": 161,
+    "coreClassEDetailItems": 88,
+    "extendedClassEDetailItems": 73
+  }
+}

@@ -1,0 +1,1465 @@
+{
+  "schema": "babylon-vr-labels-v1",
+  "items": [
+    {
+      "id": "DEEKS",
+      "x": 10264.801,
+      "y": 209.636,
+      "lines": [
+        "DEEKS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "IRVIN",
+      "x": 14365.465,
+      "y": 6520.401,
+      "lines": [
+        "IRVIN"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "WESON",
+      "x": 6294.8,
+      "y": 6579.322,
+      "lines": [
+        "WESON"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ADVAY",
+      "x": 9153.06,
+      "y": 979.574,
+      "lines": [
+        "ADVAY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ALING",
+      "x": 2971.017,
+      "y": 7564.192,
+      "lines": [
+        "ALING"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ALLOE",
+      "x": 7829.691,
+      "y": 1016.891,
+      "lines": [
+        "ALLOE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ANTTI",
+      "x": 8557.993,
+      "y": 1124.698,
+      "lines": [
+        "ANTTI"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "APALO",
+      "x": 8506.936,
+      "y": 6013.94,
+      "lines": [
+        "APALO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "APUFO",
+      "x": 7434.171,
+      "y": 3461.901,
+      "lines": [
+        "APUFO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "AQUAS",
+      "x": 4292.218,
+      "y": 2163.771,
+      "lines": [
+        "AQUAS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ARBAS",
+      "x": 12435.327,
+      "y": 800.225,
+      "lines": [
+        "ARBAS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ARCOL",
+      "x": 5590.504,
+      "y": 1695.515,
+      "lines": [
+        "ARCOL"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ARNOL",
+      "x": 1276.601,
+      "y": 5253.95,
+      "lines": [
+        "ARNOL"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ATTIC",
+      "x": 2174.401,
+      "y": 573.632,
+      "lines": [
+        "ATTIC"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "AUBUR",
+      "x": 2604.224,
+      "y": 2018.408,
+      "lines": [
+        "AUBUR"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "AUGST",
+      "x": 489.384,
+      "y": 4075.136,
+      "lines": [
+        "AUGST"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "AUGUS",
+      "x": 7691.159,
+      "y": 5206.021,
+      "lines": [
+        "AUGUS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "AZHUP",
+      "x": 8944.118,
+      "y": 249.641,
+      "lines": [
+        "AZHUP"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "BEMEN",
+      "x": 5165.004,
+      "y": 980.482,
+      "lines": [
+        "BEMEN"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "BETHY",
+      "x": 10385.304,
+      "y": 5807.632,
+      "lines": [
+        "BETHY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "BLANO",
+      "x": 7221.955,
+      "y": 1804.038,
+      "lines": [
+        "BLANO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "BLLUE",
+      "x": 5070.011,
+      "y": 462.752,
+      "lines": [
+        "BLLUE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "BRBON",
+      "x": 11058.268,
+      "y": 6425.618,
+      "lines": [
+        "BRBON"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "BREEZ",
+      "x": 2911.501,
+      "y": 4427.233,
+      "lines": [
+        "BREEZ"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "BRUNO",
+      "x": 13204.207,
+      "y": 6714.064,
+      "lines": [
+        "BRUNO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "BUDDY",
+      "x": 3382.811,
+      "y": 1268.642,
+      "lines": [
+        "BUDDY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "BUNKA",
+      "x": 7891.292,
+      "y": 3193.778,
+      "lines": [
+        "BUNKA"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CENUD",
+      "x": 11609.66,
+      "y": 8761.754,
+      "lines": [
+        "CENUD"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CHALI",
+      "x": 12264.839,
+      "y": 6188.483,
+      "lines": [
+        "CHALI"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CHERI",
+      "x": 9216.147,
+      "y": 5419.69,
+      "lines": [
+        "CHERI"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CLANG",
+      "x": 10403.006,
+      "y": 714.248,
+      "lines": [
+        "CLANG"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CLEGG",
+      "x": 12552.641,
+      "y": 5474.458,
+      "lines": [
+        "CLEGG"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CLOTT",
+      "x": 8692.13,
+      "y": 1930.901,
+      "lines": [
+        "CLOTT"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CLOWN",
+      "x": 7525.029,
+      "y": 4663.203,
+      "lines": [
+        "CLOWN"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CODEL",
+      "x": 14266.093,
+      "y": 5865.595,
+      "lines": [
+        "CODEL"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "COFEY",
+      "x": 2982.127,
+      "y": 4732.139,
+      "lines": [
+        "COFEY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CORKI",
+      "x": 3976.822,
+      "y": 3780.832,
+      "lines": [
+        "CORKI"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "CRATS",
+      "x": 4696.897,
+      "y": 4511.963,
+      "lines": [
+        "CRATS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DAHLL",
+      "x": 5029.88,
+      "y": 5485.26,
+      "lines": [
+        "DAHLL"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DAMEN",
+      "x": 10103.078,
+      "y": 5557.747,
+      "lines": [
+        "DAMEN"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DARBY",
+      "x": 12483.497,
+      "y": 6869.673,
+      "lines": [
+        "DARBY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DAYRE",
+      "x": 3461.046,
+      "y": 2582.773,
+      "lines": [
+        "DAYRE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DELMA",
+      "x": 117.142,
+      "y": 5550.161,
+      "lines": [
+        "DELMA"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DEMSE",
+      "x": 11388.915,
+      "y": 6807.546,
+      "lines": [
+        "DEMSE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DERDF",
+      "x": 202.537,
+      "y": 4496.195,
+      "lines": [
+        "DERDF"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DOLLY",
+      "x": 13225.934,
+      "y": 7513.744,
+      "lines": [
+        "DOLLY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DOWNS",
+      "x": 9766.471,
+      "y": 5875.625,
+      "lines": [
+        "DOWNS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DUEAS",
+      "x": 2714.716,
+      "y": 7433.788,
+      "lines": [
+        "DUEAS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DUPON",
+      "x": 2694.36,
+      "y": 1555.071,
+      "lines": [
+        "DUPON"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "DUTMY",
+      "x": 2929.249,
+      "y": 4720.421,
+      "lines": [
+        "DUTMY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ELDON",
+      "x": 1307.803,
+      "y": 3323.621,
+      "lines": [
+        "ELDON"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "EMKAA",
+      "x": 1257.407,
+      "y": 4393.302,
+      "lines": [
+        "EMKAA"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "EMTEE",
+      "x": 6159.452,
+      "y": 770.61,
+      "lines": [
+        "EMTEE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ESONE",
+      "x": 13955.301,
+      "y": 8635.129,
+      "lines": [
+        "ESONE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "EWITT",
+      "x": 4552.982,
+      "y": 230.866,
+      "lines": [
+        "EWITT"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "EYTEJ",
+      "x": 8752.564,
+      "y": 3549.681,
+      "lines": [
+        "EYTEJ"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "FASHE",
+      "x": 1539.245,
+      "y": 2981.159,
+      "lines": [
+        "FASHE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "FEDRA",
+      "x": 12151.896,
+      "y": 5852.392,
+      "lines": [
+        "FEDRA"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "FEKRO",
+      "x": 1326.765,
+      "y": 4367.201,
+      "lines": [
+        "FEKRO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "FILMS",
+      "x": 8730.461,
+      "y": 1621.387,
+      "lines": [
+        "FILMS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "FINCH",
+      "x": 11934.492,
+      "y": 5584.729,
+      "lines": [
+        "FINCH"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "FRIZN",
+      "x": 9642.133,
+      "y": 4149.02,
+      "lines": [
+        "FRIZN"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "GAULS",
+      "x": 6229.732,
+      "y": 1827.072,
+      "lines": [
+        "GAULS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "GIFTS",
+      "x": 2409.341,
+      "y": 3020.88,
+      "lines": [
+        "GIFTS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "GLASS",
+      "x": 1325.37,
+      "y": 5615.61,
+      "lines": [
+        "GLASS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "GOZUM",
+      "x": 7541.488,
+      "y": 2901.974,
+      "lines": [
+        "GOZUM"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "GRILL",
+      "x": 11065.754,
+      "y": 10748.488,
+      "lines": [
+        "GRILL"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "GROWL",
+      "x": 2719.085,
+      "y": 517.713,
+      "lines": [
+        "GROWL"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HARME",
+      "x": 10267.263,
+      "y": 10385.991,
+      "lines": [
+        "HARME"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HASSE",
+      "x": 3935.013,
+      "y": 1368.033,
+      "lines": [
+        "HASSE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HEALS",
+      "x": 10576.305,
+      "y": 4629.963,
+      "lines": [
+        "HEALS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HERMS",
+      "x": 11417.36,
+      "y": 6796.742,
+      "lines": [
+        "HERMS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HETAP",
+      "x": 10175.888,
+      "y": 10421.101,
+      "lines": [
+        "HETAP"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HILTS",
+      "x": 5470.963,
+      "y": 5687.257,
+      "lines": [
+        "HILTS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HOLAN",
+      "x": 7923.625,
+      "y": 5699.816,
+      "lines": [
+        "HOLAN"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HOMAR",
+      "x": 10941.781,
+      "y": 1031.721,
+      "lines": [
+        "HOMAR"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HONOS",
+      "x": 9994.888,
+      "y": 4514.244,
+      "lines": [
+        "HONOS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "HOUSE",
+      "x": 9851.904,
+      "y": 3276.041,
+      "lines": [
+        "HOUSE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ICUCO",
+      "x": 9668.719,
+      "y": 2302.789,
+      "lines": [
+        "ICUCO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "IMPER",
+      "x": 1209.817,
+      "y": 4759.256,
+      "lines": [
+        "IMPER"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JACOB",
+      "x": 2692.538,
+      "y": 3965.047,
+      "lines": [
+        "JACOB"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JAGER",
+      "x": 6518.863,
+      "y": 823.487,
+      "lines": [
+        "JAGER"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JAKKS",
+      "x": 8438.843,
+      "y": 351.795,
+      "lines": [
+        "JAKKS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JARAM",
+      "x": 14668.69,
+      "y": 8562.714,
+      "lines": [
+        "JARAM"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JAZZY",
+      "x": 7339.464,
+      "y": 944.453,
+      "lines": [
+        "JAZZY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JBEAM",
+      "x": 11040.998,
+      "y": 6544.026,
+      "lines": [
+        "JBEAM"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JELLO",
+      "x": 12817.564,
+      "y": 10120.261,
+      "lines": [
+        "JELLO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JELLS",
+      "x": 8886.481,
+      "y": 745.226,
+      "lines": [
+        "JELLS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JIGSY",
+      "x": 3857.295,
+      "y": 3797.867,
+      "lines": [
+        "JIGSY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JOLVU",
+      "x": 10105.475,
+      "y": 888.813,
+      "lines": [
+        "JOLVU"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "JOVAR",
+      "x": 5725.462,
+      "y": 3415.404,
+      "lines": [
+        "JOVAR"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "KELLY",
+      "x": 8866.251,
+      "y": 2319.218,
+      "lines": [
+        "KELLY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "KENBE",
+      "x": 4273.465,
+      "y": 4430.374,
+      "lines": [
+        "KENBE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "KENNS",
+      "x": 3862.465,
+      "y": 590.284,
+      "lines": [
+        "KENNS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "KIYSI",
+      "x": 8083.429,
+      "y": 1936.475,
+      "lines": [
+        "KIYSI"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LAMBS",
+      "x": 7905.029,
+      "y": 6080.187,
+      "lines": [
+        "LAMBS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LASKK",
+      "x": 3608.108,
+      "y": 722.764,
+      "lines": [
+        "LASKK"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LATHA",
+      "x": 3716.993,
+      "y": 1328.757,
+      "lines": [
+        "LATHA"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LAZYT",
+      "x": 11563.712,
+      "y": 5892.756,
+      "lines": [
+        "LAZYT"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LEBOY",
+      "x": 926.147,
+      "y": 2176.016,
+      "lines": [
+        "LEBOY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LEEDS",
+      "x": 12854.082,
+      "y": 735.442,
+      "lines": [
+        "LEEDS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LEFVO",
+      "x": 11076.899,
+      "y": 7298.432,
+      "lines": [
+        "LEFVO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LENON",
+      "x": 9936.238,
+      "y": 10512.81,
+      "lines": [
+        "LENON"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LEPER",
+      "x": 876.566,
+      "y": 8309.812,
+      "lines": [
+        "LEPER"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LISLE",
+      "x": 7473.333,
+      "y": 3257.577,
+      "lines": [
+        "LISLE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LITCH",
+      "x": 2542.805,
+      "y": 2334.117,
+      "lines": [
+        "LITCH"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LODGE",
+      "x": 5110.381,
+      "y": 400.021,
+      "lines": [
+        "LODGE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LOFTY",
+      "x": 2149.02,
+      "y": 2078.961,
+      "lines": [
+        "LOFTY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LOGIC",
+      "x": 14376.79,
+      "y": 6208.935,
+      "lines": [
+        "LOGIC"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LUNEY",
+      "x": 6787.92,
+      "y": 863.116,
+      "lines": [
+        "LUNEY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LUPCE",
+      "x": 7566.213,
+      "y": 2773.023,
+      "lines": [
+        "LUPCE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "LUSLY",
+      "x": 4985.32,
+      "y": 1571.243,
+      "lines": [
+        "LUSLY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MACKY",
+      "x": 7255.463,
+      "y": 5134.576,
+      "lines": [
+        "MACKY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MAIZE",
+      "x": 10237.958,
+      "y": 4766.28,
+      "lines": [
+        "MAIZE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MATAN",
+      "x": 8289.584,
+      "y": 1836.109,
+      "lines": [
+        "MATAN"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MAUDD",
+      "x": 12100.942,
+      "y": 6537.845,
+      "lines": [
+        "MAUDD"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MCFEE",
+      "x": 12624.046,
+      "y": 6340.006,
+      "lines": [
+        "MCFEE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MERAM",
+      "x": 1170.431,
+      "y": 4467.479,
+      "lines": [
+        "MERAM"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MIXKO",
+      "x": 11248.154,
+      "y": 6088.573,
+      "lines": [
+        "MIXKO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MOCEL",
+      "x": 4897.397,
+      "y": 730.754,
+      "lines": [
+        "MOCEL"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MOJOB",
+      "x": 1445.434,
+      "y": 6505.776,
+      "lines": [
+        "MOJOB"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MOODS",
+      "x": 1956.868,
+      "y": 4506.06,
+      "lines": [
+        "MOODS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MOTTS",
+      "x": 12102.079,
+      "y": 851.717,
+      "lines": [
+        "MOTTS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "MOUTH",
+      "x": 9696.082,
+      "y": 2448.034,
+      "lines": [
+        "MOUTH"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "NADDI",
+      "x": 10089.393,
+      "y": 5840.165,
+      "lines": [
+        "NADDI"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "NEWAT",
+      "x": 2489.044,
+      "y": 5274.653,
+      "lines": [
+        "NEWAT"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "NEWMY",
+      "x": 6291.63,
+      "y": 1159.968,
+      "lines": [
+        "NEWMY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "NEWTO",
+      "x": 11286.501,
+      "y": 978.154,
+      "lines": [
+        "NEWTO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "NIKEL",
+      "x": 2412.662,
+      "y": 6031.686,
+      "lines": [
+        "NIKEL"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "NOISE",
+      "x": 14717.803,
+      "y": 10648.607,
+      "lines": [
+        "NOISE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "NOUNS",
+      "x": 14172.518,
+      "y": 5575.378,
+      "lines": [
+        "NOUNS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "OBACO",
+      "x": 3326.908,
+      "y": 869.272,
+      "lines": [
+        "OBACO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "OFEND",
+      "x": 4928.233,
+      "y": 4715.889,
+      "lines": [
+        "OFEND"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "OJETO",
+      "x": 11299.053,
+      "y": 8069.517,
+      "lines": [
+        "OJETO"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "OPMUC",
+      "x": 8472.262,
+      "y": 3105.214,
+      "lines": [
+        "OPMUC"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "OREPE",
+      "x": 2733.811,
+      "y": 3427.791,
+      "lines": [
+        "OREPE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "ORLEY",
+      "x": 7261.041,
+      "y": 2039.671,
+      "lines": [
+        "ORLEY"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "OZMOE",
+      "x": 10079.358,
+      "y": 1896.987,
+      "lines": [
+        "OZMOE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "PAMPI",
+      "x": 3128.496,
+      "y": 7681.881,
+      "lines": [
+        "PAMPI"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "PANAE",
+      "x": 3870.627,
+      "y": 2106.962,
+      "lines": [
+        "PANAE"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "PENDS",
+      "x": 10779.75,
+      "y": 493.173,
+      "lines": [
+        "PENDS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "PRAYS",
+      "x": 2330.063,
+      "y": 3428.478,
+      "lines": [
+        "PRAYS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "PRINC",
+      "x": 6938.969,
+      "y": 5170.371,
+      "lines": [
+        "PRINC"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "RACYR",
+      "x": 8411.028,
+      "y": 3114.55,
+      "lines": [
+        "RACYR"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "RAILS",
+      "x": 3400.186,
+      "y": 548.69,
+      "lines": [
+        "RAILS"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    },
+    {
+      "id": "REBEL",
+      "x": 13669.229,
+      "y": 6629.515,
+      "lines": [
+        "REBEL"
+      ],
+      "style": "intersection-major",
+      "priority": 0.9
+    }
+  ]
+}

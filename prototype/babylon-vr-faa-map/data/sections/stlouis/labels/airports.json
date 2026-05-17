@@ -1,0 +1,1006 @@
+{
+  "schema": "babylon-vr-labels-v1",
+  "items": [
+    {
+      "id": "CVG",
+      "x": 12971.989,
+      "y": 3199.404,
+      "lines": [
+        "CVG",
+        "CINCINNATI/NORTHERN KENTUCKY INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "SDF",
+      "x": 10828.079,
+      "y": 5544.062,
+      "lines": [
+        "SDF",
+        "LOUISVILLE MUHAMMAD ALI INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "IND",
+      "x": 9623.281,
+      "y": 1514.354,
+      "lines": [
+        "IND",
+        "INDIANAPOLIS INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "BNA",
+      "x": 8925.09,
+      "y": 10937.938,
+      "lines": [
+        "BNA",
+        "NASHVILLE INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "STL",
+      "x": 1286.246,
+      "y": 3983.949,
+      "lines": [
+        "STL",
+        "ST LOUIS LAMBERT INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "DAY",
+      "x": 13813.388,
+      "y": 932.215,
+      "lines": [
+        "DAY",
+        "JAMES M COX DAYTON INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "ILN",
+      "x": 14724.454,
+      "y": 2145.467,
+      "lines": [
+        "ILN",
+        "WILMINGTON AIR PARK"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "BLV",
+      "x": 2371.435,
+      "y": 4546.757,
+      "lines": [
+        "BLV",
+        "SCOTT AFB/MIDAMERICA ST LOUIS"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "HUF",
+      "x": 7572.127,
+      "y": 2229.025,
+      "lines": [
+        "HUF",
+        "TERRE HAUTE RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "DEC",
+      "x": 4414.79,
+      "y": 1202.251,
+      "lines": [
+        "DEC",
+        "DECATUR"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "CMI",
+      "x": 5611.661,
+      "y": 679.683,
+      "lines": [
+        "CMI",
+        "UNIV OF ILLINOIS/WILLARD"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "ALN",
+      "x": 1961.098,
+      "y": 3632.233,
+      "lines": [
+        "ALN",
+        "ST LOUIS RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "MQY",
+      "x": 9263.933,
+      "y": 11237.211,
+      "lines": [
+        "MQY",
+        "SMYRNA"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "EVV",
+      "x": 7120.343,
+      "y": 5926.353,
+      "lines": [
+        "EVV",
+        "EVANSVILLE RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "MWA",
+      "x": 4035.907,
+      "y": 6650.939,
+      "lines": [
+        "MWA",
+        "VETERANS AIRPORT OF SOUTHERN ILLINOIS"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "SPI",
+      "x": 2772.113,
+      "y": 1145.996,
+      "lines": [
+        "SPI",
+        "ABRAHAM LINCOLN CAPITAL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "OWB",
+      "x": 7872.666,
+      "y": 6716.407,
+      "lines": [
+        "OWB",
+        "OWENSBORO/DAVIESS CO RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "SUS",
+      "x": 700.009,
+      "y": 4192.961,
+      "lines": [
+        "SUS",
+        "SPIRIT OF ST LOUIS"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "LEX",
+      "x": 13171.772,
+      "y": 5848.104,
+      "lines": [
+        "LEX",
+        "BLUE GRASS"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "CPS",
+      "x": 1714.742,
+      "y": 4463.882,
+      "lines": [
+        "CPS",
+        "ST LOUIS DOWNTOWN"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "MDH",
+      "x": 3535.812,
+      "y": 6582.006,
+      "lines": [
+        "MDH",
+        "SOUTHERN ILLINOIS"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "BMG",
+      "x": 8983.952,
+      "y": 3020.474,
+      "lines": [
+        "BMG",
+        "MONROE CO"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "CGI",
+      "x": 2842.283,
+      "y": 8016.675,
+      "lines": [
+        "CGI",
+        "CAPE GIRARDEAU RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "MIE",
+      "x": 11415.78,
+      "y": 104.569,
+      "lines": [
+        "MIE",
+        "DELAWARE CO RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "PAH",
+      "x": 4507.471,
+      "y": 8477.51,
+      "lines": [
+        "PAH",
+        "BARKLEY RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "BAK",
+      "x": 10450.444,
+      "y": 2697.689,
+      "lines": [
+        "BAK",
+        "COLUMBUS MUNI"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "LUK",
+      "x": 13479.092,
+      "y": 3041.93,
+      "lines": [
+        "LUK",
+        "CINCINNATI MUNI/LUNKEN FLD"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "JWN",
+      "x": 8481.634,
+      "y": 10787.921,
+      "lines": [
+        "JWN",
+        "JOHN C TUNE"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "AID",
+      "x": 10985.269,
+      "y": 465.096,
+      "lines": [
+        "AID",
+        "ANDERSON RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "LOU",
+      "x": 10975.908,
+      "y": 5400.043,
+      "lines": [
+        "LOU",
+        "BOWMAN FLD"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "64I",
+      "x": 11409.059,
+      "y": 4333.555,
+      "lines": [
+        "64I",
+        "LEE BOTTOM"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "BYH",
+      "x": 1978.003,
+      "y": 11299.325,
+      "lines": [
+        "BYH",
+        "ARKANSAS INTL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "SGH",
+      "x": 14586.065,
+      "y": 1067.52,
+      "lines": [
+        "SGH",
+        "SPRINGFIELD/BECKLEY MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "TYQ",
+      "x": 9700.458,
+      "y": 695.915,
+      "lines": [
+        "TYQ",
+        "INDIANAPOLIS EXEC"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "JVY",
+      "x": 10815.538,
+      "y": 5039.57,
+      "lines": [
+        "JVY",
+        "CLARK RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "SRB",
+      "x": 11367.151,
+      "y": 11080.309,
+      "lines": [
+        "SRB",
+        "UPPER CUMBERLAND RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "CEV",
+      "x": 11983.157,
+      "y": 1521.249,
+      "lines": [
+        "CEV",
+        "METTEL FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "UCY",
+      "x": 4033.785,
+      "y": 10253.005,
+      "lines": [
+        "UCY",
+        "EVERETT-STEWART RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "BWG",
+      "x": 9449.81,
+      "y": 8733.157,
+      "lines": [
+        "BWG",
+        "BOWLING GREEN-WARREN CO RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "MTO",
+      "x": 5592.947,
+      "y": 2151.534,
+      "lines": [
+        "MTO",
+        "COLES CO MEML"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "MVN",
+      "x": 4374.071,
+      "y": 5166.273,
+      "lines": [
+        "MVN",
+        "MOUNT VERNON"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "PCD",
+      "x": 2273.565,
+      "y": 6316.185,
+      "lines": [
+        "PCD",
+        "PERRYVILLE RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "XNX",
+      "x": 9490.753,
+      "y": 10276.239,
+      "lines": [
+        "XNX",
+        "MUSIC CITY EXEC"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "CEY",
+      "x": 5338.143,
+      "y": 9522.936,
+      "lines": [
+        "CEY",
+        "KYLE-OAKLEY FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "MWO",
+      "x": 13486.495,
+      "y": 1916.086,
+      "lines": [
+        "MWO",
+        "MIDDLETOWN RGNL/HOOK FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "2I0",
+      "x": 7392.234,
+      "y": 7720.546,
+      "lines": [
+        "2I0",
+        "MADISONVILLE RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "DNV",
+      "x": 6987.683,
+      "y": 262.246,
+      "lines": [
+        "DNV",
+        "VERMILION RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "MQJ",
+      "x": 10422.51,
+      "y": 1172.446,
+      "lines": [
+        "MQJ",
+        "INDIANAPOLIS RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "ARG",
+      "x": -94.705,
+      "y": 10816.953,
+      "lines": [
+        "ARG",
+        "WALNUT RIDGE RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "EKX",
+      "x": 10458.712,
+      "y": 6829.511,
+      "lines": [
+        "EKX",
+        "ADDINGTON FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "SER",
+      "x": 10437.608,
+      "y": 3583.757,
+      "lines": [
+        "SER",
+        "FREEMAN MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "CKV",
+      "x": 7358.932,
+      "y": 9642.952,
+      "lines": [
+        "CKV",
+        "OUTLAW FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "HLB",
+      "x": 11746.538,
+      "y": 2459.031,
+      "lines": [
+        "HLB",
+        "BATESVILLE"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "I63",
+      "x": 505.21,
+      "y": 712.415,
+      "lines": [
+        "I63",
+        "MOUNT STERLING MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "SME",
+      "x": 13233.458,
+      "y": 8422.92,
+      "lines": [
+        "SME",
+        "LAKE CUMBERLAND RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "LOZ",
+      "x": 14359.704,
+      "y": 8299.186,
+      "lines": [
+        "LOZ",
+        "LONDON/CORBIN/MAGEE"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "DYR",
+      "x": 3123.214,
+      "y": 11236.805,
+      "lines": [
+        "DYR",
+        "DYERSBURG RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "HZD",
+      "x": 5132.284,
+      "y": 11027.277,
+      "lines": [
+        "HZD",
+        "SGT LEE RUSSELL CARROLL CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "CFJ",
+      "x": 8349.185,
+      "y": 850.365,
+      "lines": [
+        "CFJ",
+        "CRAWFORDSVILLE RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "FFT",
+      "x": 12543.936,
+      "y": 5485.654,
+      "lines": [
+        "FFT",
+        "CAPITAL CITY"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "HVC",
+      "x": 7273.939,
+      "y": 9027.385,
+      "lines": [
+        "HVC",
+        "HOPKINSVILLE-CHRISTIAN CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "M91",
+      "x": 8402.54,
+      "y": 9862.405,
+      "lines": [
+        "M91",
+        "SPRINGFIELD ROBERTSON CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "SCX",
+      "x": 13342.996,
+      "y": 9985.958,
+      "lines": [
+        "SCX",
+        "SCOTT MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "EHR",
+      "x": 6793.351,
+      "y": 6536.446,
+      "lines": [
+        "EHR",
+        "HENDERSON CITY-CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "RID",
+      "x": 12563.805,
+      "y": 1354.251,
+      "lines": [
+        "RID",
+        "RICHMOND MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "SIK",
+      "x": 2843.062,
+      "y": 8871.759,
+      "lines": [
+        "SIK",
+        "SIKESTON MEML MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "HNB",
+      "x": 8310.465,
+      "y": 5377.512,
+      "lines": [
+        "HNB",
+        "HUNTINGBURG"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "FRH",
+      "x": 8957.417,
+      "y": 4698.607,
+      "lines": [
+        "FRH",
+        "FRENCH LICK MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "HAO",
+      "x": 13245.007,
+      "y": 2364.716,
+      "lines": [
+        "HAO",
+        "BUTLER CO RGNL/HOGAN FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "BYL",
+      "x": 14129.487,
+      "y": 9071.976,
+      "lines": [
+        "BYL",
+        "WILLIAMSBURG-WHITLEY CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "27K",
+      "x": 13515.836,
+      "y": 5319.244,
+      "lines": [
+        "27K",
+        "GEORGETOWN-SCOTT CO RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "CSV",
+      "x": 12320.105,
+      "y": 11334.992,
+      "lines": [
+        "CSV",
+        "CROSSVILLE MEML-WHITSON FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "I34",
+      "x": 11204.453,
+      "y": 2531.383,
+      "lines": [
+        "I34",
+        "GREENSBURG MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "GLW",
+      "x": 10426.096,
+      "y": 8543.872,
+      "lines": [
+        "GLW",
+        "GLASGOW MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "3M7",
+      "x": 10226.942,
+      "y": 9887.129,
+      "lines": [
+        "3M7",
+        "LAFAYETTE MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "LWV",
+      "x": 6962.786,
+      "y": 4029.764,
+      "lines": [
+        "LWV",
+        "LAWRENCEVILLE-VINCENNES INTL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "8A3",
+      "x": 11813.037,
+      "y": 10136.529,
+      "lines": [
+        "8A3",
+        "LIVINGSTON MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "RSV",
+      "x": 6872.889,
+      "y": 3369.407,
+      "lines": [
+        "RSV",
+        "CRAWFORD CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "1H2",
+      "x": 5065.895,
+      "y": 3215.699,
+      "lines": [
+        "1H2",
+        "EFFINGHAM CO RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "HFY",
+      "x": 10045.572,
+      "y": 1744.154,
+      "lines": [
+        "HFY",
+        "INDY SOUTH GREENWOOD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "HSB",
+      "x": 4996.099,
+      "y": 6516.081,
+      "lines": [
+        "HSB",
+        "HARRISBURG-RALEIGH"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "SCA",
+      "x": 13927.392,
+      "y": 37.376,
+      "lines": [
+        "SCA",
+        "SIDNEY MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "K24",
+      "x": 12214.104,
+      "y": 8565.531,
+      "lines": [
+        "K24",
+        "RUSSELL CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "MAW",
+      "x": 1917.033,
+      "y": 9637.681,
+      "lines": [
+        "MAW",
+        "MALDEN RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "POF",
+      "x": 1228.983,
+      "y": 9158.588,
+      "lines": [
+        "POF",
+        "POPLAR BLUFF RGNL BUSINESS"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "AAS",
+      "x": 11759.615,
+      "y": 7663.02,
+      "lines": [
+        "AAS",
+        "TAYLOR CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "GDK",
+      "x": 14291.482,
+      "y": 1471.259,
+      "lines": [
+        "GDK",
+        "GREENE CO/LEWIS A JACKSON RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "1M5",
+      "x": 9339.73,
+      "y": 9707.621,
+      "lines": [
+        "1M5",
+        "DOUGLAS HUNTER FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "BRY",
+      "x": 11337.417,
+      "y": 6477.106,
+      "lines": [
+        "BRY",
+        "SAMUELS FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "FOA",
+      "x": 5219.934,
+      "y": 4280.643,
+      "lines": [
+        "FOA",
+        "FLORA MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "JQD",
+      "x": 8537.183,
+      "y": 7447.327,
+      "lines": [
+        "JQD",
+        "OHIO CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    }
+  ]
+}

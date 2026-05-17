@@ -1,0 +1,53 @@
+# Canonical repo structure
+/prototype/reference-data/
+/prototype/outputs/
+/prototype/research/
+/prototype/babylon-vr-faa-map/.dev-certs/
+/prototype/babylon-vr-faa-map/map-shared/
+/prototype/faa-2d-map/map-shared/
+
+# Python and local caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local tooling state
+.playwright-cli/
+
+# Legacy flat-layout workspace copies kept only as local backups
+/28DaySubscription_Effective_2026-04-16/
+/babylon-vr-faa-map/
+/faa-2d-map/
+/map-shared/
+/indy_outputs/
+/indy_outputs_vfr/
+/indy_screenshot_outputs/
+/paper_pages/
+/skill_updates/
+/stlouis_airports_outputs/
+/stlouis_airspaces_outputs/
+/stlouis_intersections_outputs/
+/stlouis_navaids_outputs/
+/stlouis_victors_outputs/
+/St_Louis_geotiff/
+/tmp_pdfs_bajaj/
+/build_indy_layers.py
+/build_indy_screenshot_layers.py
+/build_indy_vfr_layers.py
+/build_stlouis_airports_layer.py
+/build_stlouis_airspaces_layer.py
+/build_stlouis_intersections_layer.py
+/build_stlouis_navaids_layer.py
+/build_stlouis_victors_layer.py
+/stlouis_geotiff.py
+/debug_indy_raw_wide.png
+/debug_indy_transform_crop.png
+/debug_ind_only.png
+/debug_ind_template_match.png
+/debug_ind_template_match2.png
+/paper_extract.txt
+/specific_aims_draft.md
+/St_Louis.pdf
+/St_Louis.zip
+/tmp_bbox_crop.png

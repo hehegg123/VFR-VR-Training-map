@@ -1,0 +1,4335 @@
+{
+  "schema": "babylon-vector-overlay-v1",
+  "layerId": "airports",
+  "description": "Vector airport symbols and runway bars for VR rendering.",
+  "coordinateSpace": {
+    "kind": "chart-pixels",
+    "width": 14747,
+    "height": 11238
+  },
+  "primitives": {
+    "polygons": [],
+    "strokes": [],
+    "circles": [
+      {
+        "id": "64I",
+        "center": [
+          11409.059,
+          4333.555
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "I61",
+        "center": [
+          11905.859,
+          1021.581
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "78I",
+        "center": [
+          8829.458,
+          2088.66
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "I80",
+        "center": [
+          10280.709,
+          753.561
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "5K4",
+        "center": [
+          947.799,
+          379.656
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "M28",
+        "center": [
+          2451.3,
+          10630.01
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "7M8",
+        "center": [
+          1200.471,
+          10530.0
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "I54",
+        "center": [
+          14591.796,
+          594.874
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "40I",
+        "center": [
+          14046.66,
+          1966.807
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "I72",
+        "center": [
+          9888.777,
+          640.047
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "M93",
+        "center": [
+          6296.412,
+          10440.091
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "8M7",
+        "center": [
+          6812.658,
+          8165.616
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "3R8",
+        "center": [
+          10693.936,
+          4278.514
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "1WF",
+        "center": [
+          13846.497,
+          635.387
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "I91",
+        "center": [
+          7560.622,
+          5922.613
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "9I0",
+        "center": [
+          2099.241,
+          136.51
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "3EV",
+        "center": [
+          6982.71,
+          6001.893
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "H07",
+        "center": [
+          2785.792,
+          3942.367
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "GFD",
+        "center": [
+          10752.172,
+          1305.445
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "1I3",
+        "center": [
+          8196.635,
+          3297.028
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "2T2",
+        "center": [
+          5052.57,
+          3362.455
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      },
+      {
+        "id": "8I1",
+        "center": [
+          11909.215,
+          4156.973
+        ],
+        "radiusPx": 21.006,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 6.463,
+        "alpha": 1.0
+      }
+    ],
+    "markers": [],
+    "runwayBars": [
+      {
+        "id": "CVG-bar-0",
+        "center": [
+          12949.092,
+          3212.312
+        ],
+        "lengthPx": 159.792,
+        "widthPx": 20.462,
+        "angleDeg": -1.486,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CVG-bar-1",
+        "center": [
+          12968.628,
+          3195.594
+        ],
+        "lengthPx": 153.794,
+        "widthPx": 20.462,
+        "angleDeg": 88.519,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CVG-bar-2",
+        "center": [
+          13052.664,
+          3229.601
+        ],
+        "lengthPx": 147.803,
+        "widthPx": 20.462,
+        "angleDeg": 88.527,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CVG-bar-3",
+        "center": [
+          12910.111,
+          3147.531
+        ],
+        "lengthPx": 135.819,
+        "widthPx": 20.462,
+        "angleDeg": 88.517,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SDF-bar-0",
+        "center": [
+          10801.118,
+          5558.633
+        ],
+        "lengthPx": 159.11,
+        "widthPx": 20.462,
+        "angleDeg": 74.369,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SDF-bar-1",
+        "center": [
+          10862.677,
+          5534.452
+        ],
+        "lengthPx": 139.179,
+        "widthPx": 20.462,
+        "angleDeg": 73.873,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SDF-bar-2",
+        "center": [
+          10831.344,
+          5531.541
+        ],
+        "lengthPx": 131.186,
+        "widthPx": 20.462,
+        "angleDeg": 20.083,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "IND-bar-0",
+        "center": [
+          9575.767,
+          1514.693
+        ],
+        "lengthPx": 154.998,
+        "widthPx": 20.462,
+        "angleDeg": -46.156,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "IND-bar-1",
+        "center": [
+          9634.202,
+          1550.929
+        ],
+        "lengthPx": 147.525,
+        "widthPx": 20.462,
+        "angleDeg": -46.154,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "IND-bar-2",
+        "center": [
+          9681.184,
+          1463.675
+        ],
+        "lengthPx": 130.574,
+        "widthPx": 20.462,
+        "angleDeg": 43.841,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BNA-bar-0",
+        "center": [
+          8910.04,
+          10905.479
+        ],
+        "lengthPx": 153.981,
+        "widthPx": 20.462,
+        "angleDeg": 42.83,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BNA-bar-1",
+        "center": [
+          8902.461,
+          10992.465
+        ],
+        "lengthPx": 134.953,
+        "widthPx": 20.462,
+        "angleDeg": -72.496,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BNA-bar-2",
+        "center": [
+          8985.835,
+          10944.084
+        ],
+        "lengthPx": 134.953,
+        "widthPx": 20.462,
+        "angleDeg": -72.503,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BNA-bar-3",
+        "center": [
+          8907.057,
+          10921.4
+        ],
+        "lengthPx": 133.087,
+        "widthPx": 20.462,
+        "angleDeg": -72.831,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "STL-bar-0",
+        "center": [
+          1314.551,
+          3999.306
+        ],
+        "lengthPx": 153.921,
+        "widthPx": 20.462,
+        "angleDeg": 33.885,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "STL-bar-1",
+        "center": [
+          1353.708,
+          4003.727
+        ],
+        "lengthPx": 141.307,
+        "widthPx": 20.462,
+        "angleDeg": 33.883,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "STL-bar-2",
+        "center": [
+          1181.472,
+          3957.06
+        ],
+        "lengthPx": 141.225,
+        "widthPx": 20.462,
+        "angleDeg": 33.886,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "STL-bar-3",
+        "center": [
+          1289.303,
+          3970.03
+        ],
+        "lengthPx": 132.444,
+        "widthPx": 20.462,
+        "angleDeg": -25.492,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DAY-bar-0",
+        "center": [
+          13771.266,
+          926.637
+        ],
+        "lengthPx": 153.209,
+        "widthPx": 20.462,
+        "angleDeg": -36.586,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DAY-bar-1",
+        "center": [
+          13843.357,
+          913.773
+        ],
+        "lengthPx": 138.036,
+        "widthPx": 20.462,
+        "angleDeg": 86.584,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DAY-bar-2",
+        "center": [
+          13841.442,
+          962.086
+        ],
+        "lengthPx": 130.339,
+        "widthPx": 20.462,
+        "angleDeg": -36.581,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "ILN-bar-0",
+        "center": [
+          14701.044,
+          2130.19
+        ],
+        "lengthPx": 152.012,
+        "widthPx": 20.462,
+        "angleDeg": -54.869,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "ILN-bar-1",
+        "center": [
+          14752.221,
+          2163.597
+        ],
+        "lengthPx": 141.139,
+        "widthPx": 20.462,
+        "angleDeg": -54.87,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BLV-bar-0",
+        "center": [
+          2429.522,
+          4542.452
+        ],
+        "lengthPx": 147.817,
+        "widthPx": 20.462,
+        "angleDeg": 47.928,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BLV-bar-1",
+        "center": [
+          2298.873,
+          4552.137
+        ],
+        "lengthPx": 134.553,
+        "widthPx": 20.462,
+        "angleDeg": 47.929,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HUF-bar-0",
+        "center": [
+          7552.372,
+          2238.804
+        ],
+        "lengthPx": 141.958,
+        "widthPx": 20.462,
+        "angleDeg": -42.909,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HUF-bar-1",
+        "center": [
+          7596.874,
+          2216.773
+        ],
+        "lengthPx": 129.063,
+        "widthPx": 20.462,
+        "angleDeg": 44.802,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DEC-bar-0",
+        "center": [
+          4433.726,
+          1211.334
+        ],
+        "lengthPx": 138.816,
+        "widthPx": 20.462,
+        "angleDeg": -30.069,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DEC-bar-1",
+        "center": [
+          4421.682,
+          1189.574
+        ],
+        "lengthPx": 126.339,
+        "widthPx": 20.462,
+        "angleDeg": 29.938,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DEC-bar-2",
+        "center": [
+          4375.577,
+          1203.976
+        ],
+        "lengthPx": 115.303,
+        "widthPx": 20.462,
+        "angleDeg": 89.929,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CMI-bar-0",
+        "center": [
+          5616.091,
+          674.469
+        ],
+        "lengthPx": 136.453,
+        "widthPx": 20.462,
+        "angleDeg": 46.068,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CMI-bar-1",
+        "center": [
+          5605.815,
+          679.693
+        ],
+        "lengthPx": 124.333,
+        "widthPx": 20.462,
+        "angleDeg": -48.477,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CMI-bar-2",
+        "center": [
+          5612.213,
+          690.737
+        ],
+        "lengthPx": 103.973,
+        "widthPx": 16.154,
+        "angleDeg": 46.088,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "ALN-bar-0",
+        "center": [
+          1980.89,
+          3627.137
+        ],
+        "lengthPx": 136.441,
+        "widthPx": 20.462,
+        "angleDeg": 24.859,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "ALN-bar-1",
+        "center": [
+          1936.573,
+          3638.582
+        ],
+        "lengthPx": 124.319,
+        "widthPx": 16.154,
+        "angleDeg": 84.854,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MQY-bar-0",
+        "center": [
+          9265.216,
+          11234.012
+        ],
+        "lengthPx": 136.076,
+        "widthPx": 20.462,
+        "angleDeg": 48.563,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MQY-bar-1",
+        "center": [
+          9262.076,
+          11241.848
+        ],
+        "lengthPx": 117.091,
+        "widthPx": 16.154,
+        "angleDeg": -86.445,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "EVV-bar-0",
+        "center": [
+          7151.666,
+          5902.842
+        ],
+        "lengthPx": 135.974,
+        "widthPx": 20.462,
+        "angleDeg": -51.891,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "EVV-bar-1",
+        "center": [
+          7091.987,
+          5947.446
+        ],
+        "lengthPx": 122.738,
+        "widthPx": 20.462,
+        "angleDeg": 91.168,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "EVV-bar-2",
+        "center": [
+          7099.487,
+          5942.36
+        ],
+        "lengthPx": 101.462,
+        "widthPx": 16.154,
+        "angleDeg": 1.15,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MWA-bar-0",
+        "center": [
+          4028.37,
+          6628.784
+        ],
+        "lengthPx": 135.92,
+        "widthPx": 20.462,
+        "angleDeg": -66.457,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MWA-bar-1",
+        "center": [
+          4047.88,
+          6686.708
+        ],
+        "lengthPx": 112.903,
+        "widthPx": 16.154,
+        "angleDeg": 18.515,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SPI-bar-0",
+        "center": [
+          2774.931,
+          1142.993
+        ],
+        "lengthPx": 135.854,
+        "widthPx": 20.462,
+        "angleDeg": -47.098,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SPI-bar-1",
+        "center": [
+          2769.158,
+          1149.209
+        ],
+        "lengthPx": 131.254,
+        "widthPx": 20.462,
+        "angleDeg": 37.892,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "OWB-bar-0",
+        "center": [
+          7870.78,
+          6721.939
+        ],
+        "lengthPx": 135.848,
+        "widthPx": 20.462,
+        "angleDeg": 87.528,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "OWB-bar-1",
+        "center": [
+          7875.682,
+          6707.551
+        ],
+        "lengthPx": 112.924,
+        "widthPx": 16.154,
+        "angleDeg": -38.223,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SUS-bar-0",
+        "center": [
+          725.464,
+          4208.632
+        ],
+        "lengthPx": 132.772,
+        "widthPx": 20.462,
+        "angleDeg": -10.074,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SUS-bar-1",
+        "center": [
+          661.9,
+          4169.5
+        ],
+        "lengthPx": 112.931,
+        "widthPx": 16.154,
+        "angleDeg": -10.059,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "LEX-bar-0",
+        "center": [
+          13180.552,
+          5860.393
+        ],
+        "lengthPx": 129.888,
+        "widthPx": 20.462,
+        "angleDeg": -50.139,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "LEX-bar-1",
+        "center": [
+          13156.4,
+          5826.59
+        ],
+        "lengthPx": 104.819,
+        "widthPx": 16.154,
+        "angleDeg": -8.73,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CPS-bar-0",
+        "center": [
+          1716.476,
+          4473.956
+        ],
+        "lengthPx": 129.876,
+        "widthPx": 20.462,
+        "angleDeg": 33.782,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CPS-bar-1",
+        "center": [
+          1739.658,
+          4467.709
+        ],
+        "lengthPx": 115.678,
+        "widthPx": 16.154,
+        "angleDeg": 33.782,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CPS-bar-2",
+        "center": [
+          1663.27,
+          4431.276
+        ],
+        "lengthPx": 94.794,
+        "widthPx": 16.154,
+        "angleDeg": -41.475,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MDH-bar-0",
+        "center": [
+          3557.729,
+          6571.323
+        ],
+        "lengthPx": 126.907,
+        "widthPx": 16.154,
+        "angleDeg": 92.251,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MDH-bar-1",
+        "center": [
+          3533.051,
+          6580.247
+        ],
+        "lengthPx": 106.341,
+        "widthPx": 16.154,
+        "angleDeg": -28.302,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MDH-bar-2",
+        "center": [
+          3498.333,
+          6603.698
+        ],
+        "lengthPx": 100.504,
+        "widthPx": 12.923,
+        "angleDeg": 92.243,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BMG-bar-0",
+        "center": [
+          8984.885,
+          2996.631
+        ],
+        "lengthPx": 126.871,
+        "widthPx": 20.462,
+        "angleDeg": 81.132,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BMG-bar-1",
+        "center": [
+          8982.355,
+          3061.281
+        ],
+        "lengthPx": 103.139,
+        "widthPx": 16.154,
+        "angleDeg": -28.903,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CGI-bar-0",
+        "center": [
+          2840.812,
+          8019.283
+        ],
+        "lengthPx": 126.871,
+        "widthPx": 20.462,
+        "angleDeg": 17.028,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CGI-bar-1",
+        "center": [
+          2844.676,
+          8012.435
+        ],
+        "lengthPx": 104.887,
+        "widthPx": 16.154,
+        "angleDeg": -67.581,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MIE-bar-0",
+        "center": [
+          11404.47,
+          106.058
+        ],
+        "lengthPx": 126.871,
+        "widthPx": 20.462,
+        "angleDeg": 44.877,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MIE-bar-1",
+        "center": [
+          11429.979,
+          102.677
+        ],
+        "lengthPx": 115.435,
+        "widthPx": 16.154,
+        "angleDeg": -69.383,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PAH-bar-0",
+        "center": [
+          4502.726,
+          8479.974
+        ],
+        "lengthPx": 126.871,
+        "widthPx": 20.462,
+        "angleDeg": -45.558,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PAH-bar-1",
+        "center": [
+          4513.079,
+          8474.597
+        ],
+        "lengthPx": 118.079,
+        "widthPx": 20.462,
+        "angleDeg": 50.189,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BAK-bar-0",
+        "center": [
+          10447.446,
+          2701.096
+        ],
+        "lengthPx": 126.279,
+        "widthPx": 20.462,
+        "angleDeg": -45.906,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BAK-bar-1",
+        "center": [
+          10454.285,
+          2693.328
+        ],
+        "lengthPx": 113.841,
+        "widthPx": 16.154,
+        "angleDeg": 44.109,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "LUK-bar-0",
+        "center": [
+          13491.036,
+          3059.675
+        ],
+        "lengthPx": 124.484,
+        "widthPx": 20.462,
+        "angleDeg": -70.808,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "LUK-bar-1",
+        "center": [
+          13464.88,
+          3020.815
+        ],
+        "lengthPx": 115.541,
+        "widthPx": 16.154,
+        "angleDeg": -29.722,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "JWN-bar-0",
+        "center": [
+          8481.63,
+          10787.924
+        ],
+        "lengthPx": 123.885,
+        "widthPx": 16.154,
+        "angleDeg": -75.601,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "AID-bar-0",
+        "center": [
+          10977.796,
+          463.623
+        ],
+        "lengthPx": 120.288,
+        "widthPx": 16.154,
+        "angleDeg": 23.932,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "AID-bar-1",
+        "center": [
+          10997.247,
+          467.317
+        ],
+        "lengthPx": 100.23,
+        "widthPx": 16.154,
+        "angleDeg": 88.775,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "LOU-bar-0",
+        "center": [
+          10982.143,
+          5395.444
+        ],
+        "lengthPx": 114.053,
+        "widthPx": 16.154,
+        "angleDeg": -31.498,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "LOU-bar-1",
+        "center": [
+          10968.319,
+          5405.643
+        ],
+        "lengthPx": 104.89,
+        "widthPx": 16.154,
+        "angleDeg": 52.513,
+        "fill": "#1d4ed8",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BYH-bar-0",
+        "center": [
+          1977.964,
+          11299.272
+        ],
+        "lengthPx": 157.404,
+        "widthPx": 20.462,
+        "angleDeg": 91.439,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SGH-bar-0",
+        "center": [
+          14593.499,
+          1055.613
+        ],
+        "lengthPx": 141.892,
+        "widthPx": 20.462,
+        "angleDeg": -37.971,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SGH-bar-1",
+        "center": [
+          14573.952,
+          1086.84
+        ],
+        "lengthPx": 117.004,
+        "widthPx": 16.154,
+        "angleDeg": 52.041,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "TYQ-bar-0",
+        "center": [
+          9700.457,
+          695.914
+        ],
+        "lengthPx": 129.87,
+        "widthPx": 16.154,
+        "angleDeg": 88.739,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "JVY-bar-0",
+        "center": [
+          10816.949,
+          5040.131
+        ],
+        "lengthPx": 129.864,
+        "widthPx": 16.154,
+        "angleDeg": 88.94,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "JVY-bar-1",
+        "center": [
+          10813.005,
+          5038.563
+        ],
+        "lengthPx": 103.975,
+        "widthPx": 16.154,
+        "angleDeg": 46.951,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SRB-bar-0",
+        "center": [
+          11367.151,
+          11080.31
+        ],
+        "lengthPx": 128.092,
+        "widthPx": 16.154,
+        "angleDeg": -56.287,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CEV-bar-0",
+        "center": [
+          11984.974,
+          1518.981
+        ],
+        "lengthPx": 126.889,
+        "widthPx": 16.154,
+        "angleDeg": 89.135,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "UCY-bar-0",
+        "center": [
+          4033.786,
+          10253.005
+        ],
+        "lengthPx": 126.889,
+        "widthPx": 16.154,
+        "angleDeg": -82.748,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BWG-bar-0",
+        "center": [
+          9450.639,
+          8719.675
+        ],
+        "lengthPx": 126.877,
+        "widthPx": 20.462,
+        "angleDeg": -60.742,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BWG-bar-1",
+        "center": [
+          9448.244,
+          8755.569
+        ],
+        "lengthPx": 104.526,
+        "widthPx": 20.462,
+        "angleDeg": 29.259,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MTO-bar-0",
+        "center": [
+          5597.849,
+          2152.283
+        ],
+        "lengthPx": 126.877,
+        "widthPx": 20.462,
+        "angleDeg": 23.377,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MTO-bar-1",
+        "center": [
+          5596.022,
+          2150.078
+        ],
+        "lengthPx": 120.712,
+        "widthPx": 16.154,
+        "angleDeg": -29.342,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MVN-bar-0",
+        "center": [
+          4376.494,
+          5165.04
+        ],
+        "lengthPx": 126.847,
+        "widthPx": 20.462,
+        "angleDeg": -39.139,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MVN-bar-1",
+        "center": [
+          4369.237,
+          5169.144
+        ],
+        "lengthPx": 97.41,
+        "widthPx": 16.154,
+        "angleDeg": 60.808,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PCD-bar-0",
+        "center": [
+          2273.565,
+          6316.185
+        ],
+        "lengthPx": 126.77,
+        "widthPx": 16.154,
+        "angleDeg": -71.353,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "XNX-bar-0",
+        "center": [
+          9490.753,
+          10276.24
+        ],
+        "lengthPx": 125.674,
+        "widthPx": 16.154,
+        "angleDeg": 80.422,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CEY-bar-0",
+        "center": [
+          5338.143,
+          9522.935
+        ],
+        "lengthPx": 125.088,
+        "widthPx": 16.154,
+        "angleDeg": -39.613,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MWO-bar-0",
+        "center": [
+          13493.309,
+          1921.302
+        ],
+        "lengthPx": 124.478,
+        "widthPx": 16.154,
+        "angleDeg": -42.387,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "2I0-bar-0",
+        "center": [
+          7392.234,
+          7720.546
+        ],
+        "lengthPx": 124.184,
+        "widthPx": 16.154,
+        "angleDeg": -38.576,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DNV-bar-0",
+        "center": [
+          6992.233,
+          253.628
+        ],
+        "lengthPx": 123.915,
+        "widthPx": 16.154,
+        "angleDeg": -60.753,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DNV-bar-1",
+        "center": [
+          6975.77,
+          277.626
+        ],
+        "lengthPx": 105.281,
+        "widthPx": 16.154,
+        "angleDeg": 74.262,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MQJ-bar-0",
+        "center": [
+          10403.311,
+          1200.849
+        ],
+        "lengthPx": 123.909,
+        "widthPx": 16.154,
+        "angleDeg": -20.927,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MQJ-bar-1",
+        "center": [
+          10452.058,
+          1128.731
+        ],
+        "lengthPx": 104.382,
+        "widthPx": 16.154,
+        "angleDeg": 69.088,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "ARG-bar-0",
+        "center": [
+          -104.409,
+          10856.311
+        ],
+        "lengthPx": 123.885,
+        "widthPx": 20.462,
+        "angleDeg": -42.941,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "ARG-bar-1",
+        "center": [
+          -94.321,
+          10778.507
+        ],
+        "lengthPx": 114.614,
+        "widthPx": 20.462,
+        "angleDeg": 47.047,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "ARG-bar-2",
+        "center": [
+          -83.202,
+          10808.338
+        ],
+        "lengthPx": 114.595,
+        "widthPx": 20.462,
+        "angleDeg": 92.05,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "EKX-bar-0",
+        "center": [
+          10458.669,
+          6829.469
+        ],
+        "lengthPx": 123.885,
+        "widthPx": 16.154,
+        "angleDeg": -44.309,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SER-bar-0",
+        "center": [
+          10473.135,
+          3606.272
+        ],
+        "lengthPx": 123.885,
+        "widthPx": 16.154,
+        "angleDeg": -46.861,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SER-bar-1",
+        "center": [
+          10412.499,
+          3590.164
+        ],
+        "lengthPx": 119.249,
+        "widthPx": 16.154,
+        "angleDeg": 43.171,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CKV-bar-0",
+        "center": [
+          7357.797,
+          9645.944
+        ],
+        "lengthPx": 123.873,
+        "widthPx": 16.154,
+        "angleDeg": 76.092,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CKV-bar-1",
+        "center": [
+          7360.632,
+          9638.467
+        ],
+        "lengthPx": 105.336,
+        "widthPx": 16.154,
+        "angleDeg": -38.003,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HLB-bar-0",
+        "center": [
+          11746.495,
+          2459.081
+        ],
+        "lengthPx": 123.478,
+        "widthPx": 16.154,
+        "angleDeg": 88.552,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I63-bar-0",
+        "center": [
+          505.206,
+          712.395
+        ],
+        "lengthPx": 123.311,
+        "widthPx": 16.154,
+        "angleDeg": 92.874,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SME-bar-0",
+        "center": [
+          13233.44,
+          8422.824
+        ],
+        "lengthPx": 122.688,
+        "widthPx": 16.154,
+        "angleDeg": -48.805,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "LOZ-bar-0",
+        "center": [
+          14359.704,
+          8299.187
+        ],
+        "lengthPx": 122.383,
+        "widthPx": 20.462,
+        "angleDeg": -39.703,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DYR-bar-0",
+        "center": [
+          3116.305,
+          11249.033
+        ],
+        "lengthPx": 122.072,
+        "widthPx": 16.154,
+        "angleDeg": -48.35,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DYR-bar-1",
+        "center": [
+          3132.951,
+          11219.266
+        ],
+        "lengthPx": 105.712,
+        "widthPx": 12.923,
+        "angleDeg": 72.666,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HZD-bar-0",
+        "center": [
+          5132.283,
+          11027.277
+        ],
+        "lengthPx": 120.929,
+        "widthPx": 16.154,
+        "angleDeg": -77.214,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CFJ-bar-0",
+        "center": [
+          8349.186,
+          850.366
+        ],
+        "lengthPx": 120.923,
+        "widthPx": 16.154,
+        "angleDeg": -47.431,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "FFT-bar-0",
+        "center": [
+          12543.935,
+          5485.655
+        ],
+        "lengthPx": 120.923,
+        "widthPx": 16.154,
+        "angleDeg": -27.628,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HVC-bar-0",
+        "center": [
+          7273.939,
+          9027.386
+        ],
+        "lengthPx": 120.917,
+        "widthPx": 16.154,
+        "angleDeg": -12.242,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M91-bar-0",
+        "center": [
+          8402.588,
+          9862.427
+        ],
+        "lengthPx": 120.917,
+        "widthPx": 16.154,
+        "angleDeg": -56.716,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SCX-bar-0",
+        "center": [
+          13342.995,
+          9985.96
+        ],
+        "lengthPx": 120.917,
+        "widthPx": 16.154,
+        "angleDeg": -45.277,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "EHR-bar-0",
+        "center": [
+          6793.386,
+          6536.408
+        ],
+        "lengthPx": 120.905,
+        "widthPx": 16.154,
+        "angleDeg": -1.534,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "RID-bar-0",
+        "center": [
+          12567.688,
+          1355.151
+        ],
+        "lengthPx": 120.899,
+        "widthPx": 20.462,
+        "angleDeg": -36.411,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "RID-bar-1",
+        "center": [
+          12559.352,
+          1353.112
+        ],
+        "lengthPx": 115.925,
+        "widthPx": 16.154,
+        "angleDeg": 53.578,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SIK-bar-0",
+        "center": [
+          2843.058,
+          8871.844
+        ],
+        "lengthPx": 120.899,
+        "widthPx": 16.154,
+        "angleDeg": -64.827,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HNB-bar-0",
+        "center": [
+          8310.465,
+          5377.511
+        ],
+        "lengthPx": 120.893,
+        "widthPx": 16.154,
+        "angleDeg": 0.328,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "FRH-bar-0",
+        "center": [
+          8957.409,
+          4698.631
+        ],
+        "lengthPx": 120.887,
+        "widthPx": 16.154,
+        "angleDeg": -14.611,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HAO-bar-0",
+        "center": [
+          13245.011,
+          2364.637
+        ],
+        "lengthPx": 120.887,
+        "widthPx": 16.154,
+        "angleDeg": 18.624,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BYL-bar-0",
+        "center": [
+          14129.487,
+          9071.977
+        ],
+        "lengthPx": 120.881,
+        "widthPx": 16.154,
+        "angleDeg": -74.092,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "27K-bar-0",
+        "center": [
+          13515.836,
+          5319.244
+        ],
+        "lengthPx": 120.875,
+        "widthPx": 16.154,
+        "angleDeg": -66.146,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CSV-bar-0",
+        "center": [
+          12320.105,
+          11334.992
+        ],
+        "lengthPx": 120.426,
+        "widthPx": 16.154,
+        "angleDeg": -17.963,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I34-bar-0",
+        "center": [
+          11204.452,
+          2531.382
+        ],
+        "lengthPx": 120.324,
+        "widthPx": 16.154,
+        "angleDeg": -85.427,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "GLW-bar-0",
+        "center": [
+          10426.096,
+          8543.873
+        ],
+        "lengthPx": 119.702,
+        "widthPx": 16.154,
+        "angleDeg": -19.521,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "3M7-bar-0",
+        "center": [
+          10226.989,
+          9887.151
+        ],
+        "lengthPx": 119.092,
+        "widthPx": 16.154,
+        "angleDeg": -84.533,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "LWV-bar-0",
+        "center": [
+          6991.888,
+          4058.362
+        ],
+        "lengthPx": 119.086,
+        "widthPx": 16.154,
+        "angleDeg": 89.544,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "LWV-bar-1",
+        "center": [
+          6933.595,
+          4001.051
+        ],
+        "lengthPx": 119.075,
+        "widthPx": 16.154,
+        "angleDeg": -0.514,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "8A3-bar-0",
+        "center": [
+          11813.037,
+          10136.529
+        ],
+        "lengthPx": 118.81,
+        "widthPx": 16.154,
+        "angleDeg": -57.883,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "RSV-bar-0",
+        "center": [
+          6858.189,
+          3366.07
+        ],
+        "lengthPx": 118.541,
+        "widthPx": 16.154,
+        "angleDeg": 1.901,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "RSV-bar-1",
+        "center": [
+          6894.866,
+          3374.335
+        ],
+        "lengthPx": 100.683,
+        "widthPx": 16.154,
+        "angleDeg": 75.896,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "1H2-bar-0",
+        "center": [
+          5069.112,
+          3212.323
+        ],
+        "lengthPx": 118.511,
+        "widthPx": 16.154,
+        "angleDeg": 23.609,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "1H2-bar-1",
+        "center": [
+          5061.147,
+          3220.684
+        ],
+        "lengthPx": 100.713,
+        "widthPx": 12.923,
+        "angleDeg": -81.87,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HFY-bar-0",
+        "center": [
+          10045.577,
+          1744.18
+        ],
+        "lengthPx": 118.505,
+        "widthPx": 16.154,
+        "angleDeg": -83.189,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HSB-bar-0",
+        "center": [
+          4986.162,
+          6508.927
+        ],
+        "lengthPx": 117.972,
+        "widthPx": 16.154,
+        "angleDeg": -26.296,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "HSB-bar-1",
+        "center": [
+          5014.118,
+          6529.051
+        ],
+        "lengthPx": 94.156,
+        "widthPx": 16.154,
+        "angleDeg": 51.518,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SCA-bar-0",
+        "center": [
+          13942.496,
+          28.986
+        ],
+        "lengthPx": 117.972,
+        "widthPx": 16.154,
+        "angleDeg": 2.237,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SCA-bar-1",
+        "center": [
+          13902.273,
+          51.306
+        ],
+        "lengthPx": 96.454,
+        "widthPx": 12.923,
+        "angleDeg": -52.119,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "K24-bar-0",
+        "center": [
+          12214.203,
+          8565.505
+        ],
+        "lengthPx": 117.954,
+        "widthPx": 16.154,
+        "angleDeg": 83.946,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MAW-bar-0",
+        "center": [
+          1911.14,
+          9617.354
+        ],
+        "lengthPx": 117.954,
+        "widthPx": 16.154,
+        "angleDeg": 92.085,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MAW-bar-1",
+        "center": [
+          1922.936,
+          9658.05
+        ],
+        "lengthPx": 117.859,
+        "widthPx": 16.154,
+        "angleDeg": 47.118,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "POF-bar-0",
+        "center": [
+          1228.984,
+          9158.588
+        ],
+        "lengthPx": 117.942,
+        "widthPx": 16.154,
+        "angleDeg": 93.042,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "AAS-bar-0",
+        "center": [
+          11759.552,
+          7663.106
+        ],
+        "lengthPx": 117.919,
+        "widthPx": 16.154,
+        "angleDeg": -41.383,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "GDK-bar-0",
+        "center": [
+          14291.418,
+          1471.319
+        ],
+        "lengthPx": 117.919,
+        "widthPx": 16.154,
+        "angleDeg": -28.987,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "1M5-bar-0",
+        "center": [
+          9339.731,
+          9707.62
+        ],
+        "lengthPx": 117.913,
+        "widthPx": 16.154,
+        "angleDeg": -79.514,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BRY-bar-0",
+        "center": [
+          11337.413,
+          6477.2
+        ],
+        "lengthPx": 117.913,
+        "widthPx": 16.154,
+        "angleDeg": -69.67,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "FOA-bar-0",
+        "center": [
+          5222.276,
+          4287.041
+        ],
+        "lengthPx": 117.913,
+        "widthPx": 16.154,
+        "angleDeg": -59.796,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "JQD-bar-0",
+        "center": [
+          8537.184,
+          7447.326
+        ],
+        "lengthPx": 117.913,
+        "widthPx": 16.154,
+        "angleDeg": -65.694,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DCY-bar-0",
+        "center": [
+          7947.58,
+          4193.391
+        ],
+        "lengthPx": 117.907,
+        "widthPx": 16.154,
+        "angleDeg": 89.777,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "FYG-bar-0",
+        "center": [
+          -9.214,
+          4364.287
+        ],
+        "lengthPx": 117.907,
+        "widthPx": 16.154,
+        "angleDeg": 66.116,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "GPC-bar-0",
+        "center": [
+          8572.165,
+          1744.382
+        ],
+        "lengthPx": 117.907,
+        "widthPx": 16.154,
+        "angleDeg": 90.701,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "KY8-bar-0",
+        "center": [
+          8515.735,
+          6148.863
+        ],
+        "lengthPx": 117.907,
+        "widthPx": 16.154,
+        "angleDeg": -47.866,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M25-bar-0",
+        "center": [
+          4894.2,
+          9243.395
+        ],
+        "lengthPx": 117.907,
+        "widthPx": 16.154,
+        "angleDeg": -84.896,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "OVO-bar-0",
+        "center": [
+          11065.327,
+          3258.547
+        ],
+        "lengthPx": 117.907,
+        "widthPx": 16.154,
+        "angleDeg": -43.389,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "OVO-bar-1",
+        "center": [
+          11034.318,
+          3249.038
+        ],
+        "lengthPx": 93.807,
+        "widthPx": 12.923,
+        "angleDeg": 61.709,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "0M4-bar-0",
+        "center": [
+          5850.432,
+          11241.935
+        ],
+        "lengthPx": 117.901,
+        "widthPx": 16.154,
+        "angleDeg": -54.842,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "6I2-bar-0",
+        "center": [
+          11884.184,
+          6939.098
+        ],
+        "lengthPx": 117.901,
+        "widthPx": 16.154,
+        "angleDeg": 13.773,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "ENL-bar-0",
+        "center": [
+          3898.116,
+          4658.284
+        ],
+        "lengthPx": 117.901,
+        "widthPx": 16.154,
+        "angleDeg": 91.587,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "ENL-bar-1",
+        "center": [
+          3907.748,
+          4653.602
+        ],
+        "lengthPx": 99.855,
+        "widthPx": 12.923,
+        "angleDeg": -1.921,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "GDA-bar-0",
+        "center": [
+          5902.105,
+          7769.009
+        ],
+        "lengthPx": 117.901,
+        "widthPx": 16.154,
+        "angleDeg": -23.344,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M02-bar-0",
+        "center": [
+          7328.43,
+          10936.129
+        ],
+        "lengthPx": 117.901,
+        "widthPx": 16.154,
+        "angleDeg": 82.128,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PHT-bar-0",
+        "center": [
+          5305.734,
+          10383.124
+        ],
+        "lengthPx": 117.901,
+        "widthPx": 16.154,
+        "angleDeg": -73.104,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "RGA-bar-0",
+        "center": [
+          13778.466,
+          6891.442
+        ],
+        "lengthPx": 117.901,
+        "widthPx": 16.154,
+        "angleDeg": 82.756,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "8GK-bar-0",
+        "center": [
+          12463.701,
+          4182.469
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": -35.53,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DVK-bar-0",
+        "center": [
+          12884.658,
+          7071.152
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": 29.931,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DVK-bar-1",
+        "center": [
+          12840.247,
+          7032.674
+        ],
+        "lengthPx": 85.596,
+        "widthPx": 16.154,
+        "angleDeg": -83.674,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "DXE-bar-0",
+        "center": [
+          2036.882,
+          9176.506
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": 93.319,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "GEZ-bar-0",
+        "center": [
+          10627.518,
+          1823.384
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": -86.472,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "IJX-bar-0",
+        "center": [
+          1631.164,
+          1302.355
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": 46.765,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "IJX-bar-1",
+        "center": [
+          1633.905,
+          1299.575
+        ],
+        "lengthPx": 107.295,
+        "widthPx": 16.154,
+        "angleDeg": -43.396,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "IMS-bar-0",
+        "center": [
+          11358.26,
+          3997.784
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": -59.442,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "IOB-bar-0",
+        "center": [
+          14472.919,
+          5749.193
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": -64.942,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M54-bar-0",
+        "center": [
+          9687.674,
+          10756.94
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": -84.146,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "MGY-bar-0",
+        "center": [
+          13830.058,
+          1754.67
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": -69.694,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "TKX-bar-0",
+        "center": [
+          1788.902,
+          10627.711
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": -70.641,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "TKX-bar-1",
+        "center": [
+          1814.649,
+          10580.118
+        ],
+        "lengthPx": 96.801,
+        "widthPx": 16.154,
+        "angleDeg": 90.017,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "TWT-bar-0",
+        "center": [
+          6231.637,
+          7231.743
+        ],
+        "lengthPx": 117.895,
+        "widthPx": 16.154,
+        "angleDeg": -86.58,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M21-bar-0",
+        "center": [
+          7899.113,
+          8059.017
+        ],
+        "lengthPx": 117.889,
+        "widthPx": 16.154,
+        "angleDeg": -34.405,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "VES-bar-0",
+        "center": [
+          13156.459,
+          159.286
+        ],
+        "lengthPx": 116.71,
+        "widthPx": 16.154,
+        "angleDeg": -3.207,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "1M9-bar-0",
+        "center": [
+          6321.348,
+          9128.177
+        ],
+        "lengthPx": 116.698,
+        "widthPx": 16.154,
+        "angleDeg": -69.372,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I20-bar-0",
+        "center": [
+          7179.848,
+          3805.812
+        ],
+        "lengthPx": 115.333,
+        "widthPx": 16.154,
+        "angleDeg": 89.544,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I68-bar-0",
+        "center": [
+          13786.329,
+          2089.024
+        ],
+        "lengthPx": 114.932,
+        "widthPx": 16.154,
+        "angleDeg": -87.738,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M85-bar-0",
+        "center": [
+          2094.372,
+          10046.737
+        ],
+        "lengthPx": 114.926,
+        "widthPx": 12.923,
+        "angleDeg": 61.409,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BFR-bar-0",
+        "center": [
+          9333.309,
+          3804.413
+        ],
+        "lengthPx": 114.908,
+        "widthPx": 16.154,
+        "angleDeg": 38.697,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "BFR-bar-1",
+        "center": [
+          9356.129,
+          3841.498
+        ],
+        "lengthPx": 98.687,
+        "widthPx": 12.923,
+        "angleDeg": -33.112,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PRG-bar-0",
+        "center": [
+          6841.319,
+          1570.895
+        ],
+        "lengthPx": 114.908,
+        "widthPx": 16.154,
+        "angleDeg": -1.625,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PRG-bar-1",
+        "center": [
+          6821.669,
+          1581.695
+        ],
+        "lengthPx": 99.962,
+        "widthPx": 16.154,
+        "angleDeg": 88.374,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "1H0-bar-0",
+        "center": [
+          984.712,
+          4044.483
+        ],
+        "lengthPx": 114.902,
+        "widthPx": 16.154,
+        "angleDeg": 70.214,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "4M7-bar-0",
+        "center": [
+          8630.636,
+          9172.549
+        ],
+        "lengthPx": 114.902,
+        "widthPx": 16.154,
+        "angleDeg": -26.934,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "AJG-bar-0",
+        "center": [
+          6704.017,
+          4439.916
+        ],
+        "lengthPx": 114.902,
+        "widthPx": 16.154,
+        "angleDeg": 40.884,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "AJG-bar-1",
+        "center": [
+          6722.93,
+          4446.143
+        ],
+        "lengthPx": 109.157,
+        "widthPx": 16.154,
+        "angleDeg": -49.111,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PGR-bar-0",
+        "center": [
+          793.818,
+          11014.142
+        ],
+        "lengthPx": 114.902,
+        "widthPx": 16.154,
+        "angleDeg": -41.819,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "2R2-bar-0",
+        "center": [
+          9256.432,
+          1441.048
+        ],
+        "lengthPx": 114.304,
+        "widthPx": 16.154,
+        "angleDeg": 89.806,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I74-bar-0",
+        "center": [
+          14734.497,
+          292.356
+        ],
+        "lengthPx": 114.304,
+        "widthPx": 16.154,
+        "angleDeg": -74.318,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "TEL-bar-0",
+        "center": [
+          8853.775,
+          5977.051
+        ],
+        "lengthPx": 114.304,
+        "widthPx": 16.154,
+        "angleDeg": 43.349,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SIV-bar-0",
+        "center": [
+          7284.991,
+          3110.758
+        ],
+        "lengthPx": 114.059,
+        "widthPx": 16.154,
+        "angleDeg": 90.654,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "FAM-bar-0",
+        "center": [
+          1088.058,
+          6568.264
+        ],
+        "lengthPx": 113.843,
+        "widthPx": 16.154,
+        "angleDeg": -64.502,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I22-bar-0",
+        "center": [
+          12359.767,
+          278.462
+        ],
+        "lengthPx": 113.705,
+        "widthPx": 16.154,
+        "angleDeg": -14.235,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "4M9-bar-0",
+        "center": [
+          517.398,
+          10105.251
+        ],
+        "lengthPx": 113.699,
+        "widthPx": 12.923,
+        "angleDeg": 92.402,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "0A3-bar-0",
+        "center": [
+          10777.346,
+          11278.187
+        ],
+        "lengthPx": 113.448,
+        "widthPx": 16.154,
+        "angleDeg": -33.354,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "UWL-bar-0",
+        "center": [
+          11579.056,
+          1061.806
+        ],
+        "lengthPx": 113.113,
+        "widthPx": 16.154,
+        "angleDeg": -0.876,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "EYE-bar-0",
+        "center": [
+          9620.111,
+          1216.622
+        ],
+        "lengthPx": 113.107,
+        "widthPx": 16.154,
+        "angleDeg": -65.176,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "2M0-bar-0",
+        "center": [
+          6430.394,
+          8349.956
+        ],
+        "lengthPx": 112.503,
+        "widthPx": 16.154,
+        "angleDeg": -42.656,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "OLY-bar-0",
+        "center": [
+          5780.645,
+          4125.225
+        ],
+        "lengthPx": 112.503,
+        "widthPx": 16.154,
+        "angleDeg": 17.532,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "OLY-bar-1",
+        "center": [
+          5800.142,
+          4149.136
+        ],
+        "lengthPx": 106.315,
+        "widthPx": 12.923,
+        "angleDeg": -53.731,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "2H0-bar-0",
+        "center": [
+          4425.046,
+          2300.133
+        ],
+        "lengthPx": 112.497,
+        "widthPx": 16.154,
+        "angleDeg": 90.454,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SLO-bar-0",
+        "center": [
+          4168.411,
+          4325.638
+        ],
+        "lengthPx": 112.497,
+        "widthPx": 16.154,
+        "angleDeg": 91.244,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "OXD-bar-0",
+        "center": [
+          12700.5,
+          2016.99
+        ],
+        "lengthPx": 111.976,
+        "widthPx": 12.923,
+        "angleDeg": -46.023,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "UMP-bar-0",
+        "center": [
+          10120.706,
+          934.892
+        ],
+        "lengthPx": 111.934,
+        "widthPx": 16.154,
+        "angleDeg": 54.757,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M05-bar-0",
+        "center": [
+          2559.115,
+          10776.804
+        ],
+        "lengthPx": 111.928,
+        "widthPx": 16.154,
+        "angleDeg": 90.629,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "3LF-bar-0",
+        "center": [
+          2755.254,
+          2984.694
+        ],
+        "lengthPx": 111.922,
+        "widthPx": 16.154,
+        "angleDeg": 91.046,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "3LF-bar-1",
+        "center": [
+          2720.406,
+          2885.992
+        ],
+        "lengthPx": 110.638,
+        "widthPx": 16.154,
+        "angleDeg": 1.304,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "GRE-bar-0",
+        "center": [
+          3345.002,
+          3809.881
+        ],
+        "lengthPx": 111.922,
+        "widthPx": 16.154,
+        "angleDeg": 90.837,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "H96-bar-0",
+        "center": [
+          4205.113,
+          5989.049
+        ],
+        "lengthPx": 111.922,
+        "widthPx": 16.154,
+        "angleDeg": 90.112,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "K62-bar-0",
+        "center": [
+          13565.13,
+          4085.93
+        ],
+        "lengthPx": 111.922,
+        "widthPx": 16.154,
+        "angleDeg": -66.376,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M30-bar-0",
+        "center": [
+          4558.373,
+          8156.988
+        ],
+        "lengthPx": 111.922,
+        "widthPx": 16.154,
+        "angleDeg": 91.263,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SAR-bar-0",
+        "center": [
+          2621.789,
+          5581.078
+        ],
+        "lengthPx": 111.922,
+        "widthPx": 16.154,
+        "angleDeg": 91.533,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "1H8-bar-0",
+        "center": [
+          6158.432,
+          2618.672
+        ],
+        "lengthPx": 111.916,
+        "widthPx": 16.154,
+        "angleDeg": -50.731,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "1M7-bar-0",
+        "center": [
+          4182.952,
+          9873.21
+        ],
+        "lengthPx": 111.916,
+        "widthPx": 16.154,
+        "angleDeg": 1.418,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "C16-bar-0",
+        "center": [
+          5756.429,
+          411.231
+        ],
+        "lengthPx": 111.916,
+        "widthPx": 12.923,
+        "angleDeg": -0.17,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CIR-bar-0",
+        "center": [
+          3555.077,
+          8449.094
+        ],
+        "lengthPx": 111.916,
+        "widthPx": 16.154,
+        "angleDeg": 52.425,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CIR-bar-1",
+        "center": [
+          3589.402,
+          8457.923
+        ],
+        "lengthPx": 101.834,
+        "widthPx": 12.923,
+        "angleDeg": -67.606,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "TAZ-bar-0",
+        "center": [
+          3484.47,
+          1982.329
+        ],
+        "lengthPx": 111.916,
+        "widthPx": 16.154,
+        "angleDeg": 90.393,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "TAZ-bar-1",
+        "center": [
+          3420.313,
+          2007.083
+        ],
+        "lengthPx": 105.622,
+        "widthPx": 12.923,
+        "angleDeg": 0.4,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "0M5-bar-0",
+        "center": [
+          6673.521,
+          10965.394
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 16.154,
+        "angleDeg": -59.506,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "8WC-bar-0",
+        "center": [
+          473.071,
+          6107.622
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 12.923,
+        "angleDeg": -69.283,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "AAA-bar-0",
+        "center": [
+          3474.378,
+          344.65
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 16.154,
+        "angleDeg": -53.634,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CUL-bar-0",
+        "center": [
+          5888.86,
+          5794.696
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 16.154,
+        "angleDeg": 90.626,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "EKQ-bar-0",
+        "center": [
+          12742.994,
+          8956.503
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 16.154,
+        "angleDeg": -55.801,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "FWC-bar-0",
+        "center": [
+          5275.423,
+          5038.939
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 16.154,
+        "angleDeg": 0.94,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "FWC-bar-1",
+        "center": [
+          5337.399,
+          5018.608
+        ],
+        "lengthPx": 86.718,
+        "widthPx": 12.923,
+        "angleDeg": 91.166,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "H88-bar-0",
+        "center": [
+          1369.93,
+          6983.507
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 16.154,
+        "angleDeg": -73.806,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I93-bar-0",
+        "center": [
+          9381.142,
+          6585.157
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 16.154,
+        "angleDeg": 6.197,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "JAU-bar-0",
+        "center": [
+          14247.752,
+          10275.474
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 16.154,
+        "angleDeg": -46.284,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "K06-bar-0",
+        "center": [
+          1295.934,
+          769.3
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 12.923,
+        "angleDeg": 92.779,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M20-bar-0",
+        "center": [
+          9768.276,
+          7589.388
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 12.923,
+        "angleDeg": -72.155,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PPQ-bar-0",
+        "center": [
+          526.258,
+          1623.274
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 12.923,
+        "angleDeg": 46.878,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "TZV-bar-0",
+        "center": [
+          11073.932,
+          9325.391
+        ],
+        "lengthPx": 111.91,
+        "widthPx": 16.154,
+        "angleDeg": -56.638,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PJY-bar-0",
+        "center": [
+          3320.415,
+          6054.387
+        ],
+        "lengthPx": 111.904,
+        "widthPx": 12.923,
+        "angleDeg": 92.4,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I17-bar-0",
+        "center": [
+          13610.798,
+          249.368
+        ],
+        "lengthPx": 111.898,
+        "widthPx": 16.154,
+        "angleDeg": -16.358,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M34-bar-0",
+        "center": [
+          5500.35,
+          8620.261
+        ],
+        "lengthPx": 111.892,
+        "widthPx": 16.154,
+        "angleDeg": 8.9,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M12-bar-0",
+        "center": [
+          2166.089,
+          10960.166
+        ],
+        "lengthPx": 111.814,
+        "widthPx": 12.923,
+        "angleDeg": 91.341,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "0I8-bar-0",
+        "center": [
+          13817.162,
+          4964.093
+        ],
+        "lengthPx": 111.012,
+        "widthPx": 16.154,
+        "angleDeg": 13.627,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SET-bar-0",
+        "center": [
+          1169.28,
+          3520.485
+        ],
+        "lengthPx": 110.713,
+        "widthPx": 16.154,
+        "angleDeg": 92.409,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "SET-bar-1",
+        "center": [
+          1193.272,
+          3478.154
+        ],
+        "lengthPx": 87.114,
+        "widthPx": 16.154,
+        "angleDeg": 2.445,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "5I4-bar-0",
+        "center": [
+          9757.903,
+          318.966
+        ],
+        "lengthPx": 110.474,
+        "widthPx": 12.923,
+        "angleDeg": -38.731,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "VLA-bar-0",
+        "center": [
+          3759.998,
+          3394.356
+        ],
+        "lengthPx": 110.42,
+        "widthPx": 16.154,
+        "angleDeg": 90.657,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "VLA-bar-1",
+        "center": [
+          3779.574,
+          3418.102
+        ],
+        "lengthPx": 100.485,
+        "widthPx": 16.154,
+        "angleDeg": 0.658,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "7L8-bar-0",
+        "center": [
+          10178.179,
+          1417.162
+        ],
+        "lengthPx": 110.414,
+        "widthPx": 12.923,
+        "angleDeg": 9.105,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "6I4-bar-0",
+        "center": [
+          9320.18,
+          738.671
+        ],
+        "lengthPx": 109.516,
+        "widthPx": 12.923,
+        "angleDeg": 89.377,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I66-bar-0",
+        "center": [
+          14572.337,
+          1955.388
+        ],
+        "lengthPx": 109.391,
+        "widthPx": 12.923,
+        "angleDeg": -63.855,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I69-bar-0",
+        "center": [
+          13904.985,
+          3092.516
+        ],
+        "lengthPx": 109.319,
+        "widthPx": 16.154,
+        "angleDeg": -55.485,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "3I3-bar-0",
+        "center": [
+          7436.139,
+          1963.526
+        ],
+        "lengthPx": 109.259,
+        "widthPx": 12.923,
+        "angleDeg": -6.301,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "3I3-bar-1",
+        "center": [
+          7414.879,
+          1993.207
+        ],
+        "lengthPx": 87.433,
+        "widthPx": 12.923,
+        "angleDeg": 89.394,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "GEO-bar-0",
+        "center": [
+          14593.292,
+          3583.695
+        ],
+        "lengthPx": 109.097,
+        "widthPx": 12.923,
+        "angleDeg": 78.071,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "0M2-bar-0",
+        "center": [
+          3275.114,
+          9989.565
+        ],
+        "lengthPx": 108.918,
+        "widthPx": 16.154,
+        "angleDeg": -82.063,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I73-bar-0",
+        "center": [
+          13791.122,
+          1511.259
+        ],
+        "lengthPx": 108.918,
+        "widthPx": 12.923,
+        "angleDeg": -12.237,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "2A1-bar-0",
+        "center": [
+          12587.149,
+          10284.777
+        ],
+        "lengthPx": 108.906,
+        "widthPx": 16.154,
+        "angleDeg": -91.124,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "1A7-bar-0",
+        "center": [
+          11113.758,
+          10194.753
+        ],
+        "lengthPx": 108.9,
+        "widthPx": 16.154,
+        "angleDeg": 90.88,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "7I4-bar-0",
+        "center": [
+          9366.347,
+          4308.174
+        ],
+        "lengthPx": 108.655,
+        "widthPx": 12.923,
+        "angleDeg": -32.62,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I42-bar-0",
+        "center": [
+          9309.552,
+          4489.15
+        ],
+        "lengthPx": 107.733,
+        "widthPx": 12.923,
+        "angleDeg": -70.603,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "PYN-bar-0",
+        "center": [
+          440.949,
+          8211.394
+        ],
+        "lengthPx": 107.697,
+        "widthPx": 12.923,
+        "angleDeg": -55.881,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "M71-bar-0",
+        "center": [
+          88.734,
+          3543.398
+        ],
+        "lengthPx": 107.284,
+        "widthPx": 12.923,
+        "angleDeg": 3.865,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "2I3-bar-0",
+        "center": [
+          9248.708,
+          7045.057
+        ],
+        "lengthPx": 107.123,
+        "widthPx": 16.154,
+        "angleDeg": -73.524,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "EIW-bar-0",
+        "center": [
+          2742.681,
+          9821.84
+        ],
+        "lengthPx": 107.123,
+        "widthPx": 12.923,
+        "angleDeg": 91.045,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "CHQ-bar-0",
+        "center": [
+          3265.302,
+          9028.759
+        ],
+        "lengthPx": 107.099,
+        "widthPx": 12.923,
+        "angleDeg": 91.254,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "34M-bar-0",
+        "center": [
+          1860.583,
+          9929.915
+        ],
+        "lengthPx": 105.926,
+        "widthPx": 12.923,
+        "angleDeg": 92.212,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "3I7-bar-0",
+        "center": [
+          13446.575,
+          915.26
+        ],
+        "lengthPx": 105.926,
+        "widthPx": 12.923,
+        "angleDeg": -68.294,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I83-bar-0",
+        "center": [
+          9952.357,
+          4430.763
+        ],
+        "lengthPx": 105.926,
+        "widthPx": 16.154,
+        "angleDeg": -13.263,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "18I-bar-0",
+        "center": [
+          13733.622,
+          9346.087
+        ],
+        "lengthPx": 105.92,
+        "widthPx": 16.154,
+        "angleDeg": -56.679,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I50-bar-0",
+        "center": [
+          14770.338,
+          6284.491
+        ],
+        "lengthPx": 105.902,
+        "widthPx": 12.923,
+        "angleDeg": -27.137,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "0I2-bar-0",
+        "center": [
+          7993.583,
+          2159.168
+        ],
+        "lengthPx": 105.573,
+        "widthPx": 12.923,
+        "angleDeg": 0.863,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "5K1-bar-0",
+        "center": [
+          2105.754,
+          2245.089
+        ],
+        "lengthPx": 105.327,
+        "widthPx": 12.923,
+        "angleDeg": 91.465,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I44-bar-0",
+        "center": [
+          13575.301,
+          1300.369
+        ],
+        "lengthPx": 105.327,
+        "widthPx": 12.923,
+        "angleDeg": -49.058,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I67-bar-0",
+        "center": [
+          12738.815,
+          2653.795
+        ],
+        "lengthPx": 104.777,
+        "widthPx": 12.923,
+        "angleDeg": -91.31,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "1BT-bar-0",
+        "center": [
+          796.466,
+          6144.85
+        ],
+        "lengthPx": 104.729,
+        "widthPx": 12.923,
+        "angleDeg": 52.809,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "7I2-bar-0",
+        "center": [
+          11575.51,
+          330.269
+        ],
+        "lengthPx": 104.729,
+        "widthPx": 12.923,
+        "angleDeg": 0.747,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "K96-bar-0",
+        "center": [
+          5545.691,
+          1354.972
+        ],
+        "lengthPx": 103.891,
+        "widthPx": 12.923,
+        "angleDeg": 1.346,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "37M-bar-0",
+        "center": [
+          1527.762,
+          11099.668
+        ],
+        "lengthPx": 103.819,
+        "widthPx": 12.923,
+        "angleDeg": 91.629,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I96-bar-0",
+        "center": [
+          11693.352,
+          8381.082
+        ],
+        "lengthPx": 103.532,
+        "widthPx": 12.923,
+        "angleDeg": -14.012,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "I99-bar-0",
+        "center": [
+          10929.653,
+          140.786
+        ],
+        "lengthPx": 103.478,
+        "widthPx": 12.923,
+        "angleDeg": -0.021,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "X33-bar-0",
+        "center": [
+          254.105,
+          9337.837
+        ],
+        "lengthPx": 103.292,
+        "widthPx": 12.923,
+        "angleDeg": -15.16,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "7M7-bar-0",
+        "center": [
+          1534.653,
+          10203.778
+        ],
+        "lengthPx": 103.233,
+        "widthPx": 12.923,
+        "angleDeg": 91.751,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "3FK-bar-0",
+        "center": [
+          10105.252,
+          2272.723
+        ],
+        "lengthPx": 102.335,
+        "widthPx": 12.923,
+        "angleDeg": -61.342,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      },
+      {
+        "id": "H57-bar-0",
+        "center": [
+          696.522,
+          6561.757
+        ],
+        "lengthPx": 100.24,
+        "widthPx": 12.923,
+        "angleDeg": 87.05,
+        "fill": "#8b1e6d",
+        "alpha": 1.0,
+        "haloColor": "#ffffff",
+        "haloPaddingPx": 5.386
+      }
+    ]
+  },
+  "interactionRegions": [],
+  "stats": {
+    "airportSymbols": 22,
+    "runwayBars": 289,
+    "airports": 306
+  }
+}

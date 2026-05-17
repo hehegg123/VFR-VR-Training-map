@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-05-11T14:36:02.381557+00:00",
+  "sections": [
+    {
+      "id": "stlouis",
+      "title": "St. Louis Sectional",
+      "manifest": "./sections/stlouis/manifest.json",
+      "quality": "primary"
+    }
+  ]
+}

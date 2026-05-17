@@ -1,0 +1,243 @@
+:root {
+  color-scheme: only light;
+  --bg: #b9c7d6;
+  --panel: rgba(242, 245, 248, 0.92);
+  --panel-border: rgba(62, 83, 104, 0.22);
+  --panel-shadow: 0 20px 56px rgba(25, 39, 53, 0.18);
+  --text: #132231;
+  --muted: #55697d;
+  --accent: #1a5fb4;
+  --accent-strong: #0d3f88;
+  --accent-soft: rgba(26, 95, 180, 0.1);
+  --danger: #7b2142;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Segoe UI", "Aptos", "Helvetica Neue", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.78), transparent 30%),
+    linear-gradient(180deg, #d4dee7 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+body {
+  min-height: 100vh;
+}
+
+.app-shell {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#renderCanvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  display: block;
+}
+
+.hud-panel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: min(360px, calc(100vw - 40px));
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  padding: 20px 20px 18px;
+  border: 1px solid var(--panel-border);
+  border-radius: 24px;
+  background: var(--panel);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--panel-shadow);
+}
+
+.hud-header h1 {
+  margin: 4px 0 10px;
+  font-size: 1.65rem;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.72rem;
+  color: var(--accent-strong);
+}
+
+.hud-copy,
+.hud-note {
+  margin: 0;
+  line-height: 1.45;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hud-group {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(62, 83, 104, 0.12);
+}
+
+.hud-group label,
+.hud-row span:first-child {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.hud-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.hud-muted {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+select,
+input,
+button {
+  font: inherit;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(62, 83, 104, 0.22);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text);
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent) 0%, #2e7fd8 100%);
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(26, 95, 180, 0.25);
+}
+
+button:hover {
+  background: linear-gradient(135deg, var(--accent-strong) 0%, #256fc2 100%);
+}
+
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-row button {
+  flex: 1;
+}
+
+.button-secondary {
+  background: linear-gradient(135deg, #486074 0%, #6f8599 100%);
+  box-shadow: 0 10px 24px rgba(72, 96, 116, 0.2);
+}
+
+.button-secondary:hover {
+  background: linear-gradient(135deg, #3e5365 0%, #64788a 100%);
+}
+
+.layer-list {
+  display: grid;
+  gap: 10px;
+}
+
+.layer-card {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(62, 83, 104, 0.12);
+}
+
+.layer-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.layer-card h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.layer-card p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.toggle-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+}
+
+.toggle-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.quality-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.quality-pill[data-quality="legacy"] {
+  background: rgba(123, 33, 66, 0.1);
+  color: var(--danger);
+}
+
+@media (max-width: 900px) {
+  .hud-panel {
+    top: auto;
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+    width: auto;
+    max-height: 52vh;
+  }
+}

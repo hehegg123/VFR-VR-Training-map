@@ -1,0 +1,544 @@
+{
+  "schema": "babylon-vr-labels-v1",
+  "items": [
+    {
+      "id": "V11",
+      "x": 5414.651,
+      "y": 7591.159,
+      "lines": [
+        "V11",
+        "CNG-MZZ"
+      ],
+      "style": "victor-airway",
+      "priority": 0.57
+    },
+    {
+      "id": "V12",
+      "x": 8236.67,
+      "y": 2487.6,
+      "lines": [
+        "V12",
+        "STITH-SHB"
+      ],
+      "style": "victor-airway",
+      "priority": 0.6699999999999999
+    },
+    {
+      "id": "V129",
+      "x": 2807.067,
+      "y": 843.299,
+      "lines": [
+        "V129",
+        "SPI-LOTTO"
+      ],
+      "style": "victor-airway",
+      "priority": 0.38999999999999996
+    },
+    {
+      "id": "V14",
+      "x": 4391.424,
+      "y": 2845.461,
+      "lines": [
+        "V14",
+        "STEER-FAXIG"
+      ],
+      "style": "victor-airway",
+      "priority": 0.59
+    },
+    {
+      "id": "V140",
+      "x": 4455.051,
+      "y": 10817.719,
+      "lines": [
+        "V140",
+        "ARG-LOZ"
+      ],
+      "style": "victor-airway",
+      "priority": 0.51
+    },
+    {
+      "id": "V159",
+      "x": 90.237,
+      "y": 11191.351,
+      "lines": [
+        "V159",
+        "GQE-ARG"
+      ],
+      "style": "victor-airway",
+      "priority": 0.37
+    },
+    {
+      "id": "V171",
+      "x": 7502.729,
+      "y": 1078.148,
+      "lines": [
+        "V171",
+        "HYK-EON"
+      ],
+      "style": "victor-airway",
+      "priority": 0.57
+    },
+    {
+      "id": "V173",
+      "x": 3090.872,
+      "y": 772.259,
+      "lines": [
+        "V173",
+        "SPI-JILLY"
+      ],
+      "style": "victor-airway",
+      "priority": 0.38999999999999996
+    },
+    {
+      "id": "V178",
+      "x": 6232.179,
+      "y": 6823.719,
+      "lines": [
+        "V178",
+        "VIH-TRENT"
+      ],
+      "style": "victor-airway",
+      "priority": 0.55
+    },
+    {
+      "id": "V191",
+      "x": 3179.086,
+      "y": 3005.129,
+      "lines": [
+        "V191",
+        "TOY-RBS"
+      ],
+      "style": "victor-airway",
+      "priority": 0.53
+    },
+    {
+      "id": "V192",
+      "x": 12416.697,
+      "y": 321.181,
+      "lines": [
+        "V192",
+        "CMI-DQN"
+      ],
+      "style": "victor-airway",
+      "priority": 0.55
+    },
+    {
+      "id": "V210",
+      "x": 11831.077,
+      "y": 147.45,
+      "lines": [
+        "V210",
+        "VHP-DEBAR"
+      ],
+      "style": "victor-airway",
+      "priority": 0.44999999999999996
+    },
+    {
+      "id": "V221",
+      "x": 6329.897,
+      "y": 3372.751,
+      "lines": [
+        "V221",
+        "BIB-HAROD"
+      ],
+      "style": "victor-airway",
+      "priority": 0.55
+    },
+    {
+      "id": "V233",
+      "x": 4236.355,
+      "y": 355.595,
+      "lines": [
+        "V233",
+        "SPI-SAYBA"
+      ],
+      "style": "victor-airway",
+      "priority": 0.44999999999999996
+    },
+    {
+      "id": "V234",
+      "x": 3140.889,
+      "y": 5029.532,
+      "lines": [
+        "V234",
+        "VIH-ENL"
+      ],
+      "style": "victor-airway",
+      "priority": 0.43
+    },
+    {
+      "id": "V24",
+      "x": 8661.639,
+      "y": 466.879,
+      "lines": [
+        "V24",
+        "POTES-VHP"
+      ],
+      "style": "victor-airway",
+      "priority": 0.43
+    },
+    {
+      "id": "V251",
+      "x": 4775.102,
+      "y": 1203.251,
+      "lines": [
+        "V251",
+        "AXC-CMI"
+      ],
+      "style": "victor-airway",
+      "priority": 0.41
+    },
+    {
+      "id": "V275",
+      "x": 13535.997,
+      "y": 316.53,
+      "lines": [
+        "V275",
+        "DQN-CUBOB"
+      ],
+      "style": "victor-airway",
+      "priority": 0.37
+    },
+    {
+      "id": "V305",
+      "x": 2213.208,
+      "y": 9637.735,
+      "lines": [
+        "V305",
+        "ARG-VHP"
+      ],
+      "style": "victor-airway",
+      "priority": 0.53
+    },
+    {
+      "id": "V310",
+      "x": 13760.498,
+      "y": 7896.355,
+      "lines": [
+        "V310",
+        "IIU-ROSAR"
+      ],
+      "style": "victor-airway",
+      "priority": 0.49
+    },
+    {
+      "id": "V313",
+      "x": 4195.373,
+      "y": 2960.438,
+      "lines": [
+        "V313",
+        "ENL-AXC"
+      ],
+      "style": "victor-airway",
+      "priority": 0.41
+    },
+    {
+      "id": "V321",
+      "x": 11667.688,
+      "y": 10209.912,
+      "lines": [
+        "V321",
+        "PECON-LVT"
+      ],
+      "style": "victor-airway",
+      "priority": 0.38999999999999996
+    },
+    {
+      "id": "V333",
+      "x": 13155.32,
+      "y": 8345.984,
+      "lines": [
+        "V333",
+        "HCH-HYK"
+      ],
+      "style": "victor-airway",
+      "priority": 0.44999999999999996
+    },
+    {
+      "id": "V347",
+      "x": 13534.467,
+      "y": 9826.044,
+      "lines": [
+        "V347",
+        "LOZ-HCH"
+      ],
+      "style": "victor-airway",
+      "priority": 0.38999999999999996
+    },
+    {
+      "id": "V384",
+      "x": 14116.919,
+      "y": 10888.919,
+      "lines": [
+        "V384",
+        "LVT-VXV"
+      ],
+      "style": "victor-airway",
+      "priority": 0.41
+    },
+    {
+      "id": "V399",
+      "x": 8663.685,
+      "y": 630.143,
+      "lines": [
+        "V399",
+        "VHP-BVT"
+      ],
+      "style": "victor-airway",
+      "priority": 0.43
+    },
+    {
+      "id": "V4",
+      "x": 12797.612,
+      "y": 5876.693,
+      "lines": [
+        "V4",
+        "CABIT-HYK"
+      ],
+      "style": "victor-airway",
+      "priority": 0.71
+    },
+    {
+      "id": "V429",
+      "x": 5730.307,
+      "y": 335.106,
+      "lines": [
+        "V429",
+        "CMI-LUDLO"
+      ],
+      "style": "victor-airway",
+      "priority": 0.37
+    },
+    {
+      "id": "V434",
+      "x": 9006.191,
+      "y": 1131.221,
+      "lines": [
+        "V434",
+        "MCLEN-VHP"
+      ],
+      "style": "victor-airway",
+      "priority": 0.53
+    },
+    {
+      "id": "V44",
+      "x": 673.626,
+      "y": 4166.18,
+      "lines": [
+        "V44",
+        "HODGS-ENL"
+      ],
+      "style": "victor-airway",
+      "priority": 0.49
+    },
+    {
+      "id": "V493",
+      "x": 12713.578,
+      "y": 8176.461,
+      "lines": [
+        "V493",
+        "LVT-HYK"
+      ],
+      "style": "victor-airway",
+      "priority": 0.38999999999999996
+    },
+    {
+      "id": "V50",
+      "x": 1375.346,
+      "y": 862.298,
+      "lines": [
+        "V50",
+        "IRK-DQN"
+      ],
+      "style": "victor-airway",
+      "priority": 0.79
+    },
+    {
+      "id": "V51",
+      "x": 10932.051,
+      "y": 3731.7,
+      "lines": [
+        "V51",
+        "HCH-OCKEL"
+      ],
+      "style": "victor-airway",
+      "priority": 0.53
+    },
+    {
+      "id": "V512",
+      "x": 7302.425,
+      "y": 5902.628,
+      "lines": [
+        "V512",
+        "PXV-HYK"
+      ],
+      "style": "victor-airway",
+      "priority": 0.51
+    },
+    {
+      "id": "V513",
+      "x": 11912.706,
+      "y": 9251.254,
+      "lines": [
+        "V513",
+        "LVT-IIU"
+      ],
+      "style": "victor-airway",
+      "priority": 0.51
+    },
+    {
+      "id": "V517",
+      "x": 14392.724,
+      "y": 7479.084,
+      "lines": [
+        "V517",
+        "MIAMI-FLM"
+      ],
+      "style": "victor-airway",
+      "priority": 0.47
+    },
+    {
+      "id": "V52",
+      "x": 3231.207,
+      "y": 4171.384,
+      "lines": [
+        "V52",
+        "STL-PXV"
+      ],
+      "style": "victor-airway",
+      "priority": 0.47
+    },
+    {
+      "id": "V53",
+      "x": 12813.743,
+      "y": 5999.608,
+      "lines": [
+        "V53",
+        "HYK-VHP"
+      ],
+      "style": "victor-airway",
+      "priority": 0.51
+    },
+    {
+      "id": "V540",
+      "x": 2128.612,
+      "y": 7176.635,
+      "lines": [
+        "V540",
+        "CNG-FAM"
+      ],
+      "style": "victor-airway",
+      "priority": 0.44999999999999996
+    },
+    {
+      "id": "V55",
+      "x": 13178.779,
+      "y": 287.755,
+      "lines": [
+        "V55",
+        "DQN-ROSSY"
+      ],
+      "style": "victor-airway",
+      "priority": 0.37
+    },
+    {
+      "id": "V57",
+      "x": 13707.597,
+      "y": 4800.916,
+      "lines": [
+        "V57",
+        "HYK-FLM"
+      ],
+      "style": "victor-airway",
+      "priority": 0.38999999999999996
+    },
+    {
+      "id": "V580",
+      "x": 1057.147,
+      "y": 2935.375,
+      "lines": [
+        "V580",
+        "STL-BRL"
+      ],
+      "style": "victor-airway",
+      "priority": 0.41
+    },
+    {
+      "id": "V67",
+      "x": 1886.891,
+      "y": 368.275,
+      "lines": [
+        "V67",
+        "SPI-BADER"
+      ],
+      "style": "victor-airway",
+      "priority": 0.41
+    },
+    {
+      "id": "V69",
+      "x": 1824.076,
+      "y": 5731.479,
+      "lines": [
+        "V69",
+        "ARG-SPI"
+      ],
+      "style": "victor-airway",
+      "priority": 0.57
+    },
+    {
+      "id": "V7",
+      "x": 7246.119,
+      "y": 4298.884,
+      "lines": [
+        "V7",
+        "PXV-POTES"
+      ],
+      "style": "victor-airway",
+      "priority": 0.57
+    },
+    {
+      "id": "V72",
+      "x": 758.915,
+      "y": 6944.494,
+      "lines": [
+        "V72",
+        "DGD-BIB"
+      ],
+      "style": "victor-airway",
+      "priority": 0.47
+    },
+    {
+      "id": "V88",
+      "x": 650.562,
+      "y": 4572.112,
+      "lines": [
+        "V88",
+        "STEER-TOY"
+      ],
+      "style": "victor-airway",
+      "priority": 0.41
+    },
+    {
+      "id": "V9",
+      "x": 540.307,
+      "y": 9254.372,
+      "lines": [
+        "V9",
+        "ARG-SPI"
+      ],
+      "style": "victor-airway",
+      "priority": 0.63
+    },
+    {
+      "id": "V97",
+      "x": 14446.037,
+      "y": 9533.789,
+      "lines": [
+        "V97",
+        "VXV-HYK"
+      ],
+      "style": "victor-airway",
+      "priority": 0.43
+    }
+  ]
+}
