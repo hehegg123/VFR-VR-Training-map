@@ -6,7 +6,8 @@ import {
 import { RasterLayer } from "./RasterLayer.js";
 import { TiledRasterLayer } from "./TiledRasterLayer.js";
 import { VectorOverlayLayer } from "./VectorOverlayLayer.js?v=20260514-feature-highlight-v1";
-import { VrLabelLayer } from "./VrLabelLayer.js?v=20260516-label-style-v3";
+import { AirspaceAltitudeOverlay } from "./AirspaceAltitudeOverlay.js?v=20260517-airspace-altitude-v4";
+import { VrLabelLayer } from "./VrLabelLayer.js?v=20260517-label-visibility-rules-v1";
 
 export class LayerManager {
   constructor(scene, mapRoot) {
@@ -19,9 +20,12 @@ export class LayerManager {
     this.currentManifest = null;
     this.currentSectionId = null;
     this.labelOptions = new Map();
+    this.layerInteractionState = new Map();
     this.viewState = {
       cameraRadius: null,
     };
+    this.airspaceAltitudeEnabled = false;
+    this.airspaceAltitudeOverlay = null;
     this.selectedAirspaceId = null;
     this.selectedLabel = null;
     this.currentSelection = null;
@@ -31,7 +35,7 @@ export class LayerManager {
       if (pointerInfo.type !== BABYLON.PointerEventTypes.POINTERPICK) {
         return;
       }
-      const metadata = findInteractionMetadata(pointerInfo.pickInfo?.pickedMesh ?? null);
+      const metadata = this.resolvePriorityInteractionMetadata(pointerInfo.pickInfo);
       if (metadata?.interactiveLayerId) {
         this.handleInteractionMetadata(metadata);
         return;
@@ -44,6 +48,7 @@ export class LayerManager {
     this.dispose();
     this.currentManifest = manifest;
     this.currentSectionId = manifest.id;
+    this.layerInteractionState.clear();
 
     this.sectionMetrics = {
       pixelWidth: manifest.chart.pixelWidth,
@@ -69,7 +74,28 @@ export class LayerManager {
         labelLayer.setViewState(this.viewState);
       }
 
+      const defaultLayerVisible = layerDef.defaultVisible !== false;
+      const defaultLabelsVisible = Boolean(layerDef.labelData) && layerDef.defaultLabels !== false;
+      this.layerInteractionState.set(layerDef.id, {
+        layerVisible: defaultLayerVisible,
+        labelsVisible: defaultLabelsVisible,
+      });
+      labelLayer?.setLayerActive(defaultLayerVisible);
+      labelLayer?.setVisible(defaultLabelsVisible);
+
       this.layers.set(layerDef.id, { definition: hydrated, renderLayer, labelLayer });
+
+      if (layerDef.id === "airspace" && renderLayer?.overlayPayload?.interactionRegions?.length) {
+        this.airspaceAltitudeOverlay = new AirspaceAltitudeOverlay(
+          this.scene,
+          this.mapRoot,
+          this.sectionMetrics,
+          hydrated.altitudeVolume ?? {},
+        );
+        this.airspaceAltitudeOverlay.setRegions(renderLayer.overlayPayload.interactionRegions ?? []);
+        this.airspaceAltitudeOverlay.setLayerVisible(layerDef.defaultVisible !== false);
+        this.airspaceAltitudeOverlay.setEnabled(this.airspaceAltitudeEnabled);
+      }
     }
     this.clearSelections();
   }
@@ -156,10 +182,33 @@ export class LayerManager {
   }
 
   setLayerVisible(layerId, visible) {
+    const nextState = {
+      ...(this.layerInteractionState.get(layerId) ?? {}),
+      layerVisible: Boolean(visible),
+    };
+    this.layerInteractionState.set(layerId, nextState);
     this.layers.get(layerId)?.renderLayer.setVisible(visible);
+    this.layers.get(layerId)?.labelLayer?.setLayerActive(visible);
+    if (layerId === "airspace") {
+      this.airspaceAltitudeOverlay?.setLayerVisible(visible);
+    }
+    if (!visible) {
+      if (this.selectedAirspaceId && layerId === "airspace") {
+        this.clearAirspaceSelection({ suppressNotify: true });
+      }
+      if (this.selectedLabel?.layerId === layerId) {
+        this.clearLabelSelection({ suppressNotify: true });
+      }
+      this.notifySelectionChange(null);
+    }
   }
 
   setLabelVisible(layerId, visible) {
+    const nextState = {
+      ...(this.layerInteractionState.get(layerId) ?? {}),
+      labelsVisible: Boolean(visible),
+    };
+    this.layerInteractionState.set(layerId, nextState);
     this.layers.get(layerId)?.labelLayer?.setVisible(visible);
   }
 
@@ -190,9 +239,7 @@ export class LayerManager {
       this.clearLabelSelection({ suppressNotify: true });
     }
     this.selectedAirspaceId = selectionId;
-    const airspaceLayer = this.layers.get("airspace");
-    airspaceLayer?.renderLayer?.setSelection?.(selectionId);
-    airspaceLayer?.labelLayer?.setSelection?.(selectionId);
+    this.syncAirspaceSelectionVisualState();
     this.onAirspaceSelectionChange?.(selectionId);
     if (!options.suppressNotify) {
       this.notifySelectionChange(selectionId
@@ -223,9 +270,9 @@ export class LayerManager {
       this.clearAirspaceSelection({ suppressNotify: true });
     }
 
-    this.selectedLabel = nextSelection;
+      this.selectedLabel = nextSelection;
     for (const [currentLayerId, layer] of this.layers.entries()) {
-      layer.labelLayer?.setSelection(currentLayerId === layerId ? itemId : null);
+      layer.labelLayer?.setSelection(currentLayerId === layerId ? (metadata?.selectionId ?? itemId) : null);
       layer.labelLayer?.setFocusedLabel(nextSelection);
     }
 
@@ -263,6 +310,12 @@ export class LayerManager {
     this.clearAirspaceSelection({ suppressNotify: true });
     this.clearLabelSelection({ suppressNotify: true });
     this.notifySelectionChange(null);
+  }
+
+  setAirspaceAltitudeMode(enabled) {
+    this.airspaceAltitudeEnabled = Boolean(enabled);
+    this.airspaceAltitudeOverlay?.setEnabled(this.airspaceAltitudeEnabled);
+    this.syncAirspaceSelectionVisualState();
   }
 
   applySelection(selection, options = {}) {
@@ -306,11 +359,22 @@ export class LayerManager {
   }
 
   handleInteractionMetadata(metadata) {
+    const interactionState = this.layerInteractionState.get(metadata.interactiveLayerId);
+    if (!interactionState?.layerVisible) {
+      this.clearSelections();
+      return;
+    }
+
     if (metadata.interactiveLayerId === "airspace" && metadata.selectionId) {
       this.setAirspaceSelection(metadata.selectionId);
       return;
     }
-    if (metadata.interactiveRole === "label" && metadata.interactiveLayerId && metadata.itemId) {
+    if (
+      metadata.interactiveRole === "label"
+      && metadata.interactiveLayerId
+      && metadata.itemId
+      && interactionState.labelsVisible
+    ) {
       this.setLabelSelection(metadata.interactiveLayerId, metadata.itemId, metadata);
       return;
     }
@@ -332,17 +396,47 @@ export class LayerManager {
 
   dispose() {
     this.clearSelections();
+    this.airspaceAltitudeOverlay?.dispose();
+    this.airspaceAltitudeOverlay = null;
     for (const layer of this.layers.values()) {
       layer.labelLayer?.dispose();
       layer.renderLayer.dispose();
     }
     this.layers.clear();
+    this.layerInteractionState.clear();
     this.boardMaterial?.dispose(false, true);
     this.boardMesh?.dispose(false, true);
     this.boardMaterial = null;
     this.boardMesh = null;
     this.currentManifest = null;
     this.currentSectionId = null;
+  }
+
+  resolvePriorityInteractionMetadata(pickInfo) {
+    const direct = findInteractionMetadata(pickInfo?.pickedMesh ?? null);
+    const pickResults = collectInteractivePickResults(this.scene, pickInfo);
+    if (!pickResults.length) {
+      return direct;
+    }
+
+    pickResults.sort(compareInteractivePickResults);
+    return pickResults[0]?.metadata ?? direct;
+  }
+
+  syncAirspaceSelectionVisualState() {
+    const airspaceLayer = this.layers.get("airspace");
+    airspaceLayer?.renderLayer?.setSelection?.(this.airspaceAltitudeEnabled ? null : this.selectedAirspaceId);
+    const focusedLabel = this.selectedAirspaceId
+      ? {
+          layerId: "airspace",
+          itemId: this.selectedAirspaceId,
+        }
+      : null;
+    for (const [layerId, layer] of this.layers.entries()) {
+      layer.labelLayer?.setSelection(layerId === "airspace" ? this.selectedAirspaceId : null);
+      layer.labelLayer?.setFocusedLabel(focusedLabel);
+    }
+    this.airspaceAltitudeOverlay?.setSelection(this.selectedAirspaceId);
   }
 }
 
@@ -355,4 +449,44 @@ function findInteractionMetadata(mesh) {
     current = current.parent ?? null;
   }
   return null;
+}
+
+function collectInteractivePickResults(scene, pickInfo) {
+  if (pickInfo?.ray && typeof scene.multiPickWithRay === "function") {
+    const results = scene.multiPickWithRay(
+      pickInfo.ray,
+      (mesh) => Boolean(findInteractionMetadata(mesh)),
+    ) ?? [];
+    return results
+      .map((result) => ({
+        metadata: findInteractionMetadata(result.pickedMesh ?? null),
+        distance: result.distance ?? Number.POSITIVE_INFINITY,
+      }))
+      .filter((result) => result.metadata?.interactiveLayerId);
+  }
+
+  const direct = findInteractionMetadata(pickInfo?.pickedMesh ?? null);
+  return direct ? [{ metadata: direct, distance: pickInfo?.distance ?? Number.POSITIVE_INFINITY }] : [];
+}
+
+function compareInteractivePickResults(left, right) {
+  const leftPriority = interactionPriority(left.metadata);
+  const rightPriority = interactionPriority(right.metadata);
+  if (leftPriority !== rightPriority) {
+    return rightPriority - leftPriority;
+  }
+  return (left.distance ?? Number.POSITIVE_INFINITY) - (right.distance ?? Number.POSITIVE_INFINITY);
+}
+
+function interactionPriority(metadata) {
+  if (!metadata) {
+    return 0;
+  }
+  if (metadata.interactiveRole === "label") {
+    return 3;
+  }
+  if (metadata.interactiveRole === "geometry") {
+    return 2;
+  }
+  return 1;
 }

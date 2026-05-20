@@ -71645,7 +71645,13 @@
             2753.86
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 0,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "STL-CLASS_B",
@@ -72981,7 +72987,13 @@
             3955.12
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 0,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "BNA-CLASS_C",
@@ -73427,7 +73439,13 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "BNA-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 6000,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 6000
     },
     {
       "id": "CMI-CLASS_C",
@@ -73793,7 +73811,13 @@
             471.04
           ]
         ]
-      ]
+      ],
+      "familyKey": "CMI-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4800,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 4800
     },
     {
       "id": "DAY-CLASS_C",
@@ -74073,7 +74097,13 @@
             713.42
           ]
         ]
-      ]
+      ],
+      "familyKey": "DAY-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 5000,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 5000
     },
     {
       "id": "EVV-CLASS_C",
@@ -74377,7 +74407,13 @@
             5489.09
           ]
         ]
-      ]
+      ],
+      "familyKey": "EVV-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4500,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 4500
     },
     {
       "id": "IND-CLASS_C",
@@ -74679,7 +74715,13 @@
             1069.19
           ]
         ]
-      ]
+      ],
+      "familyKey": "IND-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4800,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 4800
     },
     {
       "id": "LEX-CLASS_C",
@@ -74959,7 +75001,13 @@
             6284.01
           ]
         ]
-      ]
+      ],
+      "familyKey": "LEX-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 5000,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 5000
     },
     {
       "id": "SDF-CLASS_C",
@@ -75353,7 +75401,13 @@
             5317.79
           ]
         ]
-      ]
+      ],
+      "familyKey": "SDF-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4500,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 4500
     },
     {
       "id": "SPI-CLASS_C",
@@ -75633,7 +75687,13 @@
             708.1
           ]
         ]
-      ]
+      ],
+      "familyKey": "SPI-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4600,
+      "openEndedCeiling": false,
+      "altitudeSource": "attrs",
+      "ceilingFt": 4600
     },
     {
       "id": "AID-CLASS_D",
@@ -75715,7 +75775,13 @@
             289.88
           ]
         ]
-      ]
+      ],
+      "familyKey": "AID-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3400,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3400
     },
     {
       "id": "ALN-CLASS_D",
@@ -75797,7 +75863,13 @@
             3439.78
           ]
         ]
-      ]
+      ],
+      "familyKey": "ALN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3000
     },
     {
       "id": "BAK-CLASS_D",
@@ -75879,7 +75951,13 @@
             2518.19
           ]
         ]
-      ]
+      ],
+      "familyKey": "BAK-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3200,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3200
     },
     {
       "id": "BLV-CLASS_D",
@@ -76025,7 +76103,13 @@
             4332.49
           ]
         ]
-      ]
+      ],
+      "familyKey": "BLV-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3000
     },
     {
       "id": "BMG-CLASS_D",
@@ -76107,7 +76191,13 @@
             3212.58
           ]
         ]
-      ]
+      ],
+      "familyKey": "BMG-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3300,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3300
     },
     {
       "id": "CGI-CLASS_D",
@@ -76217,7 +76307,13 @@
             7837.8
           ]
         ]
-      ]
+      ],
+      "familyKey": "CGI-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2800,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 2800
     },
     {
       "id": "CPS-CLASS_D",
@@ -76299,7 +76395,13 @@
             4288.41
           ]
         ]
-      ]
+      ],
+      "familyKey": "CPS-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2900,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 2900
     },
     {
       "id": "DEC-CLASS_D",
@@ -76381,7 +76483,13 @@
             1009.12
           ]
         ]
-      ]
+      ],
+      "familyKey": "DEC-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3200,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3200
     },
     {
       "id": "HUF-CLASS_D",
@@ -76527,7 +76635,13 @@
             2017.66
           ]
         ]
-      ]
+      ],
+      "familyKey": "HUF-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3100,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3100
     },
     {
       "id": "ILN-CLASS_D",
@@ -76609,7 +76723,13 @@
             1949.77
           ]
         ]
-      ]
+      ],
+      "familyKey": "ILN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3600,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3600
     },
     {
       "id": "JWN-CLASS_D",
@@ -76719,7 +76839,13 @@
             11050.02
           ]
         ]
-      ]
+      ],
+      "familyKey": "JWN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3100,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3100
     },
     {
       "id": "LOU-CLASS_D",
@@ -76781,7 +76907,13 @@
             5491.38
           ]
         ]
-      ]
+      ],
+      "familyKey": "LOU-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3300,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3300
     },
     {
       "id": "LUK-CLASS_D",
@@ -76875,7 +77007,13 @@
             3319.18
           ]
         ]
-      ]
+      ],
+      "familyKey": "LUK-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3000
     },
     {
       "id": "MDH-CLASS_D",
@@ -76957,7 +77095,13 @@
             6398.42
           ]
         ]
-      ]
+      ],
+      "familyKey": "MDH-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2900,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 2900
     },
     {
       "id": "MIE-CLASS_D",
@@ -77039,7 +77183,13 @@
             0.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "MIE-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3400,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3400
     },
     {
       "id": "MQY-CLASS_D",
@@ -77089,7 +77239,13 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "MQY-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2500,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 2500
     },
     {
       "id": "MWA-CLASS_D",
@@ -77171,7 +77327,13 @@
             6458.6
           ]
         ]
-      ]
+      ],
+      "familyKey": "MWA-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3000
     },
     {
       "id": "OWB-CLASS_D",
@@ -77253,7 +77415,13 @@
             6890.96
           ]
         ]
-      ]
+      ],
+      "familyKey": "OWB-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2900,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 2900
     },
     {
       "id": "PAH-CLASS_D",
@@ -77399,7 +77567,13 @@
             8257.56
           ]
         ]
-      ]
+      ],
+      "familyKey": "PAH-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2900,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 2900
     },
     {
       "id": "SUS-CLASS_D",
@@ -77505,7 +77679,13 @@
             4116.53
           ]
         ]
-      ]
+      ],
+      "familyKey": "SUS-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "class-d-record",
+      "ceilingFt": 3000
     },
     {
       "id": "BWG-CLASS_E2",
@@ -77603,7 +77783,13 @@
             8551.61
           ]
         ]
-      ]
+      ],
+      "familyKey": "BWG-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "CGI-CLASS_E2",
@@ -77713,7 +77899,13 @@
             7837.8
           ]
         ]
-      ]
+      ],
+      "familyKey": "CGI-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "DYR-CLASS_E2",
@@ -77783,7 +77975,13 @@
             11031.47
           ]
         ]
-      ]
+      ],
+      "familyKey": "DYR-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "ILN-CLASS_E2",
@@ -77865,7 +78063,13 @@
             1949.77
           ]
         ]
-      ]
+      ],
+      "familyKey": "ILN-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 3600,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-explicit-upper",
+      "ceilingFt": 3600
     },
     {
       "id": "LOU-CLASS_E2",
@@ -77927,7 +78131,13 @@
             5491.38
           ]
         ]
-      ]
+      ],
+      "familyKey": "LOU-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "LOZ-CLASS_E2",
@@ -78073,7 +78283,13 @@
             8036.22
           ]
         ]
-      ]
+      ],
+      "familyKey": "LOZ-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "LUK-CLASS_E2",
@@ -78167,7 +78383,13 @@
             3319.18
           ]
         ]
-      ]
+      ],
+      "familyKey": "LUK-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-class-d-ceiling",
+      "ceilingFt": 3000
     },
     {
       "id": "MVN-CLASS_E2",
@@ -78249,7 +78471,13 @@
             4986.98
           ]
         ]
-      ]
+      ],
+      "familyKey": "MVN-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "SME-CLASS_E2",
@@ -78347,7 +78575,13 @@
             8260.78
           ]
         ]
-      ]
+      ],
+      "familyKey": "SME-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "SPI-CLASS_E2",
@@ -78493,7 +78727,13 @@
             927.06
           ]
         ]
-      ]
+      ],
+      "familyKey": "SPI-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "SUS-CLASS_E2",
@@ -78599,7 +78839,13 @@
             4116.53
           ]
         ]
-      ]
+      ],
+      "familyKey": "SUS-CLASS_E2",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-explicit-upper",
+      "ceilingFt": 3000
     },
     {
       "id": "BWG-CLASS_E4",
@@ -78665,7 +78911,13 @@
             9910.99
           ]
         ]
-      ]
+      ],
+      "familyKey": "BWG-CLASS_E4",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "LOU-CLASS_E4",
@@ -78711,7 +78963,13 @@
             6103.83
           ]
         ]
-      ]
+      ],
+      "familyKey": "LOU-CLASS_E4",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "SUS-CLASS_E4",
@@ -78775,7 +79033,13 @@
             4432.44
           ]
         ]
-      ]
+      ],
+      "familyKey": "SUS-CLASS_E4",
+      "floorFt": 0,
+      "proxyCeilingFt": 700,
+      "openEndedCeiling": false,
+      "altitudeSource": "surface-e-next-floor",
+      "ceilingFt": 700
     },
     {
       "id": "0A3-CLASS_E5",
@@ -78857,7 +79121,12 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "0A3-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "0I8-CLASS_E5",
@@ -79003,7 +79272,12 @@
             5304.69
           ]
         ]
-      ]
+      ],
+      "familyKey": "0I8-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "0M4-CLASS_E5",
@@ -79085,7 +79359,12 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "0M4-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "0M5-CLASS_E5",
@@ -79215,7 +79494,12 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "0M5-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "18I-CLASS_E5",
@@ -79361,7 +79645,12 @@
             9752.03
           ]
         ]
-      ]
+      ],
+      "familyKey": "18I-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "1H2-CLASS_E5",
@@ -79503,7 +79792,12 @@
             3479.52
           ]
         ]
-      ]
+      ],
+      "familyKey": "1H2-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "1H8-CLASS_E5",
@@ -79649,7 +79943,12 @@
             2987.43
           ]
         ]
-      ]
+      ],
+      "familyKey": "1H8-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "1M5-CLASS_E5",
@@ -79791,7 +80090,12 @@
             9988.59
           ]
         ]
-      ]
+      ],
+      "familyKey": "1M5-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "1M7-CLASS_E5",
@@ -79937,7 +80241,12 @@
             9554.22
           ]
         ]
-      ]
+      ],
+      "familyKey": "1M7-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "27K-CLASS_E5",
@@ -80079,7 +80388,12 @@
             5588.48
           ]
         ]
-      ]
+      ],
+      "familyKey": "27K-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "2A1-CLASS_E5",
@@ -80225,7 +80539,12 @@
             10577.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "2A1-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "2H0-CLASS_E5",
@@ -80359,7 +80678,12 @@
             2579.93
           ]
         ]
-      ]
+      ],
+      "familyKey": "2H0-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "2I0-CLASS_E5",
@@ -80505,7 +80829,12 @@
             8004.55
           ]
         ]
-      ]
+      ],
+      "familyKey": "2I0-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "2M0-CLASS_E5",
@@ -80651,7 +80980,12 @@
             8643.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "2M0-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "3I7-CLASS_E5",
@@ -80797,7 +81131,12 @@
             1186.07
           ]
         ]
-      ]
+      ],
+      "familyKey": "3I7-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "3LF-CLASS_E5",
@@ -80943,7 +81282,12 @@
             3229.05
           ]
         ]
-      ]
+      ],
+      "familyKey": "3LF-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "3M7-CLASS_E5",
@@ -81089,7 +81433,12 @@
             10197.14
           ]
         ]
-      ]
+      ],
+      "familyKey": "3M7-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "4M7-CLASS_E5",
@@ -81235,7 +81584,12 @@
             9446.61
           ]
         ]
-      ]
+      ],
+      "familyKey": "4M7-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "4M9-CLASS_E5",
@@ -81377,7 +81731,12 @@
             10357.8
           ]
         ]
-      ]
+      ],
+      "familyKey": "4M9-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "5I4-CLASS_E5",
@@ -81523,7 +81882,12 @@
             21.85
           ]
         ]
-      ]
+      ],
+      "familyKey": "5I4-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "6I2-CLASS_E5",
@@ -81669,7 +82033,12 @@
             7244.31
           ]
         ]
-      ]
+      ],
+      "familyKey": "6I2-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "8A3-CLASS_E5",
@@ -81815,7 +82184,12 @@
             9634.73
           ]
         ]
-      ]
+      ],
+      "familyKey": "8A3-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "8WC-CLASS_E5",
@@ -81961,7 +82335,12 @@
             6387.5
           ]
         ]
-      ]
+      ],
+      "familyKey": "8WC-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "AAA-CLASS_E5",
@@ -82107,7 +82486,12 @@
             642.43
           ]
         ]
-      ]
+      ],
+      "familyKey": "AAA-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "AAS-CLASS_E5",
@@ -82213,7 +82597,12 @@
             7341.92
           ]
         ]
-      ]
+      ],
+      "familyKey": "AAS-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "AID-CLASS_E5",
@@ -82359,7 +82748,12 @@
             180.37
           ]
         ]
-      ]
+      ],
+      "familyKey": "AID-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "ALN-CLASS_E5",
@@ -82505,7 +82899,12 @@
             3330.43
           ]
         ]
-      ]
+      ],
+      "familyKey": "ALN-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "BAK-CLASS_E5",
@@ -82651,7 +83050,12 @@
             2986.22
           ]
         ]
-      ]
+      ],
+      "familyKey": "BAK-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "BFR-CLASS_E5",
@@ -82805,7 +83209,12 @@
             3531.11
           ]
         ]
-      ]
+      ],
+      "familyKey": "BFR-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "BLV-CLASS_E5",
@@ -82895,7 +83304,12 @@
             4200.94
           ]
         ]
-      ]
+      ],
+      "familyKey": "BLV-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "BMG-CLASS_E5",
@@ -83041,7 +83455,12 @@
             3343.9
           ]
         ]
-      ]
+      ],
+      "familyKey": "BMG-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "BNA-CLASS_E5",
@@ -83287,7 +83706,12 @@
             10321.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "BNA-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "BRY-CLASS_E5",
@@ -83397,7 +83821,12 @@
             6065.59
           ]
         ]
-      ]
+      ],
+      "familyKey": "BRY-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "BWG-CLASS_E5",
@@ -83543,7 +83972,12 @@
             9025.68
           ]
         ]
-      ]
+      ],
+      "familyKey": "BWG-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "BYL-CLASS_E5",
@@ -83689,7 +84123,12 @@
             9355.53
           ]
         ]
-      ]
+      ],
+      "familyKey": "BYL-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "C16-CLASS_E5",
@@ -83867,7 +84306,12 @@
             983.01
           ]
         ]
-      ]
+      ],
+      "familyKey": "C16-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CEV-CLASS_E5",
@@ -84013,7 +84457,12 @@
             1809.89
           ]
         ]
-      ]
+      ],
+      "familyKey": "CEV-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CEY-CLASS_E5",
@@ -84253,7 +84702,12 @@
             9243.4
           ]
         ]
-      ]
+      ],
+      "familyKey": "CEY-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CFJ-CLASS_E5",
@@ -84399,7 +84853,12 @@
             1155.76
           ]
         ]
-      ]
+      ],
+      "familyKey": "CFJ-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CGI-CLASS_E5",
@@ -84525,7 +84984,12 @@
             7730.05
           ]
         ]
-      ]
+      ],
+      "familyKey": "CGI-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CHQ-CLASS_E5",
@@ -84671,7 +85135,12 @@
             9304.2
           ]
         ]
-      ]
+      ],
+      "familyKey": "CHQ-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CIR-CLASS_E5",
@@ -84781,7 +85250,12 @@
             8165.01
           ]
         ]
-      ]
+      ],
+      "familyKey": "CIR-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CKV-CLASS_E5",
@@ -84943,7 +85417,12 @@
             9894.74
           ]
         ]
-      ]
+      ],
+      "familyKey": "CKV-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CPS-CLASS_E5",
@@ -85089,7 +85568,12 @@
             4755.63
           ]
         ]
-      ]
+      ],
+      "familyKey": "CPS-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CUL-CLASS_E5",
@@ -85235,7 +85719,12 @@
             6074.48
           ]
         ]
-      ]
+      ],
+      "familyKey": "CUL-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "CVG-CLASS_E5",
@@ -85473,7 +85962,12 @@
             2646.18
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "DAY-CLASS_E5",
@@ -85679,7 +86173,12 @@
             805.88
           ]
         ]
-      ]
+      ],
+      "familyKey": "DAY-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "DCY-CLASS_E5",
@@ -85825,7 +86324,12 @@
             4475.73
           ]
         ]
-      ]
+      ],
+      "familyKey": "DCY-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "DEC-CLASS_E5",
@@ -85979,7 +86483,12 @@
             1038.79
           ]
         ]
-      ]
+      ],
+      "familyKey": "DEC-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "DNV-CLASS_E5",
@@ -86125,7 +86634,12 @@
             0.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "DNV-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "DVK-CLASS_E5",
@@ -86231,7 +86745,12 @@
             7132.55
           ]
         ]
-      ]
+      ],
+      "familyKey": "DVK-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "DXE-CLASS_E5",
@@ -86373,7 +86892,12 @@
             9433.51
           ]
         ]
-      ]
+      ],
+      "familyKey": "DXE-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "DYR-CLASS_E5",
@@ -86455,7 +86979,12 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "DYR-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "EHR-CLASS_E5",
@@ -86593,7 +87122,12 @@
             6236.46
           ]
         ]
-      ]
+      ],
+      "familyKey": "EHR-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "EIW-CLASS_E5",
@@ -86739,7 +87273,12 @@
             9371.88
           ]
         ]
-      ]
+      ],
+      "familyKey": "EIW-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "EKQ-CLASS_E5",
@@ -86885,7 +87424,12 @@
             9261.75
           ]
         ]
-      ]
+      ],
+      "familyKey": "EKQ-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "EKX-CLASS_E5",
@@ -87031,7 +87575,12 @@
             7110.75
           ]
         ]
-      ]
+      ],
+      "familyKey": "EKX-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "ENL-CLASS_E5",
@@ -87177,7 +87726,12 @@
             4946.05
           ]
         ]
-      ]
+      ],
+      "familyKey": "ENL-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "EVV-CLASS_E5",
@@ -87299,7 +87853,12 @@
             6209.54
           ]
         ]
-      ]
+      ],
+      "familyKey": "EVV-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "FAM-CLASS_E5",
@@ -87409,7 +87968,12 @@
             6632.92
           ]
         ]
-      ]
+      ],
+      "familyKey": "FAM-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "FFT-CLASS_E5",
@@ -87515,7 +88079,12 @@
             5233.98
           ]
         ]
-      ]
+      ],
+      "familyKey": "FFT-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "FOA-CLASS_E5",
@@ -87661,7 +88230,12 @@
             4584.57
           ]
         ]
-      ]
+      ],
+      "familyKey": "FOA-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "FRH-CLASS_E5",
@@ -87767,7 +88341,12 @@
             4979.14
           ]
         ]
-      ]
+      ],
+      "familyKey": "FRH-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "FWC-CLASS_E5",
@@ -87913,7 +88492,12 @@
             5355.8
           ]
         ]
-      ]
+      ],
+      "familyKey": "FWC-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "FYG-CLASS_E5",
@@ -87979,7 +88563,12 @@
             4493.52
           ]
         ]
-      ]
+      ],
+      "familyKey": "FYG-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "GDA-CLASS_E5",
@@ -88125,7 +88714,12 @@
             8065.61
           ]
         ]
-      ]
+      ],
+      "familyKey": "GDA-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "GDK-CLASS_E5",
@@ -88267,7 +88861,12 @@
             1624.73
           ]
         ]
-      ]
+      ],
+      "familyKey": "GDK-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "GEO-CLASS_E5",
@@ -88369,7 +88968,12 @@
             3963.73
           ]
         ]
-      ]
+      ],
+      "familyKey": "GEO-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "GEZ-CLASS_E5",
@@ -88523,7 +89127,12 @@
             1358.42
           ]
         ]
-      ]
+      ],
+      "familyKey": "GEZ-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "GLW-CLASS_E5",
@@ -88669,7 +89278,12 @@
             8867.04
           ]
         ]
-      ]
+      ],
+      "familyKey": "GLW-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "GPC-CLASS_E5",
@@ -88815,7 +89429,12 @@
             2028.92
           ]
         ]
-      ]
+      ],
+      "familyKey": "GPC-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "GRE-CLASS_E5",
@@ -88961,7 +89580,12 @@
             3524.1
           ]
         ]
-      ]
+      ],
+      "familyKey": "GRE-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "H88-CLASS_E5",
@@ -89083,7 +89707,12 @@
             6496.15
           ]
         ]
-      ]
+      ],
+      "familyKey": "H88-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "H96-CLASS_E5",
@@ -89229,7 +89858,12 @@
             6273.73
           ]
         ]
-      ]
+      ],
+      "familyKey": "H96-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "HAO-CLASS_E5",
@@ -89375,7 +90009,12 @@
             2648.78
           ]
         ]
-      ]
+      ],
+      "familyKey": "HAO-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "HLB-CLASS_E5",
@@ -89521,7 +90160,12 @@
             2739.7
           ]
         ]
-      ]
+      ],
+      "familyKey": "HLB-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "HNB-CLASS_E5",
@@ -89627,7 +90271,12 @@
             5293.83
           ]
         ]
-      ]
+      ],
+      "familyKey": "HNB-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "HSB-CLASS_E5",
@@ -89773,7 +90422,12 @@
             6800.23
           ]
         ]
-      ]
+      ],
+      "familyKey": "HSB-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "HUF-CLASS_E5",
@@ -90003,7 +90657,12 @@
             1965.98
           ]
         ]
-      ]
+      ],
+      "familyKey": "HUF-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "HVC-CLASS_E5",
@@ -90149,7 +90808,12 @@
             9307.77
           ]
         ]
-      ]
+      ],
+      "familyKey": "HVC-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "HZD-CLASS_E5",
@@ -90231,7 +90895,12 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "HZD-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I17-CLASS_E5",
@@ -90349,7 +91018,12 @@
             519.82
           ]
         ]
-      ]
+      ],
+      "familyKey": "I17-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I22-CLASS_E5",
@@ -90483,7 +91157,12 @@
             581.26
           ]
         ]
-      ]
+      ],
+      "familyKey": "I22-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I34-CLASS_E5",
@@ -90621,7 +91300,12 @@
             2788.56
           ]
         ]
-      ]
+      ],
+      "familyKey": "I34-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I63-CLASS_E5",
@@ -90767,7 +91451,12 @@
             392.81
           ]
         ]
-      ]
+      ],
+      "familyKey": "I63-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I67-CLASS_E5",
@@ -90913,7 +91602,12 @@
             2343.15
           ]
         ]
-      ]
+      ],
+      "familyKey": "I67-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I68-CLASS_E5",
@@ -91059,7 +91753,12 @@
             2373.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "I68-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I74-CLASS_E5",
@@ -91141,7 +91840,12 @@
             10.06
           ]
         ]
-      ]
+      ],
+      "familyKey": "I74-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I93-CLASS_E5",
@@ -91287,7 +91991,12 @@
             6890.93
           ]
         ]
-      ]
+      ],
+      "familyKey": "I93-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I96-CLASS_E5",
@@ -91433,7 +92142,12 @@
             8621.67
           ]
         ]
-      ]
+      ],
+      "familyKey": "I96-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "I99-CLASS_E5",
@@ -91539,7 +92253,12 @@
             55.71
           ]
         ]
-      ]
+      ],
+      "familyKey": "I99-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "IJX-CLASS_E5",
@@ -91685,7 +92404,12 @@
             1585.71
           ]
         ]
-      ]
+      ],
+      "familyKey": "IJX-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "ILN-CLASS_E5",
@@ -91861,7 +92585,12 @@
             2308.44
           ]
         ]
-      ]
+      ],
+      "familyKey": "ILN-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "IMS-CLASS_E5",
@@ -92007,7 +92736,12 @@
             4306.21
           ]
         ]
-      ]
+      ],
+      "familyKey": "IMS-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "IND-CLASS_E5",
@@ -92277,7 +93011,12 @@
             1162.73
           ]
         ]
-      ]
+      ],
+      "familyKey": "IND-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "IOB-CLASS_E5",
@@ -92399,7 +93138,12 @@
             5883.8
           ]
         ]
-      ]
+      ],
+      "familyKey": "IOB-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "JAU-CLASS_E5",
@@ -92533,7 +93277,12 @@
             10929.3
           ]
         ]
-      ]
+      ],
+      "familyKey": "JAU-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "JQD-CLASS_E5",
@@ -92679,7 +93428,12 @@
             7731.19
           ]
         ]
-      ]
+      ],
+      "familyKey": "JQD-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "JVY-CLASS_E5",
@@ -92825,7 +93579,12 @@
             5326.36
           ]
         ]
-      ]
+      ],
+      "familyKey": "JVY-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "K24-CLASS_E5",
@@ -92971,7 +93730,12 @@
             8851.36
           ]
         ]
-      ]
+      ],
+      "familyKey": "K24-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "K62-CLASS_E5",
@@ -93097,7 +93861,12 @@
             4159.83
           ]
         ]
-      ]
+      ],
+      "familyKey": "K62-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "KY8-CLASS_E5",
@@ -93243,7 +94012,12 @@
             6430.84
           ]
         ]
-      ]
+      ],
+      "familyKey": "KY8-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "LEX-CLASS_E5",
@@ -93401,7 +94175,12 @@
             6126.08
           ]
         ]
-      ]
+      ],
+      "familyKey": "LEX-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "LOU-CLASS_E5",
@@ -93563,7 +94342,12 @@
             5871.69
           ]
         ]
-      ]
+      ],
+      "familyKey": "LOU-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "LOZ-CLASS_E5",
@@ -93713,7 +94497,12 @@
             7930.83
           ]
         ]
-      ]
+      ],
+      "familyKey": "LOZ-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "LWV-CLASS_E5",
@@ -93899,7 +94688,12 @@
             4727.09
           ]
         ]
-      ]
+      ],
+      "familyKey": "LWV-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "M02-CLASS_E5",
@@ -94045,7 +94839,12 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "M02-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "M05-CLASS_E5",
@@ -94191,7 +94990,12 @@
             11056.36
           ]
         ]
-      ]
+      ],
+      "familyKey": "M05-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "M12-CLASS_E5",
@@ -94337,7 +95141,12 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "M12-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "M20-CLASS_E5",
@@ -94483,7 +95292,12 @@
             7864.58
           ]
         ]
-      ]
+      ],
+      "familyKey": "M20-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "M21-CLASS_E5",
@@ -94629,7 +95443,12 @@
             8343.08
           ]
         ]
-      ]
+      ],
+      "familyKey": "M21-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "M25-CLASS_E5",
@@ -94775,7 +95594,12 @@
             9524.26
           ]
         ]
-      ]
+      ],
+      "familyKey": "M25-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "M34-CLASS_E5",
@@ -94905,7 +95729,12 @@
             8820.12
           ]
         ]
-      ]
+      ],
+      "familyKey": "M34-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "M85-CLASS_E5",
@@ -95051,7 +95880,12 @@
             10325.97
           ]
         ]
-      ]
+      ],
+      "familyKey": "M85-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "M91-CLASS_E5",
@@ -95197,7 +96031,12 @@
             10166.7
           ]
         ]
-      ]
+      ],
+      "familyKey": "M91-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "MAW-CLASS_E5",
@@ -95343,7 +96182,12 @@
             9318.78
           ]
         ]
-      ]
+      ],
+      "familyKey": "MAW-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "MDH-CLASS_E5",
@@ -95457,7 +96301,12 @@
             7094.34
           ]
         ]
-      ]
+      ],
+      "familyKey": "MDH-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "MGY-CLASS_E5",
@@ -95725,7 +96574,12 @@
             1235.54
           ]
         ]
-      ]
+      ],
+      "familyKey": "MGY-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "MIE-CLASS_E5",
@@ -95827,7 +96681,12 @@
             487.38
           ]
         ]
-      ]
+      ],
+      "familyKey": "MIE-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "MQJ-CLASS_E5",
@@ -96025,7 +96884,12 @@
             862.12
           ]
         ]
-      ]
+      ],
+      "familyKey": "MQJ-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "MTO-CLASS_E5",
@@ -96171,7 +97035,12 @@
             2440.41
           ]
         ]
-      ]
+      ],
+      "familyKey": "MTO-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "MVN-CLASS_E5",
@@ -96317,7 +97186,12 @@
             5454.88
           ]
         ]
-      ]
+      ],
+      "familyKey": "MVN-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "MWA-CLASS_E5",
@@ -96463,7 +97337,12 @@
             6349.32
           ]
         ]
-      ]
+      ],
+      "familyKey": "MWA-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "MWO-CLASS_E5",
@@ -96589,7 +97468,12 @@
             1491.72
           ]
         ]
-      ]
+      ],
+      "familyKey": "MWO-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "OLY-CLASS_E5",
@@ -96735,7 +97619,12 @@
             4442.91
           ]
         ]
-      ]
+      ],
+      "familyKey": "OLY-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "OVO-CLASS_E5",
@@ -96881,7 +97770,12 @@
             3539.24
           ]
         ]
-      ]
+      ],
+      "familyKey": "OVO-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "OWB-CLASS_E5",
@@ -97027,7 +97921,12 @@
             7027.26
           ]
         ]
-      ]
+      ],
+      "familyKey": "OWB-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "OXD-CLASS_E5",
@@ -97169,7 +98068,12 @@
             2256.18
           ]
         ]
-      ]
+      ],
+      "familyKey": "OXD-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "PAH-CLASS_E5",
@@ -97307,7 +98211,12 @@
             8754.08
           ]
         ]
-      ]
+      ],
+      "familyKey": "PAH-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "PCD-CLASS_E5",
@@ -97433,7 +98342,12 @@
             6591.06
           ]
         ]
-      ]
+      ],
+      "familyKey": "PCD-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "PGR-CLASS_E5",
@@ -97519,7 +98433,12 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "PGR-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "PHT-CLASS_E5",
@@ -97645,7 +98564,12 @@
             10655.71
           ]
         ]
-      ]
+      ],
+      "familyKey": "PHT-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "PJY-CLASS_E5",
@@ -97779,7 +98703,12 @@
             6334.78
           ]
         ]
-      ]
+      ],
+      "familyKey": "PJY-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "POF-CLASS_E5",
@@ -97925,7 +98854,12 @@
             9442.75
           ]
         ]
-      ]
+      ],
+      "familyKey": "POF-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "PPQ-CLASS_E5",
@@ -98071,7 +99005,12 @@
             1343.3
           ]
         ]
-      ]
+      ],
+      "familyKey": "PPQ-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "PRG-CLASS_E5",
@@ -98217,7 +99156,12 @@
             1855.62
           ]
         ]
-      ]
+      ],
+      "familyKey": "PRG-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "RGA-CLASS_E5",
@@ -98363,7 +99307,12 @@
             7166.75
           ]
         ]
-      ]
+      ],
+      "familyKey": "RGA-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "RID-CLASS_E5",
@@ -98533,7 +99482,12 @@
             1638.4
           ]
         ]
-      ]
+      ],
+      "familyKey": "RID-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "RSV-CLASS_E5",
@@ -98679,7 +99633,12 @@
             3675.34
           ]
         ]
-      ]
+      ],
+      "familyKey": "RSV-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SAR-CLASS_E5",
@@ -98825,7 +99784,12 @@
             5897.84
           ]
         ]
-      ]
+      ],
+      "familyKey": "SAR-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SCA-CLASS_E5",
@@ -98911,7 +99875,12 @@
             317.93
           ]
         ]
-      ]
+      ],
+      "familyKey": "SCA-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SCX-CLASS_E5",
@@ -99057,7 +100026,12 @@
             10272.18
           ]
         ]
-      ]
+      ],
+      "familyKey": "SCX-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SER-CLASS_E5",
@@ -99195,7 +100169,12 @@
             3868.09
           ]
         ]
-      ]
+      ],
+      "familyKey": "SER-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SGH-CLASS_E5",
@@ -99297,7 +100276,12 @@
             765.54
           ]
         ]
-      ]
+      ],
+      "familyKey": "SGH-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SIK-CLASS_E5",
@@ -99443,7 +100427,12 @@
             9155.81
           ]
         ]
-      ]
+      ],
+      "familyKey": "SIK-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SIV-CLASS_E5",
@@ -99589,7 +100578,12 @@
             3413.98
           ]
         ]
-      ]
+      ],
+      "familyKey": "SIV-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SLO-CLASS_E5",
@@ -99711,7 +100705,12 @@
             4607.21
           ]
         ]
-      ]
+      ],
+      "familyKey": "SLO-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SME-CLASS_E5",
@@ -99821,7 +100820,12 @@
             8610.77
           ]
         ]
-      ]
+      ],
+      "familyKey": "SME-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SPI-CLASS_E5",
@@ -99927,7 +100931,12 @@
             862.79
           ]
         ]
-      ]
+      ],
+      "familyKey": "SPI-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SRB-CLASS_E5",
@@ -100009,7 +101018,12 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "SRB-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "SUS-CLASS_E5",
@@ -100247,7 +101261,12 @@
             3994.56
           ]
         ]
-      ]
+      ],
+      "familyKey": "SUS-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "TAZ-CLASS_E5",
@@ -100393,7 +101412,12 @@
             2263.94
           ]
         ]
-      ]
+      ],
+      "familyKey": "TAZ-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "TEL-CLASS_E5",
@@ -100539,7 +101563,12 @@
             6256.59
           ]
         ]
-      ]
+      ],
+      "familyKey": "TEL-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "TKX-CLASS_E5",
@@ -100685,7 +101714,12 @@
             10898.3
           ]
         ]
-      ]
+      ],
+      "familyKey": "TKX-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "TWT-CLASS_E5",
@@ -100791,7 +101825,12 @@
             7463.03
           ]
         ]
-      ]
+      ],
+      "familyKey": "TWT-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "TZV-CLASS_E5",
@@ -100937,7 +101976,12 @@
             9604.55
           ]
         ]
-      ]
+      ],
+      "familyKey": "TZV-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "UCY-CLASS_E5",
@@ -101063,7 +102107,12 @@
             10516.61
           ]
         ]
-      ]
+      ],
+      "familyKey": "UCY-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "UMP-CLASS_E5",
@@ -101273,7 +102322,12 @@
             1600.56
           ]
         ]
-      ]
+      ],
+      "familyKey": "UMP-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "UWL-CLASS_E5",
@@ -101415,7 +102469,12 @@
             1162.82
           ]
         ]
-      ]
+      ],
+      "familyKey": "UWL-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "VES-CLASS_E5",
@@ -101505,7 +102564,12 @@
             439.2
           ]
         ]
-      ]
+      ],
+      "familyKey": "VES-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "VLA-CLASS_E5",
@@ -101651,7 +102715,12 @@
             3124.9
           ]
         ]
-      ]
+      ],
+      "familyKey": "VLA-CLASS_E5",
+      "floorFt": 700,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "transition-e-floor"
     },
     {
       "id": "shelf-CLASS_B-0",
@@ -101797,7 +102866,13 @@
             4629.83
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 3000,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-1",
@@ -101943,7 +103018,13 @@
             4236.26
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 0,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-2",
@@ -102049,7 +103130,13 @@
             3948.5
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 1700,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-3",
@@ -102295,7 +103382,13 @@
             3713.82
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 2000,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-4",
@@ -102381,7 +103474,13 @@
             4268.45
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 2500,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-5",
@@ -102459,7 +103558,13 @@
             3832.53
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 4500,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-6",
@@ -102565,7 +103670,13 @@
             4071.41
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 3500,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-7",
@@ -102679,7 +103790,13 @@
             3985.34
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 3500,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-8",
@@ -102773,7 +103890,13 @@
             5072.98
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 4500,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-9",
@@ -102919,7 +104042,13 @@
             3328.56
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 5000,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-10",
@@ -103065,7 +104194,13 @@
             4629.24
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 5000,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-11",
@@ -103119,7 +104254,13 @@
             3955.12
           ]
         ]
-      ]
+      ],
+      "familyKey": "STL-CLASS_B",
+      "floorFt": 5000,
+      "proxyCeilingFt": 8000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 8000
     },
     {
       "id": "shelf-CLASS_B-12",
@@ -103177,7 +104318,13 @@
             2153.74
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 4000,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-13",
@@ -103235,7 +104382,13 @@
             4236.52
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 4000,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-14",
@@ -103313,7 +104466,13 @@
             3480.78
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 3500,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-15",
@@ -103415,7 +104574,13 @@
             3062.73
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 3500,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-16",
@@ -103585,7 +104750,13 @@
             2584.18
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 5000,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-17",
@@ -103635,7 +104806,13 @@
             4079.36
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 3500,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-18",
@@ -103873,7 +105050,13 @@
             3699.36
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 5000,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-19",
@@ -104019,7 +105202,13 @@
             2987.51
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 0,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-20",
@@ -104201,7 +105390,13 @@
             2732.36
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 3000,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-21",
@@ -104259,7 +105454,13 @@
             2620.51
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 3500,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-22",
@@ -104405,7 +105606,13 @@
             3759.2
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 3000,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_B-23",
@@ -104691,7 +105898,13 @@
             2753.86
           ]
         ]
-      ]
+      ],
+      "familyKey": "CVG-CLASS_B",
+      "floorFt": 2100,
+      "proxyCeilingFt": 10000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 10000
     },
     {
       "id": "shelf-CLASS_C-24",
@@ -104837,7 +106050,13 @@
             494.52
           ]
         ]
-      ]
+      ],
+      "familyKey": "DAY-CLASS_C",
+      "floorFt": 2400,
+      "proxyCeilingFt": 5000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 5000
     },
     {
       "id": "shelf-CLASS_C-25",
@@ -104983,7 +106202,13 @@
             713.42
           ]
         ]
-      ]
+      ],
+      "familyKey": "DAY-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 5000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 5000
     },
     {
       "id": "shelf-CLASS_C-26",
@@ -105037,7 +106262,13 @@
             11214.15
           ]
         ]
-      ]
+      ],
+      "familyKey": "BNA-CLASS_C",
+      "floorFt": 1800,
+      "proxyCeilingFt": 6000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 6000
     },
     {
       "id": "shelf-CLASS_C-27",
@@ -105143,7 +106374,13 @@
             10737.87
           ]
         ]
-      ]
+      ],
+      "familyKey": "BNA-CLASS_C",
+      "floorFt": 2400,
+      "proxyCeilingFt": 6000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 6000
     },
     {
       "id": "shelf-CLASS_C-28",
@@ -105241,7 +106478,13 @@
             10605.33
           ]
         ]
-      ]
+      ],
+      "familyKey": "BNA-CLASS_C",
+      "floorFt": 1800,
+      "proxyCeilingFt": 6000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 6000
     },
     {
       "id": "shelf-CLASS_C-29",
@@ -105387,7 +106630,13 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "BNA-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 6000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 6000
     },
     {
       "id": "shelf-CLASS_C-30",
@@ -105477,7 +106726,13 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "BNA-CLASS_C",
+      "floorFt": 2400,
+      "proxyCeilingFt": 6000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 6000
     },
     {
       "id": "shelf-CLASS_C-31",
@@ -105623,7 +106878,13 @@
             6065.56
           ]
         ]
-      ]
+      ],
+      "familyKey": "LEX-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 5000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 5000
     },
     {
       "id": "shelf-CLASS_C-32",
@@ -105769,7 +107030,13 @@
             6284.01
           ]
         ]
-      ]
+      ],
+      "familyKey": "LEX-CLASS_C",
+      "floorFt": 2200,
+      "proxyCeilingFt": 5000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 5000
     },
     {
       "id": "shelf-CLASS_C-33",
@@ -105939,7 +107206,13 @@
             6030.99
           ]
         ]
-      ]
+      ],
+      "familyKey": "EVV-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4500,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4500
     },
     {
       "id": "shelf-CLASS_C-34",
@@ -106085,7 +107358,13 @@
             5489.09
           ]
         ]
-      ]
+      ],
+      "familyKey": "EVV-CLASS_C",
+      "floorFt": 1600,
+      "proxyCeilingFt": 4500,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4500
     },
     {
       "id": "shelf-CLASS_C-35",
@@ -106123,7 +107402,13 @@
             11200.12
           ]
         ]
-      ]
+      ],
+      "familyKey": "TYS-CLASS_C",
+      "floorFt": 2500,
+      "proxyCeilingFt": 5000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 5000
     },
     {
       "id": "shelf-CLASS_C-36",
@@ -106269,7 +107554,13 @@
             927.06
           ]
         ]
-      ]
+      ],
+      "familyKey": "SPI-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4600,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4600
     },
     {
       "id": "shelf-CLASS_C-37",
@@ -106415,7 +107706,13 @@
             708.1
           ]
         ]
-      ]
+      ],
+      "familyKey": "SPI-CLASS_C",
+      "floorFt": 1800,
+      "proxyCeilingFt": 4600,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4600
     },
     {
       "id": "shelf-CLASS_C-38",
@@ -106561,7 +107858,13 @@
             460.65
           ]
         ]
-      ]
+      ],
+      "familyKey": "CMI-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4800,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4800
     },
     {
       "id": "shelf-CLASS_C-39",
@@ -106627,7 +107930,13 @@
             463.63
           ]
         ]
-      ]
+      ],
+      "familyKey": "CMI-CLASS_C",
+      "floorFt": 2400,
+      "proxyCeilingFt": 4800,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4800
     },
     {
       "id": "shelf-CLASS_C-40",
@@ -106805,7 +108114,13 @@
             471.04
           ]
         ]
-      ]
+      ],
+      "familyKey": "CMI-CLASS_C",
+      "floorFt": 2000,
+      "proxyCeilingFt": 4800,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4800
     },
     {
       "id": "shelf-CLASS_C-41",
@@ -106955,7 +108270,13 @@
             1345.79
           ]
         ]
-      ]
+      ],
+      "familyKey": "IND-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4800,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4800
     },
     {
       "id": "shelf-CLASS_C-42",
@@ -106985,7 +108306,13 @@
             1345.72
           ]
         ]
-      ]
+      ],
+      "familyKey": "IND-CLASS_C",
+      "floorFt": 1700,
+      "proxyCeilingFt": 4800,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4800
     },
     {
       "id": "shelf-CLASS_C-43",
@@ -107131,7 +108458,13 @@
             1069.19
           ]
         ]
-      ]
+      ],
+      "familyKey": "IND-CLASS_C",
+      "floorFt": 2100,
+      "proxyCeilingFt": 4800,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4800
     },
     {
       "id": "shelf-CLASS_C-44",
@@ -107261,7 +108594,13 @@
             5352.7
           ]
         ]
-      ]
+      ],
+      "familyKey": "SDF-CLASS_C",
+      "floorFt": 0,
+      "proxyCeilingFt": 4500,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4500
     },
     {
       "id": "shelf-CLASS_C-45",
@@ -107419,7 +108758,13 @@
             5560.04
           ]
         ]
-      ]
+      ],
+      "familyKey": "SDF-CLASS_C",
+      "floorFt": 1700,
+      "proxyCeilingFt": 4500,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4500
     },
     {
       "id": "shelf-CLASS_C-46",
@@ -107549,7 +108894,13 @@
             5317.79
           ]
         ]
-      ]
+      ],
+      "familyKey": "SDF-CLASS_C",
+      "floorFt": 2200,
+      "proxyCeilingFt": 4500,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 4500
     },
     {
       "id": "shelf-CLASS_D-47",
@@ -107599,7 +108950,13 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "MQY-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2500,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 2500
     },
     {
       "id": "shelf-CLASS_D-48",
@@ -107693,7 +109050,13 @@
             3319.18
           ]
         ]
-      ]
+      ],
+      "familyKey": "LUK-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3000
     },
     {
       "id": "shelf-CLASS_D-49",
@@ -107775,7 +109138,13 @@
             289.88
           ]
         ]
-      ]
+      ],
+      "familyKey": "AID-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3400,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3400
     },
     {
       "id": "shelf-CLASS_D-50",
@@ -107921,7 +109290,13 @@
             4332.49
           ]
         ]
-      ]
+      ],
+      "familyKey": "BLV-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3000
     },
     {
       "id": "shelf-CLASS_D-51",
@@ -108003,7 +109378,13 @@
             1009.12
           ]
         ]
-      ]
+      ],
+      "familyKey": "DEC-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3200,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3200
     },
     {
       "id": "shelf-CLASS_D-52",
@@ -108085,7 +109466,13 @@
             4288.41
           ]
         ]
-      ]
+      ],
+      "familyKey": "CPS-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2900,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 2900
     },
     {
       "id": "shelf-CLASS_D-53",
@@ -108167,7 +109554,13 @@
             6890.96
           ]
         ]
-      ]
+      ],
+      "familyKey": "OWB-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2900,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 2900
     },
     {
       "id": "shelf-CLASS_D-54",
@@ -108333,7 +109726,13 @@
             9773.62
           ]
         ]
-      ]
+      ],
+      "familyKey": "JWN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3100,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3100
     },
     {
       "id": "shelf-CLASS_D-55",
@@ -108415,7 +109814,13 @@
             6458.6
           ]
         ]
-      ]
+      ],
+      "familyKey": "MWA-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3000
     },
     {
       "id": "shelf-CLASS_D-56",
@@ -108525,7 +109930,13 @@
             7837.8
           ]
         ]
-      ]
+      ],
+      "familyKey": "CGI-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2800,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 2800
     },
     {
       "id": "shelf-CLASS_D-57",
@@ -108607,7 +110018,13 @@
             6398.42
           ]
         ]
-      ]
+      ],
+      "familyKey": "MDH-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2900,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 2900
     },
     {
       "id": "shelf-CLASS_D-58",
@@ -108689,7 +110106,13 @@
             2518.19
           ]
         ]
-      ]
+      ],
+      "familyKey": "BAK-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3200,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3200
     },
     {
       "id": "shelf-CLASS_D-59",
@@ -108771,7 +110194,13 @@
             6081.03
           ]
         ]
-      ]
+      ],
+      "familyKey": "LOU-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3300,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3300
     },
     {
       "id": "shelf-CLASS_D-60",
@@ -108853,7 +110282,13 @@
             3212.58
           ]
         ]
-      ]
+      ],
+      "familyKey": "BMG-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3300,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3300
     },
     {
       "id": "shelf-CLASS_D-61",
@@ -108999,7 +110434,13 @@
             2017.66
           ]
         ]
-      ]
+      ],
+      "familyKey": "HUF-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3100,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3100
     },
     {
       "id": "shelf-CLASS_D-62",
@@ -109081,7 +110522,13 @@
             0.0
           ]
         ]
-      ]
+      ],
+      "familyKey": "MIE-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3400,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3400
     },
     {
       "id": "shelf-CLASS_D-63",
@@ -109187,7 +110634,13 @@
             4116.53
           ]
         ]
-      ]
+      ],
+      "familyKey": "SUS-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3000
     },
     {
       "id": "shelf-CLASS_D-64",
@@ -109269,7 +110722,13 @@
             1949.77
           ]
         ]
-      ]
+      ],
+      "familyKey": "ILN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3600,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3600
     },
     {
       "id": "shelf-CLASS_D-65",
@@ -109351,7 +110810,13 @@
             3439.78
           ]
         ]
-      ]
+      ],
+      "familyKey": "ALN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3000
     },
     {
       "id": "shelf-CLASS_D-66",
@@ -109517,7 +110982,13 @@
             9773.62
           ]
         ]
-      ]
+      ],
+      "familyKey": "JWN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3100,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3100
     },
     {
       "id": "shelf-CLASS_D-67",
@@ -109635,7 +111106,13 @@
             1082.4
           ]
         ]
-      ]
+      ],
+      "familyKey": "ILN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3400,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3400
     },
     {
       "id": "shelf-CLASS_D-68",
@@ -109801,7 +111278,13 @@
             9773.62
           ]
         ]
-      ]
+      ],
+      "familyKey": "JWN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 3100,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3100
     },
     {
       "id": "shelf-CLASS_D-69",
@@ -109947,7 +111430,13 @@
             8257.56
           ]
         ]
-      ]
+      ],
+      "familyKey": "PAH-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2900,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 2900
     },
     {
       "id": "shelf-CLASS_D-70",
@@ -110057,7 +111546,13 @@
             11050.02
           ]
         ]
-      ]
+      ],
+      "familyKey": "JWN-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2400,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 2400
     },
     {
       "id": "shelf-CLASS_D-71",
@@ -110119,7 +111614,13 @@
             5491.38
           ]
         ]
-      ]
+      ],
+      "familyKey": "LOU-CLASS_D",
+      "floorFt": 0,
+      "proxyCeilingFt": 2200,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 2200
     },
     {
       "id": "shelf-CLASS_E2-72",
@@ -110265,7 +111766,11 @@
             927.06
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-73",
@@ -110359,7 +111864,11 @@
             3319.18
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-74",
@@ -110441,7 +111950,11 @@
             4986.98
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-75",
@@ -110547,7 +112060,12 @@
             4116.53
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 3000,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3000
     },
     {
       "id": "shelf-CLASS_E2-76",
@@ -110665,7 +112183,12 @@
             1082.4
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 3400,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3400
     },
     {
       "id": "shelf-CLASS_E2-77",
@@ -110735,7 +112258,11 @@
             11031.47
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-78",
@@ -110817,7 +112344,11 @@
             6081.03
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-79",
@@ -110899,7 +112430,12 @@
             1949.77
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 3600,
+      "openEndedCeiling": false,
+      "altitudeSource": "record-attrs",
+      "ceilingFt": 3600
     },
     {
       "id": "shelf-CLASS_E2-80",
@@ -110953,7 +112489,11 @@
             11160.85
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-81",
@@ -110983,7 +112523,11 @@
             11238.0
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-82",
@@ -111081,7 +112625,11 @@
             8260.78
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-83",
@@ -111227,7 +112775,11 @@
             8036.22
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-84",
@@ -111337,7 +112889,11 @@
             7837.8
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-85",
@@ -111435,7 +112991,11 @@
             8551.61
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "shelf-CLASS_E2-86",
@@ -111497,7 +113057,11 @@
             5491.38
           ]
         ]
-      ]
+      ],
+      "floorFt": 0,
+      "proxyCeilingFt": 12000,
+      "openEndedCeiling": true,
+      "altitudeSource": "record-attrs"
     },
     {
       "id": "special-0",

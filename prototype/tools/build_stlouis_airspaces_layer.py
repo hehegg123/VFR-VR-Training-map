@@ -44,6 +44,11 @@ SOFT_SURFACE_TOKENS = {
     "ICE",
 }
 
+OPEN_ENDED_PROXY_CEILING_FT = 12000
+MIN_PROXY_AIRSPACE_THICKNESS_FT = 1000
+SURFACE_CLASS_E_TYPES = {"CLASS_E2", "CLASS_E3", "CLASS_E4"}
+POSITIVE_FLOOR_CLASS_E_TYPES = {"CLASS_E5"}
+
 def read_csv_from_dir(name: str) -> list[dict[str, str]]:
     path = CSV_DIR / name
     with path.open("r", encoding="utf-8-sig", errors="ignore") as handle:
@@ -855,8 +860,10 @@ def fallback_airport_for_class_e_record(
 
 def build_airspace_selection_regions(features: dict[str, object]) -> list[dict[str, object]]:
     regions: list[dict[str, object]] = []
+    grouped_items = build_airspace_grouped_entries(features)
+    grouped_map = {key: entries for key, entries in grouped_items}
 
-    for (airport_id, type_code), entries in build_airspace_grouped_entries(features):
+    for (airport_id, type_code), entries in grouped_items:
         if type_code not in CONTROLLED_AIRSPACE_TYPES or airport_id is None:
             continue
         airport = entries[0][1]
@@ -869,21 +876,24 @@ def build_airspace_selection_regions(features: dict[str, object]) -> list[dict[s
             visible_parts = airport_local_visible_parts(features, entries, airport_x, airport_y)
         if not visible_parts:
             continue
+        altitude_bounds = derive_airfield_altitude_bounds(grouped_map, airport_id, type_code, entries)
         shape_anchor = shape_aware_anchor(
             visible_parts,
             preferred=(airport_x, airport_y) if point_in_projected_parts(airport_x, airport_y, visible_parts) else None,
         )
-        regions.append(
-            {
-                "id": f"{airport_id}-{type_code}",
-                "kind": "airfield",
-                "airspaceType": type_code,
-                "priority": airfield_priority(airport, type_code, clean_hours_text(airport.get("class_info", {}).get("AIRSPACE_HRS", ""))),
-                "anchorX": float(shape_anchor[0]),
-                "anchorY": float(shape_anchor[1]),
-                "parts": visible_parts,
-            }
-        )
+        region = {
+            "id": f"{airport_id}-{type_code}",
+            "kind": "airfield",
+            "airspaceType": type_code,
+            "familyKey": f"{airport_id}-{type_code}",
+            "priority": airfield_priority(airport, type_code, clean_hours_text(airport.get("class_info", {}).get("AIRSPACE_HRS", ""))),
+            "anchorX": float(shape_anchor[0]),
+            "anchorY": float(shape_anchor[1]),
+            "parts": visible_parts,
+        }
+        if altitude_bounds is not None:
+            region.update(altitude_bounds)
+        regions.append(region)
 
     shelf_records = sorted(
         (
@@ -901,20 +911,26 @@ def build_airspace_selection_regions(features: dict[str, object]) -> list[dict[s
         visible_parts = projected_visible_parts(features, record)
         if not visible_parts:
             continue
+        altitude_bounds = airspace_altitude_bounds(record["attrs"])
+        type_code = record["attrs"].get("TYPE_CODE", "")
+        airport = related_airport_for_airspace(record, features["airports"]) if type_code in {"CLASS_B", "CLASS_C", "CLASS_D"} else None
         x, y = shape_aware_anchor(visible_parts)
         if not inside_chart(features, x, y, margin=4):
             continue
-        regions.append(
-            {
-                "id": f"shelf-{record['attrs'].get('TYPE_CODE', 'UNK')}-{record_index}",
-                "kind": "shelf",
-                "airspaceType": record["attrs"].get("TYPE_CODE", ""),
-                "priority": 0.55 if record["attrs"].get("TYPE_CODE", "") in {"CLASS_B", "CLASS_C", "CLASS_D"} else 0.5,
-                "anchorX": float(x),
-                "anchorY": float(y),
-                "parts": visible_parts,
-            }
-        )
+        region = {
+            "id": f"shelf-{type_code}-{record_index}",
+            "kind": "shelf",
+            "airspaceType": type_code,
+            "familyKey": airspace_family_key(airport, type_code),
+            "priority": 0.55 if type_code in {"CLASS_B", "CLASS_C", "CLASS_D"} else 0.5,
+            "anchorX": float(x),
+            "anchorY": float(y),
+            "parts": visible_parts,
+        }
+        if altitude_bounds is not None:
+            region.update(altitude_bounds)
+            region["altitudeSource"] = "record-attrs"
+        regions.append(region)
 
     special_records = sorted(
         (record for record in features["special_activity"] if projected_visible_parts(features, record, cache_key="_projected_visible_parts_special")),
@@ -1051,6 +1067,15 @@ def compact_airport_name(name: str) -> str:
 
 def airfield_runway_designator(airport: dict[str, object]) -> str:
     return str(airport.get("primary_runway_id") or "").strip()
+
+
+def airspace_family_key(airport: dict[str, object] | None, type_code: str) -> str | None:
+    if airport is None or type_code not in {"CLASS_B", "CLASS_C", "CLASS_D"}:
+        return None
+    airport_id = str(airport.get("ARPT_ID") or "").strip()
+    if not airport_id:
+        return None
+    return f"{airport_id}-{type_code}"
 
 
 def airfield_priority(airport: dict[str, object], type_code: str, hours: str) -> float:
@@ -1362,6 +1387,165 @@ def format_altitude(attrs: dict[str, str]) -> str:
     return f"{lower_text}-{sectional_altitude_token(upper_desc)}"
 
 
+def altitude_desc_to_feet(value: str) -> int | None:
+    text = (value or "").strip().upper().replace(",", "")
+    if not text or not text.lstrip("-").isdigit():
+        return None
+    return int(text)
+
+
+def airspace_altitude_bounds(attrs: dict[str, str]) -> dict[str, object] | None:
+    type_code = (attrs.get("TYPE_CODE") or "").strip().upper()
+    lower_desc = (attrs.get("LOWER_DESC") or "").strip()
+    upper_desc = (attrs.get("UPPER_DESC") or "").strip()
+    lower_uom = (attrs.get("LOWER_UOM") or "").strip().upper()
+
+    if lower_desc in {"", "0"}:
+        floor_ft = 0
+    else:
+        floor_ft = altitude_desc_to_feet(lower_desc)
+    if floor_ft is None:
+        return None
+
+    ceiling_ft = None if upper_desc in {"", "-9998"} else altitude_desc_to_feet(upper_desc)
+    proxy_ceiling_ft = ceiling_ft if ceiling_ft is not None else max(OPEN_ENDED_PROXY_CEILING_FT, floor_ft + 3000)
+    if proxy_ceiling_ft <= floor_ft:
+        proxy_ceiling_ft = floor_ft + MIN_PROXY_AIRSPACE_THICKNESS_FT
+
+    return {
+        "floorFt": int(floor_ft),
+        "ceilingFt": int(ceiling_ft) if ceiling_ft is not None else None,
+        "proxyCeilingFt": int(proxy_ceiling_ft),
+        "openEndedCeiling": ceiling_ft is None,
+    }
+
+
+def aggregate_airspace_altitude_bounds(
+    entries: list[tuple[dict[str, object], dict[str, object] | None]],
+) -> dict[str, object] | None:
+    bounds = [
+        airspace_altitude_bounds(record["attrs"])
+        for record, _airport in entries
+    ]
+    bounds = [entry for entry in bounds if entry is not None]
+    if not bounds:
+        return None
+
+    floor_ft = min(int(entry["floorFt"]) for entry in bounds)
+    exact_ceilings = [int(entry["ceilingFt"]) for entry in bounds if entry["ceilingFt"] is not None]
+    proxy_ceiling_ft = max(int(entry["proxyCeilingFt"]) for entry in bounds)
+    if proxy_ceiling_ft <= floor_ft:
+        proxy_ceiling_ft = floor_ft + MIN_PROXY_AIRSPACE_THICKNESS_FT
+
+    return {
+        "floorFt": floor_ft,
+        "ceilingFt": max(exact_ceilings) if exact_ceilings else None,
+        "proxyCeilingFt": proxy_ceiling_ft,
+        "openEndedCeiling": any(bool(entry["openEndedCeiling"]) for entry in bounds),
+    }
+
+
+def derive_airfield_altitude_bounds(
+    grouped_map: dict[tuple[str | None, str], list[tuple[dict[str, object], dict[str, object] | None]]],
+    airport_id: str | None,
+    type_code: str,
+    entries: list[tuple[dict[str, object], dict[str, object] | None]],
+) -> dict[str, object] | None:
+    direct_bounds = aggregate_airspace_altitude_bounds(entries)
+    if direct_bounds is None:
+        return None
+
+    if airport_id is None:
+        return direct_bounds
+
+    if type_code == "CLASS_D":
+        return {
+            **direct_bounds,
+            "altitudeSource": "class-d-record",
+        }
+
+    if type_code in SURFACE_CLASS_E_TYPES:
+        explicit_surface_ceiling = direct_bounds.get("ceilingFt")
+        if explicit_surface_ceiling is not None:
+            return {
+                "floorFt": 0,
+                "ceilingFt": int(explicit_surface_ceiling),
+                "proxyCeilingFt": int(explicit_surface_ceiling),
+                "openEndedCeiling": False,
+                "altitudeSource": "surface-e-explicit-upper",
+            }
+
+        sibling_transition_floor = find_min_sibling_positive_floor(grouped_map, airport_id, exclude_type=type_code)
+        if sibling_transition_floor is not None and sibling_transition_floor > 0:
+            return {
+                "floorFt": 0,
+                "ceilingFt": int(sibling_transition_floor),
+                "proxyCeilingFt": int(sibling_transition_floor),
+                "openEndedCeiling": False,
+                "altitudeSource": "surface-e-next-floor",
+            }
+
+        sibling_class_d_ceiling = find_sibling_class_d_ceiling(grouped_map, airport_id)
+        if sibling_class_d_ceiling is not None and sibling_class_d_ceiling > 0:
+            return {
+                "floorFt": 0,
+                "ceilingFt": int(sibling_class_d_ceiling),
+                "proxyCeilingFt": int(sibling_class_d_ceiling),
+                "openEndedCeiling": False,
+                "altitudeSource": "surface-e-class-d-ceiling",
+            }
+
+        return {
+            **direct_bounds,
+            "altitudeSource": "surface-e-open-ended-proxy",
+        }
+
+    if type_code in POSITIVE_FLOOR_CLASS_E_TYPES:
+        return {
+            **direct_bounds,
+            "altitudeSource": "transition-e-floor",
+        }
+
+    return direct_bounds
+
+
+def find_min_sibling_positive_floor(
+    grouped_map: dict[tuple[str | None, str], list[tuple[dict[str, object], dict[str, object] | None]]],
+    airport_id: str,
+    *,
+    exclude_type: str | None = None,
+) -> int | None:
+    candidate_floors: list[int] = []
+    for sibling_type in CLASS_E_TYPES:
+        if sibling_type == exclude_type:
+            continue
+        sibling_entries = grouped_map.get((airport_id, sibling_type), [])
+        for record, _airport in sibling_entries:
+            bounds = airspace_altitude_bounds(record["attrs"])
+            if not bounds:
+                continue
+            floor_ft = int(bounds["floorFt"])
+            if floor_ft > 0:
+                candidate_floors.append(floor_ft)
+    return min(candidate_floors) if candidate_floors else None
+
+
+def find_sibling_class_d_ceiling(
+    grouped_map: dict[tuple[str | None, str], list[tuple[dict[str, object], dict[str, object] | None]]],
+    airport_id: str,
+) -> int | None:
+    sibling_entries = grouped_map.get((airport_id, "CLASS_D"), [])
+    ceilings: list[int] = []
+    for record, _airport in sibling_entries:
+        bounds = airspace_altitude_bounds(record["attrs"])
+        if not bounds:
+            continue
+        ceiling_ft = bounds.get("ceilingFt")
+        if ceiling_ft is not None:
+            ceilings.append(int(ceiling_ft))
+    return max(ceilings) if ceilings else None
+
+
 def sectional_altitude_token(value: str) -> str:
     text = (value or "").strip().upper().replace(",", "")
     if not text:
@@ -1668,6 +1852,7 @@ def compute_airspace_label_layout(features: dict[str, object]) -> list[dict[str,
             if placement is not None:
                 placement["id"] = f"{airport_id}-{type_code}"
                 placement["selectionId"] = placement["id"]
+                placement["familyKey"] = placement["id"]
                 layout.append(placement)
 
         shelf_records = sorted(
@@ -1726,6 +1911,7 @@ def compute_airspace_label_layout(features: dict[str, object]) -> list[dict[str,
                     placement["selectionId"] = f"{airport['ARPT_ID']}-{type_code}"
                 else:
                     placement["selectionId"] = placement["id"]
+                placement["familyKey"] = airspace_family_key(airport, type_code)
                 layout.append(placement)
 
         special_records = sorted(

@@ -1,10 +1,13 @@
-import { LayerManager } from "./layers/LayerManager.js?v=20260516-label-style-v3";
-import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260508-vr-panel-toggle-v2";
-import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260508-xr-map-rotate-v2";
+import { LayerManager } from "./layers/LayerManager.js?v=20260517-airspace-altitude-v4";
+import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260519-xr-forearm-panel-v1";
+import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260518-xr-drag-gain-v1";
 
-const VR_FRONT_EDGE_MARGIN_UNITS = 0.85;
-const VR_VIEW_ELEVATION_DROP_UNITS = 0.95;
-const VR_MIN_MAP_CENTER_HEIGHT = 0.56;
+const VR_FRONT_EDGE_MARGIN_UNITS = 1.15;
+const VR_EXTRA_FRONT_CLEARANCE_RATIO = 0.12;
+const VR_BASE_VIEW_ELEVATION_DROP_UNITS = 0.9;
+const VR_VIEW_ELEVATION_DROP_RATIO = 0.06;
+const VR_MAX_VIEW_ELEVATION_DROP_UNITS = 1.35;
+const VR_MIN_MAP_CENTER_HEIGHT = 0.42;
 
 export async function createMapScene(canvas) {
   const engine = new BABYLON.Engine(canvas, true, {
@@ -109,6 +112,9 @@ export async function createMapScene(canvas) {
     getXrAvailability() {
       return xrAvailability;
     },
+    setAirspaceAltitudeMode(enabled) {
+      layerManager.setAirspaceAltitudeMode(enabled);
+    },
     setVrControlPanel(config) {
       vrControlPanel?.setConfig(config ?? null);
     },
@@ -143,8 +149,16 @@ function positionMapForInitialVrView(xrHelper, mapRoot, sectionMetrics) {
   }
 
   const mapHalfDepth = (sectionMetrics.worldHeight ?? sectionMetrics.worldWidth ?? 8) * 0.5;
-  const centerDistance = mapHalfDepth + VR_FRONT_EDGE_MARGIN_UNITS;
-  const nextCenterHeight = Math.max(VR_MIN_MAP_CENTER_HEIGHT, viewerPosition.y - VR_VIEW_ELEVATION_DROP_UNITS);
+  const frontClearance = Math.max(
+    VR_FRONT_EDGE_MARGIN_UNITS,
+    (sectionMetrics.worldHeight ?? sectionMetrics.worldWidth ?? 8) * VR_EXTRA_FRONT_CLEARANCE_RATIO,
+  );
+  const centerDistance = mapHalfDepth + frontClearance;
+  const verticalDrop = Math.min(
+    VR_MAX_VIEW_ELEVATION_DROP_UNITS,
+    VR_BASE_VIEW_ELEVATION_DROP_UNITS + ((sectionMetrics.worldHeight ?? sectionMetrics.worldWidth ?? 8) * VR_VIEW_ELEVATION_DROP_RATIO),
+  );
+  const nextCenterHeight = Math.max(VR_MIN_MAP_CENTER_HEIGHT, viewerPosition.y - verticalDrop);
   const nextCenter = new BABYLON.Vector3(
     viewerPosition.x + forward.x * centerDistance,
     nextCenterHeight,

@@ -1,5 +1,5 @@
 import { loadSectionIndex, loadSectionManifest } from "../data/sectionRepository.js";
-import { createMapScene } from "../scene/MapScene.js?v=20260513-linked-fix-v1";
+import { createMapScene } from "../scene/MapScene.js?v=20260519-xr-forearm-panel-v1";
 import {
   BroadcastLinkSession,
   generateSessionId,
@@ -13,6 +13,7 @@ export class AppShell {
     this.sceneController = null;
     this.currentManifest = null;
     this.layerUiState = new Map();
+    this.airspaceAltitudeMode = false;
     this.defaultStatusMessage = "";
     this.applyingRemoteSelection = false;
     this.applyingRemoteToggle = false;
@@ -126,6 +127,7 @@ export class AppShell {
 
     const manifest = await loadSectionManifest(entry);
     await this.sceneController.layerManager.loadSection(manifest);
+    this.sceneController.setAirspaceAltitudeMode?.(this.airspaceAltitudeMode);
 
     this.currentManifest = manifest;
     this.renderLayerControls(manifest);
@@ -152,7 +154,6 @@ export class AppShell {
       const layerState = existingState ?? {
         layerVisible: layer.defaultVisible !== false,
         labelsEnabled: Boolean(layer.labelData) && layer.defaultLabels !== false,
-        extendedLabelsEnabled: false,
       };
       nextState.set(layer.id, layerState);
 
@@ -181,23 +182,6 @@ export class AppShell {
       labelRow.querySelector("input").disabled = !labelToggleAvailable;
 
       card.append(header, visibilityRow, labelRow);
-
-      if (layer.supportsExtendedLabels) {
-        const extendedRow = this.buildToggleRow(
-          "Extended airspace labels",
-          layerState.extendedLabelsEnabled,
-          (checked) => {
-            this.updateExtendedLabels(layer.id, checked);
-            this.setStatus(
-              checked
-                ? "Extended airspace labels enabled. More FAA-backed Class E airfields will appear as you zoom in and in the default view."
-                : "Extended airspace labels disabled. The default overview stays cleaner until you zoom closer.",
-            );
-          },
-        );
-        extendedRow.querySelector("input").disabled = !labelToggleAvailable;
-        card.append(extendedRow);
-      }
 
       container.append(card);
     }
@@ -245,10 +229,7 @@ export class AppShell {
     }
     layerState.layerVisible = checked;
     this.sceneController.layerManager.setLayerVisible(layerId, checked);
-    this.sceneController.layerManager.setLabelVisible(
-      layerId,
-      checked && layerState.labelsEnabled,
-    );
+    this.sceneController.layerManager.setLabelVisible(layerId, layerState.labelsEnabled);
     if (this.currentManifest) {
       this.renderLayerControls(this.currentManifest);
     }
@@ -273,10 +254,7 @@ export class AppShell {
       return;
     }
     layerState.labelsEnabled = checked;
-    this.sceneController.layerManager.setLabelVisible(
-      layerId,
-      layerState.layerVisible && checked,
-    );
+    this.sceneController.layerManager.setLabelVisible(layerId, checked);
     if (this.currentManifest) {
       this.renderLayerControls(this.currentManifest);
     }
@@ -291,33 +269,6 @@ export class AppShell {
     }
   }
 
-  updateExtendedLabels(layerId, checked) {
-    this.setExtendedLabelState(layerId, checked);
-  }
-
-  setExtendedLabelState(layerId, checked, options = {}) {
-    const layerState = this.layerUiState.get(layerId);
-    if (!layerState) {
-      return;
-    }
-    layerState.extendedLabelsEnabled = checked;
-    this.sceneController.layerManager.setLabelOptions(layerId, {
-      extendedAirspaceLabels: checked,
-    });
-    if (this.currentManifest) {
-      this.renderLayerControls(this.currentManifest);
-    }
-    this.syncVrControlPanel();
-    if (!options.suppressSync) {
-      this.publishToggle({
-        sectionId: this.currentManifest?.id,
-        layerId,
-        target: "extended-labels",
-        checked,
-      });
-    }
-  }
-
   syncVrControlPanel() {
     if (!this.sceneController?.setVrControlPanel || !this.currentManifest) {
       return;
@@ -327,16 +278,15 @@ export class AppShell {
       const layerState = this.layerUiState.get(layer.id) ?? {
         layerVisible: layer.defaultVisible !== false,
         labelsEnabled: Boolean(layer.labelData) && layer.defaultLabels !== false,
-        extendedLabelsEnabled: false,
       };
       return {
         id: layer.id,
         title: layer.title,
         layerVisible: layerState.layerVisible,
         labelsEnabled: layerState.labelsEnabled,
-        extendedLabelsEnabled: layerState.extendedLabelsEnabled,
         labelToggleAvailable: Boolean(layer.labelData),
-        supportsExtendedLabels: Boolean(layer.supportsExtendedLabels),
+        supportsAltitudeVolume: Boolean(layer.altitudeVolume),
+        altitudeVolumeEnabled: layer.id === "airspace" ? this.airspaceAltitudeMode : false,
       };
     });
 
@@ -346,8 +296,19 @@ export class AppShell {
       layers,
       onToggleLayerVisible: (layerId, checked) => this.updateLayerVisibility(layerId, checked),
       onToggleLabels: (layerId, checked) => this.updateLayerLabels(layerId, checked),
-      onToggleExtendedLabels: (layerId, checked) => this.updateExtendedLabels(layerId, checked),
+      onToggleAirspaceAltitude: (checked) => this.setAirspaceAltitudeMode(checked),
     });
+  }
+
+  setAirspaceAltitudeMode(enabled) {
+    this.airspaceAltitudeMode = Boolean(enabled);
+    this.sceneController.setAirspaceAltitudeMode?.(this.airspaceAltitudeMode);
+    this.syncVrControlPanel();
+    this.setStatus(
+      this.airspaceAltitudeMode
+        ? "Airspace altitude mode enabled. Selected St. Louis airfield-related airspace now renders as a 3D proxy volume in VR."
+        : (this.defaultStatusMessage || "Airspace altitude mode disabled."),
+    );
   }
 
   syncUrl(sectionId) {
@@ -420,9 +381,6 @@ export class AppShell {
       if (toggle.target === "labels") {
         this.setLayerLabelState(toggle.layerId, toggle.checked, { suppressSync: true });
         return;
-      }
-      if (toggle.target === "extended-labels") {
-        this.setExtendedLabelState(toggle.layerId, toggle.checked, { suppressSync: true });
       }
     } finally {
       this.applyingRemoteToggle = false;

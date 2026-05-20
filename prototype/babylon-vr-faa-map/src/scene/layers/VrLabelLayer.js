@@ -302,7 +302,7 @@ function computeEffectiveAirspaceLimit(definition, options, viewState, itemCount
   const baseLimit = definition.maxVisibleLabels ?? itemCount;
   const extendedLimit = definition.extendedMaxVisibleLabels ?? itemCount;
   let visibleLabels = baseLimit;
-  let includeExtended = Boolean(options.extendedAirspaceLabels);
+  let includeExtended = false;
 
   const radius = viewState?.cameraRadius;
   if (Number.isFinite(radius)) {
@@ -313,11 +313,6 @@ function computeEffectiveAirspaceLimit(definition, options, viewState, itemCount
         includeExtended = includeExtended || Boolean(threshold.includeExtended);
       }
     }
-  }
-
-  if (options.extendedAirspaceLabels) {
-    visibleLabels = Math.max(visibleLabels, extendedLimit);
-    includeExtended = true;
   }
 
   return {
@@ -417,7 +412,7 @@ function boundsOverlapArea(left, right) {
 }
 
 function pruneAirspaceLabelCollisions(items, sectionMetrics, forcedSelectionId = null, options = {}) {
-  const preferExtendedAirfieldCoverage = Boolean(options.extendedAirspaceLabels);
+  const preferExtendedAirfieldCoverage = Boolean(options.includeExtended);
   const overlapThreshold = preferExtendedAirfieldCoverage ? 0.5 : 0.18;
   const sorted = [...items].sort((left, right) => {
     const leftForced = left.selectionId === forcedSelectionId ? 1 : 0;
@@ -463,7 +458,6 @@ export class VrLabelLayer {
     this.entries = [];
     this.layerVisible = false;
     this.options = {
-      extendedAirspaceLabels: false,
     };
     this.viewState = {
       cameraRadius: null,
@@ -513,6 +507,23 @@ export class VrLabelLayer {
         selectionId: item.selectionId ?? item.id,
       };
 
+      const pickTargetMaterial = this.createPickTargetMaterial(item);
+      const pickTarget = BABYLON.MeshBuilder.CreatePlane(
+        `label-pick-target-${this.definition.id}-${item.id}`,
+        {
+          width: labelWidth * (isAirspaceLayer(this.definition) ? 1.55 : 1.38),
+          height: labelHeight * (isAirspaceLayer(this.definition) ? 1.4 : 1.24),
+        },
+        this.scene,
+      );
+      pickTarget.parent = entryRoot;
+      pickTarget.position = point.clone();
+      pickTarget.position.y += isAirspaceLayer(this.definition) ? 0.003 : 0.0025;
+      pickTarget.rotationQuaternion = plane.rotationQuaternion.clone();
+      pickTarget.isPickable = true;
+      pickTarget.material = pickTargetMaterial;
+      pickTarget.metadata = { ...plane.metadata };
+
       const selectionBorderTexture = createSelectionBorderTexture(this.scene, item, style);
       const selectionBorderMaterial = this.createSelectionBorderMaterial(item, selectionBorderTexture);
       const selectionBorder = BABYLON.MeshBuilder.CreatePlane(
@@ -531,13 +542,15 @@ export class VrLabelLayer {
       const entry = {
         item,
         root: entryRoot,
-        meshes: [plane, selectionBorder],
+        meshes: [plane, pickTarget, selectionBorder],
         plane,
+        pickTarget,
         selectionBorder,
         point,
         baseElevation: point.y,
         material,
         texture,
+        pickTargetMaterial,
         selectionBorderMaterial,
         selectionBorderTexture,
       };
@@ -576,6 +589,17 @@ export class VrLabelLayer {
     material.backFaceCulling = false;
     material.useAlphaFromDiffuseTexture = true;
     material.transparencyMode = BABYLON.Material.MATERIAL_ALPHABLEND;
+    return material;
+  }
+
+  createPickTargetMaterial(item) {
+    const material = new BABYLON.StandardMaterial(`label-pick-target-material-${item.id}`, this.scene);
+    material.diffuseColor = BABYLON.Color3.Black();
+    material.emissiveColor = BABYLON.Color3.Black();
+    material.specularColor = BABYLON.Color3.Black();
+    material.alpha = 0.001;
+    material.backFaceCulling = false;
+    material.disableLighting = true;
     return material;
   }
 
@@ -648,6 +672,12 @@ export class VrLabelLayer {
     const items = this.labelPayload.items ?? [];
     let visibleItems = selectVisibleItems(items, this.definition, this.sectionMetrics, this.options, this.viewState);
     if (isAirspaceLayer(this.definition)) {
+      const effectiveAirspaceSelection = computeEffectiveAirspaceLimit(
+        this.definition,
+        this.options,
+        this.viewState,
+        items.length,
+      );
       const selectedItem = this.selectedSelectionId
         ? items.find((item) => (item.selectionId ?? item.id) === this.selectedSelectionId)
         : null;
@@ -658,7 +688,7 @@ export class VrLabelLayer {
         visibleItems,
         this.sectionMetrics,
         this.selectedSelectionId,
-        this.options,
+        { includeExtended: effectiveAirspaceSelection.includeExtended },
       );
       if (selectedItem && !visibleItems.some((item) => item.id === selectedItem.id)) {
         visibleItems = [selectedItem, ...visibleItems];
@@ -690,6 +720,10 @@ export class VrLabelLayer {
         entry.selectionBorder.setEnabled(isSelected);
         entry.selectionBorder.renderingGroupId = isSelected ? 3 : 1;
       }
+      if (entry.pickTarget) {
+        entry.pickTarget.position.y = entry.plane.position.y + (isAirspaceLayer(this.definition) ? 0.003 : 0.0025);
+        entry.pickTarget.renderingGroupId = isSelected ? 3 : 1;
+      }
       entry.plane.scaling.setAll(isSelected ? 1.04 : 1);
       entry.material.alpha = isSelected ? 1 : 0.98;
       entry.material.zOffset = isSelected ? -6 : -1;
@@ -704,6 +738,7 @@ export class VrLabelLayer {
     for (const entry of this.entries) {
       entry.material?.dispose(false, true);
       entry.texture?.dispose();
+      entry.pickTargetMaterial?.dispose(false, true);
       entry.selectionBorderMaterial?.dispose(false, true);
       entry.selectionBorderTexture?.dispose();
       for (const mesh of entry.meshes) {

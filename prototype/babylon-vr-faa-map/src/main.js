@@ -1,4 +1,4 @@
-import { AppShell } from "./app/AppShell.js?v=20260516-label-style-v3";
+import { AppShell } from "./app/AppShell.js?v=20260519-xr-forearm-panel-v1";
 
 const shell = new AppShell({
   canvas: document.getElementById("renderCanvas"),

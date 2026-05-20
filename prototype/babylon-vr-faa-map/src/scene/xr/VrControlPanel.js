@@ -1,5 +1,7 @@
 const XR_STATES = BABYLON.WebXRState ?? {};
 const PANEL_TOGGLE_DEBOUNCE_MS = 300;
+const FALLBACK_VIEW_OFFSET = new BABYLON.Vector3(-0.34, -0.02, 0.72);
+const CONTROLLER_FOREARM_OFFSET = new BABYLON.Vector3(0.02, 0.21, 0.16);
 
 export class VrControlPanel {
   constructor(scene, xrHelper, camera) {
@@ -14,7 +16,7 @@ export class VrControlPanel {
     this.controllerEntries = new Map();
     this.fallbackAnchor = new BABYLON.TransformNode("xr-panel-fallback-anchor", scene);
     this.fallbackAnchor.parent = camera;
-    this.fallbackAnchor.position = new BABYLON.Vector3(-0.24, 0.04, 0.5);
+    this.fallbackAnchor.position.copyFrom(FALLBACK_VIEW_OFFSET);
     this.root = new BABYLON.TransformNode("xr-panel-root", scene);
     this.root.parent = this.fallbackAnchor;
     this.root.position = BABYLON.Vector3.Zero();
@@ -62,25 +64,29 @@ export class VrControlPanel {
       this.updateAnchor();
       this.updateVisibility();
     }) ?? null;
+    this.beforeRenderObserver = scene.onBeforeRenderObservable.add(() => {
+      this.syncRuntimePlacement();
+    });
   }
 
   setConfig(config) {
     this.config = config;
     this.rebuild();
+    this.updateAnchor();
     this.updateVisibility();
   }
 
   updateAnchor() {
+    this.fallbackAnchor.parent = this.resolveFallbackParent();
+    this.fallbackAnchor.position.copyFrom(FALLBACK_VIEW_OFFSET);
     const anchor = this.resolveAnchor();
     if (anchor === this.currentAnchor) {
+      this.applyMountedOffset(anchor);
       return;
     }
     this.currentAnchor = anchor;
     this.root.parent = anchor;
-    this.root.position.copyFrom(BABYLON.Vector3.Zero());
-    this.panelMesh.position.copyFrom(anchor === this.fallbackAnchor
-      ? new BABYLON.Vector3(0, 0, 0)
-      : new BABYLON.Vector3(0.1, 0.13, 0.08));
+    this.applyMountedOffset(anchor);
   }
 
   updateVisibility() {
@@ -120,7 +126,7 @@ export class VrControlPanel {
 
   buildLayerCard(layer) {
     const card = new BABYLON.GUI.Rectangle(`xr-layer-${layer.id}`);
-    card.height = layer.supportsExtendedLabels ? "170px" : "138px";
+    card.height = layer.supportsAltitudeVolume ? "170px" : "138px";
     card.thickness = 1;
     card.color = "#35527A";
     card.cornerRadius = 20;
@@ -153,10 +159,10 @@ export class VrControlPanel {
       this.config?.onToggleLabels?.(layer.id, !layer.labelsEnabled);
     }, !layer.labelToggleAvailable));
 
-    if (layer.supportsExtendedLabels) {
-      stack.addControl(this.buildActionRow("More", layer.extendedLabelsEnabled, () => {
-        this.config?.onToggleExtendedLabels?.(layer.id, !layer.extendedLabelsEnabled);
-      }, !layer.labelToggleAvailable));
+    if (layer.supportsAltitudeVolume) {
+      stack.addControl(this.buildActionRow("Altitude", layer.altitudeVolumeEnabled, () => {
+        this.config?.onToggleAirspaceAltitude?.(!layer.altitudeVolumeEnabled);
+      }));
     }
 
     return card;
@@ -262,6 +268,22 @@ export class VrControlPanel {
     return this.leftController?.grip ?? this.leftController?.pointer ?? this.fallbackAnchor;
   }
 
+  resolveFallbackParent() {
+    return this.xrHelper?.baseExperience?.camera ?? this.camera;
+  }
+
+  applyMountedOffset(anchor) {
+    this.root.position.copyFrom(anchor === this.fallbackAnchor ? BABYLON.Vector3.Zero() : CONTROLLER_FOREARM_OFFSET);
+    this.panelMesh.position.copyFrom(BABYLON.Vector3.Zero());
+  }
+
+  syncRuntimePlacement() {
+    if (!this.config) {
+      return;
+    }
+    this.updateAnchor();
+  }
+
   isInXr() {
     const state = this.xrHelper?.baseExperience?.state;
     return state === XR_STATES.IN_XR || state === XR_STATES.ENTERING_XR;
@@ -285,6 +307,9 @@ export class VrControlPanel {
     }
     if (this.xrStateObserver) {
       this.xrHelper?.baseExperience?.onStateChangedObservable?.remove(this.xrStateObserver);
+    }
+    if (this.beforeRenderObserver) {
+      this.scene.onBeforeRenderObservable.remove(this.beforeRenderObserver);
     }
     this.texture?.dispose();
     this.panelMaterial?.dispose();

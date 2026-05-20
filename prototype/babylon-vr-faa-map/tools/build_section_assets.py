@@ -562,6 +562,8 @@ def build_stlouis_airspace_labels(features: dict[str, object], scale_x: float, s
             item["elevation"] = compact_number(row["elevation"], digits=4)
         if "connector" in row:
             item["connector"] = bool(row["connector"])
+        if row.get("familyKey"):
+            item["familyKey"] = row["familyKey"]
         items.append(item)
 
     items.sort(key=lambda row: row["priority"], reverse=True)
@@ -729,16 +731,24 @@ def build_stlouis_airspace_overlay(
         if not scaled_parts:
             continue
         anchor_x, anchor_y = scale_xy(scale_x, scale_y, region["anchorX"], region["anchorY"])
-        interaction_regions.append(
-            {
-                "id": region["id"],
-                "kind": region["kind"],
-                "airspaceType": region["airspaceType"],
-                "priority": compact_number(region["priority"]),
-                "anchor": compact_point(anchor_x, anchor_y, digits=2),
-                "parts": scaled_parts,
-            }
-        )
+        region_payload = {
+            "id": region["id"],
+            "kind": region["kind"],
+            "airspaceType": region["airspaceType"],
+            "priority": compact_number(region["priority"]),
+            "anchor": compact_point(anchor_x, anchor_y, digits=2),
+            "parts": scaled_parts,
+        }
+        if region.get("familyKey"):
+            region_payload["familyKey"] = region["familyKey"]
+        if region.get("floorFt") is not None and region.get("proxyCeilingFt") is not None:
+            region_payload["floorFt"] = int(region["floorFt"])
+            region_payload["proxyCeilingFt"] = int(region["proxyCeilingFt"])
+            region_payload["openEndedCeiling"] = bool(region.get("openEndedCeiling", False))
+            region_payload["altitudeSource"] = region.get("altitudeSource", "attrs")
+            if region.get("ceilingFt") is not None:
+                region_payload["ceilingFt"] = int(region["ceilingFt"])
+        interaction_regions.append(region_payload)
     payload["interactionRegions"] = interaction_regions
 
     payload["stats"] = {
@@ -1166,7 +1176,12 @@ def build_stlouis_section() -> dict[str, object]:
                 "defaultLabels": False,
                 "maxVisibleLabels": 110,
                 "extendedMaxVisibleLabels": airspace_total_labels,
-                "supportsExtendedLabels": True,
+                "altitudeVolume": {
+                    "enabledByDefault": False,
+                    "worldUnitsPerFoot": 0.00008,
+                    "openEndedCeilingFt": stl_airspace.OPEN_ENDED_PROXY_CEILING_FT,
+                    "minThicknessWorldUnits": 0.06,
+                },
                 "zoomLabelThresholds": [
                     {"radius": 14.0, "visibleLabels": 132, "includeExtended": False},
                     {"radius": 10.0, "visibleLabels": 168, "includeExtended": True},

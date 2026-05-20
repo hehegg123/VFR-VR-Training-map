@@ -4,7 +4,7 @@
   "title": "St. Louis Sectional",
   "description": "GeoTIFF-backed primary section with vector overlays and VR-native labels.",
   "quality": "primary",
-  "assetVersion": "2026-05-11T14:28:34.723096+00:00",
+  "assetVersion": "2026-05-19T04:07:23.922933+00:00",
   "chart": {
     "pixelWidth": 14747,
     "pixelHeight": 11238,
@@ -2830,7 +2830,12 @@
       "defaultLabels": false,
       "maxVisibleLabels": 110,
       "extendedMaxVisibleLabels": 303,
-      "supportsExtendedLabels": true,
+      "altitudeVolume": {
+        "enabledByDefault": false,
+        "worldUnitsPerFoot": 8e-05,
+        "openEndedCeilingFt": 12000,
+        "minThicknessWorldUnits": 0.06
+      },
       "zoomLabelThresholds": [
         {
           "radius": 14.0,
