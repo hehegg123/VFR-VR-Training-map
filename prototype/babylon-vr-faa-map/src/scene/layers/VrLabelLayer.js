@@ -212,6 +212,24 @@ function airspaceLabelGroup(item) {
   return airspaceTypeForItem(item) ? "airfield" : "other";
 }
 
+function airspaceFamilyKeyForItem(item) {
+  if (item.familyKey) {
+    return item.familyKey;
+  }
+
+  if (typeof item.selectionId === "string" && item.selectionId.includes("-CLASS_")) {
+    return item.selectionId;
+  }
+
+  const title = item.lines?.[0] ?? item.text ?? "";
+  const match = title.match(/^([A-Z0-9]+)\s+([BCD])(?:\s+AREA\b|$)/);
+  if (match) {
+    return `${match[1]}-CLASS_${match[2]}`;
+  }
+
+  return null;
+}
+
 function isSpecialAirspaceItem(item) {
   return airspaceLabelGroup(item) === "special";
 }
@@ -298,7 +316,7 @@ function selectDistributedAirspaceDetails(items, limit, sectionMetrics) {
   return selected;
 }
 
-function computeEffectiveAirspaceLimit(definition, options, viewState, itemCount) {
+function computeEffectiveAirspaceLimit(definition, viewState, itemCount) {
   const baseLimit = definition.maxVisibleLabels ?? itemCount;
   const extendedLimit = definition.extendedMaxVisibleLabels ?? itemCount;
   let visibleLabels = baseLimit;
@@ -316,19 +334,22 @@ function computeEffectiveAirspaceLimit(definition, options, viewState, itemCount
   }
 
   return {
-    limit: Math.min(itemCount, Math.max(baseLimit, visibleLabels)),
+    limit: Math.min(itemCount, Math.min(extendedLimit, Math.max(baseLimit, visibleLabels))),
     includeExtended,
   };
 }
 
-function selectVisibleItems(items, definition, sectionMetrics, options, viewState) {
+function selectVisibleItems(items, definition, sectionMetrics, viewState) {
   const defaultLimit = definition.maxVisibleLabels ?? items.length;
   const sorted = [...items].sort((left, right) => (right.priority ?? 0) - (left.priority ?? 0));
   if (definition.id !== "airspace") {
-    return sorted.slice(0, defaultLimit);
+    return {
+      items: sorted.slice(0, defaultLimit),
+      includeExtended: false,
+    };
   }
 
-  const { limit, includeExtended } = computeEffectiveAirspaceLimit(definition, options, viewState, sorted.length);
+  const { limit, includeExtended } = computeEffectiveAirspaceLimit(definition, viewState, sorted.length);
   const special = sorted.filter((item) => isSpecialAirspaceItem(item));
   const controlled = sorted.filter((item) => isControlledAirspaceItem(item));
   const coreEDetail = sorted.filter((item) => isCoreClassEDetailItem(item));
@@ -378,7 +399,10 @@ function selectVisibleItems(items, definition, sectionMetrics, options, viewStat
     pushUnique(item);
   }
 
-  return selected;
+  return {
+    items: selected,
+    includeExtended,
+  };
 }
 
 function labelFootprintInChartPixels(style, sectionMetrics) {
@@ -411,15 +435,23 @@ function boundsOverlapArea(left, right) {
   return Math.max(0, x1 - x0) * Math.max(0, y1 - y0);
 }
 
-function pruneAirspaceLabelCollisions(items, sectionMetrics, forcedSelectionId = null, options = {}) {
-  const preferExtendedAirfieldCoverage = Boolean(options.includeExtended);
-  const overlapThreshold = preferExtendedAirfieldCoverage ? 0.5 : 0.18;
+function pruneAirspaceLabelCollisions(
+  items,
+  sectionMetrics,
+  forcedSelectionId = null,
+  includeExtended = false,
+  forcedFamilyKey = null,
+) {
+  const overlapThreshold = includeExtended ? 0.5 : 0.18;
   const sorted = [...items].sort((left, right) => {
     const leftForced = left.selectionId === forcedSelectionId ? 1 : 0;
     const rightForced = right.selectionId === forcedSelectionId ? 1 : 0;
-    const leftExtendedAirfieldBoost = preferExtendedAirfieldCoverage && isClassEDetailItem(left) ? 1 : 0;
-    const rightExtendedAirfieldBoost = preferExtendedAirfieldCoverage && isClassEDetailItem(right) ? 1 : 0;
+    const leftFamily = forcedFamilyKey && airspaceFamilyKeyForItem(left) === forcedFamilyKey ? 1 : 0;
+    const rightFamily = forcedFamilyKey && airspaceFamilyKeyForItem(right) === forcedFamilyKey ? 1 : 0;
+    const leftExtendedAirfieldBoost = includeExtended && isClassEDetailItem(left) ? 1 : 0;
+    const rightExtendedAirfieldBoost = includeExtended && isClassEDetailItem(right) ? 1 : 0;
     return rightForced - leftForced
+      || rightFamily - leftFamily
       || rightExtendedAirfieldBoost - leftExtendedAirfieldBoost
       || (right.priority ?? 0) - (left.priority ?? 0);
   });
@@ -456,9 +488,9 @@ export class VrLabelLayer {
     this.labelPayload = labelPayload;
     this.root = null;
     this.entries = [];
-    this.layerVisible = false;
-    this.options = {
-    };
+    this.layerActive = false;
+    this.labelsVisible = false;
+    this.options = {};
     this.viewState = {
       cameraRadius: null,
     };
@@ -507,22 +539,25 @@ export class VrLabelLayer {
         selectionId: item.selectionId ?? item.id,
       };
 
-      const pickTargetMaterial = this.createPickTargetMaterial(item);
-      const pickTarget = BABYLON.MeshBuilder.CreatePlane(
-        `label-pick-target-${this.definition.id}-${item.id}`,
-        {
-          width: labelWidth * (isAirspaceLayer(this.definition) ? 1.55 : 1.38),
-          height: labelHeight * (isAirspaceLayer(this.definition) ? 1.4 : 1.24),
-        },
+      const hitTarget = BABYLON.MeshBuilder.CreatePlane(
+        `label-hit-${this.definition.id}-${item.id}`,
+        { width: labelWidth * 1.28, height: labelHeight * 1.34 },
         this.scene,
       );
-      pickTarget.parent = entryRoot;
-      pickTarget.position = point.clone();
-      pickTarget.position.y += isAirspaceLayer(this.definition) ? 0.003 : 0.0025;
-      pickTarget.rotationQuaternion = plane.rotationQuaternion.clone();
-      pickTarget.isPickable = true;
-      pickTarget.material = pickTargetMaterial;
-      pickTarget.metadata = { ...plane.metadata };
+      hitTarget.parent = entryRoot;
+      hitTarget.position = point.clone();
+      hitTarget.position.y += isAirspaceLayer(this.definition) ? 0.004 : 0.003;
+      hitTarget.rotationQuaternion = plane.rotationQuaternion.clone();
+      hitTarget.isPickable = true;
+      hitTarget.visibility = 0;
+      hitTarget.material = this.createHitTargetMaterial(item);
+      hitTarget.metadata = {
+        interactiveLayerId: this.definition.id,
+        interactiveRole: "label",
+        itemId: item.id,
+        labelText: (item.lines?.length ? item.lines.join(" / ") : item.text) ?? item.id,
+        selectionId: item.selectionId ?? item.id,
+      };
 
       const selectionBorderTexture = createSelectionBorderTexture(this.scene, item, style);
       const selectionBorderMaterial = this.createSelectionBorderMaterial(item, selectionBorderTexture);
@@ -542,15 +577,15 @@ export class VrLabelLayer {
       const entry = {
         item,
         root: entryRoot,
-        meshes: [plane, pickTarget, selectionBorder],
+        meshes: [plane, hitTarget, selectionBorder],
         plane,
-        pickTarget,
+        hitTarget,
         selectionBorder,
         point,
         baseElevation: point.y,
         material,
         texture,
-        pickTargetMaterial,
+        hitTargetMaterial: hitTarget.material,
         selectionBorderMaterial,
         selectionBorderTexture,
       };
@@ -565,6 +600,7 @@ export class VrLabelLayer {
       this.entries.push(entry);
     }
 
+    this.setLayerActive(this.definition.defaultVisible !== false);
     this.setVisible(this.definition.defaultLabels !== false);
   }
 
@@ -592,14 +628,15 @@ export class VrLabelLayer {
     return material;
   }
 
-  createPickTargetMaterial(item) {
-    const material = new BABYLON.StandardMaterial(`label-pick-target-material-${item.id}`, this.scene);
+  createHitTargetMaterial(item) {
+    const material = new BABYLON.StandardMaterial(`label-hit-material-${item.id}`, this.scene);
     material.diffuseColor = BABYLON.Color3.Black();
     material.emissiveColor = BABYLON.Color3.Black();
     material.specularColor = BABYLON.Color3.Black();
-    material.alpha = 0.001;
+    material.alpha = 0;
     material.backFaceCulling = false;
     material.disableLighting = true;
+    material.transparencyMode = BABYLON.Material.MATERIAL_ALPHABLEND;
     return material;
   }
 
@@ -620,8 +657,13 @@ export class VrLabelLayer {
     return connector;
   }
 
+  setLayerActive(active) {
+    this.layerActive = Boolean(active);
+    this.refreshVisibility();
+  }
+
   setVisible(visible) {
-    this.layerVisible = visible;
+    this.labelsVisible = Boolean(visible);
     this.refreshVisibility();
   }
 
@@ -656,10 +698,15 @@ export class VrLabelLayer {
       return;
     }
 
+    if (!this.layerActive) {
+      this.root.setEnabled(false);
+      return;
+    }
+
     const hasFocusedLabel = Boolean(this.focusedLabel?.layerId && this.focusedLabel?.itemId);
     if (hasFocusedLabel) {
       const sameLayerFocus = this.focusedLabel.layerId === this.definition.id;
-      this.root.setEnabled(this.layerVisible || Boolean(this.selectedSelectionId));
+      this.root.setEnabled(sameLayerFocus || Boolean(this.selectedSelectionId));
       for (const entry of this.entries) {
         const isSelected = (entry.item.selectionId ?? entry.item.id) === this.selectedSelectionId;
         const isFocusedItem = sameLayerFocus && entry.item.id === this.focusedLabel.itemId;
@@ -669,43 +716,38 @@ export class VrLabelLayer {
       return;
     }
 
-    const items = this.labelPayload.items ?? [];
-    let visibleItems = selectVisibleItems(items, this.definition, this.sectionMetrics, this.options, this.viewState);
-    if (isAirspaceLayer(this.definition)) {
-      const effectiveAirspaceSelection = computeEffectiveAirspaceLimit(
-        this.definition,
-        this.options,
-        this.viewState,
-        items.length,
-      );
-      const selectedItem = this.selectedSelectionId
-        ? items.find((item) => (item.selectionId ?? item.id) === this.selectedSelectionId)
-        : null;
-      if (selectedItem && !visibleItems.some((item) => item.id === selectedItem.id)) {
-        visibleItems = [selectedItem, ...visibleItems];
+    if (this.selectedSelectionId) {
+      this.root.setEnabled(true);
+      for (const entry of this.entries) {
+        const isSelected = (entry.item.selectionId ?? entry.item.id) === this.selectedSelectionId;
+        entry.root.setEnabled(isSelected);
       }
+      this.applySelectionState();
+      return;
+    }
+
+    if (!this.labelsVisible) {
+      this.root.setEnabled(false);
+      return;
+    }
+
+    const items = this.labelPayload.items ?? [];
+    const selectionState = selectVisibleItems(items, this.definition, this.sectionMetrics, this.viewState);
+    let visibleItems = selectionState.items;
+    if (isAirspaceLayer(this.definition)) {
       visibleItems = pruneAirspaceLabelCollisions(
         visibleItems,
         this.sectionMetrics,
         this.selectedSelectionId,
-        { includeExtended: effectiveAirspaceSelection.includeExtended },
+        selectionState.includeExtended,
+        null,
       );
-      if (selectedItem && !visibleItems.some((item) => item.id === selectedItem.id)) {
-        visibleItems = [selectedItem, ...visibleItems];
-      }
-    } else if (this.selectedSelectionId) {
-      const selectedItem = items.find((item) => item.id === this.selectedSelectionId);
-      if (selectedItem && !visibleItems.some((item) => item.id === selectedItem.id)) {
-        visibleItems = [selectedItem, ...visibleItems];
-      }
     }
     const visibleIds = new Set(visibleItems.map((item) => item.id));
 
-    this.root.setEnabled(this.layerVisible || Boolean(this.selectedSelectionId));
+    this.root.setEnabled(this.labelsVisible);
     for (const entry of this.entries) {
-      const isSelected = (entry.item.selectionId ?? entry.item.id) === this.selectedSelectionId;
-      const shouldShow = (this.layerVisible && visibleIds.has(entry.item.id)) || isSelected;
-      entry.root.setEnabled(shouldShow);
+      entry.root.setEnabled(visibleIds.has(entry.item.id));
     }
     this.applySelectionState();
   }
@@ -720,9 +762,8 @@ export class VrLabelLayer {
         entry.selectionBorder.setEnabled(isSelected);
         entry.selectionBorder.renderingGroupId = isSelected ? 3 : 1;
       }
-      if (entry.pickTarget) {
-        entry.pickTarget.position.y = entry.plane.position.y + (isAirspaceLayer(this.definition) ? 0.003 : 0.0025);
-        entry.pickTarget.renderingGroupId = isSelected ? 3 : 1;
+      if (entry.hitTarget) {
+        entry.hitTarget.position.y = entry.plane.position.y + (isAirspaceLayer(this.definition) ? 0.004 : 0.003);
       }
       entry.plane.scaling.setAll(isSelected ? 1.04 : 1);
       entry.material.alpha = isSelected ? 1 : 0.98;
@@ -738,7 +779,7 @@ export class VrLabelLayer {
     for (const entry of this.entries) {
       entry.material?.dispose(false, true);
       entry.texture?.dispose();
-      entry.pickTargetMaterial?.dispose(false, true);
+      entry.hitTargetMaterial?.dispose(false, true);
       entry.selectionBorderMaterial?.dispose(false, true);
       entry.selectionBorderTexture?.dispose();
       for (const mesh of entry.meshes) {

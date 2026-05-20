@@ -7,7 +7,7 @@ import { RasterLayer } from "./RasterLayer.js";
 import { TiledRasterLayer } from "./TiledRasterLayer.js";
 import { VectorOverlayLayer } from "./VectorOverlayLayer.js?v=20260514-feature-highlight-v1";
 import { AirspaceAltitudeOverlay } from "./AirspaceAltitudeOverlay.js?v=20260517-airspace-altitude-v4";
-import { VrLabelLayer } from "./VrLabelLayer.js?v=20260517-label-visibility-rules-v1";
+import { VrLabelLayer } from "./VrLabelLayer.js?v=20260520-vrlabel-sync-v1";
 
 export class LayerManager {
   constructor(scene, mapRoot) {

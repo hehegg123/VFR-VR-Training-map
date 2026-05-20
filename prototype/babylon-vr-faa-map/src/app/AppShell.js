@@ -1,5 +1,5 @@
 import { loadSectionIndex, loadSectionManifest } from "../data/sectionRepository.js";
-import { createMapScene } from "../scene/MapScene.js?v=20260519-xr-forearm-panel-v1";
+import { createMapScene } from "../scene/MapScene.js?v=20260520-vrlabel-sync-v1";
 import {
   BroadcastLinkSession,
   generateSessionId,

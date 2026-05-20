@@ -1,4 +1,4 @@
-import { LayerManager } from "./layers/LayerManager.js?v=20260517-airspace-altitude-v4";
+import { LayerManager } from "./layers/LayerManager.js?v=20260520-vrlabel-sync-v1";
 import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260519-xr-forearm-panel-v1";
 import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260518-xr-drag-gain-v1";
 
