@@ -1,6 +1,34 @@
 $ErrorActionPreference = "Stop"
 $HttpsPort = 4443
 
+function Resolve-NodeExecutable {
+    $command = Get-Command node -ErrorAction SilentlyContinue
+    if ($command -and $command.Source) {
+        return $command.Source
+    }
+
+    $candidates = @(
+        (Join-Path $env:ProgramFiles "nodejs\node.exe"),
+        (Join-Path ${env:ProgramFiles(x86)} "nodejs\node.exe"),
+        (Join-Path $env:LocalAppData "Programs\nodejs\node.exe")
+    ) | Where-Object { $_ }
+
+    foreach ($candidate in $candidates) {
+        if (Test-Path -LiteralPath $candidate) {
+            return $candidate
+        }
+    }
+
+    throw @"
+Node.js was not found on this PC.
+
+Install the Windows LTS version of Node.js from:
+https://nodejs.org/
+
+Then reopen the launcher and try again.
+"@
+}
+
 function Get-PrimaryIPv4Address {
     $socket = [System.Net.Sockets.Socket]::new(
         [System.Net.Sockets.AddressFamily]::InterNetwork,
@@ -174,7 +202,7 @@ $certRoot = Join-Path $appRoot ".dev-certs"
 $logsRoot = Join-Path $appRoot ".logs"
 [System.IO.Directory]::CreateDirectory($logsRoot) | Out-Null
 $launchLogPath = Join-Path $logsRoot "one-click-demo-launch.log"
-$nodeExe = (Get-Command node -ErrorAction Stop).Source
+$nodeExe = Resolve-NodeExecutable
 $computerName = $env:COMPUTERNAME
 $lanIp = Get-PrimaryIPv4Address
 $certInfo = & (Join-Path $PSScriptRoot "ensure_stlouis_dev_cert.ps1") `

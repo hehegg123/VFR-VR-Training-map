@@ -17,12 +17,22 @@ prototype/
 
 ## Clone and run
 
+Prerequisite for the launcher scripts:
+
+- Install Windows Node.js LTS from [nodejs.org](https://nodejs.org/)
+
 Recommended fresh-clone path:
 
 ```powershell
 git clone https://github.com/hehegg123/VFR-VR-Training-map.git
 cd .\VFR-VR-Training-map
-.\Launch St. Louis Demo.cmd
+.\launch-demo.cmd
+```
+
+If you prefer the original launcher file with spaces in its name, use:
+
+```powershell
+& ".\Launch St. Louis Demo.cmd"
 ```
 
 That one-click launcher:
@@ -34,6 +44,7 @@ That one-click launcher:
 - gives you a `Stop Session` button
 
 The checked-in runtime data is enough to launch immediately after cloning.
+That includes the staged St. Louis runtime assets under `prototype/babylon-vr-faa-map/data/sections/stlouis/`.
 
 If you want the direct non-wrapper launch paths instead:
 
