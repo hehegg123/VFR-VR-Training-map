@@ -15,31 +15,45 @@ prototype/
   research/             # notes, debug imagery, and non-runtime scratch work
 ```
 
-## Run After Cloning
+## Clone and run
 
-The safest run path is to use the included launcher from the project root:
+Recommended fresh-clone path:
+
+```powershell
+git clone https://github.com/hehegg123/VFR-VR-Training-map.git
+cd .\VFR-VR-Training-map
+.\Launch St. Louis Demo.cmd
+```
+
+That one-click launcher:
+
+- starts the St. Louis linked-review session over HTTPS
+- opens a lightweight local operator page
+- shows the LAN VR URL for the headset browser
+- shows the LAN desktop/2D companion URL
+- gives you a `Stop Session` button
+
+The checked-in runtime data is enough to launch immediately after cloning.
+
+If you want the direct non-wrapper launch paths instead:
+
+- linked desktop review:
 
 ```powershell
 cd .\prototype\babylon-vr-faa-map
 powershell -ExecutionPolicy Bypass -File .\scripts\launch_stlouis_linked_review.ps1
 ```
 
-That serves the `prototype/` folder on `http://localhost:4173` and opens:
-
-- `http://localhost:4173/babylon-vr-faa-map/?section=stlouis`
-- `http://localhost:4173/faa-2d-map/?section=stlouis`
-
-For VR-only desktop review:
+- VR-only desktop review:
 
 ```powershell
 cd .\prototype\babylon-vr-faa-map
 powershell -ExecutionPolicy Bypass -File .\scripts\launch_stlouis_prototype.ps1
 ```
 
-For HTTPS or headset review, use:
-
-- `prototype\babylon-vr-faa-map\scripts\launch_stlouis_linked_review_https.ps1`
-- `prototype\babylon-vr-faa-map\scripts\launch_stlouis_hmd_demo.ps1`
+- HTTPS or headset review:
+  - `prototype\babylon-vr-faa-map\scripts\launch_stlouis_linked_review_https.ps1`
+  - `prototype\babylon-vr-faa-map\scripts\launch_stlouis_hmd_demo.ps1`
 
 ## Rebuild Assets
 
@@ -50,6 +64,28 @@ Rebuild command:
 ```powershell
 py -3 .\prototype\babylon-vr-faa-map\tools\build_section_assets.py
 ```
+
+## VR controls
+
+Current St. Louis VR controls:
+
+- `Enter VR`: starts immersive VR when WebXR is available.
+- `Controller ray`: point at labels or controls and press/select to interact.
+- `Left forearm panel`: the in-VR control panel appears above the left front arm.
+- `Thumbstick / stick click`: toggles the in-VR control panel on and off.
+- `Map` toggle: shows or hides a layer.
+- `Labels` toggle: shows or hides labels for a layer.
+- `Altitude` toggle: for the airspace layer only, switches between flat selection and the proxy altitude-volume view.
+- `One-hand squeeze / grab`: drags the map in space.
+- `Two-hand squeeze / grab`: moves, scales, and rotates the map together.
+- `Label selection`: labels are preferred pick targets over geometry beneath them.
+
+Current behavior notes:
+
+- The panel uses Babylon XR pointer interaction, so exact controller button names can vary slightly by headset/browser.
+- If a controller does not expose a squeeze component, the manipulator falls back to trigger-style grab input where available.
+- The initial VR pose is set so the user starts in front of the map and can look down over it.
+- For HMD/WebXR use, the headset browser must trust the generated dev certificate if it does not already.
 
 ## Notes
 

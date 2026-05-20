@@ -2,7 +2,15 @@
 
 This app is the VR side of the St. Louis prototype. The canonical repository layout now lives under [`prototype/`](..).
 
-Primary run path from the project root:
+Recommended one-click launch from the project root:
+
+```powershell
+.\Launch St. Louis Demo.cmd
+```
+
+That starts the HTTPS linked-review session, opens the local operator page, and gives you the LAN VR + desktop links plus a `Stop Session` button.
+
+Direct run path from the project root:
 
 ```powershell
 cd .\prototype\babylon-vr-faa-map
@@ -20,4 +28,4 @@ To rebuild runtime assets from local FAA source data:
 py -3 .\prototype\babylon-vr-faa-map\tools\build_section_assets.py
 ```
 
-See the root [README](../../README.md) for the repo structure, prerequisites, and clone-and-run instructions.
+See the root [README](../../README.md) for the repo structure, clone/start flow, headset notes, and the current VR controls.
