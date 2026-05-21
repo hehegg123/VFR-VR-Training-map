@@ -2,6 +2,10 @@ const XR_STATES = BABYLON.WebXRState ?? {};
 
 const MIN_MAP_SCALE = 0.45;
 const MAX_MAP_SCALE = 2.75;
+const ONE_HAND_TRANSLATION_GAIN = 3.4;
+const TWO_HAND_TRANSLATION_GAIN = 3.0;
+const TWO_HAND_SCALE_GAIN = 1.8;
+const TWO_HAND_ROTATION_GAIN = 1.55;
 
 export class XrMapManipulator {
   constructor(scene, xrHelper, mapRoot) {
@@ -177,7 +181,7 @@ export class XrMapManipulator {
 
     const currentPosition = anchor.getAbsolutePosition();
     const delta = currentPosition.subtract(gesture.startControllerPosition);
-    this.mapRoot.position.copyFrom(gesture.startMapPosition.add(delta));
+    this.mapRoot.position.copyFrom(gesture.startMapPosition.add(delta.scale(ONE_HAND_TRANSLATION_GAIN)));
   }
 
   updateTwoHandGesture() {
@@ -206,20 +210,22 @@ export class XrMapManipulator {
     const currentDistance = Math.max(currentVector.length(), 1e-4);
     const currentYaw = Math.atan2(currentVector.z, currentVector.x);
 
-    const scaleRatio = currentDistance / gesture.startDistance;
+    const scaleRatio = Math.pow(currentDistance / gesture.startDistance, TWO_HAND_SCALE_GAIN);
     const nextScale = BABYLON.Scalar.Clamp(gesture.startScale * scaleRatio, MIN_MAP_SCALE, MAX_MAP_SCALE);
     this.mapRoot.scaling.setAll(nextScale);
 
     // In XR, rotating the hands clockwise should feel like turning the map clockwise,
     // so invert the raw controller-vector delta before applying it to the map root.
-    const yawDelta = gesture.startYaw - currentYaw;
+    const yawDelta = (gesture.startYaw - currentYaw) * TWO_HAND_ROTATION_GAIN;
     const rotationDelta = BABYLON.Quaternion.FromEulerAngles(0, yawDelta, 0);
     this.mapRoot.rotationQuaternion = rotationDelta.multiply(gesture.startRotation);
 
     const scaledOffset = gesture.startOffset.scale(nextScale / gesture.startScale);
     const rotatedOffset = new BABYLON.Vector3();
     scaledOffset.rotateByQuaternionToRef(rotationDelta, rotatedOffset);
-    this.mapRoot.position.copyFrom(currentMidpoint.add(rotatedOffset));
+    const midpointDelta = currentMidpoint.subtract(gesture.startMidpoint).scale(TWO_HAND_TRANSLATION_GAIN);
+    const amplifiedMidpoint = gesture.startMidpoint.add(midpointDelta);
+    this.mapRoot.position.copyFrom(amplifiedMidpoint.add(rotatedOffset));
   }
 
   isInXr() {

@@ -1,6 +1,6 @@
-import { LayerManager } from "./layers/LayerManager.js?v=20260520-vrlabel-sync-v1";
+import { LayerManager } from "./layers/LayerManager.js?v=20260521-default-base-xr-gain-v1";
 import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260519-xr-forearm-panel-v1";
-import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260518-xr-drag-gain-v1";
+import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260521-default-base-xr-gain-v1";
 
 const VR_FRONT_EDGE_MARGIN_UNITS = 1.15;
 const VR_EXTRA_FRONT_CLEARANCE_RATIO = 0.12;

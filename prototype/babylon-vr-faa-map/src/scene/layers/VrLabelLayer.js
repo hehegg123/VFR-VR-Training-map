@@ -98,6 +98,12 @@ function isAirspaceLayer(definition) {
   return definition?.id === "airspace";
 }
 
+function labelHitTargetScale(definition) {
+  return isAirspaceLayer(definition)
+    ? { width: 1.16, height: 1.22, yOffset: -0.002 }
+    : { width: 1.12, height: 1.16, yOffset: -0.0015 };
+}
+
 function createLabelTexture(scene, item) {
   const style = pickLabelStyle(item.style);
   const texture = new BABYLON.DynamicTexture(
@@ -254,6 +260,10 @@ function isShelfItem(item) {
   return airspaceLabelGroup(item) === "shelf";
 }
 
+function isMajorShelfItem(item) {
+  return isShelfItem(item) && ["CLASS_B", "CLASS_C"].includes(item.airspaceType);
+}
+
 function isCoreClassEDetailItem(item) {
   return isClassEDetailItem(item) && item.detailTier !== "extended";
 }
@@ -339,6 +349,84 @@ function computeEffectiveAirspaceLimit(definition, viewState, itemCount) {
   };
 }
 
+function shelfRepresentativeTitle(item) {
+  return item.lines?.[0] ?? item.text ?? item.id;
+}
+
+function shelfRepresentativeOrder(item) {
+  const title = shelfRepresentativeTitle(item);
+  const areaMatch = title.match(/\bAREA\s+([A-Z0-9]+)/);
+  if (areaMatch) {
+    const token = areaMatch[1];
+    if (/^\d+$/.test(token)) {
+      return Number(token);
+    }
+    return token.charCodeAt(0);
+  }
+  return Number.MAX_SAFE_INTEGER;
+}
+
+function selectRepresentativeShelves(items, limit) {
+  if (limit <= 0 || items.length === 0) {
+    return [];
+  }
+
+  const representativeByKey = new Map();
+  for (const item of items) {
+    const key = `${item.familyKey ?? item.selectionId ?? item.id}::${shelfRepresentativeTitle(item)}`;
+    const existing = representativeByKey.get(key);
+    if (!existing || (item.priority ?? 0) > (existing.priority ?? 0)) {
+      representativeByKey.set(key, item);
+    }
+  }
+
+  const families = new Map();
+  for (const item of representativeByKey.values()) {
+    const familyKey = item.familyKey ?? item.selectionId ?? item.id;
+    if (!families.has(familyKey)) {
+      families.set(familyKey, []);
+    }
+    families.get(familyKey).push(item);
+  }
+
+  for (const itemsForFamily of families.values()) {
+    itemsForFamily.sort((left, right) =>
+      shelfRepresentativeOrder(left) - shelfRepresentativeOrder(right)
+      || (right.priority ?? 0) - (left.priority ?? 0)
+      || shelfRepresentativeTitle(left).localeCompare(shelfRepresentativeTitle(right))
+    );
+  }
+
+  const orderedFamilies = [...families.entries()].sort((left, right) => {
+    const leftType = left[1][0]?.airspaceType ?? "";
+    const rightType = right[1][0]?.airspaceType ?? "";
+    const leftWeight = leftType === "CLASS_B" ? 0 : leftType === "CLASS_C" ? 1 : 2;
+    const rightWeight = rightType === "CLASS_B" ? 0 : rightType === "CLASS_C" ? 1 : 2;
+    return leftWeight - rightWeight || left[0].localeCompare(right[0]);
+  });
+
+  const selected = [];
+  let round = 0;
+  while (selected.length < limit) {
+    let progressed = false;
+    for (const [, itemsForFamily] of orderedFamilies) {
+      if (round < itemsForFamily.length) {
+        selected.push(itemsForFamily[round]);
+        progressed = true;
+        if (selected.length >= limit) {
+          break;
+        }
+      }
+    }
+    if (!progressed) {
+      break;
+    }
+    round += 1;
+  }
+
+  return selected;
+}
+
 function selectVisibleItems(items, definition, sectionMetrics, viewState) {
   const defaultLimit = definition.maxVisibleLabels ?? items.length;
   const sorted = [...items].sort((left, right) => (right.priority ?? 0) - (left.priority ?? 0));
@@ -358,6 +446,8 @@ function selectVisibleItems(items, definition, sectionMetrics, viewState) {
   const eCallouts = activeEDetail.filter((item) => isCalloutItem(item));
   const eSurface = activeEDetail.filter((item) => !isCalloutItem(item));
   const shelves = sorted.filter((item) => isShelfItem(item));
+  const majorShelves = shelves.filter((item) => isMajorShelfItem(item));
+  const minorShelves = shelves.filter((item) => !isMajorShelfItem(item));
   const remainder = sorted.filter(
     (item) =>
       !isSpecialAirspaceItem(item)
@@ -379,6 +469,19 @@ function selectVisibleItems(items, definition, sectionMetrics, viewState) {
     pushUnique(item);
   }
 
+  const remainingAfterControlled = Math.max(0, limit - selected.length);
+  const majorShelfBudget = Math.min(
+    majorShelves.length,
+    Math.max(
+      includeExtended ? 18 : 12,
+      Math.min(includeExtended ? 28 : 18, Math.floor(remainingAfterControlled * (includeExtended ? 0.32 : 0.28))),
+    ),
+  );
+  const representativeMajorShelves = selectRepresentativeShelves(majorShelves, majorShelfBudget);
+  for (const item of representativeMajorShelves) {
+    pushUnique(item);
+  }
+
   const calloutBudgetCap = includeExtended ? 34 : 18;
   const calloutBudgetFloor = includeExtended ? 12 : 8;
   const calloutBudget = Math.min(
@@ -395,7 +498,7 @@ function selectVisibleItems(items, definition, sectionMetrics, viewState) {
     pushUnique(item);
   }
 
-  for (const item of [...shelves, ...eCallouts.slice(calloutBudget), ...eSurface, ...remainder]) {
+  for (const item of [...minorShelves, ...majorShelves, ...eCallouts.slice(calloutBudget), ...eSurface, ...remainder]) {
     pushUnique(item);
   }
 
@@ -539,21 +642,22 @@ export class VrLabelLayer {
         selectionId: item.selectionId ?? item.id,
       };
 
+      const hitScale = labelHitTargetScale(this.definition);
       const hitTarget = BABYLON.MeshBuilder.CreatePlane(
         `label-hit-${this.definition.id}-${item.id}`,
-        { width: labelWidth * 1.28, height: labelHeight * 1.34 },
+        { width: labelWidth * hitScale.width, height: labelHeight * hitScale.height },
         this.scene,
       );
       hitTarget.parent = entryRoot;
       hitTarget.position = point.clone();
-      hitTarget.position.y += isAirspaceLayer(this.definition) ? 0.004 : 0.003;
+      hitTarget.position.y += hitScale.yOffset;
       hitTarget.rotationQuaternion = plane.rotationQuaternion.clone();
       hitTarget.isPickable = true;
-      hitTarget.visibility = 0;
+      hitTarget.visibility = 1;
       hitTarget.material = this.createHitTargetMaterial(item);
       hitTarget.metadata = {
         interactiveLayerId: this.definition.id,
-        interactiveRole: "label",
+        interactiveRole: "label-proxy",
         itemId: item.id,
         labelText: (item.lines?.length ? item.lines.join(" / ") : item.text) ?? item.id,
         selectionId: item.selectionId ?? item.id,
@@ -633,7 +737,7 @@ export class VrLabelLayer {
     material.diffuseColor = BABYLON.Color3.Black();
     material.emissiveColor = BABYLON.Color3.Black();
     material.specularColor = BABYLON.Color3.Black();
-    material.alpha = 0;
+    material.alpha = 0.001;
     material.backFaceCulling = false;
     material.disableLighting = true;
     material.transparencyMode = BABYLON.Material.MATERIAL_ALPHABLEND;
@@ -763,7 +867,7 @@ export class VrLabelLayer {
         entry.selectionBorder.renderingGroupId = isSelected ? 3 : 1;
       }
       if (entry.hitTarget) {
-        entry.hitTarget.position.y = entry.plane.position.y + (isAirspaceLayer(this.definition) ? 0.004 : 0.003);
+        entry.hitTarget.position.y = entry.plane.position.y + labelHitTargetScale(this.definition).yOffset;
       }
       entry.plane.scaling.setAll(isSelected ? 1.04 : 1);
       entry.material.alpha = isSelected ? 1 : 0.98;

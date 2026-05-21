@@ -1172,7 +1172,7 @@ def build_stlouis_section() -> dict[str, object]:
                 "renderMode": "vector",
                 "overlayData": "overlays/airspace.vector.json",
                 "labelData": "labels/airspace.json",
-                "defaultVisible": True,
+                "defaultVisible": False,
                 "defaultLabels": False,
                 "maxVisibleLabels": 110,
                 "extendedMaxVisibleLabels": airspace_total_labels,
@@ -1190,10 +1190,10 @@ def build_stlouis_section() -> dict[str, object]:
                 "polygonStrokeMerge": True,
                 "strokeRenderMode": "lines",
             },
-            {"id": "airports", "title": "Airports", "renderMode": "vector", "overlayData": "overlays/airports.vector.json", "labelData": "labels/airports.json", "defaultVisible": True, "defaultLabels": False, "maxVisibleLabels": 90, "materialMode": "opaque"},
-            {"id": "navaids", "title": "Navaids", "renderMode": "vector", "overlayData": "overlays/navaids.vector.json", "labelData": "labels/navaids.json", "defaultVisible": True, "defaultLabels": False, "maxVisibleLabels": 95, "materialMode": "opaque", "polygonStrokeMerge": True},
-            {"id": "intersections", "title": "Intersections", "renderMode": "vector", "overlayData": "overlays/intersections.vector.json", "labelData": "labels/intersections.json", "defaultVisible": True, "defaultLabels": False, "maxVisibleLabels": 120},
-            {"id": "victors", "title": "Victor Airways", "renderMode": "vector", "overlayData": "overlays/victors.vector.json", "labelData": "labels/victors.json", "defaultVisible": True, "defaultLabels": True, "maxVisibleLabels": 80, "strokePresentation": "tube", "strokeSegmentMerge": False},
+            {"id": "airports", "title": "Airports", "renderMode": "vector", "overlayData": "overlays/airports.vector.json", "labelData": "labels/airports.json", "defaultVisible": False, "defaultLabels": False, "maxVisibleLabels": 90, "materialMode": "opaque"},
+            {"id": "navaids", "title": "Navaids", "renderMode": "vector", "overlayData": "overlays/navaids.vector.json", "labelData": "labels/navaids.json", "defaultVisible": False, "defaultLabels": False, "maxVisibleLabels": 95, "materialMode": "opaque", "polygonStrokeMerge": True},
+            {"id": "intersections", "title": "Intersections", "renderMode": "vector", "overlayData": "overlays/intersections.vector.json", "labelData": "labels/intersections.json", "defaultVisible": False, "defaultLabels": False, "maxVisibleLabels": 120},
+            {"id": "victors", "title": "Victor Airways", "renderMode": "vector", "overlayData": "overlays/victors.vector.json", "labelData": "labels/victors.json", "defaultVisible": False, "defaultLabels": False, "maxVisibleLabels": 80, "strokePresentation": "tube", "strokeSegmentMerge": False},
         ],
     }
 

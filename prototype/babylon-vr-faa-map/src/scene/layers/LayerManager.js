@@ -7,7 +7,7 @@ import { RasterLayer } from "./RasterLayer.js";
 import { TiledRasterLayer } from "./TiledRasterLayer.js";
 import { VectorOverlayLayer } from "./VectorOverlayLayer.js?v=20260514-feature-highlight-v1";
 import { AirspaceAltitudeOverlay } from "./AirspaceAltitudeOverlay.js?v=20260517-airspace-altitude-v4";
-import { VrLabelLayer } from "./VrLabelLayer.js?v=20260520-vrlabel-sync-v1";
+import { VrLabelLayer } from "./VrLabelLayer.js?v=20260520-label-hit-align-v1";
 
 export class LayerManager {
   constructor(scene, mapRoot) {
@@ -235,7 +235,7 @@ export class LayerManager {
     if (this.selectedAirspaceId === selectionId) {
       return;
     }
-    if (selectionId) {
+    if (selectionId && !options.preserveLabelSelection) {
       this.clearLabelSelection({ suppressNotify: true });
     }
     this.selectedAirspaceId = selectionId;
@@ -257,6 +257,35 @@ export class LayerManager {
     this.setAirspaceSelection(null, options);
   }
 
+  setAirspaceLinkedLabelSelection(layerId, itemId, metadata = null, options = {}) {
+    const nextSelection = layerId && itemId ? { layerId, itemId, label: metadata?.labelText ?? itemId } : null;
+    const nextAirspaceId = metadata?.selectionId ?? itemId;
+    const sameLabel =
+      this.selectedLabel?.layerId === nextSelection?.layerId
+      && this.selectedLabel?.itemId === nextSelection?.itemId;
+    const sameAirspace = this.selectedAirspaceId === nextAirspaceId;
+    if (sameLabel && sameAirspace) {
+      return;
+    }
+
+    this.selectedLabel = nextSelection;
+    this.selectedAirspaceId = nextAirspaceId;
+    this.syncAirspaceSelectionVisualState(nextSelection);
+    this.onAirspaceSelectionChange?.(nextAirspaceId);
+
+    if (!options.suppressNotify) {
+      this.notifySelectionChange(nextSelection
+        ? createLabelSelection({
+            sectionId: this.currentSectionId,
+            layerId,
+            labelId: itemId,
+            featureId: nextAirspaceId,
+            label: nextSelection.label,
+          })
+        : null);
+    }
+  }
+
   setLabelSelection(layerId, itemId, metadata = null, options = {}) {
     const nextSelection = layerId && itemId ? { layerId, itemId, label: metadata?.labelText ?? itemId } : null;
     if (
@@ -266,11 +295,16 @@ export class LayerManager {
       return;
     }
 
+    if (nextSelection && layerId === "airspace" && metadata?.selectionId) {
+      this.setAirspaceLinkedLabelSelection(layerId, itemId, metadata, options);
+      return;
+    }
+
     if (nextSelection) {
       this.clearAirspaceSelection({ suppressNotify: true });
     }
 
-      this.selectedLabel = nextSelection;
+    this.selectedLabel = nextSelection;
     for (const [currentLayerId, layer] of this.layers.entries()) {
       layer.labelLayer?.setSelection(currentLayerId === layerId ? (metadata?.selectionId ?? itemId) : null);
       layer.labelLayer?.setFocusedLabel(nextSelection);
@@ -330,6 +364,18 @@ export class LayerManager {
     }
 
     if (selection.kind === "label" && selection.layerId && selection.labelId) {
+      if (selection.layerId === "airspace" && (selection.featureId ?? selection.labelId)) {
+        this.setAirspaceLinkedLabelSelection(
+          selection.layerId,
+          selection.labelId,
+          {
+            labelText: selection.label,
+            selectionId: selection.featureId ?? selection.labelId,
+          },
+          { suppressNotify: options.suppressNotify ?? true },
+        );
+        return;
+      }
       this.setLabelSelection(
         selection.layerId,
         selection.labelId,
@@ -365,17 +411,17 @@ export class LayerManager {
       return;
     }
 
-    if (metadata.interactiveLayerId === "airspace" && metadata.selectionId) {
-      this.setAirspaceSelection(metadata.selectionId);
-      return;
-    }
     if (
-      metadata.interactiveRole === "label"
+      (metadata.interactiveRole === "label" || metadata.interactiveRole === "label-proxy")
       && metadata.interactiveLayerId
       && metadata.itemId
       && interactionState.labelsVisible
     ) {
       this.setLabelSelection(metadata.interactiveLayerId, metadata.itemId, metadata);
+      return;
+    }
+    if (metadata.interactiveLayerId === "airspace" && metadata.selectionId) {
+      this.setAirspaceSelection(metadata.selectionId);
       return;
     }
     this.clearSelections();
@@ -423,15 +469,15 @@ export class LayerManager {
     return pickResults[0]?.metadata ?? direct;
   }
 
-  syncAirspaceSelectionVisualState() {
+  syncAirspaceSelectionVisualState(focusedLabelOverride = null) {
     const airspaceLayer = this.layers.get("airspace");
     airspaceLayer?.renderLayer?.setSelection?.(this.airspaceAltitudeEnabled ? null : this.selectedAirspaceId);
-    const focusedLabel = this.selectedAirspaceId
+    const focusedLabel = focusedLabelOverride ?? (this.selectedAirspaceId
       ? {
           layerId: "airspace",
           itemId: this.selectedAirspaceId,
         }
-      : null;
+      : null);
     for (const [layerId, layer] of this.layers.entries()) {
       layer.labelLayer?.setSelection(layerId === "airspace" ? this.selectedAirspaceId : null);
       layer.labelLayer?.setFocusedLabel(focusedLabel);
@@ -483,6 +529,9 @@ function interactionPriority(metadata) {
     return 0;
   }
   if (metadata.interactiveRole === "label") {
+    return 4;
+  }
+  if (metadata.interactiveRole === "label-proxy") {
     return 3;
   }
   if (metadata.interactiveRole === "geometry") {
