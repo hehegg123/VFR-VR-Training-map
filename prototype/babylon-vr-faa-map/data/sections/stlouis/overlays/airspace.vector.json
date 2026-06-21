@@ -70211,6 +70211,7 @@
       "id": "CVG-CLASS_B",
       "kind": "airfield",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 1.0,
       "anchor": [
         12983.64,
@@ -71646,7 +71647,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 0,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -71657,6 +71657,7 @@
       "id": "STL-CLASS_B",
       "kind": "airfield",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 1.0,
       "anchor": [
         1305.43,
@@ -72988,7 +72989,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 0,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -72999,6 +72999,7 @@
       "id": "BNA-CLASS_C",
       "kind": "airfield",
       "airspaceType": "CLASS_C",
+      "familyKey": "BNA-CLASS_C",
       "priority": 1.0,
       "anchor": [
         8977.66,
@@ -73440,7 +73441,6 @@
           ]
         ]
       ],
-      "familyKey": "BNA-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 6000,
       "openEndedCeiling": false,
@@ -73451,6 +73451,7 @@
       "id": "CMI-CLASS_C",
       "kind": "airfield",
       "airspaceType": "CLASS_C",
+      "familyKey": "CMI-CLASS_C",
       "priority": 1.0,
       "anchor": [
         5611.66,
@@ -73812,7 +73813,6 @@
           ]
         ]
       ],
-      "familyKey": "CMI-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4800,
       "openEndedCeiling": false,
@@ -73823,6 +73823,7 @@
       "id": "DAY-CLASS_C",
       "kind": "airfield",
       "airspaceType": "CLASS_C",
+      "familyKey": "DAY-CLASS_C",
       "priority": 1.0,
       "anchor": [
         13813.32,
@@ -74098,7 +74099,6 @@
           ]
         ]
       ],
-      "familyKey": "DAY-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 5000,
       "openEndedCeiling": false,
@@ -74109,6 +74109,7 @@
       "id": "EVV-CLASS_C",
       "kind": "airfield",
       "airspaceType": "CLASS_C",
+      "familyKey": "EVV-CLASS_C",
       "priority": 1.0,
       "anchor": [
         7120.33,
@@ -74408,7 +74409,6 @@
           ]
         ]
       ],
-      "familyKey": "EVV-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4500,
       "openEndedCeiling": false,
@@ -74419,6 +74419,7 @@
       "id": "IND-CLASS_C",
       "kind": "airfield",
       "airspaceType": "CLASS_C",
+      "familyKey": "IND-CLASS_C",
       "priority": 1.0,
       "anchor": [
         9638.79,
@@ -74716,7 +74717,6 @@
           ]
         ]
       ],
-      "familyKey": "IND-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4800,
       "openEndedCeiling": false,
@@ -74727,6 +74727,7 @@
       "id": "LEX-CLASS_C",
       "kind": "airfield",
       "airspaceType": "CLASS_C",
+      "familyKey": "LEX-CLASS_C",
       "priority": 1.0,
       "anchor": [
         13178.67,
@@ -75002,7 +75003,6 @@
           ]
         ]
       ],
-      "familyKey": "LEX-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 5000,
       "openEndedCeiling": false,
@@ -75013,6 +75013,7 @@
       "id": "SDF-CLASS_C",
       "kind": "airfield",
       "airspaceType": "CLASS_C",
+      "familyKey": "SDF-CLASS_C",
       "priority": 1.0,
       "anchor": [
         10773.4,
@@ -75402,7 +75403,6 @@
           ]
         ]
       ],
-      "familyKey": "SDF-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4500,
       "openEndedCeiling": false,
@@ -75413,6 +75413,7 @@
       "id": "SPI-CLASS_C",
       "kind": "airfield",
       "airspaceType": "CLASS_C",
+      "familyKey": "SPI-CLASS_C",
       "priority": 1.0,
       "anchor": [
         2772.13,
@@ -75688,7 +75689,6 @@
           ]
         ]
       ],
-      "familyKey": "SPI-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4600,
       "openEndedCeiling": false,
@@ -75699,6 +75699,7 @@
       "id": "AID-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "AID-CLASS_D",
       "priority": 1.0,
       "anchor": [
         10985.27,
@@ -75776,7 +75777,6 @@
           ]
         ]
       ],
-      "familyKey": "AID-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3400,
       "openEndedCeiling": false,
@@ -75787,6 +75787,7 @@
       "id": "ALN-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "ALN-CLASS_D",
       "priority": 1.0,
       "anchor": [
         1961.1,
@@ -75864,7 +75865,6 @@
           ]
         ]
       ],
-      "familyKey": "ALN-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3000,
       "openEndedCeiling": false,
@@ -75875,6 +75875,7 @@
       "id": "BAK-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "BAK-CLASS_D",
       "priority": 1.0,
       "anchor": [
         10450.34,
@@ -75952,7 +75953,6 @@
           ]
         ]
       ],
-      "familyKey": "BAK-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3200,
       "openEndedCeiling": false,
@@ -75963,6 +75963,7 @@
       "id": "BLV-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "BLV-CLASS_D",
       "priority": 1.0,
       "anchor": [
         2371.43,
@@ -76104,7 +76105,6 @@
           ]
         ]
       ],
-      "familyKey": "BLV-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3000,
       "openEndedCeiling": false,
@@ -76115,6 +76115,7 @@
       "id": "BMG-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "BMG-CLASS_D",
       "priority": 1.0,
       "anchor": [
         8984.02,
@@ -76192,7 +76193,6 @@
           ]
         ]
       ],
-      "familyKey": "BMG-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3300,
       "openEndedCeiling": false,
@@ -76203,6 +76203,7 @@
       "id": "CGI-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "CGI-CLASS_D",
       "priority": 1.0,
       "anchor": [
         2842.28,
@@ -76308,7 +76309,6 @@
           ]
         ]
       ],
-      "familyKey": "CGI-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 2800,
       "openEndedCeiling": false,
@@ -76319,6 +76319,7 @@
       "id": "CPS-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "CPS-CLASS_D",
       "priority": 1.0,
       "anchor": [
         1712.64,
@@ -76396,7 +76397,6 @@
           ]
         ]
       ],
-      "familyKey": "CPS-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 2900,
       "openEndedCeiling": false,
@@ -76407,6 +76407,7 @@
       "id": "DEC-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "DEC-CLASS_D",
       "priority": 1.0,
       "anchor": [
         4413.38,
@@ -76484,7 +76485,6 @@
           ]
         ]
       ],
-      "familyKey": "DEC-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3200,
       "openEndedCeiling": false,
@@ -76495,6 +76495,7 @@
       "id": "HUF-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "HUF-CLASS_D",
       "priority": 1.0,
       "anchor": [
         7572.13,
@@ -76636,7 +76637,6 @@
           ]
         ]
       ],
-      "familyKey": "HUF-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3100,
       "openEndedCeiling": false,
@@ -76647,6 +76647,7 @@
       "id": "ILN-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "ILN-CLASS_D",
       "priority": 1.0,
       "anchor": [
         14633.18,
@@ -76724,7 +76725,6 @@
           ]
         ]
       ],
-      "familyKey": "ILN-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3600,
       "openEndedCeiling": false,
@@ -76735,6 +76735,7 @@
       "id": "JWN-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "JWN-CLASS_D",
       "priority": 1.0,
       "anchor": [
         8481.63,
@@ -76840,7 +76841,6 @@
           ]
         ]
       ],
-      "familyKey": "JWN-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3100,
       "openEndedCeiling": false,
@@ -76851,6 +76851,7 @@
       "id": "LOU-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "LOU-CLASS_D",
       "priority": 1.0,
       "anchor": [
         11043.61,
@@ -76908,7 +76909,6 @@
           ]
         ]
       ],
-      "familyKey": "LOU-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3300,
       "openEndedCeiling": false,
@@ -76919,6 +76919,7 @@
       "id": "LUK-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "LUK-CLASS_D",
       "priority": 1.0,
       "anchor": [
         13479.09,
@@ -77008,7 +77009,6 @@
           ]
         ]
       ],
-      "familyKey": "LUK-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3000,
       "openEndedCeiling": false,
@@ -77019,6 +77019,7 @@
       "id": "MDH-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "MDH-CLASS_D",
       "priority": 1.0,
       "anchor": [
         3535.81,
@@ -77096,7 +77097,6 @@
           ]
         ]
       ],
-      "familyKey": "MDH-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 2900,
       "openEndedCeiling": false,
@@ -77107,6 +77107,7 @@
       "id": "MIE-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "MIE-CLASS_D",
       "priority": 1.0,
       "anchor": [
         11415.63,
@@ -77184,7 +77185,6 @@
           ]
         ]
       ],
-      "familyKey": "MIE-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3400,
       "openEndedCeiling": false,
@@ -77195,6 +77195,7 @@
       "id": "MQY-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "MQY-CLASS_D",
       "priority": 1.0,
       "anchor": [
         9263.93,
@@ -77240,7 +77241,6 @@
           ]
         ]
       ],
-      "familyKey": "MQY-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 2500,
       "openEndedCeiling": false,
@@ -77251,6 +77251,7 @@
       "id": "MWA-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "MWA-CLASS_D",
       "priority": 1.0,
       "anchor": [
         4035.91,
@@ -77328,7 +77329,6 @@
           ]
         ]
       ],
-      "familyKey": "MWA-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3000,
       "openEndedCeiling": false,
@@ -77339,6 +77339,7 @@
       "id": "OWB-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "OWB-CLASS_D",
       "priority": 1.0,
       "anchor": [
         7873.57,
@@ -77416,7 +77417,6 @@
           ]
         ]
       ],
-      "familyKey": "OWB-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 2900,
       "openEndedCeiling": false,
@@ -77427,6 +77427,7 @@
       "id": "PAH-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "PAH-CLASS_D",
       "priority": 1.0,
       "anchor": [
         4506.12,
@@ -77568,7 +77569,6 @@
           ]
         ]
       ],
-      "familyKey": "PAH-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 2900,
       "openEndedCeiling": false,
@@ -77579,6 +77579,7 @@
       "id": "SUS-CLASS_D",
       "kind": "airfield",
       "airspaceType": "CLASS_D",
+      "familyKey": "SUS-CLASS_D",
       "priority": 1.0,
       "anchor": [
         699.99,
@@ -77680,7 +77681,6 @@
           ]
         ]
       ],
-      "familyKey": "SUS-CLASS_D",
       "floorFt": 0,
       "proxyCeilingFt": 3000,
       "openEndedCeiling": false,
@@ -77691,6 +77691,7 @@
       "id": "BWG-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "BWG-CLASS_E2",
       "priority": 0.965,
       "anchor": [
         9449.81,
@@ -77784,7 +77785,6 @@
           ]
         ]
       ],
-      "familyKey": "BWG-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -77795,6 +77795,7 @@
       "id": "CGI-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "CGI-CLASS_E2",
       "priority": 1.0,
       "anchor": [
         2842.28,
@@ -77900,7 +77901,6 @@
           ]
         ]
       ],
-      "familyKey": "CGI-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -77911,6 +77911,7 @@
       "id": "DYR-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "DYR-CLASS_E2",
       "priority": 0.995,
       "anchor": [
         3123.21,
@@ -77976,7 +77977,6 @@
           ]
         ]
       ],
-      "familyKey": "DYR-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -77987,6 +77987,7 @@
       "id": "ILN-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "ILN-CLASS_E2",
       "priority": 1.0,
       "anchor": [
         14633.18,
@@ -78064,7 +78065,6 @@
           ]
         ]
       ],
-      "familyKey": "ILN-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 3600,
       "openEndedCeiling": false,
@@ -78075,6 +78075,7 @@
       "id": "LOU-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "LOU-CLASS_E2",
       "priority": 1.0,
       "anchor": [
         11043.61,
@@ -78132,7 +78133,6 @@
           ]
         ]
       ],
-      "familyKey": "LOU-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -78143,6 +78143,7 @@
       "id": "LOZ-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "LOZ-CLASS_E2",
       "priority": 0.965,
       "anchor": [
         14360.61,
@@ -78284,7 +78285,6 @@
           ]
         ]
       ],
-      "familyKey": "LOZ-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -78295,6 +78295,7 @@
       "id": "LUK-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "LUK-CLASS_E2",
       "priority": 1.0,
       "anchor": [
         13479.09,
@@ -78384,7 +78385,6 @@
           ]
         ]
       ],
-      "familyKey": "LUK-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 3000,
       "openEndedCeiling": false,
@@ -78395,6 +78395,7 @@
       "id": "MVN-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "MVN-CLASS_E2",
       "priority": 0.965,
       "anchor": [
         4374.07,
@@ -78472,7 +78473,6 @@
           ]
         ]
       ],
-      "familyKey": "MVN-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -78483,6 +78483,7 @@
       "id": "SME-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "SME-CLASS_E2",
       "priority": 0.965,
       "anchor": [
         13233.46,
@@ -78576,7 +78577,6 @@
           ]
         ]
       ],
-      "familyKey": "SME-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -78587,6 +78587,7 @@
       "id": "SPI-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "SPI-CLASS_E2",
       "priority": 1.0,
       "anchor": [
         2772.13,
@@ -78728,7 +78729,6 @@
           ]
         ]
       ],
-      "familyKey": "SPI-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -78739,6 +78739,7 @@
       "id": "SUS-CLASS_E2",
       "kind": "airfield",
       "airspaceType": "CLASS_E2",
+      "familyKey": "SUS-CLASS_E2",
       "priority": 1.0,
       "anchor": [
         699.99,
@@ -78840,7 +78841,6 @@
           ]
         ]
       ],
-      "familyKey": "SUS-CLASS_E2",
       "floorFt": 0,
       "proxyCeilingFt": 3000,
       "openEndedCeiling": false,
@@ -78851,6 +78851,7 @@
       "id": "BWG-CLASS_E4",
       "kind": "airfield",
       "airspaceType": "CLASS_E4",
+      "familyKey": "BWG-CLASS_E4",
       "priority": 0.855,
       "anchor": [
         7426.58,
@@ -78912,7 +78913,6 @@
           ]
         ]
       ],
-      "familyKey": "BWG-CLASS_E4",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -78923,6 +78923,7 @@
       "id": "LOU-CLASS_E4",
       "kind": "airfield",
       "airspaceType": "CLASS_E4",
+      "familyKey": "LOU-CLASS_E4",
       "priority": 0.86,
       "anchor": [
         10320.55,
@@ -78964,7 +78965,6 @@
           ]
         ]
       ],
-      "familyKey": "LOU-CLASS_E4",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -78975,6 +78975,7 @@
       "id": "SUS-CLASS_E4",
       "kind": "airfield",
       "airspaceType": "CLASS_E4",
+      "familyKey": "SUS-CLASS_E4",
       "priority": 0.86,
       "anchor": [
         2125.79,
@@ -79034,7 +79035,6 @@
           ]
         ]
       ],
-      "familyKey": "SUS-CLASS_E4",
       "floorFt": 0,
       "proxyCeilingFt": 700,
       "openEndedCeiling": false,
@@ -79045,6 +79045,7 @@
       "id": "0A3-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "0A3-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         10776.62,
@@ -79122,7 +79123,6 @@
           ]
         ]
       ],
-      "familyKey": "0A3-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -79132,6 +79132,7 @@
       "id": "0I8-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "0I8-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         13817.19,
@@ -79273,7 +79274,6 @@
           ]
         ]
       ],
-      "familyKey": "0I8-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -79283,6 +79283,7 @@
       "id": "0M4-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "0M4-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         5853.43,
@@ -79360,7 +79361,6 @@
           ]
         ]
       ],
-      "familyKey": "0M4-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -79370,6 +79370,7 @@
       "id": "0M5-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "0M5-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         6673.67,
@@ -79495,7 +79496,6 @@
           ]
         ]
       ],
-      "familyKey": "0M5-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -79505,6 +79505,7 @@
       "id": "18I-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "18I-CLASS_E5",
       "priority": 0.585,
       "anchor": [
         13733.92,
@@ -79646,7 +79647,6 @@
           ]
         ]
       ],
-      "familyKey": "18I-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -79656,6 +79656,7 @@
       "id": "1H2-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "1H2-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         5065.9,
@@ -79793,7 +79794,6 @@
           ]
         ]
       ],
-      "familyKey": "1H2-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -79803,6 +79803,7 @@
       "id": "1H8-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "1H8-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         6151.54,
@@ -79944,7 +79945,6 @@
           ]
         ]
       ],
-      "familyKey": "1H8-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -79954,6 +79954,7 @@
       "id": "1M5-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "1M5-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         9339.73,
@@ -80091,7 +80092,6 @@
           ]
         ]
       ],
-      "familyKey": "1M5-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -80101,6 +80101,7 @@
       "id": "1M7-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "1M7-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         4183.03,
@@ -80242,7 +80243,6 @@
           ]
         ]
       ],
-      "familyKey": "1M7-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -80252,6 +80252,7 @@
       "id": "27K-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "27K-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         13515.84,
@@ -80389,7 +80390,6 @@
           ]
         ]
       ],
-      "familyKey": "27K-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -80399,6 +80399,7 @@
       "id": "2A1-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "2A1-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         12587.12,
@@ -80540,7 +80541,6 @@
           ]
         ]
       ],
-      "familyKey": "2A1-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -80550,6 +80550,7 @@
       "id": "2H0-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "2H0-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         4440.27,
@@ -80679,7 +80680,6 @@
           ]
         ]
       ],
-      "familyKey": "2H0-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -80689,6 +80689,7 @@
       "id": "2I0-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "2I0-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         7392.23,
@@ -80830,7 +80831,6 @@
           ]
         ]
       ],
-      "familyKey": "2I0-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -80840,6 +80840,7 @@
       "id": "2M0-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "2M0-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         6430.68,
@@ -80981,7 +80982,6 @@
           ]
         ]
       ],
-      "familyKey": "2M0-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -80991,6 +80991,7 @@
       "id": "3I7-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "3I7-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         13446.58,
@@ -81132,7 +81133,6 @@
           ]
         ]
       ],
-      "familyKey": "3I7-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -81142,6 +81142,7 @@
       "id": "3LF-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "3LF-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         2738.06,
@@ -81283,7 +81284,6 @@
           ]
         ]
       ],
-      "familyKey": "3LF-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -81293,6 +81293,7 @@
       "id": "3M7-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "3M7-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         10226.42,
@@ -81434,7 +81435,6 @@
           ]
         ]
       ],
-      "familyKey": "3M7-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -81444,6 +81444,7 @@
       "id": "4M7-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "4M7-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         8631.98,
@@ -81585,7 +81586,6 @@
           ]
         ]
       ],
-      "familyKey": "4M7-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -81595,6 +81595,7 @@
       "id": "4M9-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "4M9-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         517.4,
@@ -81732,7 +81733,6 @@
           ]
         ]
       ],
-      "familyKey": "4M9-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -81742,6 +81742,7 @@
       "id": "5I4-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "5I4-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         9764.61,
@@ -81883,7 +81884,6 @@
           ]
         ]
       ],
-      "familyKey": "5I4-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -81893,6 +81893,7 @@
       "id": "6I2-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "6I2-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11883.37,
@@ -82034,7 +82035,6 @@
           ]
         ]
       ],
-      "familyKey": "6I2-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -82044,6 +82044,7 @@
       "id": "8A3-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "8A3-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11813.04,
@@ -82185,7 +82186,6 @@
           ]
         ]
       ],
-      "familyKey": "8A3-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -82195,6 +82195,7 @@
       "id": "8WC-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "8WC-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         473.27,
@@ -82336,7 +82337,6 @@
           ]
         ]
       ],
-      "familyKey": "8WC-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -82346,6 +82346,7 @@
       "id": "AAA-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "AAA-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         3480.87,
@@ -82487,7 +82488,6 @@
           ]
         ]
       ],
-      "familyKey": "AAA-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -82497,6 +82497,7 @@
       "id": "AAS-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "AAS-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11759.61,
@@ -82598,7 +82599,6 @@
           ]
         ]
       ],
-      "familyKey": "AAS-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -82608,6 +82608,7 @@
       "id": "AID-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "AID-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         10985.27,
@@ -82749,7 +82750,6 @@
           ]
         ]
       ],
-      "familyKey": "AID-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -82759,6 +82759,7 @@
       "id": "ALN-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "ALN-CLASS_E5",
       "priority": 0.775,
       "anchor": [
         1961.1,
@@ -82900,7 +82901,6 @@
           ]
         ]
       ],
-      "familyKey": "ALN-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -82910,6 +82910,7 @@
       "id": "BAK-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "BAK-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         10450.34,
@@ -83051,7 +83052,6 @@
           ]
         ]
       ],
-      "familyKey": "BAK-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -83061,6 +83061,7 @@
       "id": "BFR-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "BFR-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         9342.62,
@@ -83210,7 +83211,6 @@
           ]
         ]
       ],
-      "familyKey": "BFR-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -83220,6 +83220,7 @@
       "id": "BLV-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "BLV-CLASS_E5",
       "priority": 0.775,
       "anchor": [
         2493.74,
@@ -83305,7 +83306,6 @@
           ]
         ]
       ],
-      "familyKey": "BLV-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -83315,6 +83315,7 @@
       "id": "BMG-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "BMG-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         8984.02,
@@ -83456,7 +83457,6 @@
           ]
         ]
       ],
-      "familyKey": "BMG-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -83466,6 +83466,7 @@
       "id": "BNA-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "BNA-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         8925.53,
@@ -83707,7 +83708,6 @@
           ]
         ]
       ],
-      "familyKey": "BNA-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -83717,6 +83717,7 @@
       "id": "BRY-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "BRY-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11337.42,
@@ -83822,7 +83823,6 @@
           ]
         ]
       ],
-      "familyKey": "BRY-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -83832,6 +83832,7 @@
       "id": "BWG-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "BWG-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         9449.81,
@@ -83973,7 +83974,6 @@
           ]
         ]
       ],
-      "familyKey": "BWG-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -83983,6 +83983,7 @@
       "id": "BYL-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "BYL-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         14129.64,
@@ -84124,7 +84125,6 @@
           ]
         ]
       ],
-      "familyKey": "BYL-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -84134,6 +84134,7 @@
       "id": "C16-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "C16-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         5771.27,
@@ -84307,7 +84308,6 @@
           ]
         ]
       ],
-      "familyKey": "C16-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -84317,6 +84317,7 @@
       "id": "CEV-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CEV-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11983.16,
@@ -84458,7 +84459,6 @@
           ]
         ]
       ],
-      "familyKey": "CEV-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -84468,6 +84468,7 @@
       "id": "CEY-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CEY-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         5338.14,
@@ -84703,7 +84704,6 @@
           ]
         ]
       ],
-      "familyKey": "CEY-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -84713,6 +84713,7 @@
       "id": "CFJ-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CFJ-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         8350.23,
@@ -84854,7 +84855,6 @@
           ]
         ]
       ],
-      "familyKey": "CFJ-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -84864,6 +84864,7 @@
       "id": "CGI-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CGI-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         2842.28,
@@ -84985,7 +84986,6 @@
           ]
         ]
       ],
-      "familyKey": "CGI-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -84995,6 +84995,7 @@
       "id": "CHQ-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CHQ-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         3265.22,
@@ -85136,7 +85137,6 @@
           ]
         ]
       ],
-      "familyKey": "CHQ-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -85146,6 +85146,7 @@
       "id": "CIR-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CIR-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         3570.39,
@@ -85251,7 +85252,6 @@
           ]
         ]
       ],
-      "familyKey": "CIR-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -85261,6 +85261,7 @@
       "id": "CKV-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CKV-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         7308.45,
@@ -85418,7 +85419,6 @@
           ]
         ]
       ],
-      "familyKey": "CKV-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -85428,6 +85428,7 @@
       "id": "CPS-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CPS-CLASS_E5",
       "priority": 0.775,
       "anchor": [
         1712.66,
@@ -85569,7 +85570,6 @@
           ]
         ]
       ],
-      "familyKey": "CPS-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -85579,6 +85579,7 @@
       "id": "CUL-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CUL-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         5888.83,
@@ -85720,7 +85721,6 @@
           ]
         ]
       ],
-      "familyKey": "CUL-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -85730,6 +85730,7 @@
       "id": "CVG-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "CVG-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         12971.99,
@@ -85963,7 +85964,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -85973,6 +85973,7 @@
       "id": "DAY-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "DAY-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         13813.39,
@@ -86174,7 +86175,6 @@
           ]
         ]
       ],
-      "familyKey": "DAY-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -86184,6 +86184,7 @@
       "id": "DCY-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "DCY-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         7940.3,
@@ -86325,7 +86326,6 @@
           ]
         ]
       ],
-      "familyKey": "DCY-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -86335,6 +86335,7 @@
       "id": "DEC-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "DEC-CLASS_E5",
       "priority": 0.775,
       "anchor": [
         4414.79,
@@ -86484,7 +86485,6 @@
           ]
         ]
       ],
-      "familyKey": "DEC-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -86494,6 +86494,7 @@
       "id": "DNV-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "DNV-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         6987.68,
@@ -86635,7 +86636,6 @@
           ]
         ]
       ],
-      "familyKey": "DNV-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -86645,6 +86645,7 @@
       "id": "DVK-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "DVK-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         12872.17,
@@ -86746,7 +86747,6 @@
           ]
         ]
       ],
-      "familyKey": "DVK-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -86756,6 +86756,7 @@
       "id": "DXE-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "DXE-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         2036.94,
@@ -86893,7 +86894,6 @@
           ]
         ]
       ],
-      "familyKey": "DXE-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -86903,6 +86903,7 @@
       "id": "DYR-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "DYR-CLASS_E5",
       "priority": 0.705,
       "anchor": [
         3123.04,
@@ -86980,7 +86981,6 @@
           ]
         ]
       ],
-      "familyKey": "DYR-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -86990,6 +86990,7 @@
       "id": "EHR-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "EHR-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         6793.35,
@@ -87123,7 +87124,6 @@
           ]
         ]
       ],
-      "familyKey": "EHR-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -87133,6 +87133,7 @@
       "id": "EIW-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "EIW-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         2742.69,
@@ -87274,7 +87275,6 @@
           ]
         ]
       ],
-      "familyKey": "EIW-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -87284,6 +87284,7 @@
       "id": "EKQ-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "EKQ-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         12742.94,
@@ -87425,7 +87426,6 @@
           ]
         ]
       ],
-      "familyKey": "EKQ-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -87435,6 +87435,7 @@
       "id": "EKX-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "EKX-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         10461.1,
@@ -87576,7 +87577,6 @@
           ]
         ]
       ],
-      "familyKey": "EKX-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -87586,6 +87586,7 @@
       "id": "ENL-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "ENL-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         3899.67,
@@ -87727,7 +87728,6 @@
           ]
         ]
       ],
-      "familyKey": "ENL-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -87737,6 +87737,7 @@
       "id": "EVV-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "EVV-CLASS_E5",
       "priority": 0.775,
       "anchor": [
         7120.34,
@@ -87854,7 +87855,6 @@
           ]
         ]
       ],
-      "familyKey": "EVV-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -87864,6 +87864,7 @@
       "id": "FAM-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "FAM-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         1088.06,
@@ -87969,7 +87970,6 @@
           ]
         ]
       ],
-      "familyKey": "FAM-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -87979,6 +87979,7 @@
       "id": "FFT-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "FFT-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         12543.94,
@@ -88080,7 +88081,6 @@
           ]
         ]
       ],
-      "familyKey": "FFT-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -88090,6 +88090,7 @@
       "id": "FOA-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "FOA-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         5221.21,
@@ -88231,7 +88232,6 @@
           ]
         ]
       ],
-      "familyKey": "FOA-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -88241,6 +88241,7 @@
       "id": "FRH-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "FRH-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         8957.42,
@@ -88342,7 +88343,6 @@
           ]
         ]
       ],
-      "familyKey": "FRH-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -88352,6 +88352,7 @@
       "id": "FWC-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "FWC-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         5298.69,
@@ -88493,7 +88494,6 @@
           ]
         ]
       ],
-      "familyKey": "FWC-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -88503,6 +88503,7 @@
       "id": "FYG-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "FYG-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         135.51,
@@ -88564,7 +88565,6 @@
           ]
         ]
       ],
-      "familyKey": "FYG-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -88574,6 +88574,7 @@
       "id": "GDA-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "GDA-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         5893.03,
@@ -88715,7 +88716,6 @@
           ]
         ]
       ],
-      "familyKey": "GDA-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -88725,6 +88725,7 @@
       "id": "GDK-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "GDK-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         14291.48,
@@ -88862,7 +88863,6 @@
           ]
         ]
       ],
-      "familyKey": "GDK-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -88872,6 +88872,7 @@
       "id": "GEO-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "GEO-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         14479.77,
@@ -88969,7 +88970,6 @@
           ]
         ]
       ],
-      "familyKey": "GEO-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -88979,6 +88979,7 @@
       "id": "GEZ-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "GEZ-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         10622.46,
@@ -89128,7 +89129,6 @@
           ]
         ]
       ],
-      "familyKey": "GEZ-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -89138,6 +89138,7 @@
       "id": "GLW-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "GLW-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         10426.11,
@@ -89279,7 +89280,6 @@
           ]
         ]
       ],
-      "familyKey": "GLW-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -89289,6 +89289,7 @@
       "id": "GPC-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "GPC-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         8572.24,
@@ -89430,7 +89431,6 @@
           ]
         ]
       ],
-      "familyKey": "GPC-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -89440,6 +89440,7 @@
       "id": "GRE-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "GRE-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         3325.5,
@@ -89581,7 +89582,6 @@
           ]
         ]
       ],
-      "familyKey": "GRE-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -89591,6 +89591,7 @@
       "id": "H88-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "H88-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         1370.01,
@@ -89708,7 +89709,6 @@
           ]
         ]
       ],
-      "familyKey": "H88-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -89718,6 +89718,7 @@
       "id": "H96-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "H96-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         4205.04,
@@ -89859,7 +89860,6 @@
           ]
         ]
       ],
-      "familyKey": "H96-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -89869,6 +89869,7 @@
       "id": "HAO-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "HAO-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         13245.01,
@@ -90010,7 +90011,6 @@
           ]
         ]
       ],
-      "familyKey": "HAO-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -90020,6 +90020,7 @@
       "id": "HLB-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "HLB-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11746.63,
@@ -90161,7 +90162,6 @@
           ]
         ]
       ],
-      "familyKey": "HLB-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -90171,6 +90171,7 @@
       "id": "HNB-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "HNB-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         8310.47,
@@ -90272,7 +90273,6 @@
           ]
         ]
       ],
-      "familyKey": "HNB-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -90282,6 +90282,7 @@
       "id": "HSB-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "HSB-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         4996.12,
@@ -90423,7 +90424,6 @@
           ]
         ]
       ],
-      "familyKey": "HSB-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -90433,6 +90433,7 @@
       "id": "HUF-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "HUF-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         7572.13,
@@ -90658,7 +90659,6 @@
           ]
         ]
       ],
-      "familyKey": "HUF-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -90668,6 +90668,7 @@
       "id": "HVC-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "HVC-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         7269.43,
@@ -90809,7 +90810,6 @@
           ]
         ]
       ],
-      "familyKey": "HVC-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -90819,6 +90819,7 @@
       "id": "HZD-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "HZD-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         5133.99,
@@ -90896,7 +90897,6 @@
           ]
         ]
       ],
-      "familyKey": "HZD-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -90906,6 +90906,7 @@
       "id": "I17-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I17-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         13610.89,
@@ -91019,7 +91020,6 @@
           ]
         ]
       ],
-      "familyKey": "I17-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -91029,6 +91029,7 @@
       "id": "I22-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I22-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         12366.74,
@@ -91158,7 +91159,6 @@
           ]
         ]
       ],
-      "familyKey": "I22-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -91168,6 +91168,7 @@
       "id": "I34-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I34-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11209.05,
@@ -91301,7 +91302,6 @@
           ]
         ]
       ],
-      "familyKey": "I34-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -91311,6 +91311,7 @@
       "id": "I63-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I63-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         505.21,
@@ -91452,7 +91453,6 @@
           ]
         ]
       ],
-      "familyKey": "I63-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -91462,6 +91462,7 @@
       "id": "I67-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I67-CLASS_E5",
       "priority": 0.585,
       "anchor": [
         12738.81,
@@ -91603,7 +91604,6 @@
           ]
         ]
       ],
-      "familyKey": "I67-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -91613,6 +91613,7 @@
       "id": "I68-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I68-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         13784.01,
@@ -91754,7 +91755,6 @@
           ]
         ]
       ],
-      "familyKey": "I68-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -91764,6 +91764,7 @@
       "id": "I74-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I74-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         14590.13,
@@ -91841,7 +91842,6 @@
           ]
         ]
       ],
-      "familyKey": "I74-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -91851,6 +91851,7 @@
       "id": "I93-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I93-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         9381.05,
@@ -91992,7 +91993,6 @@
           ]
         ]
       ],
-      "familyKey": "I93-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -92002,6 +92002,7 @@
       "id": "I96-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I96-CLASS_E5",
       "priority": 0.585,
       "anchor": [
         11829.44,
@@ -92143,7 +92144,6 @@
           ]
         ]
       ],
-      "familyKey": "I96-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -92153,6 +92153,7 @@
       "id": "I99-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "I99-CLASS_E5",
       "priority": 0.585,
       "anchor": [
         10930.18,
@@ -92254,7 +92255,6 @@
           ]
         ]
       ],
-      "familyKey": "I99-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -92264,6 +92264,7 @@
       "id": "IJX-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "IJX-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         1632.34,
@@ -92405,7 +92406,6 @@
           ]
         ]
       ],
-      "familyKey": "IJX-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -92415,6 +92415,7 @@
       "id": "ILN-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "ILN-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         14482.59,
@@ -92586,7 +92587,6 @@
           ]
         ]
       ],
-      "familyKey": "ILN-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -92596,6 +92596,7 @@
       "id": "IMS-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "IMS-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11356.56,
@@ -92737,7 +92738,6 @@
           ]
         ]
       ],
-      "familyKey": "IMS-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -92747,6 +92747,7 @@
       "id": "IND-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "IND-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         9623.28,
@@ -93012,7 +93013,6 @@
           ]
         ]
       ],
-      "familyKey": "IND-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -93022,6 +93022,7 @@
       "id": "IOB-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "IOB-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         14472.92,
@@ -93139,7 +93140,6 @@
           ]
         ]
       ],
-      "familyKey": "IOB-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -93149,6 +93149,7 @@
       "id": "JAU-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "JAU-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         14174.99,
@@ -93278,7 +93279,6 @@
           ]
         ]
       ],
-      "familyKey": "JAU-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -93288,6 +93288,7 @@
       "id": "JQD-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "JQD-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         8537.18,
@@ -93429,7 +93430,6 @@
           ]
         ]
       ],
-      "familyKey": "JQD-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -93439,6 +93439,7 @@
       "id": "JVY-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "JVY-CLASS_E5",
       "priority": 0.705,
       "anchor": [
         10815.2,
@@ -93580,7 +93581,6 @@
           ]
         ]
       ],
-      "familyKey": "JVY-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -93590,6 +93590,7 @@
       "id": "K24-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "K24-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         12214.1,
@@ -93731,7 +93732,6 @@
           ]
         ]
       ],
-      "familyKey": "K24-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -93741,6 +93741,7 @@
       "id": "K62-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "K62-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         13565.13,
@@ -93862,7 +93863,6 @@
           ]
         ]
       ],
-      "familyKey": "K62-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -93872,6 +93872,7 @@
       "id": "KY8-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "KY8-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         8513.18,
@@ -94013,7 +94014,6 @@
           ]
         ]
       ],
-      "familyKey": "KY8-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -94023,6 +94023,7 @@
       "id": "LEX-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "LEX-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         13171.77,
@@ -94176,7 +94177,6 @@
           ]
         ]
       ],
-      "familyKey": "LEX-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -94186,6 +94186,7 @@
       "id": "LOU-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "LOU-CLASS_E5",
       "priority": 0.715,
       "anchor": [
         10825.83,
@@ -94343,7 +94344,6 @@
           ]
         ]
       ],
-      "familyKey": "LOU-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -94353,6 +94353,7 @@
       "id": "LOZ-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "LOZ-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         14314.27,
@@ -94498,7 +94499,6 @@
           ]
         ]
       ],
-      "familyKey": "LOZ-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -94508,6 +94508,7 @@
       "id": "LWV-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "LWV-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         6962.79,
@@ -94689,7 +94690,6 @@
           ]
         ]
       ],
-      "familyKey": "LWV-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -94699,6 +94699,7 @@
       "id": "M02-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "M02-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         7328.09,
@@ -94840,7 +94841,6 @@
           ]
         ]
       ],
-      "familyKey": "M02-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -94850,6 +94850,7 @@
       "id": "M05-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "M05-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         2559.31,
@@ -94991,7 +94992,6 @@
           ]
         ]
       ],
-      "familyKey": "M05-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -95001,6 +95001,7 @@
       "id": "M12-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "M12-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         2166.12,
@@ -95142,7 +95143,6 @@
           ]
         ]
       ],
-      "familyKey": "M12-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -95152,6 +95152,7 @@
       "id": "M20-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "M20-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         9768.17,
@@ -95293,7 +95294,6 @@
           ]
         ]
       ],
-      "familyKey": "M20-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -95303,6 +95303,7 @@
       "id": "M21-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "M21-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         7899.12,
@@ -95444,7 +95445,6 @@
           ]
         ]
       ],
-      "familyKey": "M21-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -95454,6 +95454,7 @@
       "id": "M25-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "M25-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         4894.07,
@@ -95595,7 +95596,6 @@
           ]
         ]
       ],
-      "familyKey": "M25-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -95605,6 +95605,7 @@
       "id": "M34-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "M34-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         5500.35,
@@ -95730,7 +95731,6 @@
           ]
         ]
       ],
-      "familyKey": "M34-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -95740,6 +95740,7 @@
       "id": "M85-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "M85-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         2094.21,
@@ -95881,7 +95882,6 @@
           ]
         ]
       ],
-      "familyKey": "M85-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -95891,6 +95891,7 @@
       "id": "M91-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "M91-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         8403.24,
@@ -96032,7 +96033,6 @@
           ]
         ]
       ],
-      "familyKey": "M91-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -96042,6 +96042,7 @@
       "id": "MAW-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "MAW-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         1917.03,
@@ -96183,7 +96184,6 @@
           ]
         ]
       ],
-      "familyKey": "MAW-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -96193,6 +96193,7 @@
       "id": "MDH-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "MDH-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         3535.81,
@@ -96302,7 +96303,6 @@
           ]
         ]
       ],
-      "familyKey": "MDH-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -96312,6 +96312,7 @@
       "id": "MGY-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "MGY-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         13830.01,
@@ -96575,7 +96576,6 @@
           ]
         ]
       ],
-      "familyKey": "MGY-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -96585,6 +96585,7 @@
       "id": "MIE-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "MIE-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         11341.34,
@@ -96682,7 +96683,6 @@
           ]
         ]
       ],
-      "familyKey": "MIE-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -96692,6 +96692,7 @@
       "id": "MQJ-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "MQJ-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         10422.51,
@@ -96885,7 +96886,6 @@
           ]
         ]
       ],
-      "familyKey": "MQJ-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -96895,6 +96895,7 @@
       "id": "MTO-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "MTO-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         5592.95,
@@ -97036,7 +97037,6 @@
           ]
         ]
       ],
-      "familyKey": "MTO-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -97046,6 +97046,7 @@
       "id": "MVN-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "MVN-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         4374.07,
@@ -97187,7 +97188,6 @@
           ]
         ]
       ],
-      "familyKey": "MVN-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -97197,6 +97197,7 @@
       "id": "MWA-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "MWA-CLASS_E5",
       "priority": 0.775,
       "anchor": [
         4035.91,
@@ -97338,7 +97339,6 @@
           ]
         ]
       ],
-      "familyKey": "MWA-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -97348,6 +97348,7 @@
       "id": "MWO-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "MWO-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         13486.5,
@@ -97469,7 +97470,6 @@
           ]
         ]
       ],
-      "familyKey": "MWO-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -97479,6 +97479,7 @@
       "id": "OLY-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "OLY-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         5789.86,
@@ -97620,7 +97621,6 @@
           ]
         ]
       ],
-      "familyKey": "OLY-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -97630,6 +97630,7 @@
       "id": "OVO-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "OVO-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11054.43,
@@ -97771,7 +97772,6 @@
           ]
         ]
       ],
-      "familyKey": "OVO-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -97781,6 +97781,7 @@
       "id": "OWB-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "OWB-CLASS_E5",
       "priority": 0.775,
       "anchor": [
         7872.99,
@@ -97922,7 +97923,6 @@
           ]
         ]
       ],
-      "familyKey": "OWB-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -97932,6 +97932,7 @@
       "id": "OXD-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "OXD-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         12699.77,
@@ -98069,7 +98070,6 @@
           ]
         ]
       ],
-      "familyKey": "OXD-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -98079,6 +98079,7 @@
       "id": "PAH-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "PAH-CLASS_E5",
       "priority": 0.745,
       "anchor": [
         4507.47,
@@ -98212,7 +98213,6 @@
           ]
         ]
       ],
-      "familyKey": "PAH-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -98222,6 +98222,7 @@
       "id": "PCD-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "PCD-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         2273.57,
@@ -98343,7 +98344,6 @@
           ]
         ]
       ],
-      "familyKey": "PCD-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -98353,6 +98353,7 @@
       "id": "PGR-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "PGR-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         783.38,
@@ -98434,7 +98435,6 @@
           ]
         ]
       ],
-      "familyKey": "PGR-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -98444,6 +98444,7 @@
       "id": "PHT-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "PHT-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         5305.72,
@@ -98565,7 +98566,6 @@
           ]
         ]
       ],
-      "familyKey": "PHT-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -98575,6 +98575,7 @@
       "id": "PJY-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "PJY-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         3320.36,
@@ -98704,7 +98705,6 @@
           ]
         ]
       ],
-      "familyKey": "PJY-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -98714,6 +98714,7 @@
       "id": "POF-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "POF-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         1228.67,
@@ -98855,7 +98856,6 @@
           ]
         ]
       ],
-      "familyKey": "POF-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -98865,6 +98865,7 @@
       "id": "PPQ-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "PPQ-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         526.25,
@@ -99006,7 +99007,6 @@
           ]
         ]
       ],
-      "familyKey": "PPQ-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -99016,6 +99016,7 @@
       "id": "PRG-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "PRG-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         6833.06,
@@ -99157,7 +99158,6 @@
           ]
         ]
       ],
-      "familyKey": "PRG-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -99167,6 +99167,7 @@
       "id": "RGA-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "RGA-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         13778.35,
@@ -99308,7 +99309,6 @@
           ]
         ]
       ],
-      "familyKey": "RGA-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -99318,6 +99318,7 @@
       "id": "RID-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "RID-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         12563.8,
@@ -99483,7 +99484,6 @@
           ]
         ]
       ],
-      "familyKey": "RID-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -99493,6 +99493,7 @@
       "id": "RSV-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "RSV-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         6873.0,
@@ -99634,7 +99635,6 @@
           ]
         ]
       ],
-      "familyKey": "RSV-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -99644,6 +99644,7 @@
       "id": "SAR-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SAR-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         2629.14,
@@ -99785,7 +99786,6 @@
           ]
         ]
       ],
-      "familyKey": "SAR-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -99795,6 +99795,7 @@
       "id": "SCA-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SCA-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         13921.43,
@@ -99876,7 +99877,6 @@
           ]
         ]
       ],
-      "familyKey": "SCA-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -99886,6 +99886,7 @@
       "id": "SCX-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SCX-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         13340.55,
@@ -100027,7 +100028,6 @@
           ]
         ]
       ],
-      "familyKey": "SCX-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -100037,6 +100037,7 @@
       "id": "SER-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SER-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         10437.61,
@@ -100170,7 +100171,6 @@
           ]
         ]
       ],
-      "familyKey": "SER-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -100180,6 +100180,7 @@
       "id": "SGH-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SGH-CLASS_E5",
       "priority": 0.705,
       "anchor": [
         14515.42,
@@ -100277,7 +100278,6 @@
           ]
         ]
       ],
-      "familyKey": "SGH-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -100287,6 +100287,7 @@
       "id": "SIK-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SIK-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         2843.06,
@@ -100428,7 +100429,6 @@
           ]
         ]
       ],
-      "familyKey": "SIK-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -100438,6 +100438,7 @@
       "id": "SIV-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SIV-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         7285.0,
@@ -100579,7 +100580,6 @@
           ]
         ]
       ],
-      "familyKey": "SIV-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -100589,6 +100589,7 @@
       "id": "SLO-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SLO-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         4168.43,
@@ -100706,7 +100707,6 @@
           ]
         ]
       ],
-      "familyKey": "SLO-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -100716,6 +100716,7 @@
       "id": "SME-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SME-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         13233.46,
@@ -100821,7 +100822,6 @@
           ]
         ]
       ],
-      "familyKey": "SME-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -100831,6 +100831,7 @@
       "id": "SPI-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SPI-CLASS_E5",
       "priority": 0.775,
       "anchor": [
         2772.11,
@@ -100932,7 +100933,6 @@
           ]
         ]
       ],
-      "familyKey": "SPI-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -100942,6 +100942,7 @@
       "id": "SRB-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SRB-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         11370.77,
@@ -101019,7 +101020,6 @@
           ]
         ]
       ],
-      "familyKey": "SRB-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -101029,6 +101029,7 @@
       "id": "SUS-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "SUS-CLASS_E5",
       "priority": 0.775,
       "anchor": [
         700.01,
@@ -101262,7 +101263,6 @@
           ]
         ]
       ],
-      "familyKey": "SUS-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -101272,6 +101272,7 @@
       "id": "TAZ-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "TAZ-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         3458.67,
@@ -101413,7 +101414,6 @@
           ]
         ]
       ],
-      "familyKey": "TAZ-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -101423,6 +101423,7 @@
       "id": "TEL-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "TEL-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         8853.73,
@@ -101564,7 +101565,6 @@
           ]
         ]
       ],
-      "familyKey": "TEL-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -101574,6 +101574,7 @@
       "id": "TKX-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "TKX-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         1798.53,
@@ -101715,7 +101716,6 @@
           ]
         ]
       ],
-      "familyKey": "TKX-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -101725,6 +101725,7 @@
       "id": "TWT-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "TWT-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         6231.56,
@@ -101826,7 +101827,6 @@
           ]
         ]
       ],
-      "familyKey": "TWT-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -101836,6 +101836,7 @@
       "id": "TZV-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "TZV-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         11073.61,
@@ -101977,7 +101978,6 @@
           ]
         ]
       ],
-      "familyKey": "TZV-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -101987,6 +101987,7 @@
       "id": "UCY-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "UCY-CLASS_E5",
       "priority": 0.675,
       "anchor": [
         4033.79,
@@ -102108,7 +102109,6 @@
           ]
         ]
       ],
-      "familyKey": "UCY-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -102118,6 +102118,7 @@
       "id": "UMP-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "UMP-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         9704.6,
@@ -102323,7 +102324,6 @@
           ]
         ]
       ],
-      "familyKey": "UMP-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -102333,6 +102333,7 @@
       "id": "UWL-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "UWL-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         11579.06,
@@ -102470,7 +102471,6 @@
           ]
         ]
       ],
-      "familyKey": "UWL-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -102480,6 +102480,7 @@
       "id": "VES-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "VES-CLASS_E5",
       "priority": 0.645,
       "anchor": [
         13157.48,
@@ -102565,7 +102566,6 @@
           ]
         ]
       ],
-      "familyKey": "VES-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -102575,6 +102575,7 @@
       "id": "VLA-CLASS_E5",
       "kind": "airfield",
       "airspaceType": "CLASS_E5",
+      "familyKey": "VLA-CLASS_E5",
       "priority": 0.615,
       "anchor": [
         3768.7,
@@ -102716,7 +102717,6 @@
           ]
         ]
       ],
-      "familyKey": "VLA-CLASS_E5",
       "floorFt": 700,
       "proxyCeilingFt": 12000,
       "openEndedCeiling": true,
@@ -102726,6 +102726,7 @@
       "id": "shelf-CLASS_B-0",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         1305.43,
@@ -102867,7 +102868,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 3000,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -102878,6 +102878,7 @@
       "id": "shelf-CLASS_B-1",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         1306.58,
@@ -103019,7 +103020,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 0,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -103030,6 +103030,7 @@
       "id": "shelf-CLASS_B-2",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         995.24,
@@ -103131,7 +103132,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 1700,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -103142,6 +103142,7 @@
       "id": "shelf-CLASS_B-3",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         1617.91,
@@ -103383,7 +103384,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 2000,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -103394,6 +103394,7 @@
       "id": "shelf-CLASS_B-4",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         1227.47,
@@ -103475,7 +103476,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 2500,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -103486,6 +103486,7 @@
       "id": "shelf-CLASS_B-5",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         455.05,
@@ -103559,7 +103560,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 4500,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -103570,6 +103570,7 @@
       "id": "shelf-CLASS_B-6",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         634.38,
@@ -103671,7 +103672,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 3500,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -103682,6 +103682,7 @@
       "id": "shelf-CLASS_B-7",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         2059.55,
@@ -103791,7 +103792,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 3500,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -103802,6 +103802,7 @@
       "id": "shelf-CLASS_B-8",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         2241.8,
@@ -103891,7 +103892,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 4500,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -103902,6 +103902,7 @@
       "id": "shelf-CLASS_B-9",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         1732.27,
@@ -104043,7 +104044,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 5000,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -104054,6 +104054,7 @@
       "id": "shelf-CLASS_B-10",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         1174.79,
@@ -104195,7 +104196,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 5000,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -104206,6 +104206,7 @@
       "id": "shelf-CLASS_B-11",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "STL-CLASS_B",
       "priority": 0.55,
       "anchor": [
         158.51,
@@ -104255,7 +104256,6 @@
           ]
         ]
       ],
-      "familyKey": "STL-CLASS_B",
       "floorFt": 5000,
       "proxyCeilingFt": 8000,
       "openEndedCeiling": false,
@@ -104266,6 +104266,7 @@
       "id": "shelf-CLASS_B-12",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         12961.33,
@@ -104319,7 +104320,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 4000,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -104330,6 +104330,7 @@
       "id": "shelf-CLASS_B-13",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         13101.0,
@@ -104383,7 +104384,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 4000,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -104394,6 +104394,7 @@
       "id": "shelf-CLASS_B-14",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         13506.67,
@@ -104467,7 +104468,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 3500,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -104478,6 +104478,7 @@
       "id": "shelf-CLASS_B-15",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         12473.52,
@@ -104575,7 +104576,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 3500,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -104586,6 +104586,7 @@
       "id": "shelf-CLASS_B-16",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         13499.02,
@@ -104751,7 +104752,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 5000,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -104762,6 +104762,7 @@
       "id": "shelf-CLASS_B-17",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         13156.91,
@@ -104807,7 +104808,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 3500,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -104818,6 +104818,7 @@
       "id": "shelf-CLASS_B-18",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         12396.69,
@@ -105051,7 +105052,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 5000,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -105062,6 +105062,7 @@
       "id": "shelf-CLASS_B-19",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         12983.64,
@@ -105203,7 +105204,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 0,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -105214,6 +105214,7 @@
       "id": "shelf-CLASS_B-20",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         12828.87,
@@ -105391,7 +105392,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 3000,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -105402,6 +105402,7 @@
       "id": "shelf-CLASS_B-21",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         13112.89,
@@ -105455,7 +105456,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 3500,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -105466,6 +105466,7 @@
       "id": "shelf-CLASS_B-22",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         12871.44,
@@ -105607,7 +105608,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 3000,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -105618,6 +105618,7 @@
       "id": "shelf-CLASS_B-23",
       "kind": "shelf",
       "airspaceType": "CLASS_B",
+      "familyKey": "CVG-CLASS_B",
       "priority": 0.55,
       "anchor": [
         13092.11,
@@ -105899,7 +105900,6 @@
           ]
         ]
       ],
-      "familyKey": "CVG-CLASS_B",
       "floorFt": 2100,
       "proxyCeilingFt": 10000,
       "openEndedCeiling": false,
@@ -105910,6 +105910,7 @@
       "id": "shelf-CLASS_C-24",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "DAY-CLASS_C",
       "priority": 0.55,
       "anchor": [
         13813.32,
@@ -106051,7 +106052,6 @@
           ]
         ]
       ],
-      "familyKey": "DAY-CLASS_C",
       "floorFt": 2400,
       "proxyCeilingFt": 5000,
       "openEndedCeiling": false,
@@ -106062,6 +106062,7 @@
       "id": "shelf-CLASS_C-25",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "DAY-CLASS_C",
       "priority": 0.55,
       "anchor": [
         13813.32,
@@ -106203,7 +106204,6 @@
           ]
         ]
       ],
-      "familyKey": "DAY-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 5000,
       "openEndedCeiling": false,
@@ -106214,6 +106214,7 @@
       "id": "shelf-CLASS_C-26",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "BNA-CLASS_C",
       "priority": 0.55,
       "anchor": [
         8721.02,
@@ -106263,7 +106264,6 @@
           ]
         ]
       ],
-      "familyKey": "BNA-CLASS_C",
       "floorFt": 1800,
       "proxyCeilingFt": 6000,
       "openEndedCeiling": false,
@@ -106274,6 +106274,7 @@
       "id": "shelf-CLASS_C-27",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "BNA-CLASS_C",
       "priority": 0.55,
       "anchor": [
         8528.03,
@@ -106375,7 +106376,6 @@
           ]
         ]
       ],
-      "familyKey": "BNA-CLASS_C",
       "floorFt": 2400,
       "proxyCeilingFt": 6000,
       "openEndedCeiling": false,
@@ -106386,6 +106386,7 @@
       "id": "shelf-CLASS_C-28",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "BNA-CLASS_C",
       "priority": 0.55,
       "anchor": [
         8984.86,
@@ -106479,7 +106480,6 @@
           ]
         ]
       ],
-      "familyKey": "BNA-CLASS_C",
       "floorFt": 1800,
       "proxyCeilingFt": 6000,
       "openEndedCeiling": false,
@@ -106490,6 +106490,7 @@
       "id": "shelf-CLASS_C-29",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "BNA-CLASS_C",
       "priority": 0.55,
       "anchor": [
         8977.66,
@@ -106631,7 +106632,6 @@
           ]
         ]
       ],
-      "familyKey": "BNA-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 6000,
       "openEndedCeiling": false,
@@ -106642,6 +106642,7 @@
       "id": "shelf-CLASS_C-30",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "BNA-CLASS_C",
       "priority": 0.55,
       "anchor": [
         9405.97,
@@ -106727,7 +106728,6 @@
           ]
         ]
       ],
-      "familyKey": "BNA-CLASS_C",
       "floorFt": 2400,
       "proxyCeilingFt": 6000,
       "openEndedCeiling": false,
@@ -106738,6 +106738,7 @@
       "id": "shelf-CLASS_C-31",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "LEX-CLASS_C",
       "priority": 0.55,
       "anchor": [
         13178.68,
@@ -106879,7 +106880,6 @@
           ]
         ]
       ],
-      "familyKey": "LEX-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 5000,
       "openEndedCeiling": false,
@@ -106890,6 +106890,7 @@
       "id": "shelf-CLASS_C-32",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "LEX-CLASS_C",
       "priority": 0.55,
       "anchor": [
         13178.67,
@@ -107031,7 +107032,6 @@
           ]
         ]
       ],
-      "familyKey": "LEX-CLASS_C",
       "floorFt": 2200,
       "proxyCeilingFt": 5000,
       "openEndedCeiling": false,
@@ -107042,6 +107042,7 @@
       "id": "shelf-CLASS_C-33",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "EVV-CLASS_C",
       "priority": 0.55,
       "anchor": [
         7164.06,
@@ -107207,7 +107208,6 @@
           ]
         ]
       ],
-      "familyKey": "EVV-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4500,
       "openEndedCeiling": false,
@@ -107218,6 +107218,7 @@
       "id": "shelf-CLASS_C-34",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "EVV-CLASS_C",
       "priority": 0.55,
       "anchor": [
         7120.33,
@@ -107359,7 +107360,6 @@
           ]
         ]
       ],
-      "familyKey": "EVV-CLASS_C",
       "floorFt": 1600,
       "proxyCeilingFt": 4500,
       "openEndedCeiling": false,
@@ -107367,53 +107367,10 @@
       "ceilingFt": 4500
     },
     {
-      "id": "shelf-CLASS_C-35",
-      "kind": "shelf",
-      "airspaceType": "CLASS_C",
-      "priority": 0.55,
-      "anchor": [
-        14628.19,
-        11217.8
-      ],
-      "parts": [
-        [
-          [
-            14747.0,
-            11238.0
-          ],
-          [
-            14459.74,
-            11238.0
-          ],
-          [
-            14528.11,
-            11210.32
-          ],
-          [
-            14601.7,
-            11194.34
-          ],
-          [
-            14676.94,
-            11191.24
-          ],
-          [
-            14747.0,
-            11200.12
-          ]
-        ]
-      ],
-      "familyKey": "TYS-CLASS_C",
-      "floorFt": 2500,
-      "proxyCeilingFt": 5000,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 5000
-    },
-    {
       "id": "shelf-CLASS_C-36",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "SPI-CLASS_C",
       "priority": 0.55,
       "anchor": [
         2772.13,
@@ -107555,7 +107512,6 @@
           ]
         ]
       ],
-      "familyKey": "SPI-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4600,
       "openEndedCeiling": false,
@@ -107566,6 +107522,7 @@
       "id": "shelf-CLASS_C-37",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "SPI-CLASS_C",
       "priority": 0.55,
       "anchor": [
         2772.13,
@@ -107707,7 +107664,6 @@
           ]
         ]
       ],
-      "familyKey": "SPI-CLASS_C",
       "floorFt": 1800,
       "proxyCeilingFt": 4600,
       "openEndedCeiling": false,
@@ -107718,6 +107674,7 @@
       "id": "shelf-CLASS_C-38",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "CMI-CLASS_C",
       "priority": 0.55,
       "anchor": [
         5611.66,
@@ -107859,7 +107816,6 @@
           ]
         ]
       ],
-      "familyKey": "CMI-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4800,
       "openEndedCeiling": false,
@@ -107870,6 +107826,7 @@
       "id": "shelf-CLASS_C-39",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "CMI-CLASS_C",
       "priority": 0.55,
       "anchor": [
         5728.96,
@@ -107931,7 +107888,6 @@
           ]
         ]
       ],
-      "familyKey": "CMI-CLASS_C",
       "floorFt": 2400,
       "proxyCeilingFt": 4800,
       "openEndedCeiling": false,
@@ -107942,6 +107898,7 @@
       "id": "shelf-CLASS_C-40",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "CMI-CLASS_C",
       "priority": 0.55,
       "anchor": [
         5527.17,
@@ -108115,7 +108072,6 @@
           ]
         ]
       ],
-      "familyKey": "CMI-CLASS_C",
       "floorFt": 2000,
       "proxyCeilingFt": 4800,
       "openEndedCeiling": false,
@@ -108126,6 +108082,7 @@
       "id": "shelf-CLASS_C-41",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "IND-CLASS_C",
       "priority": 0.55,
       "anchor": [
         9650.2,
@@ -108271,7 +108228,6 @@
           ]
         ]
       ],
-      "familyKey": "IND-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4800,
       "openEndedCeiling": false,
@@ -108282,6 +108238,7 @@
       "id": "shelf-CLASS_C-42",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "IND-CLASS_C",
       "priority": 0.55,
       "anchor": [
         9517.71,
@@ -108307,7 +108264,6 @@
           ]
         ]
       ],
-      "familyKey": "IND-CLASS_C",
       "floorFt": 1700,
       "proxyCeilingFt": 4800,
       "openEndedCeiling": false,
@@ -108318,6 +108274,7 @@
       "id": "shelf-CLASS_C-43",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "IND-CLASS_C",
       "priority": 0.55,
       "anchor": [
         9638.79,
@@ -108459,7 +108416,6 @@
           ]
         ]
       ],
-      "familyKey": "IND-CLASS_C",
       "floorFt": 2100,
       "proxyCeilingFt": 4800,
       "openEndedCeiling": false,
@@ -108470,6 +108426,7 @@
       "id": "shelf-CLASS_C-44",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "SDF-CLASS_C",
       "priority": 0.55,
       "anchor": [
         10773.4,
@@ -108595,7 +108552,6 @@
           ]
         ]
       ],
-      "familyKey": "SDF-CLASS_C",
       "floorFt": 0,
       "proxyCeilingFt": 4500,
       "openEndedCeiling": false,
@@ -108606,6 +108562,7 @@
       "id": "shelf-CLASS_C-45",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "SDF-CLASS_C",
       "priority": 0.55,
       "anchor": [
         11004.64,
@@ -108759,7 +108716,6 @@
           ]
         ]
       ],
-      "familyKey": "SDF-CLASS_C",
       "floorFt": 1700,
       "proxyCeilingFt": 4500,
       "openEndedCeiling": false,
@@ -108770,6 +108726,7 @@
       "id": "shelf-CLASS_C-46",
       "kind": "shelf",
       "airspaceType": "CLASS_C",
+      "familyKey": "SDF-CLASS_C",
       "priority": 0.55,
       "anchor": [
         10934.77,
@@ -108895,7 +108852,6 @@
           ]
         ]
       ],
-      "familyKey": "SDF-CLASS_C",
       "floorFt": 2200,
       "proxyCeilingFt": 4500,
       "openEndedCeiling": false,
@@ -108903,4170 +108859,10 @@
       "ceilingFt": 4500
     },
     {
-      "id": "shelf-CLASS_D-47",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        9263.93,
-        11148.27
-      ],
-      "parts": [
-        [
-          [
-            9093.5,
-            11238.0
-          ],
-          [
-            9106.2,
-            11172.65
-          ],
-          [
-            9143.08,
-            11117.05
-          ],
-          [
-            9198.47,
-            11079.87
-          ],
-          [
-            9263.92,
-            11066.8
-          ],
-          [
-            9329.35,
-            11079.85
-          ],
-          [
-            9384.75,
-            11117.02
-          ],
-          [
-            9421.64,
-            11172.6
-          ],
-          [
-            9434.36,
-            11238.0
-          ]
-        ]
-      ],
-      "familyKey": "MQY-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 2500,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 2500
-    },
-    {
-      "id": "shelf-CLASS_D-48",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        13477.08,
-        3046.29
-      ],
-      "parts": [
-        [
-          [
-            13463.49,
-            3323.51
-          ],
-          [
-            13461.73,
-            3327.84
-          ],
-          [
-            13291.54,
-            3258.45
-          ],
-          [
-            13310.93,
-            3210.88
-          ],
-          [
-            13236.97,
-            3070.7
-          ],
-          [
-            13295.29,
-            3039.93
-          ],
-          [
-            13310.51,
-            2968.68
-          ],
-          [
-            13352.34,
-            2908.81
-          ],
-          [
-            13401.66,
-            2875.23
-          ],
-          [
-            13459.08,
-            2859.22
-          ],
-          [
-            13495.56,
-            2769.8
-          ],
-          [
-            13657.66,
-            2835.91
-          ],
-          [
-            13646.76,
-            2862.65
-          ],
-          [
-            13718.96,
-            2999.53
-          ],
-          [
-            13662.47,
-            3029.32
-          ],
-          [
-            13651.91,
-            3104.54
-          ],
-          [
-            13611.87,
-            3169.02
-          ],
-          [
-            13562.7,
-            3205.6
-          ],
-          [
-            13504.08,
-            3224.01
-          ],
-          [
-            13465.26,
-            3319.18
-          ]
-        ]
-      ],
-      "familyKey": "LUK-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3000,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3000
-    },
-    {
-      "id": "shelf-CLASS_D-49",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        10985.27,
-        465.09
-      ],
-      "parts": [
-        [
-          [
-            10981.88,
-            289.88
-          ],
-          [
-            11049.08,
-            301.88
-          ],
-          [
-            11106.73,
-            338.76
-          ],
-          [
-            11145.85,
-            394.9
-          ],
-          [
-            11160.49,
-            461.75
-          ],
-          [
-            11148.42,
-            529.1
-          ],
-          [
-            11111.59,
-            586.56
-          ],
-          [
-            11055.44,
-            625.67
-          ],
-          [
-            10988.59,
-            640.3
-          ],
-          [
-            10921.24,
-            628.21
-          ],
-          [
-            10863.65,
-            591.26
-          ],
-          [
-            10824.6,
-            535.07
-          ],
-          [
-            10810.04,
-            468.39
-          ],
-          [
-            10822.14,
-            401.04
-          ],
-          [
-            10858.99,
-            343.58
-          ],
-          [
-            10915.0,
-            304.55
-          ],
-          [
-            10981.84,
-            289.88
-          ]
-        ]
-      ],
-      "familyKey": "AID-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3400,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3400
-    },
-    {
-      "id": "shelf-CLASS_D-50",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        2371.43,
-        4546.75
-      ],
-      "parts": [
-        [
-          [
-            2376.57,
-            4332.49
-          ],
-          [
-            2418.21,
-            4337.59
-          ],
-          [
-            2458.05,
-            4350.71
-          ],
-          [
-            2494.58,
-            4371.33
-          ],
-          [
-            2526.53,
-            4398.82
-          ],
-          [
-            2552.49,
-            4432.04
-          ],
-          [
-            2571.37,
-            4469.49
-          ],
-          [
-            2582.59,
-            4509.91
-          ],
-          [
-            2585.72,
-            4551.94
-          ],
-          [
-            2580.6,
-            4593.57
-          ],
-          [
-            2567.48,
-            4633.4
-          ],
-          [
-            2546.85,
-            4669.92
-          ],
-          [
-            2519.35,
-            4701.87
-          ],
-          [
-            2486.12,
-            4727.81
-          ],
-          [
-            2448.67,
-            4746.68
-          ],
-          [
-            2408.04,
-            4757.92
-          ],
-          [
-            2366.21,
-            4761.01
-          ],
-          [
-            2324.37,
-            4755.84
-          ],
-          [
-            2284.55,
-            4742.68
-          ],
-          [
-            2247.88,
-            4721.89
-          ],
-          [
-            2216.14,
-            4694.47
-          ],
-          [
-            2190.23,
-            4661.23
-          ],
-          [
-            2171.4,
-            4623.75
-          ],
-          [
-            2160.24,
-            4583.32
-          ],
-          [
-            2157.16,
-            4541.5
-          ],
-          [
-            2162.28,
-            4499.87
-          ],
-          [
-            2175.5,
-            4459.84
-          ],
-          [
-            2196.18,
-            4423.35
-          ],
-          [
-            2223.57,
-            4391.59
-          ],
-          [
-            2256.63,
-            4365.77
-          ],
-          [
-            2294.08,
-            4346.87
-          ],
-          [
-            2334.49,
-            4335.64
-          ],
-          [
-            2376.53,
-            4332.49
-          ]
-        ]
-      ],
-      "familyKey": "BLV-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3000,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3000
-    },
-    {
-      "id": "shelf-CLASS_D-51",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        4413.38,
-        1201.8
-      ],
-      "parts": [
-        [
-          [
-            4416.08,
-            1009.12
-          ],
-          [
-            4489.68,
-            1024.85
-          ],
-          [
-            4551.5,
-            1067.42
-          ],
-          [
-            4592.44,
-            1130.56
-          ],
-          [
-            4606.08,
-            1204.56
-          ],
-          [
-            4590.41,
-            1277.96
-          ],
-          [
-            4547.74,
-            1339.94
-          ],
-          [
-            4484.6,
-            1380.86
-          ],
-          [
-            4410.6,
-            1394.48
-          ],
-          [
-            4337.02,
-            1378.73
-          ],
-          [
-            4275.08,
-            1336.01
-          ],
-          [
-            4234.23,
-            1272.82
-          ],
-          [
-            4220.68,
-            1199.0
-          ],
-          [
-            4236.45,
-            1125.42
-          ],
-          [
-            4279.05,
-            1063.63
-          ],
-          [
-            4342.22,
-            1022.72
-          ],
-          [
-            4416.05,
-            1009.12
-          ]
-        ]
-      ],
-      "familyKey": "DEC-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3200,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3200
-    },
-    {
-      "id": "shelf-CLASS_D-52",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        1712.64,
-        4463.31
-      ],
-      "parts": [
-        [
-          [
-            1717.41,
-            4288.41
-          ],
-          [
-            1784.04,
-            4303.58
-          ],
-          [
-            1839.65,
-            4342.97
-          ],
-          [
-            1876.06,
-            4400.78
-          ],
-          [
-            1887.55,
-            4468.12
-          ],
-          [
-            1872.45,
-            4534.57
-          ],
-          [
-            1832.97,
-            4590.33
-          ],
-          [
-            1775.15,
-            4626.73
-          ],
-          [
-            1707.8,
-            4638.2
-          ],
-          [
-            1641.19,
-            4623.02
-          ],
-          [
-            1585.47,
-            4583.48
-          ],
-          [
-            1549.14,
-            4525.63
-          ],
-          [
-            1537.73,
-            4458.44
-          ],
-          [
-            1552.93,
-            4391.84
-          ],
-          [
-            1592.35,
-            4336.25
-          ],
-          [
-            1650.19,
-            4299.87
-          ],
-          [
-            1717.38,
-            4288.41
-          ]
-        ]
-      ],
-      "familyKey": "CPS-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 2900,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 2900
-    },
-    {
-      "id": "shelf-CLASS_D-53",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        7873.57,
-        6711.89
-      ],
-      "parts": [
-        [
-          [
-            7876.54,
-            6891.1
-          ],
-          [
-            7807.45,
-            6878.49
-          ],
-          [
-            7748.51,
-            6840.3
-          ],
-          [
-            7708.77,
-            6782.41
-          ],
-          [
-            7694.32,
-            6713.69
-          ],
-          [
-            7707.39,
-            6644.69
-          ],
-          [
-            7745.96,
-            6586.01
-          ],
-          [
-            7804.13,
-            6546.65
-          ],
-          [
-            7868.24,
-            6532.73
-          ],
-          [
-            7933.07,
-            6542.82
-          ],
-          [
-            7993.47,
-            6578.65
-          ],
-          [
-            8035.46,
-            6634.94
-          ],
-          [
-            8052.6,
-            6703.04
-          ],
-          [
-            8042.26,
-            6772.5
-          ],
-          [
-            8006.03,
-            6832.65
-          ],
-          [
-            7949.46,
-            6874.27
-          ],
-          [
-            7881.25,
-            6890.96
-          ]
-        ]
-      ],
-      "familyKey": "OWB-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 2900,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 2900
-    },
-    {
-      "id": "shelf-CLASS_D-54",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        7203.44,
-        9506.36
-      ],
-      "parts": [
-        [
-          [
-            7366.35,
-            9773.62
-          ],
-          [
-            7351.53,
-            9773.64
-          ],
-          [
-            7348.01,
-            9807.77
-          ],
-          [
-            7335.78,
-            9839.76
-          ],
-          [
-            7315.59,
-            9867.59
-          ],
-          [
-            7288.98,
-            9889.15
-          ],
-          [
-            7228.31,
-            9908.23
-          ],
-          [
-            7165.67,
-            9896.47
-          ],
-          [
-            7125.49,
-            9867.74
-          ],
-          [
-            7098.75,
-            9826.07
-          ],
-          [
-            7089.36,
-            9777.58
-          ],
-          [
-            7098.61,
-            9729.01
-          ],
-          [
-            7057.06,
-            9705.14
-          ],
-          [
-            7021.02,
-            9673.45
-          ],
-          [
-            6992.0,
-            9635.24
-          ],
-          [
-            6971.14,
-            9592.01
-          ],
-          [
-            6958.24,
-            9537.65
-          ],
-          [
-            6958.24,
-            9481.78
-          ],
-          [
-            6971.14,
-            9427.41
-          ],
-          [
-            6996.12,
-            9377.7
-          ],
-          [
-            7032.03,
-            9334.89
-          ],
-          [
-            7076.86,
-            9301.53
-          ],
-          [
-            7128.18,
-            9279.42
-          ],
-          [
-            7182.98,
-            9269.78
-          ],
-          [
-            7259.22,
-            9277.57
-          ],
-          [
-            7329.1,
-            9308.93
-          ],
-          [
-            7385.56,
-            9360.68
-          ],
-          [
-            7422.87,
-            9427.56
-          ],
-          [
-            7435.68,
-            9481.45
-          ],
-          [
-            7435.84,
-            9536.65
-          ],
-          [
-            7461.86,
-            9561.68
-          ],
-          [
-            7480.05,
-            9592.82
-          ],
-          [
-            7489.07,
-            9627.74
-          ],
-          [
-            7488.23,
-            9663.8
-          ],
-          [
-            7473.99,
-            9705.4
-          ],
-          [
-            7446.69,
-            9740.04
-          ],
-          [
-            7409.45,
-            9763.67
-          ],
-          [
-            7366.48,
-            9773.62
-          ]
-        ]
-      ],
-      "familyKey": "JWN-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3100,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3100
-    },
-    {
-      "id": "shelf-CLASS_D-55",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        4035.91,
-        6650.93
-      ],
-      "parts": [
-        [
-          [
-            4038.89,
-            6458.61
-          ],
-          [
-            4112.15,
-            6474.33
-          ],
-          [
-            4173.98,
-            6517.0
-          ],
-          [
-            4214.75,
-            6580.08
-          ],
-          [
-            4228.26,
-            6653.96
-          ],
-          [
-            4212.43,
-            6727.39
-          ],
-          [
-            4169.69,
-            6789.15
-          ],
-          [
-            4106.74,
-            6829.77
-          ],
-          [
-            4032.85,
-            6843.26
-          ],
-          [
-            3959.42,
-            6827.43
-          ],
-          [
-            3897.66,
-            6784.69
-          ],
-          [
-            3856.97,
-            6721.55
-          ],
-          [
-            3843.56,
-            6647.84
-          ],
-          [
-            3859.41,
-            6574.42
-          ],
-          [
-            3902.03,
-            6512.8
-          ],
-          [
-            3964.96,
-            6472.14
-          ],
-          [
-            4038.85,
-            6458.6
-          ]
-        ]
-      ],
-      "familyKey": "MWA-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3000,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3000
-    },
-    {
-      "id": "shelf-CLASS_D-56",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        2850.26,
-        8016.84
-      ],
-      "parts": [
-        [
-          [
-            2917.16,
-            7839.54
-          ],
-          [
-            2955.49,
-            7855.2
-          ],
-          [
-            2948.49,
-            7872.35
-          ],
-          [
-            2976.86,
-            7898.33
-          ],
-          [
-            2999.1,
-            7929.92
-          ],
-          [
-            3017.06,
-            7976.98
-          ],
-          [
-            3021.2,
-            8027.36
-          ],
-          [
-            3067.62,
-            8041.74
-          ],
-          [
-            3041.75,
-            8125.23
-          ],
-          [
-            2994.87,
-            8110.71
-          ],
-          [
-            2945.9,
-            8162.92
-          ],
-          [
-            2880.07,
-            8191.87
-          ],
-          [
-            2826.61,
-            8195.21
-          ],
-          [
-            2774.56,
-            8182.6
-          ],
-          [
-            2716.57,
-            8144.39
-          ],
-          [
-            2677.32,
-            8086.67
-          ],
-          [
-            2663.1,
-            8018.34
-          ],
-          [
-            2675.93,
-            7950.09
-          ],
-          [
-            2711.77,
-            7893.92
-          ],
-          [
-            2765.65,
-            7854.72
-          ],
-          [
-            2815.53,
-            7839.51
-          ],
-          [
-            2867.56,
-            7839.29
-          ],
-          [
-            2874.56,
-            7822.14
-          ],
-          [
-            2912.9,
-            7837.8
-          ]
-        ]
-      ],
-      "familyKey": "CGI-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 2800,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 2800
-    },
-    {
-      "id": "shelf-CLASS_D-57",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        3535.81,
-        6582.0
-      ],
-      "parts": [
-        [
-          [
-            3539.11,
-            6398.42
-          ],
-          [
-            3609.01,
-            6413.61
-          ],
-          [
-            3667.92,
-            6454.48
-          ],
-          [
-            3706.7,
-            6514.79
-          ],
-          [
-            3719.41,
-            6585.35
-          ],
-          [
-            3704.21,
-            6655.23
-          ],
-          [
-            3663.32,
-            6714.13
-          ],
-          [
-            3603.0,
-            6752.88
-          ],
-          [
-            3532.44,
-            6765.58
-          ],
-          [
-            3462.38,
-            6750.3
-          ],
-          [
-            3403.53,
-            6709.35
-          ],
-          [
-            3364.84,
-            6648.99
-          ],
-          [
-            3352.21,
-            6578.6
-          ],
-          [
-            3367.44,
-            6508.72
-          ],
-          [
-            3408.35,
-            6449.83
-          ],
-          [
-            3468.69,
-            6411.1
-          ],
-          [
-            3539.08,
-            6398.42
-          ]
-        ]
-      ],
-      "familyKey": "MDH-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 2900,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 2900
-    },
-    {
-      "id": "shelf-CLASS_D-58",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        10450.34,
-        2697.61
-      ],
-      "parts": [
-        [
-          [
-            10447.39,
-            2518.19
-          ],
-          [
-            10516.17,
-            2530.67
-          ],
-          [
-            10575.09,
-            2568.61
-          ],
-          [
-            10614.99,
-            2626.21
-          ],
-          [
-            10629.78,
-            2694.7
-          ],
-          [
-            10617.28,
-            2763.47
-          ],
-          [
-            10579.33,
-            2822.37
-          ],
-          [
-            10521.72,
-            2862.25
-          ],
-          [
-            10453.22,
-            2877.03
-          ],
-          [
-            10384.29,
-            2864.46
-          ],
-          [
-            10325.42,
-            2826.45
-          ],
-          [
-            10285.6,
-            2768.79
-          ],
-          [
-            10270.9,
-            2700.46
-          ],
-          [
-            10283.49,
-            2631.53
-          ],
-          [
-            10321.39,
-            2572.8
-          ],
-          [
-            10379.02,
-            2532.94
-          ],
-          [
-            10447.35,
-            2518.19
-          ]
-        ]
-      ],
-      "familyKey": "BAK-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3200,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3200
-    },
-    {
-      "id": "shelf-CLASS_D-59",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        10352.77,
-        6251.52
-      ],
-      "parts": [
-        [
-          [
-            10350.1,
-            6081.03
-          ],
-          [
-            10415.44,
-            6092.94
-          ],
-          [
-            10471.4,
-            6129.03
-          ],
-          [
-            10509.27,
-            6183.79
-          ],
-          [
-            10523.28,
-            6248.88
-          ],
-          [
-            10511.29,
-            6314.37
-          ],
-          [
-            10475.13,
-            6370.28
-          ],
-          [
-            10420.32,
-            6408.08
-          ],
-          [
-            10355.38,
-            6422.01
-          ],
-          [
-            10289.89,
-            6410.01
-          ],
-          [
-            10233.98,
-            6373.84
-          ],
-          [
-            10196.19,
-            6319.03
-          ],
-          [
-            10182.27,
-            6254.09
-          ],
-          [
-            10194.28,
-            6188.6
-          ],
-          [
-            10230.34,
-            6132.83
-          ],
-          [
-            10284.98,
-            6095.06
-          ],
-          [
-            10350.07,
-            6081.03
-          ]
-        ]
-      ],
-      "familyKey": "LOU-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3300,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3300
-    },
-    {
-      "id": "shelf-CLASS_D-60",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        8984.02,
-        3024.6
-      ],
-      "parts": [
-        [
-          [
-            8988.08,
-            3212.74
-          ],
-          [
-            8914.4,
-            3199.43
-          ],
-          [
-            8851.74,
-            3158.46
-          ],
-          [
-            8810.02,
-            3096.3
-          ],
-          [
-            8795.84,
-            3027.5
-          ],
-          [
-            8809.61,
-            2953.91
-          ],
-          [
-            8847.69,
-            2894.88
-          ],
-          [
-            8909.07,
-            2851.99
-          ],
-          [
-            8977.6,
-            2836.53
-          ],
-          [
-            9047.03,
-            2847.29
-          ],
-          [
-            9111.19,
-            2885.89
-          ],
-          [
-            9153.2,
-            2942.19
-          ],
-          [
-            9171.95,
-            3014.67
-          ],
-          [
-            9162.5,
-            3084.28
-          ],
-          [
-            9125.11,
-            3149.13
-          ],
-          [
-            9065.39,
-            3194.28
-          ],
-          [
-            8992.79,
-            3212.58
-          ]
-        ]
-      ],
-      "familyKey": "BMG-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3300,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3300
-    },
-    {
-      "id": "shelf-CLASS_D-61",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        7571.13,
-        2227.1
-      ],
-      "parts": [
-        [
-          [
-            7435.43,
-            2017.59
-          ],
-          [
-            7478.94,
-            1995.14
-          ],
-          [
-            7525.87,
-            1981.63
-          ],
-          [
-            7574.59,
-            1977.53
-          ],
-          [
-            7623.36,
-            1983.04
-          ],
-          [
-            7669.89,
-            1997.89
-          ],
-          [
-            7712.62,
-            2021.52
-          ],
-          [
-            7750.12,
-            2053.2
-          ],
-          [
-            7780.55,
-            2091.39
-          ],
-          [
-            7802.95,
-            2134.78
-          ],
-          [
-            7816.48,
-            2181.7
-          ],
-          [
-            7820.61,
-            2230.35
-          ],
-          [
-            7815.13,
-            2279.12
-          ],
-          [
-            7800.31,
-            2325.65
-          ],
-          [
-            7776.58,
-            2368.6
-          ],
-          [
-            7745.07,
-            2405.9
-          ],
-          [
-            7706.7,
-            2436.49
-          ],
-          [
-            7663.08,
-            2458.98
-          ],
-          [
-            7616.14,
-            2472.45
-          ],
-          [
-            7567.48,
-            2476.52
-          ],
-          [
-            7518.72,
-            2470.99
-          ],
-          [
-            7471.98,
-            2456.03
-          ],
-          [
-            7429.28,
-            2432.35
-          ],
-          [
-            7392.01,
-            2400.81
-          ],
-          [
-            7361.59,
-            2362.61
-          ],
-          [
-            7339.11,
-            2318.99
-          ],
-          [
-            7325.64,
-            2272.06
-          ],
-          [
-            7321.56,
-            2223.4
-          ],
-          [
-            7327.05,
-            2174.88
-          ],
-          [
-            7341.98,
-            2128.13
-          ],
-          [
-            7365.63,
-            2085.41
-          ],
-          [
-            7397.15,
-            2048.11
-          ],
-          [
-            7435.33,
-            2017.66
-          ]
-        ]
-      ],
-      "familyKey": "HUF-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3100,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3100
-    },
-    {
-      "id": "shelf-CLASS_D-62",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        11415.63,
-        153.52
-      ],
-      "parts": [
-        [
-          [
-            11577.19,
-            0.0
-          ],
-          [
-            11599.35,
-            46.72
-          ],
-          [
-            11608.28,
-            97.45
-          ],
-          [
-            11603.46,
-            148.74
-          ],
-          [
-            11585.14,
-            197.09
-          ],
-          [
-            11554.76,
-            238.69
-          ],
-          [
-            11514.29,
-            270.87
-          ],
-          [
-            11466.71,
-            291.13
-          ],
-          [
-            11415.66,
-            298.02
-          ],
-          [
-            11364.42,
-            291.09
-          ],
-          [
-            11317.03,
-            270.9
-          ],
-          [
-            11276.54,
-            238.75
-          ],
-          [
-            11246.14,
-            197.16
-          ],
-          [
-            11227.85,
-            149.0
-          ],
-          [
-            11222.96,
-            97.53
-          ],
-          [
-            11231.94,
-            46.6
-          ],
-          [
-            11254.06,
-            0.0
-          ]
-        ]
-      ],
-      "familyKey": "MIE-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3400,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3400
-    },
-    {
-      "id": "shelf-CLASS_D-63",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        699.99,
-        4192.97
-      ],
-      "parts": [
-        [
-          [
-            876.8,
-            4116.89
-          ],
-          [
-            890.38,
-            4114.47
-          ],
-          [
-            905.79,
-            4200.59
-          ],
-          [
-            892.22,
-            4203.02
-          ],
-          [
-            880.44,
-            4259.98
-          ],
-          [
-            852.34,
-            4310.61
-          ],
-          [
-            817.58,
-            4345.35
-          ],
-          [
-            774.81,
-            4370.31
-          ],
-          [
-            704.08,
-            4385.4
-          ],
-          [
-            632.77,
-            4373.32
-          ],
-          [
-            577.36,
-            4341.33
-          ],
-          [
-            546.07,
-            4308.54
-          ],
-          [
-            523.18,
-            4269.06
-          ],
-          [
-            509.61,
-            4271.49
-          ],
-          [
-            494.19,
-            4185.37
-          ],
-          [
-            507.76,
-            4182.94
-          ],
-          [
-            524.54,
-            4113.8
-          ],
-          [
-            565.59,
-            4055.18
-          ],
-          [
-            625.23,
-            4015.61
-          ],
-          [
-            698.29,
-            4000.51
-          ],
-          [
-            771.81,
-            4014.4
-          ],
-          [
-            834.32,
-            4055.11
-          ],
-          [
-            876.65,
-            4116.53
-          ]
-        ]
-      ],
-      "familyKey": "SUS-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3000,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3000
-    },
-    {
-      "id": "shelf-CLASS_D-64",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        14633.18,
-        2145.46
-      ],
-      "parts": [
-        [
-          [
-            14747.0,
-            2341.15
-          ],
-          [
-            14705.5,
-            2341.53
-          ],
-          [
-            14665.04,
-            2333.28
-          ],
-          [
-            14627.2,
-            2316.77
-          ],
-          [
-            14593.33,
-            2292.47
-          ],
-          [
-            14565.33,
-            2261.59
-          ],
-          [
-            14544.61,
-            2225.88
-          ],
-          [
-            14531.8,
-            2186.62
-          ],
-          [
-            14527.45,
-            2145.56
-          ],
-          [
-            14531.84,
-            2104.11
-          ],
-          [
-            14544.69,
-            2064.87
-          ],
-          [
-            14565.44,
-            2029.17
-          ],
-          [
-            14593.18,
-            1998.58
-          ],
-          [
-            14627.03,
-            1974.24
-          ],
-          [
-            14664.87,
-            1957.7
-          ],
-          [
-            14705.33,
-            1949.4
-          ],
-          [
-            14747.0,
-            1949.77
-          ]
-        ]
-      ],
-      "familyKey": "ILN-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3600,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3600
-    },
-    {
-      "id": "shelf-CLASS_D-65",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        1961.1,
-        3632.23
-      ],
-      "parts": [
-        [
-          [
-            1966.13,
-            3439.78
-          ],
-          [
-            2039.28,
-            3456.31
-          ],
-          [
-            2100.57,
-            3499.52
-          ],
-          [
-            2140.69,
-            3562.86
-          ],
-          [
-            2153.56,
-            3637.12
-          ],
-          [
-            2137.1,
-            3710.27
-          ],
-          [
-            2093.65,
-            3771.84
-          ],
-          [
-            2029.9,
-            3812.02
-          ],
-          [
-            1955.99,
-            3824.67
-          ],
-          [
-            1882.5,
-            3807.96
-          ],
-          [
-            1821.32,
-            3764.61
-          ],
-          [
-            1781.34,
-            3701.18
-          ],
-          [
-            1768.63,
-            3627.28
-          ],
-          [
-            1785.28,
-            3553.79
-          ],
-          [
-            1828.59,
-            3492.57
-          ],
-          [
-            1892.0,
-            3452.54
-          ],
-          [
-            1965.9,
-            3439.78
-          ]
-        ]
-      ],
-      "familyKey": "ALN-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3000,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3000
-    },
-    {
-      "id": "shelf-CLASS_D-66",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        7203.44,
-        9506.36
-      ],
-      "parts": [
-        [
-          [
-            7366.35,
-            9773.62
-          ],
-          [
-            7351.53,
-            9773.64
-          ],
-          [
-            7348.01,
-            9807.77
-          ],
-          [
-            7335.78,
-            9839.76
-          ],
-          [
-            7315.59,
-            9867.59
-          ],
-          [
-            7288.98,
-            9889.15
-          ],
-          [
-            7228.31,
-            9908.23
-          ],
-          [
-            7165.67,
-            9896.47
-          ],
-          [
-            7125.49,
-            9867.74
-          ],
-          [
-            7098.75,
-            9826.07
-          ],
-          [
-            7089.36,
-            9777.58
-          ],
-          [
-            7098.61,
-            9729.01
-          ],
-          [
-            7057.06,
-            9705.14
-          ],
-          [
-            7021.02,
-            9673.45
-          ],
-          [
-            6992.0,
-            9635.24
-          ],
-          [
-            6971.14,
-            9592.01
-          ],
-          [
-            6958.24,
-            9537.65
-          ],
-          [
-            6958.24,
-            9481.78
-          ],
-          [
-            6971.14,
-            9427.41
-          ],
-          [
-            6996.12,
-            9377.7
-          ],
-          [
-            7032.03,
-            9334.89
-          ],
-          [
-            7076.86,
-            9301.53
-          ],
-          [
-            7128.18,
-            9279.42
-          ],
-          [
-            7182.98,
-            9269.78
-          ],
-          [
-            7259.22,
-            9277.57
-          ],
-          [
-            7329.1,
-            9308.93
-          ],
-          [
-            7385.56,
-            9360.68
-          ],
-          [
-            7422.87,
-            9427.56
-          ],
-          [
-            7435.68,
-            9481.45
-          ],
-          [
-            7435.84,
-            9536.65
-          ],
-          [
-            7461.86,
-            9561.68
-          ],
-          [
-            7480.05,
-            9592.82
-          ],
-          [
-            7489.07,
-            9627.74
-          ],
-          [
-            7488.23,
-            9663.8
-          ],
-          [
-            7473.99,
-            9705.4
-          ],
-          [
-            7446.69,
-            9740.04
-          ],
-          [
-            7409.45,
-            9763.67
-          ],
-          [
-            7366.48,
-            9773.62
-          ]
-        ]
-      ],
-      "familyKey": "JWN-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3100,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3100
-    },
-    {
-      "id": "shelf-CLASS_D-67",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        14174.61,
-        1118.89
-      ],
-      "parts": [
-        [
-          [
-            13972.96,
-            1082.21
-          ],
-          [
-            14007.12,
-            1034.31
-          ],
-          [
-            14027.33,
-            978.83
-          ],
-          [
-            14079.26,
-            940.81
-          ],
-          [
-            14125.34,
-            924.01
-          ],
-          [
-            14173.94,
-            918.83
-          ],
-          [
-            14222.52,
-            925.56
-          ],
-          [
-            14268.02,
-            943.81
-          ],
-          [
-            14291.12,
-            919.88
-          ],
-          [
-            14366.77,
-            992.86
-          ],
-          [
-            14343.68,
-            1016.79
-          ],
-          [
-            14369.2,
-            1085.16
-          ],
-          [
-            14368.66,
-            1158.28
-          ],
-          [
-            14354.29,
-            1203.48
-          ],
-          [
-            14329.75,
-            1244.07
-          ],
-          [
-            14296.39,
-            1277.79
-          ],
-          [
-            14256.08,
-            1302.79
-          ],
-          [
-            14215.17,
-            1316.77
-          ],
-          [
-            14172.23,
-            1321.71
-          ],
-          [
-            14117.86,
-            1314.64
-          ],
-          [
-            14067.51,
-            1293.22
-          ],
-          [
-            14056.2,
-            1304.16
-          ],
-          [
-            13983.14,
-            1228.6
-          ],
-          [
-            13994.45,
-            1217.67
-          ],
-          [
-            13971.84,
-            1151.95
-          ],
-          [
-            13972.92,
-            1082.4
-          ]
-        ]
-      ],
-      "familyKey": "ILN-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3400,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3400
-    },
-    {
-      "id": "shelf-CLASS_D-68",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        7203.44,
-        9506.36
-      ],
-      "parts": [
-        [
-          [
-            7366.35,
-            9773.62
-          ],
-          [
-            7351.53,
-            9773.64
-          ],
-          [
-            7348.01,
-            9807.77
-          ],
-          [
-            7335.78,
-            9839.76
-          ],
-          [
-            7315.59,
-            9867.59
-          ],
-          [
-            7288.98,
-            9889.15
-          ],
-          [
-            7228.31,
-            9908.23
-          ],
-          [
-            7165.67,
-            9896.47
-          ],
-          [
-            7125.49,
-            9867.74
-          ],
-          [
-            7098.75,
-            9826.07
-          ],
-          [
-            7089.36,
-            9777.58
-          ],
-          [
-            7098.61,
-            9729.01
-          ],
-          [
-            7057.06,
-            9705.14
-          ],
-          [
-            7021.02,
-            9673.45
-          ],
-          [
-            6992.0,
-            9635.24
-          ],
-          [
-            6971.14,
-            9592.01
-          ],
-          [
-            6958.24,
-            9537.65
-          ],
-          [
-            6958.24,
-            9481.78
-          ],
-          [
-            6971.14,
-            9427.41
-          ],
-          [
-            6996.12,
-            9377.7
-          ],
-          [
-            7032.03,
-            9334.89
-          ],
-          [
-            7076.86,
-            9301.53
-          ],
-          [
-            7128.18,
-            9279.42
-          ],
-          [
-            7182.98,
-            9269.78
-          ],
-          [
-            7259.22,
-            9277.57
-          ],
-          [
-            7329.1,
-            9308.93
-          ],
-          [
-            7385.56,
-            9360.68
-          ],
-          [
-            7422.87,
-            9427.56
-          ],
-          [
-            7435.68,
-            9481.45
-          ],
-          [
-            7435.84,
-            9536.65
-          ],
-          [
-            7461.86,
-            9561.68
-          ],
-          [
-            7480.05,
-            9592.82
-          ],
-          [
-            7489.07,
-            9627.74
-          ],
-          [
-            7488.23,
-            9663.8
-          ],
-          [
-            7473.99,
-            9705.4
-          ],
-          [
-            7446.69,
-            9740.04
-          ],
-          [
-            7409.45,
-            9763.67
-          ],
-          [
-            7366.48,
-            9773.62
-          ]
-        ]
-      ],
-      "familyKey": "JWN-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 3100,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3100
-    },
-    {
-      "id": "shelf-CLASS_D-69",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        4506.12,
-        8476.06
-      ],
-      "parts": [
-        [
-          [
-            4508.98,
-            8257.56
-          ],
-          [
-            4551.48,
-            8262.3
-          ],
-          [
-            4592.25,
-            8275.23
-          ],
-          [
-            4629.71,
-            8295.85
-          ],
-          [
-            4662.6,
-            8323.52
-          ],
-          [
-            4689.43,
-            8357.1
-          ],
-          [
-            4709.1,
-            8395.07
-          ],
-          [
-            4720.98,
-            8436.15
-          ],
-          [
-            4724.64,
-            8478.75
-          ],
-          [
-            4719.89,
-            8521.46
-          ],
-          [
-            4706.96,
-            8562.22
-          ],
-          [
-            4686.33,
-            8599.68
-          ],
-          [
-            4658.8,
-            8632.4
-          ],
-          [
-            4625.43,
-            8659.14
-          ],
-          [
-            4587.29,
-            8678.95
-          ],
-          [
-            4546.0,
-            8690.91
-          ],
-          [
-            4503.39,
-            8694.56
-          ],
-          [
-            4460.68,
-            8689.8
-          ],
-          [
-            4419.92,
-            8676.86
-          ],
-          [
-            4382.28,
-            8656.11
-          ],
-          [
-            4349.59,
-            8628.55
-          ],
-          [
-            4322.88,
-            8595.15
-          ],
-          [
-            4303.12,
-            8556.98
-          ],
-          [
-            4291.24,
-            8515.9
-          ],
-          [
-            4287.6,
-            8473.3
-          ],
-          [
-            4292.32,
-            8430.8
-          ],
-          [
-            4305.32,
-            8389.83
-          ],
-          [
-            4326.08,
-            8352.2
-          ],
-          [
-            4353.65,
-            8319.51
-          ],
-          [
-            4387.06,
-            8292.82
-          ],
-          [
-            4425.24,
-            8273.06
-          ],
-          [
-            4466.33,
-            8261.2
-          ],
-          [
-            4508.94,
-            8257.56
-          ]
-        ]
-      ],
-      "familyKey": "PAH-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 2900,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 2900
-    },
-    {
-      "id": "shelf-CLASS_D-70",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        8481.63,
-        10787.92
-      ],
-      "parts": [
-        [
-          [
-            8466.18,
-            11054.54
-          ],
-          [
-            8465.0,
-            11059.07
-          ],
-          [
-            8363.52,
-            11032.56
-          ],
-          [
-            8387.6,
-            10940.42
-          ],
-          [
-            8344.56,
-            10903.29
-          ],
-          [
-            8315.35,
-            10854.65
-          ],
-          [
-            8302.82,
-            10799.32
-          ],
-          [
-            8308.27,
-            10742.68
-          ],
-          [
-            8331.11,
-            10690.74
-          ],
-          [
-            8369.18,
-            10648.44
-          ],
-          [
-            8418.44,
-            10620.28
-          ],
-          [
-            8474.2,
-            10608.92
-          ],
-          [
-            8498.27,
-            10516.77
-          ],
-          [
-            8599.75,
-            10543.28
-          ],
-          [
-            8575.67,
-            10635.42
-          ],
-          [
-            8618.66,
-            10672.49
-          ],
-          [
-            8647.95,
-            10721.29
-          ],
-          [
-            8660.45,
-            10776.62
-          ],
-          [
-            8654.97,
-            10833.27
-          ],
-          [
-            8632.0,
-            10885.34
-          ],
-          [
-            8594.0,
-            10927.46
-          ],
-          [
-            8544.73,
-            10955.6
-          ],
-          [
-            8489.07,
-            10966.92
-          ],
-          [
-            8467.36,
-            11050.02
-          ]
-        ]
-      ],
-      "familyKey": "JWN-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 2400,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 2400
-    },
-    {
-      "id": "shelf-CLASS_D-71",
-      "kind": "shelf",
-      "airspaceType": "CLASS_D",
-      "priority": 0.55,
-      "anchor": [
-        11043.61,
-        5394.41
-      ],
-      "parts": [
-        [
-          [
-            11125.01,
-            5491.52
-          ],
-          [
-            11043.38,
-            5505.96
-          ],
-          [
-            10902.18,
-            5498.08
-          ],
-          [
-            10961.75,
-            5225.7
-          ],
-          [
-            11009.66,
-            5228.41
-          ],
-          [
-            11055.0,
-            5244.03
-          ],
-          [
-            11094.4,
-            5271.37
-          ],
-          [
-            11124.9,
-            5308.38
-          ],
-          [
-            11144.19,
-            5352.27
-          ],
-          [
-            11150.84,
-            5399.76
-          ],
-          [
-            11144.34,
-            5447.27
-          ],
-          [
-            11125.1,
-            5491.38
-          ]
-        ]
-      ],
-      "familyKey": "LOU-CLASS_D",
-      "floorFt": 0,
-      "proxyCeilingFt": 2200,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 2200
-    },
-    {
-      "id": "shelf-CLASS_E2-72",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        2772.13,
-        1145.98
-      ],
-      "parts": [
-        [
-          [
-            2777.02,
-            927.06
-          ],
-          [
-            2819.57,
-            932.2
-          ],
-          [
-            2860.51,
-            945.62
-          ],
-          [
-            2897.84,
-            966.67
-          ],
-          [
-            2930.36,
-            994.59
-          ],
-          [
-            2956.82,
-            1028.3
-          ],
-          [
-            2976.28,
-            1066.72
-          ],
-          [
-            2987.81,
-            1107.99
-          ],
-          [
-            2991.07,
-            1150.94
-          ],
-          [
-            2985.92,
-            1193.48
-          ],
-          [
-            2972.57,
-            1234.2
-          ],
-          [
-            2951.55,
-            1271.54
-          ],
-          [
-            2923.51,
-            1304.22
-          ],
-          [
-            2889.79,
-            1330.67
-          ],
-          [
-            2851.37,
-            1350.12
-          ],
-          [
-            2810.09,
-            1361.64
-          ],
-          [
-            2767.15,
-            1364.9
-          ],
-          [
-            2724.4,
-            1359.69
-          ],
-          [
-            2683.69,
-            1346.31
-          ],
-          [
-            2646.37,
-            1325.25
-          ],
-          [
-            2613.71,
-            1297.17
-          ],
-          [
-            2587.18,
-            1263.25
-          ],
-          [
-            2567.88,
-            1224.99
-          ],
-          [
-            2556.41,
-            1183.7
-          ],
-          [
-            2553.19,
-            1140.97
-          ],
-          [
-            2558.36,
-            1098.44
-          ],
-          [
-            2571.8,
-            1057.52
-          ],
-          [
-            2592.87,
-            1020.2
-          ],
-          [
-            2620.8,
-            987.7
-          ],
-          [
-            2654.53,
-            961.26
-          ],
-          [
-            2692.96,
-            941.81
-          ],
-          [
-            2734.25,
-            930.3
-          ],
-          [
-            2776.98,
-            927.06
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-73",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        13477.08,
-        3046.29
-      ],
-      "parts": [
-        [
-          [
-            13463.49,
-            3323.51
-          ],
-          [
-            13461.73,
-            3327.84
-          ],
-          [
-            13291.54,
-            3258.45
-          ],
-          [
-            13310.93,
-            3210.88
-          ],
-          [
-            13236.97,
-            3070.7
-          ],
-          [
-            13295.29,
-            3039.93
-          ],
-          [
-            13310.51,
-            2968.68
-          ],
-          [
-            13352.34,
-            2908.81
-          ],
-          [
-            13401.66,
-            2875.23
-          ],
-          [
-            13459.08,
-            2859.22
-          ],
-          [
-            13495.56,
-            2769.8
-          ],
-          [
-            13657.66,
-            2835.91
-          ],
-          [
-            13646.76,
-            2862.65
-          ],
-          [
-            13718.96,
-            2999.53
-          ],
-          [
-            13662.47,
-            3029.32
-          ],
-          [
-            13651.91,
-            3104.54
-          ],
-          [
-            13611.87,
-            3169.02
-          ],
-          [
-            13562.7,
-            3205.6
-          ],
-          [
-            13504.08,
-            3224.01
-          ],
-          [
-            13465.26,
-            3319.18
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-74",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        4374.07,
-        5166.27
-      ],
-      "parts": [
-        [
-          [
-            4376.57,
-            4986.98
-          ],
-          [
-            4445.05,
-            5001.61
-          ],
-          [
-            4502.58,
-            5041.22
-          ],
-          [
-            4540.68,
-            5099.96
-          ],
-          [
-            4553.37,
-            5168.81
-          ],
-          [
-            4538.8,
-            5237.11
-          ],
-          [
-            4499.11,
-            5294.79
-          ],
-          [
-            4440.36,
-            5332.87
-          ],
-          [
-            4371.5,
-            5345.55
-          ],
-          [
-            4303.03,
-            5330.9
-          ],
-          [
-            4245.4,
-            5291.15
-          ],
-          [
-            4207.38,
-            5232.36
-          ],
-          [
-            4194.77,
-            5163.67
-          ],
-          [
-            4209.44,
-            5095.21
-          ],
-          [
-            4249.08,
-            5037.71
-          ],
-          [
-            4307.68,
-            4999.71
-          ],
-          [
-            4376.54,
-            4986.98
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-75",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        699.99,
-        4192.97
-      ],
-      "parts": [
-        [
-          [
-            876.8,
-            4116.89
-          ],
-          [
-            890.38,
-            4114.47
-          ],
-          [
-            905.79,
-            4200.59
-          ],
-          [
-            892.22,
-            4203.02
-          ],
-          [
-            880.44,
-            4259.98
-          ],
-          [
-            852.34,
-            4310.61
-          ],
-          [
-            817.58,
-            4345.35
-          ],
-          [
-            774.81,
-            4370.31
-          ],
-          [
-            704.08,
-            4385.4
-          ],
-          [
-            632.77,
-            4373.32
-          ],
-          [
-            577.36,
-            4341.33
-          ],
-          [
-            546.07,
-            4308.54
-          ],
-          [
-            523.18,
-            4269.06
-          ],
-          [
-            509.61,
-            4271.49
-          ],
-          [
-            494.19,
-            4185.37
-          ],
-          [
-            507.76,
-            4182.94
-          ],
-          [
-            524.54,
-            4113.8
-          ],
-          [
-            565.59,
-            4055.18
-          ],
-          [
-            625.23,
-            4015.61
-          ],
-          [
-            698.29,
-            4000.51
-          ],
-          [
-            771.81,
-            4014.4
-          ],
-          [
-            834.32,
-            4055.11
-          ],
-          [
-            876.65,
-            4116.53
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 3000,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3000
-    },
-    {
-      "id": "shelf-CLASS_E2-76",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        14174.61,
-        1118.89
-      ],
-      "parts": [
-        [
-          [
-            13972.96,
-            1082.21
-          ],
-          [
-            14007.12,
-            1034.31
-          ],
-          [
-            14027.33,
-            978.83
-          ],
-          [
-            14079.26,
-            940.81
-          ],
-          [
-            14125.34,
-            924.01
-          ],
-          [
-            14173.94,
-            918.83
-          ],
-          [
-            14222.52,
-            925.56
-          ],
-          [
-            14268.02,
-            943.81
-          ],
-          [
-            14291.12,
-            919.88
-          ],
-          [
-            14366.77,
-            992.86
-          ],
-          [
-            14343.68,
-            1016.79
-          ],
-          [
-            14369.2,
-            1085.16
-          ],
-          [
-            14368.66,
-            1158.28
-          ],
-          [
-            14354.29,
-            1203.48
-          ],
-          [
-            14329.75,
-            1244.07
-          ],
-          [
-            14296.39,
-            1277.79
-          ],
-          [
-            14256.08,
-            1302.79
-          ],
-          [
-            14215.17,
-            1316.77
-          ],
-          [
-            14172.23,
-            1321.71
-          ],
-          [
-            14117.86,
-            1314.64
-          ],
-          [
-            14067.51,
-            1293.22
-          ],
-          [
-            14056.2,
-            1304.16
-          ],
-          [
-            13983.14,
-            1228.6
-          ],
-          [
-            13994.45,
-            1217.67
-          ],
-          [
-            13971.84,
-            1151.95
-          ],
-          [
-            13972.92,
-            1082.4
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 3400,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3400
-    },
-    {
-      "id": "shelf-CLASS_E2-77",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        3123.21,
-        11129.75
-      ],
-      "parts": [
-        [
-          [
-            3127.23,
-            11031.47
-          ],
-          [
-            3205.0,
-            11048.42
-          ],
-          [
-            3270.35,
-            11093.51
-          ],
-          [
-            3313.71,
-            11160.01
-          ],
-          [
-            3328.6,
-            11238.0
-          ],
-          [
-            2917.82,
-            11238.0
-          ],
-          [
-            2921.64,
-            11197.38
-          ],
-          [
-            2933.49,
-            11158.12
-          ],
-          [
-            2952.91,
-            11122.0
-          ],
-          [
-            2978.97,
-            11090.6
-          ],
-          [
-            3010.72,
-            11064.98
-          ],
-          [
-            3047.1,
-            11046.05
-          ],
-          [
-            3086.52,
-            11034.74
-          ],
-          [
-            3127.19,
-            11031.47
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-78",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        10352.77,
-        6251.52
-      ],
-      "parts": [
-        [
-          [
-            10350.1,
-            6081.03
-          ],
-          [
-            10415.44,
-            6092.94
-          ],
-          [
-            10471.4,
-            6129.03
-          ],
-          [
-            10509.27,
-            6183.79
-          ],
-          [
-            10523.28,
-            6248.88
-          ],
-          [
-            10511.29,
-            6314.37
-          ],
-          [
-            10475.13,
-            6370.28
-          ],
-          [
-            10420.32,
-            6408.08
-          ],
-          [
-            10355.38,
-            6422.01
-          ],
-          [
-            10289.89,
-            6410.01
-          ],
-          [
-            10233.98,
-            6373.84
-          ],
-          [
-            10196.19,
-            6319.03
-          ],
-          [
-            10182.27,
-            6254.09
-          ],
-          [
-            10194.28,
-            6188.6
-          ],
-          [
-            10230.34,
-            6132.83
-          ],
-          [
-            10284.98,
-            6095.06
-          ],
-          [
-            10350.07,
-            6081.03
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-79",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        14633.18,
-        2145.46
-      ],
-      "parts": [
-        [
-          [
-            14747.0,
-            2341.15
-          ],
-          [
-            14705.5,
-            2341.53
-          ],
-          [
-            14665.04,
-            2333.28
-          ],
-          [
-            14627.2,
-            2316.77
-          ],
-          [
-            14593.33,
-            2292.47
-          ],
-          [
-            14565.33,
-            2261.59
-          ],
-          [
-            14544.61,
-            2225.88
-          ],
-          [
-            14531.8,
-            2186.62
-          ],
-          [
-            14527.45,
-            2145.56
-          ],
-          [
-            14531.84,
-            2104.11
-          ],
-          [
-            14544.69,
-            2064.87
-          ],
-          [
-            14565.44,
-            2029.17
-          ],
-          [
-            14593.18,
-            1998.58
-          ],
-          [
-            14627.03,
-            1974.24
-          ],
-          [
-            14664.87,
-            1957.7
-          ],
-          [
-            14705.33,
-            1949.4
-          ],
-          [
-            14747.0,
-            1949.77
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 3600,
-      "openEndedCeiling": false,
-      "altitudeSource": "record-attrs",
-      "ceilingFt": 3600
-    },
-    {
-      "id": "shelf-CLASS_E2-80",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        12320.07,
-        11206.4
-      ],
-      "parts": [
-        [
-          [
-            12315.74,
-            11160.73
-          ],
-          [
-            12357.91,
-            11164.82
-          ],
-          [
-            12402.05,
-            11181.1
-          ],
-          [
-            12436.79,
-            11205.35
-          ],
-          [
-            12465.16,
-            11238.0
-          ],
-          [
-            12174.98,
-            11238.0
-          ],
-          [
-            12201.38,
-            11207.15
-          ],
-          [
-            12235.74,
-            11182.37
-          ],
-          [
-            12275.05,
-            11166.57
-          ],
-          [
-            12312.3,
-            11160.85
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-81",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        14727.19,
-        11182.01
-      ],
-      "parts": [
-        [
-          [
-            14700.31,
-            11238.0
-          ],
-          [
-            14709.32,
-            11161.45
-          ],
-          [
-            14747.0,
-            11094.32
-          ],
-          [
-            14747.0,
-            11238.0
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-82",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        13237.55,
-        8418.26
-      ],
-      "parts": [
-        [
-          [
-            13370.21,
-            8263.81
-          ],
-          [
-            13404.77,
-            8294.18
-          ],
-          [
-            13378.03,
-            8324.61
-          ],
-          [
-            13401.02,
-            8373.03
-          ],
-          [
-            13408.26,
-            8426.0
-          ],
-          [
-            13396.73,
-            8485.42
-          ],
-          [
-            13365.52,
-            8537.48
-          ],
-          [
-            13311.26,
-            8579.47
-          ],
-          [
-            13245.2,
-            8597.34
-          ],
-          [
-            13177.34,
-            8588.48
-          ],
-          [
-            13118.07,
-            8554.25
-          ],
-          [
-            13076.96,
-            8500.84
-          ],
-          [
-            13059.11,
-            8435.84
-          ],
-          [
-            13067.23,
-            8368.76
-          ],
-          [
-            13100.08,
-            8309.9
-          ],
-          [
-            13145.86,
-            8271.63
-          ],
-          [
-            13201.85,
-            8250.99
-          ],
-          [
-            13258.44,
-            8249.9
-          ],
-          [
-            13312.36,
-            8266.92
-          ],
-          [
-            13339.1,
-            8236.48
-          ],
-          [
-            13366.75,
-            8260.78
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-83",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        14360.61,
-        8298.28
-      ],
-      "parts": [
-        [
-          [
-            14351.4,
-            8036.22
-          ],
-          [
-            14402.88,
-            8039.49
-          ],
-          [
-            14452.48,
-            8052.67
-          ],
-          [
-            14498.56,
-            8075.27
-          ],
-          [
-            14539.35,
-            8106.4
-          ],
-          [
-            14573.46,
-            8145.09
-          ],
-          [
-            14599.22,
-            8189.47
-          ],
-          [
-            14615.84,
-            8238.02
-          ],
-          [
-            14622.7,
-            8289.14
-          ],
-          [
-            14619.43,
-            8340.61
-          ],
-          [
-            14606.23,
-            8390.19
-          ],
-          [
-            14583.62,
-            8436.26
-          ],
-          [
-            14552.48,
-            8477.04
-          ],
-          [
-            14513.78,
-            8511.14
-          ],
-          [
-            14469.39,
-            8536.89
-          ],
-          [
-            14420.58,
-            8553.56
-          ],
-          [
-            14369.72,
-            8560.35
-          ],
-          [
-            14318.5,
-            8557.11
-          ],
-          [
-            14268.66,
-            8543.86
-          ],
-          [
-            14222.59,
-            8521.25
-          ],
-          [
-            14181.61,
-            8489.93
-          ],
-          [
-            14147.56,
-            8451.19
-          ],
-          [
-            14121.86,
-            8406.77
-          ],
-          [
-            14105.3,
-            8358.21
-          ],
-          [
-            14098.52,
-            8307.34
-          ],
-          [
-            14101.77,
-            8256.13
-          ],
-          [
-            14115.03,
-            8206.29
-          ],
-          [
-            14137.65,
-            8160.23
-          ],
-          [
-            14168.81,
-            8119.45
-          ],
-          [
-            14207.31,
-            8085.53
-          ],
-          [
-            14251.93,
-            8059.64
-          ],
-          [
-            14300.49,
-            8043.04
-          ],
-          [
-            14351.36,
-            8036.22
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-84",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        2850.26,
-        8016.84
-      ],
-      "parts": [
-        [
-          [
-            2917.16,
-            7839.54
-          ],
-          [
-            2955.49,
-            7855.2
-          ],
-          [
-            2948.49,
-            7872.35
-          ],
-          [
-            2976.86,
-            7898.33
-          ],
-          [
-            2999.1,
-            7929.92
-          ],
-          [
-            3017.06,
-            7976.98
-          ],
-          [
-            3021.2,
-            8027.36
-          ],
-          [
-            3067.62,
-            8041.74
-          ],
-          [
-            3041.75,
-            8125.23
-          ],
-          [
-            2994.87,
-            8110.71
-          ],
-          [
-            2945.9,
-            8162.92
-          ],
-          [
-            2880.07,
-            8191.87
-          ],
-          [
-            2826.61,
-            8195.21
-          ],
-          [
-            2774.56,
-            8182.6
-          ],
-          [
-            2716.57,
-            8144.39
-          ],
-          [
-            2677.32,
-            8086.67
-          ],
-          [
-            2663.1,
-            8018.34
-          ],
-          [
-            2675.93,
-            7950.09
-          ],
-          [
-            2711.77,
-            7893.92
-          ],
-          [
-            2765.65,
-            7854.72
-          ],
-          [
-            2815.53,
-            7839.51
-          ],
-          [
-            2867.56,
-            7839.29
-          ],
-          [
-            2874.56,
-            7822.14
-          ],
-          [
-            2912.9,
-            7837.8
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-85",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        9450.93,
-        8731.16
-      ],
-      "parts": [
-        [
-          [
-            9532.22,
-            8553.87
-          ],
-          [
-            9584.35,
-            8583.19
-          ],
-          [
-            9575.33,
-            8599.22
-          ],
-          [
-            9605.45,
-            8635.83
-          ],
-          [
-            9625.19,
-            8678.94
-          ],
-          [
-            9632.71,
-            8748.76
-          ],
-          [
-            9613.46,
-            8816.3
-          ],
-          [
-            9567.74,
-            8873.82
-          ],
-          [
-            9503.12,
-            8908.79
-          ],
-          [
-            9429.78,
-            8915.61
-          ],
-          [
-            9359.83,
-            8893.14
-          ],
-          [
-            9306.9,
-            8848.35
-          ],
-          [
-            9274.41,
-            8787.31
-          ],
-          [
-            9266.82,
-            8718.58
-          ],
-          [
-            9285.2,
-            8651.91
-          ],
-          [
-            9324.38,
-            8599.14
-          ],
-          [
-            9379.8,
-            8563.48
-          ],
-          [
-            9438.94,
-            8549.93
-          ],
-          [
-            9499.15,
-            8556.36
-          ],
-          [
-            9508.17,
-            8540.33
-          ],
-          [
-            9528.21,
-            8551.61
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
-      "id": "shelf-CLASS_E2-86",
-      "kind": "shelf",
-      "airspaceType": "CLASS_E2",
-      "priority": 0.5,
-      "anchor": [
-        11043.61,
-        5394.41
-      ],
-      "parts": [
-        [
-          [
-            11125.01,
-            5491.52
-          ],
-          [
-            11043.38,
-            5505.96
-          ],
-          [
-            10902.18,
-            5498.08
-          ],
-          [
-            10961.75,
-            5225.7
-          ],
-          [
-            11009.66,
-            5228.41
-          ],
-          [
-            11055.0,
-            5244.03
-          ],
-          [
-            11094.4,
-            5271.37
-          ],
-          [
-            11124.9,
-            5308.38
-          ],
-          [
-            11144.19,
-            5352.27
-          ],
-          [
-            11150.84,
-            5399.76
-          ],
-          [
-            11144.34,
-            5447.27
-          ],
-          [
-            11125.1,
-            5491.38
-          ]
-        ]
-      ],
-      "floorFt": 0,
-      "proxyCeilingFt": 12000,
-      "openEndedCeiling": true,
-      "altitudeSource": "record-attrs"
-    },
-    {
       "id": "special-0",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-0",
       "priority": 0.76,
       "anchor": [
         10145.1,
@@ -113097,6 +108893,7 @@
       "id": "special-1",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-1",
       "priority": 0.76,
       "anchor": [
         9954.7,
@@ -113147,6 +108944,7 @@
       "id": "special-2",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-2",
       "priority": 0.76,
       "anchor": [
         11446.72,
@@ -113185,6 +108983,7 @@
       "id": "special-3",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-3",
       "priority": 0.76,
       "anchor": [
         11312.44,
@@ -113223,6 +109022,7 @@
       "id": "special-4",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-4",
       "priority": 0.76,
       "anchor": [
         7463.79,
@@ -113261,6 +109061,7 @@
       "id": "special-5",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-5",
       "priority": 0.76,
       "anchor": [
         7151.65,
@@ -113307,6 +109108,7 @@
       "id": "special-6",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-6",
       "priority": 0.76,
       "anchor": [
         6902.31,
@@ -113369,6 +109171,7 @@
       "id": "special-7",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-7",
       "priority": 0.76,
       "anchor": [
         6902.31,
@@ -113431,6 +109234,7 @@
       "id": "special-8",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-8",
       "priority": 0.76,
       "anchor": [
         6902.31,
@@ -113493,6 +109297,7 @@
       "id": "special-9",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-9",
       "priority": 0.76,
       "anchor": [
         10622.73,
@@ -113603,6 +109408,7 @@
       "id": "special-10",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-10",
       "priority": 0.76,
       "anchor": [
         10622.73,
@@ -113713,6 +109519,7 @@
       "id": "special-11",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-11",
       "priority": 0.8,
       "anchor": [
         6713.5,
@@ -113771,6 +109578,7 @@
       "id": "special-12",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-12",
       "priority": 0.8,
       "anchor": [
         6245.17,
@@ -113847,6 +109655,7 @@
       "id": "special-13",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-13",
       "priority": 0.8,
       "anchor": [
         10995.13,
@@ -113927,6 +109736,7 @@
       "id": "special-14",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-14",
       "priority": 0.8,
       "anchor": [
         10810.87,
@@ -113961,6 +109771,7 @@
       "id": "special-15",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-15",
       "priority": 0.8,
       "anchor": [
         11266.74,
@@ -113999,6 +109810,7 @@
       "id": "special-16",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-16",
       "priority": 0.8,
       "anchor": [
         11346.71,
@@ -114041,6 +109853,7 @@
       "id": "special-17",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-17",
       "priority": 0.8,
       "anchor": [
         153.35,
@@ -114071,6 +109884,7 @@
       "id": "special-18",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-18",
       "priority": 0.8,
       "anchor": [
         38.7,
@@ -114097,6 +109911,7 @@
       "id": "special-19",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-19",
       "priority": 0.8,
       "anchor": [
         0.92,
@@ -114123,6 +109938,7 @@
       "id": "special-20",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-20",
       "priority": 0.8,
       "anchor": [
         9984.14,
@@ -114165,6 +109981,7 @@
       "id": "special-21",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-21",
       "priority": 0.8,
       "anchor": [
         9984.14,
@@ -114207,6 +110024,7 @@
       "id": "special-22",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-22",
       "priority": 0.8,
       "anchor": [
         10099.05,
@@ -114237,6 +110055,7 @@
       "id": "special-23",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-23",
       "priority": 0.8,
       "anchor": [
         9954.13,
@@ -114287,6 +110106,7 @@
       "id": "special-24",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-24",
       "priority": 0.8,
       "anchor": [
         6793.55,
@@ -114325,6 +110145,7 @@
       "id": "special-25",
       "kind": "special",
       "airspaceType": "SPECIAL",
+      "familyKey": "special-25",
       "priority": 0.66,
       "anchor": [
         14075.54,
@@ -114362,6 +110183,6 @@
     "classAirspaceGroups": 356,
     "specialActivityGroups": 34,
     "aerobaticGroups": 9,
-    "interactionRegions": 318
+    "interactionRegions": 277
   }
 }

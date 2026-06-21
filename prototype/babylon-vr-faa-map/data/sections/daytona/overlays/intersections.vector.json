@@ -1,0 +1,2711 @@
+{
+  "schema": "babylon-vector-overlay-v1",
+  "layerId": "intersections",
+  "description": "Vector fix markers for VR rendering.",
+  "coordinateSpace": {
+    "kind": "chart-pixels",
+    "width": 7295,
+    "height": 4706
+  },
+  "primitives": {
+    "polygons": [],
+    "strokes": [],
+    "circles": [],
+    "markers": [
+      {
+        "id": "DEARY",
+        "center": [
+          6396.473,
+          4489.553
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "GUANO",
+        "center": [
+          5283.65,
+          1884.819
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "INDIA",
+        "center": [
+          6732.939,
+          3613.472
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "KIZER",
+        "center": [
+          5325.006,
+          2344.322
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "MALET",
+        "center": [
+          6489.752,
+          2943.345
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "OAKIE",
+        "center": [
+          6340.026,
+          2527.421
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "SABOT",
+        "center": [
+          5668.936,
+          4100.99
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "SMYRA",
+        "center": [
+          6194.609,
+          2125.266
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "TICCO",
+        "center": [
+          6655.346,
+          3398.996
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "YOJIX",
+        "center": [
+          4893.815,
+          4643.106
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "YONMA",
+        "center": [
+          5250.655,
+          4589.567
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "ALADN",
+        "center": [
+          3714.761,
+          1970.589
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "ASTOR",
+        "center": [
+          5472.795,
+          54.946
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "AWINY",
+        "center": [
+          6673.607,
+          4013.703
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "BARBS",
+        "center": [
+          5234.695,
+          1341.467
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "BAYPO",
+        "center": [
+          2535.836,
+          3811.993
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "BULLI",
+        "center": [
+          5678.743,
+          659.274
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "CAMBE",
+        "center": [
+          4775.039,
+          3936.242
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "CERMO",
+        "center": [
+          4335.283,
+          3097.646
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "CLAMP",
+        "center": [
+          236.569,
+          1220.018
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "COKES",
+        "center": [
+          5908.765,
+          689.943
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "CUSAB",
+        "center": [
+          3835.928,
+          2068.254
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "DADES",
+        "center": [
+          3295.853,
+          3815.132
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "DARBS",
+        "center": [
+          1873.36,
+          4234.012
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "FORNI",
+        "center": [
+          6450.038,
+          2831.439
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "HYZER",
+        "center": [
+          3575.669,
+          3065.998
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "JENSN",
+        "center": [
+          4426.0,
+          3865.826
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "JIHMU",
+        "center": [
+          6209.624,
+          4270.818
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "JIJCI",
+        "center": [
+          4519.14,
+          4174.453
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "JODAB",
+        "center": [
+          5702.126,
+          727.708
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "KNEED",
+        "center": [
+          4064.781,
+          4057.766
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "LEESE",
+        "center": [
+          4389.677,
+          2514.402
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "LEJKO",
+        "center": [
+          3325.899,
+          1248.496
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "LIMMO",
+        "center": [
+          3333.561,
+          2554.977
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "MAMBO",
+        "center": [
+          4751.054,
+          2805.713
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "MATEO",
+        "center": [
+          5126.724,
+          140.004
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "MIKBE",
+        "center": [
+          6181.173,
+          2088.147
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "NITTS",
+        "center": [
+          2740.695,
+          2822.733
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "NUCIS",
+        "center": [
+          3067.342,
+          2221.88
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "ODDEL",
+        "center": [
+          5804.784,
+          4506.563
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "OVIDO",
+        "center": [
+          5840.576,
+          2966.382
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "PAOLA",
+        "center": [
+          5353.561,
+          2661.73
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "PLUMY",
+        "center": [
+          3576.643,
+          4317.046
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "PLYER",
+        "center": [
+          806.388,
+          2269.208
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "PRESK",
+        "center": [
+          5873.782,
+          3877.903
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "ROYES",
+        "center": [
+          5180.05,
+          731.894
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "SADEY",
+        "center": [
+          3479.558,
+          2451.325
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "SHIMM",
+        "center": [
+          4044.864,
+          2236.664
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "TABIR",
+        "center": [
+          1559.822,
+          3656.694
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "TUMPY",
+        "center": [
+          2883.425,
+          4301.109
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "URIVE",
+        "center": [
+          3786.119,
+          4411.647
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "VANNI",
+        "center": [
+          3583.046,
+          2007.971
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "WEBBS",
+        "center": [
+          3631.055,
+          3420.126
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "WORMS",
+        "center": [
+          5304.141,
+          2112.262
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "ZOVLU",
+        "center": [
+          4603.061,
+          4096.195
+        ],
+        "symbol": "x",
+        "sizePx": 26.945,
+        "widthPx": 4.99,
+        "color": "#0f4c81",
+        "alpha": 0.95
+      },
+      {
+        "id": "AKOJO",
+        "center": [
+          4511.856,
+          2770.145
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "CCITY",
+        "center": [
+          1520.482,
+          641.445
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "CROPY",
+        "center": [
+          5353.942,
+          2688.02
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DAIYL",
+        "center": [
+          4589.482,
+          2619.775
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DIMBY",
+        "center": [
+          7062.838,
+          4533.677
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DULFN",
+        "center": [
+          3632.767,
+          3149.928
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "EMSEE",
+        "center": [
+          4923.611,
+          2551.182
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "EXWAY",
+        "center": [
+          2699.961,
+          2394.798
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "FOXAM",
+        "center": [
+          5799.296,
+          676.196
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "FUTSY",
+        "center": [
+          2800.016,
+          1851.406
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MMKAY",
+        "center": [
+          5142.403,
+          318.223
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MRUTT",
+        "center": [
+          5258.976,
+          1613.432
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "OMMNI",
+        "center": [
+          3507.058,
+          2519.771
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "PUNQU",
+        "center": [
+          4287.95,
+          3257.541
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "SUUGR",
+        "center": [
+          5890.748,
+          1284.078
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VARZE",
+        "center": [
+          3811.915,
+          4047.998
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VIZTA",
+        "center": [
+          3792.638,
+          2789.463
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPBEC",
+        "center": [
+          5587.421,
+          127.173
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPCJA",
+        "center": [
+          5938.869,
+          833.44
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPCKY",
+        "center": [
+          2573.423,
+          2734.414
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPCNY",
+        "center": [
+          6766.657,
+          3441.828
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPDAD",
+        "center": [
+          3445.482,
+          3780.259
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPDFI",
+        "center": [
+          5379.4,
+          2137.699
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPEAR",
+        "center": [
+          1951.194,
+          4815.616
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPEGV",
+        "center": [
+          5217.149,
+          403.218
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPFFU",
+        "center": [
+          6166.708,
+          2266.796
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPHUC",
+        "center": [
+          2191.419,
+          3893.22
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPJMY",
+        "center": [
+          5471.747,
+          970.941
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPKER",
+        "center": [
+          4053.046,
+          4549.751
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPLEV",
+        "center": [
+          6489.874,
+          2659.937
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPLJA",
+        "center": [
+          6523.335,
+          2136.513
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VPXZY",
+        "center": [
+          1211.173,
+          610.255
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "WALEE",
+        "center": [
+          3341.585,
+          334.646
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "WEZER",
+        "center": [
+          3776.269,
+          4657.581
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ACCHE",
+        "center": [
+          5080.276,
+          632.767
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ALICS",
+        "center": [
+          2808.886,
+          2182.376
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ALYNA",
+        "center": [
+          6112.7,
+          2702.877
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ARHIP",
+        "center": [
+          5211.616,
+          3917.566
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ATTAK",
+        "center": [
+          1974.82,
+          3154.978
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ATTIK",
+        "center": [
+          7101.831,
+          2563.495
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BANGZ",
+        "center": [
+          1316.399,
+          4022.657
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BASSS",
+        "center": [
+          4917.234,
+          366.556
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BATTN",
+        "center": [
+          3586.745,
+          1699.571
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BAYAD",
+        "center": [
+          2198.72,
+          4589.041
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BAYNE",
+        "center": [
+          1726.09,
+          4610.441
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BEEIN",
+        "center": [
+          6334.459,
+          2758.566
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BIKEZ",
+        "center": [
+          5785.835,
+          777.099
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BITHO",
+        "center": [
+          6049.291,
+          3105.827
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BITTE",
+        "center": [
+          1257.723,
+          205.389
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BKENI",
+        "center": [
+          5373.753,
+          475.22
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BOCCE",
+        "center": [
+          4152.405,
+          4531.768
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BOLTS",
+        "center": [
+          1857.669,
+          4265.89
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BREKR",
+        "center": [
+          3846.212,
+          4452.314
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BRICE",
+        "center": [
+          5211.205,
+          3850.813
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BRKWL",
+        "center": [
+          3439.626,
+          1386.087
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "BROMO",
+        "center": [
+          2214.454,
+          4731.374
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "CAMDT",
+        "center": [
+          2999.985,
+          3668.812
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "CAPOH",
+        "center": [
+          3085.387,
+          610.56
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "CARRA",
+        "center": [
+          4774.13,
+          235.706
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "CEDDI",
+        "center": [
+          1648.073,
+          1391.212
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "CHAAZ",
+        "center": [
+          2487.643,
+          2866.221
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "COAXE",
+        "center": [
+          3664.676,
+          894.879
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "CORRL",
+        "center": [
+          1186.83,
+          3721.954
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "CRPIT",
+        "center": [
+          4056.564,
+          2461.863
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DDANY",
+        "center": [
+          6953.603,
+          4194.297
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DEANR",
+        "center": [
+          1451.378,
+          1462.429
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DEBRL",
+        "center": [
+          5864.524,
+          1365.399
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DOFFY",
+        "center": [
+          2669.685,
+          1475.92
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DONHU",
+        "center": [
+          2172.092,
+          4311.575
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DORII",
+        "center": [
+          5208.464,
+          3267.42
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DUCEN",
+        "center": [
+          5431.485,
+          1422.563
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "DVOLA",
+        "center": [
+          5209.1,
+          3399.532
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "EATTR",
+        "center": [
+          3289.542,
+          1356.033
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ECAKE",
+        "center": [
+          2521.864,
+          3008.31
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "EDISN",
+        "center": [
+          3107.214,
+          1090.927
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ENDED",
+        "center": [
+          2065.51,
+          3686.767
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ENTAH",
+        "center": [
+          2460.693,
+          4583.823
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "FADDI",
+        "center": [
+          2637.543,
+          4350.894
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "FATHE",
+        "center": [
+          5486.115,
+          2168.916
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "FATTY",
+        "center": [
+          3717.428,
+          1211.609
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "FIINN",
+        "center": [
+          2062.318,
+          4818.929
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "FORYU",
+        "center": [
+          5761.582,
+          1367.745
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "GDUNN",
+        "center": [
+          1816.65,
+          4489.836
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "GERCK",
+        "center": [
+          6593.023,
+          3504.668
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "GIRAF",
+        "center": [
+          5210.914,
+          3775.546
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "GRDON",
+        "center": [
+          6979.936,
+          1143.08
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "GRTNG",
+        "center": [
+          3742.272,
+          1345.35
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "GTOUT",
+        "center": [
+          5991.349,
+          2209.081
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "GUURR",
+        "center": [
+          4032.436,
+          3822.376
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "HAHNA",
+        "center": [
+          5732.494,
+          4405.087
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "HARAM",
+        "center": [
+          5199.631,
+          3177.892
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "HIDOS",
+        "center": [
+          1941.647,
+          4595.765
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "HILTI",
+        "center": [
+          1226.36,
+          4748.906
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ILIND",
+        "center": [
+          6557.707,
+          2928.83
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "INLTT",
+        "center": [
+          2236.252,
+          4484.457
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ISBUY",
+        "center": [
+          1255.434,
+          4259.437
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "JAFAR",
+        "center": [
+          3771.163,
+          2183.103
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "JAYJA",
+        "center": [
+          3058.436,
+          612.568
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "JEEMY",
+        "center": [
+          5190.838,
+          1889.49
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "JENIM",
+        "center": [
+          2776.472,
+          2973.108
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "JFRYS",
+        "center": [
+          2778.015,
+          3626.519
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "JOKRS",
+        "center": [
+          4520.872,
+          4674.566
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "JUMBA",
+        "center": [
+          4349.911,
+          4427.838
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "JUTTS",
+        "center": [
+          3802.902,
+          579.395
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "KENLL",
+        "center": [
+          5883.267,
+          638.816
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "KIDLE",
+        "center": [
+          1501.704,
+          4240.689
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "KNOST",
+        "center": [
+          575.966,
+          4742.951
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "KPASA",
+        "center": [
+          4093.442,
+          4303.493
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "LACEN",
+        "center": [
+          2006.202,
+          3255.649
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "LALAA",
+        "center": [
+          511.381,
+          2190.462
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "LAMMP",
+        "center": [
+          4420.575,
+          2701.248
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "LAPUU",
+        "center": [
+          6076.667,
+          3487.512
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "LEGGT",
+        "center": [
+          412.743,
+          1544.389
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "LLRGO",
+        "center": [
+          2241.012,
+          4037.924
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "LOREC",
+        "center": [
+          1108.347,
+          4723.515
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "LORRA",
+        "center": [
+          5213.895,
+          4545.058
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "LUBBR",
+        "center": [
+          3609.154,
+          2988.404
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MAATY",
+        "center": [
+          1560.682,
+          3658.342
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MDBOG",
+        "center": [
+          5454.832,
+          1866.419
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MDUSA",
+        "center": [
+          5229.661,
+          2269.862
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MILOW",
+        "center": [
+          3177.814,
+          3105.3
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MILYR",
+        "center": [
+          3336.39,
+          3617.679
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MINEE",
+        "center": [
+          4471.444,
+          4454.02
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MOMIE",
+        "center": [
+          1871.507,
+          3030.69
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "MURDE",
+        "center": [
+          2488.01,
+          2079.672
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "NESST",
+        "center": [
+          1808.111,
+          2177.449
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "NICCK",
+        "center": [
+          5785.396,
+          1650.975
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "NICKI",
+        "center": [
+          800.42,
+          1463.444
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "NOLLE",
+        "center": [
+          3558.114,
+          276.288
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "NOOMN",
+        "center": [
+          5673.904,
+          291.59
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "OBESE",
+        "center": [
+          761.142,
+          3274.902
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "OGGER",
+        "center": [
+          1516.451,
+          4548.517
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ONEWY",
+        "center": [
+          6062.897,
+          3801.444
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ORATE",
+        "center": [
+          1861.593,
+          1251.226
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "OSPRY",
+        "center": [
+          4126.111,
+          3993.247
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "OTKEE",
+        "center": [
+          4343.591,
+          4371.027
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "OWEDN",
+        "center": [
+          5673.372,
+          1176.649
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "PELYO",
+        "center": [
+          6735.822,
+          1740.327
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "PPOLE",
+        "center": [
+          2310.702,
+          4583.554
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "PRICY",
+        "center": [
+          3957.837,
+          4621.149
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "RDSOX",
+        "center": [
+          4064.173,
+          3650.494
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "RILEE",
+        "center": [
+          702.054,
+          4381.124
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "RINGG",
+        "center": [
+          4061.444,
+          2464.105
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "SCOTE",
+        "center": [
+          4644.633,
+          3749.758
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "SHREK",
+        "center": [
+          4063.409,
+          2165.576
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "SKWAD",
+        "center": [
+          5135.558,
+          3638.683
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "SMELZ",
+        "center": [
+          3625.316,
+          4546.785
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "SNFLD",
+        "center": [
+          5907.954,
+          1965.09
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "SSPAZ",
+        "center": [
+          3467.018,
+          599.669
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "STNKY",
+        "center": [
+          4419.642,
+          2415.926
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "STYMY",
+        "center": [
+          5847.578,
+          4661.17
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "TAYYE",
+        "center": [
+          4947.937,
+          4111.524
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "TEEGN",
+        "center": [
+          1182.781,
+          4202.836
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "TIMIE",
+        "center": [
+          6775.47,
+          2097.883
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "TOLLZ",
+        "center": [
+          5160.453,
+          3455.277
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "TTHOR",
+        "center": [
+          5630.997,
+          404.413
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "TWOON",
+        "center": [
+          5847.207,
+          3634.651
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "UKAYY",
+        "center": [
+          6513.692,
+          4020.863
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "VENNU",
+        "center": [
+          2461.788,
+          4365.335
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "WAKOS",
+        "center": [
+          3113.825,
+          1502.738
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "WANDD",
+        "center": [
+          3472.011,
+          1753.196
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "WHITL",
+        "center": [
+          727.053,
+          4028.853
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "WILON",
+        "center": [
+          2291.368,
+          1051.46
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "WISHH",
+        "center": [
+          4713.189,
+          2895.488
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "WOBAD",
+        "center": [
+          1715.582,
+          4701.221
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "YAGGO",
+        "center": [
+          5173.055,
+          2833.066
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ZALEK",
+        "center": [
+          4725.802,
+          4400.226
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ZEBON",
+        "center": [
+          3672.054,
+          3489.698
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      },
+      {
+        "id": "ZINGR",
+        "center": [
+          7156.863,
+          2705.099
+        ],
+        "symbol": "plus",
+        "sizePx": 19.959,
+        "widthPx": 3.992,
+        "color": "#1d4ed8",
+        "alpha": 0.95
+      }
+    ],
+    "runwayBars": []
+  },
+  "interactionRegions": [],
+  "stats": {
+    "markers": 224,
+    "intersections": 289
+  }
+}

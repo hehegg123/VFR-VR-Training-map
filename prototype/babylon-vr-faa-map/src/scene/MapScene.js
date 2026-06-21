@@ -1,6 +1,7 @@
-import { LayerManager } from "./layers/LayerManager.js?v=20260521-default-base-xr-gain-v1";
-import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260519-xr-forearm-panel-v1";
-import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260521-default-base-xr-gain-v1";
+import { LayerManager } from "./layers/LayerManager.js?v=20260616-label-diagnostics-v5";
+import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260620-panel-toggle-v1";
+import { XrInputSourceVisualManager } from "./xr/XrInputSourceVisualManager.js?v=20260617-xr-input-visuals-v1";
+import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260617-xr-input-visuals-v1";
 
 const VR_FRONT_EDGE_MARGIN_UNITS = 1.15;
 const VR_EXTRA_FRONT_CLEARANCE_RATIO = 0.12;
@@ -8,6 +9,8 @@ const VR_BASE_VIEW_ELEVATION_DROP_UNITS = 0.9;
 const VR_VIEW_ELEVATION_DROP_RATIO = 0.06;
 const VR_MAX_VIEW_ELEVATION_DROP_UNITS = 1.35;
 const VR_MIN_MAP_CENTER_HEIGHT = 0.42;
+const XR_SUPPORT_CHECK_TIMEOUT_MS = 4000;
+const XR_INITIALIZATION_TIMEOUT_MS = 12000;
 
 export async function createMapScene(canvas) {
   const engine = new BABYLON.Engine(canvas, true, {
@@ -50,46 +53,63 @@ export async function createMapScene(canvas) {
   mapRoot.position.y = 1.15;
 
   const layerManager = new LayerManager(scene, mapRoot);
-  let lastCameraRadius = Number.NaN;
-  layerManager.setViewState({ cameraRadius: camera.radius });
-  scene.onBeforeRenderObservable.add(() => {
-    if (Math.abs(camera.radius - lastCameraRadius) < 0.08) {
-      return;
-    }
-    lastCameraRadius = camera.radius;
-    layerManager.setViewState({ cameraRadius: camera.radius });
-  });
+  const xrAvailabilityObservers = new Set();
   const xrAvailability = await detectVrAvailability();
-
   let xrHelper = null;
   let vrControlPanel = null;
   let xrMapManipulator = null;
-  try {
-    xrHelper = await scene.createDefaultXRExperienceAsync({
-      floorMeshes: [floor],
-      uiOptions: {
-        sessionMode: "immersive-vr",
-        referenceSpaceType: "local-floor",
-      },
-    });
-    vrControlPanel = new VrControlPanel(scene, xrHelper, camera);
-    xrMapManipulator = new XrMapManipulator(scene, xrHelper, mapRoot);
-  } catch (error) {
-    console.warn("XR unavailable", error);
-    if (!xrAvailability.reason) {
+  let xrInputSourceVisualManager = null;
+  let pendingVrControlPanelConfig = null;
+  let xrInitializationPromise = Promise.resolve(null);
+
+  if (xrAvailability.supported) {
+    xrAvailability.initializing = true;
+    xrAvailability.reason = "Immersive VR detected. Preparing WebXR controls...";
+    xrInitializationPromise = withTimeout(
+      scene.createDefaultXRExperienceAsync({
+        floorMeshes: [floor],
+        uiOptions: {
+          sessionMode: "immersive-vr",
+          referenceSpaceType: "local-floor",
+        },
+      }),
+      XR_INITIALIZATION_TIMEOUT_MS,
+      "WebXR setup timed out. Reload after confirming the headset runtime is active.",
+    ).then((helper) => {
+      xrHelper = helper;
+      xrInputSourceVisualManager = new XrInputSourceVisualManager(scene, xrHelper);
+      vrControlPanel = new VrControlPanel(scene, xrHelper, camera, xrInputSourceVisualManager);
+      xrMapManipulator = new XrMapManipulator(scene, xrHelper, mapRoot, xrInputSourceVisualManager);
+      if (pendingVrControlPanelConfig) {
+        vrControlPanel.setConfig(pendingVrControlPanelConfig);
+      }
+      xrAvailability.initializing = false;
+      xrAvailability.ready = true;
+      xrAvailability.reason = "Immersive VR is available.";
+      notifyXrAvailabilityObservers(xrAvailabilityObservers, xrAvailability);
+      return helper;
+    }).catch((error) => {
+      console.warn("XR unavailable", error);
       xrAvailability.supported = false;
+      xrAvailability.initializing = false;
+      xrAvailability.ready = false;
       xrAvailability.reason = error?.message ?? "WebXR initialization failed.";
-    }
+      notifyXrAvailabilityObservers(xrAvailabilityObservers, xrAvailability);
+      return null;
+    });
   }
 
   engine.runRenderLoop(() => scene.render());
   window.addEventListener("resize", () => engine.resize());
 
-  return {
+  const controller = {
     engine,
     scene,
     layerManager,
     async enterVr() {
+      if (xrAvailability.initializing) {
+        await xrInitializationPromise;
+      }
       if (!xrAvailability.supported) {
         throw new Error(xrAvailability.reason);
       }
@@ -107,22 +127,31 @@ export async function createMapScene(canvas) {
       );
     },
     hasXr() {
-      return xrAvailability.supported;
+      return xrAvailability.supported && xrAvailability.ready;
     },
     getXrAvailability() {
-      return xrAvailability;
+      return { ...xrAvailability };
+    },
+    onXrAvailabilityChange(callback) {
+      xrAvailabilityObservers.add(callback);
+      return () => xrAvailabilityObservers.delete(callback);
     },
     setAirspaceAltitudeMode(enabled) {
       layerManager.setAirspaceAltitudeMode(enabled);
     },
     setVrControlPanel(config) {
+      pendingVrControlPanelConfig = config ?? null;
       vrControlPanel?.setConfig(config ?? null);
     },
     dispose() {
+      xrAvailabilityObservers.clear();
       xrMapManipulator?.dispose();
       vrControlPanel?.dispose();
+      xrInputSourceVisualManager?.dispose();
     },
   };
+
+  return controller;
 }
 
 function positionMapForInitialVrView(xrHelper, mapRoot, sectionMetrics) {
@@ -183,6 +212,8 @@ function waitForNextFrame() {
 async function detectVrAvailability() {
   const availability = {
     supported: false,
+    initializing: false,
+    ready: false,
     reason: "",
   };
 
@@ -197,7 +228,11 @@ async function detectVrAvailability() {
   }
 
   try {
-    const immersiveVrSupported = await navigator.xr.isSessionSupported("immersive-vr");
+    const immersiveVrSupported = await withTimeout(
+      navigator.xr.isSessionSupported("immersive-vr"),
+      XR_SUPPORT_CHECK_TIMEOUT_MS,
+      "The browser did not finish checking immersive-vr support.",
+    );
     if (!immersiveVrSupported) {
       availability.reason =
         "This browser/device does not support immersive-vr right now. If you're on desktop, make sure a VR headset runtime is active; on mobile, use a browser with WebXR VR support.";
@@ -209,6 +244,21 @@ async function detectVrAvailability() {
   }
 
   availability.supported = true;
-  availability.reason = "Immersive VR is available.";
+  availability.reason = "Immersive VR detected.";
   return availability;
+}
+
+function withTimeout(promise, timeoutMs, message) {
+  let timeoutId;
+  const timeout = new Promise((_, reject) => {
+    timeoutId = window.setTimeout(() => reject(new Error(message)), timeoutMs);
+  });
+  return Promise.race([promise, timeout]).finally(() => window.clearTimeout(timeoutId));
+}
+
+function notifyXrAvailabilityObservers(observers, availability) {
+  const snapshot = { ...availability };
+  for (const callback of observers) {
+    callback(snapshot);
+  }
 }

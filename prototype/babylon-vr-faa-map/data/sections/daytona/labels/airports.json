@@ -1,0 +1,440 @@
+{
+  "schema": "babylon-vr-labels-v1",
+  "items": [
+    {
+      "id": "LEE",
+      "x": 4320.361,
+      "y": 2611.831,
+      "lines": [
+        "LEE",
+        "LEESBURG INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "MCO",
+      "x": 5476.415,
+      "y": 3636.748,
+      "lines": [
+        "MCO",
+        "ORLANDO INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "SFB",
+      "x": 5641.965,
+      "y": 2726.223,
+      "lines": [
+        "SFB",
+        "ORLANDO SANFORD INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "TPA",
+      "x": 2641.287,
+      "y": 4825.509,
+      "lines": [
+        "TPA",
+        "TAMPA INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "DAB",
+      "x": 6041.357,
+      "y": 1670.048,
+      "lines": [
+        "DAB",
+        "DAYTONA BEACH INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "MLB",
+      "x": 7020.158,
+      "y": 4477.961,
+      "lines": [
+        "MLB",
+        "MELBOURNE ORLANDO INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "LAL",
+      "x": 3835.018,
+      "y": 4796.39,
+      "lines": [
+        "LAL",
+        "LAKELAND LINDER INTL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "GNV",
+      "x": 3258.227,
+      "y": 343.086,
+      "lines": [
+        "GNV",
+        "GAINESVILLE RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "OCF",
+      "x": 3364.626,
+      "y": 1698.935,
+      "lines": [
+        "OCF",
+        "OCALA INTL-JIM TAYLOR FLD"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "TIX",
+      "x": 6652.564,
+      "y": 3404.275,
+      "lines": [
+        "TIX",
+        "SPACE COAST RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "BKV",
+      "x": 2825.318,
+      "y": 3524.06,
+      "lines": [
+        "BKV",
+        "BROOKSVILLE-TAMPA BAY RGNL"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "ORL",
+      "x": 5419.44,
+      "y": 3333.524,
+      "lines": [
+        "ORL",
+        "ORLANDO EXEC"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "ISM",
+      "x": 5182.032,
+      "y": 4003.267,
+      "lines": [
+        "ISM",
+        "KISSIMMEE GATEWAY"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "FIN",
+      "x": 5693.099,
+      "y": 926.319,
+      "lines": [
+        "FIN",
+        "FLAGLER EXEC"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "EVB",
+      "x": 6294.656,
+      "y": 1992.893,
+      "lines": [
+        "EVB",
+        "NEW SMYRNA BEACH MUNI (JACK BOLT FLD)"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "OMN",
+      "x": 5911.066,
+      "y": 1353.892,
+      "lines": [
+        "OMN",
+        "ORMOND BEACH MUNI"
+      ],
+      "style": "airport-major",
+      "priority": 1.0
+    },
+    {
+      "id": "X60",
+      "x": 2800.707,
+      "y": 1219.33,
+      "lines": [
+        "X60",
+        "WILLISTON RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "ZPH",
+      "x": 3518.655,
+      "y": 4171.141,
+      "lines": [
+        "ZPH",
+        "ZEPHYRHILLS MUNI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "DED",
+      "x": 5524.975,
+      "y": 1968.818,
+      "lines": [
+        "DED",
+        "DELAND MUNI-SIDNEY H TAYLOR FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "28J",
+      "x": 4587.275,
+      "y": 426.752,
+      "lines": [
+        "28J",
+        "PALATKA MUNI/LT KAY LARKIN FLD"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "CTY",
+      "x": 1353.997,
+      "y": 475.016,
+      "lines": [
+        "CTY",
+        "CROSS CITY"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "GIF",
+      "x": 4451.29,
+      "y": 4598.971,
+      "lines": [
+        "GIF",
+        "WINTER HAVEN RGNL"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "INF",
+      "x": 3145.916,
+      "y": 2661.659,
+      "lines": [
+        "INF",
+        "INVERNESS"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "VDF",
+      "x": 3077.949,
+      "y": 4726.365,
+      "lines": [
+        "VDF",
+        "TAMPA EXEC"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "X35",
+      "x": 3013.637,
+      "y": 1986.083,
+      "lines": [
+        "X35",
+        "MARION CO"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "6J8",
+      "x": 2359.851,
+      "y": 260.593,
+      "lines": [
+        "6J8"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "CGC",
+      "x": 2557.409,
+      "y": 2492.126,
+      "lines": [
+        "CGC"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "X50",
+      "x": 6351.888,
+      "y": 2193.224,
+      "lines": [
+        "X50"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "CLW",
+      "x": 2117.148,
+      "y": 4818.171,
+      "lines": [
+        "CLW"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "PCM",
+      "x": 3500.121,
+      "y": 4763.383,
+      "lines": [
+        "PCM"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "0J8",
+      "x": 2716.27,
+      "y": 526.147,
+      "lines": [
+        "0J8"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "X05",
+      "x": 2730.4,
+      "y": 3898.094,
+      "lines": [
+        "X05"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "COI",
+      "x": 6920.147,
+      "y": 3854.455,
+      "lines": [
+        "COI"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "X39",
+      "x": 3011.632,
+      "y": 4184.138,
+      "lines": [
+        "X39"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "X61",
+      "x": 4734.013,
+      "y": 2840.047,
+      "lines": [
+        "X61"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "X04",
+      "x": 4844.268,
+      "y": 2914.56,
+      "lines": [
+        "X04"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "X55",
+      "x": 4730.928,
+      "y": 2557.441,
+      "lines": [
+        "X55"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "X21",
+      "x": 6566.386,
+      "y": 3123.431,
+      "lines": [
+        "X21"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "X23",
+      "x": 4680.357,
+      "y": 2344.689,
+      "lines": [
+        "X23"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "2J8",
+      "x": 5119.399,
+      "y": 1492.229,
+      "lines": [
+        "2J8"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    },
+    {
+      "id": "CDK",
+      "x": 1466.51,
+      "y": 1787.447,
+      "lines": [
+        "CDK"
+      ],
+      "style": "airport-minor",
+      "priority": 0.7
+    }
+  ]
+}

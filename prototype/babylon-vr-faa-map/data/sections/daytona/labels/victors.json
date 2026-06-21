@@ -1,0 +1,170 @@
+{
+  "schema": "babylon-vr-labels-v1",
+  "items": [
+    {
+      "id": "V152",
+      "x": 4901.907,
+      "y": 3089.468,
+      "lines": [
+        "V152",
+        "PIE-OMN"
+      ],
+      "style": "victor-airway",
+      "priority": 0.44999999999999996
+    },
+    {
+      "id": "V157",
+      "x": 3738.888,
+      "y": 3920.627,
+      "lines": [
+        "V157",
+        "LAL-TAALR"
+      ],
+      "style": "victor-airway",
+      "priority": 0.51
+    },
+    {
+      "id": "V159",
+      "x": 2581.75,
+      "y": 844.656,
+      "lines": [
+        "V159",
+        "DEARY-GEF"
+      ],
+      "style": "victor-airway",
+      "priority": 0.55
+    },
+    {
+      "id": "V267",
+      "x": 5414.659,
+      "y": 3003.971,
+      "lines": [
+        "V267",
+        "ORL-BRADO"
+      ],
+      "style": "victor-airway",
+      "priority": 0.51
+    },
+    {
+      "id": "V3",
+      "x": 5828.278,
+      "y": 681.147,
+      "lines": [
+        "V3",
+        "SMUGS-SEBAG"
+      ],
+      "style": "victor-airway",
+      "priority": 0.55
+    },
+    {
+      "id": "V437",
+      "x": 6297.459,
+      "y": 3488.563,
+      "lines": [
+        "V437",
+        "MLB-COBOK"
+      ],
+      "style": "victor-airway",
+      "priority": 0.47
+    },
+    {
+      "id": "V441",
+      "x": 2668.298,
+      "y": 3311.142,
+      "lines": [
+        "V441",
+        "MLB-BOCAP"
+      ],
+      "style": "victor-airway",
+      "priority": 0.59
+    },
+    {
+      "id": "V492",
+      "x": 7100.017,
+      "y": 4570.968,
+      "lines": [
+        "V492",
+        "CUKPO-MLB"
+      ],
+      "style": "victor-airway",
+      "priority": 0.37
+    },
+    {
+      "id": "V51",
+      "x": 5836.87,
+      "y": 1047.923,
+      "lines": [
+        "V51",
+        "OMN-BUNDE"
+      ],
+      "style": "victor-airway",
+      "priority": 0.43
+    },
+    {
+      "id": "V531",
+      "x": 5570.886,
+      "y": 3730.582,
+      "lines": [
+        "V531",
+        "BAIRN-ORL"
+      ],
+      "style": "victor-airway",
+      "priority": 0.41
+    },
+    {
+      "id": "V533",
+      "x": 5096.508,
+      "y": 3598.111,
+      "lines": [
+        "V533",
+        "LAL-OMN"
+      ],
+      "style": "victor-airway",
+      "priority": 0.53
+    },
+    {
+      "id": "V537",
+      "x": 5090.662,
+      "y": 3460.417,
+      "lines": [
+        "V537",
+        "DEARY-ALVIN"
+      ],
+      "style": "victor-airway",
+      "priority": 0.51
+    },
+    {
+      "id": "V581",
+      "x": 3345.363,
+      "y": 3184.137,
+      "lines": [
+        "V581",
+        "PIE-OCF"
+      ],
+      "style": "victor-airway",
+      "priority": 0.43
+    },
+    {
+      "id": "V7",
+      "x": 1956.203,
+      "y": 2351.364,
+      "lines": [
+        "V7",
+        "LAL-SZW"
+      ],
+      "style": "victor-airway",
+      "priority": 0.37
+    },
+    {
+      "id": "V97",
+      "x": 1210.057,
+      "y": 2977.59,
+      "lines": [
+        "V97",
+        "PIE-HEVVN"
+      ],
+      "style": "victor-airway",
+      "priority": 0.44999999999999996
+    }
+  ]
+}

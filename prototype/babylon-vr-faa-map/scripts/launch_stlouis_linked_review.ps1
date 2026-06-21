@@ -2,8 +2,8 @@ $ErrorActionPreference = "Stop"
 
 $appRoot = Split-Path -Parent $PSScriptRoot
 $repoRoot = Split-Path -Parent $appRoot
-$vrUrl = "http://localhost:4173/babylon-vr-faa-map/?section=stlouis"
-$desktopUrl = "http://localhost:4173/faa-2d-map/?section=stlouis"
+$vrUrl = "http://localhost:4173/babylon-vr-faa-map/"
+$desktopUrl = "http://localhost:4173/faa-2d-map/"
 
 $existing = Get-NetTCPConnection -LocalPort 4173 -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
 if (-not $existing) {

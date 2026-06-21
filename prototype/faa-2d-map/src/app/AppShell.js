@@ -110,6 +110,7 @@ export class AppShell {
     const container = this.elements.layerControls;
     container.innerHTML = "";
     const nextState = new Map();
+    const layerCards = [];
 
     for (const layer of manifest.layers) {
       const existingState = this.layerUiState.get(layer.id);
@@ -147,10 +148,60 @@ export class AppShell {
         card.append(extendedRow);
       }
 
-      container.append(card);
+      layerCards.push(card);
     }
 
     this.layerUiState = nextState;
+    container.append(this.buildMasterControlCard(manifest), ...layerCards);
+  }
+
+  buildMasterControlCard(manifest) {
+    const card = document.createElement("section");
+    card.className = "layer-card master-control-card";
+
+    const header = document.createElement("header");
+    header.innerHTML = "<h3>Master Control</h3><p>All layers</p>";
+
+    const mapRow = this.buildMasterControlRow(
+      "Maps",
+      () => this.setAllLayerVisibility(true),
+      () => this.setAllLayerVisibility(false),
+    );
+
+    const hasLabelLayers = manifest.layers.some((layer) => Boolean(layer.labelData));
+    const labelRow = this.buildMasterControlRow(
+      "Labels",
+      () => this.setAllLayerLabels(true),
+      () => this.setAllLayerLabels(false),
+      !hasLabelLayers,
+    );
+
+    card.append(header, mapRow, labelRow);
+    return card;
+  }
+
+  buildMasterControlRow(label, onSelectAll, onDeselectAll, disabled = false) {
+    const row = document.createElement("div");
+    row.className = "master-control-row";
+
+    const text = document.createElement("span");
+    text.textContent = label;
+
+    const selectButton = document.createElement("button");
+    selectButton.type = "button";
+    selectButton.textContent = "Select All";
+    selectButton.disabled = disabled;
+    selectButton.addEventListener("click", onSelectAll);
+
+    const deselectButton = document.createElement("button");
+    deselectButton.type = "button";
+    deselectButton.textContent = "Deselect All";
+    deselectButton.disabled = disabled;
+    deselectButton.className = "button-secondary";
+    deselectButton.addEventListener("click", onDeselectAll);
+
+    row.append(text, selectButton, deselectButton);
+    return row;
   }
 
   buildToggleRow(label, checked, onChange) {
@@ -181,7 +232,7 @@ export class AppShell {
     layerState.layerVisible = checked;
     this.mapView.setLayerVisible(layerId, checked);
     this.mapView.setLabelVisible(layerId, checked && layerState.labelsEnabled);
-    if (this.currentManifest) {
+    if (!options.suppressRender && this.currentManifest) {
       this.renderLayerControls(this.currentManifest);
     }
     if (!options.suppressSync) {
@@ -205,7 +256,7 @@ export class AppShell {
     }
     layerState.labelsEnabled = checked;
     this.mapView.setLabelVisible(layerId, layerState.layerVisible && checked);
-    if (this.currentManifest) {
+    if (!options.suppressRender && this.currentManifest) {
       this.renderLayerControls(this.currentManifest);
     }
     if (!options.suppressSync) {
@@ -231,7 +282,7 @@ export class AppShell {
     this.mapView.setLabelOptions(layerId, {
       extendedAirspaceLabels: checked,
     });
-    if (this.currentManifest) {
+    if (!options.suppressRender && this.currentManifest) {
       this.renderLayerControls(this.currentManifest);
     }
     if (!options.suppressSync) {
@@ -242,6 +293,49 @@ export class AppShell {
         checked,
       });
     }
+  }
+
+  setAllLayerVisibility(checked) {
+    if (!this.currentManifest) {
+      return;
+    }
+
+    for (const layer of this.currentManifest.layers) {
+      this.setLayerVisibilityState(layer.id, checked, {
+        suppressRender: true,
+        suppressSync: true,
+      });
+      this.publishToggle({
+        sectionId: this.currentManifest.id,
+        layerId: layer.id,
+        target: "layer",
+        checked,
+      });
+    }
+    this.renderLayerControls(this.currentManifest);
+  }
+
+  setAllLayerLabels(checked) {
+    if (!this.currentManifest) {
+      return;
+    }
+
+    for (const layer of this.currentManifest.layers) {
+      if (!layer.labelData) {
+        continue;
+      }
+      this.setLayerLabelState(layer.id, checked, {
+        suppressRender: true,
+        suppressSync: true,
+      });
+      this.publishToggle({
+        sectionId: this.currentManifest.id,
+        layerId: layer.id,
+        target: "labels",
+        checked,
+      });
+    }
+    this.renderLayerControls(this.currentManifest);
   }
 
   handleStartLink() {

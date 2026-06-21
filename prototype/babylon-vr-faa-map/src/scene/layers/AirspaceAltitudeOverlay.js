@@ -5,6 +5,14 @@ const DEFAULT_MIN_THICKNESS_WORLD = 0.06;
 const TOP_OUTLINE_EPSILON = 0.003;
 const MAX_PROXY_POINTS_PER_PART = 96;
 const PROXY_SIMPLIFY_TOLERANCE_PX = 6;
+const INDICATOR_TEXTURE_WIDTH = 420;
+const INDICATOR_TEXTURE_HEIGHT = 176;
+const INDICATOR_WORLD_WIDTH = 0.58;
+const INDICATOR_LIFT_WORLD = 0.11;
+const INDICATOR_CONNECTOR_EPSILON = 0.012;
+const INDICATOR_TILT_RADIANS = Math.PI / 2 - 0.5;
+const INDICATOR_ROLL_RADIANS = Math.PI;
+const INDICATOR_FIXED_YAW_RADIANS = 0;
 
 export class AirspaceAltitudeOverlay {
   constructor(scene, parent, sectionMetrics, config = {}) {
@@ -148,8 +156,9 @@ export class AirspaceAltitudeOverlay {
     node.parent = this.root;
     node.setEnabled(false);
     let meshCount = 0;
+    const resources = [];
 
-    for (const region of regions) {
+    for (const [regionIndex, region] of regions.entries()) {
       const floorFt = Number(region.floorFt ?? 0);
       const ceilingFt = Number(region.proxyCeilingFt ?? region.ceilingFt ?? 0);
       const baseY = floorFt * this.config.worldUnitsPerFoot;
@@ -159,6 +168,8 @@ export class AirspaceAltitudeOverlay {
       );
       const height = topY - baseY;
       const color = altitudeColorForRegion(region);
+      const indicatorParts = [];
+      let regionMeshCount = 0;
 
       for (const [partIndex, rawPart] of (region.parts ?? []).entries()) {
         const part = simplifyPolygonPoints(rawPart);
@@ -166,6 +177,7 @@ export class AirspaceAltitudeOverlay {
         if (points2d.length < 3) {
           continue;
         }
+        indicatorParts.push(part);
 
         const builder = new BABYLON.PolygonMeshBuilder(
           `airspace-altitude-${entryKey}-${region.id}-${partIndex}`,
@@ -180,6 +192,7 @@ export class AirspaceAltitudeOverlay {
         volume.renderingGroupId = 2;
         volume.material = this.getVolumeMaterial(color);
         meshCount += 1;
+        regionMeshCount += 1;
 
         const topOutlinePoints = part.map((point) =>
           pixelsToWorldPoint(this.sectionMetrics, point[0], point[1], topY + TOP_OUTLINE_EPSILON),
@@ -197,6 +210,16 @@ export class AirspaceAltitudeOverlay {
           topOutline.alpha = 0.95;
           topOutline.renderingGroupId = 2;
           meshCount += 1;
+          regionMeshCount += 1;
+        }
+      }
+
+      if (regionMeshCount) {
+        const indicator = this.createHeightIndicator(entryKey, region, indicatorParts, topY, color, regionIndex);
+        if (indicator) {
+          indicator.node.parent = node;
+          resources.push(...indicator.resources);
+          meshCount += indicator.meshCount;
         }
       }
     }
@@ -206,7 +229,53 @@ export class AirspaceAltitudeOverlay {
       return null;
     }
 
-    return { node };
+    return { node, resources };
+  }
+
+  createHeightIndicator(entryKey, region, parts, topY, color, regionIndex) {
+    const anchor = representativePointForRegion(this.sectionMetrics, region, parts, topY + INDICATOR_CONNECTOR_EPSILON);
+    if (!anchor) {
+      return null;
+    }
+
+    const labelPosition = anchor.clone();
+    const stagger = indicatorStagger(regionIndex);
+    labelPosition.x += stagger.x;
+    labelPosition.y += INDICATOR_LIFT_WORLD + stagger.y;
+    labelPosition.z += stagger.z;
+
+    const { texture, material } = createIndicatorMaterial(this.scene, region, color);
+    const labelHeight = INDICATOR_WORLD_WIDTH * (INDICATOR_TEXTURE_HEIGHT / INDICATOR_TEXTURE_WIDTH);
+    const plane = BABYLON.MeshBuilder.CreatePlane(
+      `airspace-altitude-indicator-${entryKey}-${region.id}`,
+      { width: INDICATOR_WORLD_WIDTH, height: labelHeight },
+      this.scene,
+    );
+    plane.position.copyFrom(labelPosition);
+    plane.rotationQuaternion = fixedIndicatorQuaternion();
+    plane.isPickable = false;
+    plane.renderingGroupId = 3;
+    plane.material = material;
+
+    const connector = BABYLON.MeshBuilder.CreateLines(
+      `airspace-altitude-indicator-line-${entryKey}-${region.id}`,
+      { points: [anchor, labelPosition] },
+      this.scene,
+    );
+    connector.isPickable = false;
+    connector.color = BABYLON.Color3.FromHexString(color.edge);
+    connector.alpha = 0.95;
+    connector.renderingGroupId = 3;
+
+    const indicatorNode = new BABYLON.TransformNode(`airspace-altitude-indicator-node-${entryKey}-${region.id}`, this.scene);
+    plane.parent = indicatorNode;
+    connector.parent = indicatorNode;
+
+    return {
+      node: indicatorNode,
+      meshCount: 2,
+      resources: [texture, material],
+    };
   }
 
   hideActiveEntry() {
@@ -220,6 +289,9 @@ export class AirspaceAltitudeOverlay {
   disposeCachedMeshes() {
     this.hideActiveEntry();
     for (const entry of this.regionMeshCache.values()) {
+      for (const resource of entry.resources ?? []) {
+        resource.dispose?.(false, true);
+      }
       entry.node.dispose(false, true);
     }
     this.regionMeshCache.clear();
@@ -243,6 +315,180 @@ function isAltitudeEligibleRegion(region) {
     return false;
   }
   return Number.isFinite(Number(region.floorFt)) && Number.isFinite(Number(region.proxyCeilingFt ?? region.ceilingFt));
+}
+
+function createIndicatorMaterial(scene, region, color) {
+  const texture = new BABYLON.DynamicTexture(
+    `airspace-altitude-indicator-texture-${region.id}`,
+    { width: INDICATOR_TEXTURE_WIDTH, height: INDICATOR_TEXTURE_HEIGHT },
+    scene,
+    false,
+  );
+  const context = texture.getContext();
+  context.clearRect(0, 0, INDICATOR_TEXTURE_WIDTH, INDICATOR_TEXTURE_HEIGHT);
+
+  context.fillStyle = "rgba(7, 18, 36, 0.88)";
+  context.strokeStyle = color.edge;
+  context.lineWidth = 5;
+  roundRect(context, 5, 5, INDICATOR_TEXTURE_WIDTH - 10, INDICATOR_TEXTURE_HEIGHT - 10, 22);
+  context.fill();
+  context.stroke();
+
+  const title = altitudeIndicatorTitle(region);
+  const floor = formatAltitudeValue(region.floorFt);
+  const ceiling = formatCeilingValue(region);
+  context.textAlign = "center";
+  context.textBaseline = "middle";
+  context.fillStyle = "#f8fbff";
+  context.font = `700 ${fitCanvasFont(context, title, 34, INDICATOR_TEXTURE_WIDTH - 42)}px Segoe UI`;
+  context.fillText(title, INDICATOR_TEXTURE_WIDTH / 2, 42);
+
+  context.fillStyle = "#dbeafe";
+  context.font = "600 28px Segoe UI";
+  context.fillText(`Floor: ${floor}`, INDICATOR_TEXTURE_WIDTH / 2, 92);
+  context.fillText(`Ceiling: ${ceiling}`, INDICATOR_TEXTURE_WIDTH / 2, 130);
+
+  texture.update(false);
+  texture.uScale = -1;
+  texture.uOffset = 1;
+
+  const material = new BABYLON.StandardMaterial(`airspace-altitude-indicator-material-${region.id}`, scene);
+  material.diffuseTexture = texture;
+  material.opacityTexture = texture;
+  material.emissiveColor = new BABYLON.Color3(1, 1, 1);
+  material.specularColor = BABYLON.Color3.Black();
+  material.backFaceCulling = false;
+  material.useAlphaFromDiffuseTexture = true;
+  material.transparencyMode = BABYLON.Material.MATERIAL_ALPHABLEND;
+  material.zOffset = -8;
+  return { texture, material };
+}
+
+function altitudeIndicatorTitle(region) {
+  const source = region.label ?? region.name ?? region.familyKey ?? region.id ?? "Airspace";
+  return `${source}`.replace(/^shelf-/i, "Shelf ");
+}
+
+function formatAltitudeValue(value) {
+  const numeric = Number(value);
+  return Number.isFinite(numeric) ? `${Math.round(numeric)} ft` : "unknown";
+}
+
+function formatCeilingValue(region) {
+  if (Number.isFinite(Number(region.ceilingFt))) {
+    return formatAltitudeValue(region.ceilingFt);
+  }
+  if (Number.isFinite(Number(region.proxyCeilingFt))) {
+    return `${formatAltitudeValue(region.proxyCeilingFt)} proxy`;
+  }
+  return "unknown";
+}
+
+function representativePointForRegion(sectionMetrics, region, parts, elevation) {
+  const anchor = region?.anchor;
+  if (
+    Array.isArray(anchor)
+    && anchor.length >= 2
+    && Number.isFinite(Number(anchor[0]))
+    && Number.isFinite(Number(anchor[1]))
+  ) {
+    return pixelsToWorldPoint(sectionMetrics, Number(anchor[0]), Number(anchor[1]), elevation);
+  }
+  return representativePointForParts(sectionMetrics, parts, elevation);
+}
+
+function representativePointForParts(sectionMetrics, parts, elevation) {
+  const largest = largestPart(parts);
+  if (!largest?.length) {
+    return null;
+  }
+  const bounds = largest.reduce((current, point) => ({
+    minX: Math.min(current.minX, point[0]),
+    minY: Math.min(current.minY, point[1]),
+    maxX: Math.max(current.maxX, point[0]),
+    maxY: Math.max(current.maxY, point[1]),
+  }), {
+    minX: Infinity,
+    minY: Infinity,
+    maxX: -Infinity,
+    maxY: -Infinity,
+  });
+  if (!Number.isFinite(bounds.minX) || !Number.isFinite(bounds.minY)) {
+    return null;
+  }
+  return pixelsToWorldPoint(
+    sectionMetrics,
+    (bounds.minX + bounds.maxX) * 0.5,
+    (bounds.minY + bounds.maxY) * 0.5,
+    elevation,
+  );
+}
+
+function largestPart(parts) {
+  let bestPart = null;
+  let bestArea = -1;
+  for (const part of parts ?? []) {
+    const area = Math.abs(ringArea(part));
+    if (area > bestArea) {
+      bestArea = area;
+      bestPart = part;
+    }
+  }
+  return bestPart;
+}
+
+function ringArea(points) {
+  let area = 0;
+  for (let index = 0; index < (points?.length ?? 0); index += 1) {
+    const current = points[index];
+    const next = points[(index + 1) % points.length];
+    area += (current[0] * next[1]) - (next[0] * current[1]);
+  }
+  return area * 0.5;
+}
+
+function indicatorStagger(index) {
+  const column = (index % 3) - 1;
+  const row = Math.floor(index / 3);
+  return {
+    x: column * 0.13,
+    y: row * 0.035,
+    z: ((row % 2) - 0.5) * 0.12,
+  };
+}
+
+function fixedIndicatorQuaternion() {
+  return BABYLON.Quaternion.RotationYawPitchRoll(
+    INDICATOR_FIXED_YAW_RADIANS,
+    INDICATOR_TILT_RADIANS,
+    INDICATOR_ROLL_RADIANS,
+  );
+}
+
+function roundRect(context, x, y, width, height, radius) {
+  context.beginPath();
+  context.moveTo(x + radius, y);
+  context.lineTo(x + width - radius, y);
+  context.quadraticCurveTo(x + width, y, x + width, y + radius);
+  context.lineTo(x + width, y + height - radius);
+  context.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  context.lineTo(x + radius, y + height);
+  context.quadraticCurveTo(x, y + height, x, y + height - radius);
+  context.lineTo(x, y + radius);
+  context.quadraticCurveTo(x, y, x + radius, y);
+  context.closePath();
+}
+
+function fitCanvasFont(context, text, initialSize, maxWidth) {
+  let size = initialSize;
+  while (size > 18) {
+    context.font = `700 ${size}px Segoe UI`;
+    if (context.measureText(text).width <= maxWidth) {
+      return size;
+    }
+    size -= 1;
+  }
+  return 18;
 }
 
 function shouldExpandFamilyByShelf(region) {

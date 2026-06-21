@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import sys
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -32,6 +33,27 @@ import build_stlouis_intersections_layer as stl_intersections
 import build_stlouis_navaids_layer as stl_navaids
 import build_stlouis_victors_layer as stl_victors
 import stlouis_geotiff as stl_geo
+import build_daytona_airports_layer as day_airports
+import build_daytona_airspaces_layer as day_airspace
+import build_daytona_intersections_layer as day_intersections
+import build_daytona_navaids_layer as day_navaids
+import build_daytona_victors_layer as day_victors
+import daytona_geotiff as day_geo
+from airspace_asset_contract import assert_valid_airspace_payloads, assert_valid_staged_section, stage_airspace_label_row
+
+STL_AIRPORTS_MODULE = stl_airports
+STL_AIRSPACE_MODULE = stl_airspace
+STL_INTERSECTIONS_MODULE = stl_intersections
+STL_NAVAIDS_MODULE = stl_navaids
+STL_VICTORS_MODULE = stl_victors
+STL_GEO_MODULE = stl_geo
+
+DAY_AIRPORTS_MODULE = day_airports
+DAY_AIRSPACE_MODULE = day_airspace
+DAY_INTERSECTIONS_MODULE = day_intersections
+DAY_NAVAIDS_MODULE = day_navaids
+DAY_VICTORS_MODULE = day_victors
+DAY_GEO_MODULE = day_geo
 
 
 VECTOR_OVERLAY_SCHEMA = "babylon-vector-overlay-v1"
@@ -42,8 +64,59 @@ BASE_TILE_SIZE = 1024
 BASE_PYRAMID_MIN_WIDTH = 1844
 
 
+def bind_builder_modules(
+    airports_module,
+    airspace_module,
+    intersections_module,
+    navaids_module,
+    victors_module,
+    geo_module,
+) -> None:
+    global stl_airports, stl_airspace, stl_intersections, stl_navaids, stl_victors, stl_geo
+    stl_airports = airports_module
+    stl_airspace = airspace_module
+    stl_intersections = intersections_module
+    stl_navaids = navaids_module
+    stl_victors = victors_module
+    stl_geo = geo_module
+
+
 def ensure_dir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
+
+
+def is_relative_to_path(path: Path, parent: Path) -> bool:
+    try:
+        path.relative_to(parent)
+        return True
+    except ValueError:
+        return False
+
+
+def new_base_raster_root(section_root: Path) -> Path:
+    resolved_section_root = section_root.resolve()
+    if not is_relative_to_path(resolved_section_root, SECTIONS_ROOT.resolve()):
+        raise RuntimeError(f"Refusing to create base tiles outside section data root: {resolved_section_root}")
+    version = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    return section_root / "rasters" / f"base-{version}"
+
+
+def save_image_atomic(image: Image.Image, path: Path, **save_options: Any) -> None:
+    ensure_dir(path.parent)
+    if not path.exists():
+        image.save(path, **save_options)
+        return
+
+    temp_path = path.with_name(f"{path.stem}.{os.getpid()}.tmp{path.suffix}")
+    try:
+        image.save(temp_path, **save_options)
+        os.replace(temp_path, path)
+    finally:
+        try:
+            if temp_path.exists():
+                temp_path.unlink()
+        except OSError:
+            pass
 
 
 def write_json(path: Path, payload: object) -> None:
@@ -367,7 +440,7 @@ def build_pyramid_level_sizes(width_px: int, height_px: int) -> list[tuple[int, 
 
 
 def build_stlouis_base_pyramid(section_root: Path) -> tuple[dict[str, Any], int, int, float, float]:
-    rasters_root = section_root / "rasters" / "base"
+    rasters_root = new_base_raster_root(section_root)
     ensure_dir(rasters_root)
 
     display_background = stl_geo.load_chart_background(stl_airspace.FULL_REGION)
@@ -400,7 +473,7 @@ def build_stlouis_base_pyramid(section_root: Path) -> tuple[dict[str, Any], int,
                     tile_y1 = min(level_height, tile_y0 + BASE_TILE_SIZE)
                     tile = level_image.crop((tile_x0, tile_y0, tile_x1, tile_y1))
                     tile_path = level_dir / f"tile_{col}_{row}.webp"
-                    tile.save(tile_path, format="WEBP", lossless=True, method=6)
+                    save_image_atomic(tile, tile_path, format="WEBP", lossless=True, method=6)
 
                     source_x0 = round((tile_x0 / level_width) * native_width)
                     source_y0 = round((tile_y0 / level_height) * native_height)
@@ -540,57 +613,11 @@ def build_stlouis_victor_labels(features: dict[str, object], scale_x: float, sca
 
 
 def build_stlouis_airspace_labels(features: dict[str, object], scale_x: float, scale_y: float) -> dict[str, object]:
-    items = []
-    for row in stl_airspace.compute_airspace_label_layout(features):
-        sx, sy = scale_xy(scale_x, scale_y, row["x"], row["y"])
-        item = {
-            "id": row["id"],
-            "selectionId": row.get("selectionId", row["id"]),
-            "x": compact_number(sx),
-            "y": compact_number(sy),
-            "lines": row["lines"],
-            "style": row["style"],
-            "priority": row["priority"],
-        }
-        if "anchorX" in row and "anchorY" in row:
-            anchor_x, anchor_y = scale_xy(scale_x, scale_y, row["anchorX"], row["anchorY"])
-            item["anchorX"] = compact_number(anchor_x)
-            item["anchorY"] = compact_number(anchor_y)
-        if "placementMode" in row:
-            item["placementMode"] = row["placementMode"]
-        if "elevation" in row:
-            item["elevation"] = compact_number(row["elevation"], digits=4)
-        if "connector" in row:
-            item["connector"] = bool(row["connector"])
-        if row.get("familyKey"):
-            item["familyKey"] = row["familyKey"]
-        items.append(item)
-
+    items = [
+        stage_airspace_label_row(row, scale_x, scale_y)
+        for row in stl_airspace.compute_airspace_label_layout(features)
+    ]
     items.sort(key=lambda row: row["priority"], reverse=True)
-    for item in items:
-        item_id = item["id"]
-        if item_id.startswith("special-"):
-            item["labelGroup"] = "special"
-            item["detailTier"] = "core"
-            continue
-        if item_id.startswith("shelf-"):
-            item["labelGroup"] = "shelf"
-            parts = item_id.split("-")
-            if len(parts) >= 3:
-                item["airspaceType"] = parts[1]
-            item["detailTier"] = "core"
-            continue
-
-        if "-CLASS_" in item_id:
-            airspace_type = item_id.split("-", 1)[1]
-            item["labelGroup"] = "airfield"
-            item["airspaceType"] = airspace_type
-            item["detailTier"] = "core"
-            continue
-
-        item["labelGroup"] = "other"
-        item["detailTier"] = "core"
-
     class_e_ranked = sorted(
         (
             item for item in items
@@ -602,9 +629,7 @@ def build_stlouis_airspace_labels(features: dict[str, object], scale_x: float, s
         ),
         reverse=True,
     )
-    core_class_e_ids = {item["id"] for item in class_e_ranked[:88]}
-    for item in class_e_ranked:
-        item["detailTier"] = "core" if item["id"] in core_class_e_ids else "extended"
+    core_class_e_ids = {item["id"] for item in class_e_ranked if item["detailTier"] == "core"}
 
     return {
         "schema": LABEL_SCHEMA,
@@ -735,12 +760,11 @@ def build_stlouis_airspace_overlay(
             "id": region["id"],
             "kind": region["kind"],
             "airspaceType": region["airspaceType"],
+            "familyKey": region["familyKey"],
             "priority": compact_number(region["priority"]),
             "anchor": compact_point(anchor_x, anchor_y, digits=2),
             "parts": scaled_parts,
         }
-        if region.get("familyKey"):
-            region_payload["familyKey"] = region["familyKey"]
         if region.get("floorFt") is not None and region.get("proxyCeilingFt") is not None:
             region_payload["floorFt"] = int(region["floorFt"])
             region_payload["proxyCeilingFt"] = int(region["proxyCeilingFt"])
@@ -1108,8 +1132,14 @@ def build_stlouis_victors_overlay(
     return payload
 
 
-def build_stlouis_section() -> dict[str, object]:
-    section_root = SECTIONS_ROOT / "stlouis"
+def build_bound_section(
+    *,
+    section_id: str,
+    title: str,
+    description: str,
+    chart_source: str,
+) -> dict[str, object]:
+    section_root = SECTIONS_ROOT / section_id
     asset_version = datetime.now(timezone.utc).isoformat()
     ensure_dir(section_root / "rasters")
     ensure_dir(section_root / "labels")
@@ -1129,17 +1159,25 @@ def build_stlouis_section() -> dict[str, object]:
     navaids_overlay = build_stlouis_navaids_overlay(navaids_features, pixel_width, pixel_height, scale_x, scale_y)
     victors_overlay = build_stlouis_victors_overlay(victors_features, pixel_width, pixel_height, scale_x, scale_y)
 
-    write_json(section_root / "overlays" / "airspace.vector.json", airspace_overlay)
-    write_json(section_root / "overlays" / "airports.vector.json", airports_overlay)
-    write_json(section_root / "overlays" / "intersections.vector.json", intersections_overlay)
-    write_json(section_root / "overlays" / "navaids.vector.json", navaids_overlay)
-    write_json(section_root / "overlays" / "victors.vector.json", victors_overlay)
-
     airspace_labels = build_stlouis_airspace_labels(airspace_features, scale_x, scale_y)
     airport_labels = build_stlouis_airport_labels(airports_features, scale_x, scale_y)
     intersection_labels = build_stlouis_intersection_labels(intersections_features, scale_x, scale_y)
     navaid_labels = build_stlouis_navaid_labels(navaids_features, scale_x, scale_y)
     victor_labels = build_stlouis_victor_labels(victors_features, scale_x, scale_y)
+
+    assert_valid_airspace_payloads(
+        section_id,
+        airspace_labels,
+        airspace_overlay,
+        pixel_width,
+        pixel_height,
+    )
+
+    write_json(section_root / "overlays" / "airspace.vector.json", airspace_overlay)
+    write_json(section_root / "overlays" / "airports.vector.json", airports_overlay)
+    write_json(section_root / "overlays" / "intersections.vector.json", intersections_overlay)
+    write_json(section_root / "overlays" / "navaids.vector.json", navaids_overlay)
+    write_json(section_root / "overlays" / "victors.vector.json", victors_overlay)
 
     write_json(section_root / "labels" / "airspace.json", airspace_labels)
     write_json(section_root / "labels" / "airports.json", airport_labels)
@@ -1147,20 +1185,19 @@ def build_stlouis_section() -> dict[str, object]:
     write_json(section_root / "labels" / "navaids.json", navaid_labels)
     write_json(section_root / "labels" / "victors.json", victor_labels)
 
-    airspace_total_labels = int(airspace_labels.get("stats", {}).get("totalItems", len(airspace_labels.get("items", []))))
 
     manifest = {
         "schema": MANIFEST_SCHEMA,
-        "id": "stlouis",
-        "title": "St. Louis Sectional",
-        "description": "GeoTIFF-backed primary section with vector overlays and VR-native labels.",
+        "id": section_id,
+        "title": title,
+        "description": description,
         "quality": "primary",
         "assetVersion": asset_version,
         "chart": {
             "pixelWidth": pixel_width,
             "pixelHeight": pixel_height,
             "lonLatBbox": list(stl_airspace.FULL_REGION),
-            "source": "St Louis SEC.tif",
+            "source": chart_source,
             "resolutionStrategy": "full-resolution GeoTIFF crop with multi-scale tile pyramid plus zoom-safe world-geometry overlays",
         },
         "world": {"widthUnits": 12.5},
@@ -1174,30 +1211,24 @@ def build_stlouis_section() -> dict[str, object]:
                 "labelData": "labels/airspace.json",
                 "defaultVisible": False,
                 "defaultLabels": False,
-                "maxVisibleLabels": 110,
-                "extendedMaxVisibleLabels": airspace_total_labels,
                 "altitudeVolume": {
                     "enabledByDefault": False,
                     "worldUnitsPerFoot": 0.00008,
                     "openEndedCeilingFt": stl_airspace.OPEN_ENDED_PROXY_CEILING_FT,
                     "minThicknessWorldUnits": 0.06,
                 },
-                "zoomLabelThresholds": [
-                    {"radius": 14.0, "visibleLabels": 132, "includeExtended": False},
-                    {"radius": 10.0, "visibleLabels": 168, "includeExtended": True},
-                    {"radius": 7.0, "visibleLabels": min(260, airspace_total_labels), "includeExtended": True},
-                ],
                 "polygonStrokeMerge": True,
                 "strokeRenderMode": "lines",
             },
-            {"id": "airports", "title": "Airports", "renderMode": "vector", "overlayData": "overlays/airports.vector.json", "labelData": "labels/airports.json", "defaultVisible": False, "defaultLabels": False, "maxVisibleLabels": 90, "materialMode": "opaque"},
-            {"id": "navaids", "title": "Navaids", "renderMode": "vector", "overlayData": "overlays/navaids.vector.json", "labelData": "labels/navaids.json", "defaultVisible": False, "defaultLabels": False, "maxVisibleLabels": 95, "materialMode": "opaque", "polygonStrokeMerge": True},
-            {"id": "intersections", "title": "Intersections", "renderMode": "vector", "overlayData": "overlays/intersections.vector.json", "labelData": "labels/intersections.json", "defaultVisible": False, "defaultLabels": False, "maxVisibleLabels": 120},
-            {"id": "victors", "title": "Victor Airways", "renderMode": "vector", "overlayData": "overlays/victors.vector.json", "labelData": "labels/victors.json", "defaultVisible": False, "defaultLabels": False, "maxVisibleLabels": 80, "strokePresentation": "tube", "strokeSegmentMerge": False},
+            {"id": "airports", "title": "Airports", "renderMode": "vector", "overlayData": "overlays/airports.vector.json", "labelData": "labels/airports.json", "defaultVisible": False, "defaultLabels": False, "materialMode": "opaque"},
+            {"id": "navaids", "title": "Navaids", "renderMode": "vector", "overlayData": "overlays/navaids.vector.json", "labelData": "labels/navaids.json", "defaultVisible": False, "defaultLabels": False, "materialMode": "opaque", "polygonStrokeMerge": True},
+            {"id": "intersections", "title": "Intersections", "renderMode": "vector", "overlayData": "overlays/intersections.vector.json", "labelData": "labels/intersections.json", "defaultVisible": False, "defaultLabels": False},
+            {"id": "victors", "title": "Victor Airways", "renderMode": "vector", "overlayData": "overlays/victors.vector.json", "labelData": "labels/victors.json", "defaultVisible": False, "defaultLabels": False, "strokePresentation": "tube", "strokeSegmentMerge": False},
         ],
     }
 
     write_json(section_root / "manifest.json", manifest)
+    assert_valid_staged_section(section_root)
     return {
         "id": manifest["id"],
         "title": manifest["title"],
@@ -1206,9 +1237,43 @@ def build_stlouis_section() -> dict[str, object]:
     }
 
 
+def build_daytona_section() -> dict[str, object]:
+    bind_builder_modules(
+        DAY_AIRPORTS_MODULE,
+        DAY_AIRSPACE_MODULE,
+        DAY_INTERSECTIONS_MODULE,
+        DAY_NAVAIDS_MODULE,
+        DAY_VICTORS_MODULE,
+        DAY_GEO_MODULE,
+    )
+    return build_bound_section(
+        section_id="daytona",
+        title="Daytona Beach Area",
+        description="Jacksonville sectional crop covering the Daytona Beach / Orlando / Tampa review area.",
+        chart_source="Jacksonville SEC.tif",
+    )
+
+
+def build_stlouis_section() -> dict[str, object]:
+    bind_builder_modules(
+        STL_AIRPORTS_MODULE,
+        STL_AIRSPACE_MODULE,
+        STL_INTERSECTIONS_MODULE,
+        STL_NAVAIDS_MODULE,
+        STL_VICTORS_MODULE,
+        STL_GEO_MODULE,
+    )
+    return build_bound_section(
+        section_id="stlouis",
+        title="St. Louis Sectional",
+        description="GeoTIFF-backed primary section with vector overlays and VR-native labels.",
+        chart_source="St Louis SEC.tif",
+    )
+
+
 def main() -> None:
     ensure_dir(SECTIONS_ROOT)
-    sections = [build_stlouis_section()]
+    sections = [build_daytona_section(), build_stlouis_section()]
     write_json(
         DATA_ROOT / "index.json",
         {

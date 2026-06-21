@@ -1,0 +1,445 @@
+{
+  "schema": "babylon-vector-overlay-v1",
+  "layerId": "navaids",
+  "description": "Vector navaid symbols for VR rendering.",
+  "coordinateSpace": {
+    "kind": "chart-pixels",
+    "width": 7295,
+    "height": 4706
+  },
+  "primitives": {
+    "polygons": [
+      {
+        "id": "GNV-outer",
+        "points": [
+          [
+            3277.98,
+            350.67
+          ],
+          [
+            3255.51,
+            363.64
+          ],
+          [
+            3233.04,
+            350.67
+          ],
+          [
+            3233.04,
+            324.72
+          ],
+          [
+            3255.51,
+            311.75
+          ],
+          [
+            3277.98,
+            324.72
+          ]
+        ],
+        "fill": "#ffffff",
+        "fillAlpha": 1.0,
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 5.738,
+        "strokeAlpha": 1.0
+      },
+      {
+        "id": "GNV-inner",
+        "points": [
+          [
+            3255.51,
+            348.17
+          ],
+          [
+            3246.44,
+            332.45
+          ],
+          [
+            3264.58,
+            332.45
+          ]
+        ],
+        "fill": "#0f4c81",
+        "fillAlpha": 1.0
+      },
+      {
+        "id": "LAL-outer",
+        "points": [
+          [
+            3869.32,
+            4813.14
+          ],
+          [
+            3846.84,
+            4826.11
+          ],
+          [
+            3824.37,
+            4813.14
+          ],
+          [
+            3824.37,
+            4787.19
+          ],
+          [
+            3846.84,
+            4774.22
+          ],
+          [
+            3869.32,
+            4787.19
+          ]
+        ],
+        "fill": "#ffffff",
+        "fillAlpha": 1.0,
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 5.738,
+        "strokeAlpha": 1.0
+      },
+      {
+        "id": "LAL-inner",
+        "points": [
+          [
+            3846.84,
+            4810.64
+          ],
+          [
+            3837.77,
+            4794.92
+          ],
+          [
+            3855.92,
+            4794.92
+          ]
+        ],
+        "fill": "#0f4c81",
+        "fillAlpha": 1.0
+      },
+      {
+        "id": "OCF-outer",
+        "points": [
+          [
+            3382.03,
+            1697.25
+          ],
+          [
+            3359.56,
+            1710.22
+          ],
+          [
+            3337.09,
+            1697.25
+          ],
+          [
+            3337.09,
+            1671.3
+          ],
+          [
+            3359.56,
+            1658.33
+          ],
+          [
+            3382.03,
+            1671.3
+          ]
+        ],
+        "fill": "#ffffff",
+        "fillAlpha": 1.0,
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 5.738,
+        "strokeAlpha": 1.0
+      },
+      {
+        "id": "OCF-inner",
+        "points": [
+          [
+            3359.56,
+            1694.75
+          ],
+          [
+            3350.48,
+            1679.04
+          ],
+          [
+            3368.63,
+            1679.04
+          ]
+        ],
+        "fill": "#0f4c81",
+        "fillAlpha": 1.0
+      },
+      {
+        "id": "OMN-outer",
+        "points": [
+          [
+            5936.02,
+            1361.33
+          ],
+          [
+            5913.55,
+            1374.3
+          ],
+          [
+            5891.08,
+            1361.33
+          ],
+          [
+            5891.08,
+            1335.38
+          ],
+          [
+            5913.55,
+            1322.41
+          ],
+          [
+            5936.02,
+            1335.38
+          ]
+        ],
+        "fill": "#ffffff",
+        "fillAlpha": 1.0,
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 5.738,
+        "strokeAlpha": 1.0
+      },
+      {
+        "id": "OMN-inner",
+        "points": [
+          [
+            5913.55,
+            1358.83
+          ],
+          [
+            5904.48,
+            1343.11
+          ],
+          [
+            5922.63,
+            1343.11
+          ]
+        ],
+        "fill": "#0f4c81",
+        "fillAlpha": 1.0
+      },
+      {
+        "id": "ORL-outer",
+        "points": [
+          [
+            5437.14,
+            3353.69
+          ],
+          [
+            5414.67,
+            3366.66
+          ],
+          [
+            5392.19,
+            3353.69
+          ],
+          [
+            5392.19,
+            3327.74
+          ],
+          [
+            5414.67,
+            3314.77
+          ],
+          [
+            5437.14,
+            3327.74
+          ]
+        ],
+        "fill": "#ffffff",
+        "fillAlpha": 1.0,
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 5.738,
+        "strokeAlpha": 1.0
+      },
+      {
+        "id": "ORL-inner",
+        "points": [
+          [
+            5414.67,
+            3351.19
+          ],
+          [
+            5405.59,
+            3335.47
+          ],
+          [
+            5423.74,
+            3335.47
+          ]
+        ],
+        "fill": "#0f4c81",
+        "fillAlpha": 1.0
+      },
+      {
+        "id": "MLB-outer",
+        "points": [
+          [
+            7065.53,
+            4484.06
+          ],
+          [
+            7043.06,
+            4497.03
+          ],
+          [
+            7020.59,
+            4484.06
+          ],
+          [
+            7020.59,
+            4458.11
+          ],
+          [
+            7043.06,
+            4445.14
+          ],
+          [
+            7065.53,
+            4458.11
+          ]
+        ],
+        "fill": "#ffffff",
+        "fillAlpha": 1.0,
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 5.738,
+        "strokeAlpha": 1.0
+      },
+      {
+        "id": "MLB-inner",
+        "points": [
+          [
+            7034.83,
+            4462.85
+          ],
+          [
+            7051.29,
+            4462.85
+          ],
+          [
+            7051.29,
+            4479.32
+          ],
+          [
+            7034.83,
+            4479.32
+          ]
+        ],
+        "fill": "#0f4c81",
+        "fillAlpha": 1.0
+      },
+      {
+        "id": "COF-outer",
+        "points": [
+          [
+            7093.79,
+            4149.23
+          ],
+          [
+            7072.19,
+            4111.81
+          ],
+          [
+            7115.4,
+            4111.81
+          ]
+        ],
+        "fill": "#ffffff",
+        "fillAlpha": 1.0,
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 5.239,
+        "strokeAlpha": 1.0
+      },
+      {
+        "id": "CTY-outer",
+        "points": [
+          [
+            1481.07,
+            596.66
+          ],
+          [
+            1459.47,
+            559.24
+          ],
+          [
+            1502.68,
+            559.24
+          ]
+        ],
+        "fill": "#ffffff",
+        "fillAlpha": 1.0,
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 5.239,
+        "strokeAlpha": 1.0
+      }
+    ],
+    "strokes": [],
+    "circles": [
+      {
+        "id": "COF-dot",
+        "center": [
+          7093.792,
+          4124.28
+        ],
+        "radiusPx": 5.988,
+        "fill": "#0f4c81",
+        "stroke": null,
+        "strokeWidthPx": 0.0,
+        "alpha": 1.0
+      },
+      {
+        "id": "CTY-dot",
+        "center": [
+          1481.075,
+          571.712
+        ],
+        "radiusPx": 5.988,
+        "fill": "#0f4c81",
+        "stroke": null,
+        "strokeWidthPx": 0.0,
+        "alpha": 1.0
+      },
+      {
+        "id": "PI-outer",
+        "center": [
+          2245.607,
+          4771.805
+        ],
+        "radiusPx": 20.458,
+        "fill": "#ffffff",
+        "stroke": "#8b1e6d",
+        "strokeWidthPx": 5.239,
+        "alpha": 1.0
+      },
+      {
+        "id": "PI-dot",
+        "center": [
+          2245.607,
+          4771.805
+        ],
+        "radiusPx": 6.986,
+        "fill": "#8b1e6d",
+        "stroke": null,
+        "strokeWidthPx": 0.0,
+        "alpha": 1.0
+      }
+    ],
+    "markers": [],
+    "runwayBars": []
+  },
+  "interactionRegions": [],
+  "stats": {
+    "navaids": 9,
+    "byType": {
+      "NDB": 1,
+      "TACAN": 2,
+      "VOR/DME": 1,
+      "VORTAC": 5
+    },
+    "polygons": 14,
+    "circles": 4
+  }
+}

@@ -1,4 +1,4 @@
-import { AppShell } from "./app/AppShell.js?v=20260521-default-base-xr-gain-v1";
+import { AppShell } from "./app/AppShell.js?v=20260620-panel-toggle-v1";
 
 const shell = new AppShell({
   canvas: document.getElementById("renderCanvas"),

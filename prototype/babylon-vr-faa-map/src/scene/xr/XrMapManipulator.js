@@ -1,6 +1,6 @@
 const XR_STATES = BABYLON.WebXRState ?? {};
 
-const MIN_MAP_SCALE = 0.45;
+const MIN_MAP_SCALE = 0.2;
 const MAX_MAP_SCALE = 2.75;
 const ONE_HAND_TRANSLATION_GAIN = 3.4;
 const TWO_HAND_TRANSLATION_GAIN = 3.0;
@@ -8,10 +8,11 @@ const TWO_HAND_SCALE_GAIN = 1.8;
 const TWO_HAND_ROTATION_GAIN = 1.55;
 
 export class XrMapManipulator {
-  constructor(scene, xrHelper, mapRoot) {
+  constructor(scene, xrHelper, mapRoot, inputSourceVisualManager = null) {
     this.scene = scene;
     this.xrHelper = xrHelper;
     this.mapRoot = mapRoot;
+    this.inputSourceVisualManager = inputSourceVisualManager;
     this.controllers = new Map();
     this.activeGrabs = new Map();
     this.oneHandGesture = null;
@@ -81,6 +82,9 @@ export class XrMapManipulator {
   }
 
   beginGrab(entry) {
+    if (!this.isActiveController(entry.controller)) {
+      return;
+    }
     const anchor = controllerAnchor(entry.controller);
     if (!anchor) {
       return;
@@ -161,6 +165,8 @@ export class XrMapManipulator {
       return;
     }
 
+    this.dropInactiveGrabs();
+
     if (this.activeGrabs.size >= 2 && this.twoHandGesture) {
       this.updateTwoHandGesture();
       return;
@@ -231,6 +237,30 @@ export class XrMapManipulator {
   isInXr() {
     const state = this.xrHelper?.baseExperience?.state;
     return state === XR_STATES.IN_XR || state === XR_STATES.ENTERING_XR;
+  }
+
+  isActiveController(controller) {
+    return !this.inputSourceVisualManager || this.inputSourceVisualManager.isActiveController(controller);
+  }
+
+  dropInactiveGrabs() {
+    let changed = false;
+    for (const entry of [...this.activeGrabs.values()]) {
+      if (!this.isActiveController(entry.controller)) {
+        this.activeGrabs.delete(entry.controller.uniqueId);
+        changed = true;
+      }
+    }
+    if (!changed) {
+      return;
+    }
+    this.twoHandGesture = null;
+    if (this.activeGrabs.size === 1) {
+      const [remaining] = this.activeGrabs.values();
+      this.establishOneHandGesture(remaining);
+      return;
+    }
+    this.oneHandGesture = null;
   }
 
   dispose() {

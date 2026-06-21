@@ -24,7 +24,9 @@ __pycache__/
 /indy_outputs_vfr/
 /indy_screenshot_outputs/
 /paper_pages/
-/skill_updates/
+/skill_updates/*
+!/skill_updates/section-build/
+!/skill_updates/airspace-layer-build/
 /stlouis_airports_outputs/
 /stlouis_airspaces_outputs/
 /stlouis_intersections_outputs/

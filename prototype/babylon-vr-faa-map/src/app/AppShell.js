@@ -1,5 +1,5 @@
 import { loadSectionIndex, loadSectionManifest } from "../data/sectionRepository.js";
-import { createMapScene } from "../scene/MapScene.js?v=20260521-default-base-xr-gain-v1";
+import { createMapScene } from "../scene/MapScene.js?v=20260620-panel-toggle-v1";
 import {
   BroadcastLinkSession,
   generateSessionId,
@@ -49,6 +49,9 @@ export class AppShell {
           this.publishSelection(selection);
         }
       };
+      this.unsubscribeXrAvailability = this.sceneController.onXrAvailabilityChange?.(() => {
+        this.syncXrState();
+      });
       this.syncXrState();
       this.elements.linkSessionInput.value = readSavedSessionId() || "stlouis-review";
 
@@ -80,6 +83,12 @@ export class AppShell {
   syncXrState() {
     const supported = this.sceneController?.hasXr();
     const availability = this.sceneController?.getXrAvailability?.();
+    if (availability?.initializing) {
+      this.elements.xrHint.textContent = availability.reason;
+      this.elements.enterVrButton.disabled = true;
+      this.elements.enterVrButton.textContent = "Preparing VR";
+      return;
+    }
     this.elements.xrHint.textContent = supported
       ? "Immersive VR is available. Put on a headset and use Enter VR."
       : availability?.reason ?? "WebXR immersive-vr is not available in this browser/session.";
@@ -148,6 +157,7 @@ export class AppShell {
     const container = this.elements.layerControls;
     container.innerHTML = "";
     const nextState = new Map();
+    const layerCards = [];
 
     for (const layer of manifest.layers) {
       const existingState = this.layerUiState.get(layer.id);
@@ -183,9 +193,59 @@ export class AppShell {
 
       card.append(header, visibilityRow, labelRow);
 
-      container.append(card);
+      layerCards.push(card);
     }
     this.layerUiState = nextState;
+    container.append(this.buildMasterControlCard(manifest), ...layerCards);
+  }
+
+  buildMasterControlCard(manifest) {
+    const card = document.createElement("section");
+    card.className = "layer-card master-control-card";
+
+    const header = document.createElement("header");
+    header.innerHTML = "<h2>Master Control</h2><p>All layers</p>";
+
+    const mapRow = this.buildMasterControlRow(
+      "Maps",
+      () => this.setAllLayerVisibility(true),
+      () => this.setAllLayerVisibility(false),
+    );
+
+    const hasLabelLayers = manifest.layers.some((layer) => Boolean(layer.labelData));
+    const labelRow = this.buildMasterControlRow(
+      "Labels",
+      () => this.setAllLayerLabels(true),
+      () => this.setAllLayerLabels(false),
+      !hasLabelLayers,
+    );
+
+    card.append(header, mapRow, labelRow);
+    return card;
+  }
+
+  buildMasterControlRow(label, onSelectAll, onDeselectAll, disabled = false) {
+    const row = document.createElement("div");
+    row.className = "master-control-row";
+
+    const text = document.createElement("span");
+    text.textContent = label;
+
+    const selectButton = document.createElement("button");
+    selectButton.type = "button";
+    selectButton.textContent = "Select All";
+    selectButton.disabled = disabled;
+    selectButton.addEventListener("click", onSelectAll);
+
+    const deselectButton = document.createElement("button");
+    deselectButton.type = "button";
+    deselectButton.textContent = "Deselect All";
+    deselectButton.disabled = disabled;
+    deselectButton.className = "button-secondary";
+    deselectButton.addEventListener("click", onDeselectAll);
+
+    row.append(text, selectButton, deselectButton);
+    return row;
   }
 
   buildToggleRow(label, checked, onChange) {
@@ -230,10 +290,12 @@ export class AppShell {
     layerState.layerVisible = checked;
     this.sceneController.layerManager.setLayerVisible(layerId, checked);
     this.sceneController.layerManager.setLabelVisible(layerId, layerState.labelsEnabled);
-    if (this.currentManifest) {
+    if (!options.suppressRender && this.currentManifest) {
       this.renderLayerControls(this.currentManifest);
     }
-    this.syncVrControlPanel();
+    if (!options.suppressPanelSync) {
+      this.syncVrControlPanel();
+    }
     if (!options.suppressSync) {
       this.publishToggle({
         sectionId: this.currentManifest?.id,
@@ -255,10 +317,12 @@ export class AppShell {
     }
     layerState.labelsEnabled = checked;
     this.sceneController.layerManager.setLabelVisible(layerId, checked);
-    if (this.currentManifest) {
+    if (!options.suppressRender && this.currentManifest) {
       this.renderLayerControls(this.currentManifest);
     }
-    this.syncVrControlPanel();
+    if (!options.suppressPanelSync) {
+      this.syncVrControlPanel();
+    }
     if (!options.suppressSync) {
       this.publishToggle({
         sectionId: this.currentManifest?.id,
@@ -292,12 +356,61 @@ export class AppShell {
 
     this.sceneController.setVrControlPanel({
       title: "St. Louis Layers",
-      subtitle: "Left wrist panel · stick click toggles",
+      subtitle: "Left wrist panel - stick click toggles",
       layers,
       onToggleLayerVisible: (layerId, checked) => this.updateLayerVisibility(layerId, checked),
       onToggleLabels: (layerId, checked) => this.updateLayerLabels(layerId, checked),
       onToggleAirspaceAltitude: (checked) => this.setAirspaceAltitudeMode(checked),
+      onSetAllLayerVisible: (checked) => this.setAllLayerVisibility(checked),
+      onSetAllLabels: (checked) => this.setAllLayerLabels(checked),
     });
+  }
+
+  setAllLayerVisibility(checked) {
+    if (!this.currentManifest) {
+      return;
+    }
+
+    for (const layer of this.currentManifest.layers) {
+      this.setLayerVisibilityState(layer.id, checked, {
+        suppressRender: true,
+        suppressPanelSync: true,
+        suppressSync: true,
+      });
+      this.publishToggle({
+        sectionId: this.currentManifest.id,
+        layerId: layer.id,
+        target: "layer",
+        checked,
+      });
+    }
+    this.renderLayerControls(this.currentManifest);
+    this.syncVrControlPanel();
+  }
+
+  setAllLayerLabels(checked) {
+    if (!this.currentManifest) {
+      return;
+    }
+
+    for (const layer of this.currentManifest.layers) {
+      if (!layer.labelData) {
+        continue;
+      }
+      this.setLayerLabelState(layer.id, checked, {
+        suppressRender: true,
+        suppressPanelSync: true,
+        suppressSync: true,
+      });
+      this.publishToggle({
+        sectionId: this.currentManifest.id,
+        layerId: layer.id,
+        target: "labels",
+        checked,
+      });
+    }
+    this.renderLayerControls(this.currentManifest);
+    this.syncVrControlPanel();
   }
 
   setAirspaceAltitudeMode(enabled) {

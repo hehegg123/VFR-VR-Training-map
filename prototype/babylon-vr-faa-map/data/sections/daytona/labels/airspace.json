@@ -1,0 +1,1244 @@
+{
+  "schema": "babylon-vr-labels-v1",
+  "items": [
+    {
+      "id": "MCO-CLASS_B",
+      "selectionId": "MCO-CLASS_B",
+      "x": 5503.995,
+      "y": 3650.873,
+      "lines": [
+        "ORLANDO INTL",
+        "FAA MCO  RWY 18L/36R",
+        "Class B"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "DAB-CLASS_C",
+      "selectionId": "DAB-CLASS_C",
+      "x": 6041.357,
+      "y": 1670.035,
+      "lines": [
+        "DAYTONA BEACH INTL",
+        "FAA DAB  RWY 07L/25R",
+        "Class C"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DAB-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "interior"
+    },
+    {
+      "id": "SFB-CLASS_C",
+      "selectionId": "SFB-CLASS_C",
+      "x": 5635.833,
+      "y": 2696.975,
+      "lines": [
+        "ORLANDO SANFORD INTL",
+        "FAA SFB  RWY 09L/27R",
+        "Class C",
+        "C 0630-2300; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SFB-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "interior"
+    },
+    {
+      "id": "BKV-CLASS_D",
+      "selectionId": "BKV-CLASS_D",
+      "x": 2826.818,
+      "y": 3523.664,
+      "lines": [
+        "BROOKSVILLE-TAMPA BAY RGNL",
+        "FAA BKV  RWY 09/27",
+        "Class D",
+        "D 0700-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BKV-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "COF-CLASS_D",
+      "selectionId": "COF-CLASS_D",
+      "x": 6947.671,
+      "y": 4116.877,
+      "lines": [
+        "PATRICK SPACE FORCE BASE",
+        "FAA COF  RWY 03/21",
+        "Class D",
+        "D 1300-0500Z++ M-F; S-S CLSD; HOL CLSD, AIRFIELD CLSD THIRD FRI OF MONTH; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "COF-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
+      "anchorX": 7097.998,
+      "anchorY": 4131.227,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "EVB-CLASS_D",
+      "selectionId": "EVB-CLASS_D",
+      "x": 6430.468,
+      "y": 1992.896,
+      "lines": [
+        "NEW SMYRNA BEACH MUNI (JACK BOLT FLD)",
+        "FAA EVB  RWY 07/25",
+        "Class D",
+        "D 0700-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "EVB-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
+      "anchorX": 6294.656,
+      "anchorY": 1992.893,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "FIN-CLASS_D",
+      "selectionId": "FIN-CLASS_D",
+      "x": 5693.099,
+      "y": 926.316,
+      "lines": [
+        "FLAGLER EXEC",
+        "FAA FIN  RWY 11/29",
+        "Class D",
+        "D 0600-2000; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "FIN-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "GNV-CLASS_D",
+      "selectionId": "GNV-CLASS_D",
+      "x": 3258.227,
+      "y": 343.081,
+      "lines": [
+        "GAINESVILLE RGNL",
+        "FAA GNV  RWY 11/29",
+        "Class D",
+        "D 0645-2230; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GNV-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "ISM-CLASS_D",
+      "selectionId": "ISM-CLASS_D",
+      "x": 5182.032,
+      "y": 4003.267,
+      "lines": [
+        "KISSIMMEE GATEWAY",
+        "FAA ISM  RWY 15/33",
+        "Class D",
+        "D 0700-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ISM-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "LEE-CLASS_D",
+      "selectionId": "LEE-CLASS_D",
+      "x": 4319.915,
+      "y": 2611.418,
+      "lines": [
+        "LEESBURG INTL",
+        "FAA LEE  RWY 13/31",
+        "Class D",
+        "D 0700-1900; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LEE-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "MLB-CLASS_D",
+      "selectionId": "MLB-CLASS_D",
+      "x": 6998.6,
+      "y": 4483.914,
+      "lines": [
+        "MELBOURNE ORLANDO INTL",
+        "FAA MLB  RWY 09R/27L",
+        "Class D",
+        "D 0600-2400; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MLB-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "OCF-CLASS_D",
+      "selectionId": "OCF-CLASS_D",
+      "x": 3364.509,
+      "y": 1697.301,
+      "lines": [
+        "OCALA INTL-JIM TAYLOR FLD",
+        "FAA OCF  RWY 18/36",
+        "Class D",
+        "D 0700-2000; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OCF-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "OMN-CLASS_D",
+      "selectionId": "OMN-CLASS_D",
+      "x": 5910.097,
+      "y": 1351.575,
+      "lines": [
+        "ORMOND BEACH MUNI",
+        "FAA OMN  RWY 09/27",
+        "Class D",
+        "D 0700-1900; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OMN-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "ORL-CLASS_D",
+      "selectionId": "ORL-CLASS_D",
+      "x": 5419.476,
+      "y": 3284.542,
+      "lines": [
+        "ORLANDO EXEC",
+        "FAA ORL  RWY 07/25",
+        "Class D",
+        "D 0700-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ORL-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "TIX-CLASS_D",
+      "selectionId": "TIX-CLASS_D",
+      "x": 6652.575,
+      "y": 3404.253,
+      "lines": [
+        "SPACE COAST RGNL",
+        "FAA TIX  RWY 18/36",
+        "Class D",
+        "D 0700-2100; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "TIX-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "TTS-CLASS_D",
+      "selectionId": "TTS-CLASS_D",
+      "x": 6926.829,
+      "y": 3116.41,
+      "lines": [
+        "SPACE FLORIDA LAUNCH AND LANDING FACILITY",
+        "FAA TTS  RWY 15/33",
+        "Class D",
+        "D 0800-1700 M-F EXC HOL; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "TTS-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "interior"
+    },
+    {
+      "id": "XMR-CLASS_D",
+      "selectionId": "XMR-CLASS_D",
+      "x": 7004.139,
+      "y": 3521.433,
+      "lines": [
+        "CAPE CANAVERAL SPACE FORCE STATION SKID STRIP",
+        "FAA XMR  RWY 13/31",
+        "Class D",
+        "D BY NOTAM; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "XMR-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
+      "anchorX": 7191.262,
+      "anchorY": 3521.922,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "GNV-CLASS_E2",
+      "selectionId": "GNV-CLASS_E2",
+      "x": 3258.227,
+      "y": 421.957,
+      "lines": [
+        "GAINESVILLE RGNL",
+        "FAA GNV  RWY 11/29",
+        "Class E",
+        "D 0645-2230; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GNV-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "interior"
+    },
+    {
+      "id": "ORL-CLASS_E2",
+      "selectionId": "ORL-CLASS_E2",
+      "x": 5419.476,
+      "y": 3420.384,
+      "lines": [
+        "ORLANDO EXEC",
+        "FAA ORL  RWY 07/25",
+        "Class E",
+        "D 0700-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ORL-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
+      "anchorX": 5419.44,
+      "anchorY": 3333.524,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "COF-CLASS_E4",
+      "selectionId": "COF-CLASS_E4",
+      "x": 7065.917,
+      "y": 3871.647,
+      "lines": [
+        "PATRICK SPACE FORCE BASE",
+        "FAA COF  RWY 03/21",
+        "Class E",
+        "D 1300-0500Z++ M-F; S-S CLSD; HOL CLSD, AIRFIELD CLSD THIRD FRI OF MONTH; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.86,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "COF-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "callout",
+      "anchorX": 7201.74,
+      "anchorY": 3871.647,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "GNV-CLASS_E4",
+      "selectionId": "GNV-CLASS_E4",
+      "x": 3618.288,
+      "y": 207.795,
+      "lines": [
+        "GAINESVILLE RGNL",
+        "FAA GNV  RWY 11/29",
+        "Class E",
+        "D 0645-2230; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.86,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GNV-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "callout",
+      "anchorX": 3482.465,
+      "anchorY": 207.795,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "LEE-CLASS_E4",
+      "selectionId": "LEE-CLASS_E4",
+      "x": 4675.863,
+      "y": 2721.08,
+      "lines": [
+        "LEESBURG INTL",
+        "FAA LEE  RWY 13/31",
+        "Class E",
+        "D 0700-1900; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.86,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LEE-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "callout",
+      "anchorX": 4540.04,
+      "anchorY": 2721.08,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "MLB-CLASS_E4",
+      "selectionId": "MLB-CLASS_E4",
+      "x": 6581.029,
+      "y": 4511.582,
+      "lines": [
+        "MELBOURNE ORLANDO INTL",
+        "FAA MLB  RWY 09R/27L",
+        "Class E",
+        "D 0600-2400; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.86,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MLB-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "callout",
+      "anchorX": 6716.851,
+      "anchorY": 4511.582,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "OCF-CLASS_E4",
+      "selectionId": "OCF-CLASS_E4",
+      "x": 3503.579,
+      "y": 1969.659,
+      "lines": [
+        "OCALA INTL-JIM TAYLOR FLD",
+        "FAA OCF  RWY 18/36",
+        "Class E",
+        "D 0700-2000; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.86,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OCF-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "callout",
+      "anchorX": 3367.756,
+      "anchorY": 1969.659,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "OMN-CLASS_E4",
+      "selectionId": "OMN-CLASS_E4",
+      "x": 5834.308,
+      "y": 1148.25,
+      "lines": [
+        "ORMOND BEACH MUNI",
+        "FAA OMN  RWY 09/27",
+        "Class E",
+        "D 0700-1900; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.86,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OMN-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "interior"
+    },
+    {
+      "id": "ORL-CLASS_E4",
+      "selectionId": "ORL-CLASS_E4",
+      "x": 5009.918,
+      "y": 3366.887,
+      "lines": [
+        "ORLANDO EXEC",
+        "FAA ORL  RWY 07/25",
+        "Class E",
+        "D 0700-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.86,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ORL-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "callout",
+      "anchorX": 5145.741,
+      "anchorY": 3366.887,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "OCF-CLASS_E5",
+      "selectionId": "OCF-CLASS_E5",
+      "x": 3364.509,
+      "y": 1776.169,
+      "lines": [
+        "OCALA INTL-JIM TAYLOR FLD",
+        "FAA OCF  RWY 18/36",
+        "Class E",
+        "D 0700-2000; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8335087304900406,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OCF-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "BKV-CLASS_E5",
+      "selectionId": "BKV-CLASS_E5",
+      "x": 2826.818,
+      "y": 3602.538,
+      "lines": [
+        "BROOKSVILLE-TAMPA BAY RGNL",
+        "FAA BKV  RWY 09/27",
+        "Class E",
+        "D 0700-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8219260625832004,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BKV-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "SFB-CLASS_E5",
+      "selectionId": "SFB-CLASS_E5",
+      "x": 5634.058,
+      "y": 2774.378,
+      "lines": [
+        "ORLANDO SANFORD INTL",
+        "FAA SFB  RWY 09L/27R",
+        "Class E",
+        "C 0630-2300; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8122761732003417,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SFB-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "GNV-CLASS_E5",
+      "selectionId": "GNV-CLASS_E5",
+      "x": 3258.227,
+      "y": 264.209,
+      "lines": [
+        "GAINESVILLE RGNL",
+        "FAA GNV  RWY 11/29",
+        "Class E",
+        "D 0645-2230; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.8119874036834366,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GNV-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "LEE-CLASS_E5",
+      "selectionId": "LEE-CLASS_E5",
+      "x": 4399.226,
+      "y": 2532.955,
+      "lines": [
+        "LEESBURG INTL",
+        "FAA LEE  RWY 13/31",
+        "Class E",
+        "D 0700-1900; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.803373494186265,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LEE-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "TTS-CLASS_E5",
+      "selectionId": "TTS-CLASS_E5",
+      "x": 6839.37,
+      "y": 3192.634,
+      "lines": [
+        "SPACE FLORIDA LAUNCH AND LANDING FACILITY",
+        "FAA TTS  RWY 15/33",
+        "Class E",
+        "D 0800-1700 M-F EXC HOL; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7911581882045889,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "TTS-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "ORL-CLASS_E5",
+      "selectionId": "ORL-CLASS_E5",
+      "x": 5528.974,
+      "y": 3223.974,
+      "lines": [
+        "ORLANDO EXEC",
+        "FAA ORL  RWY 07/25",
+        "Class E",
+        "D 0700-2200; OTHR E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7823407134022258,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ORL-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "MLB-CLASS_E5",
+      "selectionId": "MLB-CLASS_E5",
+      "x": 7020.158,
+      "y": 4402.609,
+      "lines": [
+        "MELBOURNE ORLANDO INTL",
+        "FAA MLB  RWY 09R/27L",
+        "Class E",
+        "D 0600-2400; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7807143500969078,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MLB-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "DAB-CLASS_E5",
+      "selectionId": "DAB-CLASS_E5",
+      "x": 6093.934,
+      "y": 1722.632,
+      "lines": [
+        "DAYTONA BEACH INTL",
+        "FAA DAB  RWY 07L/25R",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7748531856904582,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DAB-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "FIN-CLASS_E5",
+      "selectionId": "FIN-CLASS_E5",
+      "x": 5693.099,
+      "y": 847.435,
+      "lines": [
+        "FLAGLER EXEC",
+        "FAA FIN  RWY 11/29",
+        "Class E",
+        "D 0600-2000; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7747804608911726,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "FIN-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "EVB-CLASS_E5",
+      "selectionId": "EVB-CLASS_E5",
+      "x": 6294.656,
+      "y": 2071.77,
+      "lines": [
+        "NEW SMYRNA BEACH MUNI (JACK BOLT FLD)",
+        "FAA EVB  RWY 07/25",
+        "Class E",
+        "D 0700-2200; OTHR G"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7719150068039656,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "EVB-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "special-0",
+      "selectionId": "special-0",
+      "x": 4259.084,
+      "y": 76.635,
+      "lines": [
+        "R-2903D",
+        "STEVENS LAKE"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-0",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_B-0",
+      "selectionId": "shelf-CLASS_B-0",
+      "x": 5476.671,
+      "y": 3592.78,
+      "lines": [
+        "MCO B AREA A",
+        "SFC-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_B-1",
+      "selectionId": "shelf-CLASS_B-1",
+      "x": 5503.995,
+      "y": 3716.604,
+      "lines": [
+        "MCO B AREA B",
+        "9-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_B-2",
+      "selectionId": "shelf-CLASS_B-2",
+      "x": 5695.442,
+      "y": 3295.386,
+      "lines": [
+        "MCO B AREA C",
+        "16-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_B-3",
+      "selectionId": "shelf-CLASS_B-3",
+      "x": 5594.064,
+      "y": 3068.447,
+      "lines": [
+        "MCO B AREA D",
+        "20-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_B-4",
+      "selectionId": "shelf-CLASS_B-4",
+      "x": 5627.054,
+      "y": 4052.941,
+      "lines": [
+        "MCO B AREA C",
+        "16-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_B-5",
+      "selectionId": "shelf-CLASS_B-5",
+      "x": 5804.008,
+      "y": 2768.334,
+      "lines": [
+        "MCO B AREA E",
+        "30-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_B-6",
+      "selectionId": "shelf-CLASS_B-6",
+      "x": 6233.834,
+      "y": 3704.982,
+      "lines": [
+        "MCO B AREA G",
+        "60-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_B-11",
+      "selectionId": "shelf-CLASS_B-11",
+      "x": 5044.424,
+      "y": 3526.463,
+      "lines": [
+        "MCO B AREA F",
+        "40-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_B-12",
+      "selectionId": "shelf-CLASS_B-12",
+      "x": 4708.474,
+      "y": 3227.246,
+      "lines": [
+        "MCO B AREA G",
+        "60-100"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "MCO-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "interior"
+    },
+    {
+      "id": "INF-CLASS_E5",
+      "selectionId": "INF-CLASS_E5",
+      "x": 3145.818,
+      "y": 2661.659,
+      "lines": [
+        "INVERNESS",
+        "FAA INF  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7355021788089348,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "INF-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "X35-CLASS_E5",
+      "selectionId": "X35-CLASS_E5",
+      "x": 3012.258,
+      "y": 1984.157,
+      "lines": [
+        "MARION CO",
+        "FAA X35  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7331886698685067,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "X35-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "X60-CLASS_E5",
+      "selectionId": "X60-CLASS_E5",
+      "x": 2795.628,
+      "y": 1220.45,
+      "lines": [
+        "WILLISTON RGNL",
+        "FAA X60  RWY 05/23",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7221815044481277,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "X60-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "ZPH-CLASS_E5",
+      "selectionId": "ZPH-CLASS_E5",
+      "x": 3517.58,
+      "y": 4167.515,
+      "lines": [
+        "ZEPHYRHILLS MUNI",
+        "FAA ZPH  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7156086602758656,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ZPH-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "DED-CLASS_E5",
+      "selectionId": "DED-CLASS_E5",
+      "x": 5524.039,
+      "y": 1969.771,
+      "lines": [
+        "DELAND MUNI-SIDNEY H TAYLOR FLD",
+        "FAA DED  RWY 12/30",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7140938654620057,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DED-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "28J-CLASS_E5",
+      "selectionId": "28J-CLASS_E5",
+      "x": 4590.713,
+      "y": 425.137,
+      "lines": [
+        "PALATKA MUNI/LT KAY LARKIN FLD",
+        "FAA 28J  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.7104385043467195,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "28J-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_C-13",
+      "selectionId": "shelf-CLASS_C-13",
+      "x": 5957.379,
+      "y": 2723.438,
+      "lines": [
+        "SFB C",
+        "7-30"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "SFB-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
+      "anchorX": 5821.556,
+      "anchorY": 2723.438,
+      "elevation": 0.05,
+      "connector": true
+    },
+    {
+      "id": "shelf-CLASS_C-14",
+      "selectionId": "shelf-CLASS_C-14",
+      "x": 5635.833,
+      "y": 2631.245,
+      "lines": [
+        "SFB C",
+        "13-30"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "SFB-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_C-15",
+      "selectionId": "shelf-CLASS_C-15",
+      "x": 5702.364,
+      "y": 2632.767,
+      "lines": [
+        "SFB C",
+        "SFC-30"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "SFB-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_C-16",
+      "selectionId": "shelf-CLASS_C-16",
+      "x": 6041.357,
+      "y": 1604.315,
+      "lines": [
+        "DAB C",
+        "SFC-40"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "DAB-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "interior"
+    },
+    {
+      "id": "shelf-CLASS_C-17",
+      "selectionId": "shelf-CLASS_C-17",
+      "x": 5975.636,
+      "y": 1735.765,
+      "lines": [
+        "DAB C",
+        "12-40"
+      ],
+      "style": "airspace-secondary",
+      "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "DAB-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "interior"
+    },
+    {
+      "id": "CGC-CLASS_E5",
+      "selectionId": "CGC-CLASS_E5",
+      "x": 2556.644,
+      "y": 2491.683,
+      "lines": [
+        "CRYSTAL RIVER/DAVIS FLD",
+        "FAA CGC  RWY 09/27",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6972770451349221,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CGC-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "CTY-CLASS_E5",
+      "selectionId": "CTY-CLASS_E5",
+      "x": 1353.997,
+      "y": 475.007,
+      "lines": [
+        "CROSS CITY",
+        "FAA CTY  RWY 04/22",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6971963852289785,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CTY-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "X04-CLASS_E5",
+      "selectionId": "X04-CLASS_E5",
+      "x": 4842.995,
+      "y": 2912.323,
+      "lines": [
+        "ORLANDO APOPKA",
+        "FAA X04  RWY 15/33",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6636805488304007,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "X04-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "51FL-CLASS_E5",
+      "selectionId": "51FL-CLASS_E5",
+      "x": 1876.816,
+      "y": 801.147,
+      "lines": [
+        "CHIEFLAND SKY RANCH",
+        "FAA 51FL  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6502285545845556,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "51FL-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "X23-CLASS_E5",
+      "selectionId": "X23-CLASS_E5",
+      "x": 4679.986,
+      "y": 2346.172,
+      "lines": [
+        "UMATILLA MUNI",
+        "FAA X23  RWY 01/19",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6383420999523512,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "X23-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "COI-CLASS_E5",
+      "selectionId": "COI-CLASS_E5",
+      "x": 6867.57,
+      "y": 3801.87,
+      "lines": [
+        "MERRITT ISLAND",
+        "FAA COI  RWY 11/29",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6269323354259774,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "COI-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    },
+    {
+      "id": "2FD1-CLASS_E5",
+      "selectionId": "2FD1-CLASS_E5",
+      "x": 3962.181,
+      "y": 2253.58,
+      "lines": [
+        "HOBBY HILL",
+        "FAA 2FD1  RWY 18/36",
+        "Class E"
+      ],
+      "style": "airspace-primary",
+      "priority": 0.6178808540966058,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "2FD1-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "interior"
+    }
+  ],
+  "stats": {
+    "totalItems": 65,
+    "classEDetailItems": 24,
+    "coreClassEDetailItems": 24,
+    "extendedClassEDetailItems": 0
+  }
+}

@@ -4,7 +4,7 @@
   "title": "St. Louis Sectional",
   "description": "GeoTIFF-backed primary section with vector overlays and VR-native labels.",
   "quality": "primary",
-  "assetVersion": "2026-05-19T04:07:23.922933+00:00",
+  "assetVersion": "2026-06-19T13:34:32.402350+00:00",
   "chart": {
     "pixelWidth": 14747,
     "pixelHeight": 11238,
@@ -40,7 +40,7 @@
             "tiles": [
               {
                 "id": "z0-0-0",
-                "url": "rasters/base/z0/tile_0_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z0/tile_0_0.webp",
                 "sourceRect": [
                   0,
                   0,
@@ -52,7 +52,7 @@
               },
               {
                 "id": "z0-1-0",
-                "url": "rasters/base/z0/tile_1_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z0/tile_1_0.webp",
                 "sourceRect": [
                   8189,
                   0,
@@ -64,7 +64,7 @@
               },
               {
                 "id": "z0-0-1",
-                "url": "rasters/base/z0/tile_0_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z0/tile_0_1.webp",
                 "sourceRect": [
                   0,
                   8191,
@@ -76,7 +76,7 @@
               },
               {
                 "id": "z0-1-1",
-                "url": "rasters/base/z0/tile_1_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z0/tile_1_1.webp",
                 "sourceRect": [
                   8189,
                   8191,
@@ -97,7 +97,7 @@
             "tiles": [
               {
                 "id": "z1-0-0",
-                "url": "rasters/base/z1/tile_0_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_0_0.webp",
                 "sourceRect": [
                   0,
                   0,
@@ -109,7 +109,7 @@
               },
               {
                 "id": "z1-1-0",
-                "url": "rasters/base/z1/tile_1_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_1_0.webp",
                 "sourceRect": [
                   4096,
                   0,
@@ -121,7 +121,7 @@
               },
               {
                 "id": "z1-2-0",
-                "url": "rasters/base/z1/tile_2_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_2_0.webp",
                 "sourceRect": [
                   8191,
                   0,
@@ -133,7 +133,7 @@
               },
               {
                 "id": "z1-3-0",
-                "url": "rasters/base/z1/tile_3_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_3_0.webp",
                 "sourceRect": [
                   12287,
                   0,
@@ -145,7 +145,7 @@
               },
               {
                 "id": "z1-0-1",
-                "url": "rasters/base/z1/tile_0_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_0_1.webp",
                 "sourceRect": [
                   0,
                   4095,
@@ -157,7 +157,7 @@
               },
               {
                 "id": "z1-1-1",
-                "url": "rasters/base/z1/tile_1_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_1_1.webp",
                 "sourceRect": [
                   4096,
                   4095,
@@ -169,7 +169,7 @@
               },
               {
                 "id": "z1-2-1",
-                "url": "rasters/base/z1/tile_2_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_2_1.webp",
                 "sourceRect": [
                   8191,
                   4095,
@@ -181,7 +181,7 @@
               },
               {
                 "id": "z1-3-1",
-                "url": "rasters/base/z1/tile_3_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_3_1.webp",
                 "sourceRect": [
                   12287,
                   4095,
@@ -193,7 +193,7 @@
               },
               {
                 "id": "z1-0-2",
-                "url": "rasters/base/z1/tile_0_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_0_2.webp",
                 "sourceRect": [
                   0,
                   8191,
@@ -205,7 +205,7 @@
               },
               {
                 "id": "z1-1-2",
-                "url": "rasters/base/z1/tile_1_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_1_2.webp",
                 "sourceRect": [
                   4096,
                   8191,
@@ -217,7 +217,7 @@
               },
               {
                 "id": "z1-2-2",
-                "url": "rasters/base/z1/tile_2_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_2_2.webp",
                 "sourceRect": [
                   8191,
                   8191,
@@ -229,7 +229,7 @@
               },
               {
                 "id": "z1-3-2",
-                "url": "rasters/base/z1/tile_3_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z1/tile_3_2.webp",
                 "sourceRect": [
                   12287,
                   8191,
@@ -250,7 +250,7 @@
             "tiles": [
               {
                 "id": "z2-0-0",
-                "url": "rasters/base/z2/tile_0_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_0_0.webp",
                 "sourceRect": [
                   0,
                   0,
@@ -262,7 +262,7 @@
               },
               {
                 "id": "z2-1-0",
-                "url": "rasters/base/z2/tile_1_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_1_0.webp",
                 "sourceRect": [
                   2048,
                   0,
@@ -274,7 +274,7 @@
               },
               {
                 "id": "z2-2-0",
-                "url": "rasters/base/z2/tile_2_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_2_0.webp",
                 "sourceRect": [
                   4096,
                   0,
@@ -286,7 +286,7 @@
               },
               {
                 "id": "z2-3-0",
-                "url": "rasters/base/z2/tile_3_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_3_0.webp",
                 "sourceRect": [
                   6144,
                   0,
@@ -298,7 +298,7 @@
               },
               {
                 "id": "z2-4-0",
-                "url": "rasters/base/z2/tile_4_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_4_0.webp",
                 "sourceRect": [
                   8191,
                   0,
@@ -310,7 +310,7 @@
               },
               {
                 "id": "z2-5-0",
-                "url": "rasters/base/z2/tile_5_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_5_0.webp",
                 "sourceRect": [
                   10239,
                   0,
@@ -322,7 +322,7 @@
               },
               {
                 "id": "z2-6-0",
-                "url": "rasters/base/z2/tile_6_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_6_0.webp",
                 "sourceRect": [
                   12287,
                   0,
@@ -334,7 +334,7 @@
               },
               {
                 "id": "z2-7-0",
-                "url": "rasters/base/z2/tile_7_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_7_0.webp",
                 "sourceRect": [
                   14335,
                   0,
@@ -346,7 +346,7 @@
               },
               {
                 "id": "z2-0-1",
-                "url": "rasters/base/z2/tile_0_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_0_1.webp",
                 "sourceRect": [
                   0,
                   2048,
@@ -358,7 +358,7 @@
               },
               {
                 "id": "z2-1-1",
-                "url": "rasters/base/z2/tile_1_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_1_1.webp",
                 "sourceRect": [
                   2048,
                   2048,
@@ -370,7 +370,7 @@
               },
               {
                 "id": "z2-2-1",
-                "url": "rasters/base/z2/tile_2_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_2_1.webp",
                 "sourceRect": [
                   4096,
                   2048,
@@ -382,7 +382,7 @@
               },
               {
                 "id": "z2-3-1",
-                "url": "rasters/base/z2/tile_3_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_3_1.webp",
                 "sourceRect": [
                   6144,
                   2048,
@@ -394,7 +394,7 @@
               },
               {
                 "id": "z2-4-1",
-                "url": "rasters/base/z2/tile_4_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_4_1.webp",
                 "sourceRect": [
                   8191,
                   2048,
@@ -406,7 +406,7 @@
               },
               {
                 "id": "z2-5-1",
-                "url": "rasters/base/z2/tile_5_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_5_1.webp",
                 "sourceRect": [
                   10239,
                   2048,
@@ -418,7 +418,7 @@
               },
               {
                 "id": "z2-6-1",
-                "url": "rasters/base/z2/tile_6_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_6_1.webp",
                 "sourceRect": [
                   12287,
                   2048,
@@ -430,7 +430,7 @@
               },
               {
                 "id": "z2-7-1",
-                "url": "rasters/base/z2/tile_7_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_7_1.webp",
                 "sourceRect": [
                   14335,
                   2048,
@@ -442,7 +442,7 @@
               },
               {
                 "id": "z2-0-2",
-                "url": "rasters/base/z2/tile_0_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_0_2.webp",
                 "sourceRect": [
                   0,
                   4096,
@@ -454,7 +454,7 @@
               },
               {
                 "id": "z2-1-2",
-                "url": "rasters/base/z2/tile_1_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_1_2.webp",
                 "sourceRect": [
                   2048,
                   4096,
@@ -466,7 +466,7 @@
               },
               {
                 "id": "z2-2-2",
-                "url": "rasters/base/z2/tile_2_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_2_2.webp",
                 "sourceRect": [
                   4096,
                   4096,
@@ -478,7 +478,7 @@
               },
               {
                 "id": "z2-3-2",
-                "url": "rasters/base/z2/tile_3_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_3_2.webp",
                 "sourceRect": [
                   6144,
                   4096,
@@ -490,7 +490,7 @@
               },
               {
                 "id": "z2-4-2",
-                "url": "rasters/base/z2/tile_4_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_4_2.webp",
                 "sourceRect": [
                   8191,
                   4096,
@@ -502,7 +502,7 @@
               },
               {
                 "id": "z2-5-2",
-                "url": "rasters/base/z2/tile_5_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_5_2.webp",
                 "sourceRect": [
                   10239,
                   4096,
@@ -514,7 +514,7 @@
               },
               {
                 "id": "z2-6-2",
-                "url": "rasters/base/z2/tile_6_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_6_2.webp",
                 "sourceRect": [
                   12287,
                   4096,
@@ -526,7 +526,7 @@
               },
               {
                 "id": "z2-7-2",
-                "url": "rasters/base/z2/tile_7_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_7_2.webp",
                 "sourceRect": [
                   14335,
                   4096,
@@ -538,7 +538,7 @@
               },
               {
                 "id": "z2-0-3",
-                "url": "rasters/base/z2/tile_0_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_0_3.webp",
                 "sourceRect": [
                   0,
                   6144,
@@ -550,7 +550,7 @@
               },
               {
                 "id": "z2-1-3",
-                "url": "rasters/base/z2/tile_1_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_1_3.webp",
                 "sourceRect": [
                   2048,
                   6144,
@@ -562,7 +562,7 @@
               },
               {
                 "id": "z2-2-3",
-                "url": "rasters/base/z2/tile_2_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_2_3.webp",
                 "sourceRect": [
                   4096,
                   6144,
@@ -574,7 +574,7 @@
               },
               {
                 "id": "z2-3-3",
-                "url": "rasters/base/z2/tile_3_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_3_3.webp",
                 "sourceRect": [
                   6144,
                   6144,
@@ -586,7 +586,7 @@
               },
               {
                 "id": "z2-4-3",
-                "url": "rasters/base/z2/tile_4_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_4_3.webp",
                 "sourceRect": [
                   8191,
                   6144,
@@ -598,7 +598,7 @@
               },
               {
                 "id": "z2-5-3",
-                "url": "rasters/base/z2/tile_5_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_5_3.webp",
                 "sourceRect": [
                   10239,
                   6144,
@@ -610,7 +610,7 @@
               },
               {
                 "id": "z2-6-3",
-                "url": "rasters/base/z2/tile_6_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_6_3.webp",
                 "sourceRect": [
                   12287,
                   6144,
@@ -622,7 +622,7 @@
               },
               {
                 "id": "z2-7-3",
-                "url": "rasters/base/z2/tile_7_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_7_3.webp",
                 "sourceRect": [
                   14335,
                   6144,
@@ -634,7 +634,7 @@
               },
               {
                 "id": "z2-0-4",
-                "url": "rasters/base/z2/tile_0_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_0_4.webp",
                 "sourceRect": [
                   0,
                   8192,
@@ -646,7 +646,7 @@
               },
               {
                 "id": "z2-1-4",
-                "url": "rasters/base/z2/tile_1_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_1_4.webp",
                 "sourceRect": [
                   2048,
                   8192,
@@ -658,7 +658,7 @@
               },
               {
                 "id": "z2-2-4",
-                "url": "rasters/base/z2/tile_2_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_2_4.webp",
                 "sourceRect": [
                   4096,
                   8192,
@@ -670,7 +670,7 @@
               },
               {
                 "id": "z2-3-4",
-                "url": "rasters/base/z2/tile_3_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_3_4.webp",
                 "sourceRect": [
                   6144,
                   8192,
@@ -682,7 +682,7 @@
               },
               {
                 "id": "z2-4-4",
-                "url": "rasters/base/z2/tile_4_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_4_4.webp",
                 "sourceRect": [
                   8191,
                   8192,
@@ -694,7 +694,7 @@
               },
               {
                 "id": "z2-5-4",
-                "url": "rasters/base/z2/tile_5_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_5_4.webp",
                 "sourceRect": [
                   10239,
                   8192,
@@ -706,7 +706,7 @@
               },
               {
                 "id": "z2-6-4",
-                "url": "rasters/base/z2/tile_6_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_6_4.webp",
                 "sourceRect": [
                   12287,
                   8192,
@@ -718,7 +718,7 @@
               },
               {
                 "id": "z2-7-4",
-                "url": "rasters/base/z2/tile_7_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_7_4.webp",
                 "sourceRect": [
                   14335,
                   8192,
@@ -730,7 +730,7 @@
               },
               {
                 "id": "z2-0-5",
-                "url": "rasters/base/z2/tile_0_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_0_5.webp",
                 "sourceRect": [
                   0,
                   10240,
@@ -742,7 +742,7 @@
               },
               {
                 "id": "z2-1-5",
-                "url": "rasters/base/z2/tile_1_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_1_5.webp",
                 "sourceRect": [
                   2048,
                   10240,
@@ -754,7 +754,7 @@
               },
               {
                 "id": "z2-2-5",
-                "url": "rasters/base/z2/tile_2_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_2_5.webp",
                 "sourceRect": [
                   4096,
                   10240,
@@ -766,7 +766,7 @@
               },
               {
                 "id": "z2-3-5",
-                "url": "rasters/base/z2/tile_3_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_3_5.webp",
                 "sourceRect": [
                   6144,
                   10240,
@@ -778,7 +778,7 @@
               },
               {
                 "id": "z2-4-5",
-                "url": "rasters/base/z2/tile_4_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_4_5.webp",
                 "sourceRect": [
                   8191,
                   10240,
@@ -790,7 +790,7 @@
               },
               {
                 "id": "z2-5-5",
-                "url": "rasters/base/z2/tile_5_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_5_5.webp",
                 "sourceRect": [
                   10239,
                   10240,
@@ -802,7 +802,7 @@
               },
               {
                 "id": "z2-6-5",
-                "url": "rasters/base/z2/tile_6_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_6_5.webp",
                 "sourceRect": [
                   12287,
                   10240,
@@ -814,7 +814,7 @@
               },
               {
                 "id": "z2-7-5",
-                "url": "rasters/base/z2/tile_7_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z2/tile_7_5.webp",
                 "sourceRect": [
                   14335,
                   10240,
@@ -835,7 +835,7 @@
             "tiles": [
               {
                 "id": "z3-0-0",
-                "url": "rasters/base/z3/tile_0_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_0.webp",
                 "sourceRect": [
                   0,
                   0,
@@ -847,7 +847,7 @@
               },
               {
                 "id": "z3-1-0",
-                "url": "rasters/base/z3/tile_1_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_0.webp",
                 "sourceRect": [
                   1024,
                   0,
@@ -859,7 +859,7 @@
               },
               {
                 "id": "z3-2-0",
-                "url": "rasters/base/z3/tile_2_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_0.webp",
                 "sourceRect": [
                   2048,
                   0,
@@ -871,7 +871,7 @@
               },
               {
                 "id": "z3-3-0",
-                "url": "rasters/base/z3/tile_3_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_0.webp",
                 "sourceRect": [
                   3072,
                   0,
@@ -883,7 +883,7 @@
               },
               {
                 "id": "z3-4-0",
-                "url": "rasters/base/z3/tile_4_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_0.webp",
                 "sourceRect": [
                   4096,
                   0,
@@ -895,7 +895,7 @@
               },
               {
                 "id": "z3-5-0",
-                "url": "rasters/base/z3/tile_5_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_0.webp",
                 "sourceRect": [
                   5120,
                   0,
@@ -907,7 +907,7 @@
               },
               {
                 "id": "z3-6-0",
-                "url": "rasters/base/z3/tile_6_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_0.webp",
                 "sourceRect": [
                   6144,
                   0,
@@ -919,7 +919,7 @@
               },
               {
                 "id": "z3-7-0",
-                "url": "rasters/base/z3/tile_7_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_0.webp",
                 "sourceRect": [
                   7168,
                   0,
@@ -931,7 +931,7 @@
               },
               {
                 "id": "z3-8-0",
-                "url": "rasters/base/z3/tile_8_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_0.webp",
                 "sourceRect": [
                   8192,
                   0,
@@ -943,7 +943,7 @@
               },
               {
                 "id": "z3-9-0",
-                "url": "rasters/base/z3/tile_9_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_0.webp",
                 "sourceRect": [
                   9216,
                   0,
@@ -955,7 +955,7 @@
               },
               {
                 "id": "z3-10-0",
-                "url": "rasters/base/z3/tile_10_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_0.webp",
                 "sourceRect": [
                   10240,
                   0,
@@ -967,7 +967,7 @@
               },
               {
                 "id": "z3-11-0",
-                "url": "rasters/base/z3/tile_11_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_0.webp",
                 "sourceRect": [
                   11264,
                   0,
@@ -979,7 +979,7 @@
               },
               {
                 "id": "z3-12-0",
-                "url": "rasters/base/z3/tile_12_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_0.webp",
                 "sourceRect": [
                   12288,
                   0,
@@ -991,7 +991,7 @@
               },
               {
                 "id": "z3-13-0",
-                "url": "rasters/base/z3/tile_13_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_0.webp",
                 "sourceRect": [
                   13312,
                   0,
@@ -1003,7 +1003,7 @@
               },
               {
                 "id": "z3-14-0",
-                "url": "rasters/base/z3/tile_14_0.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_0.webp",
                 "sourceRect": [
                   14336,
                   0,
@@ -1015,7 +1015,7 @@
               },
               {
                 "id": "z3-0-1",
-                "url": "rasters/base/z3/tile_0_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_1.webp",
                 "sourceRect": [
                   0,
                   1024,
@@ -1027,7 +1027,7 @@
               },
               {
                 "id": "z3-1-1",
-                "url": "rasters/base/z3/tile_1_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_1.webp",
                 "sourceRect": [
                   1024,
                   1024,
@@ -1039,7 +1039,7 @@
               },
               {
                 "id": "z3-2-1",
-                "url": "rasters/base/z3/tile_2_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_1.webp",
                 "sourceRect": [
                   2048,
                   1024,
@@ -1051,7 +1051,7 @@
               },
               {
                 "id": "z3-3-1",
-                "url": "rasters/base/z3/tile_3_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_1.webp",
                 "sourceRect": [
                   3072,
                   1024,
@@ -1063,7 +1063,7 @@
               },
               {
                 "id": "z3-4-1",
-                "url": "rasters/base/z3/tile_4_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_1.webp",
                 "sourceRect": [
                   4096,
                   1024,
@@ -1075,7 +1075,7 @@
               },
               {
                 "id": "z3-5-1",
-                "url": "rasters/base/z3/tile_5_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_1.webp",
                 "sourceRect": [
                   5120,
                   1024,
@@ -1087,7 +1087,7 @@
               },
               {
                 "id": "z3-6-1",
-                "url": "rasters/base/z3/tile_6_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_1.webp",
                 "sourceRect": [
                   6144,
                   1024,
@@ -1099,7 +1099,7 @@
               },
               {
                 "id": "z3-7-1",
-                "url": "rasters/base/z3/tile_7_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_1.webp",
                 "sourceRect": [
                   7168,
                   1024,
@@ -1111,7 +1111,7 @@
               },
               {
                 "id": "z3-8-1",
-                "url": "rasters/base/z3/tile_8_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_1.webp",
                 "sourceRect": [
                   8192,
                   1024,
@@ -1123,7 +1123,7 @@
               },
               {
                 "id": "z3-9-1",
-                "url": "rasters/base/z3/tile_9_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_1.webp",
                 "sourceRect": [
                   9216,
                   1024,
@@ -1135,7 +1135,7 @@
               },
               {
                 "id": "z3-10-1",
-                "url": "rasters/base/z3/tile_10_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_1.webp",
                 "sourceRect": [
                   10240,
                   1024,
@@ -1147,7 +1147,7 @@
               },
               {
                 "id": "z3-11-1",
-                "url": "rasters/base/z3/tile_11_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_1.webp",
                 "sourceRect": [
                   11264,
                   1024,
@@ -1159,7 +1159,7 @@
               },
               {
                 "id": "z3-12-1",
-                "url": "rasters/base/z3/tile_12_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_1.webp",
                 "sourceRect": [
                   12288,
                   1024,
@@ -1171,7 +1171,7 @@
               },
               {
                 "id": "z3-13-1",
-                "url": "rasters/base/z3/tile_13_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_1.webp",
                 "sourceRect": [
                   13312,
                   1024,
@@ -1183,7 +1183,7 @@
               },
               {
                 "id": "z3-14-1",
-                "url": "rasters/base/z3/tile_14_1.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_1.webp",
                 "sourceRect": [
                   14336,
                   1024,
@@ -1195,7 +1195,7 @@
               },
               {
                 "id": "z3-0-2",
-                "url": "rasters/base/z3/tile_0_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_2.webp",
                 "sourceRect": [
                   0,
                   2048,
@@ -1207,7 +1207,7 @@
               },
               {
                 "id": "z3-1-2",
-                "url": "rasters/base/z3/tile_1_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_2.webp",
                 "sourceRect": [
                   1024,
                   2048,
@@ -1219,7 +1219,7 @@
               },
               {
                 "id": "z3-2-2",
-                "url": "rasters/base/z3/tile_2_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_2.webp",
                 "sourceRect": [
                   2048,
                   2048,
@@ -1231,7 +1231,7 @@
               },
               {
                 "id": "z3-3-2",
-                "url": "rasters/base/z3/tile_3_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_2.webp",
                 "sourceRect": [
                   3072,
                   2048,
@@ -1243,7 +1243,7 @@
               },
               {
                 "id": "z3-4-2",
-                "url": "rasters/base/z3/tile_4_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_2.webp",
                 "sourceRect": [
                   4096,
                   2048,
@@ -1255,7 +1255,7 @@
               },
               {
                 "id": "z3-5-2",
-                "url": "rasters/base/z3/tile_5_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_2.webp",
                 "sourceRect": [
                   5120,
                   2048,
@@ -1267,7 +1267,7 @@
               },
               {
                 "id": "z3-6-2",
-                "url": "rasters/base/z3/tile_6_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_2.webp",
                 "sourceRect": [
                   6144,
                   2048,
@@ -1279,7 +1279,7 @@
               },
               {
                 "id": "z3-7-2",
-                "url": "rasters/base/z3/tile_7_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_2.webp",
                 "sourceRect": [
                   7168,
                   2048,
@@ -1291,7 +1291,7 @@
               },
               {
                 "id": "z3-8-2",
-                "url": "rasters/base/z3/tile_8_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_2.webp",
                 "sourceRect": [
                   8192,
                   2048,
@@ -1303,7 +1303,7 @@
               },
               {
                 "id": "z3-9-2",
-                "url": "rasters/base/z3/tile_9_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_2.webp",
                 "sourceRect": [
                   9216,
                   2048,
@@ -1315,7 +1315,7 @@
               },
               {
                 "id": "z3-10-2",
-                "url": "rasters/base/z3/tile_10_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_2.webp",
                 "sourceRect": [
                   10240,
                   2048,
@@ -1327,7 +1327,7 @@
               },
               {
                 "id": "z3-11-2",
-                "url": "rasters/base/z3/tile_11_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_2.webp",
                 "sourceRect": [
                   11264,
                   2048,
@@ -1339,7 +1339,7 @@
               },
               {
                 "id": "z3-12-2",
-                "url": "rasters/base/z3/tile_12_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_2.webp",
                 "sourceRect": [
                   12288,
                   2048,
@@ -1351,7 +1351,7 @@
               },
               {
                 "id": "z3-13-2",
-                "url": "rasters/base/z3/tile_13_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_2.webp",
                 "sourceRect": [
                   13312,
                   2048,
@@ -1363,7 +1363,7 @@
               },
               {
                 "id": "z3-14-2",
-                "url": "rasters/base/z3/tile_14_2.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_2.webp",
                 "sourceRect": [
                   14336,
                   2048,
@@ -1375,7 +1375,7 @@
               },
               {
                 "id": "z3-0-3",
-                "url": "rasters/base/z3/tile_0_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_3.webp",
                 "sourceRect": [
                   0,
                   3072,
@@ -1387,7 +1387,7 @@
               },
               {
                 "id": "z3-1-3",
-                "url": "rasters/base/z3/tile_1_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_3.webp",
                 "sourceRect": [
                   1024,
                   3072,
@@ -1399,7 +1399,7 @@
               },
               {
                 "id": "z3-2-3",
-                "url": "rasters/base/z3/tile_2_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_3.webp",
                 "sourceRect": [
                   2048,
                   3072,
@@ -1411,7 +1411,7 @@
               },
               {
                 "id": "z3-3-3",
-                "url": "rasters/base/z3/tile_3_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_3.webp",
                 "sourceRect": [
                   3072,
                   3072,
@@ -1423,7 +1423,7 @@
               },
               {
                 "id": "z3-4-3",
-                "url": "rasters/base/z3/tile_4_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_3.webp",
                 "sourceRect": [
                   4096,
                   3072,
@@ -1435,7 +1435,7 @@
               },
               {
                 "id": "z3-5-3",
-                "url": "rasters/base/z3/tile_5_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_3.webp",
                 "sourceRect": [
                   5120,
                   3072,
@@ -1447,7 +1447,7 @@
               },
               {
                 "id": "z3-6-3",
-                "url": "rasters/base/z3/tile_6_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_3.webp",
                 "sourceRect": [
                   6144,
                   3072,
@@ -1459,7 +1459,7 @@
               },
               {
                 "id": "z3-7-3",
-                "url": "rasters/base/z3/tile_7_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_3.webp",
                 "sourceRect": [
                   7168,
                   3072,
@@ -1471,7 +1471,7 @@
               },
               {
                 "id": "z3-8-3",
-                "url": "rasters/base/z3/tile_8_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_3.webp",
                 "sourceRect": [
                   8192,
                   3072,
@@ -1483,7 +1483,7 @@
               },
               {
                 "id": "z3-9-3",
-                "url": "rasters/base/z3/tile_9_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_3.webp",
                 "sourceRect": [
                   9216,
                   3072,
@@ -1495,7 +1495,7 @@
               },
               {
                 "id": "z3-10-3",
-                "url": "rasters/base/z3/tile_10_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_3.webp",
                 "sourceRect": [
                   10240,
                   3072,
@@ -1507,7 +1507,7 @@
               },
               {
                 "id": "z3-11-3",
-                "url": "rasters/base/z3/tile_11_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_3.webp",
                 "sourceRect": [
                   11264,
                   3072,
@@ -1519,7 +1519,7 @@
               },
               {
                 "id": "z3-12-3",
-                "url": "rasters/base/z3/tile_12_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_3.webp",
                 "sourceRect": [
                   12288,
                   3072,
@@ -1531,7 +1531,7 @@
               },
               {
                 "id": "z3-13-3",
-                "url": "rasters/base/z3/tile_13_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_3.webp",
                 "sourceRect": [
                   13312,
                   3072,
@@ -1543,7 +1543,7 @@
               },
               {
                 "id": "z3-14-3",
-                "url": "rasters/base/z3/tile_14_3.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_3.webp",
                 "sourceRect": [
                   14336,
                   3072,
@@ -1555,7 +1555,7 @@
               },
               {
                 "id": "z3-0-4",
-                "url": "rasters/base/z3/tile_0_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_4.webp",
                 "sourceRect": [
                   0,
                   4096,
@@ -1567,7 +1567,7 @@
               },
               {
                 "id": "z3-1-4",
-                "url": "rasters/base/z3/tile_1_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_4.webp",
                 "sourceRect": [
                   1024,
                   4096,
@@ -1579,7 +1579,7 @@
               },
               {
                 "id": "z3-2-4",
-                "url": "rasters/base/z3/tile_2_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_4.webp",
                 "sourceRect": [
                   2048,
                   4096,
@@ -1591,7 +1591,7 @@
               },
               {
                 "id": "z3-3-4",
-                "url": "rasters/base/z3/tile_3_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_4.webp",
                 "sourceRect": [
                   3072,
                   4096,
@@ -1603,7 +1603,7 @@
               },
               {
                 "id": "z3-4-4",
-                "url": "rasters/base/z3/tile_4_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_4.webp",
                 "sourceRect": [
                   4096,
                   4096,
@@ -1615,7 +1615,7 @@
               },
               {
                 "id": "z3-5-4",
-                "url": "rasters/base/z3/tile_5_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_4.webp",
                 "sourceRect": [
                   5120,
                   4096,
@@ -1627,7 +1627,7 @@
               },
               {
                 "id": "z3-6-4",
-                "url": "rasters/base/z3/tile_6_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_4.webp",
                 "sourceRect": [
                   6144,
                   4096,
@@ -1639,7 +1639,7 @@
               },
               {
                 "id": "z3-7-4",
-                "url": "rasters/base/z3/tile_7_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_4.webp",
                 "sourceRect": [
                   7168,
                   4096,
@@ -1651,7 +1651,7 @@
               },
               {
                 "id": "z3-8-4",
-                "url": "rasters/base/z3/tile_8_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_4.webp",
                 "sourceRect": [
                   8192,
                   4096,
@@ -1663,7 +1663,7 @@
               },
               {
                 "id": "z3-9-4",
-                "url": "rasters/base/z3/tile_9_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_4.webp",
                 "sourceRect": [
                   9216,
                   4096,
@@ -1675,7 +1675,7 @@
               },
               {
                 "id": "z3-10-4",
-                "url": "rasters/base/z3/tile_10_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_4.webp",
                 "sourceRect": [
                   10240,
                   4096,
@@ -1687,7 +1687,7 @@
               },
               {
                 "id": "z3-11-4",
-                "url": "rasters/base/z3/tile_11_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_4.webp",
                 "sourceRect": [
                   11264,
                   4096,
@@ -1699,7 +1699,7 @@
               },
               {
                 "id": "z3-12-4",
-                "url": "rasters/base/z3/tile_12_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_4.webp",
                 "sourceRect": [
                   12288,
                   4096,
@@ -1711,7 +1711,7 @@
               },
               {
                 "id": "z3-13-4",
-                "url": "rasters/base/z3/tile_13_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_4.webp",
                 "sourceRect": [
                   13312,
                   4096,
@@ -1723,7 +1723,7 @@
               },
               {
                 "id": "z3-14-4",
-                "url": "rasters/base/z3/tile_14_4.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_4.webp",
                 "sourceRect": [
                   14336,
                   4096,
@@ -1735,7 +1735,7 @@
               },
               {
                 "id": "z3-0-5",
-                "url": "rasters/base/z3/tile_0_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_5.webp",
                 "sourceRect": [
                   0,
                   5120,
@@ -1747,7 +1747,7 @@
               },
               {
                 "id": "z3-1-5",
-                "url": "rasters/base/z3/tile_1_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_5.webp",
                 "sourceRect": [
                   1024,
                   5120,
@@ -1759,7 +1759,7 @@
               },
               {
                 "id": "z3-2-5",
-                "url": "rasters/base/z3/tile_2_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_5.webp",
                 "sourceRect": [
                   2048,
                   5120,
@@ -1771,7 +1771,7 @@
               },
               {
                 "id": "z3-3-5",
-                "url": "rasters/base/z3/tile_3_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_5.webp",
                 "sourceRect": [
                   3072,
                   5120,
@@ -1783,7 +1783,7 @@
               },
               {
                 "id": "z3-4-5",
-                "url": "rasters/base/z3/tile_4_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_5.webp",
                 "sourceRect": [
                   4096,
                   5120,
@@ -1795,7 +1795,7 @@
               },
               {
                 "id": "z3-5-5",
-                "url": "rasters/base/z3/tile_5_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_5.webp",
                 "sourceRect": [
                   5120,
                   5120,
@@ -1807,7 +1807,7 @@
               },
               {
                 "id": "z3-6-5",
-                "url": "rasters/base/z3/tile_6_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_5.webp",
                 "sourceRect": [
                   6144,
                   5120,
@@ -1819,7 +1819,7 @@
               },
               {
                 "id": "z3-7-5",
-                "url": "rasters/base/z3/tile_7_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_5.webp",
                 "sourceRect": [
                   7168,
                   5120,
@@ -1831,7 +1831,7 @@
               },
               {
                 "id": "z3-8-5",
-                "url": "rasters/base/z3/tile_8_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_5.webp",
                 "sourceRect": [
                   8192,
                   5120,
@@ -1843,7 +1843,7 @@
               },
               {
                 "id": "z3-9-5",
-                "url": "rasters/base/z3/tile_9_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_5.webp",
                 "sourceRect": [
                   9216,
                   5120,
@@ -1855,7 +1855,7 @@
               },
               {
                 "id": "z3-10-5",
-                "url": "rasters/base/z3/tile_10_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_5.webp",
                 "sourceRect": [
                   10240,
                   5120,
@@ -1867,7 +1867,7 @@
               },
               {
                 "id": "z3-11-5",
-                "url": "rasters/base/z3/tile_11_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_5.webp",
                 "sourceRect": [
                   11264,
                   5120,
@@ -1879,7 +1879,7 @@
               },
               {
                 "id": "z3-12-5",
-                "url": "rasters/base/z3/tile_12_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_5.webp",
                 "sourceRect": [
                   12288,
                   5120,
@@ -1891,7 +1891,7 @@
               },
               {
                 "id": "z3-13-5",
-                "url": "rasters/base/z3/tile_13_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_5.webp",
                 "sourceRect": [
                   13312,
                   5120,
@@ -1903,7 +1903,7 @@
               },
               {
                 "id": "z3-14-5",
-                "url": "rasters/base/z3/tile_14_5.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_5.webp",
                 "sourceRect": [
                   14336,
                   5120,
@@ -1915,7 +1915,7 @@
               },
               {
                 "id": "z3-0-6",
-                "url": "rasters/base/z3/tile_0_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_6.webp",
                 "sourceRect": [
                   0,
                   6144,
@@ -1927,7 +1927,7 @@
               },
               {
                 "id": "z3-1-6",
-                "url": "rasters/base/z3/tile_1_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_6.webp",
                 "sourceRect": [
                   1024,
                   6144,
@@ -1939,7 +1939,7 @@
               },
               {
                 "id": "z3-2-6",
-                "url": "rasters/base/z3/tile_2_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_6.webp",
                 "sourceRect": [
                   2048,
                   6144,
@@ -1951,7 +1951,7 @@
               },
               {
                 "id": "z3-3-6",
-                "url": "rasters/base/z3/tile_3_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_6.webp",
                 "sourceRect": [
                   3072,
                   6144,
@@ -1963,7 +1963,7 @@
               },
               {
                 "id": "z3-4-6",
-                "url": "rasters/base/z3/tile_4_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_6.webp",
                 "sourceRect": [
                   4096,
                   6144,
@@ -1975,7 +1975,7 @@
               },
               {
                 "id": "z3-5-6",
-                "url": "rasters/base/z3/tile_5_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_6.webp",
                 "sourceRect": [
                   5120,
                   6144,
@@ -1987,7 +1987,7 @@
               },
               {
                 "id": "z3-6-6",
-                "url": "rasters/base/z3/tile_6_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_6.webp",
                 "sourceRect": [
                   6144,
                   6144,
@@ -1999,7 +1999,7 @@
               },
               {
                 "id": "z3-7-6",
-                "url": "rasters/base/z3/tile_7_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_6.webp",
                 "sourceRect": [
                   7168,
                   6144,
@@ -2011,7 +2011,7 @@
               },
               {
                 "id": "z3-8-6",
-                "url": "rasters/base/z3/tile_8_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_6.webp",
                 "sourceRect": [
                   8192,
                   6144,
@@ -2023,7 +2023,7 @@
               },
               {
                 "id": "z3-9-6",
-                "url": "rasters/base/z3/tile_9_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_6.webp",
                 "sourceRect": [
                   9216,
                   6144,
@@ -2035,7 +2035,7 @@
               },
               {
                 "id": "z3-10-6",
-                "url": "rasters/base/z3/tile_10_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_6.webp",
                 "sourceRect": [
                   10240,
                   6144,
@@ -2047,7 +2047,7 @@
               },
               {
                 "id": "z3-11-6",
-                "url": "rasters/base/z3/tile_11_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_6.webp",
                 "sourceRect": [
                   11264,
                   6144,
@@ -2059,7 +2059,7 @@
               },
               {
                 "id": "z3-12-6",
-                "url": "rasters/base/z3/tile_12_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_6.webp",
                 "sourceRect": [
                   12288,
                   6144,
@@ -2071,7 +2071,7 @@
               },
               {
                 "id": "z3-13-6",
-                "url": "rasters/base/z3/tile_13_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_6.webp",
                 "sourceRect": [
                   13312,
                   6144,
@@ -2083,7 +2083,7 @@
               },
               {
                 "id": "z3-14-6",
-                "url": "rasters/base/z3/tile_14_6.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_6.webp",
                 "sourceRect": [
                   14336,
                   6144,
@@ -2095,7 +2095,7 @@
               },
               {
                 "id": "z3-0-7",
-                "url": "rasters/base/z3/tile_0_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_7.webp",
                 "sourceRect": [
                   0,
                   7168,
@@ -2107,7 +2107,7 @@
               },
               {
                 "id": "z3-1-7",
-                "url": "rasters/base/z3/tile_1_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_7.webp",
                 "sourceRect": [
                   1024,
                   7168,
@@ -2119,7 +2119,7 @@
               },
               {
                 "id": "z3-2-7",
-                "url": "rasters/base/z3/tile_2_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_7.webp",
                 "sourceRect": [
                   2048,
                   7168,
@@ -2131,7 +2131,7 @@
               },
               {
                 "id": "z3-3-7",
-                "url": "rasters/base/z3/tile_3_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_7.webp",
                 "sourceRect": [
                   3072,
                   7168,
@@ -2143,7 +2143,7 @@
               },
               {
                 "id": "z3-4-7",
-                "url": "rasters/base/z3/tile_4_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_7.webp",
                 "sourceRect": [
                   4096,
                   7168,
@@ -2155,7 +2155,7 @@
               },
               {
                 "id": "z3-5-7",
-                "url": "rasters/base/z3/tile_5_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_7.webp",
                 "sourceRect": [
                   5120,
                   7168,
@@ -2167,7 +2167,7 @@
               },
               {
                 "id": "z3-6-7",
-                "url": "rasters/base/z3/tile_6_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_7.webp",
                 "sourceRect": [
                   6144,
                   7168,
@@ -2179,7 +2179,7 @@
               },
               {
                 "id": "z3-7-7",
-                "url": "rasters/base/z3/tile_7_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_7.webp",
                 "sourceRect": [
                   7168,
                   7168,
@@ -2191,7 +2191,7 @@
               },
               {
                 "id": "z3-8-7",
-                "url": "rasters/base/z3/tile_8_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_7.webp",
                 "sourceRect": [
                   8192,
                   7168,
@@ -2203,7 +2203,7 @@
               },
               {
                 "id": "z3-9-7",
-                "url": "rasters/base/z3/tile_9_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_7.webp",
                 "sourceRect": [
                   9216,
                   7168,
@@ -2215,7 +2215,7 @@
               },
               {
                 "id": "z3-10-7",
-                "url": "rasters/base/z3/tile_10_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_7.webp",
                 "sourceRect": [
                   10240,
                   7168,
@@ -2227,7 +2227,7 @@
               },
               {
                 "id": "z3-11-7",
-                "url": "rasters/base/z3/tile_11_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_7.webp",
                 "sourceRect": [
                   11264,
                   7168,
@@ -2239,7 +2239,7 @@
               },
               {
                 "id": "z3-12-7",
-                "url": "rasters/base/z3/tile_12_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_7.webp",
                 "sourceRect": [
                   12288,
                   7168,
@@ -2251,7 +2251,7 @@
               },
               {
                 "id": "z3-13-7",
-                "url": "rasters/base/z3/tile_13_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_7.webp",
                 "sourceRect": [
                   13312,
                   7168,
@@ -2263,7 +2263,7 @@
               },
               {
                 "id": "z3-14-7",
-                "url": "rasters/base/z3/tile_14_7.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_7.webp",
                 "sourceRect": [
                   14336,
                   7168,
@@ -2275,7 +2275,7 @@
               },
               {
                 "id": "z3-0-8",
-                "url": "rasters/base/z3/tile_0_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_8.webp",
                 "sourceRect": [
                   0,
                   8192,
@@ -2287,7 +2287,7 @@
               },
               {
                 "id": "z3-1-8",
-                "url": "rasters/base/z3/tile_1_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_8.webp",
                 "sourceRect": [
                   1024,
                   8192,
@@ -2299,7 +2299,7 @@
               },
               {
                 "id": "z3-2-8",
-                "url": "rasters/base/z3/tile_2_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_8.webp",
                 "sourceRect": [
                   2048,
                   8192,
@@ -2311,7 +2311,7 @@
               },
               {
                 "id": "z3-3-8",
-                "url": "rasters/base/z3/tile_3_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_8.webp",
                 "sourceRect": [
                   3072,
                   8192,
@@ -2323,7 +2323,7 @@
               },
               {
                 "id": "z3-4-8",
-                "url": "rasters/base/z3/tile_4_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_8.webp",
                 "sourceRect": [
                   4096,
                   8192,
@@ -2335,7 +2335,7 @@
               },
               {
                 "id": "z3-5-8",
-                "url": "rasters/base/z3/tile_5_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_8.webp",
                 "sourceRect": [
                   5120,
                   8192,
@@ -2347,7 +2347,7 @@
               },
               {
                 "id": "z3-6-8",
-                "url": "rasters/base/z3/tile_6_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_8.webp",
                 "sourceRect": [
                   6144,
                   8192,
@@ -2359,7 +2359,7 @@
               },
               {
                 "id": "z3-7-8",
-                "url": "rasters/base/z3/tile_7_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_8.webp",
                 "sourceRect": [
                   7168,
                   8192,
@@ -2371,7 +2371,7 @@
               },
               {
                 "id": "z3-8-8",
-                "url": "rasters/base/z3/tile_8_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_8.webp",
                 "sourceRect": [
                   8192,
                   8192,
@@ -2383,7 +2383,7 @@
               },
               {
                 "id": "z3-9-8",
-                "url": "rasters/base/z3/tile_9_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_8.webp",
                 "sourceRect": [
                   9216,
                   8192,
@@ -2395,7 +2395,7 @@
               },
               {
                 "id": "z3-10-8",
-                "url": "rasters/base/z3/tile_10_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_8.webp",
                 "sourceRect": [
                   10240,
                   8192,
@@ -2407,7 +2407,7 @@
               },
               {
                 "id": "z3-11-8",
-                "url": "rasters/base/z3/tile_11_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_8.webp",
                 "sourceRect": [
                   11264,
                   8192,
@@ -2419,7 +2419,7 @@
               },
               {
                 "id": "z3-12-8",
-                "url": "rasters/base/z3/tile_12_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_8.webp",
                 "sourceRect": [
                   12288,
                   8192,
@@ -2431,7 +2431,7 @@
               },
               {
                 "id": "z3-13-8",
-                "url": "rasters/base/z3/tile_13_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_8.webp",
                 "sourceRect": [
                   13312,
                   8192,
@@ -2443,7 +2443,7 @@
               },
               {
                 "id": "z3-14-8",
-                "url": "rasters/base/z3/tile_14_8.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_8.webp",
                 "sourceRect": [
                   14336,
                   8192,
@@ -2455,7 +2455,7 @@
               },
               {
                 "id": "z3-0-9",
-                "url": "rasters/base/z3/tile_0_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_9.webp",
                 "sourceRect": [
                   0,
                   9216,
@@ -2467,7 +2467,7 @@
               },
               {
                 "id": "z3-1-9",
-                "url": "rasters/base/z3/tile_1_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_9.webp",
                 "sourceRect": [
                   1024,
                   9216,
@@ -2479,7 +2479,7 @@
               },
               {
                 "id": "z3-2-9",
-                "url": "rasters/base/z3/tile_2_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_9.webp",
                 "sourceRect": [
                   2048,
                   9216,
@@ -2491,7 +2491,7 @@
               },
               {
                 "id": "z3-3-9",
-                "url": "rasters/base/z3/tile_3_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_9.webp",
                 "sourceRect": [
                   3072,
                   9216,
@@ -2503,7 +2503,7 @@
               },
               {
                 "id": "z3-4-9",
-                "url": "rasters/base/z3/tile_4_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_9.webp",
                 "sourceRect": [
                   4096,
                   9216,
@@ -2515,7 +2515,7 @@
               },
               {
                 "id": "z3-5-9",
-                "url": "rasters/base/z3/tile_5_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_9.webp",
                 "sourceRect": [
                   5120,
                   9216,
@@ -2527,7 +2527,7 @@
               },
               {
                 "id": "z3-6-9",
-                "url": "rasters/base/z3/tile_6_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_9.webp",
                 "sourceRect": [
                   6144,
                   9216,
@@ -2539,7 +2539,7 @@
               },
               {
                 "id": "z3-7-9",
-                "url": "rasters/base/z3/tile_7_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_9.webp",
                 "sourceRect": [
                   7168,
                   9216,
@@ -2551,7 +2551,7 @@
               },
               {
                 "id": "z3-8-9",
-                "url": "rasters/base/z3/tile_8_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_9.webp",
                 "sourceRect": [
                   8192,
                   9216,
@@ -2563,7 +2563,7 @@
               },
               {
                 "id": "z3-9-9",
-                "url": "rasters/base/z3/tile_9_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_9.webp",
                 "sourceRect": [
                   9216,
                   9216,
@@ -2575,7 +2575,7 @@
               },
               {
                 "id": "z3-10-9",
-                "url": "rasters/base/z3/tile_10_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_9.webp",
                 "sourceRect": [
                   10240,
                   9216,
@@ -2587,7 +2587,7 @@
               },
               {
                 "id": "z3-11-9",
-                "url": "rasters/base/z3/tile_11_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_9.webp",
                 "sourceRect": [
                   11264,
                   9216,
@@ -2599,7 +2599,7 @@
               },
               {
                 "id": "z3-12-9",
-                "url": "rasters/base/z3/tile_12_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_9.webp",
                 "sourceRect": [
                   12288,
                   9216,
@@ -2611,7 +2611,7 @@
               },
               {
                 "id": "z3-13-9",
-                "url": "rasters/base/z3/tile_13_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_9.webp",
                 "sourceRect": [
                   13312,
                   9216,
@@ -2623,7 +2623,7 @@
               },
               {
                 "id": "z3-14-9",
-                "url": "rasters/base/z3/tile_14_9.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_9.webp",
                 "sourceRect": [
                   14336,
                   9216,
@@ -2635,7 +2635,7 @@
               },
               {
                 "id": "z3-0-10",
-                "url": "rasters/base/z3/tile_0_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_0_10.webp",
                 "sourceRect": [
                   0,
                   10240,
@@ -2647,7 +2647,7 @@
               },
               {
                 "id": "z3-1-10",
-                "url": "rasters/base/z3/tile_1_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_1_10.webp",
                 "sourceRect": [
                   1024,
                   10240,
@@ -2659,7 +2659,7 @@
               },
               {
                 "id": "z3-2-10",
-                "url": "rasters/base/z3/tile_2_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_2_10.webp",
                 "sourceRect": [
                   2048,
                   10240,
@@ -2671,7 +2671,7 @@
               },
               {
                 "id": "z3-3-10",
-                "url": "rasters/base/z3/tile_3_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_3_10.webp",
                 "sourceRect": [
                   3072,
                   10240,
@@ -2683,7 +2683,7 @@
               },
               {
                 "id": "z3-4-10",
-                "url": "rasters/base/z3/tile_4_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_4_10.webp",
                 "sourceRect": [
                   4096,
                   10240,
@@ -2695,7 +2695,7 @@
               },
               {
                 "id": "z3-5-10",
-                "url": "rasters/base/z3/tile_5_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_5_10.webp",
                 "sourceRect": [
                   5120,
                   10240,
@@ -2707,7 +2707,7 @@
               },
               {
                 "id": "z3-6-10",
-                "url": "rasters/base/z3/tile_6_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_6_10.webp",
                 "sourceRect": [
                   6144,
                   10240,
@@ -2719,7 +2719,7 @@
               },
               {
                 "id": "z3-7-10",
-                "url": "rasters/base/z3/tile_7_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_7_10.webp",
                 "sourceRect": [
                   7168,
                   10240,
@@ -2731,7 +2731,7 @@
               },
               {
                 "id": "z3-8-10",
-                "url": "rasters/base/z3/tile_8_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_8_10.webp",
                 "sourceRect": [
                   8192,
                   10240,
@@ -2743,7 +2743,7 @@
               },
               {
                 "id": "z3-9-10",
-                "url": "rasters/base/z3/tile_9_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_9_10.webp",
                 "sourceRect": [
                   9216,
                   10240,
@@ -2755,7 +2755,7 @@
               },
               {
                 "id": "z3-10-10",
-                "url": "rasters/base/z3/tile_10_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_10_10.webp",
                 "sourceRect": [
                   10240,
                   10240,
@@ -2767,7 +2767,7 @@
               },
               {
                 "id": "z3-11-10",
-                "url": "rasters/base/z3/tile_11_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_11_10.webp",
                 "sourceRect": [
                   11264,
                   10240,
@@ -2779,7 +2779,7 @@
               },
               {
                 "id": "z3-12-10",
-                "url": "rasters/base/z3/tile_12_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_12_10.webp",
                 "sourceRect": [
                   12288,
                   10240,
@@ -2791,7 +2791,7 @@
               },
               {
                 "id": "z3-13-10",
-                "url": "rasters/base/z3/tile_13_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_13_10.webp",
                 "sourceRect": [
                   13312,
                   10240,
@@ -2803,7 +2803,7 @@
               },
               {
                 "id": "z3-14-10",
-                "url": "rasters/base/z3/tile_14_10.webp",
+                "url": "rasters/base-20260619T133432403695Z/z3/tile_14_10.webp",
                 "sourceRect": [
                   14336,
                   10240,
@@ -2828,31 +2828,12 @@
       "labelData": "labels/airspace.json",
       "defaultVisible": false,
       "defaultLabels": false,
-      "maxVisibleLabels": 110,
-      "extendedMaxVisibleLabels": 303,
       "altitudeVolume": {
         "enabledByDefault": false,
         "worldUnitsPerFoot": 8e-05,
         "openEndedCeilingFt": 12000,
         "minThicknessWorldUnits": 0.06
       },
-      "zoomLabelThresholds": [
-        {
-          "radius": 14.0,
-          "visibleLabels": 132,
-          "includeExtended": false
-        },
-        {
-          "radius": 10.0,
-          "visibleLabels": 168,
-          "includeExtended": true
-        },
-        {
-          "radius": 7.0,
-          "visibleLabels": 260,
-          "includeExtended": true
-        }
-      ],
       "polygonStrokeMerge": true,
       "strokeRenderMode": "lines"
     },
@@ -2864,7 +2845,6 @@
       "labelData": "labels/airports.json",
       "defaultVisible": false,
       "defaultLabels": false,
-      "maxVisibleLabels": 90,
       "materialMode": "opaque"
     },
     {
@@ -2875,7 +2855,6 @@
       "labelData": "labels/navaids.json",
       "defaultVisible": false,
       "defaultLabels": false,
-      "maxVisibleLabels": 95,
       "materialMode": "opaque",
       "polygonStrokeMerge": true
     },
@@ -2886,8 +2865,7 @@
       "overlayData": "overlays/intersections.vector.json",
       "labelData": "labels/intersections.json",
       "defaultVisible": false,
-      "defaultLabels": false,
-      "maxVisibleLabels": 120
+      "defaultLabels": false
     },
     {
       "id": "victors",
@@ -2897,7 +2875,6 @@
       "labelData": "labels/victors.json",
       "defaultVisible": false,
       "defaultLabels": false,
-      "maxVisibleLabels": 80,
       "strokePresentation": "tube",
       "strokeSegmentMerge": false
     }

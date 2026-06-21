@@ -1,6 +1,6 @@
 # FAA Prototype Workspace
 
-This repository is organized around the runnable St. Louis prototype under [`prototype/`](./prototype). The VR viewer, the 2D review app, shared browser modules, rebuild tools, and the staged runtime data all live there.
+This repository is organized around the runnable FAA prototype under [`prototype/`](./prototype). The VR viewer, the 2D review app, shared browser modules, rebuild tools, and the staged runtime data all live there.
 
 ## Canonical Structure
 
@@ -37,14 +37,14 @@ If you prefer the original launcher file with spaces in its name, use:
 
 That one-click launcher:
 
-- starts the St. Louis linked-review session over HTTPS
+- starts the linked-review session over HTTPS
 - opens a lightweight local operator page
 - shows the LAN VR URL for the headset browser
 - shows the LAN desktop/2D companion URL
 - gives you a `Stop Session` button
 
 The checked-in runtime data is enough to launch immediately after cloning.
-That includes the staged St. Louis runtime assets under `prototype/babylon-vr-faa-map/data/sections/stlouis/`.
+That includes the staged Daytona and St. Louis runtime assets under `prototype/babylon-vr-faa-map/data/sections/`.
 
 If you want the direct non-wrapper launch paths instead:
 
@@ -68,7 +68,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\launch_stlouis_prototype.ps1
 
 ## Rebuild Assets
 
-The checked-in runtime data under `prototype/babylon-vr-faa-map/data/` is enough to run the prototype after cloning. Rebuilding those assets requires local FAA source datasets and the St. Louis GeoTIFF under `prototype/reference-data/`.
+The checked-in runtime data under `prototype/babylon-vr-faa-map/data/` is enough to run the prototype after cloning. Rebuilding those assets requires local FAA source datasets and the source chart GeoTIFFs under `prototype/reference-data/`.
 
 Rebuild command:
 
@@ -78,7 +78,7 @@ py -3 .\prototype\babylon-vr-faa-map\tools\build_section_assets.py
 
 ## VR controls
 
-Current St. Louis VR controls:
+Current VR controls:
 
 - `Enter VR`: starts immersive VR when WebXR is available.
 - `Controller ray`: point at labels or controls and press/select to interact.
@@ -90,6 +90,11 @@ Current St. Louis VR controls:
 - `One-hand squeeze / grab`: drags the map in space.
 - `Two-hand squeeze / grab`: moves, scales, and rotates the map together.
 - `Label selection`: labels are preferred pick targets over geometry beneath them.
+
+Current default section behavior:
+
+- The prototype now opens into the `Daytona Beach Area` section by default.
+- `St. Louis Sectional` remains available from the in-app section selector.
 
 Current behavior notes:
 

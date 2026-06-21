@@ -2,12 +2,20 @@ const XR_STATES = BABYLON.WebXRState ?? {};
 const PANEL_TOGGLE_DEBOUNCE_MS = 300;
 const FALLBACK_VIEW_OFFSET = new BABYLON.Vector3(-0.34, -0.02, 0.72);
 const CONTROLLER_FOREARM_OFFSET = new BABYLON.Vector3(0.02, 0.21, 0.16);
+const ACTION_ROW_HEIGHT_PX = 52;
+const CHECKBOX_WIDTH_PX = 148;
+const CHECKBOX_HEIGHT_PX = 44;
+const CHECKBOX_FONT_SIZE_PX = 28;
+const LABEL_FONT_SIZE_PX = 29;
+const MASTER_BUTTON_WIDTH_PX = 154;
+const MASTER_BUTTON_HEIGHT_PX = 42;
 
 export class VrControlPanel {
-  constructor(scene, xrHelper, camera) {
+  constructor(scene, xrHelper, camera, inputSourceVisualManager = null) {
     this.scene = scene;
     this.xrHelper = xrHelper;
     this.camera = camera;
+    this.inputSourceVisualManager = inputSourceVisualManager;
     this.config = null;
     this.currentAnchor = null;
     this.leftController = null;
@@ -24,7 +32,7 @@ export class VrControlPanel {
 
     this.panelMesh = BABYLON.MeshBuilder.CreatePlane(
       "xr-panel-plane",
-      { width: 0.34, height: 0.42 },
+      { width: 0.46, height: 0.58 },
       scene,
     );
     this.panelMesh.parent = this.root;
@@ -38,7 +46,7 @@ export class VrControlPanel {
     this.panelMaterial.specularColor = BABYLON.Color3.Black();
     this.panelMesh.material = this.panelMaterial;
 
-    this.texture = BABYLON.GUI.AdvancedDynamicTexture.CreateForMesh(this.panelMesh, 1024, 1280, false);
+    this.texture = BABYLON.GUI.AdvancedDynamicTexture.CreateForMesh(this.panelMesh, 1280, 1800, false);
     this.texture.background = "transparent";
     this.contentRoot = new BABYLON.GUI.Rectangle("xr-panel-content");
     this.contentRoot.thickness = 0;
@@ -47,11 +55,11 @@ export class VrControlPanel {
     this.texture.addControl(this.contentRoot);
 
     this.stack = new BABYLON.GUI.StackPanel("xr-panel-stack");
-    this.stack.width = 0.94;
+    this.stack.width = 0.92;
     this.stack.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_CENTER;
     this.stack.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
-    this.stack.paddingTop = "26px";
-    this.stack.paddingBottom = "24px";
+    this.stack.paddingTop = "24px";
+    this.stack.paddingBottom = "22px";
     this.contentRoot.addControl(this.stack);
 
     this.controllerAddedObserver = xrHelper?.input?.onControllerAddedObservable?.add((controller) => {
@@ -67,6 +75,10 @@ export class VrControlPanel {
     this.beforeRenderObserver = scene.onBeforeRenderObservable.add(() => {
       this.syncRuntimePlacement();
     });
+
+    for (const controller of xrHelper?.input?.controllers ?? []) {
+      this.handleControllerAdded(controller);
+    }
   }
 
   setConfig(config) {
@@ -102,10 +114,12 @@ export class VrControlPanel {
 
     this.stack.addControl(this.buildTitle(this.config.title ?? "St. Louis Controls", 44, "#E8F0FF"));
     if (this.config.subtitle) {
-      const subtitle = this.buildTitle(this.config.subtitle, 24, "#B9C9E8");
-      subtitle.height = "40px";
+      const subtitle = this.buildTitle(this.config.subtitle, 27, "#B9C9E8");
+      subtitle.height = "44px";
       this.stack.addControl(subtitle);
     }
+
+    this.stack.addControl(this.buildMasterControls());
 
     for (const layer of this.config.layers ?? []) {
       this.stack.addControl(this.buildLayerCard(layer));
@@ -126,25 +140,26 @@ export class VrControlPanel {
 
   buildLayerCard(layer) {
     const card = new BABYLON.GUI.Rectangle(`xr-layer-${layer.id}`);
-    card.height = layer.supportsAltitudeVolume ? "170px" : "138px";
+    const actionRows = layer.supportsAltitudeVolume ? 3 : 2;
+    card.height = `${72 + actionRows * ACTION_ROW_HEIGHT_PX}px`;
     card.thickness = 1;
     card.color = "#35527A";
     card.cornerRadius = 20;
     card.background = layer.layerVisible ? "#173050E3" : "#0E1B30D6";
-    card.paddingBottom = "14px";
+    card.paddingBottom = "12px";
     card.paddingTop = "8px";
 
     const stack = new BABYLON.GUI.StackPanel();
-    stack.width = 0.92;
+    stack.width = 0.94;
     stack.isVertical = true;
     card.addControl(stack);
 
     const title = new BABYLON.GUI.TextBlock();
     title.text = layer.title;
     title.color = "#F4F8FF";
-    title.fontSize = "30px";
+    title.fontSize = "34px";
     title.fontWeight = "600";
-    title.height = "40px";
+    title.height = "48px";
     title.textHorizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
     stack.addControl(title);
 
@@ -170,37 +185,129 @@ export class VrControlPanel {
 
   buildActionRow(label, active, onPress, disabled = false) {
     const row = new BABYLON.GUI.Grid();
-    row.height = "34px";
-    row.addColumnDefinition(0.45);
-    row.addColumnDefinition(0.55);
-    row.paddingTop = "10px";
+    row.height = `${ACTION_ROW_HEIGHT_PX}px`;
+    row.addColumnDefinition(0.56);
+    row.addColumnDefinition(0.44);
+    row.paddingTop = "8px";
+
+    const toggle = () => {
+      if (!disabled) {
+        onPress();
+      }
+    };
 
     const labelBlock = new BABYLON.GUI.TextBlock();
     labelBlock.text = label;
     labelBlock.color = disabled ? "#7D90B3" : "#D9E7FF";
-    labelBlock.fontSize = "24px";
+    labelBlock.fontSize = `${LABEL_FONT_SIZE_PX}px`;
+    labelBlock.fontWeight = "600";
     labelBlock.textHorizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+    labelBlock.isPointerBlocker = !disabled;
+    if (!disabled) {
+      labelBlock.onPointerUpObservable.add(toggle);
+    }
     row.addControl(labelBlock, 0, 0);
 
     const button = BABYLON.GUI.Button.CreateSimpleButton(`${label}-toggle`, active ? "On" : "Off");
-    button.height = "30px";
-    button.width = "112px";
-    button.cornerRadius = 14;
-    button.thickness = 1;
-    button.fontSize = "22px";
+    button.height = `${CHECKBOX_HEIGHT_PX}px`;
+    button.width = `${CHECKBOX_WIDTH_PX}px`;
+    button.cornerRadius = 12;
+    button.thickness = active ? 2 : 1;
+    button.fontSize = `${CHECKBOX_FONT_SIZE_PX}px`;
+    button.fontWeight = "700";
     button.color = disabled ? "#95A3BF" : "#F8FBFF";
     button.background = disabled ? "#1D2B42" : active ? "#1E7BFF" : "#243650";
-    button.thickness = disabled ? 1 : active ? 0 : 1;
     button.isEnabled = !disabled;
     if (!disabled) {
-      button.onPointerUpObservable.add(() => onPress());
+      button.onPointerUpObservable.add(toggle);
     }
     row.addControl(button, 0, 1);
 
     return row;
   }
 
+  buildMasterControls() {
+    const card = new BABYLON.GUI.Rectangle("xr-master-controls");
+    card.height = "162px";
+    card.thickness = 1;
+    card.color = "#4B668E";
+    card.cornerRadius = 20;
+    card.background = "#0D1A2FD9";
+    card.paddingTop = "8px";
+    card.paddingBottom = "12px";
+
+    const stack = new BABYLON.GUI.StackPanel();
+    stack.width = 0.94;
+    stack.isVertical = true;
+    card.addControl(stack);
+
+    const title = new BABYLON.GUI.TextBlock();
+    title.text = "Master Control";
+    title.color = "#F4F8FF";
+    title.fontSize = "32px";
+    title.fontWeight = "700";
+    title.height = "44px";
+    title.textHorizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+    stack.addControl(title);
+
+    stack.addControl(this.buildMasterRow("Maps", () => {
+      this.config?.onSetAllLayerVisible?.(true);
+    }, () => {
+      this.config?.onSetAllLayerVisible?.(false);
+    }));
+
+    const hasLabelToggles = (this.config?.layers ?? []).some((layer) => layer.labelToggleAvailable);
+    stack.addControl(this.buildMasterRow("Labels", () => {
+      this.config?.onSetAllLabels?.(true);
+    }, () => {
+      this.config?.onSetAllLabels?.(false);
+    }, !hasLabelToggles));
+
+    return card;
+  }
+
+  buildMasterRow(label, onSelectAll, onDeselectAll, disabled = false) {
+    const row = new BABYLON.GUI.Grid();
+    row.height = "48px";
+    row.addColumnDefinition(0.34);
+    row.addColumnDefinition(0.33);
+    row.addColumnDefinition(0.33);
+    row.paddingTop = "6px";
+
+    const labelBlock = new BABYLON.GUI.TextBlock();
+    labelBlock.text = label;
+    labelBlock.color = disabled ? "#7D90B3" : "#D9E7FF";
+    labelBlock.fontSize = "27px";
+    labelBlock.fontWeight = "600";
+    labelBlock.textHorizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+    row.addControl(labelBlock, 0, 0);
+
+    row.addControl(this.buildMasterButton(label, "Select All", onSelectAll, disabled), 0, 1);
+    row.addControl(this.buildMasterButton(label, "Deselect All", onDeselectAll, disabled), 0, 2);
+    return row;
+  }
+
+  buildMasterButton(category, text, onPress, disabled = false) {
+    const button = BABYLON.GUI.Button.CreateSimpleButton(`master-${category}-${text}`, text);
+    button.height = `${MASTER_BUTTON_HEIGHT_PX}px`;
+    button.width = `${MASTER_BUTTON_WIDTH_PX}px`;
+    button.cornerRadius = 12;
+    button.thickness = 1;
+    button.fontSize = "22px";
+    button.fontWeight = "700";
+    button.color = disabled ? "#95A3BF" : "#F8FBFF";
+    button.background = disabled ? "#1D2B42" : "#23466E";
+    button.isEnabled = !disabled;
+    if (!disabled) {
+      button.onPointerUpObservable.add(() => onPress());
+    }
+    return button;
+  }
+
   handleControllerAdded(controller) {
+    if (!controller?.uniqueId || this.controllerEntries.has(controller.uniqueId)) {
+      return;
+    }
     const entry = {
       controller,
       motionControllerObserver: null,
@@ -265,7 +372,8 @@ export class VrControlPanel {
     if (!this.isInXr()) {
       return this.fallbackAnchor;
     }
-    return this.leftController?.grip ?? this.leftController?.pointer ?? this.fallbackAnchor;
+    const leftController = this.syncActiveLeftController();
+    return leftController?.grip ?? leftController?.pointer ?? this.fallbackAnchor;
   }
 
   resolveFallbackParent() {
@@ -281,12 +389,21 @@ export class VrControlPanel {
     if (!this.config) {
       return;
     }
+    this.syncActiveLeftController();
     this.updateAnchor();
   }
 
   isInXr() {
     const state = this.xrHelper?.baseExperience?.state;
     return state === XR_STATES.IN_XR || state === XR_STATES.ENTERING_XR;
+  }
+
+  syncActiveLeftController() {
+    const activeLeftController = this.inputSourceVisualManager?.getActiveController("left") ?? this.leftController;
+    if (activeLeftController !== this.leftController) {
+      this.leftController = activeLeftController;
+    }
+    return this.leftController;
   }
 
   dispose() {
@@ -321,28 +438,46 @@ export class VrControlPanel {
 
 function findPanelToggleComponent(motionController) {
   const componentIds = motionController.getComponentIds?.() ?? [];
-  const preferredMatchers = [
-    "thumb",
-    "stick",
+  const preferredIds = [
+    "xr-standard-thumbstick",
+    "xr-standard-touchpad",
+    "thumbstick",
     "touchpad",
     "trackpad",
-    "buttonx",
-    "buttony",
-    "buttona",
-    "buttonb",
-    "secondary",
   ];
 
-  for (const matcher of preferredMatchers) {
-    for (const componentId of componentIds) {
-      const component = motionController.getComponent(componentId);
-      const id = `${componentId}`.toLowerCase();
-      const type = `${component?.type ?? ""}`.toLowerCase();
-      if ((id.includes(matcher) || type.includes(matcher)) && component?.onButtonStateChangedObservable) {
-        return component;
-      }
+  for (const preferredId of preferredIds) {
+    const exactId = componentIds.find((componentId) => `${componentId}`.toLowerCase() === preferredId);
+    const component = exactId ? motionController.getComponent(exactId) : null;
+    if (isClickablePanelToggleComponent(component)) {
+      return component;
+    }
+  }
+
+  for (const componentId of componentIds) {
+    const component = motionController.getComponent(componentId);
+    const id = `${componentId}`.toLowerCase();
+    const type = `${component?.type ?? ""}`.toLowerCase();
+    const isStickOrPad = ["thumbstick", "touchpad", "trackpad"].some((matcher) => (
+      id.includes(matcher) || type.includes(matcher)
+    ));
+    if (!id.includes("thumbrest") && isStickOrPad && isClickablePanelToggleComponent(component)) {
+      return component;
+    }
+  }
+
+  for (const componentId of componentIds) {
+    const component = motionController.getComponent(componentId);
+    const id = `${componentId}`.toLowerCase();
+    if (["buttonx", "buttony", "buttona", "buttonb", "secondary"].some((matcher) => id.includes(matcher))
+      && isClickablePanelToggleComponent(component)) {
+      return component;
     }
   }
 
   return null;
+}
+
+function isClickablePanelToggleComponent(component) {
+  return Boolean(component?.onButtonStateChangedObservable && "pressed" in component);
 }

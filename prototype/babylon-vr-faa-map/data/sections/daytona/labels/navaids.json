@@ -1,0 +1,113 @@
+{
+  "schema": "babylon-vr-labels-v1",
+  "items": [
+    {
+      "id": "GNV",
+      "x": 3290.561,
+      "y": 337.692,
+      "lines": [
+        "GNV",
+        "GATORS",
+        "116.55 / 112Y"
+      ],
+      "style": "navaid-vor",
+      "priority": 1.0
+    },
+    {
+      "id": "LAL",
+      "x": 3846.845,
+      "y": 4699.376,
+      "lines": [
+        "LAL",
+        "LAKELAND",
+        "116 / 107X"
+      ],
+      "style": "navaid-vor",
+      "priority": 1.0
+    },
+    {
+      "id": "OCF",
+      "x": 3394.609,
+      "y": 1684.275,
+      "lines": [
+        "OCF",
+        "OCALA",
+        "113.7 / 84X"
+      ],
+      "style": "navaid-vor",
+      "priority": 1.0
+    },
+    {
+      "id": "OMN",
+      "x": 5948.602,
+      "y": 1348.353,
+      "lines": [
+        "OMN",
+        "ORMOND BEACH",
+        "112.6 / 73X"
+      ],
+      "style": "navaid-vor",
+      "priority": 1.0
+    },
+    {
+      "id": "ORL",
+      "x": 5449.716,
+      "y": 3340.713,
+      "lines": [
+        "ORL",
+        "ORLANDO",
+        "112.2 / 59X"
+      ],
+      "style": "navaid-vor",
+      "priority": 1.0
+    },
+    {
+      "id": "MLB",
+      "x": 7078.111,
+      "y": 4471.084,
+      "lines": [
+        "MLB",
+        "MELBOURNE",
+        "115.85 / 105Y"
+      ],
+      "style": "navaid-vor",
+      "priority": 0.92
+    },
+    {
+      "id": "COF",
+      "x": 7128.843,
+      "y": 4124.28,
+      "lines": [
+        "COF",
+        "PATRICK",
+        "115 / 97X"
+      ],
+      "style": "navaid-vor",
+      "priority": 0.76
+    },
+    {
+      "id": "CTY",
+      "x": 1516.126,
+      "y": 571.712,
+      "lines": [
+        "CTY",
+        "CROSS CITY",
+        "112 / 57X"
+      ],
+      "style": "navaid-vor",
+      "priority": 0.76
+    },
+    {
+      "id": "PI",
+      "x": 2245.607,
+      "y": 4688.547,
+      "lines": [
+        "PI",
+        "CAPOK",
+        "360"
+      ],
+      "style": "navaid-ndb",
+      "priority": 0.6799999999999999
+    }
+  ]
+}

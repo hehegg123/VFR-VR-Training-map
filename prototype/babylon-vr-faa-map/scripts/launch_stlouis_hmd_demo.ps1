@@ -88,9 +88,9 @@ $certInfo = & (Join-Path $PSScriptRoot "ensure_stlouis_dev_cert.ps1") `
     -IpAddresses @("127.0.0.1", $lanIp) `
     -TrustCurrentUser:$TrustCurrentUser
 
-$localUrl = "https://localhost:$Port/babylon-vr-faa-map/?section=stlouis"
-$lanUrl = "https://$lanIp`:$Port/babylon-vr-faa-map/?section=stlouis"
-$hostUrl = "https://$computerName`:$Port/babylon-vr-faa-map/?section=stlouis"
+$localUrl = "https://localhost:$Port/babylon-vr-faa-map/"
+$lanUrl = "https://$lanIp`:$Port/babylon-vr-faa-map/"
+$hostUrl = "https://$computerName`:$Port/babylon-vr-faa-map/"
 
 $existingPids = Get-ListeningProcessIdsForPort -Port $Port
 if ($existingPids.Count -gt 0) {

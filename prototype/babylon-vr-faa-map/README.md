@@ -1,6 +1,6 @@
 # Babylon VR FAA Map
 
-This app is the VR side of the St. Louis prototype. The canonical repository layout now lives under [`prototype/`](..).
+This app is the VR side of the FAA prototype. The canonical repository layout now lives under [`prototype/`](..).
 
 Recommended one-click launch from the project root:
 
@@ -17,10 +17,10 @@ cd .\prototype\babylon-vr-faa-map
 powershell -ExecutionPolicy Bypass -File .\scripts\launch_stlouis_linked_review.ps1
 ```
 
-That serves the `prototype/` folder on port `4173` and opens:
+That serves the `prototype/` folder on port `4173` and opens the default Daytona section:
 
-- `http://localhost:4173/babylon-vr-faa-map/?section=stlouis`
-- `http://localhost:4173/faa-2d-map/?section=stlouis`
+- `http://localhost:4173/babylon-vr-faa-map/`
+- `http://localhost:4173/faa-2d-map/`
 
 To rebuild runtime assets from local FAA source data:
 

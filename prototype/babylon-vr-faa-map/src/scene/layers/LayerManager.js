@@ -6,8 +6,8 @@ import {
 import { RasterLayer } from "./RasterLayer.js";
 import { TiledRasterLayer } from "./TiledRasterLayer.js";
 import { VectorOverlayLayer } from "./VectorOverlayLayer.js?v=20260514-feature-highlight-v1";
-import { AirspaceAltitudeOverlay } from "./AirspaceAltitudeOverlay.js?v=20260517-airspace-altitude-v4";
-import { VrLabelLayer } from "./VrLabelLayer.js?v=20260520-label-hit-align-v1";
+import { AirspaceAltitudeOverlay } from "./AirspaceAltitudeOverlay.js?v=20260615-master-control-v1";
+import { VrLabelLayer } from "./VrLabelLayer.js?v=20260618-airspace-picking-v1";
 
 export class LayerManager {
   constructor(scene, mapRoot) {
@@ -19,19 +19,21 @@ export class LayerManager {
     this.sectionMetrics = null;
     this.currentManifest = null;
     this.currentSectionId = null;
-    this.labelOptions = new Map();
     this.layerInteractionState = new Map();
-    this.viewState = {
-      cameraRadius: null,
-    };
     this.airspaceAltitudeEnabled = false;
     this.airspaceAltitudeOverlay = null;
     this.selectedAirspaceId = null;
+    this.airspaceRegionById = new Map();
     this.selectedLabel = null;
     this.currentSelection = null;
+    this.hoveredLabel = null;
     this.onAirspaceSelectionChange = null;
     this.onSelectionChange = null;
     this.pointerObserver = this.scene.onPointerObservable.add((pointerInfo) => {
+      if (pointerInfo.type === BABYLON.PointerEventTypes.POINTERMOVE) {
+        this.updateHoveredLabel(this.resolvePriorityInteractionMetadata(pointerInfo.pickInfo));
+        return;
+      }
       if (pointerInfo.type !== BABYLON.PointerEventTypes.POINTERPICK) {
         return;
       }
@@ -70,8 +72,6 @@ export class LayerManager {
         const labelPayload = await response.json();
         labelLayer = new VrLabelLayer(this.scene, this.mapRoot, hydrated, this.sectionMetrics, labelPayload);
         await labelLayer.load();
-        labelLayer.setOptions(this.labelOptions.get(layerDef.id) ?? {});
-        labelLayer.setViewState(this.viewState);
       }
 
       const defaultLayerVisible = layerDef.defaultVisible !== false;
@@ -82,10 +82,16 @@ export class LayerManager {
       });
       labelLayer?.setLayerActive(defaultLayerVisible);
       labelLayer?.setVisible(defaultLabelsVisible);
+      if (layerDef.id === "airspace") {
+        labelLayer?.setAltitudeMode(this.airspaceAltitudeEnabled);
+      }
 
       this.layers.set(layerDef.id, { definition: hydrated, renderLayer, labelLayer });
 
       if (layerDef.id === "airspace" && renderLayer?.overlayPayload?.interactionRegions?.length) {
+        this.airspaceRegionById = new Map(
+          renderLayer.overlayPayload.interactionRegions.map((region) => [region.id, region]),
+        );
         this.airspaceAltitudeOverlay = new AirspaceAltitudeOverlay(
           this.scene,
           this.mapRoot,
@@ -212,25 +218,6 @@ export class LayerManager {
     this.layers.get(layerId)?.labelLayer?.setVisible(visible);
   }
 
-  setLabelOptions(layerId, options) {
-    const nextOptions = {
-      ...(this.labelOptions.get(layerId) ?? {}),
-      ...options,
-    };
-    this.labelOptions.set(layerId, nextOptions);
-    this.layers.get(layerId)?.labelLayer?.setOptions(nextOptions);
-  }
-
-  setViewState(viewState) {
-    this.viewState = {
-      ...this.viewState,
-      ...viewState,
-    };
-    for (const layer of this.layers.values()) {
-      layer.labelLayer?.setViewState(this.viewState);
-    }
-  }
-
   setAirspaceSelection(selectionId, options = {}) {
     if (this.selectedAirspaceId === selectionId) {
       return;
@@ -349,6 +336,8 @@ export class LayerManager {
   setAirspaceAltitudeMode(enabled) {
     this.airspaceAltitudeEnabled = Boolean(enabled);
     this.airspaceAltitudeOverlay?.setEnabled(this.airspaceAltitudeEnabled);
+    this.layers.get("airspace")?.labelLayer?.setAltitudeMode(this.airspaceAltitudeEnabled);
+    this.updateHoveredLabel(null);
     this.syncAirspaceSelectionVisualState();
   }
 
@@ -412,10 +401,9 @@ export class LayerManager {
     }
 
     if (
-      (metadata.interactiveRole === "label" || metadata.interactiveRole === "label-proxy")
+      metadata.interactiveRole === "label"
       && metadata.interactiveLayerId
       && metadata.itemId
-      && interactionState.labelsVisible
     ) {
       this.setLabelSelection(metadata.interactiveLayerId, metadata.itemId, metadata);
       return;
@@ -432,6 +420,34 @@ export class LayerManager {
     this.onSelectionChange?.(payload);
   }
 
+  updateHoveredLabel(metadata) {
+    const interactionState = metadata?.interactiveLayerId
+      ? this.layerInteractionState.get(metadata.interactiveLayerId)
+      : null;
+    const nextHoveredLabel =
+      metadata?.interactiveRole === "label"
+      && metadata.interactiveLayerId
+      && metadata.itemId
+      && interactionState?.layerVisible
+        ? {
+            layerId: metadata.interactiveLayerId,
+            itemId: metadata.itemId,
+          }
+        : null;
+
+    if (
+      this.hoveredLabel?.layerId === nextHoveredLabel?.layerId
+      && this.hoveredLabel?.itemId === nextHoveredLabel?.itemId
+    ) {
+      return;
+    }
+
+    this.hoveredLabel = nextHoveredLabel;
+    for (const [layerId, layer] of this.layers.entries()) {
+      layer.labelLayer?.setHoveredLabel(layerId === nextHoveredLabel?.layerId ? nextHoveredLabel.itemId : null);
+    }
+  }
+
   getSectionMetrics() {
     return this.sectionMetrics;
   }
@@ -442,6 +458,7 @@ export class LayerManager {
 
   dispose() {
     this.clearSelections();
+    this.hoveredLabel = null;
     this.airspaceAltitudeOverlay?.dispose();
     this.airspaceAltitudeOverlay = null;
     for (const layer of this.layers.values()) {
@@ -450,6 +467,7 @@ export class LayerManager {
     }
     this.layers.clear();
     this.layerInteractionState.clear();
+    this.airspaceRegionById.clear();
     this.boardMaterial?.dispose(false, true);
     this.boardMesh?.dispose(false, true);
     this.boardMaterial = null;
@@ -461,16 +479,19 @@ export class LayerManager {
   resolvePriorityInteractionMetadata(pickInfo) {
     const direct = findInteractionMetadata(pickInfo?.pickedMesh ?? null);
     const pickResults = collectInteractivePickResults(this.scene, pickInfo);
+    this.lastResolvedInteractionPick = null;
     if (!pickResults.length) {
       return direct;
     }
 
     pickResults.sort(compareInteractivePickResults);
-    return pickResults[0]?.metadata ?? direct;
+    this.lastResolvedInteractionPick = pickResults[0] ?? null;
+    return this.lastResolvedInteractionPick?.metadata ?? direct;
   }
 
   syncAirspaceSelectionVisualState(focusedLabelOverride = null) {
     const airspaceLayer = this.layers.get("airspace");
+    const selectedFamilyKey = this.airspaceRegionById.get(this.selectedAirspaceId)?.familyKey ?? this.selectedAirspaceId;
     airspaceLayer?.renderLayer?.setSelection?.(this.airspaceAltitudeEnabled ? null : this.selectedAirspaceId);
     const focusedLabel = focusedLabelOverride ?? (this.selectedAirspaceId
       ? {
@@ -479,7 +500,10 @@ export class LayerManager {
         }
       : null);
     for (const [layerId, layer] of this.layers.entries()) {
-      layer.labelLayer?.setSelection(layerId === "airspace" ? this.selectedAirspaceId : null);
+      layer.labelLayer?.setSelection(
+        layerId === "airspace" ? this.selectedAirspaceId : null,
+        layerId === "airspace" ? selectedFamilyKey : null,
+      );
       layer.labelLayer?.setFocusedLabel(focusedLabel);
     }
     this.airspaceAltitudeOverlay?.setSelection(this.selectedAirspaceId);
@@ -501,18 +525,27 @@ function collectInteractivePickResults(scene, pickInfo) {
   if (pickInfo?.ray && typeof scene.multiPickWithRay === "function") {
     const results = scene.multiPickWithRay(
       pickInfo.ray,
-      (mesh) => Boolean(findInteractionMetadata(mesh)),
+      (mesh) => Boolean(mesh.isPickable && mesh.isEnabled?.() && findInteractionMetadata(mesh)),
     ) ?? [];
     return results
       .map((result) => ({
         metadata: findInteractionMetadata(result.pickedMesh ?? null),
+        pickedMesh: result.pickedMesh ?? null,
+        pickedPoint: result.pickedPoint ?? null,
         distance: result.distance ?? Number.POSITIVE_INFINITY,
       }))
       .filter((result) => result.metadata?.interactiveLayerId);
   }
 
   const direct = findInteractionMetadata(pickInfo?.pickedMesh ?? null);
-  return direct ? [{ metadata: direct, distance: pickInfo?.distance ?? Number.POSITIVE_INFINITY }] : [];
+  return direct
+    ? [{
+        metadata: direct,
+        pickedMesh: pickInfo?.pickedMesh ?? null,
+        pickedPoint: pickInfo?.pickedPoint ?? null,
+        distance: pickInfo?.distance ?? Number.POSITIVE_INFINITY,
+      }]
+    : [];
 }
 
 function compareInteractivePickResults(left, right) {
@@ -529,10 +562,13 @@ function interactionPriority(metadata) {
     return 0;
   }
   if (metadata.interactiveRole === "label") {
+    if (metadata.labelGroup === "airfield") {
+      return 5;
+    }
+    if (metadata.labelGroup === "shelf" || metadata.detailTier === "detail") {
+      return 3;
+    }
     return 4;
-  }
-  if (metadata.interactiveRole === "label-proxy") {
-    return 3;
   }
   if (metadata.interactiveRole === "geometry") {
     return 2;

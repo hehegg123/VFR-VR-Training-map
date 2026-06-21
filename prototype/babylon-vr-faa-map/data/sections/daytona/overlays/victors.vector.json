@@ -1,0 +1,2650 @@
+{
+  "schema": "babylon-vector-overlay-v1",
+  "layerId": "victors",
+  "description": "Vector Victor airway network for VR rendering.",
+  "coordinateSpace": {
+    "kind": "chart-pixels",
+    "width": 7295,
+    "height": 4706
+  },
+  "primitives": {
+    "polygons": [],
+    "strokes": [
+      {
+        "id": "V152-10",
+        "points": [
+          [
+            2844.517,
+            4706.0
+          ],
+          [
+            3576.643,
+            4317.046
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V152-20",
+        "points": [
+          [
+            3576.643,
+            4317.046
+          ],
+          [
+            4064.781,
+            4057.766
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V152-30",
+        "points": [
+          [
+            4064.781,
+            4057.766
+          ],
+          [
+            4426.0,
+            3865.826
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V152-40",
+        "points": [
+          [
+            4426.0,
+            3865.826
+          ],
+          [
+            5325.006,
+            2344.322
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V152-50",
+        "points": [
+          [
+            5325.006,
+            2344.322
+          ],
+          [
+            5913.551,
+            1348.353
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V157-100",
+        "points": [
+          [
+            3832.127,
+            4706.0
+          ],
+          [
+            3786.119,
+            4411.647
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V157-110",
+        "points": [
+          [
+            3786.119,
+            4411.647
+          ],
+          [
+            3631.055,
+            3420.126
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V157-120",
+        "points": [
+          [
+            3631.055,
+            3420.126
+          ],
+          [
+            3575.669,
+            3065.998
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V157-130",
+        "points": [
+          [
+            3575.669,
+            3065.998
+          ],
+          [
+            3479.558,
+            2451.325
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V157-140",
+        "points": [
+          [
+            3479.558,
+            2451.325
+          ],
+          [
+            3359.558,
+            1684.275
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V157-150",
+        "points": [
+          [
+            3359.558,
+            1684.275
+          ],
+          [
+            3325.899,
+            1248.496
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V157-160",
+        "points": [
+          [
+            3325.899,
+            1248.496
+          ],
+          [
+            3255.51,
+            337.692
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V157-170",
+        "points": [
+          [
+            3255.51,
+            337.692
+          ],
+          [
+            3155.503,
+            0.0
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-10",
+        "points": [
+          [
+            6396.473,
+            4489.553
+          ],
+          [
+            6209.624,
+            4270.818
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-20",
+        "points": [
+          [
+            6209.624,
+            4270.818
+          ],
+          [
+            5873.782,
+            3877.903
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-30",
+        "points": [
+          [
+            5873.782,
+            3877.903
+          ],
+          [
+            5414.665,
+            3340.713
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-40",
+        "points": [
+          [
+            5414.665,
+            3340.713
+          ],
+          [
+            4751.054,
+            2805.713
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-50",
+        "points": [
+          [
+            4751.054,
+            2805.713
+          ],
+          [
+            4389.677,
+            2514.402
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-60",
+        "points": [
+          [
+            4389.677,
+            2514.402
+          ],
+          [
+            4044.864,
+            2236.664
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-70",
+        "points": [
+          [
+            4044.864,
+            2236.664
+          ],
+          [
+            3835.928,
+            2068.254
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-80",
+        "points": [
+          [
+            3835.928,
+            2068.254
+          ],
+          [
+            3714.761,
+            1970.589
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-90",
+        "points": [
+          [
+            3714.761,
+            1970.589
+          ],
+          [
+            3359.558,
+            1684.275
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V159-100",
+        "points": [
+          [
+            3359.558,
+            1684.275
+          ],
+          [
+            1723.309,
+            0.0
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V267-10",
+        "points": [
+          [
+            5414.665,
+            3340.713
+          ],
+          [
+            5353.561,
+            2661.73
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V267-20",
+        "points": [
+          [
+            5353.561,
+            2661.73
+          ],
+          [
+            5325.006,
+            2344.322
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V267-30",
+        "points": [
+          [
+            5325.006,
+            2344.322
+          ],
+          [
+            5304.141,
+            2112.262
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V267-40",
+        "points": [
+          [
+            5304.141,
+            2112.262
+          ],
+          [
+            5283.65,
+            1884.819
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V267-50",
+        "points": [
+          [
+            5283.65,
+            1884.819
+          ],
+          [
+            5234.695,
+            1341.467
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V267-60",
+        "points": [
+          [
+            5234.695,
+            1341.467
+          ],
+          [
+            5180.05,
+            731.894
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V267-70",
+        "points": [
+          [
+            5180.05,
+            731.894
+          ],
+          [
+            5126.724,
+            140.004
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V267-80",
+        "points": [
+          [
+            5126.724,
+            140.004
+          ],
+          [
+            5114.076,
+            -0.0
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-120",
+        "points": [
+          [
+            7124.93,
+            4706.0
+          ],
+          [
+            7043.06,
+            4471.084
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-130",
+        "points": [
+          [
+            7043.06,
+            4471.084
+          ],
+          [
+            6732.939,
+            3613.472
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-140",
+        "points": [
+          [
+            6732.939,
+            3613.472
+          ],
+          [
+            6655.346,
+            3398.996
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-150",
+        "points": [
+          [
+            6655.346,
+            3398.996
+          ],
+          [
+            6489.752,
+            2943.345
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-160",
+        "points": [
+          [
+            6489.752,
+            2943.345
+          ],
+          [
+            6450.038,
+            2831.439
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-170",
+        "points": [
+          [
+            6450.038,
+            2831.439
+          ],
+          [
+            6340.026,
+            2527.421
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-180",
+        "points": [
+          [
+            6340.026,
+            2527.421
+          ],
+          [
+            6194.609,
+            2125.266
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-190",
+        "points": [
+          [
+            6194.609,
+            2125.266
+          ],
+          [
+            6181.173,
+            2088.147
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-200",
+        "points": [
+          [
+            6181.173,
+            2088.147
+          ],
+          [
+            5913.551,
+            1348.353
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V3-210",
+        "points": [
+          [
+            5913.551,
+            1348.353
+          ],
+          [
+            5682.551,
+            3.554
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V437-10",
+        "points": [
+          [
+            7043.06,
+            4471.084
+          ],
+          [
+            6673.607,
+            4013.703
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V437-20",
+        "points": [
+          [
+            6673.607,
+            4013.703
+          ],
+          [
+            5840.576,
+            2966.382
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V437-30",
+        "points": [
+          [
+            5840.576,
+            2966.382
+          ],
+          [
+            5325.006,
+            2344.322
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V437-40",
+        "points": [
+          [
+            5325.006,
+            2344.322
+          ],
+          [
+            5913.551,
+            1348.353
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V437-50",
+        "points": [
+          [
+            5913.551,
+            1348.353
+          ],
+          [
+            5908.765,
+            689.943
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V437-60",
+        "points": [
+          [
+            5908.765,
+            689.943
+          ],
+          [
+            5903.94,
+            26.536
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-10",
+        "points": [
+          [
+            7043.06,
+            4471.084
+          ],
+          [
+            6396.473,
+            4489.553
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-20",
+        "points": [
+          [
+            6396.473,
+            4489.553
+          ],
+          [
+            5804.784,
+            4506.563
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-30",
+        "points": [
+          [
+            5804.784,
+            4506.563
+          ],
+          [
+            5250.655,
+            4589.567
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-40",
+        "points": [
+          [
+            5250.655,
+            4589.567
+          ],
+          [
+            4893.815,
+            4643.106
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-50",
+        "points": [
+          [
+            4893.815,
+            4643.106
+          ],
+          [
+            4474.55,
+            4706.0
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-70",
+        "points": [
+          [
+            2350.687,
+            4706.0
+          ],
+          [
+            2535.836,
+            3811.993
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-80",
+        "points": [
+          [
+            2535.836,
+            3811.993
+          ],
+          [
+            2740.695,
+            2822.733
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-90",
+        "points": [
+          [
+            2740.695,
+            2822.733
+          ],
+          [
+            3067.342,
+            2221.88
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-100",
+        "points": [
+          [
+            3067.342,
+            2221.88
+          ],
+          [
+            3359.558,
+            1684.275
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-110",
+        "points": [
+          [
+            3359.558,
+            1684.275
+          ],
+          [
+            3325.899,
+            1248.496
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-120",
+        "points": [
+          [
+            3325.899,
+            1248.496
+          ],
+          [
+            3255.51,
+            337.692
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V441-130",
+        "points": [
+          [
+            3255.51,
+            337.692
+          ],
+          [
+            3339.729,
+            0.0
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V492-50",
+        "points": [
+          [
+            7207.247,
+            4706.0
+          ],
+          [
+            7043.06,
+            4471.084
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V51-10",
+        "points": [
+          [
+            5913.551,
+            1348.353
+          ],
+          [
+            5702.126,
+            727.708
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V51-20",
+        "points": [
+          [
+            5702.126,
+            727.708
+          ],
+          [
+            5678.743,
+            659.274
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V51-30",
+        "points": [
+          [
+            5678.743,
+            659.274
+          ],
+          [
+            5472.795,
+            54.946
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V51-40",
+        "points": [
+          [
+            5472.795,
+            54.946
+          ],
+          [
+            5454.077,
+            0.0
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V531-60",
+        "points": [
+          [
+            5871.365,
+            4706.0
+          ],
+          [
+            5804.784,
+            4506.563
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V531-70",
+        "points": [
+          [
+            5804.784,
+            4506.563
+          ],
+          [
+            5668.936,
+            4100.99
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V531-80",
+        "points": [
+          [
+            5668.936,
+            4100.99
+          ],
+          [
+            5414.665,
+            3340.713
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V533-20",
+        "points": [
+          [
+            3948.017,
+            4706.0
+          ],
+          [
+            4519.14,
+            4174.453
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V533-30",
+        "points": [
+          [
+            4519.14,
+            4174.453
+          ],
+          [
+            4603.061,
+            4096.195
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V533-40",
+        "points": [
+          [
+            4603.061,
+            4096.195
+          ],
+          [
+            4775.039,
+            3936.242
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V533-50",
+        "points": [
+          [
+            4775.039,
+            3936.242
+          ],
+          [
+            5414.665,
+            3340.713
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V533-60",
+        "points": [
+          [
+            5414.665,
+            3340.713
+          ],
+          [
+            5840.576,
+            2966.382
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V533-70",
+        "points": [
+          [
+            5840.576,
+            2966.382
+          ],
+          [
+            6340.026,
+            2527.421
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V533-80",
+        "points": [
+          [
+            6340.026,
+            2527.421
+          ],
+          [
+            6194.609,
+            2125.266
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V533-90",
+        "points": [
+          [
+            6194.609,
+            2125.266
+          ],
+          [
+            6181.173,
+            2088.147
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V533-100",
+        "points": [
+          [
+            6181.173,
+            2088.147
+          ],
+          [
+            5913.551,
+            1348.353
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V537-10",
+        "points": [
+          [
+            6396.473,
+            4489.553
+          ],
+          [
+            6209.624,
+            4270.818
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V537-20",
+        "points": [
+          [
+            6209.624,
+            4270.818
+          ],
+          [
+            5873.782,
+            3877.903
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V537-30",
+        "points": [
+          [
+            5873.782,
+            3877.903
+          ],
+          [
+            4335.283,
+            3097.646
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V537-40",
+        "points": [
+          [
+            4335.283,
+            3097.646
+          ],
+          [
+            3583.046,
+            2007.971
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V537-50",
+        "points": [
+          [
+            3583.046,
+            2007.971
+          ],
+          [
+            3359.558,
+            1684.275
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V537-60",
+        "points": [
+          [
+            3359.558,
+            1684.275
+          ],
+          [
+            3325.899,
+            1248.496
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V537-70",
+        "points": [
+          [
+            3325.899,
+            1248.496
+          ],
+          [
+            3255.51,
+            337.692
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V537-80",
+        "points": [
+          [
+            3255.51,
+            337.692
+          ],
+          [
+            2749.152,
+            0.0
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V581-10",
+        "points": [
+          [
+            2539.811,
+            4706.0
+          ],
+          [
+            2883.425,
+            4301.109
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V581-20",
+        "points": [
+          [
+            2883.425,
+            4301.109
+          ],
+          [
+            3295.853,
+            3815.132
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V581-30",
+        "points": [
+          [
+            3295.853,
+            3815.132
+          ],
+          [
+            3333.561,
+            2554.977
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V581-40",
+        "points": [
+          [
+            3333.561,
+            2554.977
+          ],
+          [
+            3359.558,
+            1684.275
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V7-110",
+        "points": [
+          [
+            3772.544,
+            4706.0
+          ],
+          [
+            59.139,
+            -0.0
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V97-10",
+        "points": [
+          [
+            2129.598,
+            4706.0
+          ],
+          [
+            1873.36,
+            4234.012
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V97-20",
+        "points": [
+          [
+            1873.36,
+            4234.012
+          ],
+          [
+            1559.822,
+            3656.694
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V97-30",
+        "points": [
+          [
+            1559.822,
+            3656.694
+          ],
+          [
+            806.388,
+            2269.208
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V97-40",
+        "points": [
+          [
+            806.388,
+            2269.208
+          ],
+          [
+            236.569,
+            1220.018
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      },
+      {
+        "id": "V97-50",
+        "points": [
+          [
+            236.569,
+            1220.018
+          ],
+          [
+            0.0,
+            784.5
+          ]
+        ],
+        "color": "#0f4c81",
+        "widthPx": 6.986,
+        "alpha": 0.96,
+        "closed": false,
+        "haloColor": "#ffffff",
+        "haloWidthPx": 13.971,
+        "haloAlpha": 0.78
+      }
+    ],
+    "circles": [
+      {
+        "id": "node-PLUMY:3576.6:4317.0",
+        "center": [
+          3576.643,
+          4317.046
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-KNEED:4064.8:4057.8",
+        "center": [
+          4064.781,
+          4057.766
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-JENSN:4426.0:3865.8",
+        "center": [
+          4426.0,
+          3865.826
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-KIZER:5325.0:2344.3",
+        "center": [
+          5325.006,
+          2344.322
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-OMN:5913.6:1348.4",
+        "center": [
+          5913.551,
+          1348.353
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-URIVE:3786.1:4411.6",
+        "center": [
+          3786.119,
+          4411.647
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-WEBBS:3631.1:3420.1",
+        "center": [
+          3631.055,
+          3420.126
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-HYZER:3575.7:3066.0",
+        "center": [
+          3575.669,
+          3065.998
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-SADEY:3479.6:2451.3",
+        "center": [
+          3479.558,
+          2451.325
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-OCF:3359.6:1684.3",
+        "center": [
+          3359.558,
+          1684.275
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-LEJKO:3325.9:1248.5",
+        "center": [
+          3325.899,
+          1248.496
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-GNV:3255.5:337.7",
+        "center": [
+          3255.51,
+          337.692
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-DEARY:6396.5:4489.6",
+        "center": [
+          6396.473,
+          4489.553
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-JIHMU:6209.6:4270.8",
+        "center": [
+          6209.624,
+          4270.818
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-PRESK:5873.8:3877.9",
+        "center": [
+          5873.782,
+          3877.903
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-ORL:5414.7:3340.7",
+        "center": [
+          5414.665,
+          3340.713
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-MAMBO:4751.1:2805.7",
+        "center": [
+          4751.054,
+          2805.713
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-LEESE:4389.7:2514.4",
+        "center": [
+          4389.677,
+          2514.402
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-SHIMM:4044.9:2236.7",
+        "center": [
+          4044.864,
+          2236.664
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-CUSAB:3835.9:2068.3",
+        "center": [
+          3835.928,
+          2068.254
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-ALADN:3714.8:1970.6",
+        "center": [
+          3714.761,
+          1970.589
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-PAOLA:5353.6:2661.7",
+        "center": [
+          5353.561,
+          2661.73
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-WORMS:5304.1:2112.3",
+        "center": [
+          5304.141,
+          2112.262
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-GUANO:5283.6:1884.8",
+        "center": [
+          5283.65,
+          1884.819
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-BARBS:5234.7:1341.5",
+        "center": [
+          5234.695,
+          1341.467
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-ROYES:5180.0:731.9",
+        "center": [
+          5180.05,
+          731.894
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-MATEO:5126.7:140.0",
+        "center": [
+          5126.724,
+          140.004
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-MLB:7043.1:4471.1",
+        "center": [
+          7043.06,
+          4471.084
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-INDIA:6732.9:3613.5",
+        "center": [
+          6732.939,
+          3613.472
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-TICCO:6655.3:3399.0",
+        "center": [
+          6655.346,
+          3398.996
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-MALET:6489.8:2943.3",
+        "center": [
+          6489.752,
+          2943.345
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-FORNI:6450.0:2831.4",
+        "center": [
+          6450.038,
+          2831.439
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-OAKIE:6340.0:2527.4",
+        "center": [
+          6340.026,
+          2527.421
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-SMYRA:6194.6:2125.3",
+        "center": [
+          6194.609,
+          2125.266
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-MIKBE:6181.2:2088.1",
+        "center": [
+          6181.173,
+          2088.147
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-SEBAG:5682.6:3.6",
+        "center": [
+          5682.551,
+          3.554
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-AWINY:6673.6:4013.7",
+        "center": [
+          6673.607,
+          4013.703
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-OVIDO:5840.6:2966.4",
+        "center": [
+          5840.576,
+          2966.382
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-COKES:5908.8:689.9",
+        "center": [
+          5908.765,
+          689.943
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-COBOK:5903.9:26.5",
+        "center": [
+          5903.94,
+          26.536
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-ODDEL:5804.8:4506.6",
+        "center": [
+          5804.784,
+          4506.563
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-YONMA:5250.7:4589.6",
+        "center": [
+          5250.655,
+          4589.567
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-YOJIX:4893.8:4643.1",
+        "center": [
+          4893.815,
+          4643.106
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-BAYPO:2535.8:3812.0",
+        "center": [
+          2535.836,
+          3811.993
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-NITTS:2740.7:2822.7",
+        "center": [
+          2740.695,
+          2822.733
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-NUCIS:3067.3:2221.9",
+        "center": [
+          3067.342,
+          2221.88
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-JODAB:5702.1:727.7",
+        "center": [
+          5702.126,
+          727.708
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-BULLI:5678.7:659.3",
+        "center": [
+          5678.743,
+          659.274
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-ASTOR:5472.8:54.9",
+        "center": [
+          5472.795,
+          54.946
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-SABOT:5668.9:4101.0",
+        "center": [
+          5668.936,
+          4100.99
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-JIJCI:4519.1:4174.5",
+        "center": [
+          4519.14,
+          4174.453
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-ZOVLU:4603.1:4096.2",
+        "center": [
+          4603.061,
+          4096.195
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-CAMBE:4775.0:3936.2",
+        "center": [
+          4775.039,
+          3936.242
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-CERMO:4335.3:3097.6",
+        "center": [
+          4335.283,
+          3097.646
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-VANNI:3583.0:2008.0",
+        "center": [
+          3583.046,
+          2007.971
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-TUMPY:2883.4:4301.1",
+        "center": [
+          2883.425,
+          4301.109
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-DADES:3295.9:3815.1",
+        "center": [
+          3295.853,
+          3815.132
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-LIMMO:3333.6:2555.0",
+        "center": [
+          3333.561,
+          2554.977
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-DARBS:1873.4:4234.0",
+        "center": [
+          1873.36,
+          4234.012
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-TABIR:1559.8:3656.7",
+        "center": [
+          1559.822,
+          3656.694
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-PLYER:806.4:2269.2",
+        "center": [
+          806.388,
+          2269.208
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      },
+      {
+        "id": "node-CLAMP:236.6:1220.0",
+        "center": [
+          236.569,
+          1220.018
+        ],
+        "radiusPx": 10.977,
+        "fill": "#ffffff",
+        "stroke": "#0f4c81",
+        "strokeWidthPx": 3.742,
+        "alpha": 0.96
+      }
+    ],
+    "markers": [],
+    "runwayBars": []
+  },
+  "interactionRegions": [],
+  "stats": {
+    "strokes": 94,
+    "nodes": 62,
+    "segments": 94,
+    "airways": 15
+  }
+}

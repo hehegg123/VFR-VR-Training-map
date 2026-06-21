@@ -1,0 +1,4 @@
+interface:
+  display_name: "Airspace Layer Build"
+  short_description: "Build GeoTIFF-aligned FAA airspace layers."
+  default_prompt: "Use $airspace-layer-build to build or refine a sectional-style FAA airspace layer from an FAA sectional GeoTIFF and NASR/AIXM data."

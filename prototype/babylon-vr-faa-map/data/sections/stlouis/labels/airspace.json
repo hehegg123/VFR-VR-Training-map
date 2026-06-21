@@ -13,15 +13,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CVG-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 12971.989,
       "anchorY": 3199.404,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CVG-CLASS_B",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "STL-CLASS_B",
@@ -35,10 +35,11 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
-      "familyKey": "STL-CLASS_B",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "STL-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "BNA-CLASS_C",
@@ -52,10 +53,11 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
-      "familyKey": "BNA-CLASS_C",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BNA-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "CMI-CLASS_C",
@@ -70,15 +72,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CMI-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 5611.661,
       "anchorY": 679.683,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CMI-CLASS_C",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "DAY-CLASS_C",
@@ -92,10 +94,11 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
-      "familyKey": "DAY-CLASS_C",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DAY-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "EVV-CLASS_C",
@@ -110,10 +113,11 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
-      "familyKey": "EVV-CLASS_C",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "EVV-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "IND-CLASS_C",
@@ -127,10 +131,11 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
-      "familyKey": "IND-CLASS_C",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "IND-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "LEX-CLASS_C",
@@ -144,10 +149,11 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
-      "familyKey": "LEX-CLASS_C",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LEX-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "SDF-CLASS_C",
@@ -161,15 +167,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SDF-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 10828.079,
       "anchorY": 5544.062,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SDF-CLASS_C",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "SPI-CLASS_C",
@@ -184,10 +190,11 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
-      "familyKey": "SPI-CLASS_C",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SPI-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "AID-CLASS_D",
@@ -202,15 +209,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "AID-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 10985.269,
       "anchorY": 465.096,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "AID-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "ALN-CLASS_D",
@@ -225,15 +232,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ALN-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 1961.098,
       "anchorY": 3632.233,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "ALN-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "BAK-CLASS_D",
@@ -248,15 +255,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BAK-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 10450.444,
       "anchorY": 2697.689,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BAK-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "BLV-CLASS_D",
@@ -271,15 +278,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BLV-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 2371.435,
       "anchorY": 4546.757,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BLV-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "BMG-CLASS_D",
@@ -294,15 +301,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BMG-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 8983.952,
       "anchorY": 3020.474,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BMG-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "CGI-CLASS_D",
@@ -317,15 +324,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CGI-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 2842.283,
       "anchorY": 8016.675,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CGI-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "CPS-CLASS_D",
@@ -340,15 +347,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CPS-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 1714.742,
       "anchorY": 4463.882,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CPS-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "DEC-CLASS_D",
@@ -363,15 +370,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DEC-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 4414.79,
       "anchorY": 1202.251,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "DEC-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "HUF-CLASS_D",
@@ -385,10 +392,11 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
-      "familyKey": "HUF-CLASS_D",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "HUF-CLASS_D",
       "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "ILN-CLASS_D",
@@ -402,15 +410,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ILN-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 14724.454,
       "anchorY": 2145.467,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "ILN-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "JWN-CLASS_D",
@@ -425,15 +433,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "JWN-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 8481.634,
       "anchorY": 10787.921,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "JWN-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "LOU-CLASS_D",
@@ -448,15 +456,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LOU-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 10975.908,
       "anchorY": 5400.043,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "LOU-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "LUK-CLASS_D",
@@ -471,15 +479,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LUK-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 13479.092,
       "anchorY": 3041.93,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "LUK-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "MDH-CLASS_D",
@@ -494,15 +502,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MDH-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 3535.812,
       "anchorY": 6582.006,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MDH-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "MIE-CLASS_D",
@@ -517,15 +525,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MIE-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 11415.78,
       "anchorY": 104.569,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MIE-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "MQY-CLASS_D",
@@ -540,15 +548,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MQY-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 9263.933,
       "anchorY": 11237.211,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MQY-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "MWA-CLASS_D",
@@ -563,15 +571,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MWA-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 4035.907,
       "anchorY": 6650.939,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MWA-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "OWB-CLASS_D",
@@ -586,15 +594,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OWB-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 7872.666,
       "anchorY": 6716.407,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "OWB-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "PAH-CLASS_D",
@@ -609,10 +617,11 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
-      "familyKey": "PAH-CLASS_D",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "PAH-CLASS_D",
       "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "SUS-CLASS_D",
@@ -627,15 +636,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SUS-CLASS_D",
+      "airspaceType": "CLASS_D",
+      "placementMode": "callout",
       "anchorX": 700.009,
       "anchorY": 4192.961,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SUS-CLASS_D",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "CGI-CLASS_E2",
@@ -650,15 +659,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CGI-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 2842.283,
       "anchorY": 8016.675,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CGI-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "ILN-CLASS_E2",
@@ -672,15 +681,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ILN-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 14724.454,
       "anchorY": 2145.467,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "ILN-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "LOU-CLASS_E2",
@@ -695,15 +704,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LOU-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 10975.908,
       "anchorY": 5400.043,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "LOU-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "LUK-CLASS_E2",
@@ -718,15 +727,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LUK-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 13479.092,
       "anchorY": 3041.93,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "LUK-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "SPI-CLASS_E2",
@@ -741,15 +750,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SPI-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 2772.113,
       "anchorY": 1145.996,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SPI-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "SUS-CLASS_E2",
@@ -764,15 +773,15 @@
       ],
       "style": "airspace-primary",
       "priority": 1.0,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SUS-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 700.009,
       "anchorY": 4192.961,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SUS-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "DYR-CLASS_E2",
@@ -787,15 +796,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.995,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DYR-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 3123.214,
       "anchorY": 11236.805,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "DYR-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "BWG-CLASS_E2",
@@ -809,15 +818,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.965,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BWG-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 9449.81,
       "anchorY": 8733.157,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BWG-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "LOZ-CLASS_E2",
@@ -831,10 +840,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.965,
-      "familyKey": "LOZ-CLASS_E2",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LOZ-CLASS_E2",
       "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "MVN-CLASS_E2",
@@ -848,15 +858,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.965,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MVN-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 4374.071,
       "anchorY": 5166.273,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MVN-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "SME-CLASS_E2",
@@ -870,15 +880,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.965,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SME-CLASS_E2",
+      "airspaceType": "CLASS_E2",
+      "placementMode": "callout",
       "anchorX": 13233.458,
       "anchorY": 8422.92,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SME-CLASS_E2",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E2",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "LOU-CLASS_E4",
@@ -893,15 +903,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.86,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LOU-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "callout",
       "anchorX": 10320.554,
       "anchorY": 5953.219,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "LOU-CLASS_E4",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E4",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "SUS-CLASS_E4",
@@ -916,15 +926,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.86,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SUS-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "callout",
       "anchorX": 2125.789,
       "anchorY": 4331.299,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SUS-CLASS_E4",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E4",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "BWG-CLASS_E4",
@@ -938,15 +948,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.855,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BWG-CLASS_E4",
+      "airspaceType": "CLASS_E4",
+      "placementMode": "callout",
       "anchorX": 7426.582,
       "anchorY": 9852.617,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BWG-CLASS_E4",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E4",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "EVV-CLASS_E5",
@@ -961,15 +971,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.8419931701295601,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "EVV-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 7120.343,
       "anchorY": 5926.353,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "EVV-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "OWB-CLASS_E5",
@@ -984,15 +994,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.835895697101273,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OWB-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 7872.666,
       "anchorY": 6716.407,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "OWB-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "MWA-CLASS_E5",
@@ -1007,15 +1017,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.8186229785092161,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MWA-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 4035.907,
       "anchorY": 6650.939,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MWA-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "BLV-CLASS_E5",
@@ -1030,10 +1040,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.8063750897615126,
-      "familyKey": "BLV-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BLV-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "DEC-CLASS_E5",
@@ -1048,15 +1059,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.8048552896335706,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DEC-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 4414.79,
       "anchorY": 1202.251,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "DEC-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "ALN-CLASS_E5",
@@ -1071,15 +1082,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.8014678958805959,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ALN-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 1961.098,
       "anchorY": 3632.233,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "ALN-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "CPS-CLASS_E5",
@@ -1094,21 +1105,21 @@
       ],
       "style": "airspace-primary",
       "priority": 0.8013938122553276,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CPS-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 1714.742,
       "anchorY": 4463.882,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CPS-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-11",
       "selectionId": "special-11",
-      "x": 6651.499,
-      "y": 9525.257,
+      "x": 6713.499,
+      "y": 9463.272,
       "lines": [
         "CAMPBELL 1",
         "MOA"
@@ -1116,7 +1127,10 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-11",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-12",
@@ -1130,7 +1144,10 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-12",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-13",
@@ -1144,7 +1161,10 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-13",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-14",
@@ -1158,7 +1178,10 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-14",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-15",
@@ -1171,13 +1194,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-15",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 11266.743,
       "anchorY": 3628.042,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-16",
@@ -1191,7 +1216,10 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-16",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-17",
@@ -1205,7 +1233,10 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-17",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-18",
@@ -1218,13 +1249,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-18",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 38.701,
       "anchorY": 8288.73,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-19",
@@ -1237,13 +1270,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-19",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 0.919,
       "anchorY": 8732.586,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-20",
@@ -1257,7 +1292,10 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-20",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-21",
@@ -1271,7 +1309,10 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-21",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-22",
@@ -1285,26 +1326,31 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-22",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-23",
       "selectionId": "special-23",
       "x": 10361.555,
-      "y": 3022.531,
+      "y": 2615.203,
       "lines": [
         "RACER D",
         "MOA"
       ],
       "style": "airspace-secondary",
       "priority": 0.8,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-23",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 9954.13,
       "anchorY": 2615.203,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-24",
@@ -1318,7 +1364,10 @@
       "style": "airspace-secondary",
       "priority": 0.8,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-24",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "SPI-CLASS_E5",
@@ -1333,15 +1382,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7965432371870093,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SPI-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 2772.113,
       "anchorY": 1145.996,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SPI-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "SUS-CLASS_E5",
@@ -1356,15 +1405,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7934757856833583,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SUS-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 700.009,
       "anchorY": 4192.961,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SUS-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "BMG-CLASS_E5",
@@ -1379,15 +1428,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7919142802784718,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BMG-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 8983.952,
       "anchorY": 3020.474,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BMG-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "HUF-CLASS_E5",
@@ -1401,10 +1450,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7893550344093714,
-      "familyKey": "HUF-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "HUF-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "MDH-CLASS_E5",
@@ -1419,15 +1469,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.785125958173275,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MDH-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 3535.812,
       "anchorY": 6582.006,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MDH-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "PAH-CLASS_E5",
@@ -1442,15 +1492,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7844342087085252,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "PAH-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 4507.471,
       "anchorY": 8477.51,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "PAH-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "BAK-CLASS_E5",
@@ -1465,15 +1515,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7829621531636154,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BAK-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 10450.444,
       "anchorY": 2697.689,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BAK-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "IND-CLASS_E5",
@@ -1487,10 +1537,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7796527691298228,
-      "familyKey": "IND-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "IND-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "CGI-CLASS_E5",
@@ -1505,15 +1556,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7762920843734407,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CGI-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 2842.283,
       "anchorY": 8016.675,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CGI-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "BNA-CLASS_E5",
@@ -1527,15 +1578,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7731580018430695,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BNA-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 8925.09,
       "anchorY": 10937.938,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BNA-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "LEX-CLASS_E5",
@@ -1549,10 +1600,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7711877445218956,
-      "familyKey": "LEX-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LEX-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "CVG-CLASS_E5",
@@ -1566,10 +1618,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7689498126361576,
-      "familyKey": "CVG-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CVG-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "AID-CLASS_E5",
@@ -1584,15 +1637,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.767475571798397,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "AID-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 10985.269,
       "anchorY": 465.096,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "AID-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "MIE-CLASS_E5",
@@ -1607,15 +1660,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7633688816110394,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MIE-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 11415.78,
       "anchorY": 104.569,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MIE-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-0",
@@ -1628,13 +1681,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-0",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 10145.104,
       "anchorY": 2635.363,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-1",
@@ -1647,13 +1702,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-1",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 9954.697,
       "anchorY": 2615.195,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-2",
@@ -1666,13 +1723,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-2",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 11446.716,
       "anchorY": 3521.668,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-3",
@@ -1685,13 +1744,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-3",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 11312.437,
       "anchorY": 3266.689,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-4",
@@ -1704,51 +1765,57 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-4",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 7463.785,
       "anchorY": 3094.399,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-5",
       "selectionId": "special-5",
-      "x": 7151.646,
-      "y": 10011.647,
+      "x": 6744.221,
+      "y": 9604.319,
       "lines": [
         "R-3701A",
         "FORT CAMPBELL"
       ],
       "style": "airspace-secondary",
       "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-5",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 7151.646,
       "anchorY": 9604.319,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-6",
       "selectionId": "special-6",
-      "x": 6494.89,
-      "y": 9707.205,
+      "x": 6902.315,
+      "y": 10114.532,
       "lines": [
         "R-3702A",
         "FORT CAMPBELL"
       ],
       "style": "airspace-secondary",
       "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-6",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 6902.315,
       "anchorY": 9707.205,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-7",
@@ -1761,32 +1828,36 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-7",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 6902.315,
       "anchorY": 9707.205,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-8",
       "selectionId": "special-8",
       "x": 7309.739,
-      "y": 9299.878,
+      "y": 10114.532,
       "lines": [
         "R-3702C",
         "FORT CAMPBELL"
       ],
       "style": "airspace-secondary",
       "priority": 0.76,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-8",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 6902.315,
       "anchorY": 9707.205,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "special-9",
@@ -1800,7 +1871,10 @@
       "style": "airspace-secondary",
       "priority": 0.76,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-9",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "special-10",
@@ -1814,7 +1888,10 @@
       "style": "airspace-secondary",
       "priority": 0.76,
       "labelGroup": "special",
-      "detailTier": "core"
+      "detailTier": "core",
+      "familyKey": "special-10",
+      "airspaceType": "SPECIAL",
+      "placementMode": "interior"
     },
     {
       "id": "LOU-CLASS_E5",
@@ -1829,15 +1906,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7577509015293726,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LOU-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 10975.908,
       "anchorY": 5400.043,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "LOU-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "DAY-CLASS_E5",
@@ -1851,10 +1928,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7548592172504626,
-      "familyKey": "DAY-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DAY-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "ILN-CLASS_E5",
@@ -1868,10 +1946,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7536119044637328,
-      "familyKey": "ILN-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ILN-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "JVY-CLASS_E5",
@@ -1885,15 +1964,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7486461191742226,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "JVY-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 10815.538,
       "anchorY": 5039.57,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "JVY-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-0",
@@ -1906,15 +1985,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 1305.432,
       "anchorY": 3973.742,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "STL-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-1",
@@ -1927,10 +2006,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "STL-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_B-2",
@@ -1943,15 +2023,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 995.242,
       "anchorY": 3807.124,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "STL-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-3",
@@ -1964,15 +2044,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 1617.91,
       "anchorY": 4132.119,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "STL-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-4",
@@ -1985,15 +2065,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 1227.467,
       "anchorY": 4344.812,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "STL-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-5",
@@ -2006,10 +2086,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "STL-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_B-6",
@@ -2022,15 +2103,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 634.379,
       "anchorY": 3603.174,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "STL-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-7",
@@ -2043,15 +2124,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 2059.549,
       "anchorY": 4118.904,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "STL-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-8",
@@ -2064,15 +2145,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 2241.796,
       "anchorY": 4541.006,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "STL-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-9",
@@ -2085,10 +2166,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "STL-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_B-10",
@@ -2101,15 +2183,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 1174.788,
       "anchorY": 4728.254,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "STL-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-11",
@@ -2122,10 +2204,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "STL-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "STL-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_B-12",
@@ -2138,15 +2221,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 12961.328,
       "anchorY": 2227.935,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CVG-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-13",
@@ -2159,10 +2242,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "CVG-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_B-14",
@@ -2175,15 +2259,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 13506.667,
       "anchorY": 3052.047,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CVG-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-15",
@@ -2196,10 +2280,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "CVG-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_B-16",
@@ -2212,10 +2297,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "CVG-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_B-17",
@@ -2228,15 +2314,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 13156.908,
       "anchorY": 3952.411,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CVG-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-18",
@@ -2249,10 +2335,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "CVG-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_B-19",
@@ -2265,15 +2352,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 12983.644,
       "anchorY": 3206.21,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CVG-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-20",
@@ -2286,15 +2373,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 12828.869,
       "anchorY": 2571.838,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CVG-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-21",
@@ -2307,15 +2394,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
+      "airspaceType": "CLASS_B",
+      "placementMode": "callout",
       "anchorX": 13112.892,
       "anchorY": 2450.509,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CVG-CLASS_B",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_B-22",
@@ -2328,10 +2415,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "CVG-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_B-23",
@@ -2344,10 +2432,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.74,
-      "familyKey": "CVG-CLASS_B",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CVG-CLASS_B",
       "airspaceType": "CLASS_B",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "HNB-CLASS_E5",
@@ -2361,10 +2450,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7376944379469159,
-      "familyKey": "HNB-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "HNB-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "EHR-CLASS_E5",
@@ -2378,10 +2468,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7368029748448129,
-      "familyKey": "EHR-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "EHR-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "KY8-CLASS_E5",
@@ -2395,10 +2486,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7354927873515837,
-      "familyKey": "KY8-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "KY8-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "DCY-CLASS_E5",
@@ -2412,10 +2504,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7334346289356468,
-      "familyKey": "DCY-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DCY-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "LWV-CLASS_E5",
@@ -2429,10 +2522,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7326039660312323,
-      "familyKey": "LWV-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LWV-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "FRH-CLASS_E5",
@@ -2446,10 +2540,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7311678460699852,
-      "familyKey": "FRH-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "FRH-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "TWT-CLASS_E5",
@@ -2463,10 +2558,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7300784303351087,
-      "familyKey": "TWT-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "TWT-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "2I0-CLASS_E5",
@@ -2480,10 +2576,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7291285029051258,
-      "familyKey": "2I0-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "2I0-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "JQD-CLASS_E5",
@@ -2497,10 +2594,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7286341279527105,
-      "familyKey": "JQD-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "JQD-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "RSV-CLASS_E5",
@@ -2514,10 +2612,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7275957081290647,
-      "familyKey": "RSV-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "RSV-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "FOA-CLASS_E5",
@@ -2531,10 +2630,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7258547835314046,
-      "familyKey": "FOA-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "FOA-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "HSB-CLASS_E5",
@@ -2548,10 +2648,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7258142282146054,
-      "familyKey": "HSB-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "HSB-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "GDA-CLASS_E5",
@@ -2565,15 +2666,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7253263476550486,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GDA-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 5902.105,
       "anchorY": 7769.01,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "GDA-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "MVN-CLASS_E5",
@@ -2587,10 +2688,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7220970925441587,
-      "familyKey": "MVN-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MVN-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "DYR-CLASS_E5",
@@ -2605,10 +2707,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7218047605449229,
-      "familyKey": "DYR-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DYR-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "EKX-CLASS_E5",
@@ -2622,10 +2725,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7199764077315206,
-      "familyKey": "EKX-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "EKX-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "1H2-CLASS_E5",
@@ -2639,10 +2743,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7198411348062687,
-      "familyKey": "1H2-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "1H2-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "HVC-CLASS_E5",
@@ -2656,10 +2761,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7192489161610307,
-      "familyKey": "HVC-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "HVC-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "ENL-CLASS_E5",
@@ -2673,10 +2779,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7177996206898084,
-      "familyKey": "ENL-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "ENL-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "SER-CLASS_E5",
@@ -2690,10 +2797,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7172249854560757,
-      "familyKey": "SER-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SER-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "BWG-CLASS_E5",
@@ -2707,15 +2815,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7167359780116458,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BWG-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 9449.81,
       "anchorY": 8733.157,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BWG-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "MTO-CLASS_E5",
@@ -2729,10 +2837,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7155644754266487,
-      "familyKey": "MTO-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MTO-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "CKV-CLASS_E5",
@@ -2746,10 +2855,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7146109360553311,
-      "familyKey": "CKV-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CKV-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "BRY-CLASS_E5",
@@ -2763,10 +2873,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.71437808818858,
-      "familyKey": "BRY-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BRY-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "GPC-CLASS_E5",
@@ -2780,10 +2891,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7143718706614528,
-      "familyKey": "GPC-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GPC-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "GLW-CLASS_E5",
@@ -2797,10 +2909,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7130766046336748,
-      "familyKey": "GLW-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GLW-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "IMS-CLASS_E5",
@@ -2814,10 +2927,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7125180517916658,
-      "familyKey": "IMS-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "IMS-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "M91-CLASS_E5",
@@ -2831,15 +2945,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7120254382452254,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "M91-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 8402.54,
       "anchorY": 9862.405,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "M91-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "OVO-CLASS_E5",
@@ -2853,10 +2967,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7119685418977549,
-      "familyKey": "OVO-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OVO-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "M25-CLASS_E5",
@@ -2870,10 +2985,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7118397432017233,
-      "familyKey": "M25-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "M25-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "CEY-CLASS_E5",
@@ -2887,10 +3003,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7117528450222923,
-      "familyKey": "CEY-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CEY-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "1M5-CLASS_E5",
@@ -2904,10 +3021,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7107393696103446,
-      "familyKey": "1M5-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "1M5-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "SGH-CLASS_E5",
@@ -2921,10 +3039,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7106030203044256,
-      "familyKey": "SGH-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SGH-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "6I2-CLASS_E5",
@@ -2938,15 +3057,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7095142901407131,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "6I2-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 11884.183,
       "anchorY": 6939.097,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "6I2-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "AAS-CLASS_E5",
@@ -2960,10 +3079,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.708462980592023,
-      "familyKey": "AAS-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "AAS-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "CFJ-CLASS_E5",
@@ -2977,10 +3097,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7082415674200819,
-      "familyKey": "CFJ-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CFJ-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "I34-CLASS_E5",
@@ -2994,10 +3115,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7078471173972123,
-      "familyKey": "I34-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I34-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "GEZ-CLASS_E5",
@@ -3011,10 +3133,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.707434405736097,
-      "familyKey": "GEZ-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GEZ-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "3M7-CLASS_E5",
@@ -3028,10 +3151,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7062301016025823,
-      "familyKey": "3M7-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "3M7-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "PCD-CLASS_E5",
@@ -3045,10 +3169,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.706136204477274,
-      "familyKey": "PCD-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "PCD-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "FFT-CLASS_E5",
@@ -3062,10 +3187,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.705949222536933,
-      "familyKey": "FFT-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "FFT-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "PHT-CLASS_E5",
@@ -3079,10 +3205,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7057799088691505,
-      "familyKey": "PHT-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "PHT-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "M02-CLASS_E5",
@@ -3096,10 +3223,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7048436141394614,
-      "familyKey": "M02-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "M02-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "DNV-CLASS_E5",
@@ -3113,10 +3241,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7044410719142106,
-      "familyKey": "DNV-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DNV-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "MQJ-CLASS_E5",
@@ -3130,10 +3259,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7042864972985248,
-      "familyKey": "MQJ-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MQJ-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "HLB-CLASS_E5",
@@ -3147,10 +3277,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7042613808635046,
-      "familyKey": "HLB-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "HLB-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "CUL-CLASS_E5",
@@ -3164,10 +3295,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.70371209636359,
-      "familyKey": "CUL-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CUL-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "TEL-CLASS_E5",
@@ -3181,10 +3313,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7035017614841257,
-      "familyKey": "TEL-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "TEL-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "SIK-CLASS_E5",
@@ -3198,10 +3331,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7028875418658068,
-      "familyKey": "SIK-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SIK-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "K24-CLASS_E5",
@@ -3215,10 +3349,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7022112264766815,
-      "familyKey": "K24-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "K24-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "DVK-CLASS_E5",
@@ -3232,10 +3367,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7020807397241148,
-      "familyKey": "DVK-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DVK-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "UCY-CLASS_E5",
@@ -3249,10 +3385,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7018660226314154,
-      "familyKey": "UCY-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "UCY-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "0M4-CLASS_E5",
@@ -3266,10 +3403,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7010061192242073,
-      "familyKey": "0M4-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "0M4-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "HZD-CLASS_E5",
@@ -3283,10 +3421,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.7007901032254367,
-      "familyKey": "HZD-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "HZD-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-24",
@@ -3299,10 +3438,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "DAY-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "DAY-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-25",
@@ -3315,15 +3455,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "DAY-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 13813.325,
       "anchorY": 932.285,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "DAY-CLASS_C",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_C-26",
@@ -3336,15 +3476,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "BNA-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 8721.019,
       "anchorY": 11207.776,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BNA-CLASS_C",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_C-27",
@@ -3357,10 +3497,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "BNA-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "BNA-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-28",
@@ -3373,10 +3514,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "BNA-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "BNA-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-29",
@@ -3389,10 +3531,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "BNA-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "BNA-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-30",
@@ -3405,10 +3548,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "BNA-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "BNA-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-31",
@@ -3421,15 +3565,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "LEX-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 13178.675,
       "anchorY": 5847.362,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "LEX-CLASS_C",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_C-32",
@@ -3442,10 +3586,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "LEX-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "LEX-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-33",
@@ -3458,15 +3603,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "EVV-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 7164.058,
       "anchorY": 5893.551,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "EVV-CLASS_C",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_C-34",
@@ -3479,31 +3624,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
       "familyKey": "EVV-CLASS_C",
-      "labelGroup": "shelf",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_C-35",
-      "selectionId": "shelf-CLASS_C-35",
-      "x": 14628.185,
-      "y": 10943.301,
-      "lines": [
-        "TYS C",
-        "25-50"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.7,
-      "anchorX": 14628.185,
-      "anchorY": 11217.804,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "TYS-CLASS_C",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-36",
@@ -3516,15 +3641,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "SPI-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 2772.131,
       "anchorY": 1145.979,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SPI-CLASS_C",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_C-37",
@@ -3537,10 +3662,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "SPI-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "SPI-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-38",
@@ -3553,10 +3679,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "CMI-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CMI-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-39",
@@ -3569,15 +3696,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CMI-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 5728.959,
       "anchorY": 373.624,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CMI-CLASS_C",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_C-40",
@@ -3590,10 +3717,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "CMI-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "CMI-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-41",
@@ -3606,15 +3734,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "IND-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 9650.203,
       "anchorY": 1507.742,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "IND-CLASS_C",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_C-42",
@@ -3627,15 +3755,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
+      "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "IND-CLASS_C",
+      "airspaceType": "CLASS_C",
+      "placementMode": "callout",
       "anchorX": 9517.706,
       "anchorY": 1331.958,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "IND-CLASS_C",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "shelf-CLASS_C-43",
@@ -3648,10 +3776,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "IND-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "IND-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-44",
@@ -3664,10 +3793,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "SDF-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "SDF-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-45",
@@ -3680,10 +3810,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "SDF-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "SDF-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "shelf-CLASS_C-46",
@@ -3696,10 +3827,11 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.7,
-      "familyKey": "SDF-CLASS_C",
       "labelGroup": "shelf",
+      "detailTier": "detail",
+      "familyKey": "SDF-CLASS_C",
       "airspaceType": "CLASS_C",
-      "detailTier": "core"
+      "placementMode": "interior"
     },
     {
       "id": "FWC-CLASS_E5",
@@ -3713,10 +3845,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6987009162744914,
-      "familyKey": "FWC-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "FWC-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "OLY-CLASS_E5",
@@ -3730,10 +3863,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.698618638324164,
-      "familyKey": "OLY-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OLY-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "27K-CLASS_E5",
@@ -3747,10 +3881,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6985689583477358,
-      "familyKey": "27K-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "27K-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "CEV-CLASS_E5",
@@ -3764,10 +3899,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6984277819054241,
-      "familyKey": "CEV-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CEV-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "I93-CLASS_E5",
@@ -3781,10 +3917,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6981777808164055,
-      "familyKey": "I93-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I93-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "8A3-CLASS_E5",
@@ -3798,10 +3935,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6971724618330574,
-      "familyKey": "8A3-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "8A3-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "DXE-CLASS_E5",
@@ -3815,10 +3953,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6965720909180719,
-      "familyKey": "DXE-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "DXE-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "M21-CLASS_E5",
@@ -3832,10 +3971,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6961497910177248,
-      "familyKey": "M21-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "M21-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "SIV-CLASS_E5",
@@ -3849,10 +3989,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6960459693885918,
-      "familyKey": "SIV-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SIV-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "SME-CLASS_E5",
@@ -3866,10 +4007,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6959499804608477,
-      "familyKey": "SME-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SME-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "RGA-CLASS_E5",
@@ -3883,10 +4025,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6956957552007635,
-      "familyKey": "RGA-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "RGA-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "BFR-CLASS_E5",
@@ -3900,10 +4043,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6948577387089094,
-      "familyKey": "BFR-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BFR-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "HAO-CLASS_E5",
@@ -3917,10 +4061,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6943123785737255,
-      "familyKey": "HAO-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "HAO-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "RID-CLASS_E5",
@@ -3934,10 +4079,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6942752673776506,
-      "familyKey": "RID-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "RID-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "SRB-CLASS_E5",
@@ -3951,10 +4097,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6939094605114157,
-      "familyKey": "SRB-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SRB-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "MAW-CLASS_E5",
@@ -3968,10 +4115,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6938307732602476,
-      "familyKey": "MAW-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MAW-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "2M0-CLASS_E5",
@@ -3985,10 +4133,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6931812003643747,
-      "familyKey": "2M0-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "2M0-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "M20-CLASS_E5",
@@ -4002,10 +4151,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6915836353939556,
-      "familyKey": "M20-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "M20-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "POF-CLASS_E5",
@@ -4019,10 +4169,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6914575997160702,
-      "familyKey": "POF-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "POF-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "IOB-CLASS_E5",
@@ -4036,10 +4187,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6913889896911225,
-      "familyKey": "IOB-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "IOB-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "MWO-CLASS_E5",
@@ -4053,15 +4205,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6910349517200207,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MWO-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 13486.495,
       "anchorY": 1916.086,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MWO-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "H96-CLASS_E5",
@@ -4075,10 +4227,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6909152673505872,
-      "familyKey": "H96-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "H96-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "IJX-CLASS_E5",
@@ -4092,10 +4245,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6907571038767556,
-      "familyKey": "IJX-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "IJX-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "1H8-CLASS_E5",
@@ -4109,10 +4263,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.690513206020346,
-      "familyKey": "1H8-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "1H8-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "SCX-CLASS_E5",
@@ -4126,10 +4281,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6891518830434478,
-      "familyKey": "SCX-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SCX-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "SLO-CLASS_E5",
@@ -4143,10 +4299,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6889041073589636,
-      "familyKey": "SLO-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SLO-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "LOZ-CLASS_E5",
@@ -4160,10 +4317,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6885026187579164,
-      "familyKey": "LOZ-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "LOZ-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "TKX-CLASS_E5",
@@ -4177,10 +4335,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6884995732580902,
-      "familyKey": "TKX-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "TKX-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "FYG-CLASS_E5",
@@ -4194,15 +4353,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6884592837379228,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "FYG-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 135.505,
       "anchorY": 4372.691,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "FYG-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "MGY-CLASS_E5",
@@ -4216,10 +4375,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6881838431214901,
-      "familyKey": "MGY-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "MGY-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "BYL-CLASS_E5",
@@ -4233,10 +4393,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6877119398730724,
-      "familyKey": "BYL-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "BYL-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "4M7-CLASS_E5",
@@ -4250,10 +4411,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6865350743637951,
-      "familyKey": "4M7-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "4M7-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "PRG-CLASS_E5",
@@ -4267,10 +4429,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6841918549928399,
-      "familyKey": "PRG-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "PRG-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "GDK-CLASS_E5",
@@ -4284,15 +4447,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6840954172954199,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GDK-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 14291.482,
       "anchorY": 1471.259,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "GDK-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "2H0-CLASS_E5",
@@ -4306,10 +4469,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6816302058826369,
-      "familyKey": "2H0-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "2H0-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "GRE-CLASS_E5",
@@ -4323,10 +4487,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6815041298725976,
-      "familyKey": "GRE-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GRE-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "I63-CLASS_E5",
@@ -4340,10 +4505,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6812647966194313,
-      "familyKey": "I63-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I63-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "SCA-CLASS_E5",
@@ -4357,15 +4523,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6799968705818948,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SCA-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 13927.392,
       "anchorY": 37.376,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "SCA-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "CIR-CLASS_E5",
@@ -4379,10 +4545,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6791868915150315,
-      "familyKey": "CIR-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CIR-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "SAR-CLASS_E5",
@@ -4396,10 +4563,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6791802710120346,
-      "familyKey": "SAR-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "SAR-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "TZV-CLASS_E5",
@@ -4413,10 +4581,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6754515769195217,
-      "familyKey": "TZV-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "TZV-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "1M7-CLASS_E5",
@@ -4430,10 +4599,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6748447166247891,
-      "familyKey": "1M7-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "1M7-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "TAZ-CLASS_E5",
@@ -4447,10 +4617,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6746369908418366,
-      "familyKey": "TAZ-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "TAZ-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "3LF-CLASS_E5",
@@ -4464,10 +4635,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6745589118393972,
-      "familyKey": "3LF-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "3LF-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "0M5-CLASS_E5",
@@ -4481,10 +4653,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6742804952970817,
-      "familyKey": "0M5-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "0M5-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "UMP-CLASS_E5",
@@ -4498,10 +4671,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.673993018747877,
-      "familyKey": "UMP-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "UMP-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "C16-CLASS_E5",
@@ -4515,10 +4689,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6737543897578883,
-      "familyKey": "C16-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "C16-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "H88-CLASS_E5",
@@ -4532,15 +4707,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6685160262841465,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "H88-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 1370.013,
       "anchorY": 6983.448,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "H88-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "UWL-CLASS_E5",
@@ -4554,15 +4729,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6681738105896312,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "UWL-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 11579.056,
       "anchorY": 1061.807,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "UWL-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "EKQ-CLASS_E5",
@@ -4576,10 +4751,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6672641394102314,
-      "familyKey": "EKQ-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "EKQ-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "FAM-CLASS_E5",
@@ -4593,10 +4769,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6670052740914425,
-      "familyKey": "FAM-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "FAM-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "K62-CLASS_E5",
@@ -4610,10 +4787,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6668396445425255,
-      "familyKey": "K62-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "K62-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "OXD-CLASS_E5",
@@ -4627,15 +4805,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.666444811032306,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "OXD-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 12700.499,
       "anchorY": 2016.992,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "OXD-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "AAA-CLASS_E5",
@@ -4649,10 +4827,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.665443489368148,
-      "familyKey": "AAA-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "AAA-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "0A3-CLASS_E5",
@@ -4666,10 +4845,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6651307857489022,
-      "familyKey": "0A3-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "0A3-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "M85-CLASS_E5",
@@ -4683,10 +4863,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6629729822144134,
-      "familyKey": "M85-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "M85-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "8WC-CLASS_E5",
@@ -4700,10 +4881,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.662769919346224,
-      "familyKey": "8WC-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "8WC-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "M05-CLASS_E5",
@@ -4717,10 +4899,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6617221950219393,
-      "familyKey": "M05-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "M05-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "special-25",
@@ -4733,13 +4916,15 @@
       ],
       "style": "airspace-secondary",
       "priority": 0.66,
+      "labelGroup": "special",
+      "detailTier": "core",
+      "familyKey": "special-25",
+      "airspaceType": "SPECIAL",
+      "placementMode": "callout",
       "anchorX": 14075.544,
       "anchorY": 11198.194,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "labelGroup": "special",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "I22-CLASS_E5",
@@ -4753,10 +4938,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.659828158129435,
-      "familyKey": "I22-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I22-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "I68-CLASS_E5",
@@ -4770,15 +4956,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6597281229147473,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I68-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 13786.329,
       "anchorY": 2089.025,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "I68-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "M34-CLASS_E5",
@@ -4792,10 +4978,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6582840926058606,
-      "familyKey": "M34-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "M34-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "PPQ-CLASS_E5",
@@ -4809,10 +4996,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6551400894935717,
-      "familyKey": "PPQ-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "PPQ-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "VES-CLASS_E5",
@@ -4826,10 +5014,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6549461363155242,
-      "familyKey": "VES-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "VES-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "PJY-CLASS_E5",
@@ -4843,10 +5032,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.654221838064965,
-      "familyKey": "PJY-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "PJY-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "4M9-CLASS_E5",
@@ -4860,10 +5050,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.653133453809399,
-      "familyKey": "4M9-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "4M9-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "VLA-CLASS_E5",
@@ -4877,10 +5068,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6530571094521661,
-      "familyKey": "VLA-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "VLA-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "JAU-CLASS_E5",
@@ -4894,10 +5086,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6523068021112762,
-      "familyKey": "JAU-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "JAU-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "PGR-CLASS_E5",
@@ -4911,10 +5104,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6507316850235203,
-      "familyKey": "PGR-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "PGR-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "I74-CLASS_E5",
@@ -4928,15 +5122,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6464243614420822,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I74-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 14730.75,
       "anchorY": 294.382,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "I74-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "CHQ-CLASS_E5",
@@ -4950,10 +5144,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6446852708314078,
-      "familyKey": "CHQ-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "CHQ-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "5I4-CLASS_E5",
@@ -4967,10 +5162,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6409760159583697,
-      "familyKey": "5I4-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "5I4-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "EIW-CLASS_E5",
@@ -4984,10 +5180,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6377784137288249,
-      "familyKey": "EIW-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "EIW-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "0I8-CLASS_E5",
@@ -5001,10 +5198,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6360983009509997,
-      "familyKey": "0I8-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "0I8-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "2A1-CLASS_E5",
@@ -5018,10 +5216,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6321691394528849,
-      "familyKey": "2A1-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "2A1-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "M12-CLASS_E5",
@@ -5035,10 +5234,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6286717775731296,
-      "familyKey": "M12-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "M12-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "GEO-CLASS_E5",
@@ -5052,10 +5252,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.628363564180429,
-      "familyKey": "GEO-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "GEO-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "3I7-CLASS_E5",
@@ -5069,15 +5270,15 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6269970244716926,
+      "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "3I7-CLASS_E5",
+      "airspaceType": "CLASS_E5",
+      "placementMode": "callout",
       "anchorX": 13446.576,
       "anchorY": 915.26,
-      "placementMode": "callout",
       "elevation": 0.05,
-      "connector": true,
-      "familyKey": "3I7-CLASS_E5",
-      "labelGroup": "airfield",
-      "airspaceType": "CLASS_E5",
-      "detailTier": "core"
+      "connector": true
     },
     {
       "id": "I17-CLASS_E5",
@@ -5091,10 +5292,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6228529135224506,
-      "familyKey": "I17-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I17-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "I96-CLASS_E5",
@@ -5108,10 +5310,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.616284457639999,
-      "familyKey": "I96-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I96-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "I67-CLASS_E5",
@@ -5125,10 +5328,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.608713406441288,
-      "familyKey": "I67-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I67-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "I99-CLASS_E5",
@@ -5142,10 +5346,11 @@
       ],
       "style": "airspace-primary",
       "priority": 0.6056789647584055,
-      "familyKey": "I99-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "I99-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
+      "placementMode": "interior"
     },
     {
       "id": "18I-CLASS_E5",
@@ -5159,466 +5364,17 @@
       ],
       "style": "airspace-primary",
       "priority": 0.5993387512568099,
-      "familyKey": "18I-CLASS_E5",
       "labelGroup": "airfield",
+      "detailTier": "core",
+      "familyKey": "18I-CLASS_E5",
       "airspaceType": "CLASS_E5",
-      "detailTier": "extended"
-    },
-    {
-      "id": "shelf-CLASS_D-47",
-      "selectionId": "MQY-CLASS_D",
-      "x": 9263.933,
-      "y": 11148.271,
-      "lines": [
-        "MQY D",
-        "SFC-25"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "MQY-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-48",
-      "selectionId": "LUK-CLASS_D",
-      "x": 13477.08,
-      "y": 3568.727,
-      "lines": [
-        "LUK D",
-        "SFC-30"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 13477.08,
-      "anchorY": 3046.285,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "LUK-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-49",
-      "selectionId": "AID-CLASS_D",
-      "x": 10985.269,
-      "y": 465.088,
-      "lines": [
-        "AID D",
-        "SFC-34"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "AID-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-50",
-      "selectionId": "BLV-CLASS_D",
-      "x": 2371.435,
-      "y": 5069.192,
-      "lines": [
-        "BLV D",
-        "SFC-30"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 2371.435,
-      "anchorY": 4546.751,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "BLV-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-51",
-      "selectionId": "DEC-CLASS_D",
-      "x": 4413.379,
-      "y": 1201.803,
-      "lines": [
-        "DEC D",
-        "SFC-32"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "DEC-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-52",
-      "selectionId": "CPS-CLASS_D",
-      "x": 1322.931,
-      "y": 4463.311,
-      "lines": [
-        "CPS D",
-        "SFC-29"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 1712.642,
-      "anchorY": 4463.311,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "CPS-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-53",
-      "selectionId": "OWB-CLASS_D",
-      "x": 7873.565,
-      "y": 6711.89,
-      "lines": [
-        "OWB D",
-        "SFC-29"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "OWB-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-54",
-      "selectionId": "JWN-CLASS_D",
-      "x": 7203.436,
-      "y": 9453.231,
-      "lines": [
-        "JWN D",
-        "SFC-31"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "JWN-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-55",
-      "selectionId": "MWA-CLASS_D",
-      "x": 3761.338,
-      "y": 6650.935,
-      "lines": [
-        "MWA D",
-        "SFC-30"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 4035.907,
-      "anchorY": 6650.935,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "MWA-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-56",
-      "selectionId": "CGI-CLASS_D",
-      "x": 2850.263,
-      "y": 8016.839,
-      "lines": [
-        "CGI D",
-        "SFC-28"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "CGI-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-57",
-      "selectionId": "MDH-CLASS_D",
-      "x": 3535.812,
-      "y": 6528.873,
-      "lines": [
-        "MDH D",
-        "SFC-29"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "MDH-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-58",
-      "selectionId": "BAK-CLASS_D",
-      "x": 10450.341,
-      "y": 2697.607,
-      "lines": [
-        "BAK D",
-        "SFC-32"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "BAK-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-59",
-      "selectionId": "LOU-CLASS_D",
-      "x": 10352.774,
-      "y": 6251.516,
-      "lines": [
-        "LOU D",
-        "SFC-33"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "LOU-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-60",
-      "selectionId": "BMG-CLASS_D",
-      "x": 8984.017,
-      "y": 3024.603,
-      "lines": [
-        "BMG D",
-        "SFC-33"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "BMG-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-61",
-      "selectionId": "HUF-CLASS_D",
-      "x": 7571.128,
-      "y": 2501.608,
-      "lines": [
-        "HUF D",
-        "SFC-31"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 7571.128,
-      "anchorY": 2227.104,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "HUF-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-62",
-      "selectionId": "MIE-CLASS_D",
-      "x": 11415.626,
-      "y": 153.522,
-      "lines": [
-        "MIE D",
-        "SFC-34"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "MIE-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-63",
-      "selectionId": "SUS-CLASS_D",
-      "x": 699.99,
-      "y": 4192.971,
-      "lines": [
-        "SUS D",
-        "SFC-30"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "SUS-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-64",
-      "selectionId": "ILN-CLASS_D",
-      "x": 14633.182,
-      "y": 2145.459,
-      "lines": [
-        "ILN D",
-        "SFC-36"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "ILN-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-65",
-      "selectionId": "ALN-CLASS_D",
-      "x": 1961.098,
-      "y": 3632.227,
-      "lines": [
-        "ALN D",
-        "SFC-30"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "ALN-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-66",
-      "selectionId": "JWN-CLASS_D",
-      "x": 6928.868,
-      "y": 9506.361,
-      "lines": [
-        "JWN D",
-        "SFC-31"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 7203.436,
-      "anchorY": 9506.361,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "JWN-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-67",
-      "selectionId": "ILN-CLASS_D",
-      "x": 14174.611,
-      "y": 1393.389,
-      "lines": [
-        "ILN D",
-        "SFC-34"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 14174.611,
-      "anchorY": 1118.886,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "ILN-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-68",
-      "selectionId": "JWN-CLASS_D",
-      "x": 7593.147,
-      "y": 9506.361,
-      "lines": [
-        "JWN D",
-        "SFC-31"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 7203.436,
-      "anchorY": 9506.361,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "JWN-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-69",
-      "selectionId": "PAH-CLASS_D",
-      "x": 4506.121,
-      "y": 8201.559,
-      "lines": [
-        "PAH D",
-        "SFC-29"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 4506.121,
-      "anchorY": 8476.062,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "PAH-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-70",
-      "selectionId": "JWN-CLASS_D",
-      "x": 8481.635,
-      "y": 11062.423,
-      "lines": [
-        "JWN D",
-        "SFC-24"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "anchorX": 8481.635,
-      "anchorY": 10787.92,
-      "placementMode": "callout",
-      "elevation": 0.05,
-      "connector": true,
-      "familyKey": "JWN-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
-    },
-    {
-      "id": "shelf-CLASS_D-71",
-      "selectionId": "LOU-CLASS_D",
-      "x": 11043.612,
-      "y": 5394.412,
-      "lines": [
-        "LOU D",
-        "SFC-22"
-      ],
-      "style": "airspace-secondary",
-      "priority": 0.55,
-      "familyKey": "LOU-CLASS_D",
-      "labelGroup": "shelf",
-      "airspaceType": "CLASS_D",
-      "detailTier": "core"
+      "placementMode": "interior"
     }
   ],
   "stats": {
-    "totalItems": 303,
+    "totalItems": 277,
     "classEDetailItems": 161,
-    "coreClassEDetailItems": 88,
-    "extendedClassEDetailItems": 73
+    "coreClassEDetailItems": 161,
+    "extendedClassEDetailItems": 0
   }
 }

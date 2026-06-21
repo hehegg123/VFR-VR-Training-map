@@ -1,6 +1,12 @@
 {
-  "generatedAt": "2026-05-11T14:36:02.381557+00:00",
+  "generatedAt": "2026-06-19T13:40:31.838975+00:00",
   "sections": [
+    {
+      "id": "daytona",
+      "title": "Daytona Beach Area",
+      "manifest": "./sections/daytona/manifest.json",
+      "quality": "primary"
+    },
     {
       "id": "stlouis",
       "title": "St. Louis Sectional",

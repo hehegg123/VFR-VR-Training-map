@@ -1,4 +1,4 @@
-import { AppShell } from "./app/AppShell.js?v=20260516-label-style-v1";
+import { AppShell } from "./app/AppShell.js?v=20260615-master-control-v1";
 
 const shell = new AppShell({
   baseCanvas: document.getElementById("baseCanvas"),

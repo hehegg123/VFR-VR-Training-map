@@ -210,8 +210,8 @@ $certInfo = & (Join-Path $PSScriptRoot "ensure_stlouis_dev_cert.ps1") `
     -HostNames @("localhost", $computerName) `
     -IpAddresses @("127.0.0.1", $lanIp)
 
-$vrLanUrl = if ($lanIp) { "https://$lanIp`:$HttpsPort/babylon-vr-faa-map/?section=stlouis" } else { $null }
-$desktopLanUrl = if ($lanIp) { "https://$lanIp`:$HttpsPort/faa-2d-map/?section=stlouis" } else { $null }
+$vrLanUrl = if ($lanIp) { "https://$lanIp`:$HttpsPort/babylon-vr-faa-map/" } else { $null }
+$desktopLanUrl = if ($lanIp) { "https://$lanIp`:$HttpsPort/faa-2d-map/" } else { $null }
 $statusPort = Find-AvailableStatusPort
 $statusUrl = "http://localhost:$statusPort/"
 

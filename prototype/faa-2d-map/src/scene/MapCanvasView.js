@@ -389,10 +389,11 @@ export class MapCanvasView {
 
     for (const item of visibleItems) {
       const isSelected = item.id === selectedLabelId || (item.selectionId ?? item.id) === selectedFeatureId;
+      const isPrimaryAirfieldLabel = layerId === "airspace" && item.labelGroup === "airfield";
       const lines = item.lines?.length ? item.lines : [item.text ?? item.id];
       const style = LABEL_STYLES[item.style] ?? LABEL_STYLES["intersection-minor"];
       const box = measureLabelBox(ctx, lines, item.x, item.y, this.view, isSelected);
-      if (!isSelected && labelBoxes.some((existing) => boundsOverlap(existing.bounds, box.bounds))) {
+      if (!isSelected && !isPrimaryAirfieldLabel && labelBoxes.some((existing) => boundsOverlap(existing.bounds, box.bounds))) {
         continue;
       }
       labelBoxes.push({ item, bounds: box.bounds });

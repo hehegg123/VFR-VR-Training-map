@@ -860,6 +860,7 @@ def fallback_airport_for_class_e_record(
 
 def build_airspace_selection_regions(features: dict[str, object]) -> list[dict[str, object]]:
     regions: list[dict[str, object]] = []
+    primary_families: set[str] = set()
     grouped_items = build_airspace_grouped_entries(features)
     grouped_map = {key: entries for key, entries in grouped_items}
 
@@ -894,13 +895,14 @@ def build_airspace_selection_regions(features: dict[str, object]) -> list[dict[s
         if altitude_bounds is not None:
             region.update(altitude_bounds)
         regions.append(region)
+        primary_families.add(region["familyKey"])
 
     shelf_records = sorted(
         (
             record
             for record in features["class_airspaces"]
             if projected_visible_parts(features, record)
-            and record["attrs"].get("TYPE_CODE", "") in {"CLASS_B", "CLASS_C", "CLASS_D", "CLASS_E2"}
+            and record["attrs"].get("TYPE_CODE", "") in {"CLASS_B", "CLASS_C"}
         ),
         key=lambda record: (
             AIRSPACE_TYPE_PRIORITY.get(record["attrs"].get("TYPE_CODE", ""), 9),
@@ -914,6 +916,9 @@ def build_airspace_selection_regions(features: dict[str, object]) -> list[dict[s
         altitude_bounds = airspace_altitude_bounds(record["attrs"])
         type_code = record["attrs"].get("TYPE_CODE", "")
         airport = related_airport_for_airspace(record, features["airports"]) if type_code in {"CLASS_B", "CLASS_C", "CLASS_D"} else None
+        family_key = airspace_family_key(airport, type_code)
+        if family_key not in primary_families:
+            continue
         x, y = shape_aware_anchor(visible_parts)
         if not inside_chart(features, x, y, margin=4):
             continue
@@ -921,7 +926,7 @@ def build_airspace_selection_regions(features: dict[str, object]) -> list[dict[s
             "id": f"shelf-{type_code}-{record_index}",
             "kind": "shelf",
             "airspaceType": type_code,
-            "familyKey": airspace_family_key(airport, type_code),
+            "familyKey": family_key,
             "priority": 0.55 if type_code in {"CLASS_B", "CLASS_C", "CLASS_D"} else 0.5,
             "anchorX": float(x),
             "anchorY": float(y),
@@ -952,6 +957,7 @@ def build_airspace_selection_regions(features: dict[str, object]) -> list[dict[s
                 "id": f"special-{record_index}",
                 "kind": "special",
                 "airspaceType": "SPECIAL",
+                "familyKey": f"special-{record_index}",
                 "priority": special_activity_priority(record),
                 "anchorX": float(x),
                 "anchorY": float(y),
@@ -1788,6 +1794,7 @@ def compute_airspace_label_layout(features: dict[str, object]) -> list[dict[str,
         ax.figure.canvas.draw()
         placer = AirspaceLabelPlacer(ax)
         layout: list[dict[str, object]] = []
+        primary_families: set[str] = set()
         chart_center_x = features["background"].shape[1] / 2.0
         chart_center_y = features["background"].shape[0] / 2.0
         chart_half_diagonal = max(((chart_center_x ** 2 + chart_center_y ** 2) ** 0.5), 1.0)
@@ -1853,14 +1860,19 @@ def compute_airspace_label_layout(features: dict[str, object]) -> list[dict[str,
                 placement["id"] = f"{airport_id}-{type_code}"
                 placement["selectionId"] = placement["id"]
                 placement["familyKey"] = placement["id"]
+                placement["labelGroup"] = "airfield"
+                placement["detailTier"] = "core"
+                placement["airspaceType"] = type_code
+                placement.setdefault("placementMode", "interior")
                 layout.append(placement)
+                primary_families.add(placement["familyKey"])
 
         shelf_records = sorted(
             (
                 record
                 for record in features["class_airspaces"]
                 if projected_visible_parts(features, record)
-                and record["attrs"].get("TYPE_CODE", "") in {"CLASS_B", "CLASS_C", "CLASS_D", "CLASS_E2"}
+                and record["attrs"].get("TYPE_CODE", "") in {"CLASS_B", "CLASS_C"}
             ),
             key=lambda record: (
                 AIRSPACE_TYPE_PRIORITY.get(record["attrs"].get("TYPE_CODE", ""), 9),
@@ -1871,6 +1883,9 @@ def compute_airspace_label_layout(features: dict[str, object]) -> list[dict[str,
             attrs = record["attrs"]
             type_code = attrs.get("TYPE_CODE", "")
             airport = related_airport_for_airspace(record, features["airports"]) if type_code in {"CLASS_B", "CLASS_C", "CLASS_D"} else None
+            family_key = airspace_family_key(airport, type_code)
+            if family_key not in primary_families:
+                continue
             text_lines = shelf_label_lines(attrs, airport)
             if not text_lines:
                 continue
@@ -1907,11 +1922,12 @@ def compute_airspace_label_layout(features: dict[str, object]) -> list[dict[str,
             )
             if placement is not None:
                 placement["id"] = f"shelf-{type_code}-{record_index}"
-                if airport is not None and type_code == "CLASS_D":
-                    placement["selectionId"] = f"{airport['ARPT_ID']}-{type_code}"
-                else:
-                    placement["selectionId"] = placement["id"]
-                placement["familyKey"] = airspace_family_key(airport, type_code)
+                placement["selectionId"] = placement["id"]
+                placement["familyKey"] = family_key
+                placement["labelGroup"] = "shelf"
+                placement["detailTier"] = "detail"
+                placement["airspaceType"] = type_code
+                placement.setdefault("placementMode", "interior")
                 layout.append(placement)
 
         special_records = sorted(
@@ -1989,6 +2005,11 @@ def compute_airspace_label_layout(features: dict[str, object]) -> list[dict[str,
             if placement is not None:
                 placement["id"] = f"special-{record_index}"
                 placement["selectionId"] = placement["id"]
+                placement["familyKey"] = placement["id"]
+                placement["labelGroup"] = "special"
+                placement["detailTier"] = "core"
+                placement["airspaceType"] = "SPECIAL"
+                placement.setdefault("placementMode", "interior")
                 layout.append(placement)
         layout.sort(key=lambda item: float(item["priority"]), reverse=True)
         return layout
