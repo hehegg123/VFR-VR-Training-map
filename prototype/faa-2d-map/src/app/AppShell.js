@@ -1,5 +1,6 @@
 import { loadSectionIndex, loadSectionManifest } from "../data/sectionRepository.js";
 import { MapCanvasView } from "../scene/MapCanvasView.js";
+import { TaskSetRepository } from "../../../babylon-vr-faa-map/src/data/TaskSetRepository.js?v=20260621-task-sessions-v2";
 import {
   BroadcastLinkSession,
   generateSessionId,
@@ -12,6 +13,11 @@ export class AppShell {
     this.sectionIndex = null;
     this.currentManifest = null;
     this.layerUiState = new Map();
+    this.taskSetRepository = new TaskSetRepository();
+    this.activeTaskSet = null;
+    this.taskSetLoadToken = 0;
+    this.taskSetLoading = false;
+    this.sectionLoading = false;
     this.defaultStatusMessage = "";
     this.applyingRemoteSelection = false;
     this.applyingRemoteToggle = false;
@@ -26,8 +32,17 @@ export class AppShell {
       this.setStatus("Loading 2D map...");
       this.elements.fitViewButton.addEventListener("click", () => this.mapView.fitView());
       this.elements.sectionSelect.addEventListener("change", async (event) => {
-        await this.loadSectionById(event.target.value);
+        try {
+          await this.loadSectionById(event.target.value);
+        } catch (error) {
+          console.error(error);
+          this.setStatus(error.message ?? "Unable to change map section.");
+        }
       });
+      this.elements.instructionSelect.addEventListener("change", (event) => {
+        this.handleInstructionSetChange(event.target.value);
+      });
+      this.elements.resetTaskSessionButton.addEventListener("click", () => this.resetTaskSession());
       this.elements.startLinkButton.addEventListener("click", () => this.handleStartLink());
       this.elements.disconnectLinkButton.addEventListener("click", () => this.handleDisconnectLink());
       this.elements.linkSessionInput.value = readSavedSessionId() || "stlouis-review";
@@ -72,7 +87,7 @@ export class AppShell {
     }
 
     const singleSection = sections.length <= 1;
-    this.elements.sectionSelect.disabled = singleSection;
+    this.elements.sectionSelect.disabled = singleSection || this.sectionLoading || this.taskSetLoading;
     this.elements.sectionSelect.hidden = singleSection;
     const sectionLabel = this.elements.sectionSelect?.previousElementSibling;
     if (sectionLabel) {
@@ -90,20 +105,143 @@ export class AppShell {
       throw new Error(`Unknown section: ${sectionId}`);
     }
 
+    this.clearInstructionSelection({ publish: true });
+    this.sectionLoading = true;
+    this.resetInstructionList();
+    this.syncInstructionControls();
     this.elements.sectionSelect.value = sectionId;
     this.setStatus(`Loading ${entry.title}...`);
 
-    const manifest = await loadSectionManifest(entry);
-    await this.mapView.loadSection(manifest);
+    try {
+      const manifest = await loadSectionManifest(entry);
+      await this.mapView.loadSection(manifest);
 
-    this.currentManifest = manifest;
-    this.renderLayerControls(manifest);
-    this.syncUrl(sectionId);
-    this.elements.sectionQuality.dataset.quality = entry.quality ?? "primary";
-    this.elements.sectionQuality.textContent = entry.quality ?? "primary";
-    this.defaultStatusMessage =
-      `${manifest.title} loaded with ${manifest.layers.length} map layers and linked highlight support.${formatBuildSuffix(manifest.assetVersion)}`;
-    this.setStatus(this.defaultStatusMessage);
+      this.currentManifest = manifest;
+      this.renderLayerControls(manifest);
+      this.populateInstructionList(manifest);
+      this.syncUrl(sectionId);
+      this.elements.sectionQuality.dataset.quality = entry.quality ?? "primary";
+      this.elements.sectionQuality.textContent = entry.quality ?? "primary";
+      this.defaultStatusMessage =
+        `${manifest.title} loaded with ${manifest.layers.length} map layers and linked highlight support.${formatBuildSuffix(manifest.assetVersion)}`;
+      this.setStatus(this.defaultStatusMessage);
+    } finally {
+      this.sectionLoading = false;
+      this.syncInstructionControls();
+    }
+  }
+
+  populateInstructionList(manifest) {
+    const entries = manifest.training?.taskSets ?? [];
+    this.elements.instructionSelect.innerHTML = "";
+    this.elements.instructionSelect.append(new Option("No instructions", ""));
+    for (const entry of entries) {
+      this.elements.instructionSelect.append(new Option(entry.title, entry.id));
+    }
+    this.elements.instructionSelect.value = "";
+    this.elements.instructionGroup.hidden = entries.length === 0;
+    this.setInstructionStatus(entries.length ? "Choose a task set to send to the linked VR app." : "");
+    this.syncInstructionControls();
+  }
+
+  resetInstructionList() {
+    this.elements.instructionSelect.innerHTML = "";
+    this.elements.instructionSelect.append(new Option("No instructions", ""));
+    this.elements.instructionSelect.value = "";
+    this.elements.instructionGroup.hidden = true;
+    this.setInstructionStatus("");
+  }
+
+  async handleInstructionSetChange(taskSetId) {
+    const loadToken = ++this.taskSetLoadToken;
+    this.clearInstructionSelection({ publish: Boolean(!taskSetId) });
+    if (!taskSetId) {
+      this.elements.instructionSelect.value = "";
+      this.setInstructionStatus("Instruction session cleared.");
+      this.syncInstructionControls();
+      return;
+    }
+
+    const manifest = this.currentManifest;
+    const entry = manifest?.training?.taskSets?.find((candidate) => candidate.id === taskSetId);
+    if (!manifest || !entry) {
+      this.elements.instructionSelect.value = "";
+      this.setInstructionStatus(`Instruction set ${taskSetId} is unavailable.`, { error: true });
+      return;
+    }
+
+    this.taskSetLoading = true;
+    this.syncInstructionControls();
+    this.setInstructionStatus(`Loading ${entry.title}...`);
+    try {
+      const taskSet = await this.taskSetRepository.load(manifest, entry);
+      if (loadToken !== this.taskSetLoadToken || manifest !== this.currentManifest) {
+        return;
+      }
+      this.activeTaskSet = taskSet;
+      this.elements.instructionSelect.value = entry.id;
+      this.publishInstruction({ action: "load", sectionId: manifest.id, taskSetId: entry.id });
+      this.setInstructionStatus(this.linkSession.isConnected()
+        ? `${entry.title} sent to the linked VR app.`
+        : `${entry.title} selected. Start Link to send it to the VR app.`);
+    } catch (error) {
+      if (loadToken !== this.taskSetLoadToken) {
+        return;
+      }
+      console.error(error);
+      this.activeTaskSet = null;
+      this.elements.instructionSelect.value = "";
+      this.setInstructionStatus(`Unable to load ${entry.title}: ${error.message ?? error}`, { error: true });
+    } finally {
+      if (loadToken === this.taskSetLoadToken) {
+        this.taskSetLoading = false;
+        this.syncInstructionControls();
+      }
+    }
+  }
+
+  resetTaskSession() {
+    if (!this.activeTaskSet || this.taskSetLoading || this.sectionLoading) {
+      return;
+    }
+    this.publishInstruction({
+      action: "reset",
+      sectionId: this.currentManifest?.id,
+      taskSetId: this.activeTaskSet.id,
+    });
+    this.setInstructionStatus(this.linkSession.isConnected()
+      ? `${this.activeTaskSet.title} reset in the linked VR app.`
+      : "Start Link before resetting the VR task session.",
+      { error: !this.linkSession.isConnected() });
+  }
+
+  clearInstructionSelection({ publish = false } = {}) {
+    const taskSetId = this.activeTaskSet?.id ?? null;
+    const sectionId = this.currentManifest?.id ?? null;
+    this.activeTaskSet = null;
+    if (publish && (taskSetId || this.linkSession.isConnected())) {
+      this.publishInstruction({ action: "clear", sectionId, taskSetId });
+    }
+    this.syncInstructionControls();
+  }
+
+  syncInstructionControls() {
+    const taskSetCount = this.currentManifest?.training?.taskSets?.length ?? 0;
+    this.elements.instructionSelect.disabled = taskSetCount === 0 || this.sectionLoading || this.taskSetLoading;
+    const hasTaskSet = Boolean(this.activeTaskSet);
+    this.elements.resetTaskSessionButton.hidden = !hasTaskSet;
+    this.elements.resetTaskSessionButton.disabled = !hasTaskSet || this.sectionLoading || this.taskSetLoading;
+    const sectionCount = this.sectionIndex?.sections?.length ?? 0;
+    this.elements.sectionSelect.disabled = sectionCount <= 1 || this.sectionLoading || this.taskSetLoading;
+  }
+
+  setInstructionStatus(message, options = {}) {
+    this.elements.instructionStatus.textContent = message;
+    if (options.error) {
+      this.elements.instructionStatus.dataset.state = "error";
+    } else {
+      delete this.elements.instructionStatus.dataset.state;
+    }
   }
 
   renderLayerControls(manifest) {
@@ -352,6 +490,14 @@ export class AppShell {
       connected: true,
       sessionId,
     });
+    if (this.activeTaskSet && this.currentManifest) {
+      this.publishInstruction({
+        action: "load",
+        sectionId: this.currentManifest.id,
+        taskSetId: this.activeTaskSet.id,
+      });
+      this.setInstructionStatus(`${this.activeTaskSet.title} sent to the linked VR app.`);
+    }
   }
 
   handleDisconnectLink() {
@@ -415,6 +561,13 @@ export class AppShell {
       return;
     }
     this.linkSession.publishToggle(toggle);
+  }
+
+  publishInstruction(instruction) {
+    if (!this.linkSession.isConnected()) {
+      return;
+    }
+    this.linkSession.publishInstruction(instruction);
   }
 
   syncLinkStatus(status = { connected: false, sessionId: "" }) {

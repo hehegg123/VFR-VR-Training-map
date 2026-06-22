@@ -1,5 +1,5 @@
 import { LayerManager } from "./layers/LayerManager.js?v=20260616-label-diagnostics-v5";
-import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260620-panel-toggle-v1";
+import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260621-instruction-workflow-v1";
 import { XrInputSourceVisualManager } from "./xr/XrInputSourceVisualManager.js?v=20260617-xr-input-visuals-v1";
 import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260617-xr-input-visuals-v1";
 
@@ -60,6 +60,8 @@ export async function createMapScene(canvas) {
   let xrMapManipulator = null;
   let xrInputSourceVisualManager = null;
   let pendingVrControlPanelConfig = null;
+  let pendingTaskSession = null;
+  let pendingTaskEventLog = null;
   let xrInitializationPromise = Promise.resolve(null);
 
   if (xrAvailability.supported) {
@@ -83,6 +85,7 @@ export async function createMapScene(canvas) {
       if (pendingVrControlPanelConfig) {
         vrControlPanel.setConfig(pendingVrControlPanelConfig);
       }
+      vrControlPanel.setTaskSession(pendingTaskSession, pendingTaskEventLog);
       xrAvailability.initializing = false;
       xrAvailability.ready = true;
       xrAvailability.reason = "Immersive VR is available.";
@@ -142,6 +145,11 @@ export async function createMapScene(canvas) {
     setVrControlPanel(config) {
       pendingVrControlPanelConfig = config ?? null;
       vrControlPanel?.setConfig(config ?? null);
+    },
+    setVrTaskSession(taskSession, taskEventLog = null) {
+      pendingTaskSession = taskSession ?? null;
+      pendingTaskEventLog = taskEventLog ?? null;
+      vrControlPanel?.setTaskSession(pendingTaskSession, pendingTaskEventLog);
     },
     dispose() {
       xrAvailabilityObservers.clear();

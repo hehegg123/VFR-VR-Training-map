@@ -88,6 +88,15 @@ body {
   border-top: 1px solid rgba(62, 83, 104, 0.12);
 }
 
+.selector-field {
+  margin-top: 14px;
+}
+
+.selector-action {
+  width: 100%;
+  margin-top: 10px;
+}
+
 .hud-group label,
 .hud-row span:first-child {
   display: block;
@@ -142,9 +151,15 @@ button:hover {
 }
 
 button:disabled,
-input:disabled {
+input:disabled,
+select:disabled {
   cursor: not-allowed;
   opacity: 0.65;
+}
+
+#statusLine[data-state="error"] {
+  color: var(--danger);
+  font-weight: 600;
 }
 
 .button-row {

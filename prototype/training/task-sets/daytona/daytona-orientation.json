@@ -1,0 +1,56 @@
+{
+  "schema": "faa-vr-task-set-v1",
+  "id": "daytona-orientation",
+  "sectionId": "daytona",
+  "title": "Daytona Beach Area Orientation",
+  "tasks": [
+    {
+      "id": "locate-daytona-class-c",
+      "title": "Locate Daytona Beach Class C",
+      "instructions": "Enable the airspace layer and its labels. Locate Daytona Beach International Airport and select the main DAYTONA BEACH INTL Class C label.",
+      "completionMode": "manual",
+      "recommendedLayers": [
+        "base",
+        "airspace"
+      ],
+      "targets": [
+        {
+          "layerId": "airspace",
+          "selectionId": "DAB-CLASS_C"
+        }
+      ]
+    },
+    {
+      "id": "identify-daytona-airport",
+      "title": "Identify Daytona Beach International Airport",
+      "instructions": "Enable the airports layer and its labels. Find Daytona Beach International Airport and select its DAB airport label.",
+      "completionMode": "manual",
+      "recommendedLayers": [
+        "base",
+        "airports"
+      ],
+      "targets": [
+        {
+          "layerId": "airports",
+          "selectionId": "DAB"
+        }
+      ]
+    },
+    {
+      "id": "find-ormond-beach-navaid",
+      "title": "Find the Ormond Beach Navaid",
+      "instructions": "Enable the navaids layer and its labels. Locate the Ormond Beach VORTAC north of Daytona Beach and select the OMN navaid label.",
+      "completionMode": "manual",
+      "recommendedLayers": [
+        "base",
+        "navaids"
+      ],
+      "targets": [
+        {
+          "layerId": "navaids",
+          "selectionId": "OMN"
+        }
+      ]
+    }
+  ]
+}

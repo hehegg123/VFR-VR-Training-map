@@ -181,9 +181,28 @@ button:hover {
 }
 
 button:disabled,
-input:disabled {
+input:disabled,
+select:disabled {
   cursor: not-allowed;
   opacity: 0.65;
+}
+
+.selector-field {
+  margin-top: 14px;
+}
+
+.selector-action {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#instructionStatus {
+  margin-top: 8px;
+}
+
+#instructionStatus[data-state="error"] {
+  color: #a72828;
+  font-weight: 600;
 }
 
 .button-secondary {

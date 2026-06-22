@@ -1,3 +1,5 @@
+import { TASK_EVENT_TYPES } from "../../training/TaskEventLog.js?v=20260621-instruction-workflow-v1";
+
 const XR_STATES = BABYLON.WebXRState ?? {};
 const PANEL_TOGGLE_DEBOUNCE_MS = 300;
 const FALLBACK_VIEW_OFFSET = new BABYLON.Vector3(-0.34, -0.02, 0.72);
@@ -9,6 +11,9 @@ const CHECKBOX_FONT_SIZE_PX = 28;
 const LABEL_FONT_SIZE_PX = 29;
 const MASTER_BUTTON_WIDTH_PX = 154;
 const MASTER_BUTTON_HEIGHT_PX = 42;
+const PANEL_TAB_MAP = "map";
+const PANEL_TAB_INSTRUCTIONS = "instructions";
+const INSTRUCTION_CONTENT_HEIGHT_PX = 1320;
 
 export class VrControlPanel {
   constructor(scene, xrHelper, camera, inputSourceVisualManager = null) {
@@ -21,6 +26,12 @@ export class VrControlPanel {
     this.leftController = null;
     this.panelVisible = true;
     this.lastToggleTime = 0;
+    this.selectedTab = PANEL_TAB_MAP;
+    this.taskSession = null;
+    this.taskSnapshot = null;
+    this.unsubscribeTaskSession = null;
+    this.taskEventLog = null;
+    this.lastViewedTaskKey = null;
     this.controllerEntries = new Map();
     this.fallbackAnchor = new BABYLON.TransformNode("xr-panel-fallback-anchor", scene);
     this.fallbackAnchor.parent = camera;
@@ -88,6 +99,35 @@ export class VrControlPanel {
     this.updateVisibility();
   }
 
+  setTaskSession(taskSession, taskEventLog = null) {
+    if (taskSession === this.taskSession && taskEventLog === this.taskEventLog) {
+      return;
+    }
+    this.unsubscribeTaskSession?.();
+    this.unsubscribeTaskSession = null;
+    this.taskSession = taskSession ?? null;
+    this.taskEventLog = taskEventLog ?? null;
+    this.taskSnapshot = null;
+    this.lastViewedTaskKey = null;
+
+    if (!this.taskSession) {
+      this.selectedTab = PANEL_TAB_MAP;
+      this.rebuild();
+      return;
+    }
+
+    this.unsubscribeTaskSession = this.taskSession.subscribe((snapshot) => {
+      this.taskSnapshot = snapshot;
+      if (snapshot.disposed) {
+        this.selectedTab = PANEL_TAB_MAP;
+      }
+      if (this.selectedTab === PANEL_TAB_INSTRUCTIONS && !snapshot.disposed) {
+        this.recordTaskViewed(snapshot);
+      }
+      this.rebuild();
+    });
+  }
+
   updateAnchor() {
     this.fallbackAnchor.parent = this.resolveFallbackParent();
     this.fallbackAnchor.position.copyFrom(FALLBACK_VIEW_OFFSET);
@@ -119,11 +159,213 @@ export class VrControlPanel {
       this.stack.addControl(subtitle);
     }
 
+    const hasInstructions = Boolean(this.taskSession && this.taskSnapshot && !this.taskSnapshot.disposed);
+    if (!hasInstructions) {
+      this.selectedTab = PANEL_TAB_MAP;
+    }
+    this.stack.addControl(this.buildTabs(hasInstructions));
+
+    if (this.selectedTab === PANEL_TAB_INSTRUCTIONS && hasInstructions) {
+      this.stack.addControl(this.buildInstructionsView());
+      return;
+    }
+
     this.stack.addControl(this.buildMasterControls());
 
     for (const layer of this.config.layers ?? []) {
       this.stack.addControl(this.buildLayerCard(layer));
     }
+  }
+
+  buildTabs(hasInstructions) {
+    const row = new BABYLON.GUI.Grid("xr-panel-tabs");
+    row.height = "72px";
+    row.addColumnDefinition(hasInstructions ? 0.5 : 1);
+    if (hasInstructions) {
+      row.addColumnDefinition(0.5);
+    }
+    row.paddingBottom = "10px";
+    row.addControl(this.buildTabButton("Map Controls", PANEL_TAB_MAP), 0, 0);
+    if (hasInstructions) {
+      row.addControl(this.buildTabButton("Instructions", PANEL_TAB_INSTRUCTIONS), 0, 1);
+    }
+    return row;
+  }
+
+  buildTabButton(label, tabId) {
+    const active = this.selectedTab === tabId;
+    const button = BABYLON.GUI.Button.CreateSimpleButton(`xr-panel-tab-${tabId}`, label);
+    button.height = "58px";
+    button.width = "96%";
+    button.cornerRadius = 14;
+    button.thickness = active ? 3 : 1;
+    button.fontSize = "27px";
+    button.fontWeight = "700";
+    button.color = "#F8FBFF";
+    button.background = active ? "#1E7BFF" : "#243650";
+    button.onPointerUpObservable.add(() => {
+      if (this.selectedTab !== tabId) {
+        this.selectedTab = tabId;
+        if (tabId === PANEL_TAB_INSTRUCTIONS) {
+          this.taskEventLog?.record(TASK_EVENT_TYPES.INSTRUCTIONS_TAB_OPENED, this.currentTaskEventDetails());
+          this.lastViewedTaskKey = null;
+          this.recordTaskViewed(this.taskSnapshot);
+        } else {
+          this.lastViewedTaskKey = null;
+        }
+        this.rebuild();
+      }
+    });
+    return button;
+  }
+
+  buildInstructionsView() {
+    const snapshot = this.taskSnapshot;
+    const task = snapshot.currentTask;
+    const completed = snapshot.completedTaskIds.includes(task.id);
+    const isFinalTask = snapshot.currentTaskIndex === snapshot.taskCount - 1;
+
+    const viewer = new BABYLON.GUI.ScrollViewer("xr-instructions-scroll");
+    viewer.height = `${INSTRUCTION_CONTENT_HEIGHT_PX}px`;
+    viewer.width = 0.98;
+    viewer.thickness = 1;
+    viewer.color = "#35527A";
+    viewer.background = "#0D1A2FD9";
+    viewer.cornerRadius = 20;
+    viewer.barColor = "#74A8F5";
+    viewer.barBackground = "#1A2D49";
+    viewer.barSize = 24;
+    viewer.thumbLength = 0.2;
+    viewer.wheelPrecision = 0.12;
+    viewer.forceVerticalBar = true;
+
+    const content = new BABYLON.GUI.StackPanel("xr-instructions-content");
+    content.width = 0.9;
+    content.isVertical = true;
+    content.paddingTop = "28px";
+    content.paddingBottom = "28px";
+    viewer.addControl(content);
+
+    const setTitle = this.buildTitle(snapshot.taskSetTitle, 27, "#9EBCEB");
+    setTitle.height = "46px";
+    content.addControl(setTitle);
+
+    const progress = this.buildTitle(`Task ${snapshot.currentTaskIndex + 1} of ${snapshot.taskCount}`, 30, "#C5D8F5");
+    progress.height = "48px";
+    content.addControl(progress);
+
+    const taskTitle = this.buildTitle(task.title, 40, "#F4F8FF");
+    taskTitle.height = `${estimateWrappedTextHeight(task.title, 30, 52, 84)}px`;
+    taskTitle.textWrapping = true;
+    content.addControl(taskTitle);
+
+    const instructions = new BABYLON.GUI.TextBlock("xr-instruction-steps");
+    instructions.text = task.instructions;
+    instructions.color = "#E8F0FF";
+    instructions.fontSize = "32px";
+    instructions.fontWeight = "500";
+    instructions.textWrapping = true;
+    instructions.textHorizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+    instructions.textVerticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+    instructions.paddingLeft = "12px";
+    instructions.paddingRight = "12px";
+    instructions.paddingTop = "20px";
+    instructions.paddingBottom = "24px";
+    instructions.height = `${estimateWrappedTextHeight(task.instructions, 43, 45, 190)}px`;
+    content.addControl(instructions);
+
+    const status = this.buildTitle(completed ? "Status: Complete" : "Status: Not complete", 30, completed ? "#7CE6A0" : "#FFD37A");
+    status.height = "58px";
+    content.addControl(status);
+
+    const actions = new BABYLON.GUI.Grid("xr-instruction-actions");
+    actions.height = "82px";
+    actions.addColumnDefinition(0.42);
+    actions.addColumnDefinition(0.58);
+    actions.addControl(this.buildInstructionButton(
+      "Previous",
+      () => {
+        this.taskEventLog?.record(TASK_EVENT_TYPES.PREVIOUS_SELECTED, this.currentTaskEventDetails());
+        this.taskSession?.previous();
+      },
+      !snapshot.canGoPrevious,
+      "#243650",
+    ), 0, 0);
+
+    const finalCompleted = isFinalTask && completed;
+    actions.addControl(this.buildInstructionButton(
+      finalCompleted ? "Task Completed" : "Mark Complete",
+      () => this.completeCurrentTask(),
+      finalCompleted,
+      finalCompleted ? "#24543A" : "#1E7BFF",
+    ), 0, 1);
+    content.addControl(actions);
+
+    if (finalCompleted) {
+      const completeMessage = this.buildTitle("Instruction set complete", 32, "#7CE6A0");
+      completeMessage.height = "64px";
+      content.addControl(completeMessage);
+    }
+
+    return viewer;
+  }
+
+  completeCurrentTask() {
+    const snapshot = this.taskSnapshot;
+    const task = snapshot?.currentTask;
+    if (!task || !this.taskSession) {
+      return;
+    }
+    const alreadyCompleted = snapshot.completedTaskIds.includes(task.id);
+    const completesTaskSet = !alreadyCompleted && snapshot.completedTaskIds.length + 1 === snapshot.taskCount;
+    if (!alreadyCompleted) {
+      this.taskEventLog?.record(TASK_EVENT_TYPES.TASK_COMPLETED, this.currentTaskEventDetails());
+    }
+    this.taskSession.completeCurrentAndAdvance();
+    if (completesTaskSet) {
+      this.taskEventLog?.record(TASK_EVENT_TYPES.TASK_SET_COMPLETED, {
+        ...this.currentTaskEventDetails(),
+        taskId: task.id,
+      });
+    }
+  }
+
+  recordTaskViewed(snapshot) {
+    const taskSetId = snapshot?.taskSetId;
+    const taskId = snapshot?.currentTask?.id;
+    if (!taskSetId || !taskId) {
+      return;
+    }
+    const viewKey = `${taskSetId}:${taskId}`;
+    if (viewKey === this.lastViewedTaskKey) {
+      return;
+    }
+    this.lastViewedTaskKey = viewKey;
+    this.taskEventLog?.record(TASK_EVENT_TYPES.TASK_VIEWED, { taskSetId, taskId });
+  }
+
+  currentTaskEventDetails() {
+    return {
+      taskSetId: this.taskSnapshot?.taskSetId ?? this.taskSession?.taskSet?.id ?? null,
+      taskId: this.taskSnapshot?.currentTask?.id ?? this.taskSession?.currentTask?.id ?? null,
+    };
+  }
+
+  buildInstructionButton(label, onPress, disabled, background) {
+    const button = BABYLON.GUI.Button.CreateSimpleButton(`xr-instruction-${label}`, label);
+    button.height = "62px";
+    button.width = "94%";
+    button.cornerRadius = 14;
+    button.thickness = 2;
+    button.fontSize = "27px";
+    button.fontWeight = "700";
+    button.color = disabled ? "#A9B6CA" : "#FFFFFF";
+    button.background = disabled ? "#263449" : background;
+    button.isEnabled = !disabled;
+    if (!disabled) {
+      button.onPointerUpObservable.add(onPress);
+    }
+    return button;
   }
 
   buildTitle(text, size, color) {
@@ -315,31 +557,44 @@ export class VrControlPanel {
       toggleObserver: null,
       togglePressed: false,
     };
-    entry.motionControllerObserver = controller.onMotionControllerInitObservable?.add((motionController) => {
-      const component = findPanelToggleComponent(motionController);
-      if (!component?.onButtonStateChangedObservable) {
-        return;
-      }
-      entry.toggleComponent = component;
-      entry.togglePressed = Boolean(component.pressed);
-      entry.toggleObserver = component.onButtonStateChangedObservable.add(() => {
-        const pressed = Boolean(component.pressed);
-        if (pressed === entry.togglePressed) {
-          return;
-        }
-        entry.togglePressed = pressed;
-        if (pressed) {
-          this.togglePanelVisibility();
-        }
-      });
-    }) ?? null;
     this.controllerEntries.set(controller.uniqueId, entry);
 
     if (controller.inputSource?.handedness === "left") {
       this.leftController = controller;
+      entry.motionControllerObserver = controller.onMotionControllerInitObservable?.add((motionController) => {
+        this.attachPanelToggleComponent(entry, motionController);
+      }) ?? null;
+      // Controllers may finish initialization before the panel is constructed.
+      // In that case the observable will not replay the existing controller.
+      this.attachPanelToggleComponent(entry, controller.motionController);
       this.updateAnchor();
       this.updateVisibility();
     }
+  }
+
+  attachPanelToggleComponent(entry, motionController) {
+    if (!motionController) {
+      return;
+    }
+    const component = findPanelToggleComponent(motionController);
+    if (!component?.onButtonStateChangedObservable || component === entry.toggleComponent) {
+      return;
+    }
+    if (entry.toggleComponent && entry.toggleObserver) {
+      entry.toggleComponent.onButtonStateChangedObservable?.remove(entry.toggleObserver);
+    }
+    entry.toggleComponent = component;
+    entry.togglePressed = Boolean(component.pressed);
+    entry.toggleObserver = component.onButtonStateChangedObservable.add(() => {
+      const pressed = Boolean(component.pressed);
+      if (pressed === entry.togglePressed) {
+        return;
+      }
+      entry.togglePressed = pressed;
+      if (pressed) {
+        this.togglePanelVisibility();
+      }
+    });
   }
 
   handleControllerRemoved(controller) {
@@ -407,6 +662,12 @@ export class VrControlPanel {
   }
 
   dispose() {
+    this.unsubscribeTaskSession?.();
+    this.unsubscribeTaskSession = null;
+    this.taskSession = null;
+    this.taskSnapshot = null;
+    this.taskEventLog = null;
+    this.lastViewedTaskKey = null;
     for (const entry of this.controllerEntries.values()) {
       if (entry.toggleComponent && entry.toggleObserver) {
         entry.toggleComponent.onButtonStateChangedObservable?.remove(entry.toggleObserver);
@@ -434,6 +695,13 @@ export class VrControlPanel {
     this.root?.dispose();
     this.fallbackAnchor?.dispose();
   }
+}
+
+function estimateWrappedTextHeight(text, charactersPerLine, lineHeight, minimumHeight) {
+  const lineCount = `${text ?? ""}`.split(/\r?\n/).reduce((count, paragraph) => (
+    count + Math.max(1, Math.ceil(paragraph.length / charactersPerLine))
+  ), 0);
+  return Math.max(minimumHeight, lineCount * lineHeight + 24);
 }
 
 function findPanelToggleComponent(motionController) {

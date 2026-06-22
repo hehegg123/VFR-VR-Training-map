@@ -78,6 +78,10 @@ py -3 .\prototype\babylon-vr-faa-map\tools\build_section_assets.py
 
 ## VR controls
 
+![VR controller controls showing teleport, view rotation, panel toggle, map selection, and map grabbing](prototype/babylon-vr-faa-map/docs/images/vr-controller-controls.png)
+
+The diagram shows the current left- and right-controller mappings used by the VR application.
+
 Current VR controls:
 
 - `Enter VR`: starts immersive VR when WebXR is available.
@@ -102,6 +106,18 @@ Current behavior notes:
 - If a controller does not expose a squeeze component, the manipulator falls back to trigger-style grab input where available.
 - The initial VR pose is set so the user starts in front of the map and can look down over it.
 - For HMD/WebXR use, the headset browser must trust the generated dev certificate if it does not already.
+
+## Instruction sets for researchers
+
+Instruction sets are editable JSON files under `prototype/training/task-sets/<section-id>/`. To add one:
+
+1. Create `<task-set-id>.json` using schema `faa-vr-task-set-v1`. Define the matching `id`, `sectionId`, title, and one or more manual-completion tasks.
+2. Give each task an ID, title, instructions, optional recommended layer IDs, and optional targets containing a staged `layerId` and `selectionId`.
+3. Run `py -3 .\prototype\babylon-vr-faa-map\tools\stage_task_sets.py <section-id>` to validate and stage task files without rebuilding map rasters. A full `build_section_assets.py` run performs the same task-set validation and staging as part of a section rebuild.
+4. Launch the prototype and open the 2D companion. Choose the map section, choose the task set from `Instruction Set`, and start a linked session using the same Session ID as the VR app. The VR wrist panel then exposes its `Instructions` tab for reviewing and manually completing tasks.
+5. Before a new participant, select `Reset Task Session` in the 2D companion. This disposes the old VR task session and starts the selected task set from its first task with no completed tasks.
+
+Task progress and the research event log are held in memory only. Reloading the page starts a new session; no participant progress is written to browser storage. Logged events include task-set loading, instruction-tab opening, task views, previous navigation, task completion, task-set completion, and session clearing, with section and linked-session context when available. During a running page session, researchers can inspect or export a snapshot from the browser console with `faaInstructionResearch.getEvents()`.
 
 ## Notes
 

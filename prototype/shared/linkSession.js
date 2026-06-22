@@ -44,14 +44,16 @@ export class BroadcastLinkSession {
     this.channel = null;
     this.onSelection = null;
     this.onToggle = null;
+    this.onInstruction = null;
     this.onStatusChange = null;
   }
 
-  connect(sessionId, { onSelection, onToggle, onStatusChange } = {}) {
+  connect(sessionId, { onSelection, onToggle, onInstruction, onStatusChange } = {}) {
     this.disconnect();
     this.sessionId = sessionId;
     this.onSelection = onSelection ?? null;
     this.onToggle = onToggle ?? null;
+    this.onInstruction = onInstruction ?? null;
     this.onStatusChange = onStatusChange ?? null;
     this.channel = new BroadcastChannel(`${this.channelNamespace}:${sessionId}`);
     this.channel.onmessage = (event) => {
@@ -68,6 +70,10 @@ export class BroadcastLinkSession {
       }
       if (payload.type === "toggle-sync") {
         this.onToggle?.(toggleFromSyncPayload(payload));
+        return;
+      }
+      if (payload.type === "instruction-sync") {
+        this.onInstruction?.(instructionFromSyncPayload(payload));
       }
     };
     try {
@@ -113,6 +119,18 @@ export class BroadcastLinkSession {
     );
   }
 
+  publishInstruction(instruction) {
+    if (!this.channel || !this.sessionId) {
+      return;
+    }
+    this.channel.postMessage(
+      createInstructionSyncPayload(instruction, {
+        sessionId: this.sessionId,
+        sourceClientId: this.clientId,
+      }),
+    );
+  }
+
   notifyStatus() {
     this.onStatusChange?.({
       connected: this.isConnected(),
@@ -143,5 +161,27 @@ function toggleFromSyncPayload(payload) {
     layerId: payload.layerId ?? null,
     target: payload.target ?? null,
     checked: Boolean(payload.checked),
+  };
+}
+
+function createInstructionSyncPayload(instruction, { sessionId, sourceClientId }) {
+  return {
+    type: "instruction-sync",
+    sessionId,
+    sourceClientId,
+    action: instruction.action ?? null,
+    sectionId: instruction.sectionId ?? null,
+    taskSetId: instruction.taskSetId ?? null,
+  };
+}
+
+function instructionFromSyncPayload(payload) {
+  if (!payload) {
+    return null;
+  }
+  return {
+    action: payload.action ?? null,
+    sectionId: payload.sectionId ?? null,
+    taskSetId: payload.taskSetId ?? null,
   };
 }

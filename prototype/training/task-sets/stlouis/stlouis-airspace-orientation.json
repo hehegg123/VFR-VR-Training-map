@@ -1,0 +1,24 @@
+{
+  "schema": "faa-vr-task-set-v1",
+  "id": "stlouis-airspace-orientation",
+  "sectionId": "stlouis",
+  "title": "St. Louis Airspace Orientation",
+  "tasks": [
+    {
+      "id": "locate-stl-class-b",
+      "title": "Locate the St. Louis Class B airspace",
+      "instructions": "Enable the airspace layer, locate the primary St. Louis Class B area, and select its main label.",
+      "completionMode": "manual",
+      "recommendedLayers": [
+        "base",
+        "airspace"
+      ],
+      "targets": [
+        {
+          "layerId": "airspace",
+          "selectionId": "STL-CLASS_B"
+        }
+      ]
+    }
+  ]
+}

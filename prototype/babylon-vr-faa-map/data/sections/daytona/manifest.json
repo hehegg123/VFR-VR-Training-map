@@ -793,5 +793,14 @@
       "strokePresentation": "tube",
       "strokeSegmentMerge": false
     }
-  ]
+  ],
+  "training": {
+    "taskSets": [
+      {
+        "id": "daytona-orientation",
+        "title": "Daytona Beach Area Orientation",
+        "data": "tasks/daytona-orientation.json"
+      }
+    ]
+  }
 }

@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:task-sets": "node tests/TaskSetRepository.test.mjs && node tests/TaskSession.test.mjs && node tests/TaskEventLog.test.mjs && node tests/AppShellTaskLifecycle.test.mjs && node tests/TwoDimensionalInstructionControl.test.mjs && node tests/LinkSessionInstructionSync.test.mjs && node tests/VrControlPanel.test.mjs"
+  }
+}
