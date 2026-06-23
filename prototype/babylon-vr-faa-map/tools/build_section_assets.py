@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import math
 import os
+import shutil
 import sys
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -119,6 +120,63 @@ def save_image_atomic(image: Image.Image, path: Path, **save_options: Any) -> No
                 temp_path.unlink()
         except OSError:
             pass
+
+
+def base_raster_dir_from_pyramid(section_root: Path, base_pyramid: dict[str, Any]) -> Path:
+    for level in base_pyramid.get("levels", []):
+        for tile in level.get("tiles", []):
+            tile_url = tile.get("url")
+            if isinstance(tile_url, str) and tile_url.startswith("rasters/"):
+                tile_path = (section_root / tile_url).resolve()
+                return tile_path.parents[1]
+    raise RuntimeError("Base tile pyramid did not include any raster tile URLs.")
+
+
+def is_complete_base_raster_generation(path: Path) -> bool:
+    return (
+        path.is_dir()
+        and path.name.startswith("base-")
+        and any(path.rglob("*.webp"))
+        and not any(path.rglob("*.tmp"))
+    )
+
+
+def cleanup_old_base_raster_generations(
+    section_root: Path,
+    active_base_root: Path,
+    *,
+    keep_previous_complete: int = 1,
+) -> list[Path]:
+    rasters_root = (section_root / "rasters").resolve()
+    resolved_section_root = section_root.resolve()
+    resolved_active_root = active_base_root.resolve()
+    if not is_relative_to_path(rasters_root, resolved_section_root):
+        raise RuntimeError(f"Refusing to clean raster tiles outside section root: {rasters_root}")
+    if not is_relative_to_path(resolved_active_root, rasters_root):
+        raise RuntimeError(f"Refusing to preserve active raster root outside rasters root: {resolved_active_root}")
+
+    candidates = [
+        path
+        for path in rasters_root.iterdir()
+        if path.is_dir() and (path.name == "base" or path.name.startswith("base-"))
+    ]
+    previous_complete = [
+        path.resolve()
+        for path in sorted(candidates, key=lambda item: item.name, reverse=True)
+        if path.resolve() != resolved_active_root and is_complete_base_raster_generation(path)
+    ][:keep_previous_complete]
+    keep_roots = {resolved_active_root, *previous_complete}
+
+    removed: list[Path] = []
+    for path in candidates:
+        resolved_path = path.resolve()
+        if resolved_path in keep_roots:
+            continue
+        if not is_relative_to_path(resolved_path, rasters_root):
+            raise RuntimeError(f"Refusing to delete raster path outside rasters root: {resolved_path}")
+        shutil.rmtree(resolved_path)
+        removed.append(path)
+    return removed
 
 
 def write_json(path: Path, payload: object) -> None:
@@ -1244,6 +1302,13 @@ def build_bound_section(
 
     write_json(section_root / "manifest.json", manifest)
     assert_valid_staged_section(section_root)
+    removed_raster_roots = cleanup_old_base_raster_generations(
+        section_root,
+        base_raster_dir_from_pyramid(section_root, base_pyramid),
+    )
+    if removed_raster_roots:
+        removed_names = ", ".join(path.name for path in removed_raster_roots)
+        print(f"Removed stale {section_id} base raster generation(s): {removed_names}")
     return {
         "id": manifest["id"],
         "title": manifest["title"],

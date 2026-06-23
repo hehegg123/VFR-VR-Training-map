@@ -14,6 +14,12 @@ __pycache__/
 
 # Local tooling state
 .playwright-cli/
+/prototype/babylon-vr-faa-map/.logs/
+/prototype/tmp-edge-profile*/
+
+# Failed/partial raster tile writes
+/prototype/babylon-vr-faa-map/data/sections/**/rasters/**/.tile_*.tmp
+/prototype/babylon-vr-faa-map/data/sections/**/rasters/**/*.tmp
 
 # Legacy flat-layout workspace copies kept only as local backups
 /28DaySubscription_Effective_2026-04-16/
