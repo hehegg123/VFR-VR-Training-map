@@ -1,7 +1,7 @@
 import { loadSectionIndex, loadSectionManifest } from "../data/sectionRepository.js";
 import { EventSetRepository } from "../data/EventSetRepository.js";
 import { TaskSetRepository } from "../data/TaskSetRepository.js?v=20260621-task-sessions-v2";
-import { createMapScene } from "../scene/MapScene.js?v=20260815-wrist-events-v1";
+import { createMapScene } from "../scene/MapScene.js?v=20260816-forearm-panel-v2";
 import { TaskEventLog, TASK_EVENT_TYPES } from "../training/TaskEventLog.js?v=20260621-instruction-workflow-v1";
 import { EventSession } from "../training/EventSession.js?v=20260814-conflict-controls-v1";
 import {
