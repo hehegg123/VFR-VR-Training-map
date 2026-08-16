@@ -1,9 +1,9 @@
 import { TASK_EVENT_TYPES } from "../../training/TaskEventLog.js?v=20260621-instruction-workflow-v1";
 
 const XR_STATES = BABYLON.WebXRState ?? {};
-const PANEL_TOGGLE_DEBOUNCE_MS = 300;
 const FALLBACK_VIEW_OFFSET = new BABYLON.Vector3(-0.34, -0.02, 0.72);
 const CONTROLLER_FOREARM_OFFSET = new BABYLON.Vector3(0.02, 0.21, 0.16);
+const XR_STANDARD_THUMBSTICK_BUTTON_INDEX = 3;
 const ACTION_ROW_HEIGHT_PX = 52;
 const CHECKBOX_WIDTH_PX = 148;
 const CHECKBOX_HEIGHT_PX = 44;
@@ -25,7 +25,6 @@ export class VrControlPanel {
     this.currentAnchor = null;
     this.leftController = null;
     this.panelVisible = true;
-    this.lastToggleTime = 0;
     this.selectedTab = PANEL_TAB_MAP;
     this.taskSession = null;
     this.taskSnapshot = null;
@@ -137,7 +136,11 @@ export class VrControlPanel {
       return;
     }
     this.currentAnchor = anchor;
-    this.root.parent = anchor;
+    // In XR the panel follows the controller's position, but it must not inherit
+    // the controller's wrist rotation. The plane already billboards toward the
+    // viewer, so keeping the root in world space produces a forearm mount rather
+    // than an object rigidly attached to the controller grip.
+    this.root.parent = anchor === this.fallbackAnchor ? anchor : null;
     this.applyMountedOffset(anchor);
   }
 
@@ -591,7 +594,7 @@ export class VrControlPanel {
         return;
       }
       entry.togglePressed = pressed;
-      if (pressed) {
+      if (pressed && this.syncActiveLeftController() === entry.controller) {
         this.togglePanelVisibility();
       }
     });
@@ -614,11 +617,6 @@ export class VrControlPanel {
   }
 
   togglePanelVisibility() {
-    const now = Date.now();
-    if (now - this.lastToggleTime < PANEL_TOGGLE_DEBOUNCE_MS) {
-      return;
-    }
-    this.lastToggleTime = now;
     this.panelVisible = !this.panelVisible;
     this.updateVisibility();
   }
@@ -636,8 +634,26 @@ export class VrControlPanel {
   }
 
   applyMountedOffset(anchor) {
-    this.root.position.copyFrom(anchor === this.fallbackAnchor ? BABYLON.Vector3.Zero() : CONTROLLER_FOREARM_OFFSET);
+    if (anchor === this.fallbackAnchor) {
+      this.root.position.copyFrom(BABYLON.Vector3.Zero());
+    } else {
+      const handPosition = anchor?.getAbsolutePosition?.() ?? anchor?.absolutePosition ?? anchor?.position;
+      const viewDirection = this.resolveViewDirection();
+      if (handPosition) {
+        const horizontalLength = Math.hypot(viewDirection.x, viewDirection.z) || 1;
+        const forwardX = viewDirection.x / horizontalLength;
+        const forwardZ = viewDirection.z / horizontalLength;
+        this.root.position.x = handPosition.x + forwardZ * CONTROLLER_FOREARM_OFFSET.x + forwardX * CONTROLLER_FOREARM_OFFSET.z;
+        this.root.position.y = handPosition.y + CONTROLLER_FOREARM_OFFSET.y;
+        this.root.position.z = handPosition.z - forwardX * CONTROLLER_FOREARM_OFFSET.x + forwardZ * CONTROLLER_FOREARM_OFFSET.z;
+      }
+    }
     this.panelMesh.position.copyFrom(BABYLON.Vector3.Zero());
+  }
+
+  resolveViewDirection() {
+    const camera = this.resolveFallbackParent();
+    return camera?.getForwardRay?.().direction ?? { x: 0, y: 0, z: 1 };
   }
 
   syncRuntimePlacement() {
@@ -645,7 +661,25 @@ export class VrControlPanel {
       return;
     }
     this.syncActiveLeftController();
+    this.pollLeftStickClick();
     this.updateAnchor();
+  }
+
+  pollLeftStickClick() {
+    const controller = this.leftController;
+    const entry = controller?.uniqueId ? this.controllerEntries.get(controller.uniqueId) : null;
+    const button = controller?.inputSource?.gamepad?.buttons?.[XR_STANDARD_THUMBSTICK_BUTTON_INDEX];
+    if (!entry || !button) {
+      return;
+    }
+    const pressed = Boolean(button.pressed);
+    if (pressed === entry.togglePressed) {
+      return;
+    }
+    entry.togglePressed = pressed;
+    if (pressed) {
+      this.togglePanelVisibility();
+    }
   }
 
   isInXr() {

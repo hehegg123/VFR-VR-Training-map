@@ -1,4 +1,4 @@
-import { AppShell } from "./app/AppShell.js?v=20260621-instruction-workflow-v1";
+import { AppShell } from "./app/AppShell.js?v=20260816-forearm-panel-v2";
 
 const shell = new AppShell({
   canvas: document.getElementById("renderCanvas"),

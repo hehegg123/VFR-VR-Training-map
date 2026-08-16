@@ -1,5 +1,5 @@
 import { LayerManager } from "./layers/LayerManager.js?v=20260616-label-diagnostics-v5";
-import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260621-instruction-workflow-v1";
+import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260816-forearm-panel-v2";
 import { XrInputSourceVisualManager } from "./xr/XrInputSourceVisualManager.js?v=20260617-xr-input-visuals-v1";
 import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260617-xr-input-visuals-v1";
 

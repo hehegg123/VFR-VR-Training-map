@@ -155,6 +155,43 @@ test("right stick click does not toggle the left-arm panel", () => {
   panel.dispose();
 });
 
+test("left WebXR gamepad stick click toggles when no motion-controller component is available", () => {
+  const controller = createController("left-gamepad", "left", null);
+  controller.inputSource.gamepad = { buttons: [{}, {}, {}, { pressed: false }] };
+  const { panel, scene } = createPanelHarness([controller]);
+  panel.setConfig(panelConfig());
+
+  controller.inputSource.gamepad.buttons[3].pressed = true;
+  scene.onBeforeRenderObservable.notify();
+  assert.equal(panel.panelVisible, false);
+  scene.onBeforeRenderObservable.notify();
+  assert.equal(panel.panelVisible, false);
+  controller.inputSource.gamepad.buttons[3].pressed = false;
+  scene.onBeforeRenderObservable.notify();
+  controller.inputSource.gamepad.buttons[3].pressed = true;
+  scene.onBeforeRenderObservable.notify();
+  assert.equal(panel.panelVisible, true);
+  panel.dispose();
+});
+
+test("XR panel uses a world-space forearm position instead of inheriting wrist rotation", () => {
+  const controller = createController("left-mounted", "left", null);
+  controller.grip = {
+    position: new Vector3(1, 2, 3),
+    getAbsolutePosition: () => new Vector3(1, 2, 3),
+  };
+  const { panel, xrHelper } = createPanelHarness([controller]);
+  xrHelper.baseExperience.state = BABYLON.WebXRState.IN_XR;
+  xrHelper.baseExperience.camera = {
+    getForwardRay: () => ({ direction: new Vector3(0, 0, 1) }),
+  };
+  panel.setConfig(panelConfig());
+
+  assert.equal(panel.root.parent, null);
+  assert.deepEqual(panel.root.position, new Vector3(1.02, 2.21, 3.16));
+  panel.dispose();
+});
+
 test("desktop harness preserves instruction tab and task progress across panel rebuilds", () => {
   const beforeRender = new Observable();
   const scene = { onBeforeRenderObservable: beforeRender };

@@ -1,6 +1,6 @@
 import { loadSectionIndex, loadSectionManifest } from "../data/sectionRepository.js";
 import { TaskSetRepository } from "../data/TaskSetRepository.js?v=20260621-task-sessions-v2";
-import { createMapScene } from "../scene/MapScene.js?v=20260621-instruction-workflow-v1";
+import { createMapScene } from "../scene/MapScene.js?v=20260816-forearm-panel-v2";
 import { TaskEventLog, TASK_EVENT_TYPES } from "../training/TaskEventLog.js?v=20260621-instruction-workflow-v1";
 import { TaskSession } from "../training/TaskSession.js?v=20260621-task-sessions-v1";
 import {
