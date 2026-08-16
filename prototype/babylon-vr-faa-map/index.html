@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FAA VR Map Scaffold</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a5fb4'/%3E%3Cpath d='M14 20h36v5H14zm6 9h24v5H20zm-6 9h36v5H14z' fill='white'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles/app.css?v=20260621-task-sessions-v1">
+  <link rel="stylesheet" href="./styles/app.css?v=20260814-conflict-controls-v1">
 </head>
 <body>
   <div class="app-shell">
@@ -30,6 +30,14 @@
           <button id="resetTaskSessionButton" type="button" class="button-secondary selector-action" hidden disabled>
             Reset Task Session
           </button>
+        </div>
+        <div id="eventGroup" class="selector-field" hidden>
+          <label for="eventSelect">Event Set</label>
+          <select id="eventSelect" disabled>
+            <option value="">No events</option>
+          </select>
+          <div id="eventControls" class="event-list"></div>
+          <p id="eventStatus" class="hud-note"></p>
         </div>
         <p id="sectionNote" class="hud-note" hidden></p>
       </div>
@@ -76,7 +84,8 @@
 
   <script src="https://cdn.babylonjs.com/babylon.js"></script>
   <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+  <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
   <script src="https://cdn.babylonjs.com/earcut.min.js"></script>
-  <script type="module" src="./src/main.js?v=20260621-instruction-workflow-v1"></script>
+  <script type="module" src="./src/main.js?v=20260815-wrist-events-v1"></script>
 </body>
 </html>

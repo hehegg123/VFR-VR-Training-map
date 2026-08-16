@@ -119,6 +119,96 @@ Instruction sets are editable JSON files under `prototype/training/task-sets/<se
 
 Task progress and the research event log are held in memory only. Reloading the page starts a new session; no participant progress is written to browser storage. Logged events include task-set loading, instruction-tab opening, task views, previous navigation, task completion, task-set completion, and session clearing, with section and linked-session context when available. During a running page session, researchers can inspect or export a snapshot from the browser console with `faaInstructionResearch.getEvents()`.
 
+## Event sets for researchers
+
+Event sets are editable JSON files under `prototype/training/event-sets/<section-id>/`. Event objects use schema `faa-vr-event-set-v1`, are registered through `manifest.training.eventSets`, and are selected from the desktop companion. Static aircraft and weather events remain supported. An event set may also include a deterministic training `scenario` with timed aircraft routes, configured separation minimums, and predefined trainee actions.
+
+The first event types are `aircraft` and `weather`. Aircraft events can define normalized `position`, optional `orientation.headingDeg`, and optional `altitude.valueFt` with `reference` set to `MSL` or `AGL`. Weather events can define a normalized circle or polygon geometry plus optional `altitude.baseFt`, `altitude.topFt`, and `reference`. Events without altitude still render with fallback training heights.
+
+VR event altitude uses the same visual conversion as the airspace altitude overlay: `0.00008` world units per foot unless a section manifest overrides `airspace.altitudeVolume.worldUnitsPerFoot`. The 2D companion stays flat but includes altitude text on event labels.
+
+Animated scenarios must define `scenario.coordinateScale.widthNm` and `heightNm`. Horizontal separation converts normalized coordinate differences with `eastNm = deltaX * widthNm` and `southNm = deltaY * heightNm`, then calculates `sqrt(eastNm^2 + southNm^2)`. The Daytona conflict example uses a compressed `120 NM` by `96 NM` training scale. This scale makes scenario timing and separation deterministic; it is not a geodesic measurement of the displayed sectional chart. Conflict prediction samples the predefined trajectories every `0.5` scenario seconds through `alertLookaheadSec`.
+
+### Conflict scenario format
+
+The checked-in example is `prototype/training/event-sets/daytona/daytona-conflict-scenario.json`. Its essential structure is:
+
+```json
+{
+  "schema": "faa-vr-event-set-v1",
+  "id": "daytona-conflict-scenario",
+  "sectionId": "daytona",
+  "title": "Daytona Conflict Scenario",
+  "scenario": {
+    "durationSec": 90,
+    "alertLookaheadSec": 30,
+    "coordinateScale": { "widthNm": 120, "heightNm": 96 },
+    "separation": { "horizontalNm": 5, "verticalFt": 1000 },
+    "actions": [
+      {
+        "id": "flight-a-turn-right-130",
+        "type": "turnHeading",
+        "aircraftId": "flight-a-eastbound",
+        "headingDeg": 130
+      },
+      {
+        "id": "flight-a-resume-route",
+        "type": "resumeRoute",
+        "aircraftId": "flight-a-eastbound"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "flight-a-eastbound",
+      "type": "aircraft",
+      "defaultEnabled": true,
+      "route": {
+        "points": [
+          { "timeSec": 0, "position": { "x": 0.35, "y": 0.52 }, "altitude": { "valueFt": 35000, "reference": "MSL" } },
+          { "timeSec": 45, "position": { "x": 0.535, "y": 0.52 }, "altitude": { "valueFt": 35000, "reference": "MSL" } }
+        ]
+      }
+    }
+  ]
+}
+```
+
+Each animated aircraft needs at least two route points ordered by `timeSec`. Positions are normalized map coordinates, altitudes are feet, and headings are degrees clockwise from north. Scenario IDs, event IDs, action targets, route times, coordinates, altitude fields, and separation settings are validated by both the Python staging contract and `EventSetRepository` at runtime.
+
+After editing an event set, validate and stage it with:
+
+```powershell
+py -3 .\prototype\babylon-vr-faa-map\tools\stage_task_sets.py daytona
+```
+
+Despite its legacy filename, this command stages and validates both task sets and event sets. A full `build_section_assets.py` rebuild performs the same event-set staging.
+
+### Running the Daytona scenario
+
+1. Start the repository root `launch-demo.cmd` and open both the Daytona VR URL and Daytona 2D companion URL.
+2. In both views, use the same Session ID and select `Start Link`. The current synchronization transport works between same-origin tabs on the same machine/browser profile.
+3. In the desktop companion, choose `Daytona Conflict Scenario` under `Event Set`. The VR app owns the authoritative timeline and sends aircraft/status snapshots to the desktop view.
+4. Select `Start`. The warning appears before the configured violation. During the warning, select `Flight A: Turn Right Heading 130.` from either view.
+5. Wait for `Resolved`; `Resume Route` remains disabled until horizontal separation is restored and the aircraft are safely diverging. Select it to guide Flight A toward its remaining predefined route.
+6. Select `Reset` from either view to restore time, routes, aircraft positions, headings, actions, and conflict state to the exact initial snapshot.
+
+Static event sets remain independent of the scenario transport. Selecting `Daytona Basic Events` exposes the existing aircraft and weather checkboxes without starting a timeline.
+
+### Prototype scope and extensions
+
+This is an educational visualization prototype, not an operational ATC simulator. The current scenario deliberately uses straight-line interpolation, an instantaneous heading assignment, a simplified route-rejoin path, a compressed normalized-coordinate scale, and configurable training separation values. It does not model aircraft performance, wind, pilot response, surveillance uncertainty, regulatory separation rules, or operational conflict-probe behavior.
+
+Current limitations:
+
+- Conflict evaluation is scoped to the first two scenario aircraft.
+- Linked scenario synchronization uses browser `BroadcastChannel`; it does not synchronize a desktop and a standalone headset on different devices.
+- Scenario progress is in memory and resets on reload.
+- Commands are predefined; there is no arbitrary heading entry, voice recognition, or automatic trainee scoring.
+- Physical controller ergonomics and frame rate still require verification on each target HMD.
+
+Future work should extend the existing seams rather than replace the MVP: add validated action types in `EventSetRepository.js` and `event_set_contract.py`, add flight behavior in `EventSession.js`, add visual variants in `EventOverlayLayer.js` and `MapCanvasView.js`, and replace the link transport only when cross-device synchronization becomes an explicit requirement.
+
 ## Notes
 
 - `prototype/reference-data/`, `prototype/outputs/`, and `prototype/research/` are for local source material and working artifacts; they are ignored for repository cleanliness by default.

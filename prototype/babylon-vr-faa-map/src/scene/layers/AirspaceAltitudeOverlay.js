@@ -1,6 +1,6 @@
 import { pixelsToWorldPoint, pixelsToWorldVector2 } from "./geometry/projector.js";
+import { DEFAULT_WORLD_UNITS_PER_FOOT, altitudeFeetToWorld } from "./geometry/altitudeScale.js";
 
-const DEFAULT_WORLD_UNITS_PER_FOOT = 0.00008;
 const DEFAULT_MIN_THICKNESS_WORLD = 0.06;
 const TOP_OUTLINE_EPSILON = 0.003;
 const MAX_PROXY_POINTS_PER_PART = 96;
@@ -161,9 +161,9 @@ export class AirspaceAltitudeOverlay {
     for (const [regionIndex, region] of regions.entries()) {
       const floorFt = Number(region.floorFt ?? 0);
       const ceilingFt = Number(region.proxyCeilingFt ?? region.ceilingFt ?? 0);
-      const baseY = floorFt * this.config.worldUnitsPerFoot;
+      const baseY = altitudeFeetToWorld(floorFt, this.config.worldUnitsPerFoot);
       const topY = Math.max(
-        ceilingFt * this.config.worldUnitsPerFoot,
+        altitudeFeetToWorld(ceilingFt, this.config.worldUnitsPerFoot),
         baseY + (this.config.minThicknessWorldUnits ?? DEFAULT_MIN_THICKNESS_WORLD),
       );
       const height = topY - baseY;

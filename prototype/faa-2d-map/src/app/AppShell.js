@@ -1,11 +1,17 @@
 import { loadSectionIndex, loadSectionManifest } from "../data/sectionRepository.js";
-import { MapCanvasView } from "../scene/MapCanvasView.js";
+import { MapCanvasView } from "../scene/MapCanvasView.js?v=20260814-conflict-controls-v1";
+import { EventSetRepository } from "../../../babylon-vr-faa-map/src/data/EventSetRepository.js";
 import { TaskSetRepository } from "../../../babylon-vr-faa-map/src/data/TaskSetRepository.js?v=20260621-task-sessions-v2";
+import { EventSession } from "../../../babylon-vr-faa-map/src/training/EventSession.js?v=20260814-conflict-controls-v1";
+import {
+  buildScenarioControls,
+  updateScenarioControls,
+} from "../../../shared/scenarioControls.js?v=20260814-conflict-controls-v1";
 import {
   BroadcastLinkSession,
   generateSessionId,
   readSavedSessionId,
-} from "../../../shared/linkSession.js";
+} from "../../../shared/linkSession.js?v=20260814-conflict-controls-v1";
 
 export class AppShell {
   constructor(elements) {
@@ -14,13 +20,22 @@ export class AppShell {
     this.currentManifest = null;
     this.layerUiState = new Map();
     this.taskSetRepository = new TaskSetRepository();
+    this.eventSetRepository = new EventSetRepository();
     this.activeTaskSet = null;
+    this.activeEventSet = null;
+    this.eventSession = null;
+    this.unsubscribeEventSession = null;
+    this.scenarioFrameHandle = 0;
+    this.eventControlSignature = "";
     this.taskSetLoadToken = 0;
+    this.eventSetLoadToken = 0;
     this.taskSetLoading = false;
+    this.eventSetLoading = false;
     this.sectionLoading = false;
     this.defaultStatusMessage = "";
     this.applyingRemoteSelection = false;
     this.applyingRemoteToggle = false;
+    this.applyingRemoteEvent = false;
     this.mapView = new MapCanvasView(elements);
     this.linkSession = new BroadcastLinkSession({
       appId: "2d-review",
@@ -41,6 +56,9 @@ export class AppShell {
       });
       this.elements.instructionSelect.addEventListener("change", (event) => {
         this.handleInstructionSetChange(event.target.value);
+      });
+      this.elements.eventSelect.addEventListener("change", (event) => {
+        this.handleEventSetChange(event.target.value);
       });
       this.elements.resetTaskSessionButton.addEventListener("click", () => this.resetTaskSession());
       this.elements.startLinkButton.addEventListener("click", () => this.handleStartLink());
@@ -106,9 +124,12 @@ export class AppShell {
     }
 
     this.clearInstructionSelection({ publish: true });
+    this.clearEventSession({ publish: true });
     this.sectionLoading = true;
     this.resetInstructionList();
+    this.resetEventList();
     this.syncInstructionControls();
+    this.syncEventControls();
     this.elements.sectionSelect.value = sectionId;
     this.setStatus(`Loading ${entry.title}...`);
 
@@ -119,6 +140,7 @@ export class AppShell {
       this.currentManifest = manifest;
       this.renderLayerControls(manifest);
       this.populateInstructionList(manifest);
+      this.populateEventList(manifest);
       this.syncUrl(sectionId);
       this.elements.sectionQuality.dataset.quality = entry.quality ?? "primary";
       this.elements.sectionQuality.textContent = entry.quality ?? "primary";
@@ -128,6 +150,7 @@ export class AppShell {
     } finally {
       this.sectionLoading = false;
       this.syncInstructionControls();
+      this.syncEventControls();
     }
   }
 
@@ -150,6 +173,29 @@ export class AppShell {
     this.elements.instructionSelect.value = "";
     this.elements.instructionGroup.hidden = true;
     this.setInstructionStatus("");
+  }
+
+  populateEventList(manifest) {
+    const entries = manifest.training?.eventSets ?? [];
+    this.elements.eventSelect.innerHTML = "";
+    this.elements.eventSelect.append(new Option("No events", ""));
+    for (const entry of entries) {
+      this.elements.eventSelect.append(new Option(entry.title, entry.id));
+    }
+    this.elements.eventSelect.value = "";
+    this.elements.eventGroup.hidden = entries.length === 0;
+    this.elements.eventControls.innerHTML = "";
+    this.setEventStatus(entries.length ? "Choose an event set to show training events or scenarios." : "");
+    this.syncEventControls();
+  }
+
+  resetEventList() {
+    this.elements.eventSelect.innerHTML = "";
+    this.elements.eventSelect.append(new Option("No events", ""));
+    this.elements.eventSelect.value = "";
+    this.elements.eventGroup.hidden = true;
+    this.elements.eventControls.innerHTML = "";
+    this.setEventStatus("");
   }
 
   async handleInstructionSetChange(taskSetId) {
@@ -225,14 +271,236 @@ export class AppShell {
     this.syncInstructionControls();
   }
 
+  async handleEventSetChange(eventSetId, options = {}) {
+    const loadToken = ++this.eventSetLoadToken;
+    this.clearEventSession({ publish: Boolean(!eventSetId) && !options.suppressSync });
+    if (!eventSetId) {
+      this.elements.eventSelect.value = "";
+      this.setEventStatus("Event session cleared.");
+      this.syncEventControls();
+      return;
+    }
+
+    const manifest = this.currentManifest;
+    const entry = manifest?.training?.eventSets?.find((candidate) => candidate.id === eventSetId);
+    if (!manifest || !entry) {
+      this.elements.eventSelect.value = "";
+      this.setEventStatus(`Event set ${eventSetId} is unavailable.`, { error: true });
+      return;
+    }
+
+    this.eventSetLoading = true;
+    this.syncEventControls();
+    this.setEventStatus(`Loading ${entry.title}...`);
+    try {
+      const eventSet = await this.eventSetRepository.load(manifest, entry);
+      if (loadToken !== this.eventSetLoadToken || manifest !== this.currentManifest) {
+        return;
+      }
+      this.activeEventSet = eventSet;
+      this.eventSession = new EventSession(eventSet);
+      if (options.activeEventIds) {
+        this.eventSession.applyEnabledEventIds(options.activeEventIds);
+      }
+      this.unsubscribeEventSession = this.eventSession.subscribe((snapshot) => {
+        this.mapView.setEventSnapshot(snapshot);
+        const nextSignature = eventControlSignature(snapshot);
+        if (
+          nextSignature === this.eventControlSignature
+          && this.elements.eventControls.querySelector?.(".scenario-controls")
+        ) {
+          updateScenarioControls(this.elements.eventControls, snapshot);
+        } else {
+          this.renderEventControls(snapshot);
+        }
+        if (!snapshot.authoritative && snapshot.scenarioStatus === "running") {
+          this.startScenarioAnimation();
+        }
+      });
+      this.elements.eventSelect.value = entry.id;
+      if (!options.suppressSync) {
+        this.publishEvent({
+          action: "load",
+          sectionId: manifest.id,
+          eventSetId: entry.id,
+          activeEventIds: this.eventSession.getSnapshot().activeEventIds,
+        });
+      }
+      this.setEventStatus(this.linkSession.isConnected()
+        ? `${entry.title} active and synced.`
+        : `${entry.title} selected. Start Link to sync it to VR.`);
+    } catch (error) {
+      if (loadToken !== this.eventSetLoadToken) {
+        return;
+      }
+      console.error(error);
+      this.clearEventSession({ publish: false });
+      this.elements.eventSelect.value = "";
+      this.setEventStatus(`Unable to load ${entry.title}: ${error.message ?? error}`, { error: true });
+    } finally {
+      if (loadToken === this.eventSetLoadToken) {
+        this.eventSetLoading = false;
+        this.syncEventControls();
+      }
+    }
+  }
+
+  clearEventSession({ publish = false } = {}) {
+    const eventSetId = this.activeEventSet?.id ?? this.eventSession?.eventSet?.id ?? null;
+    const sectionId = this.currentManifest?.id ?? null;
+    this.unsubscribeEventSession?.();
+    this.unsubscribeEventSession = null;
+    this.eventSession?.dispose();
+    this.eventSession = null;
+    this.stopScenarioAnimation();
+    this.activeEventSet = null;
+    this.eventControlSignature = "";
+    this.mapView.setEventSnapshot(null);
+    this.elements.eventControls.innerHTML = "";
+    if (publish && (eventSetId || this.linkSession.isConnected())) {
+      this.publishEvent({ action: "clear", sectionId, eventSetId });
+    }
+    this.syncEventControls();
+  }
+
+  renderEventControls(snapshot = this.eventSession?.getSnapshot()) {
+    const container = this.elements.eventControls;
+    container.innerHTML = "";
+    this.eventControlSignature = eventControlSignature(snapshot);
+    if (!snapshot || snapshot.disposed) {
+      return;
+    }
+    const scenarioControls = buildScenarioControls(
+      snapshot,
+      (command, actionId) => this.handleScenarioCommand(command, actionId),
+    );
+    if (scenarioControls) {
+      container.append(scenarioControls);
+    }
+    for (const type of ["aircraft", "weather"]) {
+      const events = (snapshot.events ?? []).filter((event) => event.type === type);
+      if (!events.length) {
+        continue;
+      }
+      const group = document.createElement("section");
+      group.className = "event-group";
+      const heading = document.createElement("h3");
+      heading.textContent = type === "aircraft" ? "Aircraft" : "Weather";
+      group.append(heading);
+      for (const event of events) {
+        const row = this.buildToggleRow(event.title, snapshot.activeEventIds.includes(event.id), (checked) => {
+          this.setEventEnabled(event.id, checked);
+        });
+        group.append(row);
+      }
+      container.append(group);
+    }
+  }
+
+  handleScenarioCommand(command, actionId = null) {
+    const scenarioStatus = this.eventSession?.getSnapshot().scenarioStatus;
+    if (!scenarioStatus || scenarioStatus === "unavailable") {
+      return false;
+    }
+    if (this.linkSession.isConnected()) {
+      this.publishEvent({
+        action: "scenario-command",
+        sectionId: this.currentManifest?.id,
+        eventSetId: this.eventSession.eventSet.id,
+        command,
+        scenarioActionId: actionId,
+        activeEventIds: this.eventSession.getSnapshot().activeEventIds,
+      });
+      return true;
+    }
+    let changed = false;
+    if (command === "start") {
+      changed = this.eventSession.startScenario();
+    } else if (command === "pause") {
+      changed = this.eventSession.pauseScenario();
+    } else if (command === "reset") {
+      changed = this.eventSession.resetScenario();
+    } else if (command === "action" && actionId) {
+      changed = this.eventSession.applyScenarioAction(actionId);
+    }
+    const snapshot = this.eventSession.getSnapshot();
+    this.mapView.setEventSnapshot(snapshot);
+    updateScenarioControls(this.elements.eventControls, snapshot);
+    if (snapshot.scenarioStatus === "running") {
+      this.startScenarioAnimation();
+    } else {
+      this.stopScenarioAnimation();
+    }
+    return changed;
+  }
+
+  startScenarioAnimation() {
+    if (this.scenarioFrameHandle || !this.eventSession) {
+      return;
+    }
+    const tick = () => {
+      this.scenarioFrameHandle = 0;
+      if (!this.eventSession) {
+        return;
+      }
+      const snapshot = this.eventSession.getSnapshot();
+      this.mapView.setEventSnapshot(snapshot);
+      updateScenarioControls(this.elements.eventControls, snapshot);
+      if (!snapshot.authoritative && snapshot.scenarioStatus === "running") {
+        this.scenarioFrameHandle = requestAnimationFrame(tick);
+      }
+    };
+    this.scenarioFrameHandle = requestAnimationFrame(tick);
+  }
+
+  stopScenarioAnimation() {
+    if (this.scenarioFrameHandle) {
+      cancelAnimationFrame(this.scenarioFrameHandle);
+      this.scenarioFrameHandle = 0;
+    }
+  }
+
+  setEventEnabled(eventId, enabled, options = {}) {
+    if (!this.eventSession) {
+      return;
+    }
+    const changed = this.eventSession.setEventEnabled(eventId, enabled);
+    if (changed && !options.suppressSync) {
+      this.publishEvent({
+        action: "toggle",
+        sectionId: this.currentManifest?.id,
+        eventSetId: this.eventSession.eventSet.id,
+        eventId,
+        enabled: Boolean(enabled),
+        activeEventIds: this.eventSession.getSnapshot().activeEventIds,
+      });
+    }
+  }
+
+  syncEventControls() {
+    const eventSetCount = this.currentManifest?.training?.eventSets?.length ?? 0;
+    this.elements.eventSelect.disabled = eventSetCount === 0 || this.sectionLoading || this.eventSetLoading;
+    const sectionCount = this.sectionIndex?.sections?.length ?? 0;
+    this.elements.sectionSelect.disabled = sectionCount <= 1 || this.sectionLoading || this.taskSetLoading || this.eventSetLoading;
+  }
+
+  setEventStatus(message, options = {}) {
+    this.elements.eventStatus.textContent = message;
+    if (options.error) {
+      this.elements.eventStatus.dataset.state = "error";
+    } else {
+      delete this.elements.eventStatus.dataset.state;
+    }
+  }
+
   syncInstructionControls() {
     const taskSetCount = this.currentManifest?.training?.taskSets?.length ?? 0;
-    this.elements.instructionSelect.disabled = taskSetCount === 0 || this.sectionLoading || this.taskSetLoading;
+    this.elements.instructionSelect.disabled = taskSetCount === 0 || this.sectionLoading || this.taskSetLoading || this.eventSetLoading;
     const hasTaskSet = Boolean(this.activeTaskSet);
     this.elements.resetTaskSessionButton.hidden = !hasTaskSet;
     this.elements.resetTaskSessionButton.disabled = !hasTaskSet || this.sectionLoading || this.taskSetLoading;
     const sectionCount = this.sectionIndex?.sections?.length ?? 0;
-    this.elements.sectionSelect.disabled = sectionCount <= 1 || this.sectionLoading || this.taskSetLoading;
+    this.elements.sectionSelect.disabled = sectionCount <= 1 || this.sectionLoading || this.taskSetLoading || this.eventSetLoading;
   }
 
   setInstructionStatus(message, options = {}) {
@@ -484,6 +752,7 @@ export class AppShell {
     this.linkSession.connect(sessionId, {
       onSelection: (selection) => this.applyRemoteSelection(selection),
       onToggle: (toggle) => this.applyRemoteToggle(toggle),
+      onEvent: (eventState) => this.applyRemoteEvent(eventState),
       onStatusChange: (status) => this.syncLinkStatus(status),
     });
     this.syncLinkStatus({
@@ -498,10 +767,20 @@ export class AppShell {
       });
       this.setInstructionStatus(`${this.activeTaskSet.title} sent to the linked VR app.`);
     }
+    if (this.eventSession && this.currentManifest) {
+      this.publishEvent({
+        action: "load",
+        sectionId: this.currentManifest.id,
+        eventSetId: this.eventSession.eventSet.id,
+        activeEventIds: this.eventSession.getSnapshot().activeEventIds,
+      });
+      this.setEventStatus(`${this.eventSession.eventSet.title} sent to the linked VR app.`);
+    }
   }
 
   handleDisconnectLink() {
     this.linkSession.disconnect();
+    this.eventSession?.clearAuthoritativeScenarioSnapshot?.({ notify: true });
     this.syncLinkStatus({
       connected: false,
       sessionId: "",
@@ -563,6 +842,75 @@ export class AppShell {
     this.linkSession.publishToggle(toggle);
   }
 
+  async applyRemoteEvent(eventState) {
+    if (!eventState || !eventState.action) {
+      return;
+    }
+    if (eventState.sectionId && this.currentManifest?.id !== eventState.sectionId) {
+      return;
+    }
+
+    this.applyingRemoteEvent = true;
+    try {
+      if (eventState.action === "clear") {
+        this.clearEventSession({ publish: false });
+        this.elements.eventSelect.value = "";
+        this.setEventStatus("Event session cleared from the linked VR app.");
+        return;
+      }
+      if (!eventState.eventSetId) {
+        return;
+      }
+      if (eventState.action === "load") {
+        await this.handleEventSetChange(eventState.eventSetId, {
+          activeEventIds: eventState.activeEventIds ?? [],
+          suppressSync: true,
+        });
+        return;
+      }
+      if (eventState.action === "scenario-command") {
+        return;
+      }
+      if (eventState.action === "scenario-snapshot") {
+        if (!eventState.scenarioSnapshot) {
+          return;
+        }
+        if (this.eventSession?.eventSet?.id !== eventState.eventSetId) {
+          await this.handleEventSetChange(eventState.eventSetId, {
+            activeEventIds: eventState.scenarioSnapshot.activeEventIds ?? [],
+            suppressSync: true,
+          });
+        }
+        this.eventSession?.applyAuthoritativeScenarioSnapshot(eventState.scenarioSnapshot);
+        return;
+      }
+      if (eventState.action === "toggle") {
+        if (this.eventSession?.eventSet?.id !== eventState.eventSetId) {
+          await this.handleEventSetChange(eventState.eventSetId, {
+            activeEventIds: eventState.activeEventIds ?? [],
+            suppressSync: true,
+          });
+        } else if (eventState.eventId && typeof eventState.enabled === "boolean") {
+          this.setEventEnabled(eventState.eventId, eventState.enabled, { suppressSync: true });
+        } else if (eventState.activeEventIds) {
+          this.eventSession.applyEnabledEventIds(eventState.activeEventIds);
+        }
+      }
+    } catch (error) {
+      console.error(error);
+      this.setEventStatus(`Unable to apply linked event state: ${error.message ?? error}`, { error: true });
+    } finally {
+      this.applyingRemoteEvent = false;
+    }
+  }
+
+  publishEvent(eventState) {
+    if (this.applyingRemoteEvent || !this.linkSession.isConnected()) {
+      return;
+    }
+    this.linkSession.publishEvent(eventState);
+  }
+
   publishInstruction(instruction) {
     if (!this.linkSession.isConnected()) {
       return;
@@ -589,6 +937,14 @@ export class AppShell {
   setStatus(message) {
     this.elements.statusLine.textContent = message;
   }
+}
+
+function eventControlSignature(snapshot) {
+  return JSON.stringify({
+    eventSetId: snapshot?.eventSetId ?? null,
+    disposed: Boolean(snapshot?.disposed),
+    activeEventIds: snapshot?.activeEventIds ?? [],
+  });
 }
 
 function readPreferredSectionId(sectionIndex) {

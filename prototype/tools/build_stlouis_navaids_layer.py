@@ -227,7 +227,7 @@ def label_text(row: dict[str, object]) -> str:
 
 
 def label_lines(row: dict[str, object]) -> list[str]:
-    lines = [row["nav_id"], row["display_name"]]
+    lines = [row["nav_id"], row["display_name"], row["nav_type"]]
     meta: list[str] = []
     if row["freq"]:
         meta.append(row["freq"])
@@ -326,6 +326,7 @@ def compute_navaid_label_layout(features: dict[str, object]) -> list[dict[str, o
             layout.append(
                 {
                     "id": row["nav_id"],
+                    "navaid_type": row["nav_type"],
                     "x": placement["x"],
                     "y": placement["y"],
                     "lines": label_lines(row),

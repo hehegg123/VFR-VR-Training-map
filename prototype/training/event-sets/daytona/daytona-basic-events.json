@@ -1,0 +1,54 @@
+{
+  "schema": "faa-vr-event-set-v1",
+  "id": "daytona-basic-events",
+  "sectionId": "daytona",
+  "title": "Daytona Basic Events",
+  "events": [
+    {
+      "id": "aircraft-final-approach",
+      "type": "aircraft",
+      "title": "Aircraft on Final Approach",
+      "triggerMode": "manual",
+      "defaultEnabled": false,
+      "position": {
+        "x": 0.52,
+        "y": 0.43
+      },
+      "altitude": {
+        "valueFt": 31000,
+        "reference": "MSL"
+      },
+      "orientation": {
+        "headingDeg": 270
+      },
+      "visual": {
+        "label": "N123AB",
+        "model": "crj-900-cityjet",
+        "scale": 1.0
+      }
+    },
+    {
+      "id": "weather-east-cell",
+      "type": "weather",
+      "title": "Weather Cell East of Airport",
+      "triggerMode": "manual",
+      "defaultEnabled": false,
+      "geometry": {
+        "type": "circle",
+        "x": 0.68,
+        "y": 0.38,
+        "radius": 0.06
+      },
+      "altitude": {
+        "baseFt": 2500,
+        "topFt": 9000,
+        "reference": "MSL"
+      },
+      "visual": {
+        "label": "Weather Cell",
+        "model": "training-cloud",
+        "opacity": 0.55
+      }
+    }
+  ]
+}

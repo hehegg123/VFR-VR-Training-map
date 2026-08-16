@@ -1,5 +1,5 @@
-import { LayerManager } from "./layers/LayerManager.js?v=20260616-label-diagnostics-v5";
-import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260621-instruction-workflow-v1";
+import { LayerManager } from "./layers/LayerManager.js?v=20260712-event-altitude-v1";
+import { VrControlPanel } from "./xr/VrControlPanel.js?v=20260815-wrist-events-v1";
 import { XrInputSourceVisualManager } from "./xr/XrInputSourceVisualManager.js?v=20260617-xr-input-visuals-v1";
 import { XrMapManipulator } from "./xr/XrMapManipulator.js?v=20260617-xr-input-visuals-v1";
 
@@ -62,6 +62,9 @@ export async function createMapScene(canvas) {
   let pendingVrControlPanelConfig = null;
   let pendingTaskSession = null;
   let pendingTaskEventLog = null;
+  let pendingEventSession = null;
+  let pendingEventSessionUnsubscribe = null;
+  let pendingEventSnapshot = null;
   let xrInitializationPromise = Promise.resolve(null);
 
   if (xrAvailability.supported) {
@@ -86,6 +89,7 @@ export async function createMapScene(canvas) {
         vrControlPanel.setConfig(pendingVrControlPanelConfig);
       }
       vrControlPanel.setTaskSession(pendingTaskSession, pendingTaskEventLog);
+      vrControlPanel.setEventSession(pendingEventSession);
       xrAvailability.initializing = false;
       xrAvailability.ready = true;
       xrAvailability.reason = "Immersive VR is available.";
@@ -102,7 +106,13 @@ export async function createMapScene(canvas) {
     });
   }
 
-  engine.runRenderLoop(() => scene.render());
+  engine.runRenderLoop(() => {
+    if (pendingEventSnapshot?.scenarioStatus === "running" && pendingEventSession?.getSnapshot) {
+      pendingEventSnapshot = pendingEventSession.getSnapshot();
+      layerManager.setEventSnapshot(pendingEventSnapshot);
+    }
+    scene.render();
+  });
   window.addEventListener("resize", () => engine.resize());
 
   const controller = {
@@ -151,8 +161,22 @@ export async function createMapScene(canvas) {
       pendingTaskEventLog = taskEventLog ?? null;
       vrControlPanel?.setTaskSession(pendingTaskSession, pendingTaskEventLog);
     },
+    setVrEventSession(eventSession) {
+      pendingEventSessionUnsubscribe?.();
+      pendingEventSessionUnsubscribe = null;
+      pendingEventSession = eventSession ?? null;
+      pendingEventSnapshot = pendingEventSession?.getSnapshot?.() ?? null;
+      layerManager.setEventSnapshot(pendingEventSnapshot);
+      pendingEventSessionUnsubscribe = pendingEventSession?.subscribe?.((snapshot) => {
+        pendingEventSnapshot = snapshot;
+        layerManager.setEventSnapshot(snapshot);
+      }) ?? null;
+      vrControlPanel?.setEventSession(pendingEventSession);
+    },
     dispose() {
       xrAvailabilityObservers.clear();
+      pendingEventSessionUnsubscribe?.();
+      pendingEventSnapshot = null;
       xrMapManipulator?.dispose();
       vrControlPanel?.dispose();
       xrInputSourceVisualManager?.dispose();

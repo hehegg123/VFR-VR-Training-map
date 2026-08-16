@@ -252,6 +252,85 @@ test("desktop harness preserves instruction tab and task progress across panel r
   panel.dispose();
 });
 
+test("VR Events tab exposes synchronized scenario commands with safe enablement", () => {
+  const { panel } = createPanelHarness([]);
+  const commands = [];
+  panel.setConfig(panelConfig({}, {
+    onScenarioCommand: (command, actionId) => commands.push([command, actionId ?? null]),
+  }));
+  const session = new FakeEventSession(scenarioSnapshot());
+  panel.setEventSession(session);
+
+  click(findControl(panel.stack, "xr-panel-tab-events"));
+  assert.equal(panel.selectedTab, "events");
+  assert.ok(findText(panel.stack, "Daytona Conflict Scenario"));
+  assert.equal(findControl(panel.stack, "xr-instruction-Start").isEnabled, true);
+  assert.equal(findControl(panel.stack, "xr-instruction-Flight A: Turn Right Heading 130").isEnabled, false);
+  assert.equal(findControl(panel.stack, "xr-instruction-Resume Route").isEnabled, false);
+
+  click(findControl(panel.stack, "xr-instruction-Start"));
+  session.push(scenarioSnapshot({
+    scenarioStatus: "running",
+    scenarioElapsedSec: 8,
+    conflictState: "conflict-predicted",
+    conflict: {
+      state: "conflict-predicted",
+      horizontalSeparationNm: 9.2,
+      verticalSeparationFt: 0,
+    },
+  }));
+  const turn = findControl(panel.stack, "xr-instruction-Flight A: Turn Right Heading 130");
+  assert.equal(turn.isEnabled, true);
+  click(turn);
+
+  session.push(scenarioSnapshot({
+    scenarioStatus: "running",
+    scenarioElapsedSec: 39,
+    conflictState: "resolved",
+    conflict: {
+      state: "resolved",
+      horizontalSeparationNm: 6.3,
+      verticalSeparationFt: 0,
+    },
+    appliedScenarioActions: [{ id: "flight-a-turn-right-130" }],
+  }));
+  const resume = findControl(panel.stack, "xr-instruction-Resume Route");
+  assert.equal(resume.isEnabled, true);
+  click(resume);
+
+  assert.deepEqual(commands, [
+    ["start", null],
+    ["action", "flight-a-turn-right-130"],
+    ["action", "flight-a-resume-route"],
+  ]);
+  panel.dispose();
+  assert.equal(session.subscribers.size, 0);
+});
+
+test("VR Events tab can load an event set before an event session exists", () => {
+  const { panel } = createPanelHarness([]);
+  const selections = [];
+  panel.setConfig(panelConfig({}, {
+    eventSets: [
+      { id: "daytona-basic-events", title: "Daytona Basic Events" },
+      { id: "daytona-conflict-scenario", title: "Daytona Conflict Scenario" },
+    ],
+    onSelectEventSet: (eventSetId) => selections.push(eventSetId),
+  }));
+
+  click(findControl(panel.stack, "xr-panel-tab-events"));
+  assert.equal(panel.selectedTab, "events");
+  assert.ok(findText(panel.stack, "Select an event set to display and control it in VR."));
+
+  click(findControl(panel.stack, "xr-event-set-load-daytona-basic-events"));
+  assert.deepEqual(selections, ["daytona-basic-events"]);
+
+  panel.setEventSession(null);
+  assert.equal(panel.selectedTab, "events");
+  assert.ok(findControl(panel.stack, "xr-panel-tab-events"));
+  panel.dispose();
+});
+
 function createPanelHarness(controllers) {
   const scene = { onBeforeRenderObservable: new Observable() };
   const xrHelper = {
@@ -337,6 +416,53 @@ function taskSet() {
         completionMode: "manual",
       },
     ],
+  };
+}
+
+class FakeEventSession {
+  constructor(snapshot) {
+    this.snapshot = snapshot;
+    this.subscribers = new Set();
+  }
+
+  getSnapshot() {
+    return this.snapshot;
+  }
+
+  subscribe(listener) {
+    this.subscribers.add(listener);
+    listener(this.snapshot);
+    return () => this.subscribers.delete(listener);
+  }
+
+  push(snapshot) {
+    this.snapshot = snapshot;
+    for (const listener of this.subscribers) {
+      listener(snapshot);
+    }
+  }
+}
+
+function scenarioSnapshot(overrides = {}) {
+  return {
+    eventSetId: "daytona-conflict-scenario",
+    eventSetTitle: "Daytona Conflict Scenario",
+    events: [
+      { id: "flight-a-eastbound", type: "aircraft", title: "Flight A Eastbound" },
+      { id: "flight-b-northbound", type: "aircraft", title: "Flight B Northbound" },
+    ],
+    activeEventIds: ["flight-a-eastbound", "flight-b-northbound"],
+    scenarioStatus: "ready",
+    scenarioElapsedSec: 0,
+    conflictState: "normal",
+    conflict: {
+      state: "normal",
+      horizontalSeparationNm: 29.4,
+      verticalSeparationFt: 0,
+    },
+    appliedScenarioActions: [],
+    disposed: false,
+    ...overrides,
   };
 }
 

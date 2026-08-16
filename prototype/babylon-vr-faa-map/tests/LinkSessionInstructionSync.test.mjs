@@ -48,3 +48,99 @@ test("instruction commands are delivered only to linked peers", () => {
   sender.disconnect();
   receiver.disconnect();
 });
+
+test("event commands are delivered only to linked peers", () => {
+  const sender = new BroadcastLinkSession({ appId: "2d-event-test" });
+  const receiver = new BroadcastLinkSession({ appId: "vr-event-test" });
+  const received = [];
+
+  sender.connect("event-test");
+  receiver.connect("event-test", { onEvent: (eventState) => received.push(eventState) });
+  sender.publishEvent({
+    action: "load",
+    sectionId: "daytona",
+    eventSetId: "daytona-basic-events",
+    activeEventIds: [],
+  });
+  sender.publishEvent({
+    action: "toggle",
+    sectionId: "daytona",
+    eventSetId: "daytona-basic-events",
+    eventId: "aircraft-final-approach",
+    enabled: true,
+    activeEventIds: ["aircraft-final-approach"],
+  });
+  sender.publishEvent({ action: "clear", sectionId: "daytona", eventSetId: "daytona-basic-events" });
+
+  assert.deepEqual(received, [
+    {
+      action: "load",
+      sectionId: "daytona",
+      eventSetId: "daytona-basic-events",
+      eventId: null,
+      enabled: null,
+      activeEventIds: [],
+    },
+    {
+      action: "toggle",
+      sectionId: "daytona",
+      eventSetId: "daytona-basic-events",
+      eventId: "aircraft-final-approach",
+      enabled: true,
+      activeEventIds: ["aircraft-final-approach"],
+    },
+    {
+      action: "clear",
+      sectionId: "daytona",
+      eventSetId: "daytona-basic-events",
+      eventId: null,
+      enabled: null,
+      activeEventIds: null,
+    },
+  ]);
+  sender.disconnect();
+  receiver.disconnect();
+});
+
+test("scenario commands and authoritative snapshots cross the linked session", () => {
+  const vr = new BroadcastLinkSession({ appId: "vr-scenario-test" });
+  const desktop = new BroadcastLinkSession({ appId: "2d-scenario-test" });
+  const desktopReceived = [];
+  const vrReceived = [];
+  const scenarioSnapshot = {
+    eventSetId: "daytona-conflict-scenario",
+    scenarioStatus: "running",
+    scenarioElapsedSec: 12,
+    activeEventIds: ["flight-a", "flight-b"],
+    aircraftStates: [{ eventId: "flight-a", position: { x: 0.3, y: 0.5 }, headingDeg: 90 }],
+    conflictState: "conflict-predicted",
+    conflict: { state: "conflict-predicted", horizontalSeparationNm: 4.8, verticalSeparationFt: 0 },
+    appliedScenarioActions: [],
+  };
+
+  vr.connect("scenario-test", { onEvent: (eventState) => vrReceived.push(eventState) });
+  desktop.connect("scenario-test", { onEvent: (eventState) => desktopReceived.push(eventState) });
+  vr.publishEvent({
+    action: "scenario-command",
+    sectionId: "daytona",
+    eventSetId: "daytona-conflict-scenario",
+    command: "action",
+    scenarioActionId: "flight-a-turn-right-130",
+  });
+  desktop.publishEvent({
+    action: "scenario-snapshot",
+    sectionId: "daytona",
+    eventSetId: "daytona-conflict-scenario",
+    scenarioSnapshot,
+  });
+
+  assert.equal(desktopReceived.length, 1);
+  assert.equal(desktopReceived[0].command, "action");
+  assert.equal(desktopReceived[0].scenarioActionId, "flight-a-turn-right-130");
+  assert.equal(vrReceived.length, 1);
+  assert.deepEqual(vrReceived[0].scenarioSnapshot, scenarioSnapshot);
+  assert.equal(vrReceived[0].command, undefined);
+
+  vr.disconnect();
+  desktop.disconnect();
+});

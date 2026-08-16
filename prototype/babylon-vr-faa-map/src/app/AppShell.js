@@ -1,13 +1,20 @@
 import { loadSectionIndex, loadSectionManifest } from "../data/sectionRepository.js";
+import { EventSetRepository } from "../data/EventSetRepository.js";
 import { TaskSetRepository } from "../data/TaskSetRepository.js?v=20260621-task-sessions-v2";
-import { createMapScene } from "../scene/MapScene.js?v=20260621-instruction-workflow-v1";
+import { createMapScene } from "../scene/MapScene.js?v=20260815-wrist-events-v1";
 import { TaskEventLog, TASK_EVENT_TYPES } from "../training/TaskEventLog.js?v=20260621-instruction-workflow-v1";
+import { EventSession } from "../training/EventSession.js?v=20260814-conflict-controls-v1";
+import {
+  buildScenarioControls,
+  createScenarioSyncSnapshot,
+  updateScenarioControls,
+} from "../../../shared/scenarioControls.js?v=20260814-conflict-controls-v1";
 import { TaskSession } from "../training/TaskSession.js?v=20260621-task-sessions-v1";
 import {
   BroadcastLinkSession,
   generateSessionId,
   readSavedSessionId,
-} from "../../../shared/linkSession.js";
+} from "../../../shared/linkSession.js?v=20260814-conflict-controls-v1";
 
 export class AppShell {
   constructor(elements) {
@@ -17,15 +24,25 @@ export class AppShell {
     this.currentManifest = null;
     this.layerUiState = new Map();
     this.taskSetRepository = new TaskSetRepository();
+    this.eventSetRepository = new EventSetRepository();
     this.taskSession = null;
+    this.eventSession = null;
+    this.activeEventSet = null;
+    this.unsubscribeEventSession = null;
+    this.scenarioUiFrameHandle = 0;
+    this.lastScenarioBroadcastMs = 0;
+    this.eventControlSignature = "";
     this.activeTaskSet = null;
     this.taskSetLoadToken = 0;
+    this.eventSetLoadToken = 0;
     this.taskSetLoading = false;
+    this.eventSetLoading = false;
     this.sectionLoading = false;
     this.airspaceAltitudeMode = false;
     this.defaultStatusMessage = "";
     this.applyingRemoteSelection = false;
     this.applyingRemoteToggle = false;
+    this.applyingRemoteEvent = false;
     this.linkSession = new BroadcastLinkSession({
       appId: "vr-viewer",
     });
@@ -86,6 +103,9 @@ export class AppShell {
       });
       this.elements.instructionSelect.addEventListener("change", (event) => {
         this.handleInstructionSetChange(event.target.value);
+      });
+      this.elements.eventSelect.addEventListener("change", (event) => {
+        this.handleEventSetChange(event.target.value);
       });
       this.elements.resetTaskSessionButton.addEventListener("click", () => {
         this.resetTaskSession();
@@ -160,9 +180,12 @@ export class AppShell {
     }
 
     this.taskSetLoadToken += 1;
+    this.eventSetLoadToken += 1;
     this.clearTaskSession("section_changed");
+    this.clearEventSession({ publish: true });
     this.sectionLoading = true;
     this.resetInstructionList();
+    this.resetEventList();
     this.syncSelectorDisabledStates();
     this.elements.sectionSelect.value = sectionId;
     this.setStatus(`Loading ${entry.title}...`);
@@ -175,6 +198,7 @@ export class AppShell {
       this.currentManifest = manifest;
       this.renderLayerControls(manifest);
       this.populateInstructionList(manifest);
+      this.populateEventList(manifest);
       this.syncVrControlPanel();
       this.syncUrl(sectionId);
 
@@ -210,6 +234,31 @@ export class AppShell {
     this.elements.instructionSelect.append(new Option("No instructions", ""));
     this.elements.instructionSelect.value = "";
     this.elements.instructionGroup.hidden = true;
+    this.syncSelectorDisabledStates();
+  }
+
+  populateEventList(manifest) {
+    const entries = manifest.training?.eventSets ?? [];
+    const select = this.elements.eventSelect;
+    select.innerHTML = "";
+    select.append(new Option("No events", ""));
+    for (const entry of entries) {
+      select.append(new Option(entry.title, entry.id));
+    }
+    select.value = "";
+    this.elements.eventGroup.hidden = entries.length === 0;
+    this.elements.eventControls.innerHTML = "";
+    this.setEventStatus(entries.length ? "Choose an event set to show training events or scenarios in this VR scene." : "");
+    this.syncSelectorDisabledStates();
+  }
+
+  resetEventList() {
+    this.elements.eventSelect.innerHTML = "";
+    this.elements.eventSelect.append(new Option("No events", ""));
+    this.elements.eventSelect.value = "";
+    this.elements.eventGroup.hidden = true;
+    this.elements.eventControls.innerHTML = "";
+    this.setEventStatus("");
     this.syncSelectorDisabledStates();
   }
 
@@ -282,6 +331,248 @@ export class AppShell {
     this.syncSelectorDisabledStates();
   }
 
+  async handleEventSetChange(eventSetId, options = {}) {
+    const loadToken = ++this.eventSetLoadToken;
+    this.clearEventSession({ publish: Boolean(!eventSetId) && !options.suppressSync });
+    if (!eventSetId) {
+      this.elements.eventSelect.value = "";
+      this.setEventStatus("Event session cleared.");
+      this.syncSelectorDisabledStates();
+      this.syncVrControlPanel();
+      return;
+    }
+
+    const manifest = this.currentManifest;
+    const entry = manifest?.training?.eventSets?.find((candidate) => candidate.id === eventSetId);
+    if (!manifest || !entry) {
+      this.elements.eventSelect.value = "";
+      this.setEventStatus(`Event set ${eventSetId} is not available for this section.`, { error: true });
+      return;
+    }
+
+    this.eventSetLoading = true;
+    this.syncSelectorDisabledStates();
+    this.syncVrControlPanel();
+    this.setEventStatus(`Loading ${entry.title}...`);
+    try {
+      await this.loadEventSet(entry.id, {
+        activeEventIds: options.activeEventIds,
+        loadToken,
+        suppressSync: options.suppressSync,
+      });
+    } catch (error) {
+      if (loadToken !== this.eventSetLoadToken) {
+        return;
+      }
+      console.error(error);
+      this.clearEventSession({ publish: false });
+      this.elements.eventSelect.value = "";
+      this.setEventStatus(`Unable to load ${entry.title}: ${error.message ?? error}`, { error: true });
+    } finally {
+      if (loadToken === this.eventSetLoadToken) {
+        this.eventSetLoading = false;
+        this.syncSelectorDisabledStates();
+        this.syncVrControlPanel();
+      }
+    }
+  }
+
+  async loadEventSet(eventSetId, options = {}) {
+    const loadToken = options.loadToken ?? ++this.eventSetLoadToken;
+    this.clearEventSession({ publish: false });
+    if (!eventSetId) {
+      return;
+    }
+
+    const manifest = this.currentManifest;
+    const entry = manifest?.training?.eventSets?.find((candidate) => candidate.id === eventSetId);
+    if (!manifest || !entry) {
+      throw new Error(`Event set ${eventSetId} is not available for this section.`);
+    }
+
+    this.eventSetLoading = true;
+    this.syncSelectorDisabledStates();
+    try {
+      const eventSet = await this.eventSetRepository.load(manifest, entry);
+      if (loadToken !== this.eventSetLoadToken || manifest !== this.currentManifest) {
+        return;
+      }
+      this.activeEventSet = eventSet;
+      this.eventSession = new EventSession(eventSet);
+      if (options.activeEventIds) {
+        this.eventSession.applyEnabledEventIds(options.activeEventIds);
+      }
+      this.unsubscribeEventSession = this.eventSession.subscribe(() => {
+        const snapshot = this.eventSession.getSnapshot();
+        const nextSignature = eventControlSignature(snapshot);
+        if (
+          nextSignature === this.eventControlSignature
+          && this.elements.eventControls.querySelector?.(".scenario-controls")
+        ) {
+          updateScenarioControls(this.elements.eventControls, snapshot);
+        } else {
+          this.renderEventControls(snapshot);
+        }
+        if (snapshot.scenarioStatus === "running") {
+          this.startScenarioUiAnimation();
+        }
+      });
+      this.sceneController?.setVrEventSession?.(this.eventSession);
+      this.elements.eventSelect.value = entry.id;
+      this.renderEventControls();
+      this.syncVrControlPanel();
+      if (!options.suppressSync) {
+        this.publishEvent({
+          action: "load",
+          sectionId: manifest.id,
+          eventSetId: entry.id,
+          activeEventIds: this.eventSession.getSnapshot().activeEventIds,
+        });
+      }
+      this.publishScenarioSnapshot(this.eventSession.getSnapshot());
+      this.setEventStatus(this.linkSession.isConnected()
+        ? `${eventSet.title} active and synced.`
+        : `${eventSet.title} selected. Start Link to sync it to the 2D companion.`);
+      this.setStatus(`${eventSet.title} loaded with ${eventSet.events.length} event${eventSet.events.length === 1 ? "" : "s"}.`);
+    } finally {
+      if (options.loadToken === undefined && loadToken === this.eventSetLoadToken) {
+        this.eventSetLoading = false;
+        this.syncSelectorDisabledStates();
+      }
+    }
+  }
+
+  clearEventSession({ publish = false } = {}) {
+    const eventSetId = this.activeEventSet?.id ?? this.eventSession?.eventSet?.id ?? null;
+    const sectionId = this.currentManifest?.id ?? null;
+    this.unsubscribeEventSession?.();
+    this.unsubscribeEventSession = null;
+    this.eventSession?.dispose();
+    this.eventSession = null;
+    this.stopScenarioUiAnimation();
+    this.activeEventSet = null;
+    this.eventControlSignature = "";
+    this.sceneController?.setVrEventSession?.(null);
+    this.elements.eventControls.innerHTML = "";
+    if (publish && (eventSetId || this.linkSession.isConnected())) {
+      this.publishEvent({ action: "clear", sectionId, eventSetId });
+    }
+    this.syncVrControlPanel();
+    this.syncSelectorDisabledStates();
+  }
+
+  renderEventControls(snapshot = this.eventSession?.getSnapshot()) {
+    const container = this.elements.eventControls;
+    container.innerHTML = "";
+    this.eventControlSignature = eventControlSignature(snapshot);
+    if (!snapshot || snapshot.disposed) {
+      return;
+    }
+
+    const scenarioControls = buildScenarioControls(
+      snapshot,
+      (command, actionId) => this.handleScenarioCommand(command, actionId),
+    );
+    if (scenarioControls) {
+      container.append(scenarioControls);
+    }
+
+    for (const type of ["aircraft", "weather"]) {
+      const events = (snapshot.events ?? []).filter((event) => event.type === type);
+      if (!events.length) {
+        continue;
+      }
+
+      const group = document.createElement("section");
+      group.className = "event-group";
+      const heading = document.createElement("h3");
+      heading.textContent = type === "aircraft" ? "Aircraft" : "Weather";
+      group.append(heading);
+
+      for (const event of events) {
+        const row = this.buildToggleRow(event.title, snapshot.activeEventIds.includes(event.id), (checked) => {
+          this.setEventEnabled(event.id, checked);
+        });
+        group.append(row);
+      }
+      container.append(group);
+    }
+  }
+
+  handleScenarioCommand(command, actionId = null) {
+    const scenarioStatus = this.eventSession?.getSnapshot().scenarioStatus;
+    if (!scenarioStatus || scenarioStatus === "unavailable") {
+      return false;
+    }
+    let changed = false;
+    if (command === "start") {
+      changed = this.eventSession.startScenario();
+    } else if (command === "pause") {
+      changed = this.eventSession.pauseScenario();
+    } else if (command === "reset") {
+      changed = this.eventSession.resetScenario();
+    } else if (command === "action" && actionId) {
+      changed = this.eventSession.applyScenarioAction(actionId);
+    }
+    const snapshot = this.eventSession.getSnapshot();
+    updateScenarioControls(this.elements.eventControls, snapshot);
+    this.publishScenarioSnapshot(snapshot);
+    if (snapshot.scenarioStatus === "running") {
+      this.startScenarioUiAnimation();
+    } else {
+      this.stopScenarioUiAnimation();
+    }
+    return changed;
+  }
+
+  startScenarioUiAnimation() {
+    if (this.scenarioUiFrameHandle || !this.eventSession) {
+      return;
+    }
+    const tick = (timestamp) => {
+      this.scenarioUiFrameHandle = 0;
+      if (!this.eventSession) {
+        return;
+      }
+      const snapshot = this.eventSession.getSnapshot();
+      updateScenarioControls(this.elements.eventControls, snapshot);
+      if (timestamp - this.lastScenarioBroadcastMs >= 50) {
+        this.lastScenarioBroadcastMs = timestamp;
+        this.publishScenarioSnapshot(snapshot);
+      }
+      if (snapshot.scenarioStatus === "running") {
+        this.scenarioUiFrameHandle = requestAnimationFrame(tick);
+      } else {
+        this.publishScenarioSnapshot(snapshot);
+      }
+    };
+    this.scenarioUiFrameHandle = requestAnimationFrame(tick);
+  }
+
+  stopScenarioUiAnimation() {
+    if (this.scenarioUiFrameHandle) {
+      cancelAnimationFrame(this.scenarioUiFrameHandle);
+      this.scenarioUiFrameHandle = 0;
+    }
+  }
+
+  publishScenarioSnapshot(snapshot = this.eventSession?.getSnapshot()) {
+    if (
+      !snapshot?.scenarioStatus
+      || snapshot.scenarioStatus === "unavailable"
+      || !this.linkSession.isConnected()
+      || !this.currentManifest
+    ) {
+      return;
+    }
+    this.linkSession.publishEvent({
+      action: "scenario-snapshot",
+      sectionId: this.currentManifest.id,
+      eventSetId: snapshot.eventSetId,
+      scenarioSnapshot: createScenarioSyncSnapshot(snapshot),
+    });
+  }
+
   resetTaskSession() {
     if (!this.activeTaskSet || this.taskSetLoading || this.sectionLoading) {
       return;
@@ -303,15 +594,28 @@ export class AppShell {
 
   syncSelectorDisabledStates() {
     const sectionCount = this.sectionIndex?.sections?.length ?? 0;
-    this.elements.sectionSelect.disabled = sectionCount <= 1 || this.sectionLoading || this.taskSetLoading;
+    this.elements.sectionSelect.disabled = sectionCount <= 1 || this.sectionLoading || this.taskSetLoading || this.eventSetLoading;
     this.elements.sectionSelect.setAttribute("aria-disabled", String(this.elements.sectionSelect.disabled));
     const taskSetCount = this.currentManifest?.training?.taskSets?.length ?? 0;
-    this.elements.instructionSelect.disabled = taskSetCount === 0 || this.sectionLoading || this.taskSetLoading;
+    this.elements.instructionSelect.disabled = taskSetCount === 0 || this.sectionLoading || this.taskSetLoading || this.eventSetLoading;
     this.elements.instructionSelect.setAttribute("aria-disabled", String(this.elements.instructionSelect.disabled));
     this.elements.instructionGroup.setAttribute("aria-busy", String(this.taskSetLoading));
+    const eventSetCount = this.currentManifest?.training?.eventSets?.length ?? 0;
+    this.elements.eventSelect.disabled = eventSetCount === 0 || this.sectionLoading || this.taskSetLoading || this.eventSetLoading;
+    this.elements.eventSelect.setAttribute("aria-disabled", String(this.elements.eventSelect.disabled));
+    this.elements.eventGroup.setAttribute("aria-busy", String(this.eventSetLoading));
     const hasTaskSession = Boolean(this.taskSession && !this.taskSession.disposed);
     this.elements.resetTaskSessionButton.hidden = !hasTaskSession;
     this.elements.resetTaskSessionButton.disabled = !hasTaskSession || this.sectionLoading || this.taskSetLoading;
+  }
+
+  setEventStatus(message, options = {}) {
+    this.elements.eventStatus.textContent = message;
+    if (options.error) {
+      this.elements.eventStatus.dataset.state = "error";
+    } else {
+      delete this.elements.eventStatus.dataset.state;
+    }
   }
 
   renderLayerControls(manifest) {
@@ -353,6 +657,22 @@ export class AppShell {
       labelRow.querySelector("input").disabled = !labelToggleAvailable;
 
       card.append(header, visibilityRow, labelRow);
+
+      if (layer.altitudeVolume) {
+        const altitudeRow = this.buildToggleRow(
+          "Altitude volume",
+          this.airspaceAltitudeMode,
+          (checked) => {
+            this.setAirspaceAltitudeMode(checked);
+          },
+        );
+        card.append(altitudeRow);
+
+        const altitudeNote = document.createElement("p");
+        altitudeNote.className = "hud-note layer-card-note";
+        altitudeNote.textContent = "Enable, then select an eligible airfield or airspace shelf to show its 3D volume.";
+        card.append(altitudeNote);
+      }
 
       layerCards.push(card);
     }
@@ -524,12 +844,38 @@ export class AppShell {
       title: "St. Louis Layers",
       subtitle: "Left wrist panel - stick click toggles",
       layers,
+      eventSets: (this.currentManifest.training?.eventSets ?? []).map((entry) => ({
+        id: entry.id,
+        title: entry.title,
+      })),
+      activeEventSetId: this.activeEventSet?.id ?? this.eventSession?.eventSet?.id ?? null,
+      eventSetLoading: this.eventSetLoading,
       onToggleLayerVisible: (layerId, checked) => this.updateLayerVisibility(layerId, checked),
       onToggleLabels: (layerId, checked) => this.updateLayerLabels(layerId, checked),
       onToggleAirspaceAltitude: (checked) => this.setAirspaceAltitudeMode(checked),
       onSetAllLayerVisible: (checked) => this.setAllLayerVisibility(checked),
       onSetAllLabels: (checked) => this.setAllLayerLabels(checked),
+      onSelectEventSet: (eventSetId) => this.handleEventSetChange(eventSetId),
+      onToggleEvent: (eventId, enabled) => this.setEventEnabled(eventId, enabled),
+      onScenarioCommand: (command, actionId) => this.handleScenarioCommand(command, actionId),
     });
+  }
+
+  setEventEnabled(eventId, enabled, options = {}) {
+    if (!this.eventSession) {
+      return;
+    }
+    const changed = this.eventSession.setEventEnabled(eventId, enabled);
+    if (changed && !options.suppressSync) {
+      this.publishEvent({
+        action: "toggle",
+        sectionId: this.currentManifest?.id,
+        eventSetId: this.eventSession.eventSet.id,
+        eventId,
+        enabled: Boolean(enabled),
+        activeEventIds: this.eventSession.getSnapshot().activeEventIds,
+      });
+    }
   }
 
   setAllLayerVisibility(checked) {
@@ -582,10 +928,14 @@ export class AppShell {
   setAirspaceAltitudeMode(enabled) {
     this.airspaceAltitudeMode = Boolean(enabled);
     this.sceneController.setAirspaceAltitudeMode?.(this.airspaceAltitudeMode);
+    if (this.currentManifest) {
+      this.renderLayerControls(this.currentManifest);
+    }
     this.syncVrControlPanel();
+    const sectionTitle = this.currentManifest?.title ?? "the current section";
     this.setStatus(
       this.airspaceAltitudeMode
-        ? "Airspace altitude mode enabled. Selected St. Louis airfield-related airspace now renders as a 3D proxy volume in VR."
+        ? `Airspace altitude mode enabled for ${sectionTitle}. Select an eligible airfield or airspace shelf to show its 3D volume.`
         : (this.defaultStatusMessage || "Airspace altitude mode disabled."),
     );
   }
@@ -606,12 +956,23 @@ export class AppShell {
       onSelection: (selection) => this.applyRemoteSelection(selection),
       onToggle: (toggle) => this.applyRemoteToggle(toggle),
       onInstruction: (instruction) => this.applyRemoteInstruction(instruction),
+      onEvent: (eventState) => this.applyRemoteEvent(eventState),
       onStatusChange: (status) => this.syncLinkStatus(status),
     });
     this.syncLinkStatus({
       connected: true,
       sessionId,
     });
+    if (this.eventSession && this.currentManifest) {
+      this.publishEvent({
+        action: "load",
+        sectionId: this.currentManifest.id,
+        eventSetId: this.eventSession.eventSet.id,
+        activeEventIds: this.eventSession.getSnapshot().activeEventIds,
+      });
+      this.publishScenarioSnapshot(this.eventSession.getSnapshot());
+      this.setEventStatus(`${this.eventSession.eventSet.title} sent to the linked 2D companion.`);
+    }
   }
 
   handleDisconnectLink() {
@@ -674,6 +1035,72 @@ export class AppShell {
     this.linkSession.publishToggle(toggle);
   }
 
+  async applyRemoteEvent(eventState) {
+    if (!eventState || !eventState.action) {
+      return;
+    }
+    this.applyingRemoteEvent = true;
+    try {
+      if (eventState.action === "clear") {
+        this.clearEventSession({ publish: false });
+        this.elements.eventSelect.value = "";
+        this.setEventStatus("Event session cleared from the 2D companion.");
+        this.setStatus(this.defaultStatusMessage || "Event session cleared from the 2D companion.");
+        return;
+      }
+      if (!eventState.sectionId || !eventState.eventSetId) {
+        return;
+      }
+      if (this.currentManifest?.id !== eventState.sectionId) {
+        await this.loadSectionById(eventState.sectionId);
+      }
+      if (eventState.action === "load") {
+        await this.handleEventSetChange(eventState.eventSetId, {
+          activeEventIds: eventState.activeEventIds ?? [],
+          suppressSync: true,
+        });
+        return;
+      }
+      if (eventState.action === "scenario-snapshot") {
+        return;
+      }
+      if (eventState.action === "scenario-command") {
+        if (this.eventSession?.eventSet?.id !== eventState.eventSetId) {
+          await this.handleEventSetChange(eventState.eventSetId, {
+            activeEventIds: eventState.activeEventIds ?? [],
+            suppressSync: true,
+          });
+        }
+        this.handleScenarioCommand(eventState.command, eventState.scenarioActionId);
+        return;
+      }
+      if (eventState.action === "toggle") {
+        if (this.eventSession?.eventSet?.id !== eventState.eventSetId) {
+          await this.handleEventSetChange(eventState.eventSetId, {
+            activeEventIds: eventState.activeEventIds ?? [],
+            suppressSync: true,
+          });
+        } else if (eventState.eventId && typeof eventState.enabled === "boolean") {
+          this.setEventEnabled(eventState.eventId, eventState.enabled, { suppressSync: true });
+        } else if (eventState.activeEventIds) {
+          this.eventSession.applyEnabledEventIds(eventState.activeEventIds);
+        }
+      }
+    } catch (error) {
+      console.error(error);
+      this.setStatus(`Unable to apply linked event state: ${error.message ?? error}`, { error: true });
+    } finally {
+      this.applyingRemoteEvent = false;
+    }
+  }
+
+  publishEvent(eventState) {
+    if (this.applyingRemoteEvent || !this.linkSession.isConnected()) {
+      return;
+    }
+    this.linkSession.publishEvent(eventState);
+  }
+
   async applyRemoteInstruction(instruction) {
     if (!instruction || !instruction.action) {
       return;
@@ -711,6 +1138,14 @@ export class AppShell {
       ? `Linked locally via session "${status.sessionId}".`
       : "Not linked. Start a local session to sync highlights with the 2D app.";
   }
+}
+
+function eventControlSignature(snapshot) {
+  return JSON.stringify({
+    eventSetId: snapshot?.eventSetId ?? null,
+    disposed: Boolean(snapshot?.disposed),
+    activeEventIds: snapshot?.activeEventIds ?? [],
+  });
 }
 
 function readPreferredSectionId(sectionIndex) {

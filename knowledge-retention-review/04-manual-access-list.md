@@ -1,0 +1,12 @@
+# Manual Access List
+
+Place legally obtained PDFs in `papers/manual-dropbox/`.
+
+1. **Walsh, James P.; Ungson, Gerardo Rivera (1991). “Organizational Memory.” Academy of Management Review, 16(1), 57–91.** DOI: [10.5465/AMR.1991.4278992](https://doi.org/10.5465/AMR.1991.4278992). Access note: publisher landing page located; institutional access may be required for the version of record.
+2. **Roediger, Henry L. III; Karpicke, Jeffrey D. (2006). “The Power of Testing Memory.” Perspectives on Psychological Science, 1(3), 181–210.** DOI: [10.1111/j.1745-6916.2006.00012.x](https://doi.org/10.1111/j.1745-6916.2006.00012.x). Access note: publisher full text may require access.
+3. **Roediger, Henry L. III; Butler, Andrew C. (2011). “The critical role of retrieval practice in long-term retention.” Trends in Cognitive Sciences, 15(1), 20–27.** DOI: [10.1016/j.tics.2010.09.003](https://doi.org/10.1016/j.tics.2010.09.003). Access note: abstract is public; version of record may require access.
+4. **DeLong, David W.; Davenport, Thomas (2003). “Better practices for retaining organizational knowledge.” Employment Relations Today, 30(3), 51–63.** DOI: [10.1002/ert.10098](https://doi.org/10.1002/ert.10098). Access note: Wiley landing page located; full-text access may vary.
+5. **Lewis, Kyle (2003). “Measuring transactive memory systems in the field.” Journal of Applied Psychology, 88(4), 587–604.** DOI: [10.1037/0021-9010.88.4.587](https://doi.org/10.1037/0021-9010.88.4.587). Access note: abstract public via PubMed; full text may require access.
+6. **Lewis, Kyle (2004). “Knowledge and Performance in Knowledge-Worker Teams.” Management Science, 50(11), 1519–1533.** DOI: [10.1287/mnsc.1040.0257](https://doi.org/10.1287/mnsc.1040.0257). Access note: abstract public; version of record may require institutional access.
+7. **Klammer, Adrian; Gueldenberg, Stefan (2019). “Unlearning and forgetting in organizations.” Journal of Knowledge Management, 23(5), 860–888.** DOI: [10.1108/JKM-05-2018-0277](https://doi.org/10.1108/JKM-05-2018-0277). Access note: publisher page exposes metadata/full-text view, but PDF access should be verified manually.
+8. **Mariano, Stefania; Casey, Andrea; Olivera, Fernando (2020). “Organizational forgetting Part I.” The Learning Organization.** [Publisher page](https://www.sciencedirect.com/science/article/pii/S0969647420000269). Access note: DOI and PDF access need confirmation from the publisher record.

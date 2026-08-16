@@ -42,6 +42,7 @@ export class MapCanvasView {
     this.imageCache = new Map();
     this.labelHitTargets = [];
     this.selection = null;
+    this.eventSnapshot = null;
     this.view = {
       scale: 1,
       offsetX: 0,
@@ -75,6 +76,7 @@ export class MapCanvasView {
     };
     this.layers.clear();
     this.selection = null;
+    this.eventSnapshot = null;
 
     for (const layerDef of manifest.layers) {
       const hydrated = this.hydrateLayerDefinition(layerDef);
@@ -182,6 +184,11 @@ export class MapCanvasView {
     if (notify) {
       this.onSelectionChange?.(this.selection);
     }
+  }
+
+  setEventSnapshot(snapshot) {
+    this.eventSnapshot = snapshot && !snapshot.disposed ? snapshot : null;
+    this.requestRender();
   }
 
   handleResize() {
@@ -314,6 +321,7 @@ export class MapCanvasView {
     }
 
     this.drawSelectedFeatureHighlight();
+    this.drawWeatherEvents();
 
     for (const [layerId, layerState] of this.layers.entries()) {
       if (!layerState.labelsVisible || !layerState.labelPayload) {
@@ -321,6 +329,7 @@ export class MapCanvasView {
       }
       this.drawLabelLayer(layerId, layerState);
     }
+    this.drawAircraftEvents();
   }
 
   resetContext(context) {
@@ -412,6 +421,58 @@ export class MapCanvasView {
         }),
       });
     }
+  }
+
+  drawWeatherEvents() {
+    const events = this.eventSnapshot?.activeEvents ?? [];
+    for (const event of events) {
+      if (event.type !== "weather") {
+        continue;
+      }
+      drawWeatherEvent(this.overlayCtx, event, this.view, this.sectionMetrics, (target) => this.resolveTargetChartPoint(target));
+    }
+  }
+
+  drawAircraftEvents() {
+    const events = this.eventSnapshot?.activeEvents ?? [];
+    const aircraftStates = new Map(
+      (this.eventSnapshot?.aircraftStates ?? []).map((state) => [state.eventId, state]),
+    );
+    for (const event of events) {
+      if (event.type !== "aircraft") {
+        continue;
+      }
+      const state = aircraftStates.get(event.id);
+      const renderedEvent = state
+        ? {
+            ...event,
+            position: state.position ?? event.position,
+            altitude: state.altitude ?? event.altitude,
+            orientation: {
+              ...event.orientation,
+              headingDeg: state.headingDeg ?? event.orientation?.headingDeg ?? 0,
+            },
+          }
+        : event;
+      drawAircraftEvent(this.labelCtx, renderedEvent, this.view, this.sectionMetrics, (target) => this.resolveTargetChartPoint(target));
+    }
+  }
+
+  resolveTargetChartPoint(target) {
+    if (!target?.layerId || !target?.selectionId) {
+      return null;
+    }
+    const layerState = this.layers.get(target.layerId);
+    const labelItem = layerState?.labelPayload?.items?.find((item) =>
+      item.id === target.selectionId || (item.selectionId ?? item.id) === target.selectionId);
+    if (labelItem && Number.isFinite(labelItem.x) && Number.isFinite(labelItem.y)) {
+      return { x: labelItem.x, y: labelItem.y };
+    }
+    const region = layerState?.overlayPayload?.interactionRegions?.find((entry) => entry.id === target.selectionId);
+    if (region) {
+      return centroidOfParts(region.parts ?? []);
+    }
+    return null;
   }
 
   selectVisibleLabelItems(layerState) {
@@ -652,6 +713,125 @@ function drawConnector(ctx, view, anchorX, anchorY, box) {
   ctx.restore();
 }
 
+function drawWeatherEvent(ctx, event, view, sectionMetrics, resolveTarget) {
+  const geometry = event.geometry;
+  ctx.save();
+  ctx.fillStyle = "rgba(14, 165, 233, 0.26)";
+  ctx.strokeStyle = "rgba(3, 105, 161, 0.82)";
+  ctx.lineWidth = 2;
+  ctx.setLineDash([8, 5]);
+
+  let labelPoint = null;
+  if (geometry?.type === "circle") {
+    const center = normalizedToChartPoint(sectionMetrics, geometry.x, geometry.y);
+    const screen = chartPointToScreen(view, center.x, center.y);
+    const radius = Math.max(4, geometry.radius * sectionMetrics.pixelWidth * view.scale);
+    ctx.beginPath();
+    ctx.arc(screen.x, screen.y, radius, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    labelPoint = center;
+  } else if (geometry?.type === "polygon" && Array.isArray(geometry.points)) {
+    const points = geometry.points.map((point) => normalizedToChartPoint(sectionMetrics, point[0], point[1]));
+    if (points.length >= 3) {
+      ctx.beginPath();
+      points.forEach((point, index) => {
+        const screen = chartPointToScreen(view, point.x, point.y);
+        if (index === 0) {
+          ctx.moveTo(screen.x, screen.y);
+        } else {
+          ctx.lineTo(screen.x, screen.y);
+        }
+      });
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+      labelPoint = centroidOfPoints(points);
+    }
+  } else {
+    labelPoint = event.position
+      ? normalizedToChartPoint(sectionMetrics, event.position.x, event.position.y)
+      : resolveTarget(event.target);
+    if (labelPoint) {
+      const screen = chartPointToScreen(view, labelPoint.x, labelPoint.y);
+      ctx.beginPath();
+      ctx.arc(screen.x, screen.y, Math.max(16, 28 * view.scale), 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+    }
+  }
+
+  ctx.setLineDash([]);
+  if (labelPoint && event.visual?.label) {
+    drawEventLabel(ctx, view, labelPoint, `${event.visual.label} ${formatWeatherAltitude(event.altitude)}`, "#0369a1", "#e0f2fe");
+  }
+  ctx.restore();
+}
+
+function drawAircraftEvent(ctx, event, view, sectionMetrics, resolveTarget) {
+  const chartPoint = event.position
+    ? normalizedToChartPoint(sectionMetrics, event.position.x, event.position.y)
+    : resolveTarget(event.target);
+  if (!chartPoint) {
+    return;
+  }
+
+  const screen = chartPointToScreen(view, chartPoint.x, chartPoint.y);
+  const size = Math.max(12, 20 * Math.sqrt(view.scale));
+  const headingDeg = Number(event.orientation?.headingDeg ?? 0);
+  ctx.save();
+  ctx.translate(screen.x, screen.y);
+  ctx.rotate((headingDeg * Math.PI) / 180);
+  ctx.fillStyle = "#ef4444";
+  ctx.strokeStyle = "#7f1d1d";
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(0, -size);
+  ctx.lineTo(size * 0.62, size * 0.78);
+  ctx.lineTo(0, size * 0.42);
+  ctx.lineTo(-size * 0.62, size * 0.78);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+  ctx.restore();
+
+  if (event.visual?.label) {
+    drawEventLabel(
+      ctx,
+      view,
+      chartPoint,
+      `${event.visual.label} ${formatAircraftAltitude(event.altitude)} H${formatHeading(headingDeg)}`,
+      "#7f1d1d",
+      "#fee2e2",
+      { offsetY: -34 },
+    );
+  }
+}
+
+function formatHeading(headingDeg) {
+  const normalized = ((Number(headingDeg) % 360) + 360) % 360;
+  return `${Math.round(normalized)}`.padStart(3, "0");
+}
+
+function drawEventLabel(ctx, view, chartPoint, text, fill, textColor, { offsetY = -26 } = {}) {
+  const screen = chartPointToScreen(view, chartPoint.x, chartPoint.y);
+  const label = `${text}`;
+  ctx.save();
+  ctx.font = `700 12px ${BASE_LABEL_FONT}`;
+  const width = Math.max(72, ctx.measureText(label).width + 18);
+  const height = 26;
+  const x = screen.x - width / 2;
+  const y = screen.y + offsetY - height / 2;
+  ctx.fillStyle = fill;
+  roundRect(ctx, x, y, width, height, 8);
+  ctx.fill();
+  ctx.fillStyle = textColor;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(label, screen.x, y + height / 2 + 0.5);
+  ctx.restore();
+}
+
 function measureLabelBox(ctx, lines, chartX, chartY, view, selected) {
   const fontSize = selected ? 12.5 : 12;
   let maxWidth = 92;
@@ -699,6 +879,46 @@ function chartPointToScreen(view, x, y) {
     x: view.offsetX + x * view.scale,
     y: view.offsetY + y * view.scale,
   };
+}
+
+function normalizedToChartPoint(sectionMetrics, x, y) {
+  return {
+    x: x * sectionMetrics.pixelWidth,
+    y: y * sectionMetrics.pixelHeight,
+  };
+}
+
+function centroidOfParts(parts) {
+  const points = parts.flatMap((part) => Array.isArray(part) ? part : []);
+  return centroidOfPoints(points.map((point) => ({ x: point[0], y: point[1] })));
+}
+
+function centroidOfPoints(points) {
+  const validPoints = points.filter((point) => Number.isFinite(point.x) && Number.isFinite(point.y));
+  if (!validPoints.length) {
+    return null;
+  }
+  const sum = validPoints.reduce((accumulator, point) => ({
+    x: accumulator.x + point.x,
+    y: accumulator.y + point.y,
+  }), { x: 0, y: 0 });
+  return {
+    x: sum.x / validPoints.length,
+    y: sum.y / validPoints.length,
+  };
+}
+
+function formatAircraftAltitude(altitude) {
+  const reference = altitude?.reference ?? "MSL";
+  const value = Number.isFinite(Number(altitude?.valueFt)) ? Number(altitude.valueFt) : 1200;
+  return `${Math.round(value)} ${reference}`;
+}
+
+function formatWeatherAltitude(altitude) {
+  const reference = altitude?.reference ?? "MSL";
+  const base = Number.isFinite(Number(altitude?.baseFt)) ? Number(altitude.baseFt) : 1000;
+  const top = Number.isFinite(Number(altitude?.topFt)) ? Number(altitude.topFt) : 3000;
+  return `${Math.round(base)}-${Math.round(Math.max(base, top))} ${reference}`;
 }
 
 function pickBaseLevel(tilePyramid, displayWidth) {

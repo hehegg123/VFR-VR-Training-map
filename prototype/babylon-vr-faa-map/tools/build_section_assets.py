@@ -26,6 +26,7 @@ DATA_ROOT = APP_ROOT / "data"
 SECTIONS_ROOT = DATA_ROOT / "sections"
 TOOLS_ROOT = PROTOTYPE_ROOT / "tools"
 TRAINING_TASK_SETS_ROOT = PROTOTYPE_ROOT / "training" / "task-sets"
+TRAINING_EVENT_SETS_ROOT = PROTOTYPE_ROOT / "training" / "event-sets"
 
 sys.path.insert(0, str(TOOLS_ROOT))
 
@@ -42,6 +43,7 @@ import build_daytona_navaids_layer as day_navaids
 import build_daytona_victors_layer as day_victors
 import daytona_geotiff as day_geo
 from airspace_asset_contract import assert_valid_airspace_payloads, assert_valid_staged_section, stage_airspace_label_row
+from event_set_contract import stage_section_event_sets
 from task_set_contract import collect_staged_selection_ids, stage_section_task_sets
 
 STL_AIRPORTS_MODULE = stl_airports
@@ -643,6 +645,7 @@ def build_stlouis_navaid_labels(features: dict[str, object], scale_x: float, sca
         items.append(
             {
                 "id": row["id"],
+                "navaidType": row["navaid_type"],
                 "x": compact_number(sx),
                 "y": compact_number(sy),
                 "lines": row["lines"],
@@ -1287,17 +1290,26 @@ def build_bound_section(
         ],
     }
 
+    layer_ids = {layer["id"] for layer in manifest["layers"]}
+    selection_ids_by_layer = collect_staged_selection_ids(
+        section_root=section_root,
+        layers=manifest["layers"],
+    )
     manifest["training"] = {
         "taskSets": stage_section_task_sets(
             training_root=TRAINING_TASK_SETS_ROOT,
             section_root=section_root,
             section_id=section_id,
-            layer_ids={layer["id"] for layer in manifest["layers"]},
-            selection_ids_by_layer=collect_staged_selection_ids(
-                section_root=section_root,
-                layers=manifest["layers"],
-            ),
-        )
+            layer_ids=layer_ids,
+            selection_ids_by_layer=selection_ids_by_layer,
+        ),
+        "eventSets": stage_section_event_sets(
+            training_root=TRAINING_EVENT_SETS_ROOT,
+            section_root=section_root,
+            section_id=section_id,
+            layer_ids=layer_ids,
+            selection_ids_by_layer=selection_ids_by_layer,
+        ),
     }
 
     write_json(section_root / "manifest.json", manifest)

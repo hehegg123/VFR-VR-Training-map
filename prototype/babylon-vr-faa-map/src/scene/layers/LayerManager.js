@@ -6,7 +6,8 @@ import {
 import { RasterLayer } from "./RasterLayer.js";
 import { TiledRasterLayer } from "./TiledRasterLayer.js";
 import { VectorOverlayLayer } from "./VectorOverlayLayer.js?v=20260514-feature-highlight-v1";
-import { AirspaceAltitudeOverlay } from "./AirspaceAltitudeOverlay.js?v=20260615-master-control-v1";
+import { AirspaceAltitudeOverlay } from "./AirspaceAltitudeOverlay.js?v=20260712-event-altitude-v1";
+import { EventOverlayLayer } from "./EventOverlayLayer.js";
 import { VrLabelLayer } from "./VrLabelLayer.js?v=20260618-airspace-picking-v1";
 
 export class LayerManager {
@@ -22,6 +23,7 @@ export class LayerManager {
     this.layerInteractionState = new Map();
     this.airspaceAltitudeEnabled = false;
     this.airspaceAltitudeOverlay = null;
+    this.eventOverlayLayer = null;
     this.selectedAirspaceId = null;
     this.airspaceRegionById = new Map();
     this.selectedLabel = null;
@@ -103,6 +105,13 @@ export class LayerManager {
         this.airspaceAltitudeOverlay.setEnabled(this.airspaceAltitudeEnabled);
       }
     }
+    this.eventOverlayLayer = new EventOverlayLayer(
+      this.scene,
+      this.mapRoot,
+      this.sectionMetrics,
+      (target) => this.resolveSelectionChartPoint(target),
+      manifest.layers.find((layer) => layer.id === "airspace")?.altitudeVolume ?? {},
+    );
     this.clearSelections();
   }
 
@@ -456,11 +465,34 @@ export class LayerManager {
     return this.currentSelection;
   }
 
+  setEventSnapshot(snapshot) {
+    this.eventOverlayLayer?.setSnapshot(snapshot);
+  }
+
+  resolveSelectionChartPoint(target) {
+    if (!target?.layerId || !target?.selectionId) {
+      return null;
+    }
+    const layer = this.layers.get(target.layerId);
+    const labelItem = layer?.labelLayer?.labelPayload?.items?.find((item) =>
+      item.id === target.selectionId || (item.selectionId ?? item.id) === target.selectionId);
+    if (labelItem && Number.isFinite(labelItem.x) && Number.isFinite(labelItem.y)) {
+      return { x: labelItem.x, y: labelItem.y };
+    }
+    const region = layer?.renderLayer?.overlayPayload?.interactionRegions?.find((entry) => entry.id === target.selectionId);
+    if (region) {
+      return centroidOfParts(region.parts ?? []);
+    }
+    return null;
+  }
+
   dispose() {
     this.clearSelections();
     this.hoveredLabel = null;
     this.airspaceAltitudeOverlay?.dispose();
     this.airspaceAltitudeOverlay = null;
+    this.eventOverlayLayer?.dispose();
+    this.eventOverlayLayer = null;
     for (const layer of this.layers.values()) {
       layer.labelLayer?.dispose();
       layer.renderLayer.dispose();
@@ -508,6 +540,22 @@ export class LayerManager {
     }
     this.airspaceAltitudeOverlay?.setSelection(this.selectedAirspaceId);
   }
+}
+
+function centroidOfParts(parts) {
+  const points = parts.flatMap((part) => Array.isArray(part) ? part : []);
+  const validPoints = points.filter((point) => Array.isArray(point) && Number.isFinite(point[0]) && Number.isFinite(point[1]));
+  if (!validPoints.length) {
+    return null;
+  }
+  const sum = validPoints.reduce((accumulator, point) => ({
+    x: accumulator.x + point[0],
+    y: accumulator.y + point[1],
+  }), { x: 0, y: 0 });
+  return {
+    x: sum.x / validPoints.length,
+    y: sum.y / validPoints.length,
+  };
 }
 
 function findInteractionMetadata(mesh) {

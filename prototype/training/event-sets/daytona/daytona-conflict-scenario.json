@@ -1,0 +1,165 @@
+{
+  "schema": "faa-vr-event-set-v1",
+  "id": "daytona-conflict-scenario",
+  "sectionId": "daytona",
+  "title": "Daytona Conflict Scenario",
+  "scenario": {
+    "durationSec": 90,
+    "alertLookaheadSec": 30,
+    "coordinateScale": {
+      "widthNm": 120,
+      "heightNm": 96
+    },
+    "separation": {
+      "horizontalNm": 5,
+      "verticalFt": 1000
+    },
+    "metadata": {
+      "description": "Two aircraft converge at FL350. The trainee turns Flight A right to heading 130, then resumes the route after separation is safe.",
+      "trainingObjective": "Recognize a developing loss of separation and apply a simple heading instruction."
+    },
+    "actions": [
+      {
+        "id": "flight-a-turn-right-130",
+        "title": "Flight A: Turn Right Heading 130",
+        "type": "turnHeading",
+        "aircraftId": "flight-a-eastbound",
+        "headingDeg": 130
+      },
+      {
+        "id": "flight-a-resume-route",
+        "title": "Flight A: Resume Route",
+        "type": "resumeRoute",
+        "aircraftId": "flight-a-eastbound"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "flight-a-eastbound",
+      "type": "aircraft",
+      "title": "Flight A Eastbound",
+      "triggerMode": "manual",
+      "defaultEnabled": true,
+      "position": {
+        "x": 0.35,
+        "y": 0.52
+      },
+      "altitude": {
+        "valueFt": 35000,
+        "reference": "MSL"
+      },
+      "orientation": {
+        "headingDeg": 90
+      },
+      "route": {
+        "points": [
+          {
+            "timeSec": 0,
+            "position": {
+              "x": 0.35,
+              "y": 0.52
+            },
+            "altitude": {
+              "valueFt": 35000,
+              "reference": "MSL"
+            },
+            "headingDeg": 90
+          },
+          {
+            "timeSec": 45,
+            "position": {
+              "x": 0.535,
+              "y": 0.52
+            },
+            "altitude": {
+              "valueFt": 35000,
+              "reference": "MSL"
+            },
+            "headingDeg": 90
+          },
+          {
+            "timeSec": 90,
+            "position": {
+              "x": 0.72,
+              "y": 0.52
+            },
+            "altitude": {
+              "valueFt": 35000,
+              "reference": "MSL"
+            },
+            "headingDeg": 90
+          }
+        ]
+      },
+      "visual": {
+        "label": "Flight A",
+        "model": "crj-900-cityjet",
+        "scale": 1.0
+      }
+    },
+    {
+      "id": "flight-b-northbound",
+      "type": "aircraft",
+      "title": "Flight B Northbound",
+      "triggerMode": "manual",
+      "defaultEnabled": true,
+      "position": {
+        "x": 0.535,
+        "y": 0.72
+      },
+      "altitude": {
+        "valueFt": 35000,
+        "reference": "MSL"
+      },
+      "orientation": {
+        "headingDeg": 0
+      },
+      "route": {
+        "points": [
+          {
+            "timeSec": 0,
+            "position": {
+              "x": 0.535,
+              "y": 0.72
+            },
+            "altitude": {
+              "valueFt": 35000,
+              "reference": "MSL"
+            },
+            "headingDeg": 0
+          },
+          {
+            "timeSec": 45,
+            "position": {
+              "x": 0.535,
+              "y": 0.52
+            },
+            "altitude": {
+              "valueFt": 35000,
+              "reference": "MSL"
+            },
+            "headingDeg": 0
+          },
+          {
+            "timeSec": 90,
+            "position": {
+              "x": 0.535,
+              "y": 0.32
+            },
+            "altitude": {
+              "valueFt": 35000,
+              "reference": "MSL"
+            },
+            "headingDeg": 0
+          }
+        ]
+      },
+      "visual": {
+        "label": "Flight B",
+        "model": "crj-900-cityjet",
+        "scale": 1.0
+      }
+    }
+  ]
+}

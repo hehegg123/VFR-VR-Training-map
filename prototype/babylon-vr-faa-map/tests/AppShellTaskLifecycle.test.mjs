@@ -20,7 +20,23 @@ globalThis.__TestManifests = new Map();
 const appShellSource = await readFile(new URL("../src/app/AppShell.js", import.meta.url), "utf8");
 const classStart = appShellSource.indexOf("export class AppShell");
 const testableSource = `
+const EventSetRepository = class {};
 const TaskSetRepository = class {};
+const EventSession = class {
+  constructor(eventSet) {
+    this.eventSet = eventSet;
+    this.subscribers = new Set();
+  }
+  getSnapshot() {
+    return { eventSetId: this.eventSet.id, activeEventIds: [], activeEvents: [], events: this.eventSet.events ?? [], disposed: false };
+  }
+  subscribe(listener) {
+    this.subscribers.add(listener);
+    listener(this.getSnapshot());
+    return () => this.subscribers.delete(listener);
+  }
+  dispose() {}
+};
 const TaskSession = globalThis.__TestTaskSession;
 const TaskEventLog = globalThis.__TestTaskEventLog;
 const TASK_EVENT_TYPES = globalThis.__TestTaskEventTypes;
@@ -33,11 +49,13 @@ const BroadcastLinkSession = class {
     this.sessionId = "";
     this.selections = [];
     this.toggles = [];
+    this.events = [];
   }
   isConnected() { return this.connected; }
   disconnect() { this.connected = false; this.sessionId = ""; }
   publishSelection(selection) { this.selections.push(selection); }
   publishToggle(toggle) { this.toggles.push(toggle); }
+  publishEvent(eventState) { this.events.push(eventState); }
 };
 const generateSessionId = () => "test";
 const readSavedSessionId = () => "";
@@ -64,6 +82,7 @@ test("instruction selector handles loading, removal, failure, and section switch
     setAirspaceAltitudeMode() {},
     taskSessions: [],
     setVrTaskSession(taskSession) { this.taskSessions.push(taskSession); },
+    setVrEventSession() {},
   };
   shell.renderLayerControls = () => {};
   shell.syncVrControlPanel = () => {};
@@ -146,12 +165,48 @@ test("instruction selector handles loading, removal, failure, and section switch
   assert.equal(elements.instructionSelect.disabled, false);
 });
 
+test("VR panel configuration exposes section event sets and selection callback", () => {
+  const shell = new AppShell(createElements());
+  const selections = [];
+  let panelConfig = null;
+  shell.currentManifest = {
+    id: "daytona",
+    layers: [{ id: "base", title: "Base", defaultVisible: true }],
+    training: {
+      eventSets: [
+        { id: "daytona-basic-events", title: "Daytona Basic Events", data: "events/basic.json" },
+        { id: "daytona-conflict-scenario", title: "Daytona Conflict Scenario", data: "events/conflict.json" },
+      ],
+    },
+  };
+  shell.sceneController = {
+    setVrControlPanel(config) {
+      panelConfig = config;
+    },
+  };
+  shell.handleEventSetChange = (eventSetId) => selections.push(eventSetId);
+
+  shell.syncVrControlPanel();
+
+  assert.deepEqual(panelConfig.eventSets, [
+    { id: "daytona-basic-events", title: "Daytona Basic Events" },
+    { id: "daytona-conflict-scenario", title: "Daytona Conflict Scenario" },
+  ]);
+  assert.equal(panelConfig.activeEventSetId, null);
+  panelConfig.onSelectEventSet("daytona-conflict-scenario");
+  assert.deepEqual(selections, ["daytona-conflict-scenario"]);
+});
+
 function createElements() {
   return {
     sectionSelect: new FakeSelect(),
     instructionSelect: new FakeSelect(),
     instructionGroup: new FakeElement(),
     resetTaskSessionButton: new FakeElement(),
+    eventSelect: new FakeSelect(),
+    eventGroup: new FakeElement(),
+    eventControls: new FakeElement(),
+    eventStatus: { dataset: {}, textContent: "" },
     sectionQuality: { dataset: {}, textContent: "", title: "" },
     statusLine: { dataset: {}, textContent: "" },
   };

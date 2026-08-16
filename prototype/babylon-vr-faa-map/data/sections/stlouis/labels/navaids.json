@@ -3,11 +3,13 @@
   "items": [
     {
       "id": "AXC",
+      "navaidType": "VORTAC",
       "x": 4500.839,
       "y": 1457.262,
       "lines": [
         "AXC",
         "ADDERS",
+        "VORTAC",
         "117.2 / 119X"
       ],
       "style": "navaid-vor",
@@ -15,11 +17,13 @@
     },
     {
       "id": "BIB",
+      "navaidType": "VORTAC",
       "x": 5238.552,
       "y": 3610.466,
       "lines": [
         "BIB",
         "BIBLE GROVE",
+        "VORTAC",
         "109 / 27X"
       ],
       "style": "navaid-vor",
@@ -27,11 +31,13 @@
     },
     {
       "id": "BNA",
+      "navaidType": "VORTAC",
       "x": 8981.673,
       "y": 10905.37,
       "lines": [
         "BNA",
         "NASHVILLE",
+        "VORTAC",
         "114.1 / 88X"
       ],
       "style": "navaid-vor",
@@ -39,11 +45,13 @@
     },
     {
       "id": "CMI",
+      "navaidType": "VORTAC",
       "x": 5683.369,
       "y": 690.274,
       "lines": [
         "CMI",
         "CHAMPAIGN",
+        "VORTAC",
         "115.75 / 104Y"
       ],
       "style": "navaid-vor",
@@ -51,11 +59,13 @@
     },
     {
       "id": "ENL",
+      "navaidType": "VORTAC",
       "x": 3828.76,
       "y": 4903.39,
       "lines": [
         "ENL",
         "CENTRALIA",
+        "VORTAC",
         "115 / 97X"
       ],
       "style": "navaid-vor",
@@ -63,11 +73,13 @@
     },
     {
       "id": "FAM",
+      "navaidType": "VORTAC",
       "x": 1557.14,
       "y": 6808.989,
       "lines": [
         "FAM",
         "FARMINGTON",
+        "VORTAC",
         "115.7 / 104X"
       ],
       "style": "navaid-vor",
@@ -75,11 +87,13 @@
     },
     {
       "id": "FTZ",
+      "navaidType": "VORTAC",
       "x": 117.941,
       "y": 4086.244,
       "lines": [
         "FTZ",
         "FORISTELL",
+        "VORTAC",
         "110.8 / 45X"
       ],
       "style": "navaid-vor",
@@ -87,11 +101,13 @@
     },
     {
       "id": "IIU",
+      "navaidType": "VORTAC",
       "x": 11231.634,
       "y": 5722.88,
       "lines": [
         "IIU",
         "LOUISVILLE",
+        "VORTAC",
         "114.8 / 95X"
       ],
       "style": "navaid-vor",
@@ -99,11 +115,13 @@
     },
     {
       "id": "OOM",
+      "navaidType": "VORTAC",
       "x": 9062.342,
       "y": 3026.175,
       "lines": [
         "OOM",
         "HOOSIER",
+        "VORTAC",
         "110.2 / 39X"
       ],
       "style": "navaid-vor",
@@ -111,11 +129,13 @@
     },
     {
       "id": "PXV",
+      "navaidType": "VORTAC",
       "x": 6705.633,
       "y": 6220.384,
       "lines": [
         "PXV",
         "POCKET CITY",
+        "VORTAC",
         "113.3 / 80X"
       ],
       "style": "navaid-vor",
@@ -123,11 +143,13 @@
     },
     {
       "id": "SPI",
-      "x": 2842.318,
+      "navaidType": "VORTAC",
+      "x": 2700.605,
       "y": 1158.793,
       "lines": [
         "SPI",
         "SPINNER",
+        "VORTAC",
         "112.7 / 74X"
       ],
       "style": "navaid-vor",
@@ -135,11 +157,13 @@
     },
     {
       "id": "STL",
+      "navaidType": "VORTAC",
       "x": 1135.525,
       "y": 3683.391,
       "lines": [
         "STL",
         "ST LOUIS",
+        "VORTAC",
         "117.4 / 121X"
       ],
       "style": "navaid-vor",
@@ -147,11 +171,13 @@
     },
     {
       "id": "TOY",
+      "navaidType": "VORTAC",
       "x": 2283.221,
       "y": 4034.133,
       "lines": [
         "TOY",
         "TROY",
+        "VORTAC",
         "116 / 107X"
       ],
       "style": "navaid-vor",
@@ -159,11 +185,13 @@
     },
     {
       "id": "TTH",
+      "navaidType": "VORTAC",
       "x": 7760.692,
       "y": 2128.218,
       "lines": [
         "TTH",
         "TERRE HAUTE",
+        "VORTAC",
         "115.3 / 100X"
       ],
       "style": "navaid-vor",
@@ -171,11 +199,13 @@
     },
     {
       "id": "VHP",
+      "navaidType": "VORTAC",
       "x": 9543.446,
       "y": 1260.372,
       "lines": [
         "VHP",
         "BRICKYARD",
+        "VORTAC",
         "116.3 / 110X"
       ],
       "style": "navaid-vor",
@@ -183,11 +213,13 @@
     },
     {
       "id": "CKV",
+      "navaidType": "VOR/DME",
       "x": 7434.619,
       "y": 9642.63,
       "lines": [
         "CKV",
         "CLARKSVILLE",
+        "VOR/DME",
         "110.6 / 43X"
       ],
       "style": "navaid-vor",
@@ -195,11 +227,13 @@
     },
     {
       "id": "CNG",
+      "navaidType": "VOR/DME",
       "x": 4442.24,
       "y": 8611.04,
       "lines": [
         "CNG",
         "CUNNINGHAM",
+        "VOR/DME",
         "113.1 / 78X"
       ],
       "style": "navaid-vor",
@@ -207,11 +241,13 @@
     },
     {
       "id": "DQN",
+      "navaidType": "VOR/DME",
       "x": 13515.909,
       "y": 644.249,
       "lines": [
         "DQN",
         "DAYTON",
+        "VOR/DME",
         "114.5 / 92X"
       ],
       "style": "navaid-vor",
@@ -219,11 +255,13 @@
     },
     {
       "id": "EWO",
+      "navaidType": "VOR/DME",
       "x": 11050.936,
       "y": 6962.402,
       "lines": [
         "EWO",
         "NEW HOPE",
+        "VOR/DME",
         "113.95 / 86Y"
       ],
       "style": "navaid-vor",
@@ -231,11 +269,13 @@
     },
     {
       "id": "FLM",
+      "navaidType": "VOR/DME",
       "x": 13807.491,
       "y": 4223.681,
       "lines": [
         "FLM",
         "FALMOUTH",
+        "VOR/DME",
         "117 / 117X"
       ],
       "style": "navaid-vor",
@@ -243,11 +283,13 @@
     },
     {
       "id": "FTK",
+      "navaidType": "VOR/DME",
       "x": 10421.515,
       "y": 6251.559,
       "lines": [
         "FTK",
         "FT KNOX",
+        "VOR/DME",
         "109.6 / 33X"
       ],
       "style": "navaid-vor",
@@ -255,11 +297,13 @@
     },
     {
       "id": "HYK",
+      "navaidType": "VOR/DME",
       "x": 13530.316,
       "y": 6023.909,
       "lines": [
         "HYK",
         "LEXINGTON",
+        "VOR/DME",
         "112.6 / 73X"
       ],
       "style": "navaid-vor",
@@ -267,11 +311,13 @@
     },
     {
       "id": "LOZ",
+      "navaidType": "VOR/DME",
       "x": 14366.921,
       "y": 8442.24,
       "lines": [
         "LOZ",
         "LONDON",
+        "VOR/DME",
         "116.55 / 112Y"
       ],
       "style": "navaid-vor",
@@ -279,11 +325,13 @@
     },
     {
       "id": "LVT",
+      "navaidType": "VOR/DME",
       "x": 12177.502,
       "y": 9681.849,
       "lines": [
         "LVT",
         "LIVINGSTON",
+        "VOR/DME",
         "114.35 / 90Y"
       ],
       "style": "navaid-vor",
@@ -291,11 +339,13 @@
     },
     {
       "id": "MIE",
-      "x": 11490.379,
+      "navaidType": "VOR/DME",
+      "x": 11348.667,
       "y": 118.099,
       "lines": [
         "MIE",
         "MUNCIE",
+        "VOR/DME",
         "114.4 / 91X"
       ],
       "style": "navaid-vor",
@@ -303,11 +353,13 @@
     },
     {
       "id": "MXQ",
+      "navaidType": "VOR/DME",
       "x": 14634.854,
       "y": 2141.509,
       "lines": [
         "MXQ",
         "MIDWEST",
+        "VOR/DME",
         "112.9 / 76X"
       ],
       "style": "navaid-vor",
@@ -315,11 +367,13 @@
     },
     {
       "id": "OWB",
+      "navaidType": "VOR/DME",
       "x": 7945.336,
       "y": 6704.032,
       "lines": [
         "OWB",
         "OWENSBORO",
+        "VOR/DME",
         "108.65 / 23Y"
       ],
       "style": "navaid-vor",
@@ -327,11 +381,13 @@
     },
     {
       "id": "SHB",
+      "navaidType": "VOR/DME",
       "x": 10651.466,
       "y": 1722.731,
       "lines": [
         "SHB",
         "SHELBYVILLE",
+        "VOR/DME",
         "116.15 / 108Y"
       ],
       "style": "navaid-vor",
@@ -339,11 +395,13 @@
     },
     {
       "id": "FFT",
+      "navaidType": "VOR",
       "x": 12610.871,
       "y": 5483.946,
       "lines": [
         "FFT",
         "FRANKFT",
+        "VOR",
         "109.4"
       ],
       "style": "navaid-vor",
@@ -351,11 +409,13 @@
     },
     {
       "id": "MYS",
+      "navaidType": "VOR",
       "x": 9857.343,
       "y": 6294.077,
       "lines": [
         "MYS",
         "MYSTIC",
+        "VOR",
         "108.2"
       ],
       "style": "navaid-vor",
@@ -363,11 +423,13 @@
     },
     {
       "id": "CVG",
+      "navaidType": "TACAN",
       "x": 12972.679,
       "y": 3287.65,
       "lines": [
         "CVG",
         "CINCINNATI",
+        "TACAN",
         "117.3 / 120X"
       ],
       "style": "navaid-vor",
@@ -375,11 +437,13 @@
     },
     {
       "id": "DYR",
+      "navaidType": "TACAN",
       "x": 3313.311,
       "y": 11115.717,
       "lines": [
         "DYR",
         "DYERSBURG",
+        "TACAN",
         "116.8 / 115X"
       ],
       "style": "navaid-vor",
@@ -387,11 +451,13 @@
     },
     {
       "id": "HXW",
+      "navaidType": "TACAN",
       "x": 7085.05,
       "y": 9544.999,
       "lines": [
         "HXW",
         "SCREAMING EAGLE",
+        "TACAN",
         "114.9 / 96X"
       ],
       "style": "navaid-vor",
@@ -399,11 +465,13 @@
     },
     {
       "id": "MAW",
+      "navaidType": "TACAN",
       "x": 2156.339,
       "y": 9754.781,
       "lines": [
         "MAW",
         "MALDEN",
+        "TACAN",
         "111.2 / 49X"
       ],
       "style": "navaid-vor",
@@ -411,11 +479,13 @@
     },
     {
       "id": "SKE",
+      "navaidType": "TACAN",
       "x": 2408.419,
       "y": 4545.448,
       "lines": [
         "SKE",
         "SCOTT",
+        "TACAN",
         "112.2 / 59X"
       ],
       "style": "navaid-vor",
@@ -423,11 +493,13 @@
     },
     {
       "id": "AAA",
+      "navaidType": "NDB",
       "x": 3532.44,
       "y": 331.718,
       "lines": [
         "AAA",
         "ABRAHAM",
+        "NDB",
         "329"
       ],
       "style": "navaid-ndb",
@@ -435,11 +507,13 @@
     },
     {
       "id": "AI",
+      "navaidType": "NDB",
       "x": 11251.262,
       "y": 563.625,
       "lines": [
         "AI",
         "VIDEO",
+        "NDB",
         "394"
       ],
       "style": "navaid-ndb",
@@ -447,11 +521,13 @@
     },
     {
       "id": "AT",
+      "navaidType": "NDB",
       "x": 13642.174,
       "y": 1085.107,
       "lines": [
         "AT",
         "BRUNY",
+        "NDB",
         "315"
       ],
       "style": "navaid-ndb",
@@ -459,11 +535,13 @@
     },
     {
       "id": "BA",
+      "navaidType": "NDB",
       "x": 10663.847,
       "y": 2537.407,
       "lines": [
         "BA",
         "CLIFS",
+        "NDB",
         "410"
       ],
       "style": "navaid-ndb",
@@ -471,11 +549,13 @@
     },
     {
       "id": "BW",
+      "navaidType": "NDB",
       "x": 9379.545,
       "y": 8955.803,
       "lines": [
         "BW",
         "NOORA",
+        "NDB",
         "236"
       ],
       "style": "navaid-ndb",
@@ -483,11 +563,13 @@
     },
     {
       "id": "CFJ",
+      "navaidType": "NDB",
       "x": 8417.473,
       "y": 833.693,
       "lines": [
         "CFJ",
         "CRAWFORDSVILLE",
+        "NDB",
         "388"
       ],
       "style": "navaid-ndb",
@@ -495,11 +577,13 @@
     },
     {
       "id": "CG",
+      "navaidType": "NDB",
       "x": 2629.912,
       "y": 7937.322,
       "lines": [
         "CG",
         "DUTCH",
+        "NDB",
         "248"
       ],
       "style": "navaid-ndb",
@@ -507,11 +591,13 @@
     },
     {
       "id": "CJ",
-      "x": 2941.961,
-      "y": 1339.15,
+      "navaidType": "NDB",
+      "x": 2999.532,
+      "y": 1281.593,
       "lines": [
         "CJ",
         "CALDE",
+        "NDB",
         "240"
       ],
       "style": "navaid-ndb",
@@ -519,11 +605,13 @@
     },
     {
       "id": "CK",
+      "navaidType": "NDB",
       "x": 7476.299,
       "y": 9891.132,
       "lines": [
         "CK",
         "SNUFF",
+        "NDB",
         "335"
       ],
       "style": "navaid-ndb",
@@ -531,11 +619,13 @@
     },
     {
       "id": "CM",
-      "x": 5857.968,
-      "y": 871.169,
+      "navaidType": "NDB",
+      "x": 5800.397,
+      "y": 928.726,
       "lines": [
         "CM",
         "VEALS",
+        "NDB",
         "407"
       ],
       "style": "navaid-ndb",
@@ -543,11 +633,13 @@
     },
     {
       "id": "CP",
+      "navaidType": "NDB",
       "x": 1965.993,
       "y": 4601.445,
       "lines": [
         "CP",
         "ACORE",
+        "NDB",
         "350"
       ],
       "style": "navaid-ndb",
@@ -555,11 +647,13 @@
     },
     {
       "id": "DE",
-      "x": 4292.101,
+      "navaidType": "NDB",
+      "x": 4176.959,
       "y": 1315.471,
       "lines": [
         "DE",
         "ELWIN",
+        "NDB",
         "275"
       ],
       "style": "navaid-ndb",
@@ -567,11 +661,13 @@
     },
     {
       "id": "DVK",
+      "navaidType": "NDB",
       "x": 12941.195,
       "y": 7062.997,
       "lines": [
         "DVK",
         "GOODALL",
+        "NDB",
         "311"
       ],
       "style": "navaid-ndb",
@@ -579,11 +675,13 @@
     },
     {
       "id": "FK",
+      "navaidType": "NDB",
       "x": 7418.549,
       "y": 9341.461,
       "lines": [
         "FK",
         "AIRBE",
+        "NDB",
         "273"
       ],
       "style": "navaid-ndb",
@@ -591,11 +689,13 @@
     },
     {
       "id": "FWC",
+      "navaidType": "NDB",
       "x": 5360.504,
       "y": 5028.146,
       "lines": [
         "FWC",
         "WAYNE CO",
+        "NDB",
         "257"
       ],
       "style": "navaid-ndb",
@@ -603,11 +703,13 @@
     },
     {
       "id": "GOI",
+      "navaidType": "NDB",
       "x": 10282.449,
       "y": 6116.705,
       "lines": [
         "GOI",
         "GODMAN",
+        "NDB",
         "396"
       ],
       "style": "navaid-ndb",
@@ -615,11 +717,13 @@
     },
     {
       "id": "HEM",
+      "navaidType": "NDB",
       "x": 11251.248,
       "y": 11205.067,
       "lines": [
         "HEM",
         "HUCHN",
+        "NDB",
         "233"
       ],
       "style": "navaid-ndb",
@@ -627,11 +731,13 @@
     },
     {
       "id": "HU",
+      "navaidType": "NDB",
       "x": 7445.252,
       "y": 2394.14,
       "lines": [
         "HU",
         "YINNO",
+        "NDB",
         "245"
       ],
       "style": "navaid-ndb",
@@ -639,11 +745,13 @@
     },
     {
       "id": "HW",
-      "x": 14503.951,
-      "y": 2347.165,
+      "navaidType": "NDB",
+      "x": 14561.521,
+      "y": 2404.722,
       "lines": [
         "HW",
         "CUBLA",
+        "NDB",
         "299"
       ],
       "style": "navaid-ndb",
@@ -651,11 +759,13 @@
     },
     {
       "id": "JD",
-      "x": 2625.098,
-      "y": 4727.498,
+      "navaidType": "NDB",
+      "x": 2567.527,
+      "y": 4785.055,
       "lines": [
         "JD",
         "GOOEY",
+        "NDB",
         "385"
       ],
       "style": "navaid-ndb",
@@ -663,11 +773,13 @@
     },
     {
       "id": "JN",
-      "x": 11569.897,
-      "y": 320.469,
+      "navaidType": "NDB",
+      "x": 11627.468,
+      "y": 262.912,
       "lines": [
         "JN",
         "BALLL",
+        "NDB",
         "365"
       ],
       "style": "navaid-ndb",
@@ -675,11 +787,13 @@
     },
     {
       "id": "LK",
+      "navaidType": "NDB",
       "x": 10985.266,
       "y": 5616.817,
       "lines": [
         "LK",
         "LAANG",
+        "NDB",
         "414"
       ],
       "style": "navaid-ndb",
@@ -687,11 +801,13 @@
     },
     {
       "id": "LQ",
+      "navaidType": "NDB",
       "x": 2984.03,
       "y": 972.653,
       "lines": [
         "LQ",
         "LICOL",
+        "NDB",
         "375"
       ],
       "style": "navaid-ndb",
@@ -699,11 +815,13 @@
     },
     {
       "id": "MD",
+      "navaidType": "NDB",
       "x": 3611.194,
       "y": 6340.829,
       "lines": [
         "MD",
         "CABBI",
+        "NDB",
         "388"
       ],
       "style": "navaid-ndb",
@@ -711,11 +829,13 @@
     },
     {
       "id": "MW",
+      "navaidType": "NDB",
       "x": 4180.56,
       "y": 6431.87,
       "lines": [
         "MW",
         "JONNY",
+        "NDB",
         "382"
       ],
       "style": "navaid-ndb",
@@ -723,11 +843,13 @@
     },
     {
       "id": "MW",
+      "navaidType": "NDB",
       "x": 13688.217,
       "y": 1789.501,
       "lines": [
         "MW",
         "ONIDA",
+        "NDB",
         "223"
       ],
       "style": "navaid-ndb",
@@ -735,11 +857,13 @@
     },
     {
       "id": "OLY",
+      "navaidType": "NDB",
       "x": 5855.074,
       "y": 4145.891,
       "lines": [
         "OLY",
         "OLNEY",
+        "NDB",
         "272"
       ],
       "style": "navaid-ndb",
@@ -747,11 +871,13 @@
     },
     {
       "id": "PWF",
+      "navaidType": "NDB",
       "x": 13952.089,
       "y": 3097.296,
       "lines": [
         "PWF",
         "SPORTYS",
+        "NDB",
         "245"
       ],
       "style": "navaid-ndb",
@@ -759,11 +885,13 @@
     },
     {
       "id": "SP",
-      "x": 2658.768,
-      "y": 1329.778,
+      "navaidType": "NDB",
+      "x": 2601.197,
+      "y": 1387.335,
       "lines": [
         "SP",
         "HUSKK",
+        "NDB",
         "382"
       ],
       "style": "navaid-ndb",
@@ -771,11 +899,13 @@
     },
     {
       "id": "SQ",
+      "navaidType": "NDB",
       "x": 12038.221,
       "y": 1314.075,
       "lines": [
         "SQ",
         "PNTHR",
+        "NDB",
         "227"
       ],
       "style": "navaid-ndb",
@@ -783,11 +913,13 @@
     },
     {
       "id": "SU",
+      "navaidType": "NDB",
       "x": 519.549,
       "y": 4245.504,
       "lines": [
         "SU",
         "SNOOP",
+        "NDB",
         "326"
       ],
       "style": "navaid-ndb",
@@ -795,11 +927,13 @@
     },
     {
       "id": "SYZ",
+      "navaidType": "NDB",
       "x": 4501.672,
       "y": 2326.31,
       "lines": [
         "SYZ",
         "SHELBYVILLE",
+        "NDB",
         "365"
       ],
       "style": "navaid-ndb",
@@ -807,11 +941,13 @@
     },
     {
       "id": "TNZ",
+      "navaidType": "NDB",
       "x": 41.09,
       "y": 10601.839,
       "lines": [
         "TNZ",
         "LAWRENCE CO",
+        "NDB",
         "227"
       ],
       "style": "navaid-ndb",
@@ -819,11 +955,13 @@
     },
     {
       "id": "UC",
+      "navaidType": "NDB",
       "x": 4068.653,
       "y": 10467.741,
       "lines": [
         "UC",
         "OBION",
+        "NDB",
         "212"
       ],
       "style": "navaid-ndb",
@@ -831,11 +969,13 @@
     },
     {
       "id": "UWL",
+      "navaidType": "NDB",
       "x": 11649.476,
       "y": 1053.01,
       "lines": [
         "UWL",
         "NEW CASTLE",
+        "NDB",
         "385"
       ],
       "style": "navaid-ndb",
@@ -843,11 +983,13 @@
     },
     {
       "id": "XYC",
+      "navaidType": "NDB",
       "x": 14453.586,
       "y": 6538.896,
       "lines": [
         "XYC",
         "SECO",
+        "NDB",
         "393"
       ],
       "style": "navaid-ndb",
@@ -855,11 +997,13 @@
     },
     {
       "id": "BWG",
+      "navaidType": "DME",
       "x": 9499.678,
       "y": 8733.46,
       "lines": [
         "BWG",
         "BOWLING GREEN",
+        "DME",
         "113.35 / 80Y"
       ],
       "style": "navaid-dme",
@@ -867,11 +1011,13 @@
     },
     {
       "id": "CCT",
+      "navaidType": "DME",
       "x": 7730.924,
       "y": 7650.662,
       "lines": [
         "CCT",
         "CENTRAL CITY",
+        "DME",
         "109.8 / 35X"
       ],
       "style": "navaid-dme",
@@ -879,11 +1025,13 @@
     },
     {
       "id": "CGI",
+      "navaidType": "DME",
       "x": 2896.519,
       "y": 8010.778,
       "lines": [
         "CGI",
         "CAPE GIRARDEAU",
+        "DME",
         "112.9 / 76X"
       ],
       "style": "navaid-dme",
@@ -891,11 +1039,13 @@
     },
     {
       "id": "CSX",
+      "navaidType": "DME",
       "x": 1362.739,
       "y": 3973.891,
       "lines": [
         "CSX",
         "CARDINAL",
+        "DME",
         "116.45 / 111Y"
       ],
       "style": "navaid-dme",
@@ -903,11 +1053,13 @@
     },
     {
       "id": "GVR",
+      "navaidType": "DME",
       "x": 11403.716,
       "y": 4002.068,
       "lines": [
         "GVR",
         "HANOVER",
+        "DME",
         "114.65 / 93Y"
       ],
       "style": "navaid-dme",
@@ -915,11 +1067,13 @@
     },
     {
       "id": "IJX",
+      "navaidType": "DME",
       "x": 1689.385,
       "y": 1296.055,
       "lines": [
         "IJX",
         "JACKSONVILLE",
+        "DME",
         "108.6 / 23X"
       ],
       "style": "navaid-dme",
@@ -927,11 +1081,13 @@
     },
     {
       "id": "LWV",
+      "navaidType": "DME",
       "x": 7023.807,
       "y": 4015.108,
       "lines": [
         "LWV",
         "LAWRENCEVILLE",
+        "DME",
         "108.8 / 25X"
       ],
       "style": "navaid-dme",
@@ -939,11 +1095,13 @@
     },
     {
       "id": "MTO",
+      "navaidType": "DME",
       "x": 5637.834,
       "y": 2151.424,
       "lines": [
         "MTO",
         "MATTOON",
+        "DME",
         "109.4 / 31X"
       ],
       "style": "navaid-dme",
@@ -951,11 +1109,13 @@
     },
     {
       "id": "MWA",
-      "x": 4091.956,
+      "navaidType": "DME",
+      "x": 3976.815,
       "y": 6652.47,
       "lines": [
         "MWA",
         "MARION",
+        "DME",
         "110.4 / 41X"
       ],
       "style": "navaid-dme",
@@ -963,11 +1123,13 @@
     },
     {
       "id": "RID",
+      "navaidType": "DME",
       "x": 12629.283,
       "y": 1356.859,
       "lines": [
         "RID",
         "RICHMOND",
+        "DME",
         "113.65 / 83Y"
       ],
       "style": "navaid-dme",
@@ -975,11 +1137,13 @@
     },
     {
       "id": "SAM",
+      "navaidType": "DME",
       "x": 6029.788,
       "y": 4757.995,
       "lines": [
         "SAM",
         "SAMSVILLE",
+        "DME",
         "114.15 / 88Y"
       ],
       "style": "navaid-dme",
@@ -987,11 +1151,13 @@
     },
     {
       "id": "SGH",
+      "navaidType": "DME",
       "x": 14519.175,
       "y": 1077.688,
       "lines": [
         "SGH",
         "SPRINGFIELD",
+        "DME",
         "113.2 / 79X"
       ],
       "style": "navaid-dme",
@@ -999,11 +1165,13 @@
     },
     {
       "id": "VLA",
+      "navaidType": "DME",
       "x": 3838.671,
       "y": 3136.721,
       "lines": [
         "VLA",
         "VANDALIA",
+        "DME",
         "116.95 / 116Y"
       ],
       "style": "navaid-dme",
@@ -1011,11 +1179,13 @@
     },
     {
       "id": "VNN",
+      "navaidType": "DME",
       "x": 4538.645,
       "y": 5066.568,
       "lines": [
         "VNN",
         "MT VERNON",
+        "DME",
         "113.8 / 85X"
       ],
       "style": "navaid-dme",

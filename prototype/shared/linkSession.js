@@ -45,15 +45,17 @@ export class BroadcastLinkSession {
     this.onSelection = null;
     this.onToggle = null;
     this.onInstruction = null;
+    this.onEvent = null;
     this.onStatusChange = null;
   }
 
-  connect(sessionId, { onSelection, onToggle, onInstruction, onStatusChange } = {}) {
+  connect(sessionId, { onSelection, onToggle, onInstruction, onEvent, onStatusChange } = {}) {
     this.disconnect();
     this.sessionId = sessionId;
     this.onSelection = onSelection ?? null;
     this.onToggle = onToggle ?? null;
     this.onInstruction = onInstruction ?? null;
+    this.onEvent = onEvent ?? null;
     this.onStatusChange = onStatusChange ?? null;
     this.channel = new BroadcastChannel(`${this.channelNamespace}:${sessionId}`);
     this.channel.onmessage = (event) => {
@@ -74,6 +76,10 @@ export class BroadcastLinkSession {
       }
       if (payload.type === "instruction-sync") {
         this.onInstruction?.(instructionFromSyncPayload(payload));
+        return;
+      }
+      if (payload.type === "event-sync") {
+        this.onEvent?.(eventFromSyncPayload(payload));
       }
     };
     try {
@@ -125,6 +131,18 @@ export class BroadcastLinkSession {
     }
     this.channel.postMessage(
       createInstructionSyncPayload(instruction, {
+        sessionId: this.sessionId,
+        sourceClientId: this.clientId,
+      }),
+    );
+  }
+
+  publishEvent(eventState) {
+    if (!this.channel || !this.sessionId) {
+      return;
+    }
+    this.channel.postMessage(
+      createEventSyncPayload(eventState, {
         sessionId: this.sessionId,
         sourceClientId: this.clientId,
       }),
@@ -184,4 +202,45 @@ function instructionFromSyncPayload(payload) {
     sectionId: payload.sectionId ?? null,
     taskSetId: payload.taskSetId ?? null,
   };
+}
+
+function createEventSyncPayload(eventState, { sessionId, sourceClientId }) {
+  return {
+    type: "event-sync",
+    sessionId,
+    sourceClientId,
+    action: eventState.action ?? null,
+    sectionId: eventState.sectionId ?? null,
+    eventSetId: eventState.eventSetId ?? null,
+    eventId: eventState.eventId ?? null,
+    enabled: typeof eventState.enabled === "boolean" ? eventState.enabled : null,
+    activeEventIds: Array.isArray(eventState.activeEventIds) ? eventState.activeEventIds : null,
+    command: eventState.command ?? null,
+    scenarioActionId: eventState.scenarioActionId ?? null,
+    scenarioSnapshot: eventState.scenarioSnapshot ?? null,
+  };
+}
+
+function eventFromSyncPayload(payload) {
+  if (!payload) {
+    return null;
+  }
+  const eventState = {
+    action: payload.action ?? null,
+    sectionId: payload.sectionId ?? null,
+    eventSetId: payload.eventSetId ?? null,
+    eventId: payload.eventId ?? null,
+    enabled: typeof payload.enabled === "boolean" ? payload.enabled : null,
+    activeEventIds: Array.isArray(payload.activeEventIds) ? payload.activeEventIds : null,
+  };
+  if (payload.command != null) {
+    eventState.command = payload.command;
+  }
+  if (payload.scenarioActionId != null) {
+    eventState.scenarioActionId = payload.scenarioActionId;
+  }
+  if (payload.scenarioSnapshot != null) {
+    eventState.scenarioSnapshot = payload.scenarioSnapshot;
+  }
+  return eventState;
 }

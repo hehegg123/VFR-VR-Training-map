@@ -44,7 +44,7 @@ const LABEL_STYLES = {
     border: "#5eead4",
     text: "#ecfeff",
     width: 264,
-    height: 94,
+    height: 126,
     scale: 0.48,
   },
   "navaid-dme": {
@@ -52,7 +52,7 @@ const LABEL_STYLES = {
     border: "#67e8f9",
     text: "#ecfeff",
     width: 252,
-    height: 90,
+    height: 122,
     scale: 0.46,
   },
   "navaid-ndb": {
@@ -60,7 +60,7 @@ const LABEL_STYLES = {
     border: "#99f6e4",
     text: "#ecfeff",
     width: 252,
-    height: 90,
+    height: 122,
     scale: 0.46,
   },
   "victor-airway": {

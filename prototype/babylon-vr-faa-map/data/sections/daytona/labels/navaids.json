@@ -3,11 +3,13 @@
   "items": [
     {
       "id": "GNV",
+      "navaidType": "VORTAC",
       "x": 3290.561,
       "y": 337.692,
       "lines": [
         "GNV",
         "GATORS",
+        "VORTAC",
         "116.55 / 112Y"
       ],
       "style": "navaid-vor",
@@ -15,11 +17,13 @@
     },
     {
       "id": "LAL",
+      "navaidType": "VORTAC",
       "x": 3846.845,
       "y": 4699.376,
       "lines": [
         "LAL",
         "LAKELAND",
+        "VORTAC",
         "116 / 107X"
       ],
       "style": "navaid-vor",
@@ -27,11 +31,13 @@
     },
     {
       "id": "OCF",
+      "navaidType": "VORTAC",
       "x": 3394.609,
       "y": 1684.275,
       "lines": [
         "OCF",
         "OCALA",
+        "VORTAC",
         "113.7 / 84X"
       ],
       "style": "navaid-vor",
@@ -39,11 +45,13 @@
     },
     {
       "id": "OMN",
+      "navaidType": "VORTAC",
       "x": 5948.602,
       "y": 1348.353,
       "lines": [
         "OMN",
         "ORMOND BEACH",
+        "VORTAC",
         "112.6 / 73X"
       ],
       "style": "navaid-vor",
@@ -51,11 +59,13 @@
     },
     {
       "id": "ORL",
+      "navaidType": "VORTAC",
       "x": 5449.716,
       "y": 3340.713,
       "lines": [
         "ORL",
         "ORLANDO",
+        "VORTAC",
         "112.2 / 59X"
       ],
       "style": "navaid-vor",
@@ -63,11 +73,13 @@
     },
     {
       "id": "MLB",
+      "navaidType": "VOR/DME",
       "x": 7078.111,
       "y": 4471.084,
       "lines": [
         "MLB",
         "MELBOURNE",
+        "VOR/DME",
         "115.85 / 105Y"
       ],
       "style": "navaid-vor",
@@ -75,11 +87,13 @@
     },
     {
       "id": "COF",
+      "navaidType": "TACAN",
       "x": 7128.843,
       "y": 4124.28,
       "lines": [
         "COF",
         "PATRICK",
+        "TACAN",
         "115 / 97X"
       ],
       "style": "navaid-vor",
@@ -87,11 +101,13 @@
     },
     {
       "id": "CTY",
+      "navaidType": "TACAN",
       "x": 1516.126,
       "y": 571.712,
       "lines": [
         "CTY",
         "CROSS CITY",
+        "TACAN",
         "112 / 57X"
       ],
       "style": "navaid-vor",
@@ -99,11 +115,13 @@
     },
     {
       "id": "PI",
+      "navaidType": "NDB",
       "x": 2245.607,
       "y": 4688.547,
       "lines": [
         "PI",
         "CAPOK",
+        "NDB",
         "360"
       ],
       "style": "navaid-ndb",

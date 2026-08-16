@@ -162,6 +162,11 @@ select:disabled {
   font-weight: 600;
 }
 
+#eventStatus[data-state="error"] {
+  color: var(--danger);
+  font-weight: 600;
+}
+
 .button-row {
   display: flex;
   gap: 10px;
@@ -184,6 +189,73 @@ select:disabled {
 .layer-list {
   display: grid;
   gap: 10px;
+}
+
+.event-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.event-group {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid rgba(62, 83, 104, 0.12);
+}
+
+.event-group h3 {
+  margin: 0;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.scenario-title {
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.scenario-readout {
+  display: grid;
+  gap: 5px;
+}
+
+.scenario-readout p {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.scenario-readout strong {
+  color: var(--ink);
+  text-align: right;
+}
+
+.scenario-readout [data-state="conflict-predicted"] { color: #b45309; }
+.scenario-readout [data-state="loss-of-separation"] { color: #b91c1c; }
+.scenario-readout [data-state="resolved"] { color: #15803d; }
+
+.scenario-button-row,
+.scenario-action-list {
+  display: grid;
+  gap: 7px;
+}
+
+.scenario-button-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.scenario-controls button {
+  min-height: 38px;
+  padding: 7px 8px;
+  font-size: 0.78rem;
 }
 
 .layer-card {
@@ -211,6 +283,11 @@ select:disabled {
   margin: 0;
   font-size: 0.84rem;
   color: var(--muted);
+}
+
+.layer-card .layer-card-note {
+  font-size: 0.82rem;
+  line-height: 1.35;
 }
 
 .master-control-card {

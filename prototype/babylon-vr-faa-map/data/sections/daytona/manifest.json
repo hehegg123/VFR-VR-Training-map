@@ -801,6 +801,18 @@
         "title": "Daytona Beach Area Orientation",
         "data": "tasks/daytona-orientation.json"
       }
+    ],
+    "eventSets": [
+      {
+        "id": "daytona-basic-events",
+        "title": "Daytona Basic Events",
+        "data": "events/daytona-basic-events.json"
+      },
+      {
+        "id": "daytona-conflict-scenario",
+        "title": "Daytona Conflict Scenario",
+        "data": "events/daytona-conflict-scenario.json"
+      }
     ]
   }
 }

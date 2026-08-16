@@ -1,4 +1,4 @@
-import { AppShell } from "./app/AppShell.js?v=20260621-instruction-control-v2";
+import { AppShell } from "./app/AppShell.js?v=20260814-conflict-controls-v1";
 
 const shell = new AppShell({
   baseCanvas: document.getElementById("baseCanvas"),
@@ -13,6 +13,10 @@ const shell = new AppShell({
   instructionSelect: document.getElementById("instructionSelect"),
   resetTaskSessionButton: document.getElementById("resetTaskSessionButton"),
   instructionStatus: document.getElementById("instructionStatus"),
+  eventGroup: document.getElementById("eventGroup"),
+  eventSelect: document.getElementById("eventSelect"),
+  eventControls: document.getElementById("eventControls"),
+  eventStatus: document.getElementById("eventStatus"),
   sectionNote: document.getElementById("sectionNote"),
   layerControls: document.getElementById("layerControls"),
   linkSessionInput: document.getElementById("linkSessionInput"),

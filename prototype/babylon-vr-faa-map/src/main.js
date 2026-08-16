@@ -1,4 +1,4 @@
-import { AppShell } from "./app/AppShell.js?v=20260621-instruction-workflow-v1";
+import { AppShell } from "./app/AppShell.js?v=20260815-wrist-events-v1";
 
 const shell = new AppShell({
   canvas: document.getElementById("renderCanvas"),
@@ -7,6 +7,10 @@ const shell = new AppShell({
   instructionGroup: document.getElementById("instructionGroup"),
   instructionSelect: document.getElementById("instructionSelect"),
   resetTaskSessionButton: document.getElementById("resetTaskSessionButton"),
+  eventGroup: document.getElementById("eventGroup"),
+  eventSelect: document.getElementById("eventSelect"),
+  eventControls: document.getElementById("eventControls"),
+  eventStatus: document.getElementById("eventStatus"),
   sectionNote: document.getElementById("sectionNote"),
   layerControls: document.getElementById("layerControls"),
   linkSessionInput: document.getElementById("linkSessionInput"),

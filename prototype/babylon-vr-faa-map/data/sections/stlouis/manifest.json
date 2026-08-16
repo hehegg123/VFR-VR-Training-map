@@ -2886,6 +2886,7 @@
         "title": "St. Louis Airspace Orientation",
         "data": "tasks/stlouis-airspace-orientation.json"
       }
-    ]
+    ],
+    "eventSets": []
   }
 }
