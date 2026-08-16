@@ -29,11 +29,6 @@ cd .\VFR-VR-Training-map
 .\launch-demo.cmd
 ```
 
-If you prefer the original launcher file with spaces in its name, use:
-
-```powershell
-& ".\Launch St. Louis Demo.cmd"
-```
 
 That one-click launcher:
 
