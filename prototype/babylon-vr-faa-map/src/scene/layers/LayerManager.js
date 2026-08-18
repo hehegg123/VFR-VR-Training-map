@@ -7,7 +7,7 @@ import { RasterLayer } from "./RasterLayer.js";
 import { TiledRasterLayer } from "./TiledRasterLayer.js";
 import { VectorOverlayLayer } from "./VectorOverlayLayer.js?v=20260514-feature-highlight-v1";
 import { AirspaceAltitudeOverlay } from "./AirspaceAltitudeOverlay.js?v=20260712-event-altitude-v1";
-import { EventOverlayLayer } from "./EventOverlayLayer.js";
+import { EventOverlayLayer } from "./EventOverlayLayer.js?v=20260816-xr-aircraft-v2";
 import { VrLabelLayer } from "./VrLabelLayer.js?v=20260618-airspace-picking-v1";
 
 export class LayerManager {

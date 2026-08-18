@@ -11,7 +11,7 @@ const DEFAULT_WEATHER_TOP_FT = 3000;
 const MIN_WEATHER_THICKNESS_WORLD = 0.12;
 const CLOUD_PUFF_COUNT = 9;
 const DEFAULT_AIRCRAFT_MODEL_URL = new URL("../../../assets/models/airplane_crj-900_cityjet.glb", import.meta.url).href;
-const DEFAULT_AIRCRAFT_MODEL_LENGTH_WORLD = 0.36;
+const DEFAULT_AIRCRAFT_MODEL_LENGTH_WORLD = 0.14;
 
 export class EventOverlayLayer {
   constructor(scene, parent, sectionMetrics, resolveTargetPoint = null, altitudeConfig = {}) {
@@ -174,39 +174,44 @@ export class EventOverlayLayer {
 
   async createAircraftModel(event, node, generation) {
     const scale = Number.isFinite(Number(event.visual?.scale)) ? Number(event.visual.scale) : 1;
+    const placeholder = this.createProceduralAircraftModel(event, node, scale);
 
     if (event.visual?.model !== "procedural-aircraft") {
       const loaded = await this.tryAttachAircraftModel(event, node, scale, generation);
       if (loaded) {
+        this.disposeAircraftPlaceholder(placeholder);
         return;
       }
     }
 
     if (generation !== this.renderGeneration || !this.root || node.isDisposed()) {
-      node.dispose(false, true);
+      this.disposeAircraftPlaceholder(placeholder);
       return;
     }
+  }
 
+  createProceduralAircraftModel(event, node, scale) {
     const material = this.createMaterial(`event-aircraft-material-${event.id}`, "#ef4444", 0.95);
     const darkMaterial = this.createMaterial(`event-aircraft-tail-material-${event.id}`, "#991b1b", 0.95);
+    const lengthScale = (DEFAULT_AIRCRAFT_MODEL_LENGTH_WORLD / 0.28) * scale;
     const body = BABYLON.MeshBuilder.CreateBox(
       `event-aircraft-body-${event.id}`,
-      { width: 0.055 * scale, height: 0.035 * scale, depth: 0.24 * scale },
+      { width: 0.055 * lengthScale, height: 0.035 * lengthScale, depth: 0.24 * lengthScale },
       this.scene,
     );
     const wings = BABYLON.MeshBuilder.CreateBox(
       `event-aircraft-wings-${event.id}`,
-      { width: 0.28 * scale, height: 0.018 * scale, depth: 0.045 * scale },
+      { width: 0.28 * lengthScale, height: 0.018 * lengthScale, depth: 0.045 * lengthScale },
       this.scene,
     );
     const tail = BABYLON.MeshBuilder.CreateBox(
       `event-aircraft-tail-${event.id}`,
-      { width: 0.16 * scale, height: 0.018 * scale, depth: 0.035 * scale },
+      { width: 0.16 * lengthScale, height: 0.018 * lengthScale, depth: 0.035 * lengthScale },
       this.scene,
     );
     const nose = BABYLON.MeshBuilder.CreateCylinder(
       `event-aircraft-nose-${event.id}`,
-      { height: 0.052 * scale, diameterTop: 0, diameterBottom: 0.055 * scale, tessellation: 12 },
+      { height: 0.052 * lengthScale, diameterTop: 0, diameterBottom: 0.055 * lengthScale, tessellation: 12 },
       this.scene,
     );
 
@@ -217,10 +222,27 @@ export class EventOverlayLayer {
       this.meshes.push(mesh);
     }
     body.position.z = 0;
-    wings.position.z = -0.015 * scale;
-    tail.position.z = 0.105 * scale;
-    nose.position.z = -0.146 * scale;
+    wings.position.z = -0.015 * lengthScale;
+    tail.position.z = 0.105 * lengthScale;
+    nose.position.z = -0.146 * lengthScale;
     nose.rotation.x = Math.PI / 2;
+    return { meshes: [body, wings, tail, nose], materials: [material, darkMaterial] };
+  }
+
+  disposeAircraftPlaceholder(placeholder) {
+    if (!placeholder) {
+      return;
+    }
+    const placeholderMeshes = new Set(placeholder.meshes ?? []);
+    const placeholderMaterials = new Set(placeholder.materials ?? []);
+    for (const mesh of placeholderMeshes) {
+      mesh.dispose(false, true);
+    }
+    for (const material of placeholderMaterials) {
+      material.dispose(false, true);
+    }
+    this.meshes = this.meshes.filter((mesh) => !placeholderMeshes.has(mesh));
+    this.materials = this.materials.filter((material) => !placeholderMaterials.has(material));
   }
 
   async tryAttachAircraftModel(event, node, scale, generation) {
@@ -490,7 +512,7 @@ function toRadians(degrees) {
 }
 
 function normalizeAircraftModel(modelRoot, meshes, scale) {
-  const bounds = combinedBoundingBox(meshes);
+  const bounds = combinedBoundingBoxInModelSpace(modelRoot, meshes);
   if (!bounds) {
     return;
   }
@@ -503,10 +525,12 @@ function normalizeAircraftModel(modelRoot, meshes, scale) {
   const scaleFactor = targetLength / longestAxis;
   const center = bounds.min.add(size.scale(0.5));
   modelRoot.scaling.setAll(scaleFactor);
-  modelRoot.position = center.scale(-scaleFactor);
+  modelRoot.position.copyFrom(center.scale(-scaleFactor));
 }
 
-function combinedBoundingBox(meshes) {
+function combinedBoundingBoxInModelSpace(modelRoot, meshes) {
+  modelRoot.computeWorldMatrix(true);
+  const inverseModelWorld = modelRoot.getWorldMatrix().clone().invert();
   let min = null;
   let max = null;
   for (const mesh of meshes) {
@@ -515,14 +539,11 @@ function combinedBoundingBox(meshes) {
     if (!boundingBox) {
       continue;
     }
-    const meshMin = boundingBox.minimumWorld;
-    const meshMax = boundingBox.maximumWorld;
-    min = min
-      ? BABYLON.Vector3.Minimize(min, meshMin)
-      : meshMin.clone();
-    max = max
-      ? BABYLON.Vector3.Maximize(max, meshMax)
-      : meshMax.clone();
+    for (const corner of boundingBox.vectorsWorld ?? []) {
+      const localCorner = BABYLON.Vector3.TransformCoordinates(corner, inverseModelWorld);
+      min = min ? BABYLON.Vector3.Minimize(min, localCorner) : localCorner.clone();
+      max = max ? BABYLON.Vector3.Maximize(max, localCorner) : localCorner.clone();
+    }
   }
   return min && max ? { min, max } : null;
 }

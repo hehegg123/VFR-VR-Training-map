@@ -14,6 +14,7 @@ __pycache__/
 
 # Local tooling state
 .playwright-cli/
+/potential-feature-ideas/
 /prototype/babylon-vr-faa-map/.logs/
 /prototype/tmp-edge-profile*/
 

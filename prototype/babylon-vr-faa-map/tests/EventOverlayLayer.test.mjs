@@ -96,6 +96,76 @@ test("reuses aircraft nodes across timeline frames and disposes them on unload",
   assert.equal(layer.aircraftNodes.size, 0);
 });
 
+test("shows a procedural aircraft immediately while the headset loads the GLB model", async () => {
+  const layer = new EventOverlayLayer(
+    {},
+    new TransformNode("map-root"),
+    { pixelWidth: 1000, pixelHeight: 800, worldWidth: 10, worldHeight: 8 },
+  );
+  const event = { id: "flight-a", visual: { model: "crj-900-cityjet", scale: 1 } };
+  const node = new TransformNode("event-root-flight-a");
+  const placeholder = { meshes: [{}], materials: [{}] };
+  let placeholderCreated = false;
+  let placeholderDisposed = false;
+  let finishModelLoad;
+
+  layer.createProceduralAircraftModel = () => {
+    placeholderCreated = true;
+    return placeholder;
+  };
+  layer.tryAttachAircraftModel = () => new Promise((resolve) => {
+    finishModelLoad = resolve;
+  });
+  layer.disposeAircraftPlaceholder = (candidate) => {
+    assert.equal(candidate, placeholder);
+    placeholderDisposed = true;
+  };
+
+  const loading = layer.createAircraftModel(event, node, layer.renderGeneration);
+  assert.equal(placeholderCreated, true);
+  assert.equal(placeholderDisposed, false);
+
+  finishModelLoad(true);
+  await loading;
+  assert.equal(placeholderDisposed, true);
+  layer.dispose();
+});
+
+test("procedural and imported aircraft share a compact physical target size", () => {
+  const originalMeshBuilder = BABYLON.MeshBuilder;
+  const dimensions = [];
+  BABYLON.MeshBuilder = {
+    CreateBox(name, options) {
+      dimensions.push(options.width, options.height, options.depth);
+      return fakeMesh(name);
+    },
+    CreateCylinder(name, options) {
+      dimensions.push(options.height, options.diameterBottom);
+      return fakeMesh(name);
+    },
+  };
+
+  try {
+    const layer = new EventOverlayLayer(
+      {},
+      new TransformNode("map-root"),
+      { pixelWidth: 1000, pixelHeight: 800, worldWidth: 10, worldHeight: 8 },
+    );
+    layer.createMaterial = (name) => ({ name, dispose() {} });
+    const result = layer.createProceduralAircraftModel(
+      { id: "flight-a" },
+      new TransformNode("event-root-flight-a"),
+      1,
+    );
+
+    assert.equal(result.meshes.length, 4);
+    assert.ok(Math.max(...dimensions) <= 0.14 + 1e-9);
+    layer.dispose();
+  } finally {
+    BABYLON.MeshBuilder = originalMeshBuilder;
+  }
+});
+
 function snapshot(status, elapsedSec, position, headingDeg, activeEventIds = ["flight-a"]) {
   return {
     eventSetId: "conflict-scenario",
@@ -136,4 +206,14 @@ function assertVector(actual, expected) {
   assert.ok(Math.abs(actual.x - expected.x) < 1e-9);
   assert.ok(Math.abs(actual.y - expected.y) < 1e-9);
   assert.ok(Math.abs(actual.z - expected.z) < 1e-9);
+}
+
+function fakeMesh(name) {
+  return {
+    name,
+    parent: null,
+    position: new Vector3(),
+    rotation: { x: 0, y: 0, z: 0 },
+    dispose() {},
+  };
 }
